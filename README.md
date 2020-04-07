@@ -21,7 +21,7 @@ pip install pylexibank wheel
 cldfbench catconfig -q
 ```
 
-Clone the lexibank datasets we are going to (currently
+Clone the lexibank datasets we are going to use (currently
 only WOLD) and install them with `pip` in edit
 mode.
 

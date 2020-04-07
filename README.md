@@ -14,7 +14,7 @@ Install necessary libraries for the Lexibank
 ecosystem, and after that use
 `cldfbench` to clone all the references catalogs
 (can take a while; the `-q` flag is just to
-silently clone with prompting at each catalog). 
+silently clone without prompting at each catalog). 
 
 ```bash
 pip install pylexibank wheel

@@ -36,4 +36,26 @@ a `pip freeze | grep lexibank`, which should list
 `pylexibank`.
 
 Code for loading the data in memory is in
-`load_data.py`.
+`load_data.py`. When run, it will print the list of columns in the
+`wl` wordlist and the ten first entries:
+
+```bash
+$ ▶ python load_data.py
+['parameter_id', 'doculect', 'form', 'tokens', 'loan', 'concept']
+----------  ----------------  ---------  ---------------------  -----
+1_theworld  Swahili           dunia      ɗ u n i a              True
+1_theworld  Swahili           ulimwengu  u l i m w e ⁿg u       False
+1_theworld  Iraqw             yaamu      j aː m u               False
+1_theworld  Gawwada           ʔalame     ʔ a l a m e            True
+1_theworld  Hausa             dúuníyàa   d ú/u u n í/i j àa/aː  True
+1_theworld  Kanuri            dúnyâ      d ú/u ɲ â/a            True
+1_theworld  TarifiytBerber    ddənya     dː ə n y a             True
+1_theworld  SeychellesCreole  lemonn     l e m ɔ̃ n              False
+1_theworld  Romanian          lume       l u m e                False
+----------  ----------------  ---------  ---------------------  -----
+```
+
+Tokens might include the slash notation, for which we only care about the
+right part. It can be extracted with a simple list comprehension, but
+in must cases (like when using methods from `lingpy` or `pyclts`) this is
+not necessary.

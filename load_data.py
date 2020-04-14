@@ -15,6 +15,7 @@ wl = lingpy.Wordlist.from_cldf(
         "form",
         "segments",
         "loan",
+        "borrowed",
         "concept",
     ),
 )

@@ -1,4 +1,5 @@
 from lexibank_wold import Dataset as DS
+from pyclts import CLTS
 from tabulate import tabulate
 import lingpy
 
@@ -24,12 +25,12 @@ def load_wordlist():
 import re
 
 def stripalternative(segments):
-	# Match on any sequence of characters. 
+	# Match on any sequence of characters.
 	# Partial seqeuence terminated by / is ignored and only last sequence is used.
 	# Some error proofing. Guards against no-match or white space match.
 	sr = re.compile(r"^(.+/)*([^/]+)$")
 
-	return [['' if (mat := sr.match(seg.strip())) is None 
+	return [['' if (mat := sr.match(seg.strip())) is None
 		else mat.group(2) for seg in segs] for segs in segments]
 
 def cleanform(word):
@@ -41,12 +42,12 @@ def cleanform(word):
     question = re.compile('[?¿]')
     affix = re.compile('(^-)|(-$)')
     optional = re.compile('_?\(-?\w+-?\)_?')
-    
+
     try:
         word = word.strip().lower()
         word = pnre.sub('', word).strip()
         # previously used # for internal space.
-        word = space.sub('_', word)  
+        word = space.sub('_', word)
         word = question.sub('', word)
         word = affix.sub('', word)
         word = optional.sub('', word)
@@ -79,12 +80,14 @@ def get_language_data(wordlist=None, language=None):
     borrowed = wordlist.get_list(language=language, entry="borrowed",  flat=True)
     borrowedscore = [(int(score[0])*-1+5)/4 for score in borrowed]
     form = [cleanform(form) for form in form]
-    form_chars = [segmentchars(form) for form in form]
+    formchars = [segmentchars(form) for form in form]
     segments = stripalternative(wordlist.get_list(language=language, entry="tokens",  flat=True))
     segments = [' '.join(list(word)) for word in segments]
-    langdata = list(zip(concept, form, form_chars, segments, loan, borrowedscore))
+    sca = CLTS().soundclass("sca")
+    scas = [' '.join(sca(segment)) for segment in segments]
+    langdata = list(zip(concept, form, formchars, segments, scas, loan, borrowedscore))
     print(f'Language {language} from wordlist has {len(langdata)} concepts/forms')
-    
+
     return langdata
 
 
@@ -93,8 +96,8 @@ import csv
 def write_language_table(languagetable=None, language=None):
     # Write language table.
     tabledir = 'tables/'
-    hdr = ('concept', 'form', 'formchars', 'segments', 'loan', 'borrowedscore')
-    
+    hdr = ('concept', 'form', 'formchars', 'segments', 'scas', 'loan', 'borrowedscore')
+
     with open(tabledir+language+'.tsv', 'w', newline='\n') as f_output:
         tsv_output = csv.writer(f_output, delimiter='\t')
         tsv_output.writerow(hdr)
@@ -105,4 +108,3 @@ def write_language_table(languagetable=None, language=None):
 def get_write_language(wordlist=None, language=None):
     languagedata = get_language_data(wordlist=wordlist, language=language)
     write_language_table(languagetable=languagedata, language=language)
-

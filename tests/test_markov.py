@@ -18,7 +18,9 @@ mk = Markov(
         wl, 
         'English', 
         ['concept', 'form', 'tokens', 'sca', 'borrowed', 'loan'],
-        dtypes = [str, list, list, list, float, bool]
+        dtypes = [str, list, list, list, float, bool],
+        post_order=1,
+        pre_order=0
         )
 mk.add_sequences(
         [row['tokens'] for row in mk.now['dicts']])
@@ -32,8 +34,12 @@ for row in mk.now['dicts']:
     else:
         unborrowed += [mk.entropy(row['tokens'])]
 
+borrowed_avg = sum(borrowed)/len(borrowed)
+unborrowed_avg = sum(borrowed)/len(borrowed)
+
 # plot the distribution
-plot_word_distributions(borrowed, unborrowed, 'test.pdf')
+plot_word_distributions(borrowed, unborrowed, 'test.pdf', graphlimit=max([
+    max(borrowed), max(unborrowed)])+1)
 
 
 

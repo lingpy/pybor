@@ -32,18 +32,4 @@ table = wl.get_language(
 print(tabulate.tabulate(table[:20], headers=['id', 'concept', 'form', 'tokens', 'sca', 'borrowed',
     'loan'], tablefmt='pipe'))
 
-from mobor.markov import Markov
-
-mk = Markov.from_lexibank('wold', 
-        fields=['loan', 'borrowed'],
-        fieldfunctions={
-            "borrowed": lambda x: (int(x[0])*-1+5)/4
-            })
-mk.initialize(
-        'English', 
-        ['concept', 'form', 'tokens', 'sca', 'borrowed', 'loan'],
-        dtypes = [str, list, list, list, float, bool])
-
-print(tabulate.tabulate(mk.now['table'][:20], headers=['id', 'concept', 'form', 'tokens', 'sca', 'borrowed',
-    'loan'], tablefmt='pipe'))
 

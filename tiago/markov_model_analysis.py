@@ -184,9 +184,6 @@ def analyze_word_distributions(
     # test - test statistic for training versus val difference.
     # n - number of iterations of randomization test.
 
-    # TODO: for testing
-    model = "LS"
-
     train_tokens = tokens
     mlm = MarkovCharLM(train_tokens, model=model, order=order, smoothing=smoothing)
 

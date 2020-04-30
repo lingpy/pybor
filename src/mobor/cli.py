@@ -1,6 +1,7 @@
 # Import Python standard libraries
 import argparse
 import contextlib
+import sys
 
 # Import MPI-SHH libraries
 from clldutils.clilib import (

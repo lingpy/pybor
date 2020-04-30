@@ -1,18 +1,12 @@
-# Import Python standard libraries
-from collections import OrderedDict
-import math
+# Import 3rd party libraries
+import numpy as np
 
-# from lingpy.sequence import ngrams
+# Import NLTK
 from nltk.lm import Vocabulary
 from nltk.lm.preprocessing import pad_both_ends
 from nltk.util import ngrams
-import nltk
 import nltk.lm as lm
 import nltk.lm.preprocessing as pp
-import nltk.util as ut
-
-# Import package
-from mobor.data import Wordlist
 
 
 def _splitter(item):
@@ -20,8 +14,8 @@ def _splitter(item):
         return item
     elif " " in item:
         return item.split(" ")
-    else:
-        return [char for char in item]
+
+    return [char for char in item]
 
 
 class MarkovCharLM:

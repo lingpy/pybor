@@ -87,7 +87,6 @@ def register(parser):
     )
 
 
-# TODO add field to output name
 def run(args):
 
     # Build output path
@@ -98,11 +97,11 @@ def run(args):
     print(output_path)
 
     # Load data
-    wl = mobor.data.load_data(args.dataset)
+    wordlist = mobor.data.load_data(args.dataset)
 
     # Subset data and select only borrowed items (suited for WOLD)
     # TODO: replace hardcoded selector, allow no selector
-    subset = wl.get_language(
+    subset = wordlist.get_language(
         args.language, [args.sequence, "borrowed"], dtypes=[list, float]
     )
     tokens = [row[args.sequence] for row in subset]
@@ -111,7 +110,7 @@ def run(args):
     # Run analysis
     # TODO: decide on allowing not `logebase` from command line
     logebase = True
-    mlm = analyze_word_distributions(
+    analyze_word_distributions(
         tokens,
         selector,
         output_path,
@@ -166,12 +165,12 @@ def analyze_word_distributions(
     native_entropies = [
         entropy
         for entropy, select in zip(entropies, selector)
-        if select == True
+        if select
     ]
     loan_entropies = [
         entropy
         for entropy, select in zip(entropies, selector)
-        if select == False
+        if not select
     ]
 
     # Perform randomization tests, plot distribution and write data

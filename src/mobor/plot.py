@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 import numpy as np
-import statistics
+
 
 
 def graph_word_distribution_entropies(

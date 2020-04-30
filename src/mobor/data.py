@@ -75,7 +75,7 @@ class Wordlist(lingpy.Wordlist):
 
         return wordlist
 
-    def add_soundclass(cls, model, clts=True):
+    def add_soundclass(self, model, clts=True):
         # Use join to put as space delimited string not individual symbols.
         if clts:
             clts = CLTS()
@@ -83,15 +83,15 @@ class Wordlist(lingpy.Wordlist):
         else:
             soundclass = lambda x: " ".join(lingpy.tokens2class(x, model))
 
-        cls.add_entries(str(model), "tokens", soundclass)
+        self.add_entries(str(model), "tokens", soundclass)
 
-    def add_formchars(cls):
+    def add_formchars(self):
         # Convert form to space delimited form without garbage symbols.
         formchars = lambda x: segmentchars(cleanform(x))
 
-        cls.add_entries("formchars", "form", formchars)
+        self.add_entries("formchars", "form", formchars)
 
-    def get_language(cls, language, fields, dtypes=None):
+    def get_language(self, language, fields, dtypes=None):
         """
         Extract information for a given language.
         """
@@ -102,11 +102,11 @@ class Wordlist(lingpy.Wordlist):
 
         subset = [
             {
-                field: dtype(cls[idx, field])
+                field: dtype(self[idx, field])
                 for field, dtype in zip(fields, dtypes)
             }
-            for idx in cls
-            if cls[idx, "doculect"] == language
+            for idx in self
+            if self[idx, "doculect"] == language
         ]
 
         return subset
@@ -159,16 +159,16 @@ def segmentchars(form):
 # Standard function for loading data, designed for Lexibank WOLD mostly
 def load_data(dataset):
     # Load data
-    wl = Wordlist.from_lexibank(
+    wordlist = Wordlist.from_lexibank(
         dataset,
         fields=["borrowed"],
         fieldfunctions={"borrowed": lambda x: (int(x[0]) * -1 + 5) / 4},
     )
 
-    wl.add_soundclass("sca", clts=False)
-    wl.add_formchars()
+    wordlist.add_soundclass("sca", clts=False)
+    wordlist.add_formchars()
 
-    return wl
+    return wordlist
 
 
 # quick function for updating results

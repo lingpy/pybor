@@ -1,3 +1,6 @@
+# Ignore local copy of lexibank_wold
+wold/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

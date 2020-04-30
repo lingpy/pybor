@@ -34,8 +34,8 @@ def calculate_randomization_test_between_distributions(
     # Plot empirical distribution of test statistic.
     # Report empirical probability of test result.
 
-    x = [value for value, select in zip(values, selector) if select == True]
-    y = [value for value, select in zip(values, selector) if select == False]
+    x = [value for value, select in zip(values, selector) if select]
+    y = [value for value, select in zip(values, selector) if not select]
 
     stat_ref = calculate_test_statistic_between_distributions(x, y, test=test)
     # print(f'{test} statistic =', stat_ref[0])
@@ -43,9 +43,9 @@ def calculate_randomization_test_between_distributions(
     stats = [0] * n
     for i in range(n):
         selector = np.random.permutation(selector)
-        x = [value for value, select in zip(values, selector) if select == True]
+        x = [value for value, select in zip(values, selector) if select]
         y = [
-            value for value, select in zip(values, selector) if select == False
+            value for value, select in zip(values, selector) if not select
         ]
 
         test_stat = calculate_test_statistic_between_distributions(

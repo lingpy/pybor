@@ -6,6 +6,54 @@ from nltk.util import ngrams
 from nltk.lm import Vocabulary
 from nltk.lm.preprocessing import pad_both_ends
 
+# build a class inside the object, so we keep John's call signature for
+# the time being
+from lingpy.sequence.ngrams import NgramModel, get_n_ngrams
+
+class MarkovCharLM_LINGPY:
+    def __init__(self, tokens, names=None, model="KNI", order=2, smoothing=0.5):
+        self._tokens = [word.split() for word in tokens]
+        self._names = names
+        self._order = order
+        self._entropies = None
+        self._ref_limit = None
+
+        # Build internal object
+        self._object = NgramModel(pre_order=self._order, post_order=self._order,
+            sequences=self._tokens)
+
+        # Train according to the requested model
+        if model == "KNI":
+            print("WARNING: KNI not implemented, defaulting to Lidstone")
+            self._object.train(method="lidstone", gamma=smoothing)
+        elif model == "WBI":
+            print("WARNING: KNI not implemented, defaulting to Lidstone")
+            self._object.train(method="lidstone", gamma=smoothing)
+        elif model == "LP":
+            self._object.train(method="laplace")
+        elif model == "LS":
+            self._object.train(method="lidstone", gamma=smoothing)
+        else:
+            self._object.train(method="mle")
+
+    # General function for analysis of training tokens.
+    def analyze_training(self):
+        self._entropies = self.analyze_tokens(self._tokens)
+        return self._entropies
+
+
+    def analyze_tokens(self, tokens):
+        # Turn into list if necessary
+        words = [word.split() if isinstance(word, str) else word for word in tokens]
+
+        ngrams = [list(get_n_ngrams(word, self._order)) for word in words]
+        print("ngrams", len(ngrams), len(ngrams[0]), ngrams[:3])
+        entropy = [self._object.entropy(s) for s in ngrams]
+
+        print(len(entropy), entropy[:3])
+        exit()
+
+        return entropy
 
 class MarkovCharLM:
     # tokens and names are pandas series.
@@ -20,10 +68,11 @@ class MarkovCharLM:
         self._ref_limit = None
 
         tokens = [t for t in self._tokens]
+        words = [word.split() for word in tokens]
 
-        words = [word.split() for word in tokens]  #
         # Must we use padding on both ends?
         train, vocab = pp.padded_everygram_pipeline(self._order, words)  #
+
         # Define the vocabulary.  Need to allow for out of vocabulary, thus cutoff=2.
         vocab = Vocabulary(vocab, unk_cutoff=2)
 
@@ -77,9 +126,18 @@ class MarkovCharLM:
         sound_ngrams_lst = [
             list(ngrams(sounds, self._order)) for sounds in padded_words
         ]
-        return [
+
+        print("ngrams", len(sound_ngrams_lst), len(sound_ngrams_lst[0]), sound_ngrams_lst[:3])
+
+        entropy = [
             self._lm.entropy(sound_ngrams) for sound_ngrams in sound_ngrams_lst
         ]
+
+        print(len(entropy), entropy[:3])
+
+        exit()
+
+        return entropy
 
     # Allow to reset order; but necessarily retrain language model.
     def set_order(self, order):

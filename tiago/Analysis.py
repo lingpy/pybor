@@ -53,9 +53,9 @@ language_word_discrimination_native_basis('English', form='scas', smoothing=0.5,
 # Test k-fold native basis word discrimination.
 # No interest in return table of k-fold trials.
 print("============ 5")
-_ = k_fold_language_word_discrimination_native_basis('English', form='formchars', smoothing=0.5, k_fold=10, p=.995)
-_ = k_fold_language_word_discrimination_native_basis('English', form='segments', smoothing=0.5, k_fold=10, p=.995)
-_ = k_fold_language_word_discrimination_native_basis('English', form='scas', smoothing=0.5, k_fold=10, p=.995)
+k_fold_language_word_discrimination_native_basis('English', form='formchars', smoothing=0.5, k_fold=10, p=.995)
+k_fold_language_word_discrimination_native_basis('English', form='segments', smoothing=0.5, k_fold=10, p=.995)
+k_fold_language_word_discrimination_native_basis('English', form='scas', smoothing=0.5, k_fold=10, p=.995)
 
 # Word discrimination with native and loan known
 # Test k_fold dual basis word discrimination.
@@ -63,6 +63,7 @@ print("============ 6")
 _ = k_fold_language_word_discrimination_dual_basis('English', form='formchars', smoothing=0.5, k_fold=10)
 _ = k_fold_language_word_discrimination_dual_basis('English', form='segments', smoothing=0.5, k_fold=10)
 _ = k_fold_language_word_discrimination_dual_basis('English', form='scas', smoothing=0.5, k_fold=10)
+input(">>>>>")
 
 # Overfitting of Markov model
 print("============ 7")

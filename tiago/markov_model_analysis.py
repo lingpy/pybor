@@ -10,6 +10,7 @@ from scipy import stats
 from sklearn.model_selection import KFold
 
 from markov_char_lm import MarkovCharLM
+from markov_char_lm import MarkovCharLM_LINGPY
 from utility_functions import *
 
 # TODO: delete the 2() functions and rename the my_ variables
@@ -183,10 +184,12 @@ def analyze_word_distributions(
     # test - test statistic for training versus val difference.
     # n - number of iterations of randomization test.
 
+    # TODO: for testing
+    model = "LS"
+
     train_tokens = tokens
-    mlm = MarkovCharLM(
-        train_tokens, model=model, order=order, smoothing=smoothing
-    )
+    mlm = MarkovCharLM(train_tokens, model=model, order=order, smoothing=smoothing)
+
     entropies = mlm.analyze_training()
 
     if logebase:
@@ -251,7 +254,7 @@ def analyze_language_word_distributions(
     print(f"Language={language}, form={form}")
 
     table = read_table(language)
-    tokens = [row["form"] for row in table]
+    tokens = [row[form] for row in table]
     selector = [row["borrowedscore"] < 0.375 for row in table]
 
     # selector = ~table.loan
@@ -408,7 +411,7 @@ def analyze_language_word_distributions_native_basis(
     print(f"Language={language}, form={form}")
 
     table = read_table(language)
-    tokens = [row["form"] for row in table]
+    tokens = [row[form] for row in table]
     selector = [row["borrowedscore"] < 0.375 for row in table]
 
     analyze_word_distributions_native_basis(

@@ -1,40 +1,51 @@
 from matplotlib import pyplot as plt
 import numpy as np
+import statistics
 
 def plot_word_distributions(
-        native, 
-        borrowed, 
+        native,
+        loan,
         filename,
-        title='title', 
-        graphlimit=5, 
+        title='[untitled]',
+        graphlimit=5,
         figsize=(8, 5),
         alpha_native=0.65,
-        alpha_borrowed=0.65,
+        alpha_loan=0.65,
         label_native='native entropies',
-        label_borrowed='borrowed entropies',
+        label_loan='loan entropies',
         color_native='blue',
-        color_borrowed='red',
+        color_loan='red',
         xlabel='Entropies',
         ylabel='Frequencies'
         ):
+
+    # Calculate basis for labels.
+    native_cnt = f'{len(native):6d}'
+    native_avg = f'{statistics.mean(native):9.4f}'
+    native_std = f'{statistics.stdev(native):9.4f}'
+    loan_cnt = f'{len(loan):6d}'
+    loan_avg = f'{statistics.mean(loan):9.4f}'
+    loan_std = f'{statistics.stdev(loan):9.4f}'
 
     # Set frame horizontal for this measure.
     bins = np.linspace(1, graphlimit, 60)
 
     plt.figure(figsize=figsize)
     plt.hist(
-            native, 
-            bins, 
+            native,
+            bins,
             alpha=alpha_native,
-            label=label_native,
+            label=label_native+
+            r'$(n='+native_cnt+', \mu='+native_avg+', \sigma='+native_std+')$',
             color=color_native
             )
     plt.hist(
-            borrowed, 
-            bins, 
-            alpha=alpha_borrowed,
-            label=label_borrowed,
-            color=color_borrowed
+            loan,
+            bins,
+            alpha=alpha_loan,
+            label=label_loan+
+            r'$(n='+loan_cnt+', \mu='+loan_avg+', \sigma='+loan_std+')$',
+            color=color_loan
             )
 
     plt.grid(axis='y', alpha=0.8)

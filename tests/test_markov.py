@@ -1,45 +1,47 @@
-import tabulate
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import sys
+sys.path.append('src')
+
 from mobor.data import Wordlist
 from mobor.markov import Markov
 from mobor.plot import plot_word_distributions
+import math
 
 wl = Wordlist.from_lexibank(
         'wold',
-        fields=['loan', 'borrowed'],
+        fields=['borrowed'],
         fieldfunctions={
             "borrowed": lambda x: (int(x[0])*-1+5)/4
             })
 
 print('loaded markov')
-wl.add_soundclass('sca', clts=False)
-print('added sound classes')
 
 mk = Markov(
-        wl, 
-        'English', 
-        ['concept', 'form', 'tokens', 'sca', 'borrowed', 'loan'],
-        dtypes = [str, list, list, list, float, bool],
-        post_order=1,
+        wl,
+        'English',
+        ['concept', 'form', 'formchars', 'tokens', 'sca', 'borrowed'],
+        dtypes = [str, str, str, str, str, float],
+        post_order=2,
         pre_order=0
         )
 mk.add_sequences(
-        [row['tokens'] for row in mk.now['dicts']])
-mk.train(normalize='laplace')
+        [row['formchars'] for row in mk.now['dicts']])
+mk.train(normalize='kneserney', smoothing=0.5)
 
-# retrieve distribution for borrowed words
-borrowed, unborrowed = [], []
+# retrieve distribution for loan words
+loan, native = [], []
 for row in mk.now['dicts']:
-    if row['loan']:
-        borrowed += [mk.entropy(row['tokens'])]
+    if row['borrowed']>=0.5:
+        loan += [mk.entropy(row['formchars'], base=math.e)]
     else:
-        unborrowed += [mk.entropy(row['tokens'])]
+        native += [mk.entropy(row['formchars'], base=math.e)]
 
-borrowed_avg = sum(borrowed)/len(borrowed)
-unborrowed_avg = sum(borrowed)/len(borrowed)
+plot_word_distributions(native, loan, filename='test.pdf',
+                    title="English language native and loan entropies",
+                    graphlimit=max([max(loan), max(native)])+1)
 
-# plot the distribution
-plot_word_distributions(borrowed, unborrowed, 'test.pdf', graphlimit=max([
-    max(borrowed), max(unborrowed)])+1)
+print('emitted graph to test.pdf')
 
 
 

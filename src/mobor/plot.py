@@ -10,7 +10,6 @@ def graph_word_distribution_entropies(
     language="unknown",
     title="title",
     graphlimit=5,
-    figurequal="",
 ):
     # entropies.
     # selector - which tokens to use for native versus loan.
@@ -70,9 +69,7 @@ def graph_word_distribution_entropies(
     plt.title(title)
 
     # Build file output and write
-    output_file = language + figurequal + ".pdf"
-    output_filepath = output_path / output_file
-    plt.savefig(output_filepath.as_posix(), dpi=600)
+    plt.savefig(output_path, dpi=600)
 
     plt.close()
 
@@ -98,8 +95,6 @@ def draw_dist(x, output_path, title="Distribution of Statistic"):
     plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
 
     # Build file output and write
-    output_file = title + ".pdf"
-    output_filepath = output_path / output_file
-    plt.savefig(output_filepath.as_posix(), dpi=600)
+    plt.savefig(output_path, dpi=600)
 
     plt.close()

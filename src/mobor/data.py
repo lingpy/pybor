@@ -3,7 +3,10 @@ Wrapper for handling data in lexibank packages.
 """
 
 # Import Python standard libraries
+import csv
+import datetime
 from importlib import import_module
+from pathlib import Path
 
 # Import MPI-SHH libraries
 import lingpy
@@ -11,6 +14,7 @@ from pyclts import CLTS
 
 # TODO: Load with pycldf and not lingpy?
 # TODO: use a different logger (either standard or clldutils)
+
 
 class Wordlist(lingpy.Wordlist):
     """
@@ -97,7 +101,10 @@ class Wordlist(lingpy.Wordlist):
             dtypes = [str for field in fields]
 
         subset = [
-        {field:dtype(cls[idx, field]) for field, dtype in zip(fields, dtypes)}
+            {
+                field: dtype(cls[idx, field])
+                for field, dtype in zip(fields, dtypes)
+            }
             for idx in cls
             if cls[idx, "doculect"] == language
         ]
@@ -111,11 +118,11 @@ def cleanform(word):
     # Does not solve problem of variants which would add words to table.
     import re
 
-    pnre = re.compile(r'\(\d+\)')
-    space = re.compile(r'\s+')
-    question = re.compile(r'[?¿]')
-    affix = re.compile(r'(^-)|(-$)')
-    optional = re.compile(r'_?\(-?\w+-?\)_?')
+    pnre = re.compile(r"\(\d+\)")
+    space = re.compile(r"\s+")
+    question = re.compile(r"[?¿]")
+    affix = re.compile(r"(^-)|(-$)")
+    optional = re.compile(r"_?\(-?\w+-?\)_?")
 
     try:
         word = word.strip().lower()
@@ -148,17 +155,72 @@ def segmentchars(form):
         print(f"*{form}*")
         return form
 
+
 # Standard function for loading data, designed for Lexibank WOLD mostly
 def load_data(dataset):
     # Load data
     wl = Wordlist.from_lexibank(
-            dataset,
-            fields=['borrowed'],
-            fieldfunctions={
-                "borrowed": lambda x: (int(x[0])*-1+5)/4
-                })
+        dataset,
+        fields=["borrowed"],
+        fieldfunctions={"borrowed": lambda x: (int(x[0]) * -1 + 5) / 4},
+    )
 
-    wl.add_soundclass('sca', clts=False)
+    wl.add_soundclass("sca", clts=False)
     wl.add_formchars()
 
     return wl
+
+
+# quick function for updating results
+# TODO: code properly, maybe in sqlite
+def update_results(parameters, results, filename):
+    # Extract fields from the new entry being passed
+    parameter_fields = list(parameters.keys())
+    result_fields = list(results.keys()) + ["timestamp"]
+
+    # Make sure all values are strings (as read from disk)
+    parameters = {key: str(value) for key, value in parameters.items()}
+    results = {key: str(value) for key, value in results.items()}
+
+    # Read results in disk, if available
+    if not Path(filename).exists():
+        entries = {}
+    else:
+        with open(filename) as tsvfile:
+            reader = csv.DictReader(tsvfile, delimiter="\t")
+            entries = {}
+            for entry in reader:
+                entry_parameters = {
+                    field: entry.get(field, None) for field in parameter_fields
+                }
+                entry_results = {
+                    field: entry.get(field, None) for field in result_fields
+                }
+
+                entry_key = tuple(
+                    sorted(entry_parameters.items(), key=lambda i: i[0])
+                )
+                entries[entry_key] = entry_results
+
+    # Add timestamp to `results`
+    results["timestamp"] = str(datetime.datetime.now())
+
+    # Update `entries` with the new item
+    new_entry_key = tuple(sorted(parameters.items(), key=lambda i: i[0]))
+    entries[new_entry_key] = results
+
+    # Write results to disk
+    with open(filename, "w") as tsvfile:
+        writer = csv.DictWriter(
+            tsvfile, delimiter="\t", fieldnames=parameter_fields + result_fields
+        )
+        writer.writeheader()
+
+        for entry_key, entry_results in entries.items():
+            # Make a copy of the results, making sure we don't change in place
+            row = entry_results.copy()
+
+            # Update row with info in the key and write
+            for item in entry_key:
+                row[item[0]] = item[1]
+            writer.writerow(row)

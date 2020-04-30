@@ -14,6 +14,7 @@ from clldutils.loglib import Logging
 import mobor
 import mobor.commands
 
+
 def main(args=None, catch_all=False, parsed_args=None, log=None):
     parser, subparsers = get_parser_and_subparsers(mobor.__name__)
 

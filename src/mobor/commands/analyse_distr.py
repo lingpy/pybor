@@ -6,14 +6,10 @@ Build results of a distribution analysis.
 import math
 from pathlib import Path
 
-import scipy
-import numpy as np
-import matplotlib.pyplot as plt
-
 import mobor.data
-from mobor.markov import Markov
-from mobor.markov import MarkovCharLM
 import mobor.plot
+import mobor.stats
+from mobor.markov import MarkovCharLM
 
 # TODO: add function for collect list of installed lexibank datasets
 
@@ -36,14 +32,16 @@ def register(parser):
     parser.add_argument(
         "--dataset",
         default="wold",
-        help="sets the Lexibank dataset for analysis (must have been installed beforehand)",
+        help="sets the Lexibank dataset for analysis (must have been "
+        "installed beforehand)",
         type=str,
     )
 
     parser.add_argument(
         "-n",
         default=1000,
-        help="sets the number of iterations (the larger, the better and the slower)",
+        help="sets the number of iterations (the larger, the better "
+        "and the slower)",
         type=int,
     )
 
@@ -56,13 +54,35 @@ def register(parser):
         choices=["t", "ks", "md"],
         default="ks",
         type=str,
-        help="sets the type of test (`t` for 2-sample student, `ks` for two sample Kolmogorov-Schmirnoff, `md` for mean difference)",
+        help="sets the type of test (`t` for 2-sample student, `ks` for "
+        "two sample Kolmogorov-Schmirnoff, `md` for mean difference)",
+    )
+
+    parser.add_argument(
+        "--method",
+        choices=["kni", "wbi", "lp", "ls", "mle"],
+        default="kni",
+        type=str,
+        help="sets the smoothing method to use ("
+        "`kni` is for interpolated Kneser-Ney, "
+        "`wbi` is for interpolated Witten-Bell, "
+        "`lp` is for Laplace, "
+        "`ls` is for Lidstone, "
+        "`mle` is for Maximum-Likelihood Estimation)",
+    )
+
+    parser.add_argument(
+        "--smoothing",
+        type=float,
+        default=0.5,
+        help='set the smoothing method value ("gamma")',
     )
 
     parser.add_argument(
         "-o",
         "--output",
-        help="sets the output directory (default to `output/` in main directory)",
+        help="sets the output directory (default to `output/` in "
+        "main directory)",
         type=str,
     )
 
@@ -90,14 +110,16 @@ def run(args):
 
     # Run analysis
     # TODO: decide on allowing not `logebase` from command line
-    # TODO: allow to decide smoothing method
     logebase = True
     mlm = analyze_word_distributions(
         tokens,
         selector,
         output_path,
+        sequence=args.sequence,
+        dataset=args.dataset,
         language=args.language,
-        model="KNI",
+        method=args.method,
+        smoothing=args.smoothing,
         order=args.order,
         test=args.test,
         n=args.n,
@@ -109,9 +131,11 @@ def analyze_word_distributions(
     tokens,
     selector,
     output_path,
+    sequence="",
+    dataset="",
     language="unknown",
-    model="KNI",
     order=3,
+    method="kni",
     smoothing=0.5,
     test="ks",
     n=1000,
@@ -129,7 +153,8 @@ def analyze_word_distributions(
     # n - number of iterations of randomization test.
 
     # Build the Markov model
-    mlm = MarkovCharLM(tokens, model=model, order=order, smoothing=smoothing)
+    # TODO: decide on `model` <-> `method` terminology
+    mlm = MarkovCharLM(tokens, model=method, order=order, smoothing=smoothing)
 
     # Compute entropies, using logebase if requested
     entropies = mlm.analyze_training()
@@ -149,80 +174,52 @@ def analyze_word_distributions(
         if select == False
     ]
 
+    # Perform randomization tests, plot distribution and write data
+    (
+        stat_ref,
+        prob,
+        plot_stats,
+    ) = mobor.stats.calculate_randomization_test_between_distributions(
+        entropies, selector, test, n
+    )
+
+    print(f"prob ({test} stat >= {stat_ref[0]:.5f}) = {prob:.5f}")
+
+    filename = f"distribution.{language}-{sequence}-{order}-{method}-{smoothing}-{test}-{n}.pdf"
+    dist_plot = output_path / filename
+    mobor.plot.draw_dist(plot_stats, dist_plot.as_posix(), title=f"test {test}")
+
+    # Plot entropies
+    filename = (
+        f"entropies.{language}-{sequence}-{order}-{method}-{smoothing}.pdf"
+    )
+    entropies_plot = output_path / filename
     mobor.plot.graph_word_distribution_entropies(
         native_entropies,
         loan_entropies,
-        output_path,
+        entropies_plot.as_posix(),
         language=language,
-        title=language
-        + " native and loan entropy distribution - undifferentiated fit",
+        title=f"{language} native and loan entropy distribution - undifferentiated fit",
         graphlimit=5,
-        figurequal="all-basis-native-loan-entropies",
     )
 
-    # Perform randomization tests.
-    # Efficient since just permutation of selector for constructing alternate test results.
-    stat_ref, prob, plot_stats = calculate_randomization_test_between_distributions(
-        entropies, selector, test, n)
-    print(f"prob ({test} stat >= {stat_ref[0]:.5f}) = {prob:.5f}")
-    mobor.plot.draw_dist(plot_stats, output_path, title=f"test {test}")
-
-    return mlm
-
-
-Statistic_Name = {
-    "t": "Two Sample Student's t -- Unequal Variances",
-    "ks": "Two Sample Kolmogorov Schmirnoff",
-    "md": "Mean Difference Between Samples",
-}
-
-
-#### statistics
-def calculate_test_statistic_between_distributions(x, y, test="ks"):
-    # Returns test statistic.
-    if test == "t":
-        statistic = scipy.stats.ttest_ind(
-            x, y, equal_var=False, nan_policy="propagate"
-        )
-    elif test == "ks":  # test == 'ks'
-        statistic = scipy.stats.ks_2samp(x, y)
-    elif test == "md":
-        statistic = MeanDif(
-            dif=np.mean(x) - np.mean(y), x=np.mean(x), y=np.mean(y),
-        )
-    else:
-        statistic = None
-    return statistic
-
-
-def calculate_randomization_test_between_distributions(
-    values, selector, test, n
-):
-    # Calculate test statistic value.
-    # Repeatedly permute selector and calculate randomized test statistic.
-    # Plot empirical distribution of test statistic.
-    # Report empirical probability of test result.
-
-    x = [value for value, select in zip(values, selector) if select == True]
-    y = [value for value, select in zip(values, selector) if select == False]
-
-    stat_ref = calculate_test_statistic_between_distributions(x, y, test=test)
-    # print(f'{test} statistic =', stat_ref[0])
-
-    stats = [0] * n
-    for i in range(n):
-        selector = np.random.permutation(selector)
-        x = [value for value, select in zip(values, selector) if select == True]
-        y = [
-            value for value, select in zip(values, selector) if select == False
-        ]
-
-        test_stat = calculate_test_statistic_between_distributions(
-            x, y, test=test
-        )
-        stats[i] = test_stat[0]
-
-    count = sum([val < stat_ref[0] for val in stats])
-    prob = (count + 0.5) / (len(stats) + 1)
-
-    return stat_ref, 1 - prob, stats
+    # Update general results in disk
+    result_file = output_path / "analysis_distribution.tsv"
+    parameters = {
+        "language": language,
+        "sequence": sequence,
+        "dataset": dataset,
+        "order": order,
+        "method": method,
+        "smoothing": smoothing,
+        "test": test,
+        "n": n,
+        "logebase": logebase,
+    }
+    results = {
+        "stat_ref": "%.5f" % stat_ref[0],
+        "prob": "%.5f" % prob,
+        "dist_file": dist_plot.name,
+        "entropies_plot": entropies_plot.name,
+    }
+    mobor.data.update_results(parameters, results, result_file.as_posix())

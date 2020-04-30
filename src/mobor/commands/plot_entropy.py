@@ -1,6 +1,7 @@
 """
 Plot the entropy of words and contrast them.
 """
+
 from mobor.data import Wordlist
 from mobor.markov import Markov
 from mobor.plot import plot_word_distributions
@@ -9,25 +10,34 @@ def register(parser):
     parser.add_argument(
             '--language',
             default='English',
-            help='Select your language',
+            help='sets the ID of the language to be analyzed',
             type=str
         )
+
     parser.add_argument(
             '--sequence',
             default='formchars',
-            help='select the sequence type you want',
+            help='sets the column for the analysis',
             type=str)
 
     parser.add_argument(
             '--file',
             default='english-test.pdf',
-            help='select the filename for plotting',
+            help='sets the output file',
             type=str)
 
+    parser.add_argument(
+        '--dataset',
+        default="wold",
+        help="sets the Lexibank dataset for analysis (must have been installed beforehand)",
+        type=str
+    )
+
 def run(args):
+
+    # Load data
     wl = Wordlist.from_lexibank(
-            'wold',
-            #fields=['loan', 'borrowed'],
+            args.dataset,
             fields=['borrowed'],
             fieldfunctions={
                 "borrowed": lambda x: (int(x[0])*-1+5)/4
@@ -37,6 +47,7 @@ def run(args):
     #wl.add_soundclass('sca', clts=False)
     #args.log.info('added sound classes')
 
+    # Build the Markov model, add sequences and train it
     mk = Markov(
             wl,
             args.language,
@@ -65,6 +76,3 @@ def run(args):
     # plot the distribution
     plot_word_distributions(native, loan, args.file,
         graphlimit=max([max(loan), max(native)])+1)
-
-
-

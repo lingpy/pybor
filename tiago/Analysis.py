@@ -63,7 +63,6 @@ print("============ 6")
 _ = k_fold_language_word_discrimination_dual_basis('English', form='formchars', smoothing=0.5, k_fold=10)
 _ = k_fold_language_word_discrimination_dual_basis('English', form='segments', smoothing=0.5, k_fold=10)
 _ = k_fold_language_word_discrimination_dual_basis('English', form='scas', smoothing=0.5, k_fold=10)
-input(">>>>>")
 
 # Overfitting of Markov model
 print("============ 7")

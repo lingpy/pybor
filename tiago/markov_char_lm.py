@@ -127,16 +127,9 @@ class MarkovCharLM:
             list(ngrams(sounds, self._order)) for sounds in padded_words
         ]
 
-        print("ngrams", len(sound_ngrams_lst), len(sound_ngrams_lst[0]), sound_ngrams_lst[:3])
-
         entropy = [
             self._lm.entropy(sound_ngrams) for sound_ngrams in sound_ngrams_lst
         ]
-
-        print(len(entropy), entropy[:3])
-
-        exit()
-
         return entropy
 
     # Allow to reset order; but necessarily retrain language model.

@@ -92,23 +92,17 @@ class Wordlist(lingpy.Wordlist):
         Extract information for a given language.
         """
 
+        # Default types to string
         if not dtypes:
             dtypes = [str for field in fields]
-        # Add sound class.
-        if "tokens" in fields:
-            cls.add_soundclass(model="sca")
-        if "form" in fields:
-            cls.add_formchars()
 
-        idxs = cls.get_list(col=language, flat=True)
-        out = []
-        for idx in idxs:
-            row = [idx]
-            for field, dtype in zip(fields, dtypes):
-                row += [dtype(cls[idx, field])]
+        subset = [
+        {field:dtype(cls[idx, field]) for field, dtype in zip(fields, dtypes)}
+            for idx in cls
+            if cls[idx, "doculect"] == language
+        ]
 
-            out += [row]
-        return out
+        return subset
 
 
 # Global functions instead of within class.
@@ -153,3 +147,18 @@ def segmentchars(form):
         print("Exception", exc)
         print(f"*{form}*")
         return form
+
+# Standard function for loading data, designed for Lexibank WOLD mostly
+def load_data(dataset):
+    # Load data
+    wl = Wordlist.from_lexibank(
+            dataset,
+            fields=['borrowed'],
+            fieldfunctions={
+                "borrowed": lambda x: (int(x[0])*-1+5)/4
+                })
+
+    wl.add_soundclass('sca', clts=False)
+    wl.add_formchars()
+
+    return wl

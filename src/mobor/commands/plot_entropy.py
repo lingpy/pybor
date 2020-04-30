@@ -4,7 +4,7 @@ Plot the entropy of words and contrast them.
 
 from mobor.data import Wordlist
 from mobor.markov import Markov
-from mobor.plot import plot_word_distributions
+#from mobor.plot import plot_word_distributions
 
 def register(parser):
     parser.add_argument(
@@ -74,5 +74,5 @@ def run(args):
     #unborrowed_avg = sum(borrowed)/len(borrowed)
 
     # plot the distribution
-    plot_word_distributions(native, loan, args.file,
-        graphlimit=max([max(loan), max(native)])+1)
+#    plot_word_distributions(native, loan, args.file,
+#        graphlimit=max([max(loan), max(native)])+1)

@@ -1,19 +1,37 @@
-import contextlib
-import mobor
-from clldutils.clilib import ParserError, get_parser_and_subparsers, register_subcommands
-from clldutils.loglib import Logging
+# Import Python standard libraries
 import argparse
+import contextlib
+import sys
+
+# Import MPI-SHH libraries
+from clldutils.clilib import (
+    ParserError,
+    get_parser_and_subparsers,
+    register_subcommands,
+)
+from clldutils.loglib import Logging
+
+# Import package
+import mobor
 import mobor.commands
+
 
 def main(args=None, catch_all=False, parsed_args=None, log=None):
     parser, subparsers = get_parser_and_subparsers(mobor.__name__)
 
     # We add a "hidden" option to turn-off config file reading in tests:
-    parser.add_argument('--no-config', default=False, action='store_true', help=argparse.SUPPRESS)
+    parser.add_argument(
+        "--no-config",
+        default=False,
+        action="store_true",
+        help=argparse.SUPPRESS,
+    )
 
     # Discover available commands:
     # Commands are identified by (<entry point name>).<module name>
-    register_subcommands(subparsers, mobor.commands, entry_point='mobor.commands')
+    register_subcommands(
+        subparsers, mobor.commands, entry_point="mobor.commands"
+    )
 
     args = parsed_args or parser.parse_args(args=args)
     if not hasattr(args, "main"):
@@ -31,11 +49,13 @@ def main(args=None, catch_all=False, parsed_args=None, log=None):
             return 0
         except ParserError as e:
             print(e)
-            return main([args._command, '-h'])
+            return main([args._command, "-h"])
         except Exception as e:  # pragma: no cover
             if catch_all:
                 print(e)
                 return 1
             raise
-if __name__ == '__main__':  # pragma: no cover
+
+
+if __name__ == "__main__":  # pragma: no cover
     sys.exit(main() or 0)

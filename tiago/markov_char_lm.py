@@ -1,22 +1,59 @@
-# Import 3rd party libraries
-import numpy as np
-
-# Import NLTK
+import nltk
+import nltk.lm.preprocessing as pp
+import nltk.lm as lm
+import nltk.util as ut
+from nltk.util import ngrams
 from nltk.lm import Vocabulary
 from nltk.lm.preprocessing import pad_both_ends
-from nltk.util import ngrams
-import nltk.lm as lm
-import nltk.lm.preprocessing as pp
+
+# build a class inside the object, so we keep John's call signature for
+# the time being
+from lingpy.sequence.ngrams import NgramModel, get_n_ngrams
+
+class MarkovCharLM_LINGPY:
+    def __init__(self, tokens, names=None, model="KNI", order=2, smoothing=0.5):
+        self._tokens = [word.split() for word in tokens]
+        self._names = names
+        self._order = order
+        self._entropies = None
+        self._ref_limit = None
+
+        # Build internal object
+        self._object = NgramModel(pre_order=self._order, post_order=self._order,
+            sequences=self._tokens)
+
+        # Train according to the requested model
+        if model == "KNI":
+            print("WARNING: KNI not implemented, defaulting to Lidstone")
+            self._object.train(method="lidstone", gamma=smoothing)
+        elif model == "WBI":
+            print("WARNING: KNI not implemented, defaulting to Lidstone")
+            self._object.train(method="lidstone", gamma=smoothing)
+        elif model == "LP":
+            self._object.train(method="laplace")
+        elif model == "LS":
+            self._object.train(method="lidstone", gamma=smoothing)
+        else:
+            self._object.train(method="mle")
+
+    # General function for analysis of training tokens.
+    def analyze_training(self):
+        self._entropies = self.analyze_tokens(self._tokens)
+        return self._entropies
 
 
-def _splitter(item):
-    if isinstance(item, (list, tuple)):
-        return item
-    elif " " in item:
-        return item.split(" ")
+    def analyze_tokens(self, tokens):
+        # Turn into list if necessary
+        words = [word.split() if isinstance(word, str) else word for word in tokens]
 
-    return [char for char in item]
+        ngrams = [list(get_n_ngrams(word, self._order)) for word in words]
+        print("ngrams", len(ngrams), len(ngrams[0]), ngrams[:3])
+        entropy = [self._object.entropy(s) for s in ngrams]
 
+        print(len(entropy), entropy[:3])
+        exit()
+
+        return entropy
 
 class MarkovCharLM:
     # tokens and names are pandas series.
@@ -30,28 +67,26 @@ class MarkovCharLM:
         self._entropies = None
         self._ref_limit = None
 
-        # If tokens is a string with spaces, we assume they are separators
-        # and split accordingly; otherwise, we take each character of the
-        # string as a token. If it is a list or tuple, we don't touch it.
-        words = [_splitter(token) for token in self._tokens]
+        tokens = [t for t in self._tokens]
+        words = [word.split() for word in tokens]
 
         # Must we use padding on both ends?
-        train, vocab = pp.padded_everygram_pipeline(self._order, words)
+        train, vocab = pp.padded_everygram_pipeline(self._order, words)  #
 
         # Define the vocabulary.  Need to allow for out of vocabulary, thus cutoff=2.
         vocab = Vocabulary(vocab, unk_cutoff=2)
 
         # Define the language model.
         self._lm = None
-        if model == "kni":
+        if model == "KNI":
             self._lm = lm.KneserNeyInterpolated(
                 order, vocabulary=vocab, discount=smoothing
             )  # default discount = 0.1
-        elif model == "wbi":
+        elif model == "WBI":
             self._lm = lm.WittenBellInterpolated(order, vocabulary=vocab)
-        elif model == "lp":  # Laplace
+        elif model == "LP":  # Laplace
             self._lm = lm.Laplace(order=order, vocabulary=vocab)
-        elif model == "ls":  # Lidstone
+        elif model == "LS":  # Lidstone
             self._lm = lm.Lidstone(
                 order=order, gamma=smoothing, vocabulary=vocab
             )
@@ -73,17 +108,18 @@ class MarkovCharLM:
         self._valentropies = self.analyze_tokens(self._valtokens)
         return self._valentropies
 
-    def analyze_tokens(self, sequences):
+    def analyze_tokens(self, tokens):
+        words = [word.split() for word in tokens]
         ### verified by experiment - use order for left and order 2 for right.
         padded_words = [
             list(
                 pad_both_ends(
-                    pad_both_ends(seq, pad_right=False, n=self._order),
+                    pad_both_ends(word, pad_right=False, n=self._order),
                     pad_left=False,
                     n=2,
                 )
             )
-            for seq in sequences
+            for word in words
         ]
 
         # Convert lists of padded words to lists of sound ngrams.

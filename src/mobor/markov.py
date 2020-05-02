@@ -21,7 +21,7 @@ def _splitter(item):
 class MarkovCharLM:
     # tokens and names are pandas series.
     # maybe later version would permit Python list or Numpy array?
-    def __init__(self, tokens, names=None, model="KNI", order=2, smoothing=0.5):
+    def __init__(self, tokens, names=None, model="kni", order=2, smoothing=0.5):
         # smoothing is either discount for KNI or gamma for Lidstone.
         # default discount in KNI is 0.1 in NLTK while default gamma in Lidstone is 0.2
         self._tokens = tokens

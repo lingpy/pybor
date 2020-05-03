@@ -116,9 +116,8 @@ def run(args):
 
     # Subset data and select only borrowed items (suited for WOLD)
     # TODO: replace hardcoded selector, allow no selector
-    # TODO: retain current analysis useing true for native and false for loan
-    # TODO: could include criterion as argument to permit other than 0.375
-    # TODO: could allow for lambda as well
+    # could include criterion as argument to permit other than 0.375
+    # could allow for lambda function as well
     subset = wordlist.get_language(
         args.language, [args.sequence, "borrowed"], dtypes=[list, float]
     )
@@ -235,16 +234,14 @@ def analyze_word_distributions(
         f"entropies.{language}-{sequence}-{order}-{method}-{smoothing}.pdf"
     )
 
-    if graphlimit==None: gl=max([max(loan_entropies), max(native_entropies)])+1
-    else: gl=graphlimit
-
+    graphlimit = graphlimit or max([max(loan_entropies), max(native_entropies)])+1
     entropies_plot = output_path / filename
     mobor.plot.graph_word_distribution_entropies(
         native_entropies,
         loan_entropies,
         entropies_plot.as_posix(),
         title=f"{language} native and loan entropy distribution - undifferentiated fit",
-        graphlimit=gl,
+        graphlimit=graphlimit,
     )
 
     # Update general results in disk
@@ -325,16 +322,14 @@ def analyze_word_distributions_native_basis(
         f"entropies.{language}-{sequence}-{order}-{method}-{smoothing}-{'native'}.pdf"
     )
 
-    if graphlimit==None: gl= max([max(loan_entropies), max(native_entropies)])+1
-    else: gl=graphlimit
-
+    graphlimit = graphlimit or max([max(loan_entropies), max(native_entropies)])+1
     entropies_plot = output_path / filename
     mobor.plot.graph_word_distribution_entropies(
         native_entropies,
         loan_entropies,
         entropies_plot.as_posix(),
         title=f"{language} native and loan entropy distribution - native basis fit",
-        graphlimit=gl,
+        graphlimit=graphlimit,
     )
 
 

@@ -7,7 +7,6 @@ def graph_word_distribution_entropies(
     native_entropies,
     loan_entropies,
     output_path,
-    language="unknown",
     title="title",
     graphlimit=5,
 ):

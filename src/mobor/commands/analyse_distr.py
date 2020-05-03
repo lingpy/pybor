@@ -36,6 +36,21 @@ def register(parser):
         "installed beforehand)",
         type=str,
     )
+    # TODO: should be allow for loan word basis as well?
+    parser.add_argument(
+        "--basis",
+        default="all",
+        help="whether to use 'all', 'native' only or 'loan' only as "
+        "training set",
+        type=str,
+    )
+
+    parser.add_argument(
+        "--graphlimit",
+        default=None,
+        help="upper limit to set on entropy distribution graph ",
+        type=float,
+    )
 
     parser.add_argument(
         "-n",
@@ -101,41 +116,66 @@ def run(args):
 
     # Subset data and select only borrowed items (suited for WOLD)
     # TODO: replace hardcoded selector, allow no selector
+    # could include criterion as argument to permit other than 0.375
+    # could allow for lambda function as well
     subset = wordlist.get_language(
         args.language, [args.sequence, "borrowed"], dtypes=[list, float]
     )
     tokens = [row[args.sequence] for row in subset]
     selector = [row["borrowed"] < 0.375 for row in subset]
 
-    # Run analysis
-    # TODO: decide on allowing not `logebase` from command line
-    logebase = True
-    analyze_word_distributions(
-        tokens,
-        selector,
-        output_path,
-        sequence=args.sequence,
-        dataset=args.dataset,
-        language=args.language,
-        method=args.method,
-        smoothing=args.smoothing,
-        order=args.order,
-        test=args.test,
-        n=args.n,
-        logebase=logebase,
-    )
+    if args.basis == 'all':
+        # Run analysis
+        # TODO: decide on allowing not `logebase` from command line
+        logebase = True
+        analyze_word_distributions(
+            tokens,
+            selector,
+            output_path,
+            sequence=args.sequence,
+            dataset=args.dataset,
+            language=args.language,
+            method=args.method,
+            smoothing=args.smoothing,
+            order=args.order,
+            graphlimit=args.graphlimit,
+            test=args.test,
+            n=args.n,
+            logebase=logebase,
+        )
+    else:
+        # Run analysis
+        # TODO: decide on whether to allow for loan word basis as well.
+        logebase = True
+        analyze_word_distributions_native_basis(
+            tokens,
+            selector,
+            output_path,
+            sequence=args.sequence,
+            dataset=args.dataset,
+            language=args.language,
+            method=args.method,
+            smoothing=args.smoothing,
+            order=args.order,
+            graphlimit=args.graphlimit,
+            test=args.test,
+            n=args.n,
+            logebase=logebase,
+        )
+
 
 
 def analyze_word_distributions(
     tokens,
     selector,
-    output_path,
-    sequence="",
+    output_path="",
+    sequence="formchars",
     dataset="",
     language="unknown",
-    order=3,
     method="kni",
     smoothing=0.5,
+    order=3,
+    graphlimit=None,
     test="ks",
     n=1000,
     logebase=True,
@@ -182,24 +222,26 @@ def analyze_word_distributions(
         entropies, selector, test, n
     )
 
-    print(f"prob ({test} stat >= {stat_ref[0]:.5f}) = {prob:.5f}")
+    print(f"prob ({test} stat >= {stat_ref:.5f}) = {prob:.5f}")
 
     filename = f"distribution.{language}-{sequence}-{order}-{method}-{smoothing}-{test}-{n}.pdf"
     dist_plot = output_path / filename
-    mobor.plot.draw_dist(plot_stats, dist_plot.as_posix(), title=f"test {test}")
+    mobor.plot.draw_dist(plot_stats, dist_plot.as_posix(),
+                title=f"{language}-{sequence}-test {test}-{'native basis'}")
 
     # Plot entropies
     filename = (
         f"entropies.{language}-{sequence}-{order}-{method}-{smoothing}.pdf"
     )
+
+    graphlimit = graphlimit or max([max(loan_entropies), max(native_entropies)])+1
     entropies_plot = output_path / filename
     mobor.plot.graph_word_distribution_entropies(
         native_entropies,
         loan_entropies,
         entropies_plot.as_posix(),
-        language=language,
         title=f"{language} native and loan entropy distribution - undifferentiated fit",
-        graphlimit=5,
+        graphlimit=graphlimit,
     )
 
     # Update general results in disk
@@ -214,9 +256,121 @@ def analyze_word_distributions(
         "test": test,
         "n": n,
         "logebase": logebase,
+        "basis": "all",
     }
     results = {
-        "stat_ref": "%.5f" % stat_ref[0],
+        "stat_ref": "%.5f" % stat_ref,
+        "prob": "%.5f" % prob,
+        "dist_file": dist_plot.name,
+        "entropies_plot": entropies_plot.name,
+    }
+    mobor.data.update_results(parameters, results, result_file.as_posix())
+
+
+def analyze_word_distributions_native_basis(
+    tokens,
+    selector,
+    output_path="",
+    sequence="formchars",
+    dataset="",
+    language="unknown",
+    method="kni",
+    smoothing=0.5,
+    order=3,
+    graphlimit=None,
+    test="ks",
+    n=200,  # low # repetitions, but each one is expensive.
+    logebase=True,
+):
+
+    # tokens - in space segmented form.
+    # selector - which tokens to use for indicator of likely native tokens.
+    # output_path - directory to put images.
+    # sequence - sequence analyzed (form, segments, sound classes).
+    # dataset - only wold supported for now.
+    # language - name of language for identification in figures and reports.
+    # method - model estimation method - default is kni.
+    # order - model order - default is 3 grams which gives 2nd order dependency.
+    # smoothing - Kneser Ney default of 0.5 is appropriate for this study.
+    # test - test statistic for training versus val difference.
+    # n - number of iterations of randomization test.
+    # logebase - natural log basis (true) or log 2 basis (false).
+
+    # Build the Markov model
+    # TODO: decide on `model` <-> `method` terminology
+    native_tokens = [
+        token for token, select in zip(tokens, selector) if select == True
+    ]
+    loan_tokens = [
+        token for token, select in zip(tokens, selector) if select == False
+    ]
+
+    mlm = MarkovCharLM(
+        native_tokens, model=method, order=order, smoothing=smoothing
+    )
+    native_entropies = mlm.analyze_training()
+    loan_entropies = mlm.analyze_tokens(loan_tokens)
+
+    if logebase:
+        log2ofe = math.log2(math.e)
+        native_entropies = [entropy / log2ofe for entropy in native_entropies]
+        loan_entropies = [entropy / log2ofe for entropy in loan_entropies]
+
+    # Plot distribution, perform randomization tests, and write data
+    # Plot entropies
+    filename = (
+        f"entropies.{language}-{sequence}-{order}-{method}-{smoothing}-{'native'}.pdf"
+    )
+
+    graphlimit = graphlimit or max([max(loan_entropies), max(native_entropies)])+1
+    entropies_plot = output_path / filename
+    mobor.plot.graph_word_distribution_entropies(
+        native_entropies,
+        loan_entropies,
+        entropies_plot.as_posix(),
+        title=f"{language} native and loan entropy distribution - native basis fit",
+        graphlimit=graphlimit,
+    )
+
+
+    # Perform randomization tests
+    (
+        stat_ref,
+        prob,
+        plot_stats,
+    ) = mobor.stats.calculate_differentiated_randomization_test_between_distributions(
+            tokens=tokens,
+            selector=selector,
+            order=order,
+            method=method,
+            smoothing=smoothing,
+            test=test,
+            n=n,
+            )
+
+    print(f"prob ({test} stat >= {stat_ref:.5f}) = {prob:.5f}")
+
+    filename = f"distribution.{language}-{sequence}-{order}-{method}-{smoothing}-{test}-{n}-{'native'}.pdf"
+    dist_plot = output_path / filename
+    mobor.plot.draw_dist(plot_stats, dist_plot.as_posix(),
+                title=f"{language}-{sequence}-test {test}-{'native basis'}")
+
+    # Update general results in disk
+    result_file = output_path / "analysis_distribution.tsv"
+    parameters = {
+        "language": language,
+        "sequence": sequence,
+        "dataset": dataset,
+        "order": order,
+        "method": method,
+        "smoothing": smoothing,
+        "test": test,
+        "n": n,
+        "logebase": logebase,
+        "basis": "native",
+    }
+    results = {
+        "stat_ref": "%.5f" % stat_ref,
         "prob": "%.5f" % prob,
         "dist_file": dist_plot.name,
         "entropies_plot": entropies_plot.name,

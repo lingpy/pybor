@@ -49,7 +49,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 from mobor import markov
-from mobor import util_fns
+import mobor.util_fns as util_fns
 
 
 def fit_native_loan_models(
@@ -124,3 +124,58 @@ def detect_native_loan_dual_basis(
     )
     return metrics
 
+
+## Native model approach
+
+def fit_native_model(
+    tokens=None, ground=None, method="kni", order=3, smoothing=0.5, p=0.995
+):
+    if ground is None:
+        return None  # Must have ground to fit.
+
+    tokens_native = [
+        token for token, select in zip(tokens, ground) if select == True
+    ]
+    native_model = markov.MarkovCharLM(
+        tokens_native, model=method, order=order, smoothing=smoothing
+    )
+    # Calculate empirical distribution limit of native only entropies.
+    native_entropies = native_model.analyze_tokens(tokens_native)
+    ref_limit = util_fns.calculate_empirical_ref_limit(native_entropies, frac=p)
+    # Then test  versus all entropies.
+    trainentropies = native_model.analyze_tokens(tokens)
+    forecast = [e < ref_limit for e in trainentropies]
+    print()
+    print("* TRAIN RESULTS *")
+    util_fns.report_metrics(ground, forecast)
+
+    return native_model, ref_limit
+
+
+def detect_native_basis(
+        tokens=None,
+        borrowedscore=None,
+        method='kni',
+        smoothing=0.5,
+        order=3,
+        trainfrac=0.8,
+        p=0.995,
+):
+
+    ground = np.array(borrowedscore) < 0.5  # native versus loan
+    train_idx, val_idx = train_test_split(range(len(tokens)), test_size=1-trainfrac)
+    train_tokens = np.array(tokens)[train_idx]
+    val_tokens = np.array(tokens)[val_idx]
+    train_ground = np.array(ground)[train_idx]
+    val_ground = np.array(ground)[val_idx]
+
+    native_model, ref_limit = fit_native_model(train_tokens, train_ground,
+                    method=method, order=order, smoothing=smoothing, p=p)
+
+    # Evaluate on test set.
+    val_entropies = native_model.analyze_tokens(val_tokens)
+    forecast = [e < ref_limit for e in val_entropies]
+    print()
+    print("* TEST RESULTS *")
+    metrics = util_fns.report_metrics(val_ground, forecast)
+    return metrics

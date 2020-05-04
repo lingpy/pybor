@@ -35,12 +35,11 @@ def register(parser):
 
     parser.add_argument(
         "--basis",
-        default="all",
+        default="native-loan",
         help="whether to use 'native' only or 'native-loan' as "
         "training set",
         type=str,
     )
-
 
     parser.add_argument(
         "--order", default=3, help="sets the ngram order", type=int
@@ -71,6 +70,13 @@ def register(parser):
         type=float,
         default=0.8,
         help='set the training fraction',
+    )
+
+    parser.add_argument(
+        "-p",
+        type=float,
+        default=0.995,
+        help='set the empirical probability for critical value from training entropies',
     )
 
     parser.add_argument(
@@ -105,14 +111,27 @@ def run(args):
     tokens = [row[args.sequence] for row in subset]
     borrowedscore = [row["borrowed"] for row in subset]
 
-    if args.basis == 'native':
+    if args.basis == 'native-loan':
+        print('native loan basis')
         # Run analysis
         mobor.detect_borrowing_ngram.detect_native_loan_dual_basis(
             tokens,
             borrowedscore,
             output_path,
-            method=args.method,
+            #method=args.method,
             smoothing=args.smoothing,
             order=args.order,
             trainfrac=args.trainfrac
+        )
+    elif args.basis == 'native':
+        print('native basis')
+        mobor.detect_borrowing_ngram.detect_native_basis(
+            tokens,
+            borrowedscore,
+            output_path,
+            #method=args.method,
+            smoothing=args.smoothing,
+            order=args.order,
+            trainfrac=args.trainfrac,
+            p=args.p,
         )

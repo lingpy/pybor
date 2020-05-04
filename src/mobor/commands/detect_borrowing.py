@@ -6,12 +6,9 @@ Build results of a distribution analysis.
 from pathlib import Path
 
 import mobor.data
-import mobor.plot
-import mobor.stats
-import mobor.analyse_distr_ngram
+import mobor.detect_borrowing_ngram
 
 # TODO: add function for collect list of installed lexibank datasets
-
 
 def register(parser):
     parser.add_argument(
@@ -35,41 +32,18 @@ def register(parser):
         "installed beforehand)",
         type=str,
     )
-    # TODO: should be allow for loan word basis as well?
+
     parser.add_argument(
         "--basis",
         default="all",
-        help="whether to use 'all', 'native' only or 'loan' only as "
+        help="whether to use 'native' only or 'native-loan' as "
         "training set",
         type=str,
     )
 
-    parser.add_argument(
-        "--graphlimit",
-        default=None,
-        help="upper limit to set on entropy distribution graph ",
-        type=float,
-    )
-
-    parser.add_argument(
-        "-n",
-        default=1000,
-        help="sets the number of iterations (the larger, the better "
-        "and the slower)",
-        type=int,
-    )
 
     parser.add_argument(
         "--order", default=3, help="sets the ngram order", type=int
-    )
-
-    parser.add_argument(
-        "--test",
-        choices=["t", "ks", "md"],
-        default="ks",
-        type=str,
-        help="sets the type of test (`t` for 2-sample student, `ks` for "
-        "two sample Kolmogorov-Schmirnoff, `md` for mean difference)",
     )
 
     parser.add_argument(
@@ -90,6 +64,13 @@ def register(parser):
         type=float,
         default=0.5,
         help='set the smoothing method value ("gamma")',
+    )
+
+    parser.add_argument(
+        "--trainfrac",
+        type=float,
+        default=0.8,
+        help='set the training fraction',
     )
 
     parser.add_argument(
@@ -122,44 +103,16 @@ def run(args):
         args.language, [args.sequence, "borrowed"], dtypes=[list, float]
     )
     tokens = [row[args.sequence] for row in subset]
-    selector = [row["borrowed"] < 0.5 for row in subset]
+    borrowedscore = [row["borrowed"] for row in subset]
 
-    if args.basis == 'all':
+    if args.basis == 'native':
         # Run analysis
-        # TODO: decide on allowing not `logebase` from command line
-        logebase = True
-        mobor.analyse_distr_ngram.analyze_word_distributions(
+        mobor.detect_borrowing_ngram.detect_native_loan_dual_basis(
             tokens,
-            selector,
+            borrowedscore,
             output_path,
-            sequence=args.sequence,
-            dataset=args.dataset,
-            language=args.language,
             method=args.method,
             smoothing=args.smoothing,
             order=args.order,
-            graphlimit=args.graphlimit,
-            test=args.test,
-            n=args.n,
-            logebase=logebase,
+            trainfrac=args.trainfrac
         )
-    else:
-        # Run analysis
-        # TODO: decide on whether to allow for loan word basis as well.
-        logebase = True
-        mobor.analyse_distr_ngram.analyze_word_distributions_native_basis(
-            tokens,
-            selector,
-            output_path,
-            sequence=args.sequence,
-            dataset=args.dataset,
-            language=args.language,
-            method=args.method,
-            smoothing=args.smoothing,
-            order=args.order,
-            graphlimit=args.graphlimit,
-            test=args.test,
-            n=args.n,
-            logebase=logebase,
-        )
-

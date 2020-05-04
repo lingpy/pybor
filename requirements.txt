@@ -1,0 +1,7 @@
+nltk
+cldfbench
+pyclts
+lingpy
+matplotlib
+numpy
+scipy

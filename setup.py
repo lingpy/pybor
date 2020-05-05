@@ -35,7 +35,3 @@ setup(
         author_email='list@shh.mpg.de',
         keywords='borrowing, language contact, sequence comparison'
         )
-<<<<<<< HEAD
-
-=======
->>>>>>> 80a062bc8213286c1fe6fb0d0293682bb748dbb0

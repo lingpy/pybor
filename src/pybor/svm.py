@@ -55,4 +55,12 @@ class BagOfSounds(object):
                 features += [0]
         return self.clf.predict([features])
 
+    def predict_data(self, data):
+        """
+        Predict for a range of words.
+        """
+        out = []
+        for idx, word in data:
+            out += [[idx, word, self.predict(word)]]
+        return out
 

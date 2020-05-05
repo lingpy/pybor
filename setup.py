@@ -1,4 +1,5 @@
 import pathlib
+import codecs
 from setuptools import setup, find_packages, Extension
 
 # setup package name etc as a default
@@ -24,7 +25,7 @@ setup(
         zip_safe=False,
         license="GPL",
         include_package_data=True,
-        install_requires=['cldfbench', 'pyclts', 'lingpy', 'matplotlib'],
+        install_requires=['cldfbench', 'pyclts', 'sklearn'],
         url='https://github.com/lingpy/monolingual-borrowing-detection/',
         long_description=codecs.open('README.md', 'r', 'utf-8').read(),
         long_description_content_type='text/markdown',

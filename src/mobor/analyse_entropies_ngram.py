@@ -1,10 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-Build results of a distribution analysis.
+Created on Mon May  4 13:05:45 2020
+
+@author: johnmiller
 """
 
 # Import Python standard libraries
 import math
-from pathlib import Path
+import numpy as np
+import scipy
 
 import mobor.data
 import mobor.plot
@@ -12,157 +17,6 @@ import mobor.stats
 from mobor.markov import MarkovCharLM
 
 # TODO: add function for collect list of installed lexibank datasets
-
-
-def register(parser):
-    parser.add_argument(
-        "--language",
-        default="English",
-        help='sets the ID of the language ("doculect") to be analyzed',
-        type=str,
-    )
-
-    parser.add_argument(
-        "--sequence",
-        default="formchars",
-        help="sets the column for the analysis",
-        type=str,
-    )
-
-    parser.add_argument(
-        "--dataset",
-        default="wold",
-        help="sets the Lexibank dataset for analysis (must have been "
-        "installed beforehand)",
-        type=str,
-    )
-    # TODO: should be allow for loan word basis as well?
-    parser.add_argument(
-        "--basis",
-        default="all",
-        help="whether to use 'all', 'native' only or 'loan' only as "
-        "training set",
-        type=str,
-    )
-
-    parser.add_argument(
-        "--graphlimit",
-        default=None,
-        help="upper limit to set on entropy distribution graph ",
-        type=float,
-    )
-
-    parser.add_argument(
-        "-n",
-        default=1000,
-        help="sets the number of iterations (the larger, the better "
-        "and the slower)",
-        type=int,
-    )
-
-    parser.add_argument(
-        "--order", default=3, help="sets the ngram order", type=int
-    )
-
-    parser.add_argument(
-        "--test",
-        choices=["t", "ks", "md"],
-        default="ks",
-        type=str,
-        help="sets the type of test (`t` for 2-sample student, `ks` for "
-        "two sample Kolmogorov-Schmirnoff, `md` for mean difference)",
-    )
-
-    parser.add_argument(
-        "--method",
-        choices=["kni", "wbi", "lp", "ls", "mle"],
-        default="kni",
-        type=str,
-        help="sets the smoothing method to use ("
-        "`kni` is for interpolated Kneser-Ney, "
-        "`wbi` is for interpolated Witten-Bell, "
-        "`lp` is for Laplace, "
-        "`ls` is for Lidstone, "
-        "`mle` is for Maximum-Likelihood Estimation)",
-    )
-
-    parser.add_argument(
-        "--smoothing",
-        type=float,
-        default=0.5,
-        help='set the smoothing method value ("gamma")',
-    )
-
-    parser.add_argument(
-        "-o",
-        "--output",
-        help="sets the output directory (default to `output/` in "
-        "main directory)",
-        type=str,
-    )
-
-
-def run(args):
-
-    # Build output path
-    if args.output:
-        output_path = Path(args.output).resolve()
-    else:
-        output_path = Path(__file__).parent.parent.parent.parent / "output"
-    print(output_path)
-
-    # Load data
-    wordlist = mobor.data.load_data(args.dataset)
-
-    # Subset data and select only borrowed items (suited for WOLD)
-    # TODO: replace hardcoded selector, allow no selector
-    # could include criterion as argument to permit other than 0.375
-    # could allow for lambda function as well
-    subset = wordlist.get_language(
-        args.language, [args.sequence, "borrowed"], dtypes=[list, float]
-    )
-    tokens = [row[args.sequence] for row in subset]
-    selector = [row["borrowed"] < 0.375 for row in subset]
-
-    if args.basis == 'all':
-        # Run analysis
-        # TODO: decide on allowing not `logebase` from command line
-        logebase = True
-        analyze_word_distributions(
-            tokens,
-            selector,
-            output_path,
-            sequence=args.sequence,
-            dataset=args.dataset,
-            language=args.language,
-            method=args.method,
-            smoothing=args.smoothing,
-            order=args.order,
-            graphlimit=args.graphlimit,
-            test=args.test,
-            n=args.n,
-            logebase=logebase,
-        )
-    else:
-        # Run analysis
-        # TODO: decide on whether to allow for loan word basis as well.
-        logebase = True
-        analyze_word_distributions_native_basis(
-            tokens,
-            selector,
-            output_path,
-            sequence=args.sequence,
-            dataset=args.dataset,
-            language=args.language,
-            method=args.method,
-            smoothing=args.smoothing,
-            order=args.order,
-            graphlimit=args.graphlimit,
-            test=args.test,
-            n=args.n,
-            logebase=logebase,
-        )
-
 
 
 def analyze_word_distributions(
@@ -181,6 +35,7 @@ def analyze_word_distributions(
     logebase=True,
 ):
 
+    #print('** new route **')
     # tokens - in space segmented form.
     # selector - which tokens to use for indicator of likely native tokens.
     # figuredir - directory to put .pdf of histogram.
@@ -198,8 +53,8 @@ def analyze_word_distributions(
     # Compute entropies, using logebase if requested
     entropies = mlm.analyze_training()
     if logebase:
-        log2ofe = math.log2(math.e)
-        entropies = [entropy / log2ofe for entropy in entropies]
+        logof2 = math.log(2)
+        entropies = [entropy * logof2 for entropy in entropies]
 
     # Split native and loan entropies based on selector
     native_entropies = [
@@ -376,3 +231,140 @@ def analyze_word_distributions_native_basis(
         "entropies_plot": entropies_plot.name,
     }
     mobor.data.update_results(parameters, results, result_file.as_posix())
+
+#### ******************************************
+####
+#### Validation functions for entropy analysis.
+####
+#### ******************************************
+
+def validate_kfold_entropy_distributions_all_basis(
+    tokens,
+    output_path="",
+    sequence="formchars",
+    dataset="",
+    language="unknown",
+    method="kni",
+    smoothing=0.5,
+    order=3,
+    logebase=True,
+    kfold=10
+):
+
+    results = kfold_entropy(tokens, method=method, smoothing=smoothing,
+                           order=order, kfold=kfold, logebase=logebase)
+    print_kfold_entropy(results)
+
+
+def validate_kfold_entropy_distributions_native_basis(
+    tokens,
+    selector,
+    output_path="",
+    sequence="formchars",
+    dataset="",
+    language="unknown",
+    method="kni",
+    smoothing=0.5,
+    order=3,
+    logebase=True,
+    kfold=10
+):
+
+    tokens = [token for token, select in zip(tokens, selector) if select]
+    results = kfold_entropy(tokens, method=method, smoothing=smoothing,
+                           order=order, kfold=kfold, logebase=logebase)
+    print_kfold_entropy(results)
+
+
+def print_kfold_entropy(results):
+    sample = results[0]
+    summary = results[1]
+    print(
+        f"Sample={sample[0]}, k-fold={sample[1]}, val={sample[2]}, model={sample[3]}, order={sample[4]}, smoothing={sample[5]}."
+    )
+
+    print(f"Statistic: Train mean Train stdev    Val mean  Val stdev")
+    print(
+        f"Mean        {summary[0, 0]:9.3f}   {summary[0, 1]:9.3f}   {summary[0, 2]:9.3f}  {summary[0, 3]:9.3f}"
+    )
+    print(
+        f"StdDev      {summary[1, 0]:9.4f}   {summary[1, 1]:9.4f}   {summary[1, 2]:9.4f}  {summary[1, 3]:9.4f}"
+    )
+    print(
+        f"StdErr      {summary[2, 0]:9.5f}   {summary[2, 1]:9.5f}   {summary[2, 2]:9.5f}  {summary[2, 3]:9.5f}"
+    )
+
+
+def kfold_entropy(tokens,
+                  method="kni",
+                  smoothing=0.5,
+                  order=3,
+                  kfold=10,
+                  logebase=True):
+
+    # TODO Use scipy kfsplit instead of homegrown solution.
+    sz = len(tokens)
+    frac = 1 / kfold
+    tokens = np.random.permutation(tokens)
+
+    entropy_stats = []
+    for i in range(kfold):
+        # Process k_fold train - val sets.
+        val_begin = math.ceil(i * sz * frac)
+        val_end = math.ceil((i + 1) * sz * frac)
+        val_tokens = tokens[val_begin:val_end]
+        train_tokens = np.concatenate(
+            (tokens[:val_begin], tokens[val_end:])
+        )
+
+        # Train on Markov model.
+        # Calculate entropy distributions for train and val.
+        entropies = entropy_train_val(
+            train_tokens, val_tokens, method, smoothing,  order, logebase,
+        )
+
+        entropy_stats.append(entropies)
+
+    entropy_stats = np.array(entropy_stats)
+
+    summary = np.zeros((3, 4))
+    for j in range(4):
+        stat_values = entropy_stats[:, j]
+        # Calculate mean, standard deviation, and standard error of mean
+        summary[0, j] = np.mean(stat_values)
+        summary[1, j] = np.std(stat_values)
+        summary[2, j] = scipy.stats.sem(stat_values)
+
+    return [
+        [sz, kfold, math.ceil(sz * frac), method, order, smoothing],
+        summary,
+    ]
+
+
+def entropy_train_val(train_tokens=None, val_tokens=None, method="kni",
+                      smoothing=0.5, order=3, logebase=True
+):
+
+    # train_tokens - in space segmented form.
+    # val_tokens - in space segmented form.
+    # order - model order as used in NLTK - default is 3.
+    # default model is Kneser Ney.
+    # Kneser Ney smoothing for entropy model.
+
+    mlm = MarkovCharLM(
+        train_tokens, model=method, order=order, smoothing=smoothing
+    )
+    train_entropies = mlm.analyze_tokens(train_tokens)
+    # Validate language model. Errors if not sufficient data for vocabulary.
+    val_entropies = mlm.analyze_tokens(val_tokens)
+    if logebase:
+        log2ofe = math.log2(math.e)
+        train_entropies = [entropy / log2ofe for entropy in train_entropies]
+        val_entropies = [entropy / log2ofe for entropy in val_entropies]
+
+    return [
+        np.mean(train_entropies),
+        np.std(train_entropies),
+        np.mean(val_entropies),
+        np.std(val_entropies),
+    ]

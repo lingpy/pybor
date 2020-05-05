@@ -21,7 +21,7 @@ def register(parser):
     parser.add_argument(
         "--sequence",
         default="formchars",
-        help="sets the column for the analysis",
+        help="sets the column for the analysis: formchars, tokens, sca",
         type=str,
     )
 
@@ -74,6 +74,7 @@ def register(parser):
 
     parser.add_argument(
         "-p",
+        "--prob",
         type=float,
         default=0.995,
         help='set the empirical probability for critical value from training entropies',
@@ -86,6 +87,15 @@ def register(parser):
         "main directory)",
         type=str,
     )
+
+    parser.add_argument(
+        "-k",
+        "--kfold",
+        default=1,
+        help="sets the number of splits between train and validation datasets",
+        type=int,
+    )
+
 
 
 def run(args):
@@ -111,27 +121,55 @@ def run(args):
     tokens = [row[args.sequence] for row in subset]
     borrowedscore = [row["borrowed"] for row in subset]
 
-    if args.basis == 'native-loan':
-        print('native loan basis')
-        # Run analysis
-        mobor.detect_borrowing_ngram.detect_native_loan_dual_basis(
-            tokens,
-            borrowedscore,
-            output_path,
-            #method=args.method,
-            smoothing=args.smoothing,
-            order=args.order,
-            trainfrac=args.trainfrac
-        )
-    elif args.basis == 'native':
-        print('native basis')
-        mobor.detect_borrowing_ngram.detect_native_basis(
-            tokens,
-            borrowedscore,
-            output_path,
-            #method=args.method,
-            smoothing=args.smoothing,
-            order=args.order,
-            trainfrac=args.trainfrac,
-            p=args.p,
-        )
+    if args.kfold <=1:
+        if args.basis == 'native-loan':
+            print('native loan basis')
+            # Run analysis
+            mobor.detect_borrowing_ngram.detect_native_loan_dual_basis(
+                tokens,
+                borrowedscore,
+                output_path,
+                #method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                trainfrac=args.trainfrac
+            )
+        elif args.basis == 'native':
+            print('native basis')
+            mobor.detect_borrowing_ngram.detect_native_basis(
+                tokens,
+                borrowedscore,
+                output_path,
+                #method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                trainfrac=args.trainfrac,
+                p=args.prob,
+            )
+    else:  # >1  so kfold.
+        if args.basis == 'native-loan':
+            print('native loan basis')
+            # Run analysis
+
+            mobor.detect_borrowing_ngram.validate_kfold_loanword_detection_dual_basis(
+                tokens,
+                borrowedscore,
+                output_path,
+                #method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                kfold=args.kfold,
+            )
+        elif args.basis == 'native':
+            print('native basis')
+            mobor.detect_borrowing_ngram.validate_kfold_loanword_detection_native_basis(
+                tokens,
+                borrowedscore,
+                output_path,
+                #method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                p=args.prob,
+                kfold=args.kfold
+            )
+

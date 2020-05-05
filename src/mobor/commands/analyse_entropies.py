@@ -8,7 +8,7 @@ from pathlib import Path
 import mobor.data
 import mobor.plot
 import mobor.stats
-import mobor.analyse_distr_ngram
+import mobor.analyse_entropies_ngram
 
 # TODO: add function for collect list of installed lexibank datasets
 
@@ -24,7 +24,7 @@ def register(parser):
     parser.add_argument(
         "--sequence",
         default="formchars",
-        help="sets the column for the analysis",
+        help="sets the column for the analysis: formchars, tokens, sca",
         type=str,
     )
 
@@ -100,6 +100,13 @@ def register(parser):
         type=str,
     )
 
+    parser.add_argument(
+        "-k",
+        "--kfold",
+        default=1,
+        help="sets the number of splits between train and validation datasets",
+        type=int,
+    )
 
 def run(args):
 
@@ -124,42 +131,44 @@ def run(args):
     tokens = [row[args.sequence] for row in subset]
     selector = [row["borrowed"] < 0.5 for row in subset]
 
-    if args.basis == 'all':
-        # Run analysis
-        # TODO: decide on allowing not `logebase` from command line
-        logebase = True
-        mobor.analyse_distr_ngram.analyze_word_distributions(
-            tokens,
-            selector,
-            output_path,
-            sequence=args.sequence,
-            dataset=args.dataset,
-            language=args.language,
-            method=args.method,
-            smoothing=args.smoothing,
-            order=args.order,
-            graphlimit=args.graphlimit,
-            test=args.test,
-            n=args.n,
-            logebase=logebase,
-        )
-    else:
-        # Run analysis
-        # TODO: decide on whether to allow for loan word basis as well.
-        logebase = True
-        mobor.analyse_distr_ngram.analyze_word_distributions_native_basis(
-            tokens,
-            selector,
-            output_path,
-            sequence=args.sequence,
-            dataset=args.dataset,
-            language=args.language,
-            method=args.method,
-            smoothing=args.smoothing,
-            order=args.order,
-            graphlimit=args.graphlimit,
-            test=args.test,
-            n=args.n,
-            logebase=logebase,
-        )
-
+    if args.kfold <=1:
+        if args.basis == 'all':
+            # Run analysis
+            # TODO: decide on allowing not `logebase` from command line
+            logebase = True
+            mobor.analyse_entropies_ngram.analyze_word_distributions(
+                tokens,
+                selector,
+                output_path,
+                sequence=args.sequence,
+                dataset=args.dataset,
+                language=args.language,
+                method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                graphlimit=args.graphlimit,
+                test=args.test,
+                n=args.n,
+                logebase=logebase,
+            )
+        else:
+            # Run analysis
+            # TODO: decide on whether to allow for loan word basis as well.
+            logebase = True
+            mobor.analyse_entropies_ngram.analyze_word_distributions_native_basis(
+                tokens,
+                selector,
+                output_path,
+                sequence=args.sequence,
+                dataset=args.dataset,
+                language=args.language,
+                method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                graphlimit=args.graphlimit,
+                test=args.test,
+                n=args.n,
+                logebase=logebase,
+            )
+    else:  # >1  so kfold.
+        print("kfold validation on entropy distributions not imlemented.")

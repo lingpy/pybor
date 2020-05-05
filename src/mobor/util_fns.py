@@ -13,26 +13,27 @@ import math
 
 Test_prediction = namedtuple('Binary_prediction', ['Acc', 'Maj_acc', 'Prec', 'Recall', 'F1'])
 
-def report_metrics(ground, forecast):
+def report_metrics(ground, forecast, quiet=False):
     # ground and entropies are on token basis.
     assert(len(ground) == len(forecast)), f'ground size ({len(ground)}) not equal forecast size ({len(forecast)})'
     # forecast is versus the upper ref_limit.  Most should be < the limit and so native words.
     #forecast = [e < self._ref_limit for e in self._entropies]
     #print('Test for entropy <', self._ref_limit)
     prec_recall_f1 = metrics.precision_recall_fscore_support(ground, forecast, average='binary')[:-1]
-    print('precision, recall, F1 =', prec_recall_f1)
     acc = metrics.accuracy_score(ground, forecast)
-    print('n =', len(ground), ' accuracy =', acc)
-    print('confusion matrix: tn, fp, fn, tp', metrics.confusion_matrix(ground, forecast).ravel())
     maxpredict = max(sum(ground),len(ground)-sum(ground))
     maj_acc = maxpredict/len(ground)
-    print('Predict majority: accuracy=', maj_acc)
+    if not quiet:
+        print('precision, recall, F1 =', prec_recall_f1)
+        print('n =', len(ground), ' accuracy =', acc)
+        print('confusion matrix: tn, fp, fn, tp', metrics.confusion_matrix(ground, forecast).ravel())
+        print('Predict majority: accuracy=', maj_acc)
 
     return Test_prediction(Acc=acc, Maj_acc=maj_acc, Prec=prec_recall_f1[0],
                        Recall=prec_recall_f1[1], F1=prec_recall_f1[2])
 
 
-def calculate_empirical_ref_limit(entropies, frac=0.99):
+def calculate_empirical_ref_limit(entropies, frac=0.99, quiet=False):
     # Entropies are not power law distributed, but neither are they Gaussian.
     # Better to use fraction of distribution to use as cut-point for discriminating between native and loan.
     idx = min((len(entropies)-1)*frac, len(entropies)-1)
@@ -40,6 +41,7 @@ def calculate_empirical_ref_limit(entropies, frac=0.99):
     ref_limit = (entropies[math.floor(idx)]+entropies[math.ceil(idx)])/2
     avg = statistics.mean(entropies)
     stdev = statistics.stdev(entropies)
-    print(f'Native avg={avg:.3f}, stdev={stdev:.3f}')
-    print(f'fraction {frac:.3f}, idx {idx:.2f}, ref limit={ref_limit:.3f}')
+    if not quiet:
+        print(f'Native avg={avg:.3f}, stdev={stdev:.3f}')
+        print(f'fraction {frac:.3f}, idx {idx:.2f}, ref limit={ref_limit:.3f}')
     return ref_limit

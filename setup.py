@@ -1,4 +1,5 @@
 import pathlib
+import codecs
 from setuptools import setup, find_packages, Extension
 
 # setup package name etc as a default
@@ -34,4 +35,3 @@ setup(
         author='John Miller and Tiago Tresoldi and Johann-Mattis List',
         author_email='list@shh.mpg.de',
         keywords='borrowing, language contact, sequence comparison'
-        )

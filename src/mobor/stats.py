@@ -57,7 +57,7 @@ def calculate_randomization_test_between_distributions(
         )
         stats[i] = test_stat[0]
 
-    count = sum([val < stat_ref[0] for val in stats])
+    count = sum([val < stat_ref for val in stats])
     prob = (count + 0.5) / (len(stats) + 1)
 
     return stat_ref, 1 - prob, stats

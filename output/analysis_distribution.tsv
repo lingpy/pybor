@@ -1,4 +1,7 @@
-language	sequence	dataset	order	method	smoothing	test	n	logebase	stat_ref	prob	dist_file	entropies_plot	timestamp
-English	tokens	wold	3	kni	0.5	ks	2000	True	0.04214	0.51049	distribution.English-tokens-3-kni-0.5-ks-2000.pdf	entropies.English-tokens-3-kni-0.5.pdf	2020-04-30 16:21:54.501690
-English	tokens	wold	3	kni	0.5	ks	1000	True	0.04214	0.52697	distribution.English-tokens-3-kni-0.5-ks-1000.pdf	entropies.English-tokens-3-kni-0.5.pdf	2020-04-30 16:22:26.904531
-Wichi	tokens	wold	3	kni	0.5	ks	1000	True	0.47015	0.00050	distribution.Wichi-tokens-3-kni-0.5-ks-1000.pdf	entropies.Wichi-tokens-3-kni-0.5.pdf	2020-04-30 16:22:55.092522
+language	sequence	dataset	order	method	smoothing	test	n	logebase	basis	stat_ref	prob	dist_file	entropies_plot	timestamp
+English	tokens	wold	3	kni	0.5	ks	2000	True		0.04214	0.51049	distribution.English-tokens-3-kni-0.5-ks-2000.pdf	entropies.English-tokens-3-kni-0.5.pdf	2020-04-30 16:21:54.501690
+English	tokens	wold	3	kni	0.5	ks	1000	True		0.04214	0.52697	distribution.English-tokens-3-kni-0.5-ks-1000.pdf	entropies.English-tokens-3-kni-0.5.pdf	2020-04-30 16:22:26.904531
+Wichi	tokens	wold	3	kni	0.5	ks	1000	True		0.47015	0.00050	distribution.Wichi-tokens-3-kni-0.5-ks-1000.pdf	entropies.Wichi-tokens-3-kni-0.5.pdf	2020-04-30 16:22:55.092522
+English	formchars	wold	3	kni	0.5	ks	1000	True	all	0.05747	0.17233	distribution.English-formchars-3-kni-0.5-ks-1000.pdf	entropies.English-formchars-3-kni-0.5.pdf	2020-05-04 21:26:51.295147
+English	formchars	wold	3	kni	0.5	ks	100	True	native	0.31739	0.00495	distribution.English-formchars-3-kni-0.5-ks-100-native.pdf	entropies.English-formchars-3-kni-0.5-native.pdf	2020-05-04 13:50:11.869767
+English	tokens	wold	3	kni	0.5	ks	1000	True	all	0.04214	0.49900	distribution.English-tokens-3-kni-0.5-ks-1000.pdf	entropies.English-tokens-3-kni-0.5.pdf	2020-05-04 21:36:10.212199

@@ -39,8 +39,8 @@ def register(parser):
     parser.add_argument(
         "--basis",
         default="all",
-        help="whether to use 'all', 'native' only or 'loan' only as "
-        "training set",
+        help="whether to use 'all', 'native' only as training set",
+        # FUTURE: handle 'loan' or 'both'.
         type=str,
     )
 
@@ -131,11 +131,11 @@ def run(args):
     tokens = [row[args.sequence] for row in subset]
     selector = [row["borrowed"] < 0.5 for row in subset]
 
+    # TODO: decide on allowing not `logebase` from command line
+    logebase = True
     if args.kfold <=1:
         if args.basis == 'all':
             # Run analysis
-            # TODO: decide on allowing not `logebase` from command line
-            logebase = True
             mobor.analyse_entropies_ngram.analyze_word_distributions(
                 tokens,
                 selector,
@@ -152,9 +152,6 @@ def run(args):
                 logebase=logebase,
             )
         else:
-            # Run analysis
-            # TODO: decide on whether to allow for loan word basis as well.
-            logebase = True
             mobor.analyse_entropies_ngram.analyze_word_distributions_native_basis(
                 tokens,
                 selector,
@@ -171,4 +168,28 @@ def run(args):
                 logebase=logebase,
             )
     else:  # >1  so kfold.
-        print("kfold validation on entropy distributions not imlemented.")
+        if args.basis == 'all':  # Use all entropies.
+            mobor.analyse_entropies_ngram.validate_kfold_entropy_distributions_all_basis(
+                tokens,
+                output_path,
+                sequence=args.sequence,
+                dataset=args.dataset,
+                language=args.language,
+                method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                logebase=logebase,
+            )
+        else:  # basis == 'native'.  Use native entropies.
+            mobor.analyse_entropies_ngram.validate_kfold_entropy_distributions_native_basis(
+                tokens,
+                selector,
+                output_path,
+                sequence=args.sequence,
+                dataset=args.dataset,
+                language=args.language,
+                method=args.method,
+                smoothing=args.smoothing,
+                order=args.order,
+                logebase=logebase,
+            )

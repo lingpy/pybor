@@ -53,8 +53,8 @@ def analyze_word_distributions(
     # Compute entropies, using logebase if requested
     entropies = mlm.analyze_training()
     if logebase:
-        log2ofe = math.log2(math.e)
-        entropies = [entropy / log2ofe for entropy in entropies]
+        logof2 = math.log(2)
+        entropies = [entropy * logof2 for entropy in entropies]
 
     # Split native and loan entropies based on selector
     native_entropies = [

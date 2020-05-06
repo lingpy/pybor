@@ -53,5 +53,8 @@ def prf(test, gold):
         fs = 0
     else:
         fs = 2*(precision*recall)/(precision+recall)
-    
-    return precision, recall, fs
+
+    n_obs = tp+tn+fp+fn
+    accuracy = (tp+tn)/n_obs if n_obs > 0 else 0
+
+    return precision, recall, fs, accuracy

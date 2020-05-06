@@ -1,9 +1,9 @@
-from pybor.svm import BagOfSounds
+from pybor.ngram import NgramModel
 from pybor.dev.data import testing, training
 from pybor.evaluate import prf, false_positive
 
-bags = BagOfSounds(training, kernel='rbf')
-tests = bags.predict_data([[a, b] for a, b, c in testing])
+ngram_model = NgramModel(training)
+tests = ngram_model.predict_data([[a, b] for a, b, c in testing])
 
 false_positive(tests, testing, pprint=True)
 

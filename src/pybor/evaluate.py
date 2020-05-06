@@ -31,3 +31,16 @@ def false_positive(test, gold, pprint=True):
                 ]
         print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.2f'))
     return tp, tn, fp, fn
+
+
+def prf(test, gold):
+    """
+    Compute precision, recall, and f-score for test and gold.
+    """
+    
+    tp, tn, fp, fn = false_positive(test, gold, pprint=False)
+    precision = tp/(tp+fp)
+    recall = tp/(tp+fn)
+    fs = 2*(precision*recall)/(precision+recall)
+    
+    return precision, recall, fs

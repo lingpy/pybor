@@ -35,3 +35,4 @@ setup(
         author='John Miller and Tiago Tresoldi and Johann-Mattis List',
         author_email='list@shh.mpg.de',
         keywords='borrowing, language contact, sequence comparison'
+)

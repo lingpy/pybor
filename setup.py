@@ -32,9 +32,6 @@ setup(
         url='https://github.com/lingpy/monolingual-borrowing-detection/',
         long_description=codecs.open('README.md', 'r', 'utf-8').read(),
         long_description_content_type='text/markdown',
-        entry_points={
-            'console_scripts': ['pybor=pybor.cli:main'],
-        },
         author='John Miller and Tiago Tresoldi and Johann-Mattis List',
         author_email='list@shh.mpg.de',
         keywords='borrowing, language contact, sequence comparison'

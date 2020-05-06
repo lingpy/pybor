@@ -7,14 +7,15 @@ Created on Mon May  4 15:09:21 2020
 """
 
 import sys
-sys.path.append('src')
+
+sys.path.append("src")
 
 import mobor
 import mobor.data
 import mobor.detect_borrowing_ngram
 
 # Load data
-wordlist = mobor.data.load_data('wold')
+wordlist = mobor.data.load_data("wold")
 
 # Subset data and select only borrowed items (suited for WOLD)
 # TODO: replace hardcoded selector, allow no selector
@@ -27,10 +28,10 @@ tokens = [row["formchars"] for row in subset]
 borrowedscore = [row["borrowed"] for row in subset]
 
 mobor.detect_borrowing_ngram.detect_native_loan_dual_basis(
-        tokens=tokens,
-        borrowedscore=borrowedscore,
-        method='kni',
-        smoothing=0.5,
-        order=3,
-        trainfrac=0.8,
+    tokens=tokens,
+    borrowedscore=borrowedscore,
+    method="kni",
+    smoothing=0.5,
+    order=3,
+    trainfrac=0.8,
 )

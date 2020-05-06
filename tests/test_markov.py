@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import sys
-sys.path.append('src')
 
+sys.path.append("src")
+
+# NOTE: keeping code in place, but commented out, until rewritten
+# following the new architecture
+
+COMMENT_OUT = """
 from mobor.data import Wordlist
 from mobor.markov import Markov
 from mobor.plot import plot_word_distributions
@@ -42,10 +47,4 @@ plot_word_distributions(native, loan, filename='test.pdf',
                     graphlimit=max([max(loan), max(native)])+1)
 
 print('emitted graph to test.pdf')
-
-
-
-
-
-
-
+"""

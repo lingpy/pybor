@@ -40,10 +40,18 @@ def prf(test, gold):
     """
 
     tp, tn, fp, fn = false_positive(test, gold, pprint=False)
-    if tp+fp == 0 or tp+fn == 0:
-        return None, None, None
-    precision = tp/(tp+fp)
-    recall = tp/(tp+fn)
-    fs = 2*(precision*recall)/(precision+recall)
 
+    try:
+        precision = tp/(tp+fp)
+    except ZeroDivisionError:
+        precision = 0
+    try:
+        recall = tp/(tp+fn)
+    except ZeroDivisionError:
+        recall = 0
+    if not precision and not recall:
+        fs = 0
+    else:
+        fs = 2*(precision*recall)/(precision+recall)
+    
     return precision, recall, fs

@@ -12,11 +12,18 @@ def test_false_positive():
 
 
 def test_prf():
-    p, r, f = prf(testing, testing)
+    p, r, f, a = prf(testing, testing)
     assert p == 1.0
+    assert a == calc_acc(testing, testing)
     new_data = [[idx, word, 1] for idx, word, _ in testing]
     new_data2 = [[idx, word, 0] for idx, word, _ in testing]
-    p, r, f = prf(new_data, new_data2)
+    p, r, f, a = prf(new_data, new_data2)
     assert p == 0
-    p, r, f = prf(new_data2, new_data)
+    assert a == calc_acc(new_data2, new_data)
+    p, r, f, a = prf(new_data2, new_data)
     assert p == 0
+    assert a == calc_acc(new_data2, new_data)
+
+def calc_acc(test, gold):
+    correct = sum([t==g for t, g in zip(test, gold)])
+    return correct/len(test)

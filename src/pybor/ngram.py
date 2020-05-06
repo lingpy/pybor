@@ -53,7 +53,7 @@ class NgramModel(object):
             )
 
             # NOTE: here it is only using the forward estimation, but we
-            # could combine them, for example just doing `f+b`
+            # could combine them, for example just doing `(f+b)/2`
             scores.append([seq_class, f])
 
         # sort scores and return the seq_class

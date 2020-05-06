@@ -16,7 +16,7 @@ class BagOfSounds(object):
     """
 
     def __init__(self, data, kernel='linear', **kw):
-        
+
         self.data = data
         self.sounds = defaultdict(int)
         # iterate over words and make a first list of all sounds
@@ -53,6 +53,7 @@ class BagOfSounds(object):
                 features += [1]
             else:
                 features += [0]
+
         return self.clf.predict([features])
 
     def predict_data(self, data):
@@ -62,5 +63,5 @@ class BagOfSounds(object):
         out = []
         for idx, word in data:
             out += [[idx, word, self.predict(word)]]
-        return out
 
+        return out

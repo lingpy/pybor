@@ -1,6 +1,7 @@
 """
 Evaluate accuracy of borrowing detection.
 """
+from collections import namedtuple
 from tabulate import tabulate
 
 def false_positive(test, gold, pprint=True):
@@ -30,29 +31,67 @@ def false_positive(test, gold, pprint=True):
                 ['Total', (tp+tn)/total, (fp+fn)/total, total]
                 ]
         print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.2f'))
+
     return tp, tn, fp, fn
 
 
+def prf(test, gold):
+    """
+    Compute precision, recall, and f-score for test and gold.
+    """
+
+    tp, tn, fp, fn = false_positive(test, gold, pprint=False)
+
+    try:
+        precision = tp/(tp+fp)
+    except ZeroDivisionError:
+        precision = 0
+    try:
+        recall = tp/(tp+fn)
+    except ZeroDivisionError:
+        recall = 0
+    if not precision and not recall:
+        fs = 0
+    else:
+        fs = 2*(precision*recall)/(precision+recall)
+
+    n_obs = tp+tn+fp+fn
+    accuracy = (tp+tn)/n_obs if n_obs > 0 else 0
+
+    return precision, recall, fs, accuracy
 
 
-from collections import namedtuple
-import sklearn.metrics as metrics
+# =============================================================================
+#
+# Quality measures for model reporting
+#
+# Drops sklearn.metrics in favor of prf at some cost in data preparation.
+#
+# =============================================================================
+Bin_eval = namedtuple('Bin_eval', ['prec', 'recall', 'f1', 'acc', 'maj'])
 
-Test_metrics = namedtuple('Binary_prediction', ['Acc', 'Maj_acc', 'Prec', 'Recall', 'F1'])
+def evaluate_model(model, tokens, ground):
 
-def calculate_metrics(ground, forecast):
-    assert(len(ground) == len(forecast))
-    prec_recall_f1 = metrics.precision_recall_fscore_support(
-        ground, forecast, average='binary')[:-1]
+    forecast = model.predict_data(tokens)
 
-    acc = metrics.accuracy_score(ground, forecast)
-    maxpredict = max(sum(ground),len(ground)-sum(ground))
-    maj_acc = maxpredict/len(ground)
+    # Prepare in prf expected format.
+    ground = ground.astype(int)
+    forecast = forecast.astype(int)
+    groundtable = [[idx, ground, tokens] for idx, ground, tokens
+                   in zip(range(len(ground)),tokens,ground)]
+    forecasttable = [[idx, forecast, tokens] for idx, forecast, tokens
+                   in zip(range(len(forecast)),tokens,forecast)]
 
-    return Test_metrics(Acc=acc, Maj_acc=maj_acc, Prec=prec_recall_f1[0],
-                           Recall=prec_recall_f1[1], F1=prec_recall_f1[2])
+    (prec, recall, f1, acc) = prf(forecasttable, groundtable)
+    #(prec, recall, f1, acc) = calculate_metrics(forecast, ground)
+
+    maj = max(sum(ground),len(ground)-sum(ground))/len(ground)
+    return Bin_eval(prec=prec, recall=recall, f1=f1, acc=acc, maj=maj)
 
 
-def print_test_prediction(test_quality: Test_metrics):
-    print('\nQuality metrics:')
-    print(test_quality)
+def print_evaluation(evaluation: Bin_eval):
+
+    table = [['Precision', 'Recall', 'F-score', 'Accuracy', "Majority"],
+             [evaluation.prec, evaluation.recall, evaluation.f1,
+              evaluation.acc, evaluation.maj]]
+    print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.2f'))

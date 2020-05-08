@@ -8,10 +8,14 @@ Created on Mon May  4 15:09:21 2020
 Run command:
     $pytest tests/test_detect.py --cov=pybor.nltk -s --disable-pytest-warnings
 
-I disable warning because almost all are from underlying libraries out of my control.
+Warning disabled because most are from libraries out of my control.
+
+import sys
+
+sys.path.append("src")
+
 """
 import pytest
-import mobor.data
 import pybor.nltk
 
 
@@ -56,7 +60,6 @@ def test_dual_model(data_setup):
     print('multiple word prediction:','\nword=', tokens[37:40],
           dm.predict_data(tokens[37:40]), borrowedscore[37:40])
 
-#===================
 
 def test_native_model(data_setup):
     print("Test native detect model.")

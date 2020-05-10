@@ -27,3 +27,8 @@ def test_prf():
 def calc_acc(test, gold):
     correct = sum([t==g for t, g in zip(test, gold)])
     return correct/len(test)
+
+
+if __name__ == "__main__":
+    test_false_positive()
+    test_prf()

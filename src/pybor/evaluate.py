@@ -20,9 +20,9 @@ def false_positive(test, gold, pprint=True):
                 tp += 1
         else:
             if judgmentB == 0:
-                fn += 1
-            else:
                 fp += 1
+            else:
+                fn += 1
     if pprint:
         table = [
                 ['', 'True', 'False', 'Total'],
@@ -55,8 +55,8 @@ def prf(test, gold):
     else:
         fs = 2*(precision*recall)/(precision+recall)
 
-    n_obs = tp+tn+fp+fn
-    accuracy = (tp+tn)/n_obs if n_obs > 0 else 0
+    total = tp+tn+fp+fn
+    accuracy = (tp+tn)/total if total > 0 else 0
 
     return precision, recall, fs, accuracy
 
@@ -70,22 +70,32 @@ def prf(test, gold):
 # =============================================================================
 Bin_eval = namedtuple('Bin_eval', ['prec', 'recall', 'f1', 'acc', 'maj'])
 
-def evaluate_model(model, tokens, ground):
+def evaluate_model(test_data, data):
+    """
+    Evaluation loan word detection on precision, recall, F1, accuracy basis.
 
-    forecast = model.predict_data(tokens)
+    Parameters
+    ----------
+    tst_data : [[str, [str], int]]
+        List of language tokens in row format:
+            [id, [char segments], predicted loanword status.
 
-    # Prepare in prf expected format.
-    ground = ground.astype(int)
-    forecast = forecast.astype(int)
-    groundtable = [[idx, ground, tokens] for idx, ground, tokens
-                   in zip(range(len(ground)),tokens,ground)]
-    forecasttable = [[idx, forecast, tokens] for idx, forecast, tokens
-                   in zip(range(len(forecast)),tokens,forecast)]
+    data : [[str, [str], int]]
+        List of language tokens in row format:
+            [id, [char segments], gold loanword status.
 
-    (prec, recall, f1, acc) = prf(forecasttable, groundtable)
-    #(prec, recall, f1, acc) = calculate_metrics(forecast, ground)
+    Returns
+    -------
+    Bin_eval
+        Evaluation as named tuple of precision, recall, F1, accuracy, majority.
 
-    maj = max(sum(ground),len(ground)-sum(ground))/len(ground)
+    """
+
+    (prec, recall, f1, acc) = prf(test_data, data)
+
+    gold = [status for _, _, status in data]
+    maj = max(sum(gold),len(gold)-sum(gold))/len(gold)
+
     return Bin_eval(prec=prec, recall=recall, f1=f1, acc=acc, maj=maj)
 
 
@@ -94,4 +104,4 @@ def print_evaluation(evaluation: Bin_eval):
     table = [['Precision', 'Recall', 'F-score', 'Accuracy', "Majority"],
              [evaluation.prec, evaluation.recall, evaluation.f1,
               evaluation.acc, evaluation.maj]]
-    print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.2f'))
+    print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.3f'))

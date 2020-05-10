@@ -1,6 +1,7 @@
 """
 Evaluate accuracy of borrowing detection.
 """
+from collections import namedtuple
 from tabulate import tabulate
 
 def false_positive(test, gold, pprint=True):
@@ -19,9 +20,9 @@ def false_positive(test, gold, pprint=True):
                 tp += 1
         else:
             if judgmentB == 0:
-                fn += 1
-            else:
                 fp += 1
+            else:
+                fn += 1
     if pprint:
         table = [
                 ['', 'True', 'False', 'Total'],
@@ -54,7 +55,53 @@ def prf(test, gold):
     else:
         fs = 2*(precision*recall)/(precision+recall)
 
-    n_obs = tp+tn+fp+fn
-    accuracy = (tp+tn)/n_obs if n_obs > 0 else 0
+    total = tp+tn+fp+fn
+    accuracy = (tp+tn)/total if total > 0 else 0
 
     return precision, recall, fs, accuracy
+
+
+# =============================================================================
+#
+# Quality measures for model reporting
+#
+# Drops sklearn.metrics in favor of prf at some cost in data preparation.
+#
+# =============================================================================
+Bin_eval = namedtuple('Bin_eval', ['prec', 'recall', 'f1', 'acc', 'maj'])
+
+def evaluate_model(test_data, data):
+    """
+    Evaluation loan word detection on precision, recall, F1, accuracy basis.
+
+    Parameters
+    ----------
+    tst_data : [[str, [str], int]]
+        List of language tokens in row format:
+            [id, [char segments], predicted loanword status.
+
+    data : [[str, [str], int]]
+        List of language tokens in row format:
+            [id, [char segments], gold loanword status.
+
+    Returns
+    -------
+    Bin_eval
+        Evaluation as named tuple of precision, recall, F1, accuracy, majority.
+
+    """
+
+    (prec, recall, f1, acc) = prf(test_data, data)
+
+    gold = [status for _, _, status in data]
+    maj = max(sum(gold),len(gold)-sum(gold))/len(gold)
+
+    return Bin_eval(prec=prec, recall=recall, f1=f1, acc=acc, maj=maj)
+
+
+def print_evaluation(evaluation: Bin_eval):
+
+    table = [['Precision', 'Recall', 'F-score', 'Accuracy', "Majority"],
+             [evaluation.prec, evaluation.recall, evaluation.f1,
+              evaluation.acc, evaluation.maj]]
+    print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.3f'))

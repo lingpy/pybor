@@ -25,7 +25,7 @@ setup(
         zip_safe=False,
         license="GPL",
         include_package_data=True,
-        install_requires=['lingpy', 'pylexibank', 'sklearn'],
+        install_requires=['lingpy', 'pylexibank', 'sklearn', 'nltk'],
         extras_require={
             'tests': ['pytest', 'pytest-cov']
             },

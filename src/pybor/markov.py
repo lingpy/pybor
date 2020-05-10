@@ -11,36 +11,28 @@ from sklearn.model_selection import train_test_split
 import pybor.markov_nltk as mk
 import pybor.evaluate as evaluate
 
-# =============================================================================
-#
-# Dual model approach - native and loan models compete for prediction.
-#
-# =============================================================================
 
 class DualMarkov:
+    """
+    Construct markov models of two distributions.
+
+    Fit dual Markov models - one to native data, another to loan data.
+
+    Parameters
+    ----------
+    data : [[str, [str], int]]
+        List of language tokens in format:
+            identifier,
+            token as list of character segments,
+            binary (0, 1) indicator of borrowed word status.
+    method : str, optional
+        Model type from MarkovWord class. The default is 'kni'.
+    order : int, optional
+        Order from MarkovWord class. The default is 3.
+    smoothing : float, optional
+        smoothing from MarkovWord class. The default is 0.5.
+    """
     def __init__(self, data, method='kni', order=3, smoothing=0.5):
-        """
-        Fit dual Markov models - one to native data, another to loan data.
-
-        Parameters
-        ----------
-        data : [[str, [str], int]]
-            List of language tokens in format:
-                identifier,
-                token as list of character segments,
-                binary (0, 1) indicator of borrowed word status.
-        method : str, optional
-            Model type from MarkovWord class. The default is 'kni'.
-        order : int, optional
-            Order from MarkovWord class. The default is 3.
-        smoothing : float, optional
-            smoothing from MarkovWord class. The default is 0.5.
-
-        Returns
-        -------
-        DualMarkov object reference.
-
-        """
 
         nativetokens = [token for _, token, status in data if status]
         self.nativemodel = mk.MarkovWord(
@@ -81,40 +73,11 @@ class DualMarkov:
         return self.predict_data([token])[0]
 
 
-# =============================================================================
-#
-#  Validate loan detection - dual model effectiveness.
-#
-# =============================================================================
-
-def validate_loan_detection_dual_basis(data, method='kni', smoothing=0.5,
-                                       order=3, trainfrac=0.8):
-
-    train_data, test_data = train_test_split(data, test_size=1-trainfrac)
-
-    dual_model = DualMarkov(train_data, method=method,
-                            order=order, smoothing=smoothing)
-
-    print("Evaluate train dataset.")
-    predictions = dual_model.predict_data(train_data)
-    train_metrics = evaluate.evaluate_model(predictions, train_data)
-    evaluate.print_evaluation(train_metrics)
-
-    print("Evaluate test dataset.")
-    predictions = dual_model.predict_data(test_data)
-    test_metrics = evaluate.evaluate_model(predictions, test_data)
-    evaluate.print_evaluation(test_metrics)
-
-    return dual_model, test_metrics
-
-
-# =============================================================================
-#
-# Native model approach - entropies are tested versus a numerical limit.
-#
-# =============================================================================
-
 class NativeMarkov:
+    """
+    Unsupervised language model approach.
+    """
+    
     def __init__(self, data, method='kni', order=3, smoothing=0.5, p=0.995):
 
         nativetokens = [token for _, token, status in data if not status]
@@ -139,6 +102,9 @@ class NativeMarkov:
 
 
 def calculate_empirical_ref_limit(entropies, frac=0.995):
+    """
+    Calculate a cut-off point for entropies from the data.
+    """
     # Entropies are not power law distributed, but neither are they Gaussian.
     # Better to use fraction of distribution rather than Gaussian z value
     # as cut-point for discriminating between native and loan.
@@ -147,29 +113,5 @@ def calculate_empirical_ref_limit(entropies, frac=0.995):
     return (entropies[math.floor(idx)]+entropies[math.ceil(idx)])/2
 
 
-# =============================================================================
-#
-#  Validate loan detection - native model effectiveness.
-#
-# =============================================================================
-def validate_loan_detection_native_basis(data, method='kni', smoothing=0.5,
-                                    order=3, p=0.995, trainfrac=0.8):
-
-    train_data, test_data = train_test_split(data, test_size=1-trainfrac)
-
-    native_model = NativeMarkov(train_data, method=method,
-                                order=order, smoothing=smoothing, p=p)
-
-    print("Evaluate train dataset.")
-    predictions = native_model.predict_data(train_data)
-    train_metrics = evaluate.evaluate_model(predictions, train_data)
-    evaluate.print_evaluation(train_metrics)
-
-    print("Evaluate test dataset.")
-    predictions = native_model.predict_data(test_data)
-    test_metrics = evaluate.evaluate_model(predictions, test_data)
-    evaluate.print_evaluation(test_metrics)
-
-    return native_model, test_metrics
 
 

@@ -59,7 +59,7 @@ class DualMarkov:
         """
         nativeentropies = self.nativemodel.calculate_entropies(tokens)
         loanentropies = self.loanmodel.calculate_entropies(tokens)
-        predictions = [int(loanS>nativeS) for nativeS, loanS
+        predictions = [int(loanS<nativeS) for nativeS, loanS
                        in zip(nativeentropies, loanentropies)]
         return predictions
 

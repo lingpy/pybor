@@ -34,11 +34,11 @@ class DualMarkov:
     """
     def __init__(self, data, method='kni', order=3, smoothing=0.5):
 
-        nativetokens = [token for _, token, status in data if status]
+        nativetokens = [token for _, token, status in data if status==0]
         self.nativemodel = mk.MarkovWord(
             nativetokens, model=method, order=order, smoothing=smoothing)
 
-        loantokens = [token for _, token, status in data if status]
+        loantokens = [token for _, token, status in data if status==1]
         self.loanmodel = mk.MarkovWord(
             loantokens, model=method, order=order, smoothing=smoothing)
 
@@ -59,7 +59,7 @@ class DualMarkov:
         """
         nativeentropies = self.nativemodel.calculate_entropies(tokens)
         loanentropies = self.loanmodel.calculate_entropies(tokens)
-        predictions = [int(loanS>nativeS) for nativeS, loanS
+        predictions = [int(loanS<nativeS) for nativeS, loanS
                        in zip(nativeentropies, loanentropies)]
         return predictions
 
@@ -77,7 +77,7 @@ class NativeMarkov:
     """
     Unsupervised language model approach.
     """
-    
+
     def __init__(self, data, method='kni', order=3, smoothing=0.5, p=0.995):
 
         nativetokens = [token for _, token, status in data if not status]
@@ -111,7 +111,3 @@ def calculate_empirical_ref_limit(entropies, frac=0.995):
     entropies = sorted(entropies)
     idx = min((len(entropies)-1)*frac, len(entropies)-1)
     return (entropies[math.floor(idx)]+entropies[math.ceil(idx)])/2
-
-
-
-

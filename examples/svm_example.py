@@ -7,8 +7,9 @@ tests = bags.predict_data([[a, b] for a, b, c in testing])
 
 false_positive(tests, testing, pprint=True)
 
-p, r, f = prf(tests, testing)
-if all([p, r, f]):
-    print('Precision: {0:.2f}'.format(p))
-    print('Recall:    {0:.2f}'.format(r))
-    print('F-Score:   {0:.2f}'.format(f))
+prec, rec, fs, acc = prf(tests, testing)
+if all([prec, rec, fs, acc]):
+    print('Precision: {0:.2f}'.format(prec))
+    print('Recall:    {0:.2f}'.format(rec))
+    print('F-Score:   {0:.2f}'.format(fs))
+    print('Accuracy:  {0:.2f}'.format(acc))

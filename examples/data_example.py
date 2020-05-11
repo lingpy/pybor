@@ -21,7 +21,7 @@ try:
         lex = pickle.load(f)
 except:
     lex = LexibankDataset(
-            'wold', 
+            'wold',
             transform={
                 "Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0}
             )
@@ -29,24 +29,25 @@ except:
         pickle.dump(lex, f)
 
 table = []
+stats = []
 for language in lex.languages.values():
     table = lex.get_table(
-            language=language['Name'], 
-            form='FormChars', 
+            language=language['Name'],
+            form='FormChars',
             classification='Loan'
             )
     train, test = table[:len(table)//2], table[len(table)//2:]
-    
+
     bag = model(train)
-    guess = model.predict_data([[a, b] for a, b, c in test])
+    guess = bag.predict_data([[a, b] for a, b, c in test])
 
     p, r, f, a = prf(test, guess)
     print('{4:30} | {0:.2f} | {1:.2f} | {2:.2f} | {3:.2f}'.format(
         p, r, f, a, language['Name']))
-    table += [[p, r, f, a]]
+    stats += [[p, r, f, a]]
 
 print('{4:30} | {0:.2f} | {1:.2f} | {2:.2f} | {3:.2f}'.format(
-    [line[0] for line in table], 
-    [line[1] for line in table], 
-    [line[2] for line in table], 
-    [line[3] for line in table], 'TOTAL'))
+    mean([line[0] for line in stats]),
+    mean([line[1] for line in stats]),
+    mean([line[2] for line in stats]),
+    mean([line[3] for line in stats]), 'TOTAL/MEAN'))

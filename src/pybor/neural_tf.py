@@ -13,6 +13,7 @@ integer ids where each id corresponds to a symbol segment from a vocabulary.
 import math
 import pickle
 from pathlib import Path
+import numpy as np
 
 import tensorflow as tf
 #tf.autograph.set_verbosity(0, False)
@@ -52,7 +53,7 @@ class NeuralWord:
     def __init__(self, vocab_len=None, model_type='attention',
                  language='', basis='all', series='', name='',
                  cell_type='LSTM', embedding_len=32, rnn_output_len=32,
-                 dropout_rate=0.1, l2_amt=0.001):
+                 dropout_rate=0.2, l2_amt=0.001):
         """
         Neural net based model to calculate token entropy.
         Configure and complile the model and fit training data at construction.
@@ -78,7 +79,7 @@ class NeuralWord:
         rnn_output_len : int, optional
             Length of recurrent output layer. The default is 32.
         dropout_rate : float, optional
-            Fraction of cells that may be dropped out during training. The default is 0.1.
+            Fraction of cells that may be dropped out during training. The default is 0.2.
             Dropout >= 0.2 may result in poorer fit overall.
         l2_amt : float, optional
             Amount of l2 regulation applied to model during training. The default is 0.001.
@@ -86,6 +87,11 @@ class NeuralWord:
         Returns
         -------
         NeuralWord object reference.
+
+        Notes
+        -----
+        Based on recent research, dropout of 0.1 should be considered when model includes
+        multiple levels of dropout.
         """
         self.initialized = False
 
@@ -115,7 +121,6 @@ class NeuralWord:
 
         self._construct_modelname(
                 language=language, basis=basis, series=series, name=name)
-
 
         # Build the model.
         if self.model_type == 'recurrent':
@@ -158,13 +163,15 @@ class NeuralWord:
 
             # Use maxlen to avoid tracing in tensorflow.
             x_tf = pad_sequences(x_lst, padding='post', maxlen=maxlen)
-            probs_tf = self.model.predict(x_tf)
-            #probs = np.squeeze(probs_tf)
-            probs = probs_tf
-
+            probs = self.model.predict(x_tf)
             # Calculate entropy versus the actual token_ids.
+            # Test if probs sum to 1.0!
+            #probs = tf.convert_to_tensor(probs_tf)
+            #probs /= tf.reduce_sum(probs, axis=-1, keepdims=True)
+
             assert len(probs) == len(y_lst)
             for x_ids_probs, y_ids in zip(probs, y_lst):
+
                 # Use len(y_ids) for the range since it retains token lengths.
                 x_ids_lns = [math.log(x_ids_probs[i, y_ids[i]]) for i in range(len(y_ids))]
                 entropy = -sum(x_ids_lns)/len(x_ids_lns)
@@ -184,6 +191,7 @@ class NeuralWord:
 
     # @tf.autograph.experimental.do_not_convert
     def _build_recurrent_model(self):
+        # Restore design from Jupyter notebook
 
         # Single character segment input per prediction. Variable length sequences.
         inputs = Input(shape=(None,))
@@ -196,18 +204,24 @@ class NeuralWord:
         if self.cell_type == 'LSTM':
             # Incorporate embeddings into hidden state and output state.
             rnn_output = LSTM(self.rnn_output_len, return_sequences=True,
-                activity_regularizer=l2(self.l2_amt),
-                recurrent_dropout=self.dropout_rate, name='LSTM_recurrent')(embedding)
+                recurrent_regularizer=l2(self.l2_amt), name='LSTM_recurrent')(embedding)
+                #activity_regularizer=l2(self.l2_amt),
+                #recurrent_dropout=self.dropout_rate, name='LSTM_recurrent')(embedding)
 
         else:  # GRU
             rnn_output = GRU(self.rnn_output_len, return_sequences=True,
-                activity_regularizer=l2(self.l2_amt),
-                recurrent_dropout=self.dropout_rate, name='GRU_recurrent')(embedding)
+                recurrent_regularizer=l2(self.l2_amt), name='GRU_recurrent')(embedding)
+                #activity_regularizer=l2(self.l2_amt),
+                #recurrent_dropout=self.dropout_rate, name='GRU_recurrent')(embedding)
+
+        if self.dropout_rate > 0.0:
+            rnn_output = Dropout(self.dropout_rate, name='Dropout_rnn_output')(rnn_output)
+            embedding = Dropout(self.dropout_rate, name='Dropout_embedding')(embedding)
 
         # Add in latest embedding per Bengio 2002.
         to_outputs = Concatenate(axis=-1, name='Merge_rnn_embedding')([rnn_output, embedding])
-        if self.dropout_rate > 0.0:
-            to_outputs = Dropout(self.dropout_rate, name='Dropout_to_outputs')(to_outputs)
+        # if self.dropout_rate > 0.0:
+        #     to_outputs = Dropout(self.dropout_rate, name='Dropout_to_outputs')(to_outputs)
 
 
         # Hidden state used to predict subsequent character.

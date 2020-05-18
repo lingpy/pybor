@@ -116,6 +116,15 @@ class NeuralData:
         tokens_ids = [[start_id]+token+[stop_id] for token in tokens_ids]
         return tokens_ids
 
+    @staticmethod
+    def get_ids_tokens(tokens_ids=None, id_to_symbol=None):
+        #Convert lists of tokens_ids to lists of segments.
+        tokens = [[id_to_symbol.get(id_, '<unk>')
+                  for id_ in token_ids]
+                  for token_ids in tokens_ids]
+        # Don't bother to strip <s> and </s> symbols.
+        return tokens
+
     def prepare_data(self, train_data=None, test_data=None, file_prefix=None, val_split=0.15):
         """
         Prepare data in format usable by neural network model.

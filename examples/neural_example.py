@@ -27,7 +27,9 @@ def simple_train_test_split(table=None, test_split=0.15):
     return train, test
 
 def evaluate_neural_loanword_prediction(language='', table=None,
-            detect_type='dual', model_type='recurrent', frac=0.99, test_split=0.15):
+            detect_type='dual', model_type='recurrent', cell_type='LSTM',
+            embedding_len=32, rnn_output_len=32,
+            frac=0.995, test_split=0.15):
     print(f'*** Evalution of prediction goodness for {language}. ***')
     print(f'Detect type is {detect_type}, neural model type is {model_type}.')
 
@@ -38,7 +40,9 @@ def evaluate_neural_loanword_prediction(language='', table=None,
 
     neural = Neural(train_data=train, test_data=test, language=language,
             series='devel', detect_type=detect_type, model_type=model_type,
-            frac=frac, make_models_separately=False)
+            cell_type=cell_type, embedding_len=embedding_len,
+            rnn_output_len=rnn_output_len, frac=frac,
+            make_models_separately=False)
     # neural.make_model(basis='native', model_type=model_type)
     # if detect_type == 'dual':
     #     neural.make_model(basis='loan', model_type=model_type)
@@ -56,7 +60,9 @@ def evaluate_neural_loanword_prediction(language='', table=None,
 
 
 def perform_detection_by_language(languages=None, form='FormChars',
-            detect_type='native', model_type='recurrent', frac=0.99):
+            detect_type='native', model_type='recurrent',
+            cell_type='LSTM', embedding_len=32, rnn_output_len=32,
+            frac=0.995):
 
     try:
         with open('wold.bin', 'rb') as f:
@@ -86,12 +92,17 @@ def perform_detection_by_language(languages=None, form='FormChars',
                     )
 
         evaluate_neural_loanword_prediction(language=language, table=table,
-            detect_type=detect_type, model_type=model_type, frac=frac, test_split=0.15)
+            detect_type=detect_type, model_type=model_type,
+            cell_type=cell_type, embedding_len=embedding_len,
+            rnn_output_len=rnn_output_len,
+            frac=frac, test_split=0.15)
 
 
 if __name__ == "__main__":
-    languages = 'English'  # ['English', 'Hup', 'Imbabura Quechua']
+    languages = ['English', 'Hup', 'Imbabura Quechua']  # 'English'
     perform_detection_by_language(languages=languages, form='FormChars',
-                    detect_type='native', model_type='recurrent', frac=0.98)
+                    detect_type='dual', model_type='recurrent',
+                    cell_type='GRU', embedding_len=16, rnn_output_len=32,
+                    frac=0.995)
 
 

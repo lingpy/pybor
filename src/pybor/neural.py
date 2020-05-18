@@ -22,7 +22,8 @@ class Neural:
     and used the distribution to predict native versus loan words.
     """
     def __init__(self, train_data=None, test_data=None, language='', series='',
-                 detect_type='dual', model_type='attention', frac=0.99,
+                 detect_type='dual', model_type='attention', cell_type='LSTM',
+                 embedding_len=32, rnn_output_len=32, frac=0.995,
                  make_models_separately=False):
 
         # Train neural model on native word dataa and of loan word data if dual.
@@ -51,9 +52,13 @@ class Neural:
         # Leave now if making models separately.
         if make_models_separately: return
 
-        self.make_model(basis='native', model_type=self.model_type)
+        self.make_model(basis='native', model_type=self.model_type,
+                cell_type=cell_type, embedding_len=embedding_len,
+                rnn_output_len=rnn_output_len)
         if self.detect_type == 'dual':
-            self.make_model(basis= 'loan', model_type=self.model_type)
+            self.make_model(basis= 'loan', model_type=self.model_type,
+                cell_type=cell_type, embedding_len=embedding_len,
+                rnn_output_len=rnn_output_len)
 
 
     def prepare_data(self, train_data, test_data):
@@ -92,8 +97,9 @@ class Neural:
 
     def make_model(self, basis='', model_type='attention', cell_type='LSTM',
                           embedding_len=32, rnn_output_len=32,
-                          dropout_rate=0.1, l2_amt=0.001, epochs=50,
-                          learning_rate=0.01, lr_decay=0.975):
+                          dropout_rate=0.2, l2_amt=0.001, epochs=40,
+                          learning_rate=0.01, lr_decay=0.95):
+        # Using dropout=0.2 default.  Consider use of 0.1.
 
         model = NeuralWord(vocab_len=self.vocab_len, model_type=model_type,
                                 language=self.language, basis=basis, series=self.series,
@@ -138,8 +144,10 @@ class Neural:
                 # val_loan_entropies = self.native_model.calculate_entropies(val_tokens_ids)
                 # self.cut_point = self.calculate_cut_point(
                 #        val_native_entropies, val_loan_entropies)
-                train_tokens_ids = self.native_data.data_repo.train_tokens_ids
-                entropies = self.native_model.calculate_entropies(train_tokens_ids)
+
+                # Jupyter implementation used train_val
+                trainval_tokens_ids = self.native_data.data_repo.trainval_tokens_ids
+                entropies = self.native_model.calculate_entropies(trainval_tokens_ids)
                 self.cut_point = self.calculate_ref_limit( entropies=entropies, frac=self.frac)
 
             return self.make_native_predictions(native_entropies, self.cut_point)

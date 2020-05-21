@@ -16,36 +16,23 @@ from pathlib import Path
 from pybor.data import LexibankDataset
 import pybor.evaluate as evaluate
 from pybor.neural import Neural
+from pybor.data_tf import NeuralData
+import pybor.neural_cfg as ncfg
 
-output_path = Path('./output').resolve()
 
-def simple_train_test_split(table=None, test_split=0.15):
-    table = random.sample(table, len(table))
-    test_split = int(test_split) if test_split >= 1 else math.ceil(len(table)*test_split)
-    train, test = table[:-test_split], table[-test_split:]
-    print(f'table len={len(table)}, train len={len(train)}, test len={len(test)}.')
-    return train, test
+output_path = Path(ncfg.system['output_path']).resolve()
+
 
 def evaluate_neural_loanword_prediction(language='', table=None,
-            detect_type='dual', model_type='recurrent', cell_type='LSTM',
-            embedding_len=32, rnn_output_len=32,
-            frac=0.995, test_split=0.15):
+            detect_type='dual', model_type='recurrent'):
     print(f'*** Evalution of prediction goodness for {language}. ***')
     print(f'Detect type is {detect_type}, neural model type is {model_type}.')
 
-    train, test = simple_train_test_split(table, test_split)
-    #train, test = table[:4*len(table)//5], table[4*len(table)//5:]
-    #print('table len =', len(table), table[0])
-
+    train, test = NeuralData.simple_train_test_split(table)
 
     neural = Neural(train_data=train, test_data=test, language=language,
-            series='devel', detect_type=detect_type, model_type=model_type,
-            cell_type=cell_type, embedding_len=embedding_len,
-            rnn_output_len=rnn_output_len, frac=frac,
-            make_models_separately=False)
-    # neural.make_model(basis='native', model_type=model_type)
-    # if detect_type == 'dual':
-    #     neural.make_model(basis='loan', model_type=model_type)
+                    series='devel', detect_type=detect_type, model_type=model_type)
+
     print("Evaluate train dataset.")
     predictions = neural.predict_data(train)
     train_metrics = evaluate.evaluate_model(predictions, train)
@@ -60,9 +47,7 @@ def evaluate_neural_loanword_prediction(language='', table=None,
 
 
 def perform_detection_by_language(languages=None, form='FormChars',
-            detect_type='native', model_type='recurrent',
-            cell_type='LSTM', embedding_len=32, rnn_output_len=32,
-            frac=0.995):
+            detect_type='native', model_type='recurrent'):
 
     try:
         with open('wold.bin', 'rb') as f:
@@ -92,17 +77,12 @@ def perform_detection_by_language(languages=None, form='FormChars',
                     )
 
         evaluate_neural_loanword_prediction(language=language, table=table,
-            detect_type=detect_type, model_type=model_type,
-            cell_type=cell_type, embedding_len=embedding_len,
-            rnn_output_len=rnn_output_len,
-            frac=frac, test_split=0.15)
+                                            detect_type=detect_type, model_type=model_type)
 
 
 if __name__ == "__main__":
-    languages = ['English', 'Hup', 'Imbabura Quechua']  # 'English'
+    languages = 'Hup'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
     perform_detection_by_language(languages=languages, form='FormChars',
-                    detect_type='dual', model_type='recurrent',
-                    cell_type='GRU', embedding_len=16, rnn_output_len=32,
-                    frac=0.995)
+                    detect_type='dual', model_type='attention')
 
 

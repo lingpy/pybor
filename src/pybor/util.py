@@ -45,7 +45,7 @@ def find_cut_point(native, loan):
 
 
 
-def find_ref_limit(entropies=None, frac=0.99):
+def find_ref_limit(entropies=None, fraction=0.995):
     """
     Calculate a cut-off point for entropies from the data.
     """
@@ -53,5 +53,5 @@ def find_ref_limit(entropies=None, frac=0.99):
     # Better to use fraction of distribution rather than Gaussian z value
     # as cut-point for discriminating between native and loan.
     entropies = sorted(entropies)
-    idx = min((len(entropies)-1)*frac, len(entropies)-1)
+    idx = min((len(entropies)-1)*fraction, len(entropies)-1)
     return (entropies[math.floor(idx)]+entropies[math.ceil(idx)])/2

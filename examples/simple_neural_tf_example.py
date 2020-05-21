@@ -118,7 +118,7 @@ def describe_neural_entropies_for_basis(
     model.evaluate_test(test_gen)
 
     # Report descriptive statistics.
-    stats = report_entropy_statistics_str(model, data.data_repo)
+    stats = report_entropy_statistics_str(model, data)
     title = f'{basis} basis'
     rownames = ['Train', 'Validate', 'Test']
     print_entropy_statistics(stats, title, rownames)

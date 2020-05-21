@@ -53,7 +53,7 @@ class NeuralData:
 
         if ncfg.data['verbose'] > 0:
             print(f'Train length: {len(self.train_tokens)}, ',
-                f'val length: {len(self.val_tokens)}, ',
+                f'val length: {len(self.val_tokens) if self.val_data is not None else 0}, ',
                 f'test length: {len(self.test_data) if self.test_data is not None else 0}.')
 
 
@@ -71,6 +71,9 @@ class NeuralData:
         symbol_to_id["<nul>"] = 0 # zero padding indicator.
         return symbol_to_id
 
+    @staticmethod
+    def get_reverse_vocab(vocab):
+        return dict(zip(vocab.values(), vocab.keys()))
 
     @staticmethod
     def get_tokens_ids(tokens=None, symbol_to_id=None):
@@ -121,7 +124,10 @@ class NeuralData:
         """
 
         trainval_data = train_data
-        all_data = trainval_data + test_data
+        if test_data is not None:
+            all_data = trainval_data + test_data
+        else:
+            all_data = trainval_data
 
         # Randomize order of data now to maintain correspondence with tokens.
         self.all_data = random.sample(all_data, len(all_data))
@@ -129,7 +135,7 @@ class NeuralData:
 
         if self.vocab == None:
             self.vocab = NeuralData.build_vocab(self.all_tokens)
-        self.id_to_symbol = dict(zip(self.vocab.values(), self.vocab.keys()))
+        self.id_to_symbol = NeuralData.get_reverse_vocab(self.vocab)
 
         self.all_tokens_ids = NeuralData.get_tokens_ids(self.all_tokens, self.vocab)
 
@@ -137,6 +143,10 @@ class NeuralData:
             self.test_data = random.sample(test_data, len(test_data))
             self.test_tokens = [token for _, token, _ in self.test_data]
             self.test_tokens_ids = NeuralData.get_tokens_ids(self.test_tokens, self.vocab)
+        else:
+            self.test_data = None
+            self.test_tokens = None
+            self.test_tokens_ids = None
 
         # Split train into train and val datasets.
         # Reloading the data randomizes the train-val split.
@@ -154,7 +164,7 @@ class NeuralData:
             self.train_tokens_ids = NeuralData.get_tokens_ids(self.train_tokens, self.vocab)
             self.val_data = None
             self.val_tokens = None
-            self.val_tokens_id = None
+            self.val_tokens_ids = None
 
 
     def make_generators(self):
@@ -181,8 +191,8 @@ class NeuralData:
         print('Symbol dictionary:', self.vocab)
         print('Reverse dictionary:', self.id_to_symbol)
         print(f'Sample train tokens ids: {tokens_ids}')
-        sample_tokens = [" ".join([self.id_to_symbol[i] for i in token_ids])
-                         for token_ids in tokens_ids]
+        sample_tokens = [" ".join([self.id_to_symbol.get(i, '<unk>')
+                                   for i in token_ids]) for token_ids in tokens_ids]
         print(f'Sample train tokens: {sample_tokens}')
 
 
@@ -230,12 +240,8 @@ class KerasBatchGenerator(object):
             y_lst = []
             for i in range(self.batch_size):
                 ## Build 2-D list of lists of ids for each word.
-                ## Truncate the lists to no more than num_steps.
                 ## Apply Keras pad_sequences (post padding).
                 ## Yield x and y numpy arrays.
-                if self.current_idx >= self.data_len:
-                    # reset the index back to the start of the data set
-                    self.current_idx = 0
 
                 # Truncate last symbol because we don't have more y to predict.
                 x_lst.append(data[self.current_idx][:-1])
@@ -243,7 +249,10 @@ class KerasBatchGenerator(object):
                 temp_y = data[self.current_idx][1:]
                 # Convert temp_y into a one hot representation
                 y_lst.append(to_categorical(temp_y, num_classes=self.vocab_len))
+
                 self.current_idx += 1
+                if self.current_idx >= self.data_len:
+                    self.current_idx = 0
 
             x = pad_sequences(x_lst, padding='post')
             y = pad_sequences(y_lst, padding='post')
@@ -252,11 +261,11 @@ class KerasBatchGenerator(object):
 
 #--------------------------------------------------------
 
-if __name__ == "__main__":
-    import pybor
-    from pybor.dev.data import testing, training
+# if __name__ == "__main__":
+#     import pybor
+#     from pybor.dev.data import testing, training
 
-    nd = NeuralData(training, testing)
-    nd.verify_token_encoding(nd.test_tokens_ids[:5])
-    train_gen, val_gen, test_gen = nd.make_generators()
-    print(next(train_gen.generate()))
+#     nd = NeuralData(training, testing)
+#     nd.verify_token_encoding(nd.test_tokens_ids[:5])
+#     train_gen, val_gen, test_gen = nd.make_generators()
+#     print(next(train_gen.generate()))

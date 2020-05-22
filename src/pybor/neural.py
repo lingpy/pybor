@@ -20,27 +20,27 @@ class Neural:
     """
     Construct and train neural model of native word entropy distribution,
     and used the distribution to predict native versus loan words.
+
+    Train neural model on native word data and on loan word data if dual.
+    Determine cutpoint to detect loan words if native, or entropy bias if dual
+    Predict words as native or loan.
     """
-    def __init__(self, train_data=None, test_data=None, language='', series='',
-                 detect_type='dual', model_type='attention'):
+    def __init__(self, train_data=None, test_data=None,
+                 detect_type=None, model_type=None,
+                 language=None, series=None):
+        def get_param(variable, key):
+            return variable if variable is not None else ncfg.neural[key]
 
-        # Train neural model on native word data and on loan word data if dual.
-        # Determine cutpoint to detect loan words if native, or entropy bias if dual
-        # Predict words as native or loan.
-
-        self.language = language
-        self.series = series
-        self.detect_type = detect_type
-        self.model_type = model_type
+        self.language = get_param(language, 'language')
+        self.series = get_param(series, 'series')
+        self.detect_type = get_param(detect_type, 'detect_type')
+        self.model_type = get_param(model_type, 'model_type')
         self.vocab = None
         self.native_data = None
         self.loan_data = None
         self.native_model = None
         self.loan_model = None
-
-        self.params = ncfg.neural
         self.cut_point = None
-
 
         self.prepare_data(train_data, test_data)
 
@@ -96,7 +96,7 @@ class Neural:
 
 
     def calculate_ref_limit(self, entropies=None):
-        return find_ref_limit(entropies=entropies, fraction=self.params['fraction'])
+        return find_ref_limit(entropies=entropies, fraction=ncfg.neural['fraction'])
 
     def make_native_predictions(self, entropies, cut_point):
         return [int(entropy>cut_point) for entropy in entropies]
@@ -134,54 +134,5 @@ class Neural:
         return list(zip(ids, tokens, predictions))
 
     def predict(self, token):
-        return self.predict_data([['', token]])
+        return self.predict_data([['', token]])[0][2]
 
-
-
-# =============================================================================
-# Main for simple example
-#
-# =============================================================================
-
-# if __name__ == "__main__":
-#     # Test basic funtion.
-#     import statistics
-#     import pybor
-#     from pybor.dev.data import testing, training
-#     import pybor.evaluate as evaluate
-
-#     training1 = training+testing[:3*len(testing)//4]
-#     testing1 = testing[3*len(testing)//4:]
-#     print('training len=',len(training1), 'testing len=', len(testing1))
-#     neural = Neural( train_data=training1, test_data=testing1,
-#                     language='German', series='devel', detect_type='native')
-#     # neural.make_native_model()
-#     neural.native_model.evaluate_test(neural.native_data.test_gen)
-#     # neural.make_loan_model()
-#     if neural.loan_model is not None:
-#         neural.loan_model.evaluate_test(neural.loan_data.test_gen)
-
-#     print('token entropies for testing')
-#     # Need to offer servide method for conversion.
-#     # And method from here to do the conversion and calculate the entropies.
-#     tokens = [row[1] for row in testing1]
-#     tokens_ids = neural.native_data.test_tokens_ids
-#     #entropies = neural.native_model.calculate_entropies(tokens_ids)
-#     #print('1x1 entropies:', statistics.mean(entropies))
-#     entropies = neural.native_model.calculate_entropies(tokens_ids)
-#     print('batch entropies:',statistics.mean(entropies))
-#     print(testing1[5:19])
-#     print('token =', testing1[6], 'result =', neural.predict(testing1[6][1]))
-#     print('tokens =', testing1[5:19], 'results =', neural.predict_data(testing1[5:19]))
-
-#     print("Evaluate train dataset.")
-#     predictions = neural.predict_data(training1)
-#     train_metrics = evaluate.evaluate_model(predictions, training1)
-#     evaluate.print_evaluation(train_metrics)
-#     evaluate.false_positive(predictions, training1)
-
-#     print("Evaluate test dataset.")
-#     predictions = neural.predict_data(testing1)
-#     test_metrics = evaluate.evaluate_model(predictions, testing1)
-#     evaluate.print_evaluation(test_metrics)
-#     evaluate.false_positive(predictions, testing1)

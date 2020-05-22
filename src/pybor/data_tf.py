@@ -263,9 +263,9 @@ class KerasBatchGenerator(object):
 
 # if __name__ == "__main__":
 #     import pybor
-#     from pybor.dev.data import testing, training
+#     from pybor.dev.data import testing1, training1
 
-#     nd = NeuralData(training, testing)
+#     nd = NeuralData(training1, testing1)
 #     nd.verify_token_encoding(nd.test_tokens_ids[:5])
 #     train_gen, val_gen, test_gen = nd.make_generators()
 #     print(next(train_gen.generate()))

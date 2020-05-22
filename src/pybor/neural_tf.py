@@ -144,8 +144,11 @@ class NeuralWord:
 
     def _construct_modelname(self):
         language_out = ''.join(self.language.split())
-        model_name = f'{language_out}-{self.basis}-{self.series}-{self.name}'
-        model_name += f'-model{self.model_type}'
+        model_name = f'{language_out}-' if language_out != '' else ''
+        model_name += f'basis{self.basis}-' if self.basis != '' else ''
+        model_name += f'{self.series}-' if self.series != '' else ''
+        model_name += f'{self.name}-' if self.name != '' else ''
+        model_name += f'model{self.model_type}-' if self.model_type != '' else ''
         embedding_len = self.param('embedding_len')
         rnn_output_len = self.param('rnn_output_len')
         rnn_cell_type = self.param('rnn_cell_type')

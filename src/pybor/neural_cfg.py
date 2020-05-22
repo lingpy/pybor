@@ -12,13 +12,13 @@ recurrent = {
     # Model architecture parameters
     'embedding_len': 16,
     'rnn_output_len': 32,
-    'rnn_cell_type': 'GRU',
+    'rnn_cell_type': 'GRU',  # Default is GRU, choices are GRU, LSTM
 
-    'print_summary': False,
-    'plot_model': False,
+    'print_summary': False,  # Default == False
+    'plot_model': False,  # Default == False
     'plot_dpi': 400,
     # Model dropout and regulation parameters
-    'embedding_dropout': 0.0,
+    'embedding_dropout': 0.0,  # Default == 0.0
     # 'rnn_kernel_l2': 0.0,
     'recurrent_l2': 0.001,
     'rnn_activity_l2': 0.0,
@@ -39,13 +39,13 @@ attention = {
     # Model architecture parameters
     'embedding_len': 32,
     'rnn_output_len': 32,
-    'rnn_cell_type': 'LSTM',
+    'rnn_cell_type': 'LSTM',  # Default is LSTM, choices are GRU, LSTM
 
-    'print_summary': False,
-    'plot_model': False,
+    'print_summary': False,   # Default == False
+    'plot_model': False,  # Default == False
     'plot_dpi': 400,
     # Model dropout and regulation parameters
-    'embedding_dropout': 0.0,
+    'embedding_dropout': 0.0,  # Default == 0
     # 'rnn_kernel_l2': 0.0,
     'recurrent_l2': 0.0,
     'rnn_activity_l2': 0.001,

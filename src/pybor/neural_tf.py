@@ -74,11 +74,10 @@ class NeuralWord:
         """
 
         if model_type not in ['recurrent', 'attention']:
-            print(f'Invalid model {model_type}.')
-            return
-        if vocab_len is None:
-            print(f'Require the vocabulary size to construct NeuralWord')
-            return
+            print(f'Invalid model type "{model_type}" set to "recurrent".')
+            model_type = 'recurrent'
+        if vocab_len is None or vocab_len <= 0:
+            raise ValueError('Require a vocabulary size > 0 to construct NeuralWord')
 
         self.vocab_len = vocab_len
         self.model_type = model_type
@@ -191,7 +190,7 @@ class NeuralWord:
 
         if param('merge_embedding_dropout') > 0.0:
             embedding = Dropout(param('merge_embedding_dropout'),
-                    name='Dropout_embedding')(embedding)
+                    name='Dropout_merge_embedding')(embedding)
 
         # Add in latest embedding per Bengio 2002.
         to_outputs = Concatenate(axis=-1,
@@ -233,7 +232,7 @@ class NeuralWord:
                     name='LSTM_recurrent')(embedding)
 
         else:  # GRU
-            rnn_output, rnn_hidden, _ = GRU(param('rnn_output_len'),
+            rnn_output, rnn_hidden = GRU(param('rnn_output_len'),
                     return_sequences=True, return_state=True,
                     recurrent_regularizer=l2(param('recurrent_l2')),
                     activity_regularizer=l2(param('rnn_activity_l2')),
@@ -278,7 +277,7 @@ class NeuralWord:
 
         Returns
         -------
-        None.
+        Tensorflow history.history.
 
         """
         # Will invoke this after consruction of the model.
@@ -331,13 +330,14 @@ class NeuralWord:
         # TODO: Optionally graph the quality measures from history.
         # This would serve in determing model parameters.
         # But should only be peperformed when requested.
+        return history.history
 
     def _show_quality_measures(self, history):
         #measure_keys = history.keys()
         # val_loss is used to get the best fit with early stopping.
         val_loss = history['val_loss']
         best, best_val_loss = min(enumerate(val_loss), key=lambda v: v[1])
-        print(f'Best epoch: {best} of {len(val_loss)}.')
+        print(f'Best epoch: {best} of {len(val_loss)}. Statistics from TensorFlow:')
         print(f"Train dataset: loss={history['loss'][best]:.4f}, " +
               f"accuracy={history['accuracy'][best]:.4f}, " +
               f"crossentropy={history['categorical_crossentropy'][best]:.4f}")
@@ -373,9 +373,9 @@ class NeuralWord:
                    show_layer_names=True, dpi=self.param('plot_dpi'))
 
 #
-if __name__ == "__main__":
-    nw = NeuralWord(vocab_len=55, model_type='recurrent', series='devel')
-    nw.print_model_summary()
-    nw.plot_model_summary()
+# if __name__ == "__main__":
+#     nw = NeuralWord(vocab_len=55, model_type='recurrent', series='devel')
+#     nw.print_model_summary()
+#     nw.plot_model_summary()
 
 

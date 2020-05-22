@@ -15,11 +15,13 @@ Install pytest and pytest-cov with pip
 Save test files to ./tests
 
 Run test file:
-$ pytest test_data_tf.py -—cov=pybor.data_tf
+$ pytest testys/test_data_tf.py -—cov=pybor.data_tf
 
 Or to save as html report:
-$ pytest test_data_tf.py -—cov=pybor.data_tf --cov-report=html
+$ pytest tests/test_data_tf.py -—cov=pybor.data_tf --cov-report=html
 
+Or to report line numbers of missing coverage:
+$ pytest tests/test_data_tf.py --cov=pybor.data_tf --cov-report term-missing
 
 """
 from pybor.data_tf import NeuralData

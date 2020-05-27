@@ -19,16 +19,24 @@ from pybor.neural import Neural
 from pybor.data_tf import NeuralData
 import pybor.neural_cfg as ncfg
 
+from pybor.dev.data import training1, testing1
 
 output_path = Path(ncfg.system['output_path']).resolve()
 
 
 def evaluate_neural_loanword_prediction(language='', table=None,
             detect_type='dual', model_type='recurrent'):
+
+    train, test = NeuralData.simple_train_test_split(table)
+    evaluate_neural_loanword_prediction_train_test(language,
+            train, test, detect_type, model_type)
+
+def evaluate_neural_loanword_prediction_train_test(language='',
+            train=None, test=None, detect_type='dual', model_type='recurrent'):
+
     print(f'*** Evalution of prediction goodness for {language}. ***')
     print(f'Detect type is {detect_type}, neural model type is {model_type}.')
 
-    train, test = NeuralData.simple_train_test_split(table)
 
     neural = Neural(train_data=train, test_data=test, language=language,
                     series='devel', detect_type=detect_type, model_type=model_type)
@@ -81,8 +89,10 @@ def perform_detection_by_language(languages=None, form='FormChars',
 
 
 if __name__ == "__main__":
-    languages = 'Hup'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
-    perform_detection_by_language(languages=languages, form='FormChars',
-                    detect_type='dual', model_type='attention')
+    # languages = 'Hup'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
+    # perform_detection_by_language(languages=languages, form='Tokens',
+    #                 detect_type='dual', model_type='recurrent')
 
 
+    evaluate_neural_loanword_prediction_train_test('German',
+                    training1, testing1, 'dual', 'recurrent')

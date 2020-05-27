@@ -29,8 +29,8 @@ recurrent = {
 
     # Model fitting parameters
     'epochs': 30,
-    'learning_rate': 0.01,
-    'lr_decay': 0.80,  # 0.8, 0.9, 0.95
+    'learning_rate': 0.003333,  # 0.01, 0.003333, 0.001
+    'lr_decay': 0.90,  # 0.8, 0.9, 0.95
     'neural_verbose': 1,
     'tf_verbose': 0,
     }

@@ -37,14 +37,10 @@ def test_instantiation():
     assert 179 == len(data.test_data)
     # Test default 0.15 test split.
     assert 152 == len(data.val_data)
-    assert 861 == len(data.train_data)
+    assert 861 == len(data.fit_data)
     # Verify related vector lengths.
-    assert len(data.train_data) == len(data.train_tokens)
-    assert len(data.train_data) == len(data.train_tokens_ids)
-    assert len(data.val_data) == len(data.val_tokens)
-    assert len(data.val_data) == len(data.val_tokens_ids)
-    assert len(data.test_data) == len(data.test_tokens)
-    assert len(data.test_data) == len(data.test_tokens_ids)
+    assert len(data.train_data) == len(data.fit_data)+len(data.val_data)
+    assert len(data.all_data) == len(data.train_data)+len(data.test_data)
 
     print('Review vocab to be sure that segments are correctly represented.')
     print('Vocab', data.vocab)
@@ -53,13 +49,9 @@ def test_instantiation():
     data = NeuralData(training1)
     assert data.test_data is None
     assert 152 == len(data.val_data)
-    assert 861 == len(data.train_data)
-    assert len(data.train_data) == len(data.train_tokens)
-    assert len(data.train_data) == len(data.train_tokens_ids)
-    assert len(data.val_data) == len(data.val_tokens)
-    assert len(data.val_data) == len(data.val_tokens_ids)
-    assert data.test_tokens is None
-    assert data.test_tokens_ids is None
+    assert 861 == len(data.fit_data)
+    assert len(data.train_data) == len(data.fit_data)+len(data.val_data)
+    assert len(data.all_data) == len(data.train_data)
 
     data = NeuralData(training1, testing1, val_split=0.0)
     assert data.val_data is None
@@ -94,10 +86,10 @@ def test_encoding():
         ['a', 'l', 'ŋ', 'm'],
         ['<s>', 's', 'øː', 'ə', '</s>', '<nul>', '<nul>']]
 
-    tokens_ids = NeuralData.get_tokens_ids(tokens_ref, vocab)
+    tokens_ids = NeuralData._get_tokens_ids(tokens_ref, vocab)
     assert tokens_ids == tokens_ids_ref_out, ("tokens_ids %r != expected %r"
                                               %(tokens_ids, tokens_ids_ref_out))
-    tokens = NeuralData.get_ids_tokens(tokens_ids_ref,
+    tokens = NeuralData._get_ids_tokens(tokens_ids_ref,
                     NeuralData.get_reverse_vocab(vocab))
     assert tokens == tokens_ref, "tokens %r != expected %r" %(tokens, tokens_ref)
 
@@ -112,10 +104,10 @@ def test_encoding():
     tokens_ref = [
         ['a', 'l', '<unk>', 'm'],
         ['<s>', '<unk>', 's']]
-    tokens_ids = NeuralData.get_tokens_ids(tokens_ref, vocab)
+    tokens_ids = NeuralData._get_tokens_ids(tokens_ref, vocab)
     assert tokens_ids == tokens_ids_ref_out, ("tokens_ids %r != expected %r"
                                               %(tokens_ids, tokens_ids_ref_out))
-    tokens = NeuralData.get_ids_tokens(tokens_ids_ref,
+    tokens = NeuralData._get_ids_tokens(tokens_ids_ref,
                     NeuralData.get_reverse_vocab(vocab))
     assert tokens == tokens_ref, "tokens %r != expected %r" %(tokens, tokens_ref)
 
@@ -124,10 +116,27 @@ def test_encoding():
     data = NeuralData(training1, testing1, vocab=vocab)
     assert data.vocab == vocab
 
-    data.verify_token_encoding(tokens_ids_ref)
-    # Should printout short dictionary from ref_vocab and reverse.
-    # should also print: [['a', 'l', '<unk>', 'm'],
-    #                    [''<s>', '<unk>', 's']]
+def test_access_fns():
+    data = NeuralData(training1, testing1)
+    tokens_ids = data.get_chosen_tokens_ids('fit')
+    assert len(tokens_ids) == len(data.fit_data)
+    tokens_ids = data.get_chosen_tokens_ids('val')
+    assert len(tokens_ids) == len(data.val_data)
+    tokens_ids = data.get_chosen_tokens_ids('train')
+    assert len(tokens_ids) == len(data.train_data)
+    tokens_ids = data.get_chosen_tokens_ids('test')
+    assert len(tokens_ids) == len(data.test_data)
+    tokens_ids = data.get_chosen_tokens_ids('all')
+    assert len(tokens_ids) == len(data.all_data)
+
+    data_ids = data.get_data_ids(data.test_data)
+    assert len(data_ids) == len(data.test_data)
+    tokens = data.get_ids_tokens(tokens_ids)
+    assert len(tokens) == len(tokens_ids)
+    # 42 is the answer, 1 is the position of tokens, [1:-1] is without <s>, </s>
+    assert data.all_data[42][1] == tokens[42][1:-1]
+
+
 
 def test_make_generator():
     data = NeuralData(training1, testing1)
@@ -141,19 +150,16 @@ def test_make_generator():
     x, y = next(gen)
     assert len(x) == train_gen.batch_size
     assert len(y) == train_gen.batch_size
-    assert len(y[0][0]) == train_gen.vocab_len
 
     gen = val_gen.generate()
     x, y = next(gen)
     assert len(x) == val_gen.batch_size
     assert len(y) == val_gen.batch_size
-    assert len(y[0][0]) == val_gen.vocab_len
 
     gen = test_gen.generate()
     x, y = next(gen)
     assert len(x) == test_gen.batch_size
     assert len(y) == test_gen.batch_size
-    assert len(y[0][0]) == test_gen.vocab_len
     #print(x)
     #print(y)
 

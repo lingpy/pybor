@@ -94,6 +94,12 @@ def test_instantiation3():
     assert neural.loan_data.test_data is not None
     assert neural.loan_model is None
 
+# =============================================================================
+#
+# After this point, tests primarily see whether the methods execute.
+#
+# =============================================================================
+
 def test_prediction():
     ncfg.attention['epochs'] = 30
     ncfg.recurrent['epochs'] = 30
@@ -193,7 +199,7 @@ def test_prediction3():
 # Execute tests as standalone file
 # =============================================================================
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     # test_instantiation()
     # test_instantiation1()
     # test_instantiation2()
@@ -201,4 +207,4 @@ if __name__ == "__main__":
     # test_prediction()
     # test_prediction1()
     # test_prediction2()
-    test_prediction3()
+    #test_prediction3()

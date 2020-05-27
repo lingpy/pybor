@@ -1,48 +1,77 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Test markov_nltk implementation of Markov word model for calclating entropies.
+Test markov_nltk.py implementation of Markov word model for calclating entropies.
+
+
+All test functions begin with 'test_'
+Import testing, training, testing1, training1 from pybor.dev.data
+
+Install pytest and pytest-cov with pip
+
+Save test files to ./tests
+
+Run test file:
+$ pytest testy/test_markov_nltk.py -—cov=pybor.markov_nltk
+
+Or to save as html report:
+$ pytest tests/test_markov_nltk.py -—cov=pybor.markov_nltk --cov-report=html
+
+Or to report line numbers of missing coverage:
+$ pytest tests/test_markov_nltk.py --cov=pybor.markov_nltk --cov-report term-missing
+
+Add the -rP argument to print output for passing tests, or -rPx for passing and failed tests.
+Otherwise default is -rx for failed tests only.
+
 """
 import statistics
-import random
-import math
+import pytest
 
 from pybor.markov_nltk import MarkovWord
-from pybor.dev.data import testing, training
-from pybor.data import LexibankDataset
+from pybor.dev.data import testing1, training1
 
 
 def test_with_training():
-    tokens = get_tokens(training)
-    assert len(training) == len(tokens)
-    alt_tokens = get_tokens(testing)
+    print('Train with training1, alternative with testing1.')
+    tokens = get_tokens(training1)
+    assert len(training1) == len(tokens)
+    alt_tokens = get_tokens(testing1)
     run_generic_test(tokens, alt_tokens)
 
 def test_with_testing():
-    tokens = get_tokens(testing)
-    assert len(testing) == len(tokens)
-    alt_tokens = get_tokens(training)
+    print('Train with testing1, alternative with training1.')
+    tokens = get_tokens(testing1)
+    assert len(testing1) == len(tokens)
+    alt_tokens = get_tokens(training1)
     run_generic_test(tokens, alt_tokens)
 
 
-def test_with_English_table():
-    ds = LexibankDataset('wold', transform=
-        {"Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0})
-    table = ds.get_table(
-        language='English', form='FormChars', classification='Loan')
-    assert table
+def test_with_various_models():
+    print('Train various models with training1, alternative with testing1.')
+    tokens = get_tokens(training1)
+    alt_tokens = get_tokens(testing1)
 
-    tokens = [token for _, token, _ in table]
-    tokens = random.sample(tokens, len(tokens))
-    idx = math.ceil(len(tokens)*0.75)
-    train = tokens[:idx]
-    test = tokens[idx+1:]
+    run_generic_test(tokens, alt_tokens, model='kni', smoothing=0.1)
+    run_generic_test(tokens, alt_tokens, model='kni', smoothing=0.0)
+    run_generic_test(tokens, alt_tokens, model='wbi')
+    run_generic_test(tokens, alt_tokens, model='lp')
+    run_generic_test(tokens, alt_tokens, model='ls', smoothing=0.5)
+    run_generic_test(tokens, alt_tokens, model='ls', smoothing=0.1)
+    run_generic_test(tokens, alt_tokens, model='ls', smoothing=0.0)
 
-    run_generic_test(train, test)
+def test_with_mle_model_fails() :
+    print('Train mle with training1, alternative with testing1.')
+    tokens = get_tokens(training1)
+    alt_tokens = get_tokens(testing1)
 
-def run_generic_test(tokens, alt_tokens):
-    print("Train model")
-    markov = MarkovWord(tokens, order=3)
+    with pytest.raises(Exception) as e_info:
+        run_generic_test(tokens, alt_tokens, model='mle')
+
+
+def run_generic_test(tokens, alt_tokens, model='kni', smoothing=0.5):
+    print()
+    print(f"Train model {model}.")
+    markov = MarkovWord(tokens, order=3, model=model, smoothing=smoothing)
     entropies = markov.calculate_entropies(tokens)
     assert len(entropies) == len(tokens)
     check_statistics(entropies)
@@ -62,8 +91,9 @@ def check_statistics(entropies):
     mean = statistics.mean(entropies)
     stdev = statistics.stdev(entropies)
     print(f'entropies: n={n},  mean={mean:.3f},  stdev={stdev:.3f}')
+    # Base 2 entropy calculation.
     assert n > 0 and n < 10000  # unlikely to have so many in testing.
-    assert mean > 1.0 and mean < 5.0  # all human languages should conform to this.
+    assert mean > 1.0 and mean < 7.0  # all human languages should conform to this for Markov.
     assert stdev > 0.0 and stdev < 4.0
     print(f'max entropy={max(entropies):.2f}')
 
@@ -76,4 +106,4 @@ def get_tokens(data):
 if __name__ == "__main__":
     test_with_training()
     test_with_testing()
-    test_with_English_table()
+    test_with_various_models()

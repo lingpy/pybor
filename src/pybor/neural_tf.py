@@ -98,42 +98,35 @@ class NeuralWord:
         return self.calculate_entropies([token_ids])[0]
 
 
-    @tf.autograph.experimental.do_not_convert
     def calculate_entropies(self, tokens_ids):
-        # Calculate entropy for a list of tokens.
-        # Replicate the structure of data from batch generator
-        # to improve performance and avoid advisory messages from tensorflow.
-        # Use batch size of 32.
+        # Calculate entropy for a list of tokens_ids
+        # in format of int ids that correspond to str segments.
 
-        batch_size = ncfg.data['batch_size']
-        token_maxlen = ncfg.data['token_maxlen']
-        idx = 0
-        len_tokens = len(tokens_ids)
+        # Get the probabilities for all str segment possibilities.
+        maxlen = max([len(token_ids) for token_ids in tokens_ids])
+        # Truncate right id for x and left id for y, so only 1 id extra.
+        if maxlen > ncfg.data['token_maxlen']+1:
+            maxlen = ncfg.data['token_maxlen']+1
+
+        x_lst = []
+        y_lst = []
+        for token_ids in tokens_ids:
+            x_lst.append(token_ids[:-1])
+            y_lst.append(token_ids[1:])
+
+        x_tf = pad_sequences(x_lst, padding='post', maxlen=maxlen)
+        x_probs = self.model.predict(x_tf)
+
+        # Compute cross-entropies
+
         entropies = []
-
-        while idx < len_tokens:
-            x_lst = []
-            y_lst = []
-
-            for i in range(batch_size):
-                if idx >= len_tokens: break
-
-                x_lst.append(tokens_ids[idx][:-1])
-                y_lst.append(tokens_ids[idx][1:])
-                idx += 1
-
-            # Use maxlen to avoid tracing in tensorflow.
-            # Increases calculation time, but is only 1 pass.
-            x_tf = pad_sequences(x_lst, padding='post', maxlen=token_maxlen)
-            probs = self.model.predict(x_tf)
-            # Calculate entropy versus the actual token_ids.
-            assert len(probs) == len(y_lst)
-            for x_ids_probs, y_ids in zip(probs, y_lst):
-
-                # Use len(y_ids) for the range since it retains token lengths.
-                x_ids_lns = [math.log(x_ids_probs[i, y_ids[i]]) for i in range(len(y_ids))]
-                entropy = -sum(x_ids_lns)/len(x_ids_lns)
-                entropies.append(entropy)
+        EPSILON = 1e-7
+        for x_ids_probs, y_ids in zip(x_probs, y_lst):
+            # Prevent overflow/underflow with clipping.
+            x_ids_probs_ = tf.clip_by_value(x_ids_probs,  EPSILON, 1-EPSILON)
+            x_ids_lns = [math.log(x_ids_probs_[i, y_ids[i]]) for i in range(len(y_ids))]
+            entropy = -sum(x_ids_lns)/len(x_ids_lns)
+            entropies.append(entropy)
 
         assert len(tokens_ids) == len(entropies)
         return entropies
@@ -291,8 +284,11 @@ class NeuralWord:
         lr_decay = (1.0/param('lr_decay')-1.0)/train_steps
         optimizer = Adam(learning_rate=param('learning_rate'), decay=lr_decay)
 
-        self.model.compile(loss='categorical_crossentropy', optimizer=optimizer,
-                      metrics=['accuracy', 'categorical_crossentropy'])
+        # Use sparse encoding.  Tensorflow converts as needed.
+        self.model.compile(loss='sparse_categorical_crossentropy', optimizer=optimizer,
+                metrics=['sparse_categorical_accuracy'])
+        # self.model.compile(loss='categorical_crossentropy', optimizer=optimizer,
+        #               metrics=['accuracy', 'categorical_crossentropy'])
 
         # Filename without .h5 suffix, provides better handling of state.
         # Had trouble loading withoutwhen not using .h5 suffix, so still use it.
@@ -342,11 +338,10 @@ class NeuralWord:
         best, best_val_loss = min(enumerate(val_loss), key=lambda v: v[1])
         print(f'Best epoch: {best} of {len(val_loss)}. Statistics from TensorFlow:')
         print(f"Train dataset: loss={history['loss'][best]:.4f}, " +
-              f"accuracy={history['accuracy'][best]:.4f}, " +
-              f"crossentropy={history['categorical_crossentropy'][best]:.4f}")
-        print(f"Devel dataset: loss={history['val_loss'][best]:.4f}, " +
-              f"accuracy={history['val_accuracy'][best]:.4f}, " +
-              f"crossentropy={history['val_categorical_crossentropy'][best]:.4f}")
+              f"accuracy={history['sparse_categorical_accuracy'][best]:.4f}")
+              #f"crossentropy={history['sparse_categorical_crossentropy'][best]:.4f}")
+        print(f"Validate dataset: loss={history['val_loss'][best]:.4f}, " +
+              f"accuracy={history['val_sparse_categorical_accuracy'][best]:.4f}")
 
 
     @tf.autograph.experimental.do_not_convert
@@ -359,8 +354,8 @@ class NeuralWord:
                     steps=test_steps, verbose=param('tf_verbose'))
 
         print(f'Test dataset: loss={score[0]:.4f}, '+
-              f'accuracy={score[1]:.4f}, '+
-              f'crossentropy={score[2]:.4f}')
+              f'accuracy={score[1]:.4f}')
+              #f'crossentropy={score[2]:.4f}')
         return score
 
     def print_model_summary(self):
@@ -375,9 +370,9 @@ class NeuralWord:
         plot_model(self.model, print_fn.as_posix(), show_shapes=True,
                    show_layer_names=True, dpi=self.param('plot_dpi'))
 
-#
+
 # if __name__ == "__main__":
-#     nw = NeuralWord(vocab_len=55, model_type='recurrent', series='devel')
+#     nw = NeuralWord(vocab_len=55, model_type='attention', series='devel')
 #     nw.print_model_summary()
 #     nw.plot_model_summary()
 

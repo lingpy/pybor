@@ -84,12 +84,17 @@ def test_train_model():
     word.train(train_gen=train_gen, val_gen=val_gen)
     word.evaluate_test(test_gen=test_gen)
 
-    entropies = word.calculate_entropies(data.test_tokens_ids)
-    entropy = word.calculate_entropy(data.test_tokens_ids[17])
+    tokens = data.get_data_tokens(data.test_data)
+    # For German data, max token size is 10, so 12 with start and stop symbols.
+    tokens_ids = data.get_chosen_tokens_ids('test')
+    ncfg.data['token_maxlen'] = 10
+    entropies = word.calculate_entropies(tokens_ids)
+    entropy = word.calculate_entropy(tokens_ids[17])
+    print('Token:', tokens[17], tokens_ids[17], ' entropy=', entropy)
     assert abs(entropies[17] - entropy) < 1.0e-5
 
 
-def test_train_model_post_cfg_change():
+def test_train_model_with_cfg():
     data = NeuralData(training1, testing1)
     train_gen, val_gen, test_gen = data.make_generators()
 
@@ -120,4 +125,4 @@ if __name__ == "__main__":
     test_instantiation()
     test_non_positive_vocab_len()
     test_train_model()
-    test_train_model_post_cfg_change()
+    test_train_model_with_cfg()

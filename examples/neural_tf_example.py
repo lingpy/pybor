@@ -21,6 +21,9 @@ from pybor.neural_tf import NeuralWord
 from pybor.data_tf import NeuralData
 from pybor.plot import graph_word_distribution_entropies
 
+from pybor.dev.data import training1, testing1
+
+
 import pybor.neural_cfg as ncfg
 
 output_path = Path(ncfg.system['output_path']).resolve()
@@ -40,24 +43,24 @@ def print_entropy_statistics(stats=None, title='', rownames=''):
         table.append([name]+row)
     print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.3f'))
 
-def report_entropy_statistics(model=None, repo=None):
+def report_entropy_statistics(model=None, data=None):
         # Report descriptive statistics.
         stats = []
-        trainH = model.calculate_entropies(repo.train_tokens_ids)
-        stats.append(describe_entropies(trainH))
-        valH = model.calculate_entropies(repo.val_tokens_ids)
-        stats.append(describe_entropies(valH))
-        testH = model.calculate_entropies(repo.test_tokens_ids)
-        stats.append(describe_entropies(testH))
+        fit_entropies = model.calculate_entropies(data.get_chosen_tokens_ids('fit'))
+        stats.append(describe_entropies(fit_entropies))
+        val_entropies = model.calculate_entropies(data.get_chosen_tokens_ids('val'))
+        stats.append(describe_entropies(val_entropies))
+        test_entropies = model.calculate_entropies(data.get_chosen_tokens_ids('test'))
+        stats.append(describe_entropies(test_entropies))
         return stats
 
 def graph_entropies(tokens1=None, tokens2=None, vocab=None, model=None,
                     title='', label1='', label2='', filename=''):
         # Plot train and loan entropy distributions - all tokens basis
-        tokens_ids1 = NeuralData.get_tokens_ids(tokens1, vocab)
+        tokens_ids1 = NeuralData._get_tokens_ids(tokens1, vocab)
         entropies1 = model.calculate_entropies(tokens_ids1)
 
-        tokens_ids2 = NeuralData.get_tokens_ids(tokens2, vocab)
+        tokens_ids2 = NeuralData._get_tokens_ids(tokens2, vocab)
         entropies2 = model.calculate_entropies(tokens_ids2)
         # Could use mean + 6*stdev + 1 as upper limit for graphs.
         graph_path = output_path / filename
@@ -80,7 +83,7 @@ def analyze_neural_entropies_for_basis(
     # Report descriptive statistics.
     stats = report_entropy_statistics(model, data)
     title = f'{basis} basis'
-    rownames = ['Train', 'Validate', 'Train-validate', 'Test']
+    rownames = ['Train', 'Validate', 'Test']
     print_entropy_statistics(stats, title, rownames)
 
 
@@ -118,33 +121,42 @@ def analyze_neural_entropies_for_basis(
 def analyze_neural_entropies(
         language=None, table=None, form='', basis='', model_type=''):
 
+    # All data together.
+    train, test = NeuralData.simple_train_test_split(table)
+    analyze_neural_entropies_train_test(language,
+            train, test, form=form, basis=basis, model_type=model_type)
+
+
+def analyze_neural_entropies_train_test(language =None,
+            train=None, test=None, form='', basis='', model_type=''):
     # Function to perform graphical analysis of entropy distributions.
     # Possible languages are 'all', list of languages ([str]), or specific language (str).
     print(f'*** Graphical analysis of entropy distribution for {language}. ***')
     print(f'Basis is {basis}, neural model type is {model_type}.')
 
-    # All data together.
-    trainval, test = NeuralData.simple_train_test_split(table)
-
     if basis == 'all':
-        analyze_neural_entropies_for_basis(trainval=trainval, test=test,
-                trainval_x=trainval, test_x=test,
+        analyze_neural_entropies_for_basis(trainval=train, test=test,
+                trainval_x=train, test_x=test,
                 language=language, form=form, basis=basis, model_type=model_type)
 
     elif basis == 'native':
         # Train and test native are based on train, test split of all data.
-        trainval_native = [[id_, token, status] for id_, token, status in trainval if status == 0]
-        test_native = [[id_, token, status] for id_, token, status in test if status == 0]
-        analyze_neural_entropies_for_basis(trainval=trainval, test=test,
-                trainval_x=trainval_native, test_x=test_native,
+        # trainval_native = [[id_, token, status] for id_, token, status in trainval if status == 0]
+        # test_native = [[id_, token, status] for id_, token, status in test if status == 0]
+        train_native = [row for row in train if row[2]==0]
+        test_native = [row for row in test if row[2]==0]
+        analyze_neural_entropies_for_basis(trainval=train, test=test,
+                trainval_x=train_native, test_x=test_native,
                 language=language, form=form, basis=basis, model_type=model_type)
 
     elif basis == 'loan':
         # Train and test loan are based on train, test split of all data.
-        trainval_loan = [[id_, token, status] for id_, token, status in trainval if status == 1]
-        test_loan = [[id_, token, status] for id_, token, status in test if status == 1]
-        analyze_neural_entropies_for_basis(trainval=trainval, test=test,
-                trainval_x=trainval_loan, test_x=test_loan,
+        # trainval_loan = [[id_, token, status] for id_, token, status in trainval if status == 1]
+        # test_loan = [[id_, token, status] for id_, token, status in test if status == 1]
+        train_loan = [row for row in train if row[2]==1]
+        test_loan = [row for row in test if row[2]==1]
+        analyze_neural_entropies_for_basis(trainval=train, test=test,
+                trainval_x=train_loan, test_x=test_loan,
                 language=language, form=form, basis=basis, model_type=model_type)
 
 
@@ -181,10 +193,12 @@ def perform_analysis_by_language(languages=None, form='', basis='', model_type='
         analyze_neural_entropies(language=language, table=table, form=form,
                                  basis=basis, model_type=model_type)
 
-
-
 # Main
 if __name__ == "__main__":
-    languages = ['English']  # , 'Hup']
-    perform_analysis_by_language(languages, form='FormChars',
-                                 basis='loan', model_type='attention')
+    languages = 'Hup'   # ['English']  # , 'Hup']
+    perform_analysis_by_language(languages, form='Tokens',
+                                  basis='native', model_type='recurrent')
+
+    # Use training1 and testing1.
+    # analyze_neural_entropies_train_test(language='German', train=training1, test=testing1,
+    #                                     form='Tokens', basis='all', model_type='attention')

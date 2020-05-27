@@ -65,20 +65,26 @@ class MarkovWord:
         # Define and then train the language model.
         self._lm = None
         if model == "kni":
-            self._lm = lm.KneserNeyInterpolated(
-                order, vocabulary=vocab, discount=smoothing
-            )  # Default nltk discount iis 0.1; we use 0.5
+            if smoothing is None or smoothing <= 0.0 or smoothing >=1.0:
+                # Default nltk discount is 0.1
+                self._lm = lm.KneserNeyInterpolated(order, vocabulary=vocab)
+            else:
+                # We default to 0.5 smoothing.
+                self._lm = lm.KneserNeyInterpolated(order, vocabulary=vocab,
+                                                    discount=smoothing)
         elif model == "wbi":
             self._lm = lm.WittenBellInterpolated(order, vocabulary=vocab)
         elif model == "lp":  # Laplace
             self._lm = lm.Laplace(order=order, vocabulary=vocab)
         elif model == "ls":  # Lidstone
-            self._lm = lm.Lidstone(
-                order=order, gamma=smoothing, vocabulary=vocab)
+            if smoothing is None or smoothing <=0.0 or smoothing >= 1.0:
+                self._lm = lm.Lidstone(order=order, gamma=0.1, vocabulary=vocab)
+            else:
+                self._lm = lm.Lidstone(order=order, gamma=smoothing, vocabulary=vocab)
         else:  # MLE
             self._lm = lm.MLE(order, vocabulary=vocab)
 
-        self._lm.fit(train)  #
+        self._lm.fit(train)
 
 
     def calculate_entropies(self, tokens):

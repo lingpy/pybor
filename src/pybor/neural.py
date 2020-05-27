@@ -28,6 +28,7 @@ class Neural:
     def __init__(self, train_data=None, test_data=None,
                  detect_type=None, model_type=None,
                  language=None, series=None):
+
         def get_param(variable, key):
             return variable if variable is not None else ncfg.neural[key]
 
@@ -51,24 +52,22 @@ class Neural:
 
     def prepare_data(self, train_data, test_data):
 
-        native_train_data = [[id_, token, status]
-                for id_, token, status in train_data if status == 0]
-        loan_train_data = [[id_, token, status]
-                for id_, token, status in train_data if status == 1]
+        # Row element 2 is native-loan status.
+        native_train_data = [row for row in train_data if row[2] == 0]
+        loan_train_data = [row for row in train_data if row[2] == 1]
 
         if test_data is not None:
-            native_test_data = [[id_, token, status]
-                    for id_, token, status in test_data if status == 0]
-            loan_test_data = [[id_, token, status]
-                    for id_, token, status in test_data if status == 1]
+            native_test_data = [row for row in test_data if row[2] == 0]
+            loan_test_data = [row for row in test_data if row[2] == 1]
         else:
             native_test_data = None
             loan_test_data = None
 
-        # Build the vocabulary from all tokens.
-        all_tokens = [token for _, token, _ in train_data]
+
+        # Row element 1 is token list of str segments.
+        all_tokens = [row[1] for row in train_data]
         if test_data is not None:
-            all_tokens += [token for _, token, _ in test_data]
+            all_tokens += [row[1] for row in test_data]
 
         self.vocab = NeuralData.build_vocab(all_tokens)
 
@@ -94,7 +93,6 @@ class Neural:
         train_gen, val_gen, _ = self.loan_data.make_generators()
         self.loan_model.train(train_gen=train_gen, val_gen=val_gen)
 
-
     def calculate_ref_limit(self, entropies=None):
         return find_ref_limit(entropies=entropies, fraction=ncfg.neural['fraction'])
 
@@ -109,16 +107,15 @@ class Neural:
         # Convert to tokens_ids and then calculate entropies.
         # Entropy calculation and predictions depend on whether native or dual.
 
-        tokens_ids = NeuralData.get_tokens_ids(tokens, self.vocab)
+        tokens_ids = NeuralData._get_tokens_ids(tokens, self.vocab)
         native_entropies = self.native_model.calculate_entropies(tokens_ids)
 
         if self.detect_type == 'native':
             if self.cut_point is None:
 
-                trainval_tokens_ids = (self.native_data.train_tokens_ids +
-                                       self.native_data.val_tokens_ids)
-                entropies = self.native_model.calculate_entropies(trainval_tokens_ids)
-                self.cut_point = self.calculate_ref_limit( entropies=entropies)
+                train_tokens_ids = self.native_data.get_chosen_tokens_ids('train')
+                entropies = self.native_model.calculate_entropies(train_tokens_ids)
+                self.cut_point = self.calculate_ref_limit(entropies=entropies)
 
             return self.make_native_predictions(native_entropies, self.cut_point)
 

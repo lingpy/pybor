@@ -82,7 +82,7 @@ def evaluate_model(test_data, data):
 
     data : [[str, [str], int]]
         List of language tokens in row format:
-            [id, [char segments], gold loanword status.
+            [id, [segments], gold-status].
 
     Returns
     -------

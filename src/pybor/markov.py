@@ -14,25 +14,26 @@ import pybor.evaluate as evaluate
 
 class DualMarkov:
     """
-    Construct markov models of two distributions.
-
+    Construct Markov models of native and loan distributions.
     Fit dual Markov models - one to native data, another to loan data.
-
-    Parameters
-    ----------
-    data : [[str, [str], int]]
-        List of language tokens in format:
-            identifier,
-            token as list of character segments,
-            binary (0, 1) indicator of borrowed word status.
-    method : str, optional
-        Model type from MarkovWord class. The default is 'kni'.
-    order : int, optional
-        Order from MarkovWord class. The default is 3.
-    smoothing : float, optional
-        smoothing from MarkovWord class. The default is 0.5.
     """
     def __init__(self, data, method='kni', order=3, smoothing=0.5):
+        """
+        Construct Markov models of native and loan distributions.
+        Parameters
+        ----------
+        data : [[str, [str], int]]
+            List of language tokens in format:
+                identifier,
+                token as list of character segments,
+                binary (0, 1) indicator of borrowed word status.
+        method : str, optional
+            Model type from MarkovWord class. The default is 'kni'.
+        order : int, optional
+            Order from MarkovWord class. The default is 3.
+        smoothing : float, optional
+            smoothing from MarkovWord class. The default is 0.5.
+        """
 
         nativetokens = [token for _, token, status in data if status==0]
         self.nativemodel = mk.MarkovWord(
@@ -70,7 +71,8 @@ class DualMarkov:
         return list(zip(ids, tokens, predictions))
 
     def predict(self, token):
-        return self.predict_data([token])[0]
+        # Insert '' for identifer before invoking predict_data
+        return self.predict_data([['', token]])[0]
 
 
 class NativeMarkov:
@@ -98,7 +100,8 @@ class NativeMarkov:
         return list(zip(ids, tokens, predictions))
 
     def predict(self, token):
-        return self.predict_data([token])[0]
+        # Insert '' for identifer before invoking predict_data
+        return self.predict_data([['', token]])[0]
 
 
 def calculate_empirical_ref_limit(entropies, frac=0.995):

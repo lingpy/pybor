@@ -83,6 +83,3 @@ def test_NativeMarkov_predict_data():
 def get_tokens(data):
     return [token for _, token, _ in data]
 
-# if __name__ == "__main__":
-#     test_DualMarkov_predict_data()
-#     test_NativeMarkov_predict_data()

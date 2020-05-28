@@ -25,8 +25,9 @@ setup(
         zip_safe=False,
         license="GPL",
         include_package_data=True,
-        install_requires=['lingpy', 'pylexibank', 'sklearn', 'nltk'],
+        install_requires=['attr', 'sklearn', 'nltk', 'tensorflow'],
         extras_require={
+            'examples': ['pyclts', 'cldfbench', 'pylexibank'],
             'tests': ['pytest', 'pytest-cov']
             },
         url='https://github.com/lingpy/monolingual-borrowing-detection/',

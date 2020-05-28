@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
+Neural net entropy estimation module to configure and fit a neural network model
+
+Notes
+-----
 Created on Tue May 12 13:17:21 2020
 
 @author: johnmiller
@@ -27,9 +29,15 @@ from tensorflow.keras.callbacks import EarlyStopping  # ModelCheckpoint,
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 #from tensorflow.keras import backend as K
 
-import pybor.neural_cfg as ncfg
+import attr
 
-output_path = Path(ncfg.system['output_path']).resolve()
+from pybor.config import *
+
+neus = NeuralSettings()
+neud = BaseSettings()
+attention = AttentionSettings()
+recurrent = RecurrentSettings()
+output_path = Path(neus.output_path).resolve()
 
 
 class NeuralWord:
@@ -105,8 +113,8 @@ class NeuralWord:
         # Get the probabilities for all str segment possibilities.
         maxlen = max([len(token_ids) for token_ids in tokens_ids])
         # Truncate right id for x and left id for y, so only 1 id extra.
-        if maxlen > ncfg.data['token_maxlen']+1:
-            maxlen = ncfg.data['token_maxlen']+1
+        if maxlen > neud.token_maxlen+1:
+            maxlen = neud.token_maxlen+1
 
         x_lst = []
         y_lst = []
@@ -133,7 +141,7 @@ class NeuralWord:
 
 
     def param(self, key=None):
-        return ncfg.attention[key] if self.model_type == 'attention' else ncfg.recurrent[key]
+        return attention.__dict__[key] if self.model_type == 'attention' else recurrent.__dict__[key]
 
     def _construct_modelname(self):
         language_out = ''.join(self.language.split())
@@ -371,9 +379,5 @@ class NeuralWord:
                    show_layer_names=True, dpi=self.param('plot_dpi'))
 
 
-# if __name__ == "__main__":
-#     nw = NeuralWord(vocab_len=55, model_type='attention', series='devel')
-#     nw.print_model_summary()
-#     nw.plot_model_summary()
 
 

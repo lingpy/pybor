@@ -16,6 +16,14 @@ elif 'dual' in argv:
 else:
     model = BagOfSounds
 
+def bigrams(sequence):
+    return list(zip(['^']+sequence[:-1], sequence[1:]+['$']))
+
+def trigrams(sequence):
+    return list(zip(['^', '^']+sequence[:-1], ['^']+sequence+['$'],
+        sequence[1:]+['$', '$']))
+
+
 try:
     with open('wold.bin', 'rb') as f:
         lex = pickle.load(f)
@@ -37,9 +45,22 @@ for language in lex.languages.values():
             classification='Loan'
             )
     train, test = table[:len(table)//2], table[len(table)//2:]
+    
+    train2, test2 = [[a, bigrams(b), c] for a, b, c in train], \
+            [[a, bigrams(b), c] for a, b, c in test]
+    train3, test3 = [[a, trigrams(b), c] for a, b, c in train], \
+            [[a, trigrams(b), c] for a, b, c in test]
 
-    bag = model(train)
-    guess = bag.predict_data([[a, b] for a, b, c in test])
+    
+    if 'bg' in argv:
+        bag = model(train2)
+        guess = bag.predict_data([[a, b] for a, b, c in test2])
+    elif 'tg' in argv:
+        bag = model(train3)
+        guess = bag.predict_data([[a, b] for a, b, c in test3])
+    else:
+        bag = model(train)
+        guess = bag.predict_data([[a, b] for a, b, c in test])
 
     p, r, f, a = prf(test, guess)
     print('{4:30} | {0:.2f} | {1:.2f} | {2:.2f} | {3:.2f}'.format(

@@ -29,9 +29,9 @@ $ pytest tests/test_neural.py::test_prediction2 --cov=pybor.neural --cov-report 
 File names can come last instead of first in the argument list.
 """
 
-import pybor.neural_cfg as ncfg
-from pybor.data_tf import NeuralData
-from pybor.neural_tf import NeuralWord
+from pybor.config import *
+from pybor.neural import NeuralData
+from pybor.entropies import NeuralWord
 from pybor.neural import Neural
 import pybor.evaluate as evaluate
 
@@ -45,54 +45,54 @@ import pytest
 # =============================================================================d
 def test_instantiation():
     # Reduce time for test with fewer epochs
-    ncfg.attention['epochs'] = 10
-    ncfg.recurrent['epochs'] = 10
-    neural = Neural(training1, testing1)
-    assert neural.language == ncfg.neural['language']
-    assert neural.series == ncfg.neural['series']
-    assert neural.detect_type == ncfg.neural['detect_type']
-    assert neural.model_type == ncfg.neural['model_type']
+    attention = AttentionSettings(epochs=10)
+    recurrent = RecurrentSettings(epochs=10)
+    neural = Neural(testing=testing1, training=training1)
     assert neural.vocab is not None
     assert neural.native_data is not None
-    assert neural.native_data.test_data is not None
+    assert neural.native_data.testing is not None
     assert neural.native_model is not None
     assert neural.loan_data is not None
-    assert neural.loan_data.test_data is not None
+    assert neural.loan_data.testing is not None
 
 def test_instantiation1():
-    ncfg.attention['epochs'] = 10
-    ncfg.recurrent['epochs'] = 10
+    attention = AttentionSettings(epochs=10)
+    recurrent = RecurrentSettings(epochs=10)
     language='A very very very very very long long long ... language name'
-    neural = Neural(training1, detect_type='native', model_type='recurrent', language = language)
+    neural = Neural(training=training1, testing=[], detect_type='native', model_type='recurrent', 
+            settings=recurrent, language=language)
     assert neural.language == language
     assert neural.model_type == 'recurrent'
     assert neural.detect_type == 'native'
-    assert neural.native_data.test_data is None
-    assert neural.loan_data.test_data is None
-    assert neural.loan_model is None
+    assert not neural.native_data.testing 
+    assert not neural.loan_data.testing
+    #assert neural.loan_model is None
 
 def test_instantiation2():
-    ncfg.attention['epochs'] = 10
-    ncfg.recurrent['epochs'] = 10
+    attention = AttentionSettings(epochs=10)
+    recurrent = RecurrentSettings(epochs=10)
     neural = Neural(training1, testing1,
-                    detect_type='dual', model_type='recurrent', language = 'German')
+                    detect_type='dual', model_type='recurrent',
+                    settings=recurrent, language='German')
     assert neural.language == 'German'
     assert neural.model_type == 'recurrent'
     assert neural.detect_type == 'dual'
-    assert neural.native_data.test_data is not None
+    assert neural.native_data.testing is not None
     assert neural.native_model is not None
-    assert neural.loan_data.test_data is not None
-    assert neural.loan_model is not None
+    assert neural.loan_data.testing is not None
+    #assert neural.loan_model is not None
 
 def test_instantiation3():
-    ncfg.attention['epochs'] = 10
-    ncfg.recurrent['epochs'] = 10
+    attention = AttentionSettings(epochs=10)
+    recurrent = RecurrentSettings(epochs=10)
     neural = Neural(training1, testing1,
-                    detect_type='native', model_type='attention', language = 'German')
+                    detect_type='native', model_type='attention',
+                    language='German',
+                    settings=attention)
     assert neural.model_type == 'attention'
-    assert neural.native_data.test_data is not None
-    assert neural.loan_data.test_data is not None
-    assert neural.loan_model is None
+    assert neural.native_data.testing is not None
+    assert neural.loan_data.testing is not None
+    #assert neural.loan_model is None
 
 # =============================================================================
 #
@@ -101,11 +101,12 @@ def test_instantiation3():
 # =============================================================================
 
 def test_prediction():
-    ncfg.attention['epochs'] = 30
-    ncfg.recurrent['epochs'] = 30
+    attention = AttentionSettings(epochs=30)
+    recurrent = RecurrentSettings(epochs=30)
     neural = Neural(training1, testing1,
-                    detect_type='dual', model_type='recurrent', language = 'German')
-    assert neural.loan_model is not None
+                    detect_type='dual', model_type='recurrent',
+                    settings=recurrent, language='German')
+    assert neural.loan_model 
     print("Evaluate train dataset.")
     predictions = neural.predict_data(training1)
     train_metrics = evaluate.evaluate_model(predictions, training1)
@@ -117,94 +118,75 @@ def test_prediction():
     test_metrics = evaluate.evaluate_model(predictions, testing1)
     evaluate.print_evaluation(test_metrics)
     evaluate.false_positive(predictions, testing1)
-
-def test_prediction1():
-    ncfg.attention['epochs'] = 30
-    ncfg.recurrent['epochs'] = 30
-    neural = Neural(training1, testing1,
-                    detect_type='native', model_type='recurrent', language = 'German')
-    assert neural.loan_model is None
-    print("Evaluate train dataset.")
-    predictions = neural.predict_data(training1)
-    train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.print_evaluation(train_metrics)
-    evaluate.false_positive(predictions, training1)
-
-    print("Evaluate test dataset.")
-    predictions = neural.predict_data(testing1)
-    test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
-    evaluate.false_positive(predictions, testing1)
-
-def test_prediction2():
-    ncfg.attention['epochs'] = 30
-    ncfg.recurrent['epochs'] = 30
-    neural = Neural(training1, testing1,
-                    detect_type='native', model_type='attention', language = 'German')
-    assert neural.loan_model is None
-    print("Evaluate train dataset.")
-    predictions = neural.predict_data(training1)
-    train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.print_evaluation(train_metrics)
-    evaluate.false_positive(predictions, training1)
-
-    print("Evaluate test dataset.")
-    predictions = neural.predict_data(testing1)
-    test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
-    evaluate.false_positive(predictions, testing1)
-
-    print("Individual prediction")
-    #    [53, ['z', 'u', 'm', 'p͡f'], 0],
-    #    [54, ['m', 'oː', 'r', 'a', 's', 't'], 1],
-    token = ['z', 'u', 'm', 'p͡f']
-    print(f'id: 53, token: {token}, prediction: {neural.predict(token)}, truth: 0')
-    token = ['m', 'oː', 'r', 'a', 's', 't']
-    print(f'id: 54, token: {token}, prediction: {neural.predict(token)}, truth: 1')
-
-def test_prediction3():
-    ncfg.attention['epochs'] = 30
-    ncfg.recurrent['epochs'] = 30
-    neural = Neural(training1, testing1,
-                    detect_type='dual', model_type='attention', language = 'German')
-    assert neural.loan_model is not None
-    print("Evaluate train dataset.")
-    predictions = neural.predict_data(training1)
-    train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.print_evaluation(train_metrics)
-    evaluate.false_positive(predictions, training1)
-
-    print("Evaluate test dataset.")
-    predictions = neural.predict_data(testing1)
-    test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
-    evaluate.false_positive(predictions, testing1)
-
-    print("Individual prediction")
-    #    [53, ['z', 'u', 'm', 'p͡f'], 0],
-    #    [54, ['m', 'oː', 'r', 'a', 's', 't'], 1],
-    token = ['z', 'u', 'm', 'p͡f']
-    print(f'id: 53, token: {token}, prediction: {neural.predict(token)}, truth: 0')
-    token = ['m', 'oː', 'r', 'a', 's', 't']
-    print(f'id: 54, token: {token}, prediction: {neural.predict(token)}, truth: 1')
-
-# =============================================================================
-# Helper functions for testing
 #
-# =============================================================================
+def test_prediction1():
+    attention = AttentionSettings(epochs=30)
+    recurrent = RecurrentSettings(epochs=30)
+    neural = Neural(training1, testing1,
+                    detect_type='native', settings=recurrent, model_type='recurrent', 
+                    language='German')
+    #assert not neural.loan_model
+    print("Evaluate train dataset.")
+    predictions = neural.predict_data(training1)
+    train_metrics = evaluate.evaluate_model(predictions, training1)
+    evaluate.print_evaluation(train_metrics)
+    evaluate.false_positive(predictions, training1)
 
+    print("Evaluate test dataset.")
+    predictions = neural.predict_data(testing1)
+    test_metrics = evaluate.evaluate_model(predictions, testing1)
+    evaluate.print_evaluation(test_metrics)
+    evaluate.false_positive(predictions, testing1)
+#
+def test_prediction2():
+    attention = AttentionSettings(epochs=30)
+    recurrent = RecurrentSettings(epochs=30)
+    neural = Neural(training1, testing1,
+                    detect_type='native', settings=attention, model_type='attention', language = 'German')
+    #assert neural.loan_model is None
+    print("Evaluate train dataset.")
+    predictions = neural.predict_data(training1)
+    train_metrics = evaluate.evaluate_model(predictions, training1)
+    evaluate.print_evaluation(train_metrics)
+    evaluate.false_positive(predictions, training1)
 
+    print("Evaluate test dataset.")
+    predictions = neural.predict_data(testing1)
+    test_metrics = evaluate.evaluate_model(predictions, testing1)
+    evaluate.print_evaluation(test_metrics)
+    evaluate.false_positive(predictions, testing1)
 
-# =============================================================================
-# Execute tests as standalone file
-# =============================================================================
+    print("Individual prediction")
+    #    [53, ['z', 'u', 'm', 'p͡f'], 0],
+    #    [54, ['m', 'oː', 'r', 'a', 's', 't'], 1],
+    token = ['z', 'u', 'm', 'p͡f']
+    print(f'id: 53, token: {token}, prediction: {neural.predict(token)}, truth: 0')
+    token = ['m', 'oː', 'r', 'a', 's', 't']
+    print(f'id: 54, token: {token}, prediction: {neural.predict(token)}, truth: 1')
 
-#if __name__ == "__main__":
-    # test_instantiation()
-    # test_instantiation1()
-    # test_instantiation2()
-    # test_instantiation3()
-    # test_prediction()
-    # test_prediction1()
-    # test_prediction2()
-    #test_prediction3()
+#def test_prediction3():
+#    ncfg.attention['epochs'] = 30
+#    ncfg.recurrent['epochs'] = 30
+#    neural = Neural(training1, testing1,
+#                    detect_type='dual', model_type='attention', language = 'German')
+#    assert neural.loan_model is not None
+#    print("Evaluate train dataset.")
+#    predictions = neural.predict_data(training1)
+#    train_metrics = evaluate.evaluate_model(predictions, training1)
+#    evaluate.print_evaluation(train_metrics)
+#    evaluate.false_positive(predictions, training1)
+#
+#    print("Evaluate test dataset.")
+#    predictions = neural.predict_data(testing1)
+#    test_metrics = evaluate.evaluate_model(predictions, testing1)
+#    evaluate.print_evaluation(test_metrics)
+#    evaluate.false_positive(predictions, testing1)
+#
+#    print("Individual prediction")
+#    #    [53, ['z', 'u', 'm', 'p͡f'], 0],
+#    #    [54, ['m', 'oː', 'r', 'a', 's', 't'], 1],
+#    token = ['z', 'u', 'm', 'p͡f']
+#    print(f'id: 53, token: {token}, prediction: {neural.predict(token)}, truth: 0')
+#    token = ['m', 'oː', 'r', 'a', 's', 't']
+#    print(f'id: 54, token: {token}, prediction: {neural.predict(token)}, truth: 1')
+

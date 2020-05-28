@@ -125,6 +125,7 @@ def test_prediction1():
     neural = Neural(training1, testing1,
                     detect_type='native', settings=recurrent, model_type='recurrent', 
                     language='German')
+    
     #assert not neural.loan_model
     print("Evaluate train dataset.")
     predictions = neural.predict_data(training1)

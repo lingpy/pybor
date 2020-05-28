@@ -9,10 +9,6 @@ Detect loan words based on word entropies as calculated by a neural netword mode
 Support for model trained on both native and borrowed words, or just native words
 """
 
-#import tensorflow as tf
-# import math
-#from pybor.neural_tf import NeuralWord
-#from pybor.data_tf import NeuralData
 from pybor.util import find_ref_limit
 
 import math
@@ -197,7 +193,7 @@ class Neural:
     Predict words as native or loan.
     """
     training = attr.ib()
-    testing = attr.ib()
+    testing = attr.ib(default=[])
     language = attr.ib(default='')
     series = attr.ib(default='series')
     detect_type = attr.ib(default=None)
@@ -252,7 +248,7 @@ class Neural:
     def calculate_ref_limit(self, entropies=None, fraction=None):
         return find_ref_limit(
                 entropies=entropies, 
-                fraction=fraction or NeuralSettings()['fraction']
+                fraction=fraction or NeuralSettings().fraction
                 )
 
     def make_native_predictions(self, entropies, cut_point):
@@ -272,7 +268,8 @@ class Neural:
         if self.detect_type == 'native':
             if self.cut_point is None:
 
-                train_tokens_ids = self.native_data.get_chosen_tokens_ids('train')
+                train_tokens_ids = [self.vocab.translate(t[1]) for t in
+                        self.native_data.training]
                 entropies = self.native_model.calculate_entropies(train_tokens_ids)
                 self.cut_point = self.calculate_ref_limit(entropies=entropies)
 

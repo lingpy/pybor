@@ -31,7 +31,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 import attr
 
-from pybor.neural_cfg import *
+from pybor.config import *
 
 neus = NeuralSettings()
 neud = BaseSettings()

@@ -18,11 +18,11 @@ from pybor.dev.data import training1, testing1
 
 
 def validate_loan_detection_dual_basis(train_data, test_data,
-                                       method='kni', smoothing=0.5,
+                                       model='kni', smoothing=0.5,
                                        order=3):
 
 
-    dual_model = DualMarkov(train_data, method=method,
+    dual_model = DualMarkov(train_data, model=model,
                             order=order, smoothing=smoothing)
 
     print("Evaluate train dataset.")
@@ -44,11 +44,11 @@ def validate_loan_detection_dual_basis(train_data, test_data,
 #
 # =============================================================================
 def validate_loan_detection_native_basis(train_data, test_data,
-                                         method='kni', smoothing=0.5,
+                                         model='kni', smoothing=0.5,
                                          order=3, p=0.995):
 
 
-    native_model = NativeMarkov(train_data, method=method,
+    native_model = NativeMarkov(train_data, model=model,
                                 order=order, smoothing=smoothing, p=p)
 
     print("Evaluate train dataset.")
@@ -102,12 +102,12 @@ def perform_analysis_by_language(languages=None, form='Tokens',
         if basis == 'native':
             print("native basis")
             validate_loan_detection_native_basis(training, testing,
-                                                 method='kni', smoothing=0.5,
+                                                 model='kni', smoothing=0.5,
                                                  order=3, p=0.995)
         else:  # 'dual'
             print("dual basis")
             validate_loan_detection_dual_basis(training, testing,
-                                               method='kni', smoothing=0.5,
+                                               model='kni', smoothing=0.5,
                                                order=3)
 
 

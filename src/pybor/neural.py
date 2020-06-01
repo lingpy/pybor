@@ -99,15 +99,15 @@ class NeuralData:
                 f'val length: {len(self.val) if self.val else 0}, ',
                 f'test length: {len(self.testing) if self.testing else 0}.')
 
-    def translate(self, sequences):
-        """
-        Translate a word to the internal numeric alphabet.
-        """
-        return [self.vocab.translate(t) for t in sequences]
+    # def translate(self, sequences):
+    #     """
+    #     Translate a word to the internal numeric alphabet.
+    #     """
+    #     return [self.vocab.translate(t) for t in sequences]
 
     def get_batcher(self, data):
         return KerasBatchGenerator(
-                self.translate([x[1] for x in data]),
+                self.vocab.translate([x[1] for x in data]),
                 batch_size=self.settings.batch_size)
     @property
     def trainer(self):
@@ -196,58 +196,57 @@ class Neural:
     testing = attr.ib(default=[])
     language = attr.ib(default='')
     series = attr.ib(default='series')
-    detect_type = attr.ib(default=None)
-    model_type = attr.ib(default='dual')
+    detect_type = attr.ib(default='dual')
+    model_type = attr.ib(default='recurrent')
     settings = attr.ib(default=BaseSettings())
 
     def __attrs_post_init__(self):
-        self.cut_point = None
+        self.cut_point = None  # Native
 
         all_tokens = [row[1] for row in self.training]+[row[1] for row in
                 self.testing]
         self.vocab = Vocab(data=all_tokens)
-        self.native_data = NeuralData(
+        self.native_data = NeuralData(  # Native and Dual detect types.
                 training=[row for row in self.training if row[2] == 0],
                 testing=[row for row in self.testing if row[2] == 0],
                 vocab=self.vocab
                 )
-        self.loan_data = NeuralData(
+        self.loan_data = NeuralData(  # Dual detect type.
                 training=[row for row in self.training if row[2] == 1],
                 testing=[row for row in self.testing if row[2] == 1],
                 vocab=self.vocab)
-        self.native_model = NeuralWord(
+        self.native_model = NeuralWord(  # Native and Dual detect types.
                 vocab_len=len(self.vocab),
                 model_type=self.model_type,
                 language=self.language,
                 basis='native',
                 series=self.series)
-        self.loan_model = NeuralWord(
-            vocab_len=len(self.vocab), 
-            model_type=self.model_type,
-            language=self.language, 
-            basis='loan', 
-            series=self.series)
+        if self.detect_type == 'dual':  # Need the loan model only for dual detect type.
+            self.loan_model = NeuralWord(  # Dual detect type
+                vocab_len=len(self.vocab),
+                model_type=self.model_type,
+                language=self.language,
+                basis='loan',
+                series=self.series)
+        else:
+            self.loan_data = None
 
-
-    def train(self, model='native'):
-        if model == 'native':
-            print('training native model')
-            self.native_model.train(
-                    train_gen=self.native_data.trainer,
-                    val_gen=self.native_data.validator)
-        elif model == 'loan':
+    # Train only native model if detect type is native.
+    def train(self, detect_type='native'):
+        print('training native model')
+        self.native_model.train(
+                train_gen=self.native_data.trainer,
+                val_gen=self.native_data.validator)
+        if detect_type == 'dual':  # Dual
             print('training loan model')
             self.loan_model.train(
                     train_gen=self.loan_data.trainer,
                     val_gen=self.loan_data.validator)
 
-        #if self.detect_type == 'dual':
-        #    self.make_loan_model()
 
-
-    def calculate_ref_limit(self, entropies=None, fraction=None):
+    def calculate_ref_limit(self, entropies=None, fraction=None):  # Native
         return find_ref_limit(
-                entropies=entropies, 
+                entropies=entropies,
                 fraction=fraction or NeuralSettings().fraction
                 )
 

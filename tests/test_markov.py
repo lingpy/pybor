@@ -20,6 +20,9 @@ $ pytest tests/test_markov.py -—cov=pybor.markov --cov-report=html
 Or to report line numbers of missing coverage:
 $ pytest tests/test_markov.py --cov=pybor.markov --cov-report term-missing
 
+Or to perform a specific test:
+$ pytest tests/test_markov.py::test_prediction2 --cov=pybor.markov --cov-report term-missing
+
 Add the -rP argument to print output for passing tests, or -rPx for passing and failed tests.
 Otherwise default is -rx for failed tests only.
 

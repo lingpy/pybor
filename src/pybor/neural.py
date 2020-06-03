@@ -9,18 +9,18 @@ Detect loan words based on word entropies as calculated by a neural netword mode
 Support for model trained on both native and borrowed words, or just native words
 """
 
-from pybor.util import find_ref_limit
-
+import abc
 import math
 import random
 from collections import Counter
 
-from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-import attr
-from pybor.config import *
-from pybor.entropies import NeuralWord
 
+import attr
+
+from pybor.config import BaseSettings, NeuralSettings #, NeuralNativeSettings, NeuralDualSettings
+from pybor.entropies import NeuralWordRecurrent, NeuralWordAttention
+from pybor.util import find_ref_limit
 
 @attr.s
 class Vocab:
@@ -54,9 +54,12 @@ class Vocab:
         return len(self.vocab)
 
     def translate(self, word):
-        return [self.vocab[self.start]]+[self.vocab.get(x, self.unknown) for x
-                in word]+[self.vocab[self.end]]
-
+        return [self.vocab[self.start]]+[self.vocab.get(x, self.unknown)
+                                         for x in word]+[self.vocab[self.end]]
+    @property
+    def size(self):
+        # Count only in 1 direction, not both forward and reverse translation.
+        return len(self.vocab)//2
 
 @attr.s
 class NeuralData:
@@ -80,9 +83,13 @@ class NeuralData:
     testing = attr.ib(default=[])
     vocab = attr.ib(default=None)
     val_split = attr.ib(default=None)
+
     settings = attr.ib(default=BaseSettings())
 
     def __attrs_post_init__(self):
+        # In case settings object is not right type.
+        if not isinstance(self.settings, BaseSettings):
+            self.settings = BaseSettings()
         self.val_split = self.val_split or self.settings.val_split
         self.all_data = self.training+self.testing
         random.shuffle(self.all_data)
@@ -99,16 +106,26 @@ class NeuralData:
                 f'val length: {len(self.val) if self.val else 0}, ',
                 f'test length: {len(self.testing) if self.testing else 0}.')
 
-    # def translate(self, sequences):
-    #     """
-    #     Translate a word to the internal numeric alphabet.
-    #     """
-    #     return [self.vocab.translate(t) for t in sequences]
+    def translate(self, sequences):
+        """
+        Translate words to the internal numeric alphabet.
+        """
+        return [self.vocab.translate(t) for t in sequences]
+
+    def get_data_tokens(self, data):
+        return [x[1] for x in data]
+
+    def get_data_tokens_ids(self, data):
+        return self.translate([x[1] for x in data])
+
+    def get_tokens_ids(self, sequences):
+        return [self.vocab.translate(t) for t in sequences]
 
     def get_batcher(self, data):
         return KerasBatchGenerator(
-                self.vocab.translate([x[1] for x in data]),
-                batch_size=self.settings.batch_size)
+                self.translate([x[1] for x in data]),
+                batch_size=self.settings.batch_size,
+                settings=self.settings)
     @property
     def trainer(self):
         if hasattr(self, '_trainer'):
@@ -132,7 +149,7 @@ class NeuralData:
 
 
 @attr.s
-class KerasBatchGenerator(object):
+class KerasBatchGenerator:
     """
     Construct a generator for the neural network
 
@@ -150,6 +167,9 @@ class KerasBatchGenerator(object):
     settings = attr.ib(default=BaseSettings(), repr=False)
 
     def __attrs_post_init__(self):
+        # In case settings object is not right type.
+        if not isinstance(self.settings, BaseSettings):
+            self.settings = BaseSettings()
         self.batch_size = self.batch_size or self.settings.batch_size
         self.current_idx = 0
         self.data_len = len(self.data)
@@ -192,91 +212,58 @@ class Neural:
     Determine cutpoint to detect loan words if native, or entropy bias if dual
     Predict words as native or loan.
     """
+    __metaclass__ = abc.ABCMeta
+
     training = attr.ib()
     testing = attr.ib(default=[])
     language = attr.ib(default='')
     series = attr.ib(default='series')
-    detect_type = attr.ib(default='dual')
-    model_type = attr.ib(default='recurrent')
-    settings = attr.ib(default=BaseSettings())
+    model_type = attr.ib(default='')
 
     def __attrs_post_init__(self):
-        self.cut_point = None  # Native
+        # In case settings object is not right type.
+        self.language = self.language or self.settings.language
+        self.series = self.series or self.settings.series
+        self.model_type = self.model_type or self.settings.model_type
 
         all_tokens = [row[1] for row in self.training]+[row[1] for row in
                 self.testing]
         self.vocab = Vocab(data=all_tokens)
-        self.native_data = NeuralData(  # Native and Dual detect types.
+
+        self.native_data = NeuralData(
                 training=[row for row in self.training if row[2] == 0],
                 testing=[row for row in self.testing if row[2] == 0],
-                vocab=self.vocab
-                )
-        self.loan_data = NeuralData(  # Dual detect type.
-                training=[row for row in self.training if row[2] == 1],
-                testing=[row for row in self.testing if row[2] == 1],
-                vocab=self.vocab)
-        self.native_model = NeuralWord(  # Native and Dual detect types.
-                vocab_len=len(self.vocab),
-                model_type=self.model_type,
-                language=self.language,
-                basis='native',
-                series=self.series)
-        if self.detect_type == 'dual':  # Need the loan model only for dual detect type.
-            self.loan_model = NeuralWord(  # Dual detect type
-                vocab_len=len(self.vocab),
-                model_type=self.model_type,
-                language=self.language,
-                basis='loan',
-                series=self.series)
-        else:
-            self.loan_data = None
-
-    # Train only native model if detect type is native.
-    def train(self, detect_type='native'):
-        print('training native model')
-        self.native_model.train(
-                train_gen=self.native_data.trainer,
-                val_gen=self.native_data.validator)
-        if detect_type == 'dual':  # Dual
-            print('training loan model')
-            self.loan_model.train(
-                    train_gen=self.loan_data.trainer,
-                    val_gen=self.loan_data.validator)
-
-
-    def calculate_ref_limit(self, entropies=None, fraction=None):  # Native
-        return find_ref_limit(
-                entropies=entropies,
-                fraction=fraction or NeuralSettings().fraction
+                vocab=self.vocab,
+                settings=self.settings
                 )
 
-    def make_native_predictions(self, entropies, cut_point):
-        return [int(entropy>cut_point) for entropy in entropies]
+        if self.model_type == 'recurrent':
+            self.native_model = NeuralWordRecurrent(
+                    vocab_len=len(self.vocab),
+                    language=self.language,
+                    basis='native',
+                    series=self.series,
+                    settings=self.settings)
 
-    def make_dual_predictions(self, native_entropies, loan_entropies):
-        return [int(loanH<nativeH) for nativeH, loanH
-                       in zip(native_entropies, loan_entropies)]
+        else:  # attention
+            self.native_model = NeuralWordAttention(
+                    vocab_len=len(self.vocab),
+                    language=self.language,
+                    basis='native',
+                    series=self.series,
+                    settings=self.settings)
 
+
+
+    @abc.abstractmethod
+    def train(self):
+        """Train method implemented by native and dual subclasses"""
+        return
+
+    @abc.abstractmethod
     def predict_tokens(self, tokens):
-        # Convert to tokens_ids and then calculate entropies.
-        # Entropy calculation and predictions depend on whether native or dual.
-
-        tokens_ids = [self.vocab.translate(t) for t in tokens]
-        native_entropies = self.native_model.calculate_entropies(tokens_ids)
-
-        if self.detect_type == 'native':
-            if self.cut_point is None:
-
-                train_tokens_ids = [self.vocab.translate(t[1]) for t in
-                        self.native_data.training]
-                entropies = self.native_model.calculate_entropies(train_tokens_ids)
-                self.cut_point = self.calculate_ref_limit(entropies=entropies)
-
-            return self.make_native_predictions(native_entropies, self.cut_point)
-
-        elif self.detect_type == 'dual':
-            loan_entropies = self.loan_model.calculate_entropies(tokens_ids)
-            return self.make_dual_predictions(native_entropies, loan_entropies)
+        """Predict tokens method implemented by native and dual subclasses"""
+        return
 
 
     def predict_data(self, data):
@@ -287,4 +274,117 @@ class Neural:
 
     def predict(self, token):
         return self.predict_data([['', token]])[0][2]
+
+
+@attr.s
+class NeuralNative(Neural):
+    """
+    Construct neural model for native words.
+    Train neural model on native word data.
+    Determine cutpoint to detect loan words.
+    Predict words as native if less than empirical entropy cut-point and loan otherwise.
+    """
+
+    settings = attr.ib(default=NeuralSettings())
+
+    def __attrs_post_init__(self):
+        if not isinstance(self.settings, NeuralSettings):
+            self.settings = NeuralSettings()
+        super().__attrs_post_init__()
+
+        self.cut_point = None
+
+    # Train only native model if detect type is native.
+    def train(self):
+        print('training native model')
+        self.native_model.train(
+                train_gen=self.native_data.trainer,
+                val_gen=self.native_data.validator)
+
+
+    def calculate_cut_point(self, fraction=None):
+
+        train_tokens_ids = self.native_data.get_data_tokens_ids(self.native_data.training)
+        entropies = self.native_model.calculate_entropies(train_tokens_ids)
+
+        self.cut_point = find_ref_limit(
+                entropies=entropies,
+                fraction=fraction or self.settings.fraction
+                )
+
+    def predict_tokens(self, tokens, fraction=None):
+        # Convert to tokens_ids and then calculate entropies.
+        # If necessary form empirical distribution of training entropies and determine cutpoint.
+        # All tokens with entropy > cut_point are loanwords.
+
+        tokens_ids = [self.vocab.translate(t) for t in tokens]
+        native_entropies = self.native_model.calculate_entropies(tokens_ids)
+
+        if self.cut_point is None or fraction is not None:
+            # First time if cut_point is None or recalculate cut_point of fraction is not None.
+            self.calculate_cut_point(fraction)
+
+        return [int(entropy>self.cut_point) for entropy in native_entropies]
+
+
+@attr.s
+class NeuralDual(Neural):
+    """
+    Construct neural models for native and loan words.
+    Train corresponding neural models on native and loan word data.
+    Determine entropy bias between native and loan entropy distributions.
+    Predict words as native or loan based on whether native or loan calculates lesser entropy.
+    """
+    settings = attr.ib(default=NeuralSettings())
+
+    def __attrs_post_init__(self):
+        if not isinstance(self.settings, NeuralSettings):
+            self.settings = NeuralSettings()
+        super().__attrs_post_init__()
+
+        self.loan_data = NeuralData(
+                training=[row for row in self.training if row[2] == 1],
+                testing=[row for row in self.testing if row[2] == 1],
+                vocab=self.vocab,
+                settings=self.settings)
+
+        if self.model_type == 'recurrent':
+            self.loan_model = NeuralWordRecurrent(
+                    vocab_len=len(self.vocab),
+                    language=self.language,
+                    basis='loan',
+                    series=self.series,
+                    settings=self.settings)
+
+        else:  # attention
+            self.loan_model = NeuralWordAttention(
+                    vocab_len=len(self.vocab),
+                    language=self.language,
+                    basis='loan',
+                    series=self.series,
+                    settings=self.settings)
+
+
+    def train(self):
+        print('training native model')
+        self.native_model.train(
+                train_gen=self.native_data.trainer,
+                val_gen=self.native_data.validator)
+        print('training loan model')
+        self.loan_model.train(
+                train_gen=self.loan_data.trainer,
+                val_gen=self.loan_data.validator)
+
+
+    def predict_tokens(self, tokens):
+        # Convert to tokens_ids and then calculate entropies.
+        # Entropy calculation and predictions depend on whether native or dual.
+
+        tokens_ids = [self.vocab.translate(t) for t in tokens]
+        native_entropies = self.native_model.calculate_entropies(tokens_ids)
+        loan_entropies = self.loan_model.calculate_entropies(tokens_ids)
+        return [int(loan_entropy<native_entropy)
+                for native_entropy, loan_entropy
+                in zip(native_entropies, loan_entropies)]
+
 

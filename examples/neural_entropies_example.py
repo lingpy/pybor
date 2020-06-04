@@ -8,8 +8,6 @@ Created on Fri May 15 19:03:57 2020
 Entropy distribution analysis examples.
 Maybe precursor of something more general and applicable to all modules using predict protocol.
 """
-import math
-import random
 import statistics
 import pickle
 from pathlib import Path
@@ -20,13 +18,13 @@ from pybor.data import LexibankDataset
 from pybor.entropies import NeuralWordRecurrent, NeuralWordAttention
 from pybor.neural import NeuralData
 from pybor.plot import graph_word_distribution_entropies
+import pybor.util as util
 
 from pybor.dev.data import training1, testing1
 
-
 import pybor.config as cfg
 
-output_path = Path(cfg.BaseSettings.output_path).resolve()
+output_path = Path(cfg.BaseSettings().output_path).resolve()
 
 def describe_entropies(data):
     n = len(data)
@@ -130,7 +128,7 @@ def analyze_neural_entropies(language=None, table=None,
             form='', basis='', model_type='', test_split=None):
 
     # All data together.
-    train, test = NeuralData.train_test_split(table, split=test_split)
+    train, test = util.train_test_split(table, split=test_split)
     analyze_neural_entropies_train_test(language,
             train, test, form=form, basis=basis, model_type=model_type)
 

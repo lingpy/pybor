@@ -17,24 +17,23 @@ class BaseSettings:
     plot_model = attr.ib(default=False, metadata={"deprecated": True})
     plot_dpi = attr.ib(default=400, metadata={"deprecated": True})
 
-    output_path = './output'
+    output_path = attr.ib(default='./output')
 
 @attr.s
 class NeuralSettings(BaseSettings):
     language = attr.ib(default='')
     series = attr.ib(default='')
     model_type = attr.ib(default='recurrent')  # recurrent, attention
-    neural_verbose = attr.ib(1)
-
+    neural_verbose = attr.ib(default=1)
     fraction = attr.ib(default=0.995)
 
 
 @attr.s
 class EntropiesSettings(NeuralSettings):
     # While not strictly a child of NeuralSettings, it seems more convenient.
-    tf_verbose = attr.ib(0)
-    verbose = attr.ib(1)
-    basis = attr.ib('all')
+    tf_verbose = attr.ib(default=0)
+    verbose = attr.ib(default=1)
+    basis = attr.ib(default='all')
 
 
 @attr.s
@@ -54,10 +53,10 @@ class RecurrentSettings(EntropiesSettings):
     merge_embedding_dropout = attr.ib(default=0.2)
 
     # Model fitting parameters
-    epochs = attr.ib(50)
-    learning_rate = attr.ib(0.00333)
-    lr_decay = attr.ib(0.90)
-    restore_best_weights = attr.ib(True)
+    epochs = attr.ib(default=50)
+    learning_rate = attr.ib(default=0.00333)
+    lr_decay = attr.ib(default=0.90)
+    restore_best_weights = attr.ib(default=True)
 
 @attr.s
 class AttentionSettings(EntropiesSettings):
@@ -66,8 +65,8 @@ class AttentionSettings(EntropiesSettings):
     rnn_output_len = attr.ib(default=32)
     rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
     rnn_levels = attr.ib(default=1)  # 1, 2
-    attn_type = attr.ib(default='additive')  # additive, dot-product
-    attn_causal = attr.ib(default='False')
+    attention_type = attr.ib(default='additive')  # additive, dot-product
+    attention_causal = attr.ib(default='False')
 
     # Dropout and regulation parameters
     embedding_dropout = attr.ib(default=0.0)
@@ -75,12 +74,12 @@ class AttentionSettings(EntropiesSettings):
     rnn_activity_l2 = attr.ib(default=0.001)
     recurrent_dropout = attr.ib(default=0.2)
     rnn_output_dropout = attr.ib(default=0.2)
-    attn_dropout = attr.ib(default=0.0)
+    attention_dropout = attr.ib(default=0.0)
 
     # Model fitting parameters
-    epochs = attr.ib(50)
-    learning_rate = attr.ib(0.00333)
-    lr_decay = attr.ib(0.95)
-    restore_best_weights = attr.ib(True)
+    epochs = attr.ib(default=50)
+    learning_rate = attr.ib(default=0.00333)
+    lr_decay = attr.ib(default=0.95)
+    restore_best_weights = attr.ib(default=True)
 
 

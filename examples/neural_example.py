@@ -16,17 +16,18 @@ from pathlib import Path
 from pybor.data import LexibankDataset
 import pybor.evaluate as evaluate
 from pybor.neural import NeuralNative, NeuralDual, NeuralData
+import pybor.util as util
 import pybor.config as cfg
 
 from pybor.dev.data import training1, testing1
 
-output_path = Path(cfg.BaseSettings.output_path).resolve()
+output_path = Path(cfg.BaseSettings().output_path).resolve()
 
 
 def evaluate_neural_loanword_prediction(language='', table=None,
             detect_type='dual', model_type='recurrent', test_split=None):
 
-    train, test = NeuralData.train_test_split(table, split=test_split)
+    train, test = util.train_test_split(table, split=test_split)
     val_split = (test_split if test_split is None or test_split >= 1.0
                             else test_split/(1-test_split))
     evaluate_neural_loanword_prediction_train_test(

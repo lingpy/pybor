@@ -13,14 +13,20 @@ import abc
 import math
 import random
 from collections import Counter
+from pathlib import Path
 
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 import attr
 
-from pybor.config import BaseSettings, NeuralSettings #, NeuralNativeSettings, NeuralDualSettings
+from pybor.config import BaseSettings, NeuralSettings
 from pybor.entropies import NeuralWordRecurrent, NeuralWordAttention
-from pybor.util import find_ref_limit
+
+import pybor.util as util
+
+output_path = Path(BaseSettings().output_path).resolve()
+logger = util.get_logger(__name__)
+
 
 @attr.s
 class Vocab:
@@ -94,20 +100,14 @@ class NeuralData:
         random.shuffle(self.all_data)
         self.vocab = self.vocab or Vocab([x[1] for x in self.all_data])
         random.shuffle(self.testing)
-        self.fit, self.val = NeuralData.train_test_split(self.training, self.val_split)
+        self.fit, self.val = util.train_test_split(self.training, self.val_split)
         self.label_counts = dict(Counter([x[2] for x in self.training]))
 
         if self.settings.verbose:
-            print(f'Train length: {len(self.training)}, ',
-                f'fit length: {len(self.fit)}',
-                f'val length: {len(self.val) if self.val else 0}, ',
-                f'test length: {len(self.testing) if self.testing else 0}.')
-
-    @staticmethod
-    def train_test_split(table, split=None):
-        random.shuffle(table)
-        split = int(split) if split >= 1 else math.ceil(len(table)*split)
-        return table[:-split], table[-split:]
+            logger.info(f'Train length: {len(self.training)}' +
+                f', fit length: {len(self.fit)}' +
+                f', val length: {len(self.val) if self.val else 0}' +
+                f', test length: {len(self.testing) if self.testing else 0}.')
 
     def translate(self, sequences):
         """
@@ -313,7 +313,7 @@ class NeuralNative(Neural):
 
         train_tokens_ids = self.native_data.get_data_tokens_ids(self.native_data.training)
         entropies = self.native_model.calculate_entropies(train_tokens_ids)
-        self.cut_point = find_ref_limit(entropies=entropies, fraction=self.fraction)
+        self.cut_point = util.find_ref_limit(entropies=entropies, fraction=self.fraction)
 
     def predict_tokens(self, tokens):
         # Convert to tokens_ids and then calculate entropies.

@@ -15,6 +15,8 @@ integer ids where each id corresponds to a symbol segment from a vocabulary.
 import math
 from pathlib import Path
 
+import attr
+
 import tensorflow as tf
 #tf.autograph.set_verbosity(0, False)
 from tensorflow.keras.models import Model
@@ -29,13 +31,11 @@ from tensorflow.keras.callbacks import EarlyStopping  # ModelCheckpoint,
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 #from tensorflow.keras import backend as K
 
-import attr
-
+import pybor.util as util
 import pybor.config as cfg
 
-base = cfg.BaseSettings()
-output_path = Path(base.output_path).resolve()
-
+output_path = Path(cfg.BaseSettings().output_path).resolve()
+logger = util.get_logger(__name__)
 
 @attr.s
 class NeuralWord:
@@ -138,11 +138,11 @@ class NeuralWord:
 
         """
         if isinstance(self, NeuralWordRecurrent):
-            print('* Training recurrent neural model. *')
+            logger.info('Training recurrent neural model.')
         elif isinstance(self, NeuralWordAttention):
-            print('* Training attention neural model. *')
+            logger.info('Training attention neural model.')
         else:
-            print("* I don't know what of model I am training. *")
+            logger.warn("I don't know what of model I am training.")
         # Invoke this after consruction of the model.
         # Too heavy weight to do in init of class.
 
@@ -150,26 +150,10 @@ class NeuralWord:
         lr_decay = (1.0/self.settings.lr_decay-1.0)/train_steps
         optimizer = Adam(learning_rate=self.settings.learning_rate, decay=lr_decay)
 
-        # Use sparse encoding.  Tensorflow converts as needed.
-        class CELoss(tf.keras.losses.Loss):
-            def call(self, y_true, y_pred):
-                y_true = tf.dtypes.cast(y_true, tf.float32)
-                mask = 1 - tf.dtypes.cast(tf.math.equal(y_true, 0), tf.float32)
-                loss_ = tf.losses.sparse_categorical_crossentropy(y_true=y_true, y_pred=y_pred) * mask
-                return tf.reduce_mean(loss_)
-        loss_cls = CELoss(name='sparse_categorical_crossentropy')
 
-        # self.model.compile(loss=loss_cls, optimizer=optimizer,
-        #         metrics=['sparse_categorical_accuracy', loss_cls])
         self.model.compile(loss='sparse_categorical_crossentropy',
                             optimizer=optimizer,
                             metrics=['sparse_categorical_accuracy'])
-
-        # *** No saving of neural model, since we don't have way to load it still.
-        # Filename without .h5 suffix, provides better handling of state.
-        # But had trouble loading when not using .h5 suffix, so still use it.
-        # best_file_name = model_path_best+self.model_name+'-best.h5'
-        # checkpointer = ModelCheckpoint(filepath=best_file_name, verbose=1, save_best_only=True)
 
         epochs = epochs or self.settings.epochs
 
@@ -188,21 +172,10 @@ class NeuralWord:
                                  verbose=self.settings.tf_verbose,
                                  callbacks=[earlystopper])
 
-        # ** No saving of neural models until we have way to load them.
-        # final_file_name = model_path_final+self.model_name+'-final.h5'
-        # self.model.save(final_file_name)
 
         if self.settings.verbose > 0:
             self.show_quality_measures(history.history)
 
-        # ** No saving of history log file until we have function to load them.
-        # history_file_name = log_path+self.model_name+'-history.pickle'
-        # with open(history_file_name, 'wb') as history_pi:
-        #     pickle.dump(history.history, history_pi)
-        # Load history with:
-        # open(log_path+model_prefix+'-history.pickle', "rb") as history_pi:
-        #    history_dict = pickle.load(history_pi)
-        # TODO: Optionally graph the quality measures from history.
 
         return history.history
 
@@ -211,11 +184,10 @@ class NeuralWord:
         # val_loss is used to get the best fit with early stopping.
         val_loss = history['val_loss']
         best, best_val_loss = min(enumerate(val_loss), key=lambda v: v[1])
-        print(f'Best epoch: {best} of {len(val_loss)}. Statistics from TensorFlow:')
-        print(f"Train dataset: loss={history['loss'][best]:.4f}, " +
+        logger.info(f'Best epoch: {best} of {len(val_loss)}. Statistics from TensorFlow:')
+        logger.info(f"Train dataset: loss={history['loss'][best]:.4f}, " +
               f"accuracy={history['sparse_categorical_accuracy'][best]:.4f}")
-              # f"crossentropy={history['sparse_categorical_crossentropy'][best]:.4f}")
-        print(f"Validate dataset: loss={history['val_loss'][best]:.4f}, " +
+        logger.info(f"Validate dataset: loss={history['val_loss'][best]:.4f}, " +
               f"accuracy={history['val_sparse_categorical_accuracy'][best]:.4f}")
 
 
@@ -227,9 +199,7 @@ class NeuralWord:
                                     steps=test_steps,
                                     verbose=self.settings.tf_verbose)
 
-        print(f'Test dataset: loss={score[0]:.4f}, '+
-              f'accuracy={score[1]:.4f}, ')
-              # f'crossentropy={score[2]:.4f}')
+        logger.info(f'Test dataset: loss={score[0]:.4f}, accuracy={score[1]:.4f}, ')
         return score
 
     def print_model_summary(self):
@@ -455,7 +425,6 @@ class NeuralWordAttention(NeuralWord):
         else:  # dot-product
             context_vector = Attention(causal=params.attn_causal,
                     dropout=params.attn_dropout) ([rnn_output, rnn_hidden])
-        #context_vector = AdditiveAttention()([rnn_output, rnn_hidden])
 
         to_outputs = Concatenate(axis=2,
                                  name='Merge_context_rnn_output')([context_vector, rnn_output])

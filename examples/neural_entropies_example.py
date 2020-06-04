@@ -223,5 +223,5 @@ if __name__ == "__main__":
                     train=training1,
                     test=testing1,
                     form='Tokens',
-                    basis='loan',
-                    model_type='attention')
+                    basis='native',
+                    model_type='recurrent')

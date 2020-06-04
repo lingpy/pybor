@@ -13,7 +13,7 @@ class BaseSettings:
 
     detect_type = attr.ib(default='dual')
 
-    print_summary = attr.ib(default=False, metadata={"deprecated": True})
+    print_summary = attr.ib(default=True, metadata={"deprecated": True})
     plot_model = attr.ib(default=False, metadata={"deprecated": True})
     plot_dpi = attr.ib(default=400, metadata={"deprecated": True})
 
@@ -40,9 +40,9 @@ class EntropiesSettings(NeuralSettings):
 @attr.s
 class RecurrentSettings(EntropiesSettings):
     # Architecture parameters
-    embedding_len = attr.ib(default=16)
-    rnn_output_len = attr.ib(default=32)
-    rnn_cell_type = attr.ib(default='GRU')  # GRU, LSTM
+    embedding_len = attr.ib(default=32)
+    rnn_output_len = attr.ib(default=24)
+    rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
     rnn_levels = attr.ib(default=1)  # 1, 2
 
     # Dropout and regulation parameters
@@ -55,7 +55,7 @@ class RecurrentSettings(EntropiesSettings):
 
     # Model fitting parameters
     epochs = attr.ib(50)
-    learning_rate = attr.ib(0.003333)
+    learning_rate = attr.ib(0.00333)
     lr_decay = attr.ib(0.90)
     restore_best_weights = attr.ib(True)
 
@@ -66,8 +66,8 @@ class AttentionSettings(EntropiesSettings):
     rnn_output_len = attr.ib(default=32)
     rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
     rnn_levels = attr.ib(default=1)  # 1, 2
-    attention_type = attr.ib(default='additive')  # additive, dot-product
-    attention_causal = attr.ib(default='False')
+    attn_type = attr.ib(default='additive')  # additive, dot-product
+    attn_causal = attr.ib(default='False')
 
     # Dropout and regulation parameters
     embedding_dropout = attr.ib(default=0.0)
@@ -79,7 +79,7 @@ class AttentionSettings(EntropiesSettings):
 
     # Model fitting parameters
     epochs = attr.ib(50)
-    learning_rate = attr.ib(0.01)
+    learning_rate = attr.ib(0.00333)
     lr_decay = attr.ib(0.95)
     restore_best_weights = attr.ib(True)
 

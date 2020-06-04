@@ -19,7 +19,7 @@ import tensorflow as tf
 #tf.autograph.set_verbosity(0, False)
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Embedding, Dropout
-from tensorflow.keras.layers import GRU, LSTM, AdditiveAttention
+from tensorflow.keras.layers import GRU, LSTM, AdditiveAttention, Attention
 from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Concatenate, Reshape
 from tensorflow.keras.regularizers import l2
@@ -151,9 +151,19 @@ class NeuralWord:
         optimizer = Adam(learning_rate=self.settings.learning_rate, decay=lr_decay)
 
         # Use sparse encoding.  Tensorflow converts as needed.
+        class CELoss(tf.keras.losses.Loss):
+            def call(self, y_true, y_pred):
+                y_true = tf.dtypes.cast(y_true, tf.float32)
+                mask = 1 - tf.dtypes.cast(tf.math.equal(y_true, 0), tf.float32)
+                loss_ = tf.losses.sparse_categorical_crossentropy(y_true=y_true, y_pred=y_pred) * mask
+                return tf.reduce_mean(loss_)
+        loss_cls = CELoss(name='sparse_categorical_crossentropy')
+
+        # self.model.compile(loss=loss_cls, optimizer=optimizer,
+        #         metrics=['sparse_categorical_accuracy', loss_cls])
         self.model.compile(loss='sparse_categorical_crossentropy',
-                           optimizer=optimizer,
-                           metrics=['sparse_categorical_accuracy'])
+                            optimizer=optimizer,
+                            metrics=['sparse_categorical_accuracy'])
 
         # *** No saving of neural model, since we don't have way to load it still.
         # Filename without .h5 suffix, provides better handling of state.
@@ -204,7 +214,7 @@ class NeuralWord:
         print(f'Best epoch: {best} of {len(val_loss)}. Statistics from TensorFlow:')
         print(f"Train dataset: loss={history['loss'][best]:.4f}, " +
               f"accuracy={history['sparse_categorical_accuracy'][best]:.4f}")
-              #f"crossentropy={history['sparse_categorical_crossentropy'][best]:.4f}")
+              # f"crossentropy={history['sparse_categorical_crossentropy'][best]:.4f}")
         print(f"Validate dataset: loss={history['val_loss'][best]:.4f}, " +
               f"accuracy={history['val_sparse_categorical_accuracy'][best]:.4f}")
 
@@ -218,8 +228,8 @@ class NeuralWord:
                                     verbose=self.settings.tf_verbose)
 
         print(f'Test dataset: loss={score[0]:.4f}, '+
-              f'accuracy={score[1]:.4f}')
-              #f'crossentropy={score[2]:.4f}')
+              f'accuracy={score[1]:.4f}, ')
+              # f'crossentropy={score[2]:.4f}')
         return score
 
     def print_model_summary(self):
@@ -282,22 +292,53 @@ class NeuralWordRecurrent(NeuralWord):
             embedding = Dropout(params.embedding_dropout,
                                 name='Dropout_embedding')(embedding)
 
-        if params.rnn_cell_type == 'LSTM':
-            # Incorporate embeddings into hidden state and output state.
-            rnn_output = LSTM(params.rnn_output_len,
-                              return_sequences=True, return_state=False,
-                              recurrent_regularizer=l2(params.recurrent_l2),
-                              activity_regularizer=l2(params.rnn_activity_l2),
-                              recurrent_dropout=params.recurrent_dropout,
-                              name='LSTM_recurrent')(embedding)
+        if params.rnn_levels == 1:
+            if params.rnn_cell_type == 'LSTM':
+                # Incorporate embeddings into hidden state and output state.
+                rnn_output = LSTM(params.rnn_output_len,
+                                  return_sequences=True, return_state=False,
+                                  recurrent_regularizer=l2(params.recurrent_l2),
+                                  activity_regularizer=l2(params.rnn_activity_l2),
+                                  recurrent_dropout=params.recurrent_dropout,
+                                  name='LSTM_recurrent')(embedding)
 
-        else:  # GRU
-            rnn_output = GRU(params.rnn_output_len,
-                             return_sequences=True, return_state=False,
-                             recurrent_regularizer=l2(params.recurrent_l2),
-                             activity_regularizer=l2(params.rnn_activity_l2),
-                             recurrent_dropout=params.recurrent_dropout,
-                             name='GRU_recurrent')(embedding)
+            else:  # GRU
+                rnn_output = GRU(params.rnn_output_len,
+                                 return_sequences=True, return_state=False,
+                                 recurrent_regularizer=l2(params.recurrent_l2),
+                                 activity_regularizer=l2(params.rnn_activity_l2),
+                                 recurrent_dropout=params.recurrent_dropout,
+                                 name='GRU_recurrent')(embedding)
+        else:  # 2 levels
+            if params.rnn_cell_type == 'LSTM':
+                # Incorporate embeddings into hidden state and output state.
+                rnn_output = LSTM(params.rnn_output_len,
+                                  return_sequences=True, return_state=False,
+                                  recurrent_regularizer=l2(params.recurrent_l2),
+                                  activity_regularizer=l2(params.rnn_activity_l2),
+                                  recurrent_dropout=params.recurrent_dropout,
+                                  name='LSTM_recurrent_1')(embedding)
+                rnn_output = LSTM(params.rnn_output_len,
+                                  return_sequences=True, return_state=False,
+                                  recurrent_regularizer=l2(params.recurrent_l2),
+                                  activity_regularizer=l2(params.rnn_activity_l2),
+                                  recurrent_dropout=params.recurrent_dropout,
+                                  name='LSTM_recurrent_2')(rnn_output)
+
+            else:  # GRU
+                rnn_output = GRU(params.rnn_output_len,
+                                 return_sequences=True, return_state=False,
+                                 recurrent_regularizer=l2(params.recurrent_l2),
+                                 activity_regularizer=l2(params.rnn_activity_l2),
+                                 recurrent_dropout=params.recurrent_dropout,
+                                 name='GRU_recurrent_1')(embedding)
+                rnn_output = GRU(params.rnn_output_len,
+                                 return_sequences=True, return_state=False,
+                                 recurrent_regularizer=l2(params.recurrent_l2),
+                                 activity_regularizer=l2(params.rnn_activity_l2),
+                                 recurrent_dropout=params.recurrent_dropout,
+                                 name='GRU_recurrent_2')(rnn_output)
+
 
         if params.rnn_output_dropout > 0.0:
             rnn_output = Dropout(params.rnn_output_dropout,
@@ -352,22 +393,53 @@ class NeuralWordAttention(NeuralWord):
             embedding = Dropout(params.embedding_dropout,
                                 name='Dropout_embedding')(embedding)
 
-        if params.rnn_cell_type == 'LSTM':
-            # Incorporate embeddings into hidden state and output state.
-            rnn_output, rnn_hidden, _ = LSTM(params.rnn_output_len,
+        if params.rnn_levels == 1:
+            if params.rnn_cell_type == 'LSTM':
+                # Incorporate embeddings into hidden state and output state.
+                rnn_output, rnn_hidden, _ = LSTM(params.rnn_output_len,
+                                                 return_sequences=True, return_state=True,
+                                                 recurrent_regularizer=l2(params.recurrent_l2),
+                                                 activity_regularizer=l2(params.rnn_activity_l2),
+                                                 recurrent_dropout=params.recurrent_dropout,
+                                                 name='LSTM_recurrent')(embedding)
+
+            else:  # GRU
+                rnn_output, rnn_hidden = GRU(params.rnn_output_len,
                                              return_sequences=True, return_state=True,
                                              recurrent_regularizer=l2(params.recurrent_l2),
                                              activity_regularizer=l2(params.rnn_activity_l2),
                                              recurrent_dropout=params.recurrent_dropout,
-                                             name='LSTM_recurrent')(embedding)
+                                             name='GRU_recurrent')(embedding)
+        else:  # 2 levels
+            if params.rnn_cell_type == 'LSTM':
+                # Incorporate embeddings into hidden state and output state.
+                rnn_output, rnn_hidden, _ = LSTM(params.rnn_output_len,
+                                                 return_sequences=True, return_state=True,
+                                                 recurrent_regularizer=l2(params.recurrent_l2),
+                                                 activity_regularizer=l2(params.rnn_activity_l2),
+                                                 recurrent_dropout=params.recurrent_dropout,
+                                                 name='LSTM_recurrent_1')(embedding)
+                rnn_output, rnn_hidden, _ = LSTM(params.rnn_output_len,
+                                                 return_sequences=True, return_state=True,
+                                                 recurrent_regularizer=l2(params.recurrent_l2),
+                                                 activity_regularizer=l2(params.rnn_activity_l2),
+                                                 recurrent_dropout=params.recurrent_dropout,
+                                                 name='LSTM_recurrent_2')(rnn_output)
 
-        else:  # GRU
-            rnn_output, rnn_hidden = GRU(params.rnn_output_len,
-                                         return_sequences=True, return_state=True,
-                                         recurrent_regularizer=l2(params.recurrent_l2),
-                                         activity_regularizer=l2(params.rnn_activity_l2),
-                                         recurrent_dropout=params.recurrent_dropout,
-                                         name='GRU_recurrent')(embedding)
+            else:  # GRU
+                rnn_output, rnn_hidden = GRU(params.rnn_output_len,
+                                             return_sequences=True, return_state=True,
+                                             recurrent_regularizer=l2(params.recurrent_l2),
+                                             activity_regularizer=l2(params.rnn_activity_l2),
+                                             recurrent_dropout=params.recurrent_dropout,
+                                             name='GRU_recurrent_1')(embedding)
+                rnn_output, rnn_hidden = GRU(params.rnn_output_len,
+                                             return_sequences=True, return_state=True,
+                                             recurrent_regularizer=l2(params.recurrent_l2),
+                                             activity_regularizer=l2(params.rnn_activity_l2),
+                                             recurrent_dropout=params.recurrent_dropout,
+                                             name='GRU_recurrent_2')(rnn_output)
+
 
         if params.rnn_output_dropout > 0.0:
             rnn_output = Dropout(params.rnn_output_dropout,
@@ -376,7 +448,14 @@ class NeuralWordAttention(NeuralWord):
         # hidden state output is for the entire word.  Not by character.
         rnn_hidden = Reshape((-1, rnn_hidden.shape[1]),
                              name='Reshape_hidden')(rnn_hidden)
-        context_vector = AdditiveAttention()([rnn_output, rnn_hidden])
+
+        if params.attn_type == 'additive':
+            context_vector = AdditiveAttention(causal=params.attn_causal,
+                    dropout=params.attn_dropout)([rnn_output, rnn_hidden])
+        else:  # dot-product
+            context_vector = Attention(causal=params.attn_causal,
+                    dropout=params.attn_dropout) ([rnn_output, rnn_hidden])
+        #context_vector = AdditiveAttention()([rnn_output, rnn_hidden])
 
         to_outputs = Concatenate(axis=2,
                                  name='Merge_context_rnn_output')([context_vector, rnn_output])

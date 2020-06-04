@@ -83,7 +83,6 @@ class NeuralData:
     testing = attr.ib(default=[])
     vocab = attr.ib(default=None)
     val_split = attr.ib(default=None)
-
     settings = attr.ib(default=BaseSettings())
 
     def __attrs_post_init__(self):
@@ -95,9 +94,7 @@ class NeuralData:
         random.shuffle(self.all_data)
         self.vocab = self.vocab or Vocab([x[1] for x in self.all_data])
         random.shuffle(self.testing)
-        random.shuffle(self.training)
-        s = math.ceil(len(self.training)*self.val_split)
-        self.fit, self.val = self.training[:-s], self.training[-s:]
+        self.fit, self.val = NeuralData.train_test_split(self.training, self.val_split)
         self.label_counts = dict(Counter([x[2] for x in self.training]))
 
         if self.settings.verbose:
@@ -105,6 +102,12 @@ class NeuralData:
                 f'fit length: {len(self.fit)}',
                 f'val length: {len(self.val) if self.val else 0}, ',
                 f'test length: {len(self.testing) if self.testing else 0}.')
+
+    @staticmethod
+    def train_test_split(table, split=None):
+        random.shuffle(table)
+        split = int(split) if split >= 1 else math.ceil(len(table)*split)
+        return table[:-split], table[-split:]
 
     def translate(self, sequences):
         """
@@ -219,6 +222,7 @@ class Neural:
     language = attr.ib(default='')
     series = attr.ib(default='series')
     model_type = attr.ib(default='')
+    val_split = attr.ib(default=None)
 
     def __attrs_post_init__(self):
         # In case settings object is not right type.
@@ -234,6 +238,7 @@ class Neural:
                 training=[row for row in self.training if row[2] == 0],
                 testing=[row for row in self.testing if row[2] == 0],
                 vocab=self.vocab,
+                val_split=self.val_split,
                 settings=self.settings
                 )
 
@@ -252,8 +257,6 @@ class Neural:
                     basis='native',
                     series=self.series,
                     settings=self.settings)
-
-
 
     @abc.abstractmethod
     def train(self):
@@ -284,14 +287,14 @@ class NeuralNative(Neural):
     Determine cutpoint to detect loan words.
     Predict words as native if less than empirical entropy cut-point and loan otherwise.
     """
-
+    fraction = attr.ib(default=None)
     settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
         if not isinstance(self.settings, NeuralSettings):
             self.settings = NeuralSettings()
         super().__attrs_post_init__()
-
+        self.fraction = self.fraction or self.settings.fraction
         self.cut_point = None
 
     # Train only native model if detect type is native.
@@ -301,18 +304,18 @@ class NeuralNative(Neural):
                 train_gen=self.native_data.trainer,
                 val_gen=self.native_data.validator)
 
+    def reset_cut_point(self, fraction=None):
+        # Allows to set new fraction for prediction without having to start over.
+        self.fraction = fraction if fraction is not None else self.settings.fraction
+        self.calculate_cut_point()
 
-    def calculate_cut_point(self, fraction=None):
+    def calculate_cut_point(self):
 
         train_tokens_ids = self.native_data.get_data_tokens_ids(self.native_data.training)
         entropies = self.native_model.calculate_entropies(train_tokens_ids)
+        self.cut_point = find_ref_limit(entropies=entropies, fraction=self.fraction)
 
-        self.cut_point = find_ref_limit(
-                entropies=entropies,
-                fraction=fraction or self.settings.fraction
-                )
-
-    def predict_tokens(self, tokens, fraction=None):
+    def predict_tokens(self, tokens):
         # Convert to tokens_ids and then calculate entropies.
         # If necessary form empirical distribution of training entropies and determine cutpoint.
         # All tokens with entropy > cut_point are loanwords.
@@ -320,9 +323,8 @@ class NeuralNative(Neural):
         tokens_ids = [self.vocab.translate(t) for t in tokens]
         native_entropies = self.native_model.calculate_entropies(tokens_ids)
 
-        if self.cut_point is None or fraction is not None:
-            # First time if cut_point is None or recalculate cut_point of fraction is not None.
-            self.calculate_cut_point(fraction)
+        if self.cut_point is None:
+            self.calculate_cut_point()
 
         return [int(entropy>self.cut_point) for entropy in native_entropies]
 
@@ -346,6 +348,7 @@ class NeuralDual(Neural):
                 training=[row for row in self.training if row[2] == 1],
                 testing=[row for row in self.testing if row[2] == 1],
                 vocab=self.vocab,
+                val_split=self.val_split,
                 settings=self.settings)
 
         if self.model_type == 'recurrent':

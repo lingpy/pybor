@@ -50,7 +50,6 @@ class NeuralWord:
     language = attr.ib(default='')
     basis = attr.ib(default='all')
     series = attr.ib(default='')
-
     model = attr.ib(init=False)
 
     def __attrs_post_init__(self):
@@ -138,7 +137,12 @@ class NeuralWord:
         Tensorflow history.history.
 
         """
-
+        if isinstance(self, NeuralWordRecurrent):
+            print('* Training recurrent neural model. *')
+        elif isinstance(self, NeuralWordAttention):
+            print('* Training attention neural model. *')
+        else:
+            print("* I don't know what of model I am training. *")
         # Invoke this after consruction of the model.
         # Too heavy weight to do in init of class.
 

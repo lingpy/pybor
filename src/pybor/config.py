@@ -6,21 +6,45 @@ import attr
 @attr.s
 class BaseSettings:
     batch_size = attr.ib(default=32)
-    token_maxlen = attr.ib(default=40)
+    token_maxlen = attr.ib(default=30)
     val_split = attr.ib(default=0.15)
     test_split = attr.ib(default=0.15)
-    basis = attr.ib(default='all')
     verbose = attr.ib(default=1)
 
-    embedding_len = attr.ib(default=16)
-    rnn_output_len = attr.ib(default=32)
-    rnn_cell_type = attr.ib(default='GRU')  # GRU, LSTM
+    detect_type = attr.ib(default='dual')
 
-    print_summary = attr.ib(default=False, metadata={"deprecated": True})
+    print_summary = attr.ib(default=True, metadata={"deprecated": True})
     plot_model = attr.ib(default=False, metadata={"deprecated": True})
     plot_dpi = attr.ib(default=400, metadata={"deprecated": True})
 
-    # Model dropout and regulation parameters
+    output_path = attr.ib(default='./output')
+
+@attr.s
+class NeuralSettings(BaseSettings):
+    language = attr.ib(default='')
+    series = attr.ib(default='')
+    model_type = attr.ib(default='recurrent')  # recurrent, attention
+    neural_verbose = attr.ib(default=1)
+    fraction = attr.ib(default=0.995)
+
+
+@attr.s
+class EntropiesSettings(NeuralSettings):
+    # While not strictly a child of NeuralSettings, it seems more convenient.
+    tf_verbose = attr.ib(default=0)
+    verbose = attr.ib(default=1)
+    basis = attr.ib(default='all')
+
+
+@attr.s
+class RecurrentSettings(EntropiesSettings):
+    # Architecture parameters
+    embedding_len = attr.ib(default=32)
+    rnn_output_len = attr.ib(default=24)
+    rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
+    rnn_levels = attr.ib(default=1)  # 1, 2
+
+    # Dropout and regulation parameters
     embedding_dropout = attr.ib(default=0.0)
     recurrent_l2 = attr.ib(default=0.001)
     rnn_activity_l2 = attr.ib(default=0.0)
@@ -29,40 +53,33 @@ class BaseSettings:
     merge_embedding_dropout = attr.ib(default=0.2)
 
     # Model fitting parameters
-    epochs = attr.ib(30)
-    learning_rate = attr.ib(0.003333)
-    lr_decay = attr.ib(0.90)
-    neural_verbose = attr.ib(1)
-    tf_verbose = attr.ib(0)
-
+    epochs = attr.ib(default=50)
+    learning_rate = attr.ib(default=0.00333)
+    lr_decay = attr.ib(default=0.90)
+    restore_best_weights = attr.ib(default=True)
 
 @attr.s
-class NeuralSettings:
-    language = attr.ib(default='')
-    series = attr.ib(default='')
-    detect_type = attr.ib(default='dual')
-    model_type = attr.ib(default='recurrent')
-    fraction = attr.ib(default=0.995)
-    output_path = './output'
-
-
-@attr.s
-class RecurrentSettings(BaseSettings):
-    merge_embedding_dropout = attr.ib(default=0.2)
-
-
-@attr.s
-class AttentionSettings(BaseSettings):
+class AttentionSettings(EntropiesSettings):
+    # Architecture parameters
     embedding_len = attr.ib(default=32)
+    rnn_output_len = attr.ib(default=32)
     rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
+    rnn_levels = attr.ib(default=1)  # 1, 2
+    attention_type = attr.ib(default='additive')  # additive, dot-product
+    attention_causal = attr.ib(default='False')
 
+    # Dropout and regulation parameters
+    embedding_dropout = attr.ib(default=0.0)
     recurrent_l2 = attr.ib(default=0.0)
     rnn_activity_l2 = attr.ib(default=0.001)
     recurrent_dropout = attr.ib(default=0.2)
+    rnn_output_dropout = attr.ib(default=0.2)
+    attention_dropout = attr.ib(default=0.0)
 
     # Model fitting parameters
-    epochs = attr.ib(50)
-    learning_rate = attr.ib(0.01)
-    lr_decay = attr.ib(0.95)
+    epochs = attr.ib(default=50)
+    learning_rate = attr.ib(default=0.00333)
+    lr_decay = attr.ib(default=0.95)
+    restore_best_weights = attr.ib(default=True)
 
 

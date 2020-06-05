@@ -15,31 +15,51 @@ from pathlib import Path
 
 from pybor.data import LexibankDataset
 import pybor.evaluate as evaluate
-from pybor.neural import Neural
-from pybor.data_tf import NeuralData
-import pybor.neural_cfg as ncfg
+from pybor.neural import NeuralNative, NeuralDual, NeuralData
+import pybor.util as util
+import pybor.config as cfg
 
 from pybor.dev.data import training1, testing1
 
-output_path = Path(ncfg.system['output_path']).resolve()
+output_path = Path(cfg.BaseSettings().output_path).resolve()
 
 
 def evaluate_neural_loanword_prediction(language='', table=None,
-            detect_type='dual', model_type='recurrent'):
+            detect_type='dual', model_type='recurrent', test_split=None):
 
-    train, test = NeuralData.simple_train_test_split(table)
-    evaluate_neural_loanword_prediction_train_test(language,
-            train, test, detect_type, model_type)
+    train, test = util.train_test_split(table, split=test_split)
+    val_split = (test_split if test_split is None or test_split >= 1.0
+                            else test_split/(1-test_split))
+    evaluate_neural_loanword_prediction_train_test(
+                            language=language,
+                            train=train,
+                            test=test,
+                            detect_type=detect_type,
+                            model_type=model_type,
+                            val_split=val_split)
 
 def evaluate_neural_loanword_prediction_train_test(language='',
-            train=None, test=None, detect_type='dual', model_type='recurrent'):
+            train=None, test=None, detect_type='dual',
+            model_type='recurrent', val_split=None):
 
-    print(f'*** Evalution of prediction goodness for {language}. ***')
+    print(f'*** Evalution of prediction for {language}. ***')
     print(f'Detect type is {detect_type}, neural model type is {model_type}.')
+    if detect_type == 'native':
+        neural = NeuralNative(training=train,
+                              testing=test,
+                              language=language,
+                              series='devel',
+                              model_type=model_type,
+                              val_split=val_split)
+    else:
+        neural = NeuralDual(training=train,
+                            testing=test,
+                            language=language,
+                            series='devel',
+                            model_type=model_type,
+                            val_split=val_split)
 
-
-    neural = Neural(train_data=train, test_data=test, language=language,
-                    series='devel', detect_type=detect_type, model_type=model_type)
+    neural.train()
 
     print("Evaluate train dataset.")
     predictions = neural.predict_data(train)
@@ -55,7 +75,7 @@ def evaluate_neural_loanword_prediction_train_test(language='',
 
 
 def perform_detection_by_language(languages=None, form='FormChars',
-            detect_type='native', model_type='recurrent'):
+            detect_type='native', model_type='recurrent', test_split=None):
 
     try:
         with open('wold.bin', 'rb') as f:
@@ -85,14 +105,20 @@ def perform_detection_by_language(languages=None, form='FormChars',
                     )
 
         evaluate_neural_loanword_prediction(language=language, table=table,
-                                            detect_type=detect_type, model_type=model_type)
+                                            detect_type=detect_type,
+                                            model_type=model_type,
+                                            test_split=test_split)
 
 
 if __name__ == "__main__":
-    # languages = 'Hup'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
-    # perform_detection_by_language(languages=languages, form='Tokens',
-    #                 detect_type='dual', model_type='recurrent')
+    languages = 'Hup'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
+    perform_detection_by_language(
+                    languages=languages,
+                    form='Tokens',
+                    detect_type='dual',
+                    model_type='recurrent',
+                    test_split=0.15)
 
 
-    evaluate_neural_loanword_prediction_train_test('German',
-                    training1, testing1, 'dual', 'recurrent')
+    # evaluate_neural_loanword_prediction_train_test('German',
+    #                training1, testing1, 'native', 'attention')

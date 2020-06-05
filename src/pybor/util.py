@@ -2,11 +2,19 @@
 Utility functions for the package.
 """
 import math
+import random
 from pathlib import Path
 
+import logging
+import sys
+from logging.handlers import TimedRotatingFileHandler
+import pybor.config as cfg
+
+output_path = Path(cfg.BaseSettings().output_path).resolve()
+
 def test_data(*comps):
-    return Path(__file__).parent.parent.parent.joinpath('tests', 'data',
-            *comps).as_posix()
+    return Path(__file__).parent.parent.parent.joinpath( 'tests', 'data',
+                                                        *comps).as_posix()
 
 
 def find_cut_point(native, loan):
@@ -55,3 +63,42 @@ def find_ref_limit(entropies=None, fraction=0.995):
     entropies = sorted(entropies)
     idx = min((len(entropies)-1)*fraction, len(entropies)-1)
     return (entropies[math.floor(idx)]+entropies[math.ceil(idx)])/2
+
+
+def train_test_split(table, split=None):
+    random.shuffle(table)
+    split = int(split) if split >= 1 else math.ceil(len(table)*split)
+    return table[:-split], table[-split:]
+
+
+# =============================================================================
+# Logger standard routines
+# Adapted from: https://gist.github.com/nguyenkims/e92df0f8bd49973f0c94bddf36ed7fd0
+# =============================================================================
+
+FILE_FORMATTER = logging.Formatter("%(asctime)s — %(name)s — %(levelname)s — %(message)s")
+CONSOLE_FORMATTER = logging.Formatter("%(name)s — %(levelname)s — %(message)s")
+LOG_FILE = output_path / "pybor.log"
+
+def get_console_handler():
+   console_handler = logging.StreamHandler(sys.stdout)
+   console_handler.setFormatter(CONSOLE_FORMATTER)
+   console_handler.setLevel(logging.INFO)
+   return console_handler
+
+def get_file_handler():
+   file_handler = TimedRotatingFileHandler(LOG_FILE.as_posix(), when='midnight')
+   file_handler.setFormatter(FILE_FORMATTER)
+   file_handler.setLevel(logging.DEBUG)
+   return file_handler
+
+def get_logger(logger_name):
+   logger = logging.getLogger(logger_name)
+
+   logger.setLevel(logging.DEBUG) # better to have too much log than not enough
+   logger.addHandler(get_console_handler())
+   logger.addHandler(get_file_handler())
+
+   # with this pattern, it's rarely necessary to propagate the error up to parent
+   logger.propagate = False
+   return logger

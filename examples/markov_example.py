@@ -11,8 +11,8 @@ import pickle
 
 from pybor.data import LexibankDataset
 from pybor.markov import DualMarkov, NativeMarkov
-from pybor.data_tf import NeuralData
 import pybor.evaluate as evaluate
+import pybor.util as util
 
 from pybor.dev.data import training1, testing1
 
@@ -95,8 +95,8 @@ def perform_analysis_by_language(languages=None, form='Tokens',
                     classification='Loan'
                     )
 
-        training, testing = NeuralData.simple_train_test_split(
-                            table, test_split=test_split)
+        training, testing = util.train_test_split(
+                            table, split=test_split)
 
         print("Language:", language)
         if basis == 'native':
@@ -113,7 +113,7 @@ def perform_analysis_by_language(languages=None, form='Tokens',
 
 # Main
 if __name__ == "__main__":
-    languages = 'all'  # ['Hup' ,'English']  # all, individual-language
+    languages = 'Hup'  # ['Hup' ,'English']  # all, individual-language
 
     perform_analysis_by_language(languages, form='Tokens',
                                   basis='native', test_split=0.15)

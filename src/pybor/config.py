@@ -13,7 +13,7 @@ class BaseSettings:
 
     detect_type = attr.ib(default='dual')
 
-    print_summary = attr.ib(default=True, metadata={"deprecated": True})
+    print_summary = attr.ib(default=False, metadata={"deprecated": True})
     plot_model = attr.ib(default=False, metadata={"deprecated": True})
     plot_dpi = attr.ib(default=400, metadata={"deprecated": True})
 
@@ -39,8 +39,8 @@ class EntropiesSettings(NeuralSettings):
 @attr.s
 class RecurrentSettings(EntropiesSettings):
     # Architecture parameters
-    embedding_len = attr.ib(default=32)
-    rnn_output_len = attr.ib(default=24)
+    embedding_len = attr.ib(default=16)
+    rnn_output_len = attr.ib(default=32)
     rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
     rnn_levels = attr.ib(default=1)  # 1, 2
 

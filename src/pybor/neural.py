@@ -25,6 +25,7 @@ from pybor.entropies import NeuralWordRecurrent, NeuralWordAttention
 import pybor.util as util
 
 output_path = Path(BaseSettings().output_path).resolve()
+
 logger = util.get_logger(__name__)
 
 
@@ -50,6 +51,9 @@ class Vocab:
                     self.vocab[counter] = token
                     counter += 1
 
+        self.data = None  # Once used, no need to keep raw data.
+
+
     def __getitem__(self, item):
         return self.vocab[item]
 
@@ -59,8 +63,9 @@ class Vocab:
     def __len__(self):
         return len(self.vocab)
 
+    UNK=1  # Unkown value is 1 and used here.
     def translate(self, word):
-        return [self.vocab[self.start]]+[self.vocab.get(x, self.unknown)
+        return [self.vocab[self.start]]+[self.vocab.get(x, Vocab.UNK)
                                          for x in word]+[self.vocab[self.end]]
     @property
     def size(self):
@@ -176,6 +181,8 @@ class KerasBatchGenerator:
         self.batch_size = self.batch_size or self.settings.batch_size
         self.current_idx = 0
         self.data_len = len(self.data)
+        # Test for unknowns.
+
 
     def generate(self, sample=None):
         # Randomize order of words.
@@ -224,14 +231,14 @@ class Neural:
     model_type = attr.ib(default='')
     val_split = attr.ib(default=None)
 
+
     def __attrs_post_init__(self):
         # In case settings object is not right type.
         self.language = self.language or self.settings.language
         self.series = self.series or self.settings.series
         self.model_type = self.model_type or self.settings.model_type
 
-        all_tokens = [row[1] for row in self.training]+[row[1] for row in
-                self.testing]
+        all_tokens = [row[1] for row in self.training]+[row[1] for row in self.testing]
         self.vocab = Vocab(data=all_tokens)
 
         self.native_data = NeuralData(
@@ -242,9 +249,17 @@ class Neural:
                 settings=self.settings
                 )
 
+        # Conveneint to separate out loan data always.
+        self.loan_data = NeuralData(
+                training=[row for row in self.training if row[2] == 1],
+                testing=[row for row in self.testing if row[2] == 1],
+                vocab=self.vocab,
+                val_split=self.val_split,
+                settings=self.settings)
+
         if self.model_type == 'recurrent':
             self.native_model = NeuralWordRecurrent(
-                    vocab_len=len(self.vocab),
+                    vocab_len=self.vocab.size,
                     language=self.language,
                     basis='native',
                     series=self.series,
@@ -252,7 +267,7 @@ class Neural:
 
         else:  # attention
             self.native_model = NeuralWordAttention(
-                    vocab_len=len(self.vocab),
+                    vocab_len=self.vocab.size,
                     language=self.language,
                     basis='native',
                     series=self.series,
@@ -297,12 +312,15 @@ class NeuralNative(Neural):
         self.fraction = self.fraction or self.settings.fraction
         self.cut_point = None
 
+
+
     # Train only native model if detect type is native.
-    def train(self):
-        print('training native model')
-        self.native_model.train(
+    def train(self, epochs=None):
+        logger.info('training native model')
+        self.native_history = self.native_model.train(
                 train_gen=self.native_data.trainer,
-                val_gen=self.native_data.validator)
+                val_gen=self.native_data.validator,
+                epochs=epochs)
 
     def reset_cut_point(self, fraction=None):
         # Allows to set new fraction for prediction without having to start over.
@@ -344,16 +362,10 @@ class NeuralDual(Neural):
             self.settings = NeuralSettings()
         super().__attrs_post_init__()
 
-        self.loan_data = NeuralData(
-                training=[row for row in self.training if row[2] == 1],
-                testing=[row for row in self.testing if row[2] == 1],
-                vocab=self.vocab,
-                val_split=self.val_split,
-                settings=self.settings)
 
         if self.model_type == 'recurrent':
             self.loan_model = NeuralWordRecurrent(
-                    vocab_len=len(self.vocab),
+                    vocab_len=self.vocab.size,
                     language=self.language,
                     basis='loan',
                     series=self.series,
@@ -361,29 +373,32 @@ class NeuralDual(Neural):
 
         else:  # attention
             self.loan_model = NeuralWordAttention(
-                    vocab_len=len(self.vocab),
+                    vocab_len=self.vocab.size,
                     language=self.language,
                     basis='loan',
                     series=self.series,
                     settings=self.settings)
 
 
-    def train(self):
-        print('training native model')
-        self.native_model.train(
+    def train(self, epochs=None):
+        logger.info('training native model')
+        self.native_history = self.native_model.train(
                 train_gen=self.native_data.trainer,
-                val_gen=self.native_data.validator)
-        print('training loan model')
-        self.loan_model.train(
+                val_gen=self.native_data.validator,
+                epochs=epochs)
+        logger.info('training loan model')
+        self.loan_history = self.loan_model.train(
                 train_gen=self.loan_data.trainer,
-                val_gen=self.loan_data.validator)
+                val_gen=self.loan_data.validator,
+                epochs=epochs)
 
 
     def predict_tokens(self, tokens):
         # Convert to tokens_ids and then calculate entropies.
         # Entropy calculation and predictions depend on whether native or dual.
-
+        # Should all be the same vocab, but out of sync on Jupyter notebook.
         tokens_ids = [self.vocab.translate(t) for t in tokens]
+
         native_entropies = self.native_model.calculate_entropies(tokens_ids)
         loan_entropies = self.loan_model.calculate_entropies(tokens_ids)
         return [int(loan_entropy<native_entropy)

@@ -14,7 +14,6 @@ integer ids where each id corresponds to a symbol segment from a vocabulary.
 
 import math
 from pathlib import Path
-
 import attr
 
 import tensorflow as tf
@@ -90,7 +89,6 @@ class NeuralWord:
     def calculate_entropies(self, tokens_ids):
         # Calculate entropy for a list of tokens_ids
         # in format of int ids that correspond to str segments.
-
         # Get the probabilities for all str segment possibilities.
         maxlen = max([len(token_ids) for token_ids in tokens_ids])
         # Truncate right id for x and left id for y, so only 1 id extra.
@@ -103,7 +101,10 @@ class NeuralWord:
             x_lst.append(token_ids[:-1])
             y_lst.append(token_ids[1:])
 
+
+        # Need to detect error here.
         x_tf = pad_sequences(x_lst, padding='post', maxlen=maxlen)
+
         x_probs = self.model.predict(x_tf)
 
         # Compute cross-entropies
@@ -142,7 +143,7 @@ class NeuralWord:
         elif isinstance(self, NeuralWordAttention):
             logger.info('Training attention neural model.')
         else:
-            logger.warn("I don't know what of model I am training.")
+            logger.warn(f"Training unknown neural model type {type(self)}.")
         # Invoke this after consruction of the model.
         # Too heavy weight to do in init of class.
 

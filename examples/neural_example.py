@@ -117,7 +117,7 @@ if __name__ == "__main__":
                     form='Tokens',
                     detect_type='dual',
                     model_type='recurrent',
-                    test_split=0.15)
+                    test_split=0.20)
 
 
     # evaluate_neural_loanword_prediction_train_test('German',

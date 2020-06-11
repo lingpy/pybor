@@ -21,7 +21,7 @@ import tensorflow as tf
 #tf.autograph.set_verbosity(0, False)
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Embedding, Dropout, Activation
-from tensorflow.keras.layers import GRU, LSTM  #, AdditiveAttention, Attention
+from tensorflow.keras.layers import GRU, LSTM, AdditiveAttention, Attention
 from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Concatenate, Reshape
 from tensorflow.keras.regularizers import l2
@@ -444,18 +444,18 @@ class NeuralWordAttention(NeuralWord):
         rnn_hidden = Reshape((-1, rnn_hidden.shape[1]),
                              name='Reshape_hidden')(rnn_hidden)
 
-        # if params.attention_type == 'additive':
-        #     context_vector = AdditiveAttention(causal=params.attention_causal,
-        #             dropout=params.attention_dropout)([rnn_output, rnn_hidden])
-        # else:  # dot-product
-        #     context_vector = Attention(causal=params.attention_causal,
-        #             dropout=params.attention_dropout) ([rnn_output, rnn_hidden])
+        if params.attention_type == 'additive':
+            context_vector = AdditiveAttention(causal=params.attention_causal,
+                    dropout=params.attention_dropout)([rnn_output, rnn_hidden])
+        else:  # dot-product
+            context_vector = Attention(causal=params.attention_causal,
+                    dropout=params.attention_dropout) ([rnn_output, rnn_hidden])
 
-        # to_outputs = Concatenate(axis=2,
-        #                          name='Merge_context_rnn_output')([context_vector, rnn_output])
+        to_outputs = Concatenate(axis=2,
+                                  name='Merge_context_rnn_output')([context_vector, rnn_output])
 
         outputs = Dense(self.vocab_len, activation="softmax",
-                        name='Segment_output')(rnn_output)  # (to_outputs)
+                        name='Segment_output')(to_outputs)
 
         model_name = self.construct_modelname('attention')
         self.model = Model(inputs=[inputs], outputs=[outputs], name=model_name)

@@ -25,22 +25,24 @@ output_path = Path(cfg.BaseSettings().output_path).resolve()
 
 
 def evaluate_neural_loanword_prediction(language='', table=None,
-            detect_type='dual', model_type='recurrent', test_split=None):
+            detect_type='dual', model_type='recurrent', test_split=None, settings=None):
 
     train, test = util.train_test_split(table, split=test_split)
     val_split = (test_split if test_split is None or test_split >= 1.0
                             else test_split/(1-test_split))
+
     evaluate_neural_loanword_prediction_train_test(
                             language=language,
                             train=train,
                             test=test,
                             detect_type=detect_type,
                             model_type=model_type,
-                            val_split=val_split)
+                            val_split=val_split,
+                            settings=settings)
 
 def evaluate_neural_loanword_prediction_train_test(language='',
             train=None, test=None, detect_type='dual',
-            model_type='recurrent', val_split=None):
+            model_type='recurrent', val_split=None, settings=None):
 
     print(f'*** Evalution of prediction for {language}. ***')
     print(f'Detect type is {detect_type}, neural model type is {model_type}.')
@@ -50,14 +52,16 @@ def evaluate_neural_loanword_prediction_train_test(language='',
                               language=language,
                               series='devel',
                               model_type=model_type,
-                              val_split=val_split)
+                              val_split=val_split,
+                              settings=settings)
     else:
         neural = NeuralDual(training=train,
                             testing=test,
                             language=language,
                             series='devel',
                             model_type=model_type,
-                            val_split=val_split)
+                            val_split=val_split,
+                            settings=settings)
 
     neural.train()
 
@@ -76,7 +80,8 @@ def evaluate_neural_loanword_prediction_train_test(language='',
 
 
 def perform_detection_by_language(languages=None, form='FormChars',
-            detect_type='native', model_type='recurrent', test_split=None):
+                                  detect_type='native', model_type='recurrent',
+                                  test_split=None, settings=None):
 
     try:
         with open('wold.bin', 'rb') as f:
@@ -108,17 +113,19 @@ def perform_detection_by_language(languages=None, form='FormChars',
         evaluate_neural_loanword_prediction(language=language, table=table,
                                             detect_type=detect_type,
                                             model_type=model_type,
-                                            test_split=test_split)
+                                            test_split=test_split,
+                                            settings=settings)
 
 
 if __name__ == "__main__":
     languages = 'English'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
     perform_detection_by_language(
                     languages=languages,
-                    form='FormChars',
+                    form='Tokens',
                     detect_type='dual',
-                    model_type='recurrent',
-                    test_split=0.10)
+                    model_type='attention',
+                    test_split=0.10,
+                    settings=None)
 
 
     # evaluate_neural_loanword_prediction_train_test('German',

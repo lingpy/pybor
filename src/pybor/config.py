@@ -6,6 +6,7 @@ import attr
 @attr.s
 class BaseSettings:
     batch_size = attr.ib(default=32)
+    skip_step = attr.ib(default=5)
     token_maxlen = attr.ib(default=30)
     val_split = attr.ib(default=0.15)
     test_split = attr.ib(default=0.15)
@@ -25,7 +26,9 @@ class NeuralSettings(BaseSettings):
     series = attr.ib(default='')
     model_type = attr.ib(default='recurrent')  # recurrent, attention
     neural_verbose = attr.ib(default=1)
-    fraction = attr.ib(default=0.995)
+    fraction = attr.ib(default=0.995)  # For Native model.
+    prediction_policy = attr.ib(default='zero')  # zero, accuracy, fscore
+    fscore_beta = attr.ib(default=1.0)
 
 
 @attr.s
@@ -39,7 +42,7 @@ class EntropiesSettings(NeuralSettings):
 @attr.s
 class RecurrentSettings(EntropiesSettings):
     # Architecture parameters
-    embedding_len = attr.ib(default=16)
+    embedding_len = attr.ib(default=32)
     rnn_output_len = attr.ib(default=32)
     rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
     rnn_levels = attr.ib(default=1)  # 1, 2
@@ -53,9 +56,9 @@ class RecurrentSettings(EntropiesSettings):
     merge_embedding_dropout = attr.ib(default=0.2)
 
     # Model fitting parameters
-    epochs = attr.ib(default=50)
+    epochs = attr.ib(default=60)
     learning_rate = attr.ib(default=0.00333)
-    lr_decay = attr.ib(default=0.90)
+    learning_rate_decay = attr.ib(default=0.90)  # Adjust for batch size, data len.
     restore_best_weights = attr.ib(default=True)
 
 @attr.s
@@ -77,9 +80,9 @@ class AttentionSettings(EntropiesSettings):
     attention_dropout = attr.ib(default=0.0)
 
     # Model fitting parameters
-    epochs = attr.ib(default=50)
+    epochs = attr.ib(default=60)
     learning_rate = attr.ib(default=0.00333)
-    lr_decay = attr.ib(default=0.95)
+    learning_rate_decay = attr.ib(default=0.95)  # 0.95
     restore_best_weights = attr.ib(default=True)
 
 

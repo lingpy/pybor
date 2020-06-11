@@ -67,11 +67,12 @@ def evaluate_neural_loanword_prediction_train_test(language='',
     evaluate.print_evaluation(train_metrics)
     evaluate.false_positive(predictions, train)
 
-    print("Evaluate test dataset.")
-    predictions = neural.predict_data(test)
-    test_metrics = evaluate.evaluate_model(predictions, test)
-    evaluate.print_evaluation(test_metrics)
-    evaluate.false_positive(predictions, test)
+    if test:
+        print("Evaluate test dataset.")
+        predictions = neural.predict_data(test)
+        test_metrics = evaluate.evaluate_model(predictions, test)
+        evaluate.print_evaluation(test_metrics)
+        evaluate.false_positive(predictions, test)
 
 
 def perform_detection_by_language(languages=None, form='FormChars',
@@ -111,14 +112,17 @@ def perform_detection_by_language(languages=None, form='FormChars',
 
 
 if __name__ == "__main__":
-    languages = 'Hup'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
+    languages = 'English'  # ['English', 'Hup', 'Imbabura Quechua']  # 'English'
     perform_detection_by_language(
                     languages=languages,
-                    form='Tokens',
+                    form='FormChars',
                     detect_type='dual',
                     model_type='recurrent',
-                    test_split=0.20)
+                    test_split=0.10)
 
 
     # evaluate_neural_loanword_prediction_train_test('German',
-    #                training1, testing1, 'native', 'attention')
+    #                 training1, testing1, 'dual', 'recurrent')
+
+    # evaluate_neural_loanword_prediction_train_test('German',
+    #                 training1, detect_type='dual', model_type='recurrent')

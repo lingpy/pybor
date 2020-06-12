@@ -57,6 +57,8 @@ def test_DualMarkov_predict_data():
     row = testing1[42]
     print('Check out token row', row)
     token = row[1]
+    print('Entropy for', token, dm.native.calculate_entropy(token))
+    print('Entropy for', token, dm.loan.calculate_entropy(token))
     print('Prediction for',token, dm.predict(token))
 
 def test_NativeMarkov_predict_data():
@@ -81,6 +83,7 @@ def test_NativeMarkov_predict_data():
     row = testing1[42]
     print('Check out token row', row)
     token = row[1]
+    print('Entropy for', token, nm.nativemodel.calculate_entropy(token))
     print('Prediction for',token, nm.predict(token))
 
 def get_tokens(data):

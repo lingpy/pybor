@@ -5,7 +5,7 @@ Created on Thu May 21 18:20:30 2020
 
 @author: johnmiller
 
-Test neural_tf.py
+Test entropies.py
 
 All test functions begin with 'test_'
 Import testing, training, testing1, training1 from pybor.dev.data
@@ -21,7 +21,7 @@ Or to save as html report:
 $ pytest tests/test_entropies.py -—cov=pybor.entropies --cov-report=html
 
 Or to report line numbers of missing coverage:
-$ pytest tests/test_entropies.py --cov=pybor.test_entropies --cov-report term-missing
+$ pytest tests/test_entropies.py --cov=pybor.entropies --cov-report term-missing
 
 Or to perform a specific test:
 $ pytest tests/test_entropies.py::test_prediction2 --cov=pybor.entropies --cov-report term-missing
@@ -68,6 +68,25 @@ def test_instantiation():
     word = NeuralWordRecurrent(data.vocab.size, settings=settings)
     assert word.settings.print_summary==True
     assert word.settings.batch_size==64
+
+def test_2recurrent_layers():
+    data = NeuralData(training1, testing1)
+
+    settings = RecurrentSettings(rnn_levels=2)
+    word = NeuralWordRecurrent(data.vocab.size, settings=settings)
+    word.train(train_gen=data.trainer, val_gen=data.validator)
+    word.evaluate_test(test_gen=data.tester)
+
+    settings = RecurrentSettings(rnn_levels=2, rnn_cell_type='GRU')
+    word = NeuralWordRecurrent(data.vocab.size, settings=settings)
+
+    settings = AttentionSettings(rnn_levels=2)
+    word = NeuralWordAttention(data.vocab.size, settings=settings)
+    word.train(train_gen=data.trainer, val_gen=data.validator)
+    word.evaluate_test(test_gen=data.tester)
+
+    settings = AttentionSettings(rnn_levels=2, rnn_cell_type='GRU')
+    word = NeuralWordAttention(data.vocab.size, settings=settings)
 
 def test_non_positive_vocab_len():
     with pytest.raises(Exception):

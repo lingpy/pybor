@@ -14,13 +14,13 @@ integer ids where each id corresponds to a symbol segment from a vocabulary.
 
 import math
 from pathlib import Path
-
+import numpy as np
 import attr
 
 import tensorflow as tf
 #tf.autograph.set_verbosity(0, False)
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, Embedding, Dropout
+from tensorflow.keras.layers import Dense, Embedding, Dropout, Activation
 from tensorflow.keras.layers import GRU, LSTM, AdditiveAttention, Attention
 from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Concatenate, Reshape
@@ -90,7 +90,6 @@ class NeuralWord:
     def calculate_entropies(self, tokens_ids):
         # Calculate entropy for a list of tokens_ids
         # in format of int ids that correspond to str segments.
-
         # Get the probabilities for all str segment possibilities.
         maxlen = max([len(token_ids) for token_ids in tokens_ids])
         # Truncate right id for x and left id for y, so only 1 id extra.
@@ -104,16 +103,17 @@ class NeuralWord:
             y_lst.append(token_ids[1:])
 
         x_tf = pad_sequences(x_lst, padding='post', maxlen=maxlen)
+
         x_probs = self.model.predict(x_tf)
 
         # Compute cross-entropies
 
         entropies = []
-        EPSILON = 1e-7
+        #EPSILON = 1e-7
         for x_ids_probs, y_ids in zip(x_probs, y_lst):
             # Prevent overflow/underflow with clipping.
-            x_ids_probs_ = tf.clip_by_value(x_ids_probs,  EPSILON, 1-EPSILON)
-            x_ids_lns = [math.log(x_ids_probs_[i, y_ids[i]]) for i in range(len(y_ids))]
+            #x_ids_probs_ = tf.clip_by_value(x_ids_probs,  EPSILON, 1-EPSILON)
+            x_ids_lns = [math.log(x_ids_probs[i, y_ids[i]]) for i in range(len(y_ids))]
             entropy = -sum(x_ids_lns)/len(x_ids_lns)
             entropies.append(entropy)
 
@@ -136,41 +136,51 @@ class NeuralWord:
         -------
         Tensorflow history.history.
 
+        Notes
+        -----
+            Invoke train after consruction of the model.
+            It's too heavy weight to do in init of class.
+
         """
-        if isinstance(self, NeuralWordRecurrent):
-            logger.info('Training recurrent neural model.')
-        elif isinstance(self, NeuralWordAttention):
-            logger.info('Training attention neural model.')
-        else:
-            logger.warn("I don't know what of model I am training.")
-        # Invoke this after consruction of the model.
-        # Too heavy weight to do in init of class.
+        logger.info(f"Training neural {type(self)} model.")
 
-        train_steps = train_gen.data_len//train_gen.batch_size
-        lr_decay = (1.0/self.settings.lr_decay-1.0)/train_steps
-        optimizer = Adam(learning_rate=self.settings.learning_rate, decay=lr_decay)
+        learning_rate_decay = self.settings.learning_rate_decay
+        train_steps = max(train_gen.data_len//train_gen.batch_size, 1)
+        if learning_rate_decay > 0.2:
+            # High decay so per epoch; transform to per step.
+            # Benefit of this route is that native and loan learning rates decay differently.
+            learning_rate_decay = (1.0/learning_rate_decay-1.0)/train_steps
+        logger.info(f'Using per step learning rate decay {learning_rate_decay:.4f}')
+        learning_rate = self.settings.learning_rate
+        optimizer = Adam(learning_rate=learning_rate, decay=learning_rate_decay)
 
 
-        self.model.compile(loss='sparse_categorical_crossentropy',
+        self.model.compile(loss='categorical_crossentropy',
                             optimizer=optimizer,
-                            metrics=['sparse_categorical_accuracy'])
+                            metrics=['categorical_accuracy',
+                                     'categorical_crossentropy'])
 
         epochs = epochs or self.settings.epochs
 
         earlystopper = EarlyStopping(monitor='val_loss',
                                      verbose=self.settings.tf_verbose,
-                                     patience=epochs,
+                                     patience=10,  #epochs,
                                      restore_best_weights=self.settings.restore_best_weights)
 
-        val_steps=max(val_gen.data_len//val_gen.batch_size, 2)
-        # Fit using generator - use fit directly.
-        history = self.model.fit(train_gen.generate(),
+        if val_gen:
+            val_steps=max(val_gen.data_len//val_gen.batch_size, 2)
+            history = self.model.fit(train_gen.generate(),
                                  steps_per_epoch=train_steps,
                                  epochs=epochs,
                                  validation_data=val_gen.generate(),
                                  validation_steps=val_steps,
                                  verbose=self.settings.tf_verbose,
                                  callbacks=[earlystopper])
+        else:
+            history = self.model.fit(train_gen.generate(),
+                                 steps_per_epoch=train_steps,
+                                 epochs=epochs,
+                                 verbose=self.settings.tf_verbose)
 
 
         if self.settings.verbose > 0:
@@ -180,26 +190,40 @@ class NeuralWord:
         return history.history
 
     def show_quality_measures(self, history):
-        #measure_keys = history.keys()
+        history_keys = history.keys()
+        logger.info(f'Available quality measures: {history_keys}.')
         # val_loss is used to get the best fit with early stopping.
-        val_loss = history['val_loss']
-        best, best_val_loss = min(enumerate(val_loss), key=lambda v: v[1])
-        logger.info(f'Best epoch: {best} of {len(val_loss)}. Statistics from TensorFlow:')
+        if 'val_loss' in history_keys:
+            val_loss = history['val_loss']
+            best, best_val_loss = min(enumerate(val_loss), key=lambda v: v[1])
+            logger.info(f'Best epoch: {best} of {len(val_loss)}.')
+        else:
+            best = -1
+            logger.info(f'No validation results reported.')
+
+        logger.info('Statistics from TensorFlow:')
         logger.info(f"Train dataset: loss={history['loss'][best]:.4f}, " +
-              f"accuracy={history['sparse_categorical_accuracy'][best]:.4f}")
-        logger.info(f"Validate dataset: loss={history['val_loss'][best]:.4f}, " +
-              f"accuracy={history['val_sparse_categorical_accuracy'][best]:.4f}")
+                    f"accuracy={history['categorical_accuracy'][best]:.4f}, " +
+                    f"cross_entropy={history['categorical_crossentropy'][best]:.4f}.")
+        if 'val_loss' in history_keys:
+            logger.info(f"Validate dataset: loss={history['val_loss'][best]:.4f}, " +
+                        f"accuracy={history['val_categorical_accuracy'][best]:.4f}, " +
+                        f"cross_entropy={history['val_categorical_crossentropy'][best]:.4f}.")
 
 
     def evaluate_test(self, test_gen=None):
         # Evaluate using generator - use evaluate directly.
+        if test_gen is None:
+            logger.warn(f'No test data for evaluation!')
+            return []
 
         test_steps=max(test_gen.data_len//test_gen.batch_size, 2)
         score = self.model.evaluate(test_gen.generate(),
                                     steps=test_steps,
                                     verbose=self.settings.tf_verbose)
 
-        logger.info(f'Test dataset: loss={score[0]:.4f}, accuracy={score[1]:.4f}, ')
+        logger.info(f'Test dataset: loss={score[0]:.4f}, ' +
+                    f'accuracy={score[1]:.4f}, cross_entropy={score[2]:.4f}.')
         return score
 
     def print_model_summary(self):
@@ -335,6 +359,7 @@ class NeuralWordRecurrent(NeuralWord):
             self.plot_model_summary()
 
 
+
 @attr.s
 class NeuralWordAttention(NeuralWord):
 
@@ -419,15 +444,15 @@ class NeuralWordAttention(NeuralWord):
         rnn_hidden = Reshape((-1, rnn_hidden.shape[1]),
                              name='Reshape_hidden')(rnn_hidden)
 
-        if params.attn_type == 'additive':
-            context_vector = AdditiveAttention(causal=params.attn_causal,
-                    dropout=params.attn_dropout)([rnn_output, rnn_hidden])
+        if params.attention_type == 'additive':
+            context_vector = AdditiveAttention(causal=params.attention_causal,
+                    dropout=params.attention_dropout)([rnn_output, rnn_hidden])
         else:  # dot-product
-            context_vector = Attention(causal=params.attn_causal,
-                    dropout=params.attn_dropout) ([rnn_output, rnn_hidden])
+            context_vector = Attention(causal=params.attention_causal,
+                    dropout=params.attention_dropout) ([rnn_output, rnn_hidden])
 
         to_outputs = Concatenate(axis=2,
-                                 name='Merge_context_rnn_output')([context_vector, rnn_output])
+                                  name='Merge_context_rnn_output')([context_vector, rnn_output])
 
         outputs = Dense(self.vocab_len, activation="softmax",
                         name='Segment_output')(to_outputs)

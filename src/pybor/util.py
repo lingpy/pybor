@@ -17,9 +17,10 @@ def test_data(*comps):
                                                         *comps).as_posix()
 
 
-def find_cut_point(native, loan):
+def find_acc_cut_point(native, loan):
     """
-    Find cut_point that will give highest accuracy.
+    Calculate cut_point that will give highest accuracy for entropies.
+    Use case is for entropies estimated from a single (native) entropy model.
 
     Parameters
     ----------
@@ -32,30 +33,139 @@ def find_cut_point(native, loan):
     -------
     cut_point : float
         Critical value to test native versus loan word.
-        Native if entropy < cut_point else loan.
+        Native if entropy <= cut_point else loan.
+
+    Note
+    ----
+        Entropies are all non-negative and the algorithm used makes use
+        of that fact.
 
     """
-    total = sorted([-s for s in native] + loan, key=abs)
+    abs_entropies = sorted([-s for s in native] + loan, key=abs)
 
-    # All values are > 0 are correct.
+    # All values > 0 are presumed correct at start.
     cut_point = 0
     correct = len(loan)
     correct_max = correct
 
-    for t in total:
-        correct += (1 if t < 0 else -1)
+    for value in abs_entropies:
+        correct += 1 if value < 0 else -1
         if correct > correct_max:
             correct_max = correct
-            cut_point = t
+            cut_point = value
 
     cut_point = abs(cut_point)
     return cut_point
 
-
-
-def find_ref_limit(entropies=None, fraction=0.995):
+def find_acc_cut_point_deltas(native, loan):
     """
-    Calculate a cut-off point for entropies from the data.
+    Calculate cut_point that will give highest accuracy for entropy deltas.
+    Use case is for differences between entropies calculated under competing models,
+    where the native model typically estimates lower entropies for native words,
+    and the loan model typically estimates lower entropies for loan words.
+
+    Parameters
+    ----------
+    native : [float]
+        Delta entropies for native words calculated under native and loan models.
+        native = delta = entropy_{native_word|native_model} - entropy_{native_word|loan_model}
+    loan : [float]
+        Delta entropies for loan words calculated under native and loan models.
+        loan = delta = entropy_{loan_word|native_model} - entropy_{loan_word|loan_model}
+
+    Returns
+    -------
+    cut_point : float
+        Critical value to test native versus loan word model deltas.
+        Native if delta <= cut_pont else loan.
+    """
+    native = [(delta, 0) for delta in native]
+    loan = [(delta, 1) for delta in loan]
+    data = sorted(native + loan, key=lambda row: row[0])
+    # All loan deltas > -inf so correct. No native < -inf so incorrect.
+    cut_point = float('-inf')
+    correct = len(loan)
+    correct_max = correct
+
+    for value, source in data:
+        # Count native correct if cut_point were set here.
+        # Count loan wrong if cut_point were set here.
+        correct += 1 if source == 0 else -1
+        if correct > correct_max:
+            correct_max = correct
+            cut_point = value
+
+    return cut_point
+
+
+def calculate_fscore(n_true_pos, n_true, n_pos, beta=1):
+    if n_true_pos == 0: return 0.0
+    if n_true == 0: return 0.0
+    if n_pos == 0: return 0.0
+    prec = n_true_pos/n_pos
+    recall = n_true_pos/n_true
+    return (1 + beta**2)*(prec*recall)/(beta**2 * prec + recall)
+
+
+def find_fscore_cut_point_deltas(native, loan, beta=1.0):
+    """
+    Calculate cut_point that will give highest F score for entropy deltas.
+
+    Parameters
+    ----------
+    native : [float]
+        Delta entropies for native words calculated under native and loan models.
+        native = delta = entropy_{native_word|native_model} - entropy_{native_word|loan_model}
+    loan : [float]
+        Delta entropies for loan words calculated under native and loan models.
+        loan = delta = entropy_{loan_word|native_model} - entropy_{loan_word|loan_model}
+    beta : float, optional.
+        beta used to customize F score.  Default is 1.0.
+    Returns
+    -------
+    cut_point : float
+        Critical value to test native versus loan word model deltas.
+        Native if delta <= cut_pont else loan.
+
+    Notes
+    -----
+    native = [-1.5, -1.0, -0.75, -0.5, 0.0, 1.0]
+    loan = [-0.65, 0.5, 1.5, 2.0]
+
+    """
+    native = [(delta, 0) for delta in native]
+    loan = [(delta, 1) for delta in loan]
+    data = sorted(native + loan, key=lambda row: row[0])
+    # All loan deltas > -inf so true and pos.
+    # All loan true
+    # All delta > -inf so pos
+    cut_point = float('-inf')
+    n_true_pos = len(loan)
+    n_true = len(loan)
+    n_pos = len(data)
+    f = calculate_fscore(n_true_pos, n_true, n_pos, beta)
+    #print(f'n_true_pos={n_true_pos}, n_pos={n_pos}, f={f:.2f}, val=-inf, f_max={f:.2f}, cut_point=-inf.')
+    f_max = f
+
+    for value, source in data:
+        # Count true_pos and pos if cut_point were set here.
+        n_pos -= 1  # reduce n_pos for each value below this point.
+        n_true_pos -= 1 if source == 1 else 0
+        f = calculate_fscore(n_true_pos, n_true, n_pos, beta)
+        if f > f_max:
+            f_max = f
+            cut_point = value
+        #print(f'n_true_pos={n_true_pos}, n_pos={n_pos}, f={f:.2f}, val={value}, f_max={f_max:.2f}, cut_point={cut_point}.')
+
+    return cut_point
+
+
+def find_frac_cut_point(entropies, fraction=0.995):
+    """
+    Calculate a cut-off point from fraction of entropy distribution.
+    Use case is with native entropy distribution to qualify on true negatives,
+    under the assumption that loan entropies will be generally greater than native,
+    and so result in low false negatives and high true positives.
     """
     # Entropies are not power law distributed, but neither are they Gaussian.
     # Better to use fraction of distribution rather than Gaussian z value
@@ -65,11 +175,11 @@ def find_ref_limit(entropies=None, fraction=0.995):
     return (entropies[math.floor(idx)]+entropies[math.ceil(idx)])/2
 
 
-def train_test_split(table, split=None):
+def train_test_split(table, split=0):
     random.shuffle(table)
+    if split == 0: return table, []
     split = int(split) if split >= 1 else math.ceil(len(table)*split)
     return table[:-split], table[-split:]
-
 
 # =============================================================================
 # Logger standard routines
@@ -81,24 +191,24 @@ CONSOLE_FORMATTER = logging.Formatter("%(name)s — %(levelname)s — %(message)
 LOG_FILE = output_path / "pybor.log"
 
 def get_console_handler():
-   console_handler = logging.StreamHandler(sys.stdout)
-   console_handler.setFormatter(CONSOLE_FORMATTER)
-   console_handler.setLevel(logging.INFO)
-   return console_handler
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(CONSOLE_FORMATTER)
+    console_handler.setLevel(logging.INFO)
+    return console_handler
 
 def get_file_handler():
-   file_handler = TimedRotatingFileHandler(LOG_FILE.as_posix(), when='midnight')
-   file_handler.setFormatter(FILE_FORMATTER)
-   file_handler.setLevel(logging.DEBUG)
-   return file_handler
+    file_handler = TimedRotatingFileHandler(LOG_FILE.as_posix(), when='midnight')
+    file_handler.setFormatter(FILE_FORMATTER)
+    file_handler.setLevel(logging.DEBUG)
+    return file_handler
 
 def get_logger(logger_name):
-   logger = logging.getLogger(logger_name)
+    logger = logging.getLogger(logger_name)
+    if not logger.handlers:
+        logger.setLevel(logging.DEBUG) # better to have too much log than not enough
+        logger.addHandler(get_console_handler())
+        logger.addHandler(get_file_handler())
+        logger.propagate = False
 
-   logger.setLevel(logging.DEBUG) # better to have too much log than not enough
-   logger.addHandler(get_console_handler())
-   logger.addHandler(get_file_handler())
+    return logger
 
-   # with this pattern, it's rarely necessary to propagate the error up to parent
-   logger.propagate = False
-   return logger

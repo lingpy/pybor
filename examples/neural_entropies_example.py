@@ -207,19 +207,20 @@ def perform_analysis_by_language(languages=None, form='FormChars',
 
 # Main
 if __name__ == "__main__":
-    # languages = 'Hup'   # ['English']  # , 'Hup']
-    # perform_analysis_by_language(
-    #                 languages=languages,
-    #                 form='Tokens',
-    #                 basis='loan',
-    #                 model_type='attention',
-    #                 test_split=0.15)
+    languages = 'Hup'   # ['English']  # , 'Hup']
+    perform_analysis_by_language(
+                    languages=languages,
+                    form='Tokens',
+                    basis='loan',
+                    model_type='attention',
+                    test_split=0.15)
 
     # Use training1 and testing1.
-    analyze_neural_entropies_train_test(
-                    language='German',
-                    train=training1,
-                    test=testing1,
-                    form='Tokens',
-                    basis='native',
-                    model_type='recurrent')
+    # analyze_neural_entropies_train_test(
+    #                 language='German',
+    #                 train=training1,
+    #                 test=testing1,
+    #                 form='Tokens',
+    #                 basis='native',
+    #                 model_type='recurrent')
+

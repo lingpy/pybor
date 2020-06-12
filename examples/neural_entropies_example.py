@@ -207,13 +207,13 @@ def perform_analysis_by_language(languages=None, form='FormChars',
 
 # Main
 if __name__ == "__main__":
-    # languages = 'Hup'   # ['English']  # , 'Hup']
-    # perform_analysis_by_language(
-    #                 languages=languages,
-    #                 form='Tokens',
-    #                 basis='loan',
-    #                 model_type='attention',
-    #                 test_split=0.15)
+    languages = 'Hup'   # ['English']  # , 'Hup']
+    perform_analysis_by_language(
+                    languages=languages,
+                    form='Tokens',
+                    basis='loan',
+                    model_type='attention',
+                    test_split=0.15)
 
     # Use training1 and testing1.
     # analyze_neural_entropies_train_test(
@@ -223,32 +223,4 @@ if __name__ == "__main__":
     #                 form='Tokens',
     #                 basis='native',
     #                 model_type='recurrent')
-
-    import pandas as pd
-    def make_orthographic_table(language):
-        tabledir = 'tables/'
-        table = pd.read_csv(tabledir+language+'.tsv', sep='\t', index_col=0)
-        table['Loan'] = (table.BorrowedScore > 0.375).astype(int)  # Inverse of previous value
-        table['Segments'] = table['Segments'].str.split()
-        table = table[['Parameter_ID', 'Segments', 'Loan']]
-
-        data = table.to_numpy().tolist()
-        return data
-
-        table = make_orthographic_table(language)
-
-    language = 'English'
-    print(f'Table for {language}.')
-    table = make_orthographic_table(language)
-
-    test_split = 0.15
-    train, test = util.train_test_split(table, split=test_split)
-
-    analyze_neural_entropies_train_test(
-                    language=language,
-                    train=train,
-                    test=test,
-                    form='FormChars',
-                    basis='native',
-                    model_type='recurrent')
 

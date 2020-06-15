@@ -96,6 +96,41 @@ def test_no_vocab_len():
     with pytest.raises(Exception):
         assert NeuralWordAttention()
 
+def test_settings():
+    settings = RecurrentSettings(val_split=0.20,
+                                 verbose=0,
+                                 token_maxlen=35,
+                                 fraction=0.80,
+                                 embedding_len=48,
+                                 rnn_cell_type='GRU',
+                                 recurrent_l2=0.002)
+
+    data = NeuralData(training1, settings=settings)
+    assert data.val_split == 0.20
+    assert data.validator is not None
+
+    neural = NeuralWordRecurrent(data.vocab.size, settings=settings)
+    assert neural.settings.val_split == 0.20
+    assert neural.settings.verbose == 0
+    assert neural.settings.token_maxlen == 35
+    assert neural.settings.fraction == 0.80
+    neural.train(train_gen=data.trainer, val_gen=data.validator)
+    neural.evaluate_test(test_gen=data.tester)
+
+    neural.train(train_gen=data.trainer)
+
+    data = NeuralData(training1, val_split=0.0, settings=settings)
+    assert data.val_split == 0.0
+    neural = NeuralWordRecurrent(data.vocab.size, settings=settings)
+    assert data.validator is None
+    neural.train(train_gen=data.trainer, val_gen=data.validator)
+
+    settings.val_split=0.0
+    data = NeuralData(training1, settings=settings)
+    assert data.val_split == 0.0
+    assert data.validator is None
+
+
 def test_train_model():
 
     data = NeuralData(training1, testing1)
@@ -160,8 +195,9 @@ def test_train_model_with_cfg():
 # =============================================================================
 
 if __name__ == "__main__":
-    test_instantiation()
+    #test_instantiation()
     # test_non_positive_vocab_len()
     # test_no_vocab_len()
+    test_settings()
     # test_train_model()
-    test_train_model_with_cfg()
+    #test_train_model_with_cfg()

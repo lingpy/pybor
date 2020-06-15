@@ -7,13 +7,18 @@ Support for model trained on both native and borrowed words (dual model),
 and for model trained on just native words (native model).
 """
 import math
+from pathlib import Path
 
 from nltk.util import ngrams
 import nltk.lm as lm
 import nltk.lm.preprocessing as pp
-
 import attr
 
+import pybor.config as config
+import pybor.util as util
+
+output_path = Path(config.BaseSettings().output_path).resolve()
+logger = util.get_logger(__name__)
 
 @attr.s
 class Markov:
@@ -21,10 +26,17 @@ class Markov:
     Base class.
     """
     data = attr.ib(default=[], repr=False)
-    model = attr.ib(default="kni")
-    order = attr.ib(default=3)
-    smoothing = attr.ib(default=0.5)
+    model = attr.ib(default=None)
+    order = attr.ib(default=None)
+    smoothing = attr.ib(default=None)
+    settings = attr.ib(default=config.MarkovSettings())
 
+    def __attrs_post_init__(self):
+        if not isinstance(self.settings, config.MarkovSettings):
+            self.settings = config.MarkovSettings()
+        self.model = self.settings.model if self.model is None else self.model
+        self.order = self.settings.order if self.order is None else self.order
+        self.smoothing = self.settings.smoothing if self.smoothing is None else self.smoothing
 
 @attr.s
 class MarkovWord(Markov):
@@ -58,6 +70,7 @@ class MarkovWord(Markov):
     tokens = attr.ib(default=[], repr=False)
 
     def __attrs_post_init__(self):
+        super().__attrs_post_init__()
 
         # NLTK recommended padding explicitly for training.
         train, vocab = pp.padded_everygram_pipeline(self.order, self.tokens)
@@ -81,7 +94,7 @@ class MarkovWord(Markov):
                     ),
                 "ls": (
                     lm.Lidstone,
-                    {"gamma": 0.1}
+                    {"gamma": self.smoothing}
                     ),
                 "mle": (
                     lm.MLE,
@@ -169,6 +182,7 @@ class DualMarkov(Markov):
         smoothing from MarkovWord class. The default is 0.5.
     """
     def __attrs_post_init__(self):
+        super().__attrs_post_init__()
 
         nativetokens = [token for _, token, status in self.data if status == 0]
         self.native = MarkovWord(
@@ -217,9 +231,11 @@ class NativeMarkov(Markov):
     """
     Unsupervised language model approach.
     """
-    p = attr.ib(default=0.995)
+    p = attr.ib(default=None)
 
     def __attrs_post_init__(self):
+        super().__attrs_post_init__()
+        self.p = self.settings.p if self.p is None else self.p
 
         nativetokens = [token for _, token, status in self.data if not status]
         self.nativemodel = MarkovWord(

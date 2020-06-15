@@ -68,14 +68,12 @@ def evaluate_neural_loanword_prediction_train_test(language='',
     print("Evaluate train dataset.")
     predictions = neural.predict_data(train)
     train_metrics = evaluate.evaluate_model(predictions, train)
-    evaluate.print_evaluation(train_metrics)
     evaluate.false_positive(predictions, train)
 
     if test:
         print("Evaluate test dataset.")
         predictions = neural.predict_data(test)
         test_metrics = evaluate.evaluate_model(predictions, test)
-        evaluate.print_evaluation(test_metrics)
         evaluate.false_positive(predictions, test)
 
 
@@ -123,7 +121,7 @@ if __name__ == "__main__":
                     languages=languages,
                     form='Tokens',
                     detect_type='dual',
-                    model_type='attention',
+                    model_type='recurrent',
                     test_split=0.10,
                     settings=None)
 

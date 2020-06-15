@@ -212,3 +212,21 @@ def get_logger(logger_name):
 
     return logger
 
+# =============================================================================
+# Generator for use in cross-validation
+# =============================================================================
+
+def k_fold_samples(table, k):
+    size = len(table)
+    fraction = 1/k
+    table = random.sample(table, size)
+
+    i = 0
+    while i < k:
+        test_begin = math.ceil(i*size*fraction)
+        test_end = math.ceil((i+1)*size*fraction)
+        test = table[test_begin:test_end]
+        train = table[:test_begin] + table[test_end:]
+        yield i, train, test
+        i += 1
+

@@ -281,13 +281,11 @@ def test_prediction():
     print("Evaluate train dataset.")
     predictions = neural.predict_data(training1)
     train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.print_evaluation(train_metrics)
     evaluate.false_positive(predictions, training1)
 
     print("Evaluate test dataset.")
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
     evaluate.false_positive(predictions, testing1)
 #
 def test_prediction1():
@@ -299,13 +297,11 @@ def test_prediction1():
     print("Evaluate train dataset.")
     predictions = neural.predict_data(training1)
     train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.print_evaluation(train_metrics)
     evaluate.false_positive(predictions, training1)
 
     print("Evaluate test dataset.")
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
     evaluate.false_positive(predictions, testing1)
 #
 def test_prediction2():
@@ -315,13 +311,11 @@ def test_prediction2():
     print("Evaluate train dataset.")
     predictions = neural.predict_data(training1)
     train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.print_evaluation(train_metrics)
     evaluate.false_positive(predictions, training1)
 
     print("Evaluate test dataset.")
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
     evaluate.false_positive(predictions, testing1)
 
     print("Individual prediction")
@@ -339,13 +333,11 @@ def test_prediction3():
     print("Evaluate train dataset.")
     predictions = neural.predict_data(training1)
     train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.print_evaluation(train_metrics)
     evaluate.false_positive(predictions, training1)
 
     print("Evaluate test dataset.")
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
     evaluate.false_positive(predictions, testing1)
 
     print("Individual prediction")
@@ -367,7 +359,6 @@ def test_prediction4():
     print("Evaluate test dataset.")
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
     evaluate.false_positive(predictions, testing1)
 
     settings = RecurrentSettings(epochs=20, prediction_policy='fscore')
@@ -379,7 +370,6 @@ def test_prediction4():
     print("Evaluate test dataset.")
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.print_evaluation(test_metrics)
     evaluate.false_positive(predictions, testing1)
 
 

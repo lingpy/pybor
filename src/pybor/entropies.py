@@ -18,9 +18,8 @@ import numpy as np
 import attr
 
 import tensorflow as tf
-#tf.autograph.set_verbosity(0, False)
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, Embedding, Dropout, Activation
+from tensorflow.keras.layers import Dense, Embedding, Dropout
 from tensorflow.keras.layers import GRU, LSTM, AdditiveAttention, Attention
 from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Concatenate, Reshape
@@ -46,7 +45,7 @@ class NeuralWord:
     trained neural net model.
     """
 
-    vocab_len = attr.ib()
+    vocab_len = attr.ib(default=None)
     language = attr.ib(default='')
     basis = attr.ib(default='all')
     series = attr.ib(default='')
@@ -113,7 +112,8 @@ class NeuralWord:
         for x_ids_probs, y_ids in zip(x_probs, y_lst):
             # Prevent overflow/underflow with clipping.
             #x_ids_probs_ = tf.clip_by_value(x_ids_probs,  EPSILON, 1-EPSILON)
-            x_ids_lns = [math.log(x_ids_probs[i, y_ids[i]]) for i in range(len(y_ids))]
+            x_ids_lns = [math.log(x_ids_probs[i, y_ids[i]])
+                         for i in range(min(maxlen, len(y_ids)))]
             entropy = -sum(x_ids_lns)/len(x_ids_lns)
             entropies.append(entropy)
 
@@ -142,7 +142,12 @@ class NeuralWord:
             It's too heavy weight to do in init of class.
 
         """
-        logger.info(f"Training neural {type(self)} model.")
+        if train_gen == None:
+            logger.error('There is no training data for train()')
+            raise ValueError('Require training data to train the entropy model.')
+
+        if self.settings.verbose > 0:
+            logger.info(f"Training neural {type(self)} model.")
 
         learning_rate_decay = self.settings.learning_rate_decay
         train_steps = max(train_gen.data_len//train_gen.batch_size, 1)
@@ -150,7 +155,8 @@ class NeuralWord:
             # High decay so per epoch; transform to per step.
             # Benefit of this route is that native and loan learning rates decay differently.
             learning_rate_decay = (1.0/learning_rate_decay-1.0)/train_steps
-        logger.info(f'Using per step learning rate decay {learning_rate_decay:.4f}')
+        if self.settings.verbose > 0:
+            logger.info(f'Using per step learning rate decay {learning_rate_decay:.4f}')
         learning_rate = self.settings.learning_rate
         optimizer = Adam(learning_rate=learning_rate, decay=learning_rate_decay)
 
@@ -165,7 +171,8 @@ class NeuralWord:
         earlystopper = EarlyStopping(monitor='val_loss',
                                      verbose=self.settings.tf_verbose,
                                      patience=10,  #epochs,
-                                     restore_best_weights=self.settings.restore_best_weights)
+                                     restore_best_weights=
+                                     self.settings.restore_best_weights)
 
         if val_gen:
             val_steps=max(val_gen.data_len//val_gen.batch_size, 2)
@@ -190,6 +197,7 @@ class NeuralWord:
         return history.history
 
     def show_quality_measures(self, history):
+
         history_keys = history.keys()
         logger.info(f'Available quality measures: {history_keys}.')
         # val_loss is used to get the best fit with early stopping.

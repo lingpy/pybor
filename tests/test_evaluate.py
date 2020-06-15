@@ -30,7 +30,7 @@ Add the -rP argument to print output for passing tests, or -rPx for passing and 
 Otherwise default is -rx for failed tests only.
 
 """
-from pybor.evaluate import false_positive, prf, evaluate_model, print_evaluation
+from pybor.evaluate import false_positive, prf, evaluate_model
 from pybor.dev.data import testing, training
 
 
@@ -108,14 +108,11 @@ def test_evaluate_model():
     gold_ds = [[ident, form, gold_] for ident, form, gold_ in zip(ids100, forms100, gold)]
 
     results = evaluate_model(test_ds, gold_ds)
-    print(f'evaluate results: {results}')
 
     assert abs(results[0] - p_) < 1e-7
     assert abs(results[1] - r_) < 1e-7
     assert abs(results[2] - f_) < 1e-7
     assert abs(results[3] - acc_) < 1e-7
-
-    print_evaluation(results)
 
 
 if __name__ == "__main__":

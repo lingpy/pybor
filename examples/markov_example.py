@@ -28,12 +28,10 @@ def validate_loan_detection_dual_basis(train_data, test_data,
     print("Evaluate train dataset.")
     predictions = dual_model.predict_data(train_data)
     train_metrics = evaluate.evaluate_model(predictions, train_data)
-    evaluate.print_evaluation(train_metrics)
 
     print("Evaluate test dataset.")
     predictions = dual_model.predict_data(test_data)
     test_metrics = evaluate.evaluate_model(predictions, test_data)
-    evaluate.print_evaluation(test_metrics)
 
     return dual_model, test_metrics
 
@@ -54,12 +52,10 @@ def validate_loan_detection_native_basis(train_data, test_data,
     print("Evaluate train dataset.")
     predictions = native_model.predict_data(train_data)
     train_metrics = evaluate.evaluate_model(predictions, train_data)
-    evaluate.print_evaluation(train_metrics)
 
     print("Evaluate test dataset.")
     predictions = native_model.predict_data(test_data)
     test_metrics = evaluate.evaluate_model(predictions, test_data)
-    evaluate.print_evaluation(test_metrics)
 
     return native_model, test_metrics
 

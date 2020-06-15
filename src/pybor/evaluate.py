@@ -63,12 +63,9 @@ def prf(test, gold):
 
 # =============================================================================
 #
-# Quality measures for model reporting
-#
-# Drops sklearn.metrics in favor of prf at some cost in data preparation.
+# Convenience function for evaluating and printing prediction quality.
 #
 # =============================================================================
-Bin_eval = namedtuple('Bin_eval', ['prec', 'recall', 'f1', 'acc', 'maj'])
 
 def evaluate_model(test_data, data):
     """
@@ -84,24 +81,16 @@ def evaluate_model(test_data, data):
         List of language tokens in row format:
             [id, [segments], gold-status].
 
-    Returns
+    Returns (float, float, float, float)
     -------
-    Bin_eval
-        Evaluation as named tuple of precision, recall, F1, accuracy, majority.
+    (prec, recall, f1, acc)
+        Evaluation as tuple of precision, recall, F1, accuracy, majority.
 
     """
 
-    (prec, recall, f1, acc) = prf(test_data, data)
-
-    gold = [status for _, _, status in data]
-    maj = max(sum(gold),len(gold)-sum(gold))/len(gold)
-
-    return Bin_eval(prec=prec, recall=recall, f1=f1, acc=acc, maj=maj)
-
-
-def print_evaluation(evaluation: Bin_eval):
-
-    table = [['Precision', 'Recall', 'F-score', 'Accuracy', "Majority"],
-             [evaluation.prec, evaluation.recall, evaluation.f1,
-              evaluation.acc, evaluation.maj]]
+    results = prf(test_data, data)
+    table = [['Precision', 'Recall', 'F-score', 'Accuracy'],
+             [results[0], results[1], results[2], results[3]]]
     print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.3f'))
+    return results
+

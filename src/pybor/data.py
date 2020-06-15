@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 
 class LexibankDataset(object):
-    
+
     def __init__(self, package, transform=None):
         """
         Load the data of a lexibank dataset.
@@ -18,9 +18,9 @@ class LexibankDataset(object):
                 'Tokens': lambda x, y, z: x['Segments'].split(),
                 'Language': lambda x, y, z: y[x['Language_ID']]['Name'],
                 'Glottocode': lambda x, y, z: y[x['Language_ID']]['Glottocode'],
-                'Concept': lambda x, y, z: z[x['Parameter_ID']]['Name'], 
-                'Concepticon_ID': lambda x, y, z: z[x['Parameter_ID']]['Concepticon_ID'], 
-                'Concepticon_GLOSS': lambda x, y, z: z[x['Parameter_ID']]['Concepticon_Gloss'], 
+                'Concept': lambda x, y, z: z[x['Parameter_ID']]['Name'],
+                'Concepticon_ID': lambda x, y, z: z[x['Parameter_ID']]['Concepticon_ID'],
+                'Concepticon_GLOSS': lambda x, y, z: z[x['Parameter_ID']]['Concepticon_Gloss'],
                 'FormChars': lambda x, y, z: list(x['Form']),
                 'ASJP': lambda x, y, z: clts.soundclass('asjp')(x['Segments']),
                 'DOLGO': lambda x, y, z: clts.soundclass('dolgo')(x['Segments']),
@@ -56,7 +56,98 @@ class LexibankDataset(object):
                 out.append([row['ID'], row[form], row[classification]])
         return out
 
+# =============================================================================
+# Apply user function to tables from WOLD.
+# =============================================================================
+import pickle
+import pybor.util as util
+logger = util.get_logger(__name__)
+
+def apply_function_by_language(languages,
+                                 form=None,
+                                 function=None):
+    """
+
+    Parameters
+    ----------
+    languages : str or [str] or 'all'
+        Language name, list of language names, or 'all' for all languages.
+    form : str, optional
+        Form designation from ['Tokens', 'FormChars', 'ASJP', 'DOLGO', 'SCA'].
+        The internal default is 'Tokens'.
+    function : function
+        User provided funtion applied to each languge table.
+        Initial arguments from function are language (str), form (str),
+        and table ([str, [str], str]) corresponding to [id, form, loan_flag].
+
+    Returns
+    -------
+    None.
+
+    Notes
+    -----
+
+    Example:
+
+import csv
+
+def get_user_fn(detect_type, model_type, settings, writer):
+
+    def fn_example(language, form, table,
+                   detect_type=detect_type,
+                   model_type=model_type,
+                   settings=settings,
+                   writer=writer):
+
+        logger.info(f'language={language}, form={form},
+                    detect type={detect_type}, model type={model_type}.')
+        logger.info(f'table[:3]: {table[:3]}')
+        logger.info(f'settings.embedding_len={settings.embedding_len}.')
+        logger.info('Appropriate work by function.')
+
+        writer.writerow([language, form, table[0][0], table[0][1]])
+
+    return fn_example
+
+# Try the function.
+# Output path comes from package environment.
+filename = 'test_flout.csv'
+file_path = output_path / filename
+with open(file_path.as_posix(), 'w', newline='') as fl:
+    writer = csv.writer(fl)
+
+    settings = config.RecurrentSettings(embedding_len=32)
+    fn = get_user_fn('dual', 'recurrent', settings, writer)
+    apply_function_by_language(languages=['English', 'Hup'], form='FormChars', function=fn)
+
+    """
+    logger.info(f'Apply function to languages {languages} and form {form}.')
+
+    try:
+        with open('wold.bin', 'rb') as f:
+            lex = pickle.load(f)
+    except:
+        lex = LexibankDataset('wold',
+            transform={ "Loan": lambda x, y, z:
+                       1  if x['Borrowed'] != '' and float(x['Borrowed_score']) >= 0.9
+                       else 0})
+
+        with open('wold.bin', 'wb') as f:
+            pickle.dump(lex, f)
+
+    if languages == 'all':
+        languages = [language["Name"] for language in lex.languages.values()]
+    elif isinstance(languages, str):
+        languages = [languages]
+    elif not isinstance(languages, list):
+        logger.warn("Language must be language name, list of languages, or keyword 'all'.")
 
 
+    for language in languages:
+        table = lex.get_table(
+                    language=language,
+                    form=form,
+                    classification='Loan'
+                    )
 
-
+        function(language, form, table)

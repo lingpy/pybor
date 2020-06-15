@@ -5,20 +5,22 @@ Created on Sat Jun 13 11:16:44 2020
 
 @author: johnmiller
 """
+
+import argparse
 import math
-import statistics as st
 from pathlib import Path
-from tabulate import tabulate
 import csv
+from tabulate import tabulate
+import statistics as st
 
 import pybor.config as config
 import pybor.data as data
 import pybor.evaluate as evaluate
 import pybor.markov as markov
 import pybor.neural as neural
-import pybor.util as util
 import pybor.ngram as ngram
 import pybor.svm as svm
+import pybor.util as util
 
 
 output_path = Path(config.BaseSettings().output_path).resolve()
@@ -124,30 +126,77 @@ def cross_validate_model(languages, form, model_name, k_fold, series='', setting
 
     summarize_cross_validation(file_path, form, model_name, k_fold, series)
 
-# if __name__ == "__main__":
-#     cross_validate_model(languages='all',
-#                form='Tokens',
-#                model_name='ngram',
-#                k_fold=5,
-#                series='test')
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "model",
+        type=str,
+        choices=['ngram', 'bagofsounds', 'markovdual', 'neuraldual'],
+        help="Model for the cross validation"
+    )
+    parser.add_argument(
+        "--form",
+        type=str,
+        default="Tokens",
+        help="Name of the column holding the forms for validation (default: \"Tokens\")"
+    )
+    parser.add_argument(
+        "--languages",
+        type=str,
+        default="all",
+        help='Language to use for example (default: \"all\")'
+    )
+    parser.add_argument(
+        "--k_fold",
+        type=int,
+        default=5,
+        help="K-fold value (default: 5)"
 
-#     cross_validate_model(languages='all',
-#                form='Tokens',
-#                model_name= 'bagofsounds',
-#                k_fold=5,
-#                series='test')
+    )
+    parser.add_argument(
+        "--series",
+        type=str,
+        default="test",
+        help="Series for the cross validation (default: \"test\")"
+    )
+    parser.add_argument(
+        "--smoothing",
+        default=0.3,
+        type=float,
+        help="Smoothing for Markov models (default: 0.3)"
+    )
+    parser.add_argument(
+        "--embedding_len",
+        default=16,
+        type=int,
+        help="Embedding length for Neural models (default: 16)"
+    )
+    parser.add_argument(
+        "--val_split",
+        default=0.1,
+        type=float,
+        help="Value split for Neural models (default: 0.1)"
+    )
+    parser.add_argument(
+        "--verbose",
+        default=False,
+        type=bool,
+        help="Verbose operation for the methods that support it (default: False)"
+    )
+    args = parser.parse_args()
 
-#     cross_validate_model(languages='all',
-#                form='Tokens',
-#                model_name= 'markovdual',
-#                k_fold=5,
-#                series='test',
-#                settings = config.MarkovSettings(smoothing=0.3))
+    # Build settings if needed
+    settings = None
+    if args.model == "neuraldual":
+        settings =  config.RecurrentSettings(
+                embedding_len=args.embedding_len, verbose=args.verbose, val_split=args.val_split)
+    elif args.model == "markovdual":
+        settings = config.MarkovSettings(smoothing=args.smoothing)
 
-#     cross_validate_model(languages='all',
-#                form='Tokens',
-#                model_name= 'neuraldual',
-#                k_fold=5,
-#                series='test',
-#                settings = config.RecurrentSettings(
-#                    embedding_len=16, verbose=0, val_split=0.1))
+    # Run cross validation
+    cross_validate_model(languages=args.languages,
+    form="Tokens",
+    model_name=args.model,
+    k_fold=args.k_fold,
+    series=args.series,
+    settings=settings)

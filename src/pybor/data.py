@@ -129,7 +129,7 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
     except:
         lex = LexibankDataset('wold',
             transform={ "Loan": lambda x, y, z:
-                       1  if x['Borrowed'] != '' and float(x['Borrowed']) >= 0.9
+                       1  if x['Borrowed'] != '' and float(x['Borrowed_score']) >= 0.9
                        else 0})
 
         with open('wold.bin', 'wb') as f:
@@ -151,5 +151,3 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
                     )
 
         function(language, form, table)
-
-

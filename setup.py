@@ -25,7 +25,7 @@ setup(
         zip_safe=False,
         license="GPL",
         include_package_data=True,
-        install_requires=['attr', 'sklearn', 'nltk', 'tensorflow'],
+        install_requires=install_requires,
         extras_require={
             'examples': ['pyclts', 'cldfbench', 'pylexibank'],
             'tests': ['pytest', 'pytest-cov']

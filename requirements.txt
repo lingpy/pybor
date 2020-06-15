@@ -1,7 +1,10 @@
-nltk
+attr
 cldfbench
-pyclts
 lingpy
 matplotlib
+nltk
 numpy
+pyclts
 scipy
+sklearn
+tensorflow

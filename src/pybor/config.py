@@ -57,7 +57,7 @@ class RecurrentSettings(EntropiesSettings):
     epochs = attr.ib(default=60)
     learning_rate = attr.ib(default=0.006)
     learning_rate_decay = attr.ib(default=0.95)  # Adjust for batch size, data len.
-    restore_best_weights = attr.ib(default=False)
+    restore_best_weights = attr.ib(default=True)
 
 @attr.s
 class AttentionSettings(EntropiesSettings):
@@ -78,8 +78,8 @@ class AttentionSettings(EntropiesSettings):
     attention_dropout = attr.ib(default=0.0)
 
     # Model fitting parameters
-    epochs = attr.ib(default=60)
-    learning_rate = attr.ib(default=0.00333)
+    epochs = attr.ib(default=45)
+    learning_rate = attr.ib(default=0.006)
     learning_rate_decay = attr.ib(default=0.95)  # 0.95
     restore_best_weights = attr.ib(default=True)
 

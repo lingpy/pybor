@@ -1,0 +1,42 @@
+language,form,model_name,k_fold,mean_prec,mean_recall,mean_f1,mean_acc,meas_stdev_prec,meas_stdev_recall,meas_stdev_f1,meas_stdev_acc
+Swahili,Tokens,bagofsounds,5,0.582,0.783,0.665,0.858,0.060,0.043,0.033,0.025
+Iraqw,Tokens,bagofsounds,5,0.407,0.709,0.505,0.899,0.129,0.121,0.112,0.027
+Gawwada,Tokens,bagofsounds,5,0.106,0.417,0.163,0.910,0.087,0.276,0.121,0.021
+Hausa,Tokens,bagofsounds,5,0.328,0.706,0.448,0.840,0.015,0.033,0.018,0.017
+Kanuri,Tokens,bagofsounds,5,0.098,0.710,0.172,0.834,0.024,0.133,0.040,0.017
+Tarifiyt Berber,Tokens,bagofsounds,5,0.689,0.772,0.728,0.748,0.033,0.029,0.025,0.021
+Seychelles Creole,Tokens,bagofsounds,5,0.006,0.200,0.011,0.911,0.012,0.447,0.024,0.012
+Romanian,Tokens,bagofsounds,5,0.411,0.612,0.491,0.660,0.039,0.038,0.033,0.025
+Selice Romani,Tokens,bagofsounds,5,0.828,0.768,0.796,0.758,0.035,0.023,0.012,0.015
+Lower Sorbian,Tokens,bagofsounds,5,0.203,0.772,0.312,0.829,0.078,0.099,0.090,0.021
+Old High German,Tokens,bagofsounds,5,0.000,0.000,0.000,0.947,0.000,0.000,0.000,0.014
+Dutch,Tokens,bagofsounds,5,0.004,0.100,0.007,0.814,0.008,0.224,0.015,0.008
+English,Tokens,bagofsounds,5,0.506,0.676,0.574,0.713,0.077,0.064,0.055,0.039
+Kildin Saami,Tokens,bagofsounds,5,0.014,0.567,0.027,0.810,0.008,0.435,0.016,0.015
+Bezhta,Tokens,bagofsounds,5,0.713,0.731,0.722,0.836,0.025,0.021,0.016,0.013
+Archi,Tokens,bagofsounds,5,0.280,0.737,0.400,0.823,0.088,0.108,0.102,0.038
+Manange,Tokens,bagofsounds,5,0.078,0.700,0.140,0.940,0.047,0.447,0.084,0.009
+Ket,Tokens,bagofsounds,5,0.287,0.838,0.400,0.933,0.148,0.121,0.180,0.013
+Sakha,Tokens,bagofsounds,5,0.195,0.600,0.291,0.764,0.050,0.146,0.065,0.031
+Oroqen,Tokens,bagofsounds,5,0.055,0.700,0.100,0.925,0.045,0.447,0.079,0.012
+Japanese,Tokens,bagofsounds,5,0.396,0.667,0.496,0.763,0.055,0.053,0.053,0.019
+Mandarin Chinese,Tokens,bagofsounds,5,0.000,0.000,0.000,0.993,0.000,0.000,0.000,0.002
+Thai,Tokens,bagofsounds,5,0.314,0.660,0.421,0.815,0.050,0.100,0.047,0.016
+Vietnamese,Tokens,bagofsounds,5,0.250,0.565,0.345,0.827,0.050,0.080,0.057,0.016
+White Hmong,Tokens,bagofsounds,5,0.113,0.685,0.192,0.854,0.041,0.066,0.064,0.007
+Ceq Wong,Tokens,bagofsounds,5,0.591,0.674,0.623,0.765,0.079,0.073,0.031,0.012
+Indonesian,Tokens,bagofsounds,5,0.349,0.668,0.457,0.751,0.047,0.032,0.046,0.014
+Malagasy,Tokens,bagofsounds,5,0.020,0.600,0.038,0.877,0.019,0.548,0.037,0.026
+Takia,Tokens,bagofsounds,5,0.623,0.681,0.648,0.846,0.075,0.046,0.053,0.014
+Hawaiian,Tokens,bagofsounds,5,0.130,0.647,0.207,0.847,0.075,0.134,0.097,0.020
+Gurindji,Tokens,bagofsounds,5,0.000,0.000,0.000,0.875,0.000,0.000,0.000,0.028
+Yaqui,Tokens,bagofsounds,5,0.550,0.750,0.633,0.848,0.062,0.020,0.037,0.020
+Zinacantán Tzotzil,Tokens,bagofsounds,5,0.407,0.925,0.559,0.912,0.125,0.068,0.126,0.017
+Q'eqchi',Tokens,bagofsounds,5,0.516,0.803,0.619,0.935,0.126,0.048,0.086,0.010
+Otomi,Tokens,bagofsounds,5,0.681,0.845,0.753,0.956,0.071,0.051,0.059,0.015
+Saramaccan,Tokens,bagofsounds,5,0.225,0.609,0.321,0.672,0.082,0.114,0.086,0.017
+Imbabura Quechua,Tokens,bagofsounds,5,0.605,0.814,0.691,0.852,0.077,0.083,0.063,0.015
+Kali'na,Tokens,bagofsounds,5,0.184,0.967,0.309,0.881,0.041,0.075,0.061,0.015
+Hup,Tokens,bagofsounds,5,0.489,0.819,0.595,0.936,0.190,0.137,0.151,0.026
+Wichí,Tokens,bagofsounds,5,0.529,0.712,0.602,0.902,0.086,0.144,0.091,0.018
+Mapudungun,Tokens,bagofsounds,5,0.537,0.787,0.637,0.877,0.046,0.097,0.056,0.024

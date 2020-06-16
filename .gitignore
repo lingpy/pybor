@@ -3,7 +3,6 @@ wold/
 
 # Ignore output files (but allow the directory)
 output/*.log
-output/*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

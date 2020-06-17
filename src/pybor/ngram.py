@@ -66,7 +66,7 @@ class NgramModel(object):
         Predict for a range of words.
         """
         out = []
-        for idx, word in data:
-            out += [[idx, word, self.predict(word)]]
+        for row in data:
+            out += [[row[0], row[1], self.predict(row[1])]]
 
         return out

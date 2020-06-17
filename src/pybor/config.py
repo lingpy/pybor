@@ -54,7 +54,7 @@ class RecurrentSettings(EntropiesSettings):
     merge_embedding_dropout = attr.ib(default=0.2)
 
     # Model fitting parameters
-    epochs = attr.ib(default=60)
+    epochs = attr.ib(default=45)
     learning_rate = attr.ib(default=0.006)
     learning_rate_decay = attr.ib(default=0.95)  # Adjust for batch size, data len.
     restore_best_weights = attr.ib(default=True)

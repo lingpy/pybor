@@ -161,15 +161,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--smoothing",
-        default=0.3,
+        default=0.1,
         type=float,
         help="Smoothing for Markov models (default: 0.3)"
-    )
-    parser.add_argument(
-        "--embedding_len",
-        default=16,
-        type=int,
-        help="Embedding length for Neural models (default: 16)"
     )
     parser.add_argument(
         "--val_split",
@@ -189,7 +183,7 @@ if __name__ == "__main__":
     settings = None
     if args.model == "neuraldual":
         settings =  config.RecurrentSettings(
-                embedding_len=args.embedding_len, verbose=args.verbose, val_split=args.val_split)
+            verbose=args.verbose, val_split=args.val_split)
     elif args.model == "markovdual":
         settings = config.MarkovSettings(smoothing=args.smoothing)
 

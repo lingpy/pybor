@@ -212,6 +212,8 @@ def get_logger(logger_name):
 
     return logger
 
+logger = get_logger(__name__)
+
 # =============================================================================
 # Generator for use in k-fold cross-validation
 # =============================================================================
@@ -236,7 +238,10 @@ def k_fold_samples(table, k):
 def holdout_n_samples(table, n, max_iter):
     size = len(table)
     table = random.sample(table, size)
-    max_iter = max_iter if max_iter > 0 else int(math.ceil(size/n))
+    abs_max_iter = int(math.ceil(size/n))
+    max_iter =  abs_max_iter if max_iter == -1 or max_iter > abs_max_iter else max_iter
+    if max_iter == abs_max_iter:
+        logger.debug(f'Using max number iterations {max_iter:d}.')
     i = 0
     while i < max_iter:
         test_begin = math.ceil(i*n)

@@ -72,11 +72,18 @@ def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=
             a_.append(a)
 
         logger.debug(f'{len(f_)} samples for {language}.')
-        writer.writerow([language,  # form, model_name, f'{k_fold:d}',
+        if len(f_) > 1:
+            sd_p = st.stdev(p_)
+            sd_r = st.stdev(r_)
+            sd_f = st.stdev(f_)
+            sd_a = st.stdev(a_)
+        else:
+            sd_p, sd_r, sd_f, sd_a = [0]*4
+        writer.writerow([language,
                         f'{st.mean(p_):.3f}', f'{st.mean(r_):.3f}',
-                         f'{st.mean(f_):.3f}', f'{st.mean(a_):.3f}',
-                        f'{st.stdev(p_):.3f}', f'{st.stdev(r_):.3f}',
-                         f'{st.stdev(f_):.3f}', f'{st.stdev(a_):.3f}'])
+                        f'{st.mean(f_):.3f}', f'{st.mean(a_):.3f}',
+                        f'{sd_p:.3f}', f'{sd_r:.3f}',
+                        f'{sd_f:.3f}', f'{sd_a:.3f}'])
 
     return fn
 
@@ -116,7 +123,7 @@ def summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdou
     title += f' - borrowing prediction by language for {form} - {model_name} - {series}.'
 
 
-    print_summary(title, header, labels=['Mean', 'StDev', 'Measure StDev'],
+    print_summary(title, header, labels=['Mean', 'Between Language StDev', 'Within Language StDev'],
                   summary=[means, stdevs, measure_stdevs])
 
 
@@ -125,10 +132,14 @@ def cross_validate_model(languages, form, model_name, mode,
                          k_fold, holdout_n, max_iter, series='', settings=None):
 
     if mode == 'k_fold':
-        filename = f'cv-{k_fold:d}-fold-{model_name}-{form}-{series}-prfa.csv'
+        filename = f'cv-{k_fold:d}-fold'
     else:
-        filename = (f'cv-holdout-{holdout_n:d}-{max_iter:d}-holdout-iters' +
-                    f'-{model_name}-{form}-{series}-prfa.csv')
+        filename = f'cv-holdout-{holdout_n:d}-{max_iter:d}-times'
+        if holdout_n < 30:
+            logger.info('Estimates of within language StDev inflated ' +
+                        f'due to small holdout size {holdout_n}.')
+
+    filename += f'-{model_name}-{form}-{series}-prfa.csv'
 
     file_path = output_path / filename
     with open(file_path.as_posix(), 'w', newline='') as fl:
@@ -186,9 +197,9 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max_iter",
         type=int,
-        default=-1,
-        help="maximum number of iterations of taking holdout samples " +
-        "(default: -1), where -1 indicates until all data have been held out."
+        default=1,
+        help="maximum number of iterations of taking holdout samples (default: 1). " +
+        "A -1 indicates until all data have been held out."
     )
     parser.add_argument(
         "--series",

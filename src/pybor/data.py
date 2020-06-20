@@ -121,27 +121,10 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
     apply_function_by_language(languages=['English', 'Hup'], form='FormChars', function=fn)
 
     """
-    logger.info(f'Apply function to languages {languages} and form {form}.')
+    logger.debug(f'Apply function to languages {languages} and form {form}.')
 
-    try:
-        with open('wold.bin', 'rb') as f:
-            lex = pickle.load(f)
-    except:
-        lex = LexibankDataset('wold',
-            transform={ "Loan": lambda x, y, z:
-                       1  if x['Borrowed'] != '' and float(x['Borrowed_score']) >= 0.9
-                       else 0})
-
-        with open('wold.bin', 'wb') as f:
-            pickle.dump(lex, f)
-
-    if languages == 'all':
-        languages = [language["Name"] for language in lex.languages.values()]
-    elif isinstance(languages, str):
-        languages = [languages]
-    elif not isinstance(languages, list):
-        logger.warn("Language must be language name, list of languages, or keyword 'all'.")
-
+    lex = get_lexibank_access()
+    languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
         table = lex.get_table(
@@ -151,3 +134,61 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
                     )
 
         function(language, form, table)
+
+# =============================================================================
+# Get tables from WOLD via generator.
+# =============================================================================
+
+def language_table_gen(languages='all', form='Tokens'):
+
+    logger.debug(f'Generator for {languages} languages.')
+
+    lex = get_lexibank_access()
+    languages = check_languages_with_lexibank(lex, languages)
+
+    for language in languages:
+        table = lex.get_table(
+                    language=language,
+                    form=form,
+                    classification='Loan'
+                    )
+
+        yield language, table
+
+# =============================================================================
+# Language table access functions
+# =============================================================================
+def get_lexibank_access():
+    try:
+        with open('wold.bin', 'rb') as f:
+            lex = pickle.load(f)
+    except:
+        lex = LexibankDataset('wold',
+            transform={ "Loan": lambda x, y, z:
+                       1 if x['Borrowed'] != '' and float(x['Borrowed']) >= 0.9
+                       else 0})
+
+        with open('wold.bin', 'wb') as f:
+            pickle.dump(lex, f)
+
+    return lex
+
+
+def check_languages_with_lexibank(lexibank, languages='all'):
+
+    all_languages = [language["Name"] for language in lexibank.languages.values()]
+    if languages == 'all':
+        return all_languages
+
+    if isinstance(languages, str):
+        languages = [languages]
+
+    if isinstance(languages, list):
+        for language in languages:
+            if language not in all_languages:
+                raise ValueError(f'Language {language} not in Lexibank.')
+
+    return languages  # Checked as valid.
+
+    logger.warning("Language must be language name, list of languages, or keyword 'all'.")
+    raise ValueError(f'Language list required, instead received {languages}.')

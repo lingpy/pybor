@@ -213,7 +213,7 @@ def get_logger(logger_name):
     return logger
 
 # =============================================================================
-# Generator for use in cross-validation
+# Generator for use in k-fold cross-validation
 # =============================================================================
 
 def k_fold_samples(table, k):
@@ -230,3 +230,18 @@ def k_fold_samples(table, k):
         yield i, train, test
         i += 1
 
+# =============================================================================
+# Generator for use in holdout-n cross-validation
+# =============================================================================
+def holdout_n_samples(table, n, max_iter):
+    size = len(table)
+    table = random.sample(table, size)
+    max_iter = max_iter if max_iter > 0 else int(math.ceil(size/n))
+    i = 0
+    while i < max_iter:
+        test_begin = math.ceil(i*n)
+        test_end = math.ceil((i+1)*n)
+        test = table[test_begin:test_end]
+        train = table[:test_begin] + table[test_end:]
+        yield i, train, test
+        i += 1

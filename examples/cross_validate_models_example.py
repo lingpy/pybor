@@ -26,11 +26,14 @@ import pybor.util as util
 output_path = Path(config.BaseSettings().output_path).resolve()
 logger = util.get_logger(__name__)
 
-def get_user_fn(model_name, k_fold, writer, settings=None):
+def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=None):
 
-    def fn(language, form, table,
+    def fn(language, form, table,  # Supplied by 'apply method'.
            model_name=model_name,
+           mode=mode,
            k_fold=k_fold,
+           holdout_n=holdout_n,
+           max_iter=max_iter,
            writer=writer,
            settings=settings):
 
@@ -40,15 +43,18 @@ def get_user_fn(model_name, k_fold, writer, settings=None):
         f_ = []
         a_ = []
 
-        for (i, train, test) in util.k_fold_samples(table, k=k_fold):
+        if mode == 'k_fold':
+            gen = util.k_fold_samples(table, k=k_fold)
+        else:
+            gen = util.holdout_n_samples(table, n=holdout_n, max_iter=max_iter)
+
+        for (i, train, test) in gen:
 
             if model_name == 'neuraldual':
                 model = neural.NeuralDual(train, settings=settings)
                 model.train()
-
             elif model_name == 'markovdual':
                 model = markov.DualMarkov(train, settings=settings)
-
             elif model_name == 'ngram':
                 model = ngram.NgramModel(train)
             elif model_name == 'bagofsounds':
@@ -65,8 +71,8 @@ def get_user_fn(model_name, k_fold, writer, settings=None):
             f_.append(f)
             a_.append(a)
 
-
-        writer.writerow([language, form, model_name, f'{k_fold:d}',
+        logger.debug(f'{len(f_)} samples for {language}.')
+        writer.writerow([language,  # form, model_name, f'{k_fold:d}',
                         f'{st.mean(p_):.3f}', f'{st.mean(r_):.3f}',
                          f'{st.mean(f_):.3f}', f'{st.mean(a_):.3f}',
                         f'{st.stdev(p_):.3f}', f'{st.stdev(r_):.3f}',
@@ -74,7 +80,6 @@ def get_user_fn(model_name, k_fold, writer, settings=None):
 
     return fn
 
-#  Still need to  accomodate this to k-fold statistics.
 def print_summary(title, header, labels, summary):
     print(title)
     header = [''] + header
@@ -84,7 +89,7 @@ def print_summary(title, header, labels, summary):
     table = [header, summary[0], summary[1], summary[2]]
     print(tabulate(table, tablefmt='pipe', headers='firstrow', floatfmt='.3f'))
 
-def summarize_cross_validation(file_path, form, model_name, k_fold, series):
+def summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdout_n, series):
     with open(file_path.as_posix(), 'r', newline='') as fl:
         reader = csv.reader(fl)
         results = list(reader)
@@ -95,36 +100,49 @@ def summarize_cross_validation(file_path, form, model_name, k_fold, series):
     stdevs = []
     measure_stdevs = []
 
-    for col in range(4, 8):
+    for col in range(1, 5):
         values = [float(row[col]) for row in results]
         means.append(st.mean(values))
-        stdevs.append(st.stdev(values))
-    for col in range(8, 12):
+        stdevs.append(st.stdev(values) if len(values)>1 else None)
+    for col in range(5, 9):
         values_sqr = [float(row[col])**2 for row in results]
         measure_stdevs.append(math.sqrt(st.mean(values_sqr)))
 
-    title = (f'{k_fold}-fold cross-validation over language of borrowing prediction ' +
-             f'for {form} form with {model_name} model {series}.')
+    if mode == 'k_fold':
+        title = f'{k_fold}-fold cross-validation'
+    else:
+        title = f'holdout-{holdout_n} cross-validation'
+
+    title += f' - borrowing prediction by language for {form} - {model_name} - {series}.'
+
 
     print_summary(title, header, labels=['Mean', 'StDev', 'Measure StDev'],
                   summary=[means, stdevs, measure_stdevs])
 
 
 
-def cross_validate_model(languages, form, model_name, k_fold, series='', settings=None):
+def cross_validate_model(languages, form, model_name, mode,
+                         k_fold, holdout_n, max_iter, series='', settings=None):
 
-    filename = f'cv-{k_fold:d}-fold-{model_name}-{form}-{series}-prfa.csv'
+    if mode == 'k_fold':
+        filename = f'cv-{k_fold:d}-fold-{model_name}-{form}-{series}-prfa.csv'
+    else:
+        filename = (f'cv-holdout-{holdout_n:d}-{max_iter:d}-holdout-iters' +
+                    f'-{model_name}-{form}-{series}-prfa.csv')
+
     file_path = output_path / filename
     with open(file_path.as_posix(), 'w', newline='') as fl:
         writer = csv.writer(fl)
-        writer.writerow(['language', 'form', 'model_name', 'k_fold',
-                         'mean_prec', 'mean_recall', 'mean_f1', 'mean_acc',
-                         'meas_stdev_prec', 'meas_stdev_recall', 'meas_stdev_f1', 'meas_stdev_acc'])
+        writer.writerow(['language',
+                         'mean_prec', 'mean_recall',
+                         'mean_f1', 'mean_acc',
+                         'sample_stdev_prec', 'sample_stdev_recall',
+                         'sample_stdev_f1', 'sample_stdev_acc'])
 
-        fn = get_user_fn(model_name, k_fold, writer, settings)
+        fn = get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings)
         data.apply_function_by_language(languages, form, fn)
 
-    summarize_cross_validation(file_path, form, model_name, k_fold, series)
+    summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdout_n, series)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -147,11 +165,30 @@ if __name__ == "__main__":
         help='Language to use for example (default: \"all\")'
     )
     parser.add_argument(
+        "--mode",
+        type=str,
+        default='k_fold',
+        choices=['k_fold', 'holdout_n'],
+        help="whether to perform k-fold validation or holdout-n study (default: k_fold)"
+    )
+    parser.add_argument(
         "--k_fold",
         type=int,
         default=5,
-        help="K-fold value (default: 5)"
-
+        help="number of folds where each fold is 1-1/k training and 1/k testing (default: 5)"
+    )
+    parser.add_argument(
+        "--holdout_n",
+        type=int,
+        default=5,
+        help="number of samples held out for each train/test iteration (default: 5)"
+    )
+    parser.add_argument(
+        "--max_iter",
+        type=int,
+        default=-1,
+        help="maximum number of iterations of taking holdout samples " +
+        "(default: -1), where -1 indicates until all data have been held out."
     )
     parser.add_argument(
         "--series",
@@ -161,9 +198,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--smoothing",
-        default=0.1,
+        default=0.3,
         type=float,
-        help="Smoothing for Markov models (default: 0.3)"
+        help="Smoothing for Markov models (default: 0.1)"
     )
     parser.add_argument(
         "--val_split",
@@ -189,8 +226,11 @@ if __name__ == "__main__":
 
     # Run cross validation
     cross_validate_model(languages=args.languages,
-    form="Tokens",
-    model_name=args.model,
-    k_fold=args.k_fold,
-    series=args.series,
-    settings=settings)
+            form="Tokens",
+            model_name=args.model,
+            mode=args.mode,
+            k_fold=args.k_fold,
+            holdout_n=args.holdout_n,
+            max_iter=args.max_iter,
+            series=args.series,
+            settings=settings)

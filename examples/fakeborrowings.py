@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 # Load Python standard libraries
 from statistics import mean
 from sys import argv
@@ -10,6 +9,7 @@ import pickle
 import random
 
 # Load Pybor
+import pybor
 from pybor.dev.data import training, testing
 from pybor.svm import BagOfSounds
 from pybor.data import LexibankDataset
@@ -18,27 +18,10 @@ from pybor.ngram import NgramModel
 from pybor.markov import DualMarkov
 from pybor.neural import NeuralDual
 import pybor.util as util
+import pybor.data as data
 
 logger = util.get_logger(__name__)
 
-def get_wold_data():
-    # load binary wold
-    try:
-        with open("wold.bin", "rb") as f:
-            lex = pickle.load(f)
-    except:
-        lex = LexibankDataset(
-            "wold",
-            transform={
-                "Loan": lambda x, y, z: 1
-                if x["Borrowed"] != "" and float(x["Borrowed_score"]) >= 0.9
-                else 0
-            },
-        )
-        with open("wold.bin", "wb") as f:
-            pickle.dump(lex, f)
-
-    return lex
 
 def bigrams(sequence):
     return list(zip(["^"] + sequence[:-1], sequence[1:] + ["$"]))
@@ -53,7 +36,7 @@ def trigrams(sequence):
         )
     )
 
-def run_experiment(model_name, brate, order, test_split):
+def run_experiment(model_name, language_, form, brate, order, test_split, verbose):
 
     # output buffer
     buffer = ["Language,Precision,Recall,Fs,Accuracy"]
@@ -68,36 +51,47 @@ def run_experiment(model_name, brate, order, test_split):
     table = []
     stats = []
 
+    lex = data.get_lexibank_access()
+    languages = data.check_languages_with_lexibank(lex, language_)
 
-    lex = get_wold_data()
-
-    for language in lex.languages.values():
+    for language in languages:
         # Set training and test lists
-        train, test = [], []
+        #train, test = [], []
 
-        # Get language table and break into train and test.
+        # Get language table, delete loan words, seed fakes, split into train and test.
         table = lex.get_table(
-            language=language["Name"], form="FormChars", classification="Loan"
+            language=language, form=form, classification="Loan"
         )
-        train_table, test_table = util.train_test_split(table, test_split)
-
+        table = [row for row in table if row[2] != 1]
+        # How many fakes? Want 1/brate borrowed words in resulting table.
+        # So we add 1/(brate-1) fraction of words.
+        add_len = int(round(len(table)/(brate-1)))
+        table += random.sample(fakes, add_len)
+        train, test = util.train_test_split(table, test_split)
+        train_add_len = sum([row[2] for  row in train])
+        test_add_len = sum([row[2]for row in test])
         # Seed native German words into training and test
-        fakeidx = list(range(len(fakes)))
-        for i in range(len(train_table)):
-            if random.randint(0, brate) == 0:
-                fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
-                train += [fake]
-            else:
-                # Treat all words from table as native. ???
-                train += [[train_table[i][0], train_table[i][1], 0]]
+        # fakeidx = list(range(len(fakes)))
+        # for i in range(len(train_table)):
+        #     if random.randint(1, brate) == 1:
+        #         fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
+        #         train += [fake]
+        #     else:
+        #         # Treat all words from table as native. ???
+        #         train += [[train_table[i][0], train_table[i][1], 0]]
 
-        for i in range(len(test_table)):
-            if random.randint(0, brate) == 0:
-                fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
-                test += [fake]
-            else:
-                test += [[test_table[i][0], test_table[i][1], 0]]
+        # for i in range(len(test_table)):
+        #     if random.randint(1, brate) == 1:
+        #         fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
+        #         test += [fake]
+        #     else:
+        #         test += [[test_table[i][0], test_table[i][1], 0]]
 
+        if  verbose:
+            logger.info(f'{language} language, {form} form, table len {len(table)}, ' +
+                    f'table borrowed {add_len}, borrow rate {int(round(len(table)/add_len))}.')
+            logger.info(f'train len {len(train)}, train borrowed {train_add_len}, ' +
+                    f'test len {len(test)}, test borrowed {test_add_len}.')
 
         if model_name == 'bagofsounds':
             # Building bigram and trigram test sets
@@ -137,7 +131,7 @@ def run_experiment(model_name, brate, order, test_split):
         p, r, f, a = prf(test, guess)
         stats += [[p, r, f, a]]
         buffer.append(
-            "{4},{0:.2f},{1:.2f},{2:.2f},{3:.2f}".format(p, r, f, a, language["Name"])
+            "{4},{0:.2f},{1:.2f},{2:.2f},{3:.2f}".format(p, r, f, a, language)
         )
 
 
@@ -154,7 +148,9 @@ def run_experiment(model_name, brate, order, test_split):
 
     # Write results to disk
     output_path = Path(__file__).parent.parent.absolute()
-    output_path = output_path / "output" / f"fakeborrowing_{model_name}_{brate:.2f}br.csv"
+    output_path = (output_path / "output" /
+                   f"fakeborrowing_{model_name}_{language_}_{form}_{brate:.1f}br.csv")
+
     with open(output_path.as_posix(), "w") as handler:
         for row in buffer:
             handler.write(row)
@@ -162,11 +158,25 @@ def run_experiment(model_name, brate, order, test_split):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+
     parser.add_argument(
         "model",
         type=str,
         choices=["ngram", "bagofsounds", "markovdual", "neuraldual"],
         help="Model for the fake borrowing experiment",
+    )
+    parser.add_argument(
+        "--language",
+        #type=str,
+        default='all',
+        help="'all' or language_name",
+    )
+    parser.add_argument(
+        "--form",
+        type=str,
+        default='Tokens',
+        choices=["Tokens", "FormChars", "ASJP", "DOLGO", "SCA"],
+        help="Form to take from language table.",
     )
     parser.add_argument(
         "--order",
@@ -176,13 +186,17 @@ if __name__ == "__main__":
         help='Ngram order for experiment (default: "monogram")',
     )
     parser.add_argument(
-        "--brate", type=int, default=19, help="Set the borrowing rate (default: 20)"
+        "--brate", type=int, default=10,
+        help="Set the borrowing rate (default: 10, for 1 in 10)"
     )
     parser.add_argument(
-        "--split", type=float, default=0.1, help="Set the test split proportion (default: 0.1)"
+        "--split", type=float, default=0.2, help="Set the test split proportion (default: 0.2)"
+    )
+    parser.add_argument(
+        "--verbose", type=bool, default=False, help="Verbose reporting (default: False)"
     )
     args = parser.parse_args()
 
 
-    # We increment borrowing rate by one, as in original code by @lingulist
-    run_experiment(args.model, args.brate + 1, args.order, args.split)
+    run_experiment(args.model, args.language, args.form,
+                   args.brate, args.order, args.split, args.verbose)

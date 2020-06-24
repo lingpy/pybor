@@ -8,64 +8,65 @@ from tqdm import tqdm
 
 
 class LexibankDataset(object):
-
     def __init__(self, package, transform=None):
         """
         Load the data of a lexibank dataset.
         """
         clts = CLTS()
         modify = {
-                'Tokens': lambda x, y, z: x['Segments'].split(),
-                'Language': lambda x, y, z: y[x['Language_ID']]['Name'],
-                'Glottocode': lambda x, y, z: y[x['Language_ID']]['Glottocode'],
-                'Concept': lambda x, y, z: z[x['Parameter_ID']]['Name'],
-                'Concepticon_ID': lambda x, y, z: z[x['Parameter_ID']]['Concepticon_ID'],
-                'Concepticon_GLOSS': lambda x, y, z: z[x['Parameter_ID']]['Concepticon_Gloss'],
-                'FormChars': lambda x, y, z: list(x['Form']),
-                'ASJP': lambda x, y, z: clts.soundclass('asjp')(x['Segments']),
-                'DOLGO': lambda x, y, z: clts.soundclass('dolgo')(x['Segments']),
-                'SCA': lambda x, y, z: clts.soundclass('sca')(x['Segments']),
-                }
+            "Tokens": lambda x, y, z: [
+                str(clts.bipa[token]) for token in x["Segments"].split() if token != "+"
+            ],
+            "Language": lambda x, y, z: y[x["Language_ID"]]["Name"],
+            "Glottocode": lambda x, y, z: y[x["Language_ID"]]["Glottocode"],
+            "Concept": lambda x, y, z: z[x["Parameter_ID"]]["Name"],
+            "Concepticon_ID": lambda x, y, z: z[x["Parameter_ID"]]["Concepticon_ID"],
+            "Concepticon_GLOSS": lambda x, y, z: z[x["Parameter_ID"]][
+                "Concepticon_Gloss"
+            ],
+            "FormChars": lambda x, y, z: list(x["Form"]),
+            "ASJP": lambda x, y, z: clts.soundclass("asjp")(x["Segments"]),
+            "DOLGO": lambda x, y, z: clts.soundclass("dolgo")(x["Segments"]),
+            "SCA": lambda x, y, z: clts.soundclass("sca")(x["Segments"]),
+        }
         transform = transform or {}
         modify.update(transform)
-        module = import_module('lexibank_'+package)
+        module = import_module("lexibank_" + package)
         self.ds = module.Dataset()
         self.forms = []
         self.concepts = {}
-        with UnicodeDictReader(
-                self.ds.cldf_dir.joinpath('parameters.csv')) as reader:
+        with UnicodeDictReader(self.ds.cldf_dir.joinpath("parameters.csv")) as reader:
             for row in reader:
-                self.concepts[row['ID']] = row
+                self.concepts[row["ID"]] = row
         self.languages = {}
-        with UnicodeDictReader(
-                self.ds.cldf_dir.joinpath('languages.csv')) as reader:
+        with UnicodeDictReader(self.ds.cldf_dir.joinpath("languages.csv")) as reader:
             for row in reader:
-                self.languages[row['ID']] = row
+                self.languages[row["ID"]] = row
 
-        with UnicodeDictReader(
-                self.ds.cldf_dir.joinpath('forms.csv')) as reader:
-            for row in tqdm(reader, desc='loading data'):
+        with UnicodeDictReader(self.ds.cldf_dir.joinpath("forms.csv")) as reader:
+            for row in tqdm(reader, desc="loading data"):
                 for key, fun in modify.items():
                     row[key] = fun(row, self.languages, self.concepts)
                 self.forms.append(row)
 
-    def get_table(self, language=None, form='Form', classification='Borrowed'):
+    def get_table(self, language=None, form="Form", classification="Borrowed"):
         out = []
         for row in self.forms:
-            if not language or row['Language'] == language:
-                out.append([row['ID'], row[form], row[classification]])
+            if not language or row["Language"] == language:
+                out.append([row["ID"], row[form], row[classification]])
         return out
+
 
 # =============================================================================
 # Apply user function to tables from WOLD.
 # =============================================================================
 import pickle
 import pybor.util as util
+
 logger = util.get_logger(__name__)
 
-def apply_function_by_language(languages,
-                                 form=None,
-                                 function=None):
+
+def apply_function_by_language(languages, form=None, function=None):
     """
 
     Parameters
@@ -121,63 +122,62 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
     apply_function_by_language(languages=['English', 'Hup'], form='FormChars', function=fn)
 
     """
-    logger.debug(f'Apply function to languages {languages} and form {form}.')
+    logger.debug(f"Apply function to languages {languages} and form {form}.")
 
     lex = get_lexibank_access()
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        table = lex.get_table(
-                    language=language,
-                    form=form,
-                    classification='Loan'
-                    )
+        table = lex.get_table(language=language, form=form, classification="Loan")
 
         function(language, form, table)
+
 
 # =============================================================================
 # Get tables from WOLD via generator.
 # =============================================================================
 
-def language_table_gen(languages='all', form='Tokens'):
 
-    logger.debug(f'Generator for {languages} languages.')
+def language_table_gen(languages="all", form="Tokens"):
+
+    logger.debug(f"Generator for {languages} languages.")
 
     lex = get_lexibank_access()
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        table = lex.get_table(
-                    language=language,
-                    form=form,
-                    classification='Loan'
-                    )
+        table = lex.get_table(language=language, form=form, classification="Loan")
 
         yield language, table
+
 
 # =============================================================================
 # Language table access functions
 # =============================================================================
 def get_lexibank_access():
     try:
-        with open('wold.bin', 'rb') as f:
+        with open("wold.bin", "rb") as f:
             lex = pickle.load(f)
     except:
-        lex = LexibankDataset('wold',
-            transform={ "Loan": lambda x, y, z:
-                       1 if x['Borrowed'] != '' and float(x['Borrowed']) >= 0.9
-                       else 0})
+        lex = LexibankDataset(
+            "wold",
+            transform={
+                "Loan": lambda x, y, z: 1
+                if x["Borrowed"] != "" and float(x["Borrowed"]) >= 0.9
+                else 0
+            },
+        )
 
-        with open('wold.bin', 'wb') as f:
+        with open("wold.bin", "wb") as f:
             pickle.dump(lex, f)
 
     return lex
 
 
-def check_languages_with_lexibank(lexibank, languages='all'):
+def check_languages_with_lexibank(lexibank, languages="all"):
 
     all_languages = [language["Name"] for language in lexibank.languages.values()]
-    if languages == 'all':
+    if languages == "all":
         return all_languages
 
     if isinstance(languages, str):
@@ -186,9 +186,11 @@ def check_languages_with_lexibank(lexibank, languages='all'):
     if isinstance(languages, list):
         for language in languages:
             if language not in all_languages:
-                raise ValueError(f'Language {language} not in Lexibank.')
+                raise ValueError(f"Language {language} not in Lexibank.")
 
     return languages  # Checked as valid.
 
-    logger.warning("Language must be language name, list of languages, or keyword 'all'.")
-    raise ValueError(f'Language list required, instead received {languages}.')
+    logger.warning(
+        "Language must be language name, list of languages, or keyword 'all'."
+    )
+    raise ValueError(f"Language list required, instead received {languages}.")

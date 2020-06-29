@@ -1,0 +1,263 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+$	NULL	10	U+0024		
+(	NULL	16	U+0028	"ađ’arraf_(n_ihākusen),ša_(n),ŧar’r’əmmant_(n)_uđ’ā"	
+)	NULL	16	U+0029	"iri_(n)_umāyuř,zzaŧ_(i),ŧar’r’əmmant_(n)_uđ’ā"	
+.	NULL	3	U+002E	"gg_imi_đi_..."	Tarifiyt Berber
+^u$	u	1	U+005E U+0075 U+0024	"u"	Tarifiyt Berber
+^đ$	ð	1	U+005E U+0111 U+0024	"đ"	Tarifiyt Berber
+^gg$	gː	2	U+005E U+0067 U+0067 U+0024	"gg"	Tarifiyt Berber
+^kk$	kː	1	U+005E U+006B U+006B U+0024	"kk"	Tarifiyt Berber
+^ās$	aː s	1	U+005E U+0101 U+0073 U+0024	"ās"	Tarifiyt Berber
+^šš$	ʃː	2	U+005E U+0161 U+0161 U+0024	"šš"	Tarifiyt Berber
+-	+	2	U+002D	"wəħđ-,yəǧǧi-s_n_uma"	Tarifiyt Berber
+=	+	3	U+003D	"nnhar=a,řəxx=u"	Tarifiyt Berber
+_	_	108	U+005F	"azyən_n_nnhā,yəǧǧi-s_n_uma,ŧřaŧa_(n)_imuan"	Tarifiyt Berber
+a	a	725	U+0061	"qarrəm,t’t’alaq,ʕawən"	Tarifiyt Berber
+b	b	6	U+0062	"tambā,řbanku,řƀumba"	Tarifiyt Berber
+d	d	24	U+0064	"ayənduz,landris,ŧiɣəndin"	Tarifiyt Berber
+e	e	5	U+0065	"ađ’arraf_(n_ihākusen),wis_ŧnayen,ŧas’ettit"	Tarifiyt Berber
+f	f	99	U+0066	"s’s’ifəŧ,ŧaxšəfŧ,ŧašʕəfŧ"	Tarifiyt Berber
+g	g	10	U+0067	"agi,ngəz,řgiħħ"	Tarifiyt Berber
+h	h	22	U+0068	"nnhar=a,tahəm,ʕahəđ"	Tarifiyt Berber
+i	i	440	U+0069	"aɣi_asəmmam,lizđiyaŧ,ttimsaħ"	Tarifiyt Berber
+k	k	49	U+006B	"aʕəskari,lmalika,řkazi"	Tarifiyt Berber
+l	l	47	U+006C	"falta,plat’anu,z’alamit’"	Tarifiyt Berber
+m	m	236	U+006D	"qama,učma_ŧaməz’z’yant,ŧikəđ’fət’_ŧaruməšŧ"	Tarifiyt Berber
+n	n	218	U+006E	"anəɣ,zzinzal,řəŧnayən"	Tarifiyt Berber
+p	p	6	U+0070	"kartpustal,lpitrul,s’pit’ā"	Tarifiyt Berber
+q	q	88	U+0071	"zzənqəŧ,řqəhwa,ʕqəř"	Tarifiyt Berber
+r	r	94	U+0072	"afray,ziru,đrus"	Tarifiyt Berber
+s	s	99	U+0073	"kumasa,ŧasəçsuŧ,ƀurrəs_?"	Tarifiyt Berber
+t	t	37	U+0074	"kartpustal,matrikula,ŧaxəddant_n_s’pit’ā"	Tarifiyt Berber
+u	u	288	U+0075	"az’iz’un,s’uppa,ƀalun"	Tarifiyt Berber
+w	w	78	U+0077	"izaggwən,s_wadday,āggwəħ"	Tarifiyt Berber
+x	x	47	U+0078	"lməxzən,lxat’ař,yəǧǧis_n_xači"	Tarifiyt Berber
+y	y	117	U+0079	"ayənduz,aʕāyan,ŧanyiaŧ"	Tarifiyt Berber
+z	z	80	U+007A	"amxazni,izi,s_minzi"	Tarifiyt Berber
+ç	ɕ	1	U+00E7	"ŧfuaçəŧ_?"	Tarifiyt Berber
+ā	aː	95	U+0101	"ažāŧiř,ŧazāŧ,ŧāfiqŧ"	Tarifiyt Berber
+č	tʃ	9	U+010D	"aniči,qučiya,učma_ŧaməz’z’yant"	Tarifiyt Berber
+đ	ð	88	U+0111	"ħađa,ŧađmant,ƀnađəm"	Tarifiyt Berber
+ħ	ħ	74	U+0127	"fħəř,ssħəss,wā_yəħři"	Tarifiyt Berber
+ř	r	131	U+0159	"s_ŧazzřa,sřiyzəz,řəqřəʕ"	Tarifiyt Berber
+š	ʃ	101	U+0161	"ŧaʕəžžašŧ,ŧinʕašin,ŧšamma"	Tarifiyt Berber
+ŧ	θ	38	U+0167	"ssiŧəm,řəšŧu,ŧaħr’us’ŧ_(n)_uməžžun_?"	Tarifiyt Berber
+ž	ʒ	58	U+017E	"amžā,iməžžan_n_təqmižaŧ,řəžđuđ"	Tarifiyt Berber
+ƀ	β	114	U+0180	"aƀəʕʕuš,řāƀʕa,ɣā’ƀəř"	Tarifiyt Berber
+ǧ	dʒ	1	U+01E7	"lǧazira"	Tarifiyt Berber
+ə	ə	864	U+0259	"aməttin,kkəs,ŧanəwwašŧ"	Tarifiyt Berber
+ɣ	ɣ	94	U+0263	"ađ’āɣař,ssƀaɣa,ŧaɣmā’ŧ"	Tarifiyt Berber
+ʔ	ʔ	1	U+0294	"lʔas’nam"	Tarifiyt Berber
+ʕ	ʕ	77	U+0295	"aʕƀan,lʕiqaƀ,ŧaməʕmuč"	Tarifiyt Berber
+?$	ʔ	4	U+003F U+0024	"lʕimara_?,ŧaħr’us’ŧ_(n)_uməžžun_?,ŧfuaçəŧ_?"	Tarifiyt Berber
+^=	+	3	U+005E U+003D	"=a,=in,=ənni"	Tarifiyt Berber
+^a	a	339	U+005E U+0061	"ahim’uř,amənyā,ažđ’iđ’"	Tarifiyt Berber
+^b	b	5	U+005E U+0062	"bašklit,bitəlma,bəlləʕ"	Tarifiyt Berber
+^d	d	1	U+005E U+0064	"dəřbuga"	Tarifiyt Berber
+^f	f	37	U+005E U+0066	"fāz,fāđ’,fəttəš"	Tarifiyt Berber
+^g	g	7	U+005E U+0067	"gānəz,gđā,gəʕʕəđ"	Tarifiyt Berber
+^h	h	4	U+005E U+0068	"haž,hřəš,hžəm"	Tarifiyt Berber
+^i	i	56	U+005E U+0069	"ifaddən,irā,ixđ’ā"	Tarifiyt Berber
+^k	k	19	U+005E U+006B	"kruši,kumasa,kəbb"	Tarifiyt Berber
+^l	l	42	U+005E U+006C	"lħayawan,lžarima,lžariđa"	Tarifiyt Berber
+^m	m	41	U+005E U+006D	"mašša,murs’u,muziqa"	Tarifiyt Berber
+^n	n	27	U+005E U+006E	"ndəh,nətta,nəšš"	Tarifiyt Berber
+^p	p	16	U+005E U+0070	"pikā,pilun,pintura"	Tarifiyt Berber
+^q	q	23	U+005E U+0071	"qarrəm,quči,qān_ifaddən"	Tarifiyt Berber
+^r	r	2	U+005E U+0072	"ru,ruħ"	Tarifiyt Berber
+^s	s	31	U+005E U+0073	"sarrəħ,siđi_ā’bbi,stilu"	Tarifiyt Berber
+^t	t	10	U+005E U+0074	"trisinti,tƀan,təmtəm"	Tarifiyt Berber
+^u	u	23	U+005E U+0075	"učma,uđum,uđəm"	Tarifiyt Berber
+^w	w	24	U+005E U+0077	"wažəƀ,wis_ŧnayen,wʕā’"	Tarifiyt Berber
+^x	x	16	U+005E U+0078	"xači,xəmməm,xəyyəđ’"	Tarifiyt Berber
+^y	j	14	U+005E U+0079	"yāw,yəǧǧis_n_xači,yəǧǧis_n_xaři"	Tarifiyt Berber
+^z	z	9	U+005E U+007A	"zeyyā,zəħħəf,zʕəm"	Tarifiyt Berber
+^ā	aː	27	U+005E U+0101	"āyyəq,āƀʕa,āɣ"	Tarifiyt Berber
+^č	tʃ	2	U+005E U+010D	"čanklaŧ,čaƀul’a"	Tarifiyt Berber
+^đ	ð	15	U+005E U+0111	"đqəř,đrus,đħa"	Tarifiyt Berber
+^ħ	ħ	30	U+005E U+0127	"ħarrəƀ,ħađa,ħri"	Tarifiyt Berber
+^ř	r	130	U+005E U+0159	"řqəndiř,řxəšƀəŧ,řħəss"	Tarifiyt Berber
+^š	ʃ	31	U+005E U+0161	"šməđ’,šā’h,šđ’əħ"	Tarifiyt Berber
+^ŧ	θ	251	U+005E U+0167	"ŧaməssat’t’,ŧađunt,ŧlažua’ŧ"	Tarifiyt Berber
+^ž	ʒ	12	U+005E U+017E	"žməđ,žməʕ,žāħ"	Tarifiyt Berber
+^ƀ	β	35	U+005E U+0180	"ƀaɣəř,ƀuhəyyuf,ƀuwaššawən"	Tarifiyt Berber
+^ə	ə	5	U+005E U+0259	"əwš,əxs,əŋw"	Tarifiyt Berber
+^ɣ	ɣ	28	U+005E U+0263	"ɣđā,ɣđ’əs,ɣřəđ’"	Tarifiyt Berber
+^ʕ	ʕ	28	U+005E U+0295	"ʕgəz,ʕuqq,ʕəmmā’"	Tarifiyt Berber
+a$	a	246	U+0061 U+0024	"ssməřqa,ŧs’appa,ƀayana"	Tarifiyt Berber
+a’	aˤ	8	U+0061 U+2019	"řƀua’qi,ŧammua’ŧ,ŧmua’ɣi"	
+b$	b	2	U+0062 U+0024	"řəʕzib,žžib"	Tarifiyt Berber
+bb	bː	13	U+0062 U+0062	"siđi_ā’bbi,šəbbā,ʕəbbəz’"	Tarifiyt Berber
+b’	bˤ	1	U+0062 U+2019	"lamb’a"	
+dd	dː	34	U+0064 U+0064	"aməddukəř,ŧaddəxŧ,ŧasəddəšŧ"	Tarifiyt Berber
+d’	dˤ	13	U+0064 U+2019	"nd’əř,ssand’aliya,ššmənd’ā"	
+f$	f	38	U+0066 U+0024	"kəyyəf,t’t’əf,řəxfif"	Tarifiyt Berber
+ff	fː	12	U+0066 U+0066	"ssnuffā,s’əffā,žuffiđ’"	Tarifiyt Berber
+fh	f h	1	U+0066 U+0068	"ssəfhəm"	Tarifiyt Berber
+fs	f s	1	U+0066 U+0073	"ŧařəfsa"	Tarifiyt Berber
+g$	g	6	U+0067 U+0024	"amāz’ag,řəħħəg,šarrəg"	Tarifiyt Berber
+gg	gː	16	U+0067 U+0067	"asəggwas,ŧađ’əggwač,ŧiggwđi"	Tarifiyt Berber
+h$	h	6	U+0068 U+0024	"ndəh,wah,šā’h"	Tarifiyt Berber
+hw	h w	1	U+0068 U+0077	"řqəhwa"	Tarifiyt Berber
+i$	i	127	U+0069 U+0024	"išarri,iŧri,ŧmua’ɣi"	Tarifiyt Berber
+k$	k	4	U+006B U+0024	"plastik,ššāk,ƀāk"	Tarifiyt Berber
+kk	kː	3	U+006B U+006B	"aʕəkkaz,šəkkā,ƀusəkka"	Tarifiyt Berber
+kw	kʷ	3	U+006B U+0077	"akwađrun,ssəkwila,ssəkwā"	Tarifiyt Berber
+l$	l	6	U+006C U+0024	"kartpustal,zzinzal,ššamal"	Tarifiyt Berber
+ll	lː	8	U+006C U+006C	"aqəllaw,bəlləʕ,səlləm"	Tarifiyt Berber
+l’	lˤ	4	U+006C U+2019	"lƀal’a,l’l’ah,čaƀul’a"	
+m$	m	71	U+006D U+0024	"asřəm,barrəm,isəm"	Tarifiyt Berber
+mm	mː	27	U+006D U+006D	"agəmmiz,kəmməř,ʕəmmās"	Tarifiyt Berber
+ms	m s	2	U+006D U+0073	"ttimsaħ,xəmsa"	Tarifiyt Berber
+m’	mˤ	1	U+006D U+2019	"ahim’uř"	
+n$	n	122	U+006E U+0024	"ižiman,řməskin,ʕān"	Tarifiyt Berber
+nn	nː	30	U+006E U+006E	"aqninni,ažənna,s_nnəž_(i)"	Tarifiyt Berber
+ns	n s	4	U+006E U+0073	"amənsi,lansa,ssənsřəŧ"	Tarifiyt Berber
+nw	n w	2	U+006E U+0077	"anwař,ŧanwač"	Tarifiyt Berber
+pp	pː	6	U+0070 U+0070	"s’uppa,t’appit’,ŧs’appa"	Tarifiyt Berber
+q$	q	25	U+0071 U+0024	"ttissiq,t’t’alaq,ɣā’q"	Tarifiyt Berber
+qq	qː	12	U+0071 U+0071	"uma_aməqqr’an,ŧaz’əqqa,ǧǧəqqađ’"	Tarifiyt Berber
+qs	q s	2	U+0071 U+0073	"ssəqsa,ŧaqsəfŧ"	Tarifiyt Berber
+qw	qʷ	1	U+0071 U+0077	"aqwia"	Tarifiyt Berber
+r$	r	1	U+0072 U+0024	"kulur"	Tarifiyt Berber
+rr	rː	51	U+0072 U+0072	"arr_nnəfs,ašarriđ’,ša_n_marraŧ"	Tarifiyt Berber
+r’	ɾˤ	51	U+0072 U+2019	"sr’aqəzzit,učma_ŧaməqqr’ant,ʕəšr’a"	
+s$	s	64	U+0073 U+0024	"asəggwas,ařwəs,payas"	Tarifiyt Berber
+ss	sː	14	U+0073 U+0073	"assam,aʕəssas,wəssəx"	Tarifiyt Berber
+s’	sˤ	27	U+0073 U+2019	"s’s’aƀun,s’s’əħħ,ŧaxras’ŧ"	
+t$	t	44	U+0074 U+0024	"ŧandint,ŧađunt,ŧqiššit"	Tarifiyt Berber
+tt	tː	11	U+0074 U+0074	"fəttəš,nəttaŧ,wənni_ittəđʕan"	Tarifiyt Berber
+t’	tˤ	62	U+0074 U+2019	"st’umaɣu,ŧamšət’t’,ŧƀat’at’att"	
+u$	u	73	U+0075 U+0024	"kuffu,st’umaɣu,řbanku"	Tarifiyt Berber
+w$	w	15	U+0077 U+0024	"aqəllaw,aħā’šaw,ƀaw"	Tarifiyt Berber
+ww	wː	8	U+0077 U+0077	"axəwwan,nnəwwā,ŧanəwwašŧ"	Tarifiyt Berber
+x$	x	3	U+0078 U+0024	"asřix,sřəx,wəssəx"	Tarifiyt Berber
+xs	x s	3	U+0078 U+0073	"ssəxsi,ŧaxsašŧ,ŧixsi"	Tarifiyt Berber
+xx	xː	4	U+0078 U+0078	"axxam,ddəxxan,řəxx=u"	Tarifiyt Berber
+y$	j	10	U+0079 U+0024	"aquřay,atay,aɣyay"	Tarifiyt Berber
+yy	jː	27	U+0079 U+0079	"āyyəq,ŧayyawŧ,ƀaƀaɣayyu"	Tarifiyt Berber
+z$	z	32	U+007A U+0024	"ngəz,zziǧǧəz,ɣəz"	Tarifiyt Berber
+zw	z w	4	U+007A U+0077	"aməzwaru,awəzwiz,ŧazwišŧ"	Tarifiyt Berber
+zz	zː	14	U+007A U+007A	"azzəř,sr’aqəzzit,ŧazzāŧ"	Tarifiyt Berber
+z’	zˤ	44	U+007A U+2019	"učma_ŧaməz’z’yant,āz’əm,ŧyaz’it’_n_waman"	
+çs	ɕ s	5	U+00E7 U+0073	"açsum,ŧasəçsuŧ,ŧəçsi_aʕəddis"	Tarifiyt Berber
+ā$	aː	117	U+0101 U+0024	"iməžžāžā,ɣā,ɣđā"	Tarifiyt Berber
+āw	aː w	3	U+0101 U+0077	"fāwišša,ssāwař,ħāwəš"	Tarifiyt Berber
+ā’	aˤː	30	U+0101 U+2019	"ssfā’ɣ,ŧaɣəbbā’ŧ,ŧqā’qr’a"	
+č$	tʃ	8	U+010D U+0024	"tažžač,ŧaməʕmuč,ŧasəbbač"	Tarifiyt Berber
+đ$	θ	41	U+0111 U+0024	"ayrađ,ffađ,gəʕʕəđ"	Tarifiyt Berber
+đw	ð w	2	U+0111 U+0077	"řməđwəđ,ŧaməđwasŧ"	Tarifiyt Berber
+đ’	ðˤ	57	U+0111 U+2019	"aħđ’iđ’,řəwđ’a,ŧađ’ufŧ"	
+ħ$	ħ	37	U+0127 U+0024	"s’ƀəħ,āyyəħ,šarrəħ"	Tarifiyt Berber
+ħs	ħ s	2	U+0127 U+0073	"řeħsaƀ,řəħsađ"	Tarifiyt Berber
+ħħ	ħː	3	U+0127 U+0127	"asəħħā,zəħħəf,řəħħəg"	Tarifiyt Berber
+ř$	r	95	U+0159 U+0024	"ayužiř,ssqəř,đwəř"	Tarifiyt Berber
+řh	r h	1	U+0159 U+0068	"asəřham"	Tarifiyt Berber
+řs	r s	1	U+0159 U+0073	"ssəřsəq"	Tarifiyt Berber
+řw	r w	2	U+0159 U+0077	"ařwəs,ŧařwəsŧ"	Tarifiyt Berber
+ř’	rˤ	2	U+0159 U+2019	"muř’əbbəʕ,puř’ki"	
+š$	ʃ	26	U+0161 U+0024	"fəttəš,ibbəš,ƀāš"	Tarifiyt Berber
+šw	ʃ w	1	U+0161 U+0077	"šway_šway"	Tarifiyt Berber
+šš	ʃː	21	U+0161 U+0161	"qəššā’,ŧrašša,ƀuššəř"	Tarifiyt Berber
+š’	ʃˤ	1	U+0161 U+2019	"muš’š’"	
+ŧ$	θ	174	U+0167 U+0024	"mməŧ,řƀuaməŧ,ŧaħarrafŧ"	Tarifiyt Berber
+ž$	ʒ	12	U+017E U+0024	"zzaž,āddəž,ħđaž"	Tarifiyt Berber
+žž	ʒː	18	U+017E U+017E	"iməžžan_n_təqmižaŧ,ssəžžāŧ,ŧaħr’us’ŧ_(n)_uməžžun_?"	Tarifiyt Berber
+ƀ$	β	30	U+0180 U+0024	"aɣəmbuƀ,qřəƀ,səyyəƀ"	Tarifiyt Berber
+ƀh	β h	1	U+0180 U+0068	"ttəƀhəŧ"	Tarifiyt Berber
+ƀs	β s	2	U+0180 U+0073	"ssəƀsi,ŧat’əƀsəšŧ"	Tarifiyt Berber
+ǧǧ	dʒː	31	U+01E7 U+01E7	"aǧǧəɣ,iǧǧi,yəǧǧis_n_ʕzizi"	Tarifiyt Berber
+ɣ$	ɣ	26	U+0263 U+0024	"azəggwaɣ,aǧǧəɣ,nnəɣnəɣ"	Tarifiyt Berber
+ɣɣ	ɣː	3	U+0263 U+0263	"iɣɣəđ,ŧaɣɣašŧ,ŧiɣɣəs’ŧ"	Tarifiyt Berber
+ʕ$	ʕ	23	U+0295 U+0024	"ddafəʕ,qurrəʕ,t’t’aƀəʕ"	Tarifiyt Berber
+ʕʕ	ʕː	4	U+0295 U+0295	"aƀəʕʕuš,gəʕʕəđ,ssgəʕʕəđ"	Tarifiyt Berber
+^bb	bː	2	U+005E U+0062 U+0062	"bbuzzəř,bbəz’"	Tarifiyt Berber
+^dd	dː	17	U+005E U+0064 U+0064	"ddhən,ddənfiř,ddəxxan"	Tarifiyt Berber
+^d’	dˤ	1	U+005E U+0064 U+2019	"d’d’ra"	
+^ff	fː	2	U+005E U+0066 U+0066	"ffađ,ffəɣ"	Tarifiyt Berber
+^fh	f h	1	U+005E U+0066 U+0068	"fhəm"	Tarifiyt Berber
+^fs	f s	2	U+005E U+0066 U+0073	"fsəs"	Tarifiyt Berber
+^gg	gː	9	U+005E U+0067 U+0067	"gg_arriħŧ,gg_řqařəƀ,ggwəž"	Tarifiyt Berber
+^hw	h w	3	U+005E U+0068 U+0077	"hwa,hwən,hwəř"	Tarifiyt Berber
+^kk	kː	2	U+005E U+006B U+006B	"kkā,kkəs"	Tarifiyt Berber
+^kw	kʷ	1	U+005E U+006B U+0077	"kwarinti"	Tarifiyt Berber
+^lh	l h	1	U+005E U+006C U+0068	"lhawa"	Tarifiyt Berber
+^ll	lː	7	U+005E U+006C U+006C	"llaymun,lluɣa,lləššin"	Tarifiyt Berber
+^lw	l w	3	U+005E U+006C U+0077	"lwaliđin,lwaziř,lwəlda"	Tarifiyt Berber
+^l’	lˤ	2	U+005E U+006C U+2019	"l’axat’ā,l’l’ah"	
+^mm	mː	12	U+005E U+006D U+006D	"mmi,mmis_n_xaři,mmnəɣ"	Tarifiyt Berber
+^ms	m s	2	U+005E U+006D U+0073	"msəħ,msəřqa"	Tarifiyt Berber
+^nh	n h	2	U+005E U+006E U+0068	"nhā,nhəzz"	Tarifiyt Berber
+^nn	nː	15	U+005E U+006E U+006E	"nnməř,nnħas,nnəɣni"	Tarifiyt Berber
+^qq	qː	9	U+005E U+0071 U+0071	"qqim,qqu,qqās"	Tarifiyt Berber
+^qs	q s	2	U+005E U+0071 U+0073	"qsəħ"	Tarifiyt Berber
+^qw	qʷ	1	U+005E U+0071 U+0077	"qwa"	Tarifiyt Berber
+^r’	ɾˤ	1	U+005E U+0072 U+2019	"r’ušš"	
+^ss	sː	66	U+005E U+0073 U+0073	"ssu,ssšən,ssəŋw"	Tarifiyt Berber
+^s’	sˤ	18	U+005E U+0073 U+2019	"s’s’əħħ,s’šā,s’ənnəʕ"	
+^ts	ts	1	U+005E U+0074 U+0073	"tsʕa"	Tarifiyt Berber
+^tt	tː	14	U+005E U+0074 U+0074	"ttmənyaŧ,ttu,ttřaŧa"	Tarifiyt Berber
+^tw	t w	1	U+005E U+0074 U+0077	"twasləm"	Tarifiyt Berber
+^t’	tˤ	7	U+005E U+0074 U+2019	"t’iřu,t’urnifis,t’ur’u"	
+^ww	wː	3	U+005E U+0077 U+0077	"wwəŧ,wwəŧ_s_uqāt’as’,wwəŧ_s_řmus"	Tarifiyt Berber
+^xw	xʷ	1	U+005E U+0078 U+0077	"xwa"	Tarifiyt Berber
+^zz	zː	13	U+005E U+007A U+007A	"zzaž,zzƀiƀ,zzəšŧ"	Tarifiyt Berber
+^z’	zˤ	11	U+005E U+007A U+2019	"z’alamit’,z’z’aǧǧ,z’əmm"	
+^çs	ɕ s	2	U+005E U+00E7 U+0073	"çsi"	Tarifiyt Berber
+^āw	aː w	1	U+005E U+0101 U+0077	"āwəs"	Tarifiyt Berber
+^ā’	aˤː	9	U+005E U+0101 U+2019	"ā’wəř,ā’xu,ā’žəʕ"	
+^đw	ð w	2	U+005E U+0111 U+0077	"đwəř"	Tarifiyt Berber
+^đ’	ðˤ	16	U+005E U+0111 U+2019	"đ’arr,đ’ā,đ’ʕəf"	
+^ħs	ħ s	2	U+005E U+0127 U+0073	"ħsā,ħsəƀ"	Tarifiyt Berber
+^řs	r s	1	U+005E U+0159 U+0073	"řsəħ"	Tarifiyt Berber
+^řw	r w	5	U+005E U+0159 U+0077	"řwazia,řwəqŧ,řwəđ’wađ’"	Tarifiyt Berber
+^šw	ʃ w	4	U+005E U+0161 U+0077	"šwa,šwarti,šway_šway"	Tarifiyt Berber
+^šš	ʃː	16	U+005E U+0161 U+0161	"ššr’aƀ,ššəkk,ššʕəř"	Tarifiyt Berber
+^ŧs	θ s	5	U+005E U+0167 U+0073	"ŧsaʕətt,ŧsiřit,ŧsunta"	Tarifiyt Berber
+^žh	ʒ h	2	U+005E U+017E U+0068	"žhəđ"	Tarifiyt Berber
+^žž	ʒː	10	U+005E U+017E U+017E	"žžařđ’a,žžib,žžəmʕa"	Tarifiyt Berber
+^ǧǧ	dʒː	5	U+005E U+01E7 U+01E7	"ǧǧəm,ǧǧəqqađ’,ǧǧəssəq"	Tarifiyt Berber
+a’$	aˤ	1	U+0061 U+2019 U+0024	"ššaqua’"	
+bb$	bː	3	U+0062 U+0062 U+0024	"ddubb,kəbb,řħəbb"	Tarifiyt Berber
+dd$	dː	8	U+0064 U+0064 U+0024	"ulaƀudd,řħədd,ƀədd"	Tarifiyt Berber
+ff$	fː	2	U+0066 U+0066 U+0024	"kəff,uff"	Tarifiyt Berber
+fs$	f s	1	U+0066 U+0073 U+0024	"arr_nnəfs"	Tarifiyt Berber
+kk$	kː	4	U+006B U+006B U+0024	"ħəkk,ššəkk,šəkk"	Tarifiyt Berber
+mm$	mː	6	U+006D U+006D U+0024	"kəmm,ssəmm,z’əmm"	Tarifiyt Berber
+nn$	nː	1	U+006E U+006E U+0024	"žžənn"	Tarifiyt Berber
+ns’	n sˤ	2	U+006E U+0073 U+2019	"pins’ā,řʕuns’ā"	
+qq$	qː	2	U+0071 U+0071 U+0024	"tiqq,ʕuqq"	Tarifiyt Berber
+qs’	q sˤ	1	U+0071 U+0073 U+2019	"řməqs’ā"	
+rr$	ɾː	5	U+0072 U+0072 U+0024	"arr,đ’arr,ɣarr"	Tarifiyt Berber
+rs’	r sˤ	1	U+0072 U+0073 U+2019	"murs’u"	
+r’$	ɾˤ	1	U+0072 U+2019 U+0024	"žar’r’"	
+ss$	sː	6	U+0073 U+0073 U+0024	"ssħuss,ssħəss,řəmqəss"	Tarifiyt Berber
+s’$	sˤ	6	U+0073 U+2019 U+0024	"want’is’,xəǧǧəs’,đ’fəs’"	
+tt$	tt	10	U+0074 U+0074 U+0024	"ŧaƀritt,ŧiažətt,ŧšumʕətt"	Tarifiyt Berber
+t’$	tˤ	19	U+0074 U+2019 U+0024	"ŧaz’ənt’it’,ŧikəđ’fət’,ŧit’t’"	
+ws$	w s	2	U+0077 U+0073 U+0024	"řqəws"	Tarifiyt Berber
+xs$	x s	3	U+0078 U+0073 U+0024	"bua’xs,əxs"	Tarifiyt Berber
+xx$	xː	2	U+0078 U+0078 U+0024	"řfəxx,řmuxx"	Tarifiyt Berber
+yy$	jː	3	U+0079 U+0079 U+0024	"ssɣuyy"	Tarifiyt Berber
+zz$	zː	1	U+007A U+007A U+0024	"nhəzz"	Tarifiyt Berber
+z’$	zˤ	11	U+007A U+2019 U+0024	"ayāz’iz’,řƀəz’z’,ʕəbbəz’"	
+ās$	aː s	5	U+0101 U+0073 U+0024	"fās,qqās,ssās"	Tarifiyt Berber
+ās’	aː sˤ	2	U+0101 U+0073 U+2019	"řʕās’ŧ,ŧɣās’ŧ"	
+āw$	aː w	1	U+0101 U+0077 U+0024	"yāw"	Tarifiyt Berber
+ā’$	aˤː	15	U+0101 U+2019 U+0024	"fiɣā’,řƀā’,ʕƀā’"	
+đ‘$	ðˤ	1	U+0111 U+2018 U+0024	"ʕāđ‘"	Tarifiyt Berber
+đ’$	ðˤ	47	U+0111 U+2019 U+0024	"ašarriđ’,ssəħnunnəđ’,řƀəǧǧuđ’"	
+ħħ$	ħː	3	U+0127 U+0127 U+0024	"s’s’əħħ,s’əħħ,řgiħħ"	Tarifiyt Berber
+ŋw$	ŋ w	3	U+014B U+0077 U+0024	"ssəŋw,əŋw"	Tarifiyt Berber
+šš$	ʃː	5	U+0161 U+0161 U+0024	"išš,r’ušš,ƀəšš"	Tarifiyt Berber
+š’$	ʃˤ	2	U+0161 U+2019 U+0024	"muš’š’,ŧənʕaš’"	
+ƀs’	β sˤ	2	U+0180 U+0073 U+2019	"t’t’əƀs’i"	
+ǧǧ$	dʒː	2	U+01E7 U+01E7 U+0024	"z’z’aǧǧ,žžaǧǧ"	Tarifiyt Berber
+^fs’	f sˤ	1	U+005E U+0066 U+0073 U+2019	"fs’əř"	
+^ns’	n sˤ	2	U+005E U+006E U+0073 U+2019	"ns’əđ’,ns’əř"	
+^xs’	x sˤ	1	U+005E U+0078 U+0073 U+2019	"xs’ā"	
+^ās’	aː sˤ	1	U+005E U+0101 U+0073 U+2019	"ās’uđ’"	
+^ŧs’	θ sˤ	1	U+005E U+0167 U+0073 U+2019	"ŧs’appa"	
+p’p’	pˤː	1	U+0070 U+2019 U+0070 U+2019	"šap’p’u"	
+ās’$	aː sˤ	1	U+0101 U+0073 U+2019 U+0024	"t’t’ās’"	
+^t’t’	tˤː	19	U+005E U+0074 U+2019 U+0074 U+2019	"t’t’aƀəʕ,t’t’uƀis,t’t’āf_(i)"	

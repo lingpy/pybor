@@ -1,0 +1,99 @@
+==> alembic_version.csv <==
+version_num
+9fa42aa01d8d
+
+==> contributioncontributor.csv <==
+pk,jsondata,contribution_pk,contributor_pk,ord,primary,version
+1,,2,1,1,t,1
+
+==> contribution.csv <==
+pk,jsondata,id,name,description,markup_description,date,version
+1,"{""fd_age"": ""An attempt has been made to estimate the age of each word. In the case of words that are unlikely to have been borrowed, the level to which a word can be reconstructed provides a hypotheses for its estimated minimum age. Lexical reconstructions and dates for the three proto-languages follow Nurse and Hinnebusch 1993. No further claims are made about intermediate branches between proto-North-Eeat-Coast and proto-Bantu. Non-borrowed words for which we have no reconstructions are all assigned to the \u201cpre-modern\u201d Swahili period.\n\nearlier Bantu\t-3000 \u2013 1 CE\n\nproto-North-East-Coast\t1 \u2013 500\n\nproto-Sabaki\t500 \u2013 700\n\nproto-Swahili\t700 \u2013 800\n\npre-modern Swahili\t800 \u2013 1940\n\nThe database contains almost no probable loanwords for the reconstructed stages, but loans form a large group of lexical innovations at later stages. The age of words and phrases for which we have no reconstructions and that are not identified as probable loans has been classified as \u201cno information\u201d.\n\nThe remaining age categories are:\n\n1500 \u2013 1700\tloans from Portuguese\n\n1800 \u2013 1940\tmainly loans from English\n\n1940 \u2013 2000\tmainly loans from English\n\nThe year 1940 is a convenient cut-off date since two leading Swahili dictionaries were published in 1939 (Sacleux and Johnson)."", ""fd_borrowed"": ""In the great majority of cases, the identification of loanwords and donor languages follows the existing literature on the subject. However, the credibility of proposed etymologies varies a lot, and this is reflected in the scalar values in the field \u201cBorrowed status\"". The assignment of these values is admittedly subjective, but I have tried to be bold and minimize the intermediate values 2 and 3.\n\n0.\tNo evidence for borrowing:\nNo serious borrowing etymology is known to have been proposed.\n\n1.\tVery little evidence for borrowing:\nA proposed etymology is judged to lack credibility.\n\n2.\tPerhaps borrowed:\nThe item may or may not be a loan; the particular proposed etymology is rather doubtful.\n\n3.\tProbably borrowed:\nThe item is very likely a loan, but the proposed etymology is not fully convincing.\n\n4.\tClearly borrowed:\nThere is strong evidence that the item is a loan, generally including a good foreign etymology.\n\nI could have boosted the number of category 2 and 3 items by applying a strict \u201cregular phonology\u201d strategy, by which every item that does not in all details adhere to assumed historical sound changes and thus cannot in a fully regular way be derived  from Proto-Bantu is considered to be a loan. I have not chosen this (admittedly interesting) path for several reasons. One is that most of the existing literature on the loan component of Swahili lexis is exclusively concerned with non-Bantu donor languages. Secondly, I am not certain that all sound changes have been applied to all lexical items in a regular fashion (e.g., *l-deletion). Finally, Standard Swahili and its base Kiunguja is a rather complex blend straddling the major north-south divide of Swahili dialects \u2014 which makes it difficult to decide what is \u201cnative\u201d and what is not."", ""fd_hungarian_translation"": null, ""fd_reference"": ""All Swahili data comes from published sources, though in some cases speakers have been consulted to clarify finer points of semantics and actual usage. Bibliographical references to Swahili dictionaries (in the references field and in the Other Comments field) refer mainly to hypotheses about the etymology of particular words.\n\nBeaujard, Philippe. 1998. Dictionnaire malgache (dialectal)-fran\u00e7ais : dialecte ta\u00f1ala, sud-est de Madagascar, avec recherches \u00e9tymologiques. Paris: L\u2019Harmattan.\n\nBesha, Ruth M. 1993. A classified vocabulary of the Shambala language with outline grammar. (Bantu Vocabulary Series, 10.) Tokyo: Institute for the Study of Languages and Cultures of Asia and Africa (ILCAA).\n\nBrauner, Siegmund. 1986. Zum Verh\u00e4ltnis von Kultur- und Sprachgeschichte: Chinesische Lehnw\u00f6rter im Swahili. Zeitschrift f\u00fcr Phonetik, Sprachwissenschaft und Kommunikationsforschung 89:595-601.\n\nDozy, Reinhart P. A. 1881. Suppl\u00e9ment aux dictionnaires arabes. Leiden: E. J. Brill.\n\nGrosset-Grange, Henri; texte \u00e9tabli par Alain Rouaud. 1993. Glossaire nautique arabe ancien et moderne de l\u2019Oc\u00e9an Indien. Paris: \u00c9ditions du C.T.H.S.\n\nH\u00f6ftmann, Hildegard, and Irmtraud Herms. 1979. W\u00f6rterbuch Swahili-Deutsch. Leipzig: Verlag Enzyklop\u00e4die.\n\nH\u00f6ftmann, Hildegard. 1963. Suaheli-Deutsches W\u00f6rterbuch. Leipzig: Verlag Enzyklop\u00e4die.\n\nHoles, Clive. 2001. Dialect, culture, and society in Eastern Arabia. Vol. 1: Glossary. Leiden: Brill.\n\nJohnson, Frederick. 1939. A standard Swahili-English dictionary. Oxford University Press.\n\nKazimirski, A. de Biberstein. 1860. Dictionnaire arabe-fran\u00e7ais, contenant toutes les racines de la langue arabe, leurs d\u00e9riv\u00e9s, tant dans l\u2019idiome vulgaire que dans l\u2019idiome litt\u00e9ral, ainsi que les dialectes d\u2019Alger et de Maroc. 2 vols. Paris: Maisonneuve.\n\nKirkeby, Willy A. 2000. English-Swahili dictionary. Skedsmokorset: Kirkeby Forlag; Dar es Salaam: Kakapela (2001).\n\nKisbey, Wa. A. 1906. Zigula-English dictionary. London: Society for Promoting Christian Knowledge.\n\nKnappert, Jan. 1970. Contribution from the study of loanwords to the cultural history of Africa. In Language and history in Africa, ed. by D. Dalby, pp. 78-88. London: Frank Cass.\n\nKnappert, Jan. 1972/73. The study of loan words in African languages. Afrika und \u00dcbersee 56: 283-308.\n\nKnappert, Jan. 1983. Persian and Turkish loanwords in Swahili. Sprache und Geschichte in Africa 5:111-143.\nKrumm, Bernhard. 1940. Words of oriental origin in Swahili. London: Sheldon Press.\n\nLane, Edward William. 1863-1893. An Arabic-English lexicon. 8 vols. London: Williams & Norgate.\nLangHeinrich, F. 1921. Schambala-W\u00f6rterbuch. Hamburg: L. Friederichsen.\n\nLodhi, Abdulaziz Y. 2000. Oriental influences in Swahili: a study in language and culture contact. G\u00f6teborg: Acta Universatits Gothoburgensis.\n\nMaganga, Clement, and Thilo C. Schadeberg. 1992. Kinyamwezi: grammar, texts, vocabulary. Cologne: R\u00fcdiger K\u00f6ppe Verlag.\n\nNurse, Derek, and Thomas J. Hinnebusch. 1993. Swahili and Sabaki: a linguistic history. Berkeley & Los Angeles: University of California Press.\n\nPlatts, John T. 1884; reprint 1977. A dictionary of Urdu, classical Hindi and English. New Delhi: Oriental Books Reprint Corporation.\n\nSacleux, Ch. 1939. Dictionnaire swahili-fran\u00e7ais. (Travaux et M\u00e9moires de l\u2019Institut d\u2019Ethnologie, 36/37.) Paris: Mus\u00e9e de l\u2019Homme.\n\nSteingass, Franz. 1892. A comprehensive Persian-English dictionary including the Arabic words and phrases to be met with in Persian literature, being Johnson and Richardson's Persian, Arabic and English Dictionary revised, enlarged, and entirely reconstructed. London.\n\nTUKI. 1981. Kamusi ya Kiswahili Sanifu. Dar es Salaam & Nairobi: Oxford University Press.\n\nTUKI.1996. English-Swahili dictionary / Kamusi ya Kiingereza-Kiswahili. Institute of Kiswahili Research, University of Dar es Salaam.\n\nTUKI. 2001. Kamusi ya Kiswahili-Kiingereza / Swahili-English dictionary. Taasisi ya Uchunguzi wa Kiswahili, Chuo Kikuu cha Dar es Salaam.\n\nVelten, Carl. 1910. Suaheli-W\u00f6rterbuch. 1. Teil: Suaheli-Deutsch. Berlin: im Selbstverlag.\n\nVelten, Carl. 1933. Suaheli-W\u00f6rterbuch. 2. Teil: Deutsch- Suaheli. Leipzig: Magliaso for Otto Harrassowitz.\n\nWagenaar, H. W. (comp.), S. S. Parikh (ed.), D. F. Plukker (indologist), and R. F. Veldhuyzen van Zanten (engineer). 1993. Allied Chambers transliterated Hindi-Hindi-English dictionary. New Delhi: Allied Chambers (India).\n\nWilkinson, R. J. 1901-1902. A Malay-English dictionary. 2 parts. Singapore: Kelly and Walsh.\n\nWilkinson, R. J. 1932. A Malay-English dictionary (romanised). 2 vols. Mytilene: Salavopoulos and Kinderlis.\n\nWorms, A. 1898. W\u00f6rterverzeichniss der Sprache von Uzaramo. Zeitschrift f\u00fcr afrikanische und ozeanische Sprachen 4:339-365."", ""abbreviations"": ""The vocabulary provides information about the grammatical status of each Swahili item (field \""Grammatical information\""). Numbers refer to the Swahili (Bantu) noun classes, a slash separates singular/plural classes. \u201cGen\u201d refers to the nominal possessive (also known as \u201cassociative\u201d) construction.\n\nThe following non-standard abbreviations are used:\n\na\tadjective\nAdvP\tadverbial phrase\nconj\tconjunction\nGenP\tgenitival phrase\ninterrog\tinterrogative\ninv\tinvariable (a subcategory of adjectives)\nn\tnoun\nNP\tnoun phrase\nNPx\tnominal prefix\nnum\tnumeral (a subcategory of adjectives and nouns)\nNumP\tnumeral phrase\nPPx\tpronominal prefix\nprep\tpreposition\npro\tpersonal pronoun\nS\tsentence\nTAM\ttime-aspect-mood\nv\tverb\nVP\tverb phrase""}",1,Swahili,,,,1
+
+==> contributor.csv <==
+pk,jsondata,id,name,description,markup_description,url,email,address,version
+1,,mousmaarten,Maarten Mous,,,http://www.hum.leiden.edu/lucl/organisation/mousmpgm.jsp,m.mous@hum.leidenuniv.nl,"Department of African Languages and Cultures
+
+==> counterpart.csv <==
+pk,word_pk
+1,271
+
+==> dataset.csv <==
+pk,jsondata,id,name,description,markup_description,published,publisher_name,publisher_place,publisher_url,license,domain,contact,version
+1,"{""license_name"": ""Creative Commons Attribution 3.0 Germany License"", ""license_icon"": ""cc-by.png""}",wold,WOLD,World Loanword Database,,2009-08-15,Max Planck Institute for Evolutionary Anthropology,Leipzig,http://www.eva.mpg.de,http://creativecommons.org/licenses/by/3.0/de/,wold.clld.org,wold@shh.mpg.de,1
+
+==> editor.csv <==
+pk,jsondata,dataset_pk,contributor_pk,ord,primary,version
+1,,1,54,1,t,1
+
+==> identifier.csv <==
+pk,jsondata,name,description,markup_description,id,type,lang,version
+1,,irq,,,wals-irq,wals,en,1
+
+==> language.csv <==
+pk,jsondata,id,name,description,markup_description,latitude,longitude,version
+1,,1,Swahili,,,-6.5,39,1
+
+==> languageidentifier.csv <==
+pk,jsondata,language_pk,identifier_pk,description,version
+1,,2,1,,1
+
+==> loan.csv <==
+pk,jsondata,relation,certain,target_word_pk,source_word_pk
+1,,immediate,t,26780,57927
+
+==> meaning.csv <==
+borrowed_score,age_score,simplicity_score,pk,semantic_field_pk,representation,semantic_category,ids_code,sub_code,typical_context,core_list
+0.307926829268293,0.84390243902439,0.908536585365854,458,5,45,Noun,5.84,84,,t
+
+==> parameter.csv <==
+pk,jsondata,id,name,description,markup_description,version
+812,,11-51,rich,,,1
+
+==> semanticfield.csv <==
+pk,jsondata,id,name,description,markup_description,borrowed_score,age_score,simplicity_score
+8,,8,Agriculture and vegetation,,,0.445267751489177,0.797882321847929,0.90923130709408
+
+==> translation.csv <==
+pk,jsondata,meaning_pk,name,lang
+1,,1,monde,french
+
+==> unit.csv <==
+pk,jsondata,id,name,description,markup_description,language_pk,version
+1,"{""age_label"": ""No information"", ""gloss"": ""a\u02d0\u010d'at'u-t\u02d0u-t [be.empty-PART-IVSG]""}",7311315647871366,aːč'at'utːut,,,16,1
+
+==> unitdomainelement.csv <==
+pk,jsondata,id,name,description,markup_description,unitparameter_pk,ord,version
+293,,cs-9129144172957810,Early contact with Chinese [25],,,1,,1
+
+==> unitparameter.csv <==
+pk,jsondata,id,name,description,markup_description,version
+1,,cs,Contact Situation,,,1
+
+==> unitvalue.csv <==
+pk,jsondata,id,name,description,markup_description,unit_pk,unitparameter_pk,contribution_pk,unitdomainelement_pk,frequency,version
+1,,7311315647871366-a,,,,1,2,16,1453,,1
+
+==> value.csv <==
+jsondata,id,name,description,markup_description,pk,valueset_pk,domainelement_pk,frequency,confidence,version
+,84,mekɬe lo, (),,85,36356,,,,1
+
+==> valueset.csv <==
+pk,jsondata,id,description,markup_description,language_pk,parameter_pk,contribution_pk,source,version
+1,,1-1-1,,,1,1,1,,1
+
+==> vocabulary.csv <==
+pk,count_words,borrowed_score,count_core_list_counterparts,color
+1,1625,0.296769230769231,1815,fff0f5
+
+==> woldlanguage.csv <==
+pk,vocabulary_pk,fm_dl_id,wals_equivalent,affiliation,family,genus,countries
+42,,873046383578860,http://wals.info/languoid/genus/bantoid,Niger-Congo,http://wals.info/languoid/family/nigercongo,,
+
+==> woldunitdomainelement.csv <==
+pk,vocabulary_pk
+1,16
+
+==> word.csv <==
+borrowed_score,age_score,simplicity_score,pk,borrowed,analyzability
+0,,0.5,1,5. no evidence for borrowing,analyzable derived

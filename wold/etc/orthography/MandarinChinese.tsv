@@ -1,0 +1,113 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	3	U+005E		
+$	NULL	36	U+0024		
+(	NULL	22	U+0028	"(zai4_...)_pang2bian1,huo2(de),xi2fu4(r)"	
+)	NULL	22	U+0029	"guo3ren2(r),huo2(de),xiao3hai2(r)"	
+.	NULL	27	U+002E	"(zai4_...)_pang2bian1,(zai_...)_zhi1hou4,zai4_..._zhi1qian2"	Mandarin Chinese
+1	NULL	476	U+0031	"chi1fan4,geng1zhong4,jia1tu4"	Mandarin Chinese
+2	NULL	399	U+0032	"ping2zi,wei2gan1,zu2zhang3"	Mandarin Chinese
+3	NULL	378	U+0033	"chao3jia4,tang3_(xia4),wei3zheng4"	Mandarin Chinese
+4	NULL	424	U+0034	"fei4zang4,kan4lai2,xuan1pan4_X_you3zui4"	Mandarin Chinese
+X	NULL	6	U+0058	"gei3_X_kan4,xuan1pan4_X_you3zui4,zai4_X_xia4mian"	Mandarin Chinese
+*$	NULL	1	U+002A U+0024	"xia4_yi1_ge*"	Mandarin Chinese
+1$	NULL	410	U+0031 U+0024	"chen4shan1,nao3jin1,yu2gou1"	Mandarin Chinese
+2$	NULL	434	U+0032 U+0024	"dian3ran2,jiao1shi2,yin1mou2"	Mandarin Chinese
+3$	NULL	395	U+0033 U+0024	"lu2gu3,xuan3,yuan2pu3"	Mandarin Chinese
+4$	NULL	603	U+0034 U+0024	"ni2ning4,sha1diao4,shen2xiang4"	Mandarin Chinese
+5$	NULL	1	U+0035 U+0024	"shi2wu5"	Mandarin Chinese
+^X	NULL	1	U+005E U+0058	"X..._zhihou4"	Mandarin Chinese
+-CL	NULL	3	U+002D U+0043 U+004C	"ji3-CL,na3-CL"	
+1/3	NULL	1	U+0031 U+002F U+0033	"tu1/3"	
+2/4	NULL	1	U+0032 U+002F U+0034	"xuan2/4_wo1"	
+4/1	NULL	1	U+0034 U+002F U+0031	"zuan4/1"	
+4/3	NULL	1	U+0034 U+002F U+0033	"zhang4/3"	
+VCL	NULL	1	U+0056 U+0043 U+004C	"liang2ci4_or_liang2_VCL"	
+-	+	7	U+002D	"di4-er4,nan2-(de),nü3-(de)"	Mandarin Chinese
+_	_	55	U+005F	"bi3_X_duo1,bo3_(de),zai4_..._qian2mian"	Mandarin Chinese
+a	a	619	U+0061	"da3gu3,ran3liao4,zhang4/3"	Mandarin Chinese
+b	p	76	U+0062	"gang1bi3,li3bai4si4,mian4bao1"	Mandarin Chinese
+c	tsʰ	21	U+0063	"shu1cai4,shui3cao2,yun2cai"	Mandarin Chinese
+d	t	95	U+0064	"bi3jiao4_duo1,ji3dian3,xiong1di4jie3mei4"	Mandarin Chinese
+e	ɤ	248	U+0065	"ke4,ren4wei2,zhe4r"	Mandarin Chinese
+f	f	64	U+0066	"guan1fu1,mo2fang3,zhi1fang2"	Mandarin Chinese
+g	k	247	U+0067	"gong1gong4_qi4che1,xiang4shang4,zheng4qian2"	Mandarin Chinese
+h	x	63	U+0068	"da3hu1lu,mo2hu,yuan2hou2"	Mandarin Chinese
+i	j	1079	U+0069	"er4shi2,xi2guan4,zhui1zi"	Mandarin Chinese
+j	tɕ	93	U+006A	"bian1jie4,jiu4jiu,nao3jin1"	Mandarin Chinese
+k	kʰ	36	U+006B	"heng2kou3fu3,tou2kui1,zhi3kong4"	Mandarin Chinese
+l	l	98	U+006C	"hou2long2,nu2li4,sheng4li4"	Mandarin Chinese
+m	m	100	U+006D	"nong2min2,xiao3mai4,yu3mao2"	Mandarin Chinese
+n	n	392	U+006E	"chui1niu2,jie2hun1,wan3"	Mandarin Chinese
+o	o	299	U+006F	"luo3ti3,luo4tuo,shou3zhuo2"	Mandarin Chinese
+p	pʰ	43	U+0070	"qu4pi2,wu1po2,xiao1pi2"	Mandarin Chinese
+q	tɕʰ	71	U+0071	"tian1qi4,xing1qi1,xing1qi1si4"	Mandarin Chinese
+r	ɻ	36	U+0072	"di2ren2,gui4ren2,lao3ren2"	Mandarin Chinese
+s	s	36	U+0073	"po4sui4,wai4sun1nü3,yao4sai4"	Mandarin Chinese
+t	tʰ	83	U+0074	"long2tou2,peng1tiao2,tu3tuo4mo"	Mandarin Chinese
+u	u	962	U+0075	"lu2ci2,wai4sun1nü3,zu3gou4"	Mandarin Chinese
+w	w	42	U+0077	"mao2cao3_wu1ding3,yin1wei4,zhi1zhu1wang3"	Mandarin Chinese
+x	ɕ	69	U+0078	"sheng4xia,yun3xu3,zai4_X_xia4mian"	Mandarin Chinese
+y	y/ɥ	71	U+0079	"hun1yin1,shi2you2,xing1qi1yi1"	Mandarin Chinese
+z	ts	145	U+007A	"guo1(zi),shua1zi,zhao3ze2"	Mandarin Chinese
+ü	y/ɥ	26	U+00FC	"nü3er,sun1nü3,zhi2nü3"	Mandarin Chinese
+^Y	Y/ɥ	1	U+005E U+0059	"Ying1wu3"	Mandarin Chinese
+^a	a	5	U+005E U+0061	"a1yi2,an1chun2,an1jing4"	Mandarin Chinese
+^b	p	98	U+005E U+0062	"bao4zi,bei4gao4,bi2ti4"	Mandarin Chinese
+^c	tsʰ	36	U+005E U+0063	"can1,ci2qin2,cun1zi"	Mandarin Chinese
+^d	t	129	U+005E U+0064	"da4,di1chao2,dong4mai4"	Mandarin Chinese
+^e	ɤ	6	U+005E U+0065	"e2,e4,e4yu2"	Mandarin Chinese
+^f	f	70	U+005E U+0066	"fa1dong4ji,feng1,feng1la4"	Mandarin Chinese
+^g	k	121	U+005E U+0067	"gan3lan3,gong1zuo4,gu1niang"	Mandarin Chinese
+^h	x	102	U+005E U+0068	"hei1,hong1,hu1xi1"	Mandarin Chinese
+^j	tɕ	169	U+005E U+006A	"jiao3gen1,jin4zhi3,jing4mai4"	Mandarin Chinese
+^k	kʰ	44	U+005E U+006B	"ke2sou,kuang1zi,kuang2feng1"	Mandarin Chinese
+^l	l	97	U+005E U+006C	"li2ba1,liang3,liu2zhe"	Mandarin Chinese
+^m	m	94	U+005E U+006D	"mao1tou2ying1,mian2yang2,mu3niu2"	Mandarin Chinese
+^n	n	69	U+005E U+006E	"na4li3,nian3chui2,nü3huang2"	Mandarin Chinese
+^o	o	1	U+005E U+006F	"ou3tu4"	Mandarin Chinese
+^p	pʰ	56	U+005E U+0070	"pao3,peng4,po4xiao3"	Mandarin Chinese
+^q	tɕʰ	63	U+005E U+0071	"qi1pian4,qing1wa1,qiu2guo3"	Mandarin Chinese
+^r	ɻ	27	U+005E U+0072	"ran3,ren2min2,ren2ti3"	Mandarin Chinese
+^s	s	43	U+005E U+0073	"sen1lin2,si3wang2,suo3"	Mandarin Chinese
+^t	tʰ	94	U+005E U+0074	"tao2gong1,tian1qi4,tou2pi2xie4"	Mandarin Chinese
+^w	w	64	U+005E U+0077	"wei3zheng4,wen2dao4,wen2zi"	Mandarin Chinese
+^x	ɕ	139	U+005E U+0078	"xian1,xuan1bu4,xuan1shi4"	Mandarin Chinese
+^y	j	91	U+005E U+0079	"ye3niu2,yin1jing4,ying3zi"	Mandarin Chinese
+^z	ts	64	U+005E U+007A	"zang1,zi4xing2che1,zu3gou4"	Mandarin Chinese
+a$	a	10	U+0061 U+0024	"la3ba,sheng4xia,wei3ba"	Mandarin Chinese
+ai	ɛi	165	U+0061 U+0069	"kan4lai2,na2lai2,sai1"	
+ao	au	317	U+0061 U+006F	"pao3,pao4,xiao3bao3bao"	
+ch	ʈʂʰ	56	U+0063 U+0068	"la4chang2,shou1cheng2,wan2cheng2"	Mandarin Chinese
+e$	ɤ	16	U+0065 U+0024	"si3de,zhe4ge,zhu3de"	Mandarin Chinese
+en	ə n	196	U+0065 U+006E	"pen1,seng1,shen1"	
+er	ə˞	8	U+0065 U+0072	"di4-er4,diao4er3,shi2er2"	
+g$	k	6	U+0067 U+0024	"gu1niang,mu4jiang,piao1liang"	Mandarin Chinese
+i$	i	123	U+0069 U+0024	"hai2shi,pian2yi,xie1zi"	Mandarin Chinese
+n$	n	3	U+006E U+0024	"fu4qin,mu3qin,zha4lan"	Mandarin Chinese
+ng	ŋ	286	U+006E U+0067	"ding1zi,gong1chang3,la1chang2"	
+o$	o	9	U+006F U+0024	"er3duo,luo4tuo,tu3tuo4mo"	Mandarin Chinese
+r$	ɻ	9	U+0072 U+0024	"da3ge2r,dou1r,zai4na3r"	Mandarin Chinese
+sh	ʂ	119	U+0073 U+0068	"mu4shu3,rong2shu4,xiang4shang4"	Mandarin Chinese
+u$	u	39	U+0075 U+0024	"hu2lu,lang2tou,li3tou"	Mandarin Chinese
+yu	y/ɥ	18	U+0079 U+0075	"er3yu3,jian1yu4,shou4yun4"	
+zh	ʈʂ	84	U+007A U+0068	"huo4zhe3,shou3zhuo2,xia4zhong3"	Mandarin Chinese
+^ai	ɛi	4	U+005E U+0061 U+0069	"ai3,ai4,ai4ren2"	
+^ch	ʈʂʰ	81	U+005E U+0063 U+0068	"cha2,chen2,cheng2ren4"	Mandarin Chinese
+^er	ə˞	12	U+005E U+0065 U+0072	"er2xi2fu(r),er3duo,er3huan2"	
+^sh	ʂ	162	U+005E U+0073 U+0068	"shang1ren2,shang4di4,shou3wan2zi"	Mandarin Chinese
+^yu	y/ɥ	23	U+005E U+0079 U+0075	"yu2long3,yu3mao2,yue4liang"	
+^zh	ʈʂ	122	U+005E U+007A U+0068	"zhan1,zhang4dan1,zhi1dao"	Mandarin Chinese
+ai$	ɛi	5	U+0061 U+0069 U+0024	"fan4cai,nai3nai,yun2cai"	
+en$	ə n	7	U+0065 U+006E U+0024	"ni3men,ta1men,wo3men"	
+er$	ə˞	1	U+0065 U+0072 U+0024	"nü3er"	
+ian	i ɛ n	218	U+0069 U+0061 U+006E	"qian1,qiang2bi4,tou2xiang2"	
+ng$	ŋ	6	U+006E U+0067 U+0024	"cang1ying,cong1ming,da1ying"	
+ong	ʊ ŋ	139	U+006F U+006E U+0067	"dong1mian4,nong2cun1,yan1cong1"	
+yan	ɥ ɛ n	23	U+0079 U+0061 U+006E	"biao3yang2,gong1yang2,huo3yan4"	
+^yan	ɥ ɛ n	27	U+005E U+0079 U+0061 U+006E	"yan2se4,yan3jiang3,yang2mao2"	
+ang$	ə ŋ	3	U+0061 U+006E U+0067 U+0024	"bing1lang,du1nang,he2shang"	
+eng$	ə ŋ	4	U+0065 U+006E U+0067 U+0024	"wai4sheng,xue2sheng,zhang4peng"	
+ian$	i ɛ n	8	U+0069 U+0061 U+006E U+0024	"hou4mian,jia4qian,zai4_X_xia4mian"	
+ong$	ʊ ŋ	1	U+006F U+006E U+0067 U+0024	"gong1gong"	
+yuan	y/ɥ ɛ n	8	U+0079 U+0075 U+0061 U+006E	"fa3yuan4,ping2yuan2,quan2yuan2"	
+^yuan	y/ɥ ɛ n	12	U+005E U+0079 U+0075 U+0061 U+006E	"yuan2hou2,yuan2liang4,yuan2zhou1"	

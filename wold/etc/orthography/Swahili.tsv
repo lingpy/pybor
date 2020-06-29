@@ -1,0 +1,125 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	518	U+005E		
+$	NULL	37	U+0024		
+(	NULL	39	U+0028	"(kidole)_gumba,bahati_(njema),chungu__(nzima)"	
+)	NULL	38	U+0029	"bupuru_(la_kichwa),gari_(la)_moshi,kororo_(la_shingo)"	
+…$	NULL	2	U+2026 U+0024	"-kaa_na_…,-wa_na_…"	Swahili
+-	+	519	U+002D	"-dai,-fikiri,-subu"	Swahili
+_	_	238	U+005F	"-endesha_kwa_tanga,kidole_(cha_mkono),uga_(wa_kupuria_nafaka)"	Swahili
+a	a	1092	U+0061	"fuawe,kiazi_kitamu,siagi"	Swahili
+b	ɓ	108	U+0062	"-kaba,-tabasamu,bata_bukini"	Swahili
+d	ɗ	66	U+0064	"-dumu,dada,kodi"	Swahili
+e	e	335	U+0065	"ndege,pete,sherisi"	Swahili
+f	f	120	U+0066	"kipofu,mafua,mfalme"	Swahili
+g	ɠ	113	U+0067	"-saga,njugu_mawe,uti_(wa_mgongo)"	Swahili
+h	h	69	U+0068	"-furahi,-tuhumu,sahihi"	Swahili
+i	i	723	U+0069	"(kidole)_gumba,kisiki,mbiu"	Swahili
+j	dʒ	93	U+006A	"Ijumaa,kijiko,shujaa"	Swahili
+k	k	357	U+006B	"leseni_ya_kuendesha_gari,mwanakondoo,shaka"	Swahili
+l	l	235	U+006C	"-laani,mbetula,polisi"	Swahili
+m	m	274	U+006D	"-fahamu,huruma,yatima"	Swahili
+n	n	241	U+006E	"chakula_cha_mchana,ndani,zeituni"	Swahili
+o	o	320	U+006F	"-ondoka,jongoo,mjomba"	Swahili
+p	p	144	U+0070	"-piga_makasia,-pindua,popoo"	Swahili
+r	r	231	U+0072	"alasiri,chura,harufu_nzuri"	Swahili
+s	s	163	U+0073	"kaskazini,masalio,mkasi"	Swahili
+t	t	259	U+0074	"-tawala,-tuhumu,cheti"	Swahili
+u	u	544	U+0075	"-chutama,kipuli,mvuvi"	Swahili
+v	v	55	U+0076	"glavu,mshona_viatu,ugwe_wa_kuvulia"	Swahili
+w	w	105	U+0077	"-waza,dawa_ya_kupaka,kiwete"	Swahili
+y	j	55	U+0079	"-piga_moyo_konde,leseni_ya_kuendesha_gari,unyoya"	Swahili
+z	z	129	U+007A	"-cheza,maharazi,mzazi"	Swahili
+^A	A/a	1	U+005E U+0041	"Alhamisi"	Swahili
+^B	B/ɓ	1	U+005E U+0042	"Buki"	Swahili
+^H	H/h	1	U+005E U+0048	"Hindi"	Swahili
+^I	I/i	1	U+005E U+0049	"Ijumaa"	Swahili
+^J	J/dʒ	5	U+005E U+004A	"Jumanne,Jumapili,Jumatano"	Swahili
+^M	M/m	2	U+005E U+004D	"Manga,Mola"	Swahili
+^a	a	22	U+005E U+0061	"alasiri,askari,asubuhi"	Swahili
+^b	ɓ	72	U+005E U+0062	"baragumu,bei,bila"	Swahili
+^d	ɗ	25	U+005E U+0064	"dada,divai,duara"	Swahili
+^e	e	3	U+005E U+0065	"ekseli,elfu,eropleni"	Swahili
+^f	f	16	U+005E U+0066	"farasi,fedha,filimbi"	Swahili
+^g	ɠ	19	U+005E U+0067	"gauni,gereza,gome"	Swahili
+^h	h	33	U+005E U+0068	"hariri,hekalu,hereni"	Swahili
+^i	i	4	U+005E U+0069	"ikiwa,injini,ishirini"	Swahili
+^j	dʒ	46	U+005E U+006A	"jasho,jicho,jike"	Swahili
+^k	k	207	U+005E U+006B	"kinywa,kitovu,kiu"	Swahili
+^l	l	13	U+005E U+006C	"ladha,laini,limau"	Swahili
+^m	m	243	U+005E U+006D	"mama,miayo,motoni"	Swahili
+^n	n	19	U+005E U+006E	"nani,nazi,neno"	Swahili
+^o	o	1	U+005E U+006F	"oveni"	Swahili
+^p	p	47	U+005E U+0070	"pesa,posta,povu"	Swahili
+^r	r	16	U+005E U+0072	"raia,rangi,reki"	Swahili
+^s	s	71	U+005E U+0073	"saa,sauti_kubwa,skii"	Swahili
+^t	t	45	U+005E U+0074	"tayari,tiba,tundu_la_pua"	Swahili
+^u	u	88	U+005E U+0075	"upande,uti_(wa_mgongo),utupa"	Swahili
+^v	v	4	U+005E U+0076	"vipi,viwele,vumbi"	Swahili
+^w	w	23	U+005E U+0077	"wangwa,waziri,wazo"	Swahili
+^y	j	10	U+005E U+0079	"yangeyange,yatima,yeye"	Swahili
+^z	z	10	U+005E U+007A	"zaidi,zana,zinaa"	Swahili
+a$	a	734	U+0061 U+0024	"-komboa,-koroga,kiganja"	Swahili
+aa	aː	10	U+0061 U+0061	"-kaanga,baada,maji_(ya)_kujaa_na_kupwa"	Swahili
+bw	ɓ w	8	U+0062 U+0077	"-kubwa,mkubwa,sauti_kubwa"	Swahili
+ch	tʃ	103	U+0063 U+0068	"jicho,mchi,taya_(la_chini)"	Swahili
+dh	ð	13	U+0064 U+0068	"adhuhuri,ladha,tetemeko_(la_ardhi)"	Swahili
+dw	ɗ w	1	U+0064 U+0077	"bodwe"	Swahili
+e$	e	124	U+0065 U+0024	"mfalme,ndege,ngome"	Swahili
+gh	ɣ	3	U+0067 U+0068	"baghala,lugha,magharibi"	Swahili
+gw	ɠ w	2	U+0067 U+0077	"haragwe,ugwe_wa_kuvulia"	Swahili
+i$	i	466	U+0069 U+0024	"-fichua_siri,anwani,betri"	Swahili
+ii	iː	1	U+0069 U+0069	"kiini_cha_yai"	Swahili
+ks	k s	2	U+006B U+0073	"ekseli,soksi"	Swahili
+kw	k w	21	U+006B U+0077	"(kwa)_sababu,-kwea,-rukwa_na_akili"	Swahili
+lh	l h	1	U+006C U+0068	"Alhamisi"	Swahili
+mb	ⁿb	113	U+006D U+0062	"-fumbata,-tambaa,namba"	
+mv	ⁿv	7	U+006D U+0076	"matamvua_(ya_samaki),upinde_(wa_mvua),utomvu"	
+mw	m w	7	U+006D U+0077	"mtumwa,nguruwe_(mwitu),zimwi"	Swahili
+nd	ⁿd	85	U+006E U+0064	"-linda,mnandi,panda"	
+ng	ⁿg	148	U+006E U+0067	"-tunga_mimba,bangili,mlingoti"	
+nj	ⁿdʒ	15	U+006E U+006A	"-kunjakunja,-vunjika,chanjo"	
+nn	n n	1	U+006E U+006E	"Jumanne"	Swahili
+ns	n s	1	U+006E U+0073	"dansi"	Swahili
+nw	n w	1	U+006E U+0077	"anwani"	Swahili
+ny	ɲ	55	U+006E U+0079	"-fanya,-nyamaa,mnyororo"	
+nz	ⁿz	19	U+006E U+007A	"kanzu,kwanza,mwanzi"	
+o$	o	194	U+006F U+0024	"siyo,tezo,ufuko"	Swahili
+oo	oː	1	U+006F U+006F	"-nyooka"	Swahili
+pw	p w	7	U+0070 U+0077	"-fika_pwani,maji_kupwa,mpwa"	Swahili
+s$	s	1	U+0073 U+0024	"rais"	Swahili
+sh	ʃ	62	U+0073 U+0068	"-viringisha,kushoto,ushanga"	Swahili
+th	θ	2	U+0074 U+0068	"-thubutu,kiatu_cha_theluji"	Swahili
+tw	t w	3	U+0074 U+0077	"-twaa,-twanga,kesho_kutwa"	Swahili
+u$	u	195	U+0075 U+0024	"-sahau,gamu,tumbaku"	Swahili
+uu	uː	2	U+0075 U+0075	"kidole_(cha_mguu),muungwana"	Swahili
+^bw	ɓ w	1	U+005E U+0062 U+0077	"bwana"	Swahili
+^ch	tʃ	47	U+005E U+0063 U+0068	"chakula_cha_usiku,chanuo,chubuko"	Swahili
+^dh	ð	8	U+005E U+0064 U+0068	"dhahabu,dhana,dhoruba"	Swahili
+^gh	ɣ	2	U+005E U+0067 U+0068	"ghali,ghuba"	Swahili
+^kw	k w	7	U+005E U+006B U+0077	"kwa_nini,kwapa,kwikiwi"	Swahili
+^mb	ⁿb	19	U+005E U+006D U+0062	"mba,mbegu,mboko"	
+^mh	m h	3	U+005E U+006D U+0068	"mhimili,mhimili_(wa_mlango),mhunzi_(wa_chuma)"	Swahili
+^mm	m m	1	U+005E U+006D U+006D	"mmea"	Swahili
+^ms	m s	12	U+005E U+006D U+0073	"msitu,msongo,msuko"	Swahili
+^mv	ⁿv	7	U+005E U+006D U+0076	"mvinyo,mvua,mvuvi"	
+^mw	m w	45	U+005E U+006D U+0077	"mwalimu,mwanga,mwasho"	Swahili
+^nd	ⁿd	22	U+005E U+006E U+0064	"ndani,ndege,ndewe"	
+^ng	ⁿg	18	U+005E U+006E U+0067	"ngome,nguruwe_(mwitu),nguvu"	
+^nj	ⁿdʒ	9	U+005E U+006E U+006A	"nje,njia,njiwa"	
+^ny	ɲ	19	U+005E U+006E U+0079	"nyasi,nyenga,nyinyi"	
+^nz	ⁿz	1	U+005E U+006E U+007A	"nzi"	
+^pw	p w	1	U+005E U+0070 U+0077	"pwani"	Swahili
+^sh	ʃ	27	U+005E U+0073 U+0068	"shavu_(la_samaki),shavu_la_mguu,shimo"	Swahili
+^th	θ	1	U+005E U+0074 U+0068	"theluji"	Swahili
+aa$	aː	37	U+0061 U+0061 U+0024	"-ng’aa,maji_kujaa,motokaa"	Swahili
+chw	tʃ w	3	U+0063 U+0068 U+0077	"bupuru_(la_kichwa),kichwa,mchwa"	Swahili
+ee$	eː	4	U+0065 U+0065 U+0024	"mzee,pekee"	Swahili
+ii$	iː	3	U+0069 U+0069 U+0024	"-jamii,-tii,skii"	Swahili
+ksh	k ʃ	1	U+006B U+0073 U+0068	"-nakshi"	Swahili
+msh	m ʃ	2	U+006D U+0073 U+0068	"-chuma_(mshahara,kiamshakinywa"	Swahili
+ng’	ŋ	4	U+006E U+0067 U+2019	"-ng’aa,-nong’ona,mung’unye"	Swahili
+oo$	oː	16	U+006F U+006F U+0024	"kondoo,mwanakondoo,popoo"	Swahili
+uu$	uː	17	U+0075 U+0075 U+0024	"juu,mguu,shavu_la_mguu"	Swahili
+^msh	m ʃ	10	U+005E U+006D U+0073 U+0068	"mshonaji,mshtaki,mshtakiwa"	Swahili
+^ng’	ŋ	3	U+005E U+006E U+0067 U+2019	"ng’amba,ng’ombe"	
+^shw	ʃ w	1	U+005E U+0073 U+0068 U+0077	"shwari"	Swahili

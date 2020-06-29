@@ -1,0 +1,143 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+$	NULL	1	U+0024		
+(	NULL	1	U+0028	"tuoχ_da_(suoχ)"	
+)	NULL	1	U+0029	"tuoχ_da_(suoχ)"	
+.	NULL	3	U+002E	"duː..._duː"	Sakha
+^e$	e	1	U+005E U+0065 U+0024	"e"	Sakha
+^uː$	uː	1	U+005E U+0075 U+02D0 U+0024	"uː"	Sakha
+^üs$	y s	1	U+005E U+00FC U+0073 U+0024	"üs"	Sakha
+-	+	2	U+002D	"kün-ʤɨl,üön-köyüːr"	Sakha
+_	_	126	U+005F	"bɨrastɨː_gɨn,en_bihikki,erien_üön"	Sakha
+a	a	571	U+0061	"taraːχ,χaltarɨy,χaːllar"	Sakha
+b	b	129	U+0062	"olbuor,sibiginey,ɨrbaːχɨ"	Sakha
+d	d	78	U+0064	"erde,keleɣeydeː,üöhe_doydu"	Sakha
+e	e	320	U+0065	"sep,sieme,siːdes"	Sakha
+f	f	2	U+0066	"kofe,neft"	Sakha
+g	g	99	U+0067	"erge_bar,sehergeː,uːga_tüs"	Sakha
+h	h	145	U+0068	"ahɨy,teheɣes,tünnük_ta:ha"	Sakha
+i	i	266	U+0069	"kiergel,kiỹiːt,silleː"	Sakha
+k	k	113	U+006B	"matka,sappɨkɨhɨt,taχsan_kiːrer_sir"	Sakha
+l	l	235	U+006C	"bihileχ,melʤes,olguy"	Sakha
+m	m	101	U+006D	"kempiet,kumalan,čalɨmnaː"	Sakha
+n	n	146	U+006E	"benidienɲik,doɣoloŋnoː,tökünüt"	Sakha
+o	o	310	U+006F	"buollar,počta,suoχ"	Sakha
+p	p	35	U+0070	"laːmpa,tölüpüön,χapkaːn"	Sakha
+r	r	393	U+0072	"allaraː,külgeri,mekčirge"	Sakha
+s	s	97	U+0073	"buruya_suoχ,kisteleŋ,ostuolba"	Sakha
+t	t	271	U+0074	"bastakɨ,kurtaχ,sɨmɨːt_araɣaha"	Sakha
+u	u	323	U+0075	"temperatura,tualet,turba"	Sakha
+v	v	4	U+0076	"avtobus,pravitelstva,rakovina"	Sakha
+y	y	96	U+0079	"araːʤɨya,maŋnaygɨ,χaydaχ"	Sakha
+z	z	5	U+007A	"korzina,kukuruza,prezident"	Sakha
+ö	ö/œ	124	U+00F6	"körsüs,sörüːketer,üs_tögül"	Sakha
+ü	ü/y	164	U+00FC	"bügün,süör,üčügey_sɨttaːχ"	Sakha
+č	tʃ	39	U+010D	"tɨhɨːnča,uruːčka,čoχčoy"	Sakha
+ŋ	ŋ	61	U+014B	"köŋül,töbö_uŋuoɣa,tɨŋa"	Sakha
+ɣ	ɣ	130	U+0263	"bɨhaɣɨnan_as,oɣonɲor,soto_bötöɣötö"	Sakha
+ɨ	ɨ	355	U+0268	"sɨtɨ_bil,tɨmtay,uottaːhɨn"	Sakha
+ɲ	ɲ	18	U+0272	"miːnɲik,sibinɲeːs,sɨnɲan"	Sakha
+ʤ	dʒ	26	U+02A4	"suʤuya,ɨalʤar,χoluoʤas"	Sakha
+γ	γ/ɣ	1	U+03B3	"χas_daγanï"	Sakha
+χ	χ	52	U+03C7	"bosχoloː,ulaχan,χaχtaː"	Sakha
+ỹ	ỹ	12	U+1EF9	"kuỹaχ,taỹax,χaỹɨː"	Sakha
+^a	a	85	U+005E U+0061	"araːr,arɣas,aỹaχ"	Sakha
+^b	b	172	U+005E U+0062	"bes,buol,bödöŋ"	Sakha
+^d	d	13	U+005E U+0064	"deriebine,doɣoloŋnoː,doɣor"	Sakha
+^e	e	58	U+005E U+0065	"ebeter,eder_kihi,erge"	Sakha
+^g	g	1	U+005E U+0067	"gɨn"	Sakha
+^h	h	1	U+005E U+0068	"horkuoydaː"	Sakha
+^i	i	51	U+005E U+0069	"is,itirik,ičiges"	Sakha
+^k	k	209	U+005E U+006B	"kuːs,küöl,küös"	Sakha
+^l	l	6	U+005E U+006C	"lapčaːn,luoska,luːk"	Sakha
+^m	m	71	U+005E U+006D	"maːs,meliy,melʤes"	Sakha
+^n	n	10	U+005E U+006E	"namɨhaχ,naskɨ,nediele"	Sakha
+^o	o	52	U+005E U+006F	"olguy,oyuːr,oŋočo"	Sakha
+^p	p	8	U+005E U+0070	"paːr,piːbe,port"	Sakha
+^r	r	1	U+005E U+0072	"rakovina"	Sakha
+^s	s	211	U+005E U+0073	"sanaː,sette,sɨlaːs"	Sakha
+^t	t	187	U+005E U+0074	"telley,tuhaχ,törüöt"	Sakha
+^u	u	64	U+005E U+0075	"uon_biːr,uturuktaː,uŋa"	Sakha
+^x	x	1	U+005E U+0078	"xoruoluk"	Sakha
+^ö	ö/œ	24	U+005E U+00F6	"ölük,örühüy,örüt"	Sakha
+^ü	y	38	U+005E U+00FC	"üön,üör,üŋ"	Sakha
+^č	tʃ	49	U+005E U+010D	"čaɣar,čer,čey"	Sakha
+^ɨ	ɨ	66	U+005E U+0268	"ɨnčɨktaː,ɨt,ɨtɨn"	Sakha
+^ɲ	ɲ	4	U+005E U+0272	"ɲirey,ɲuːl,ɲɨma"	Sakha
+^ʤ	dʒ	26	U+005E U+02A4	"ʤaːbɨ,ʤiŋneːχ,ʤɨl"	Sakha
+^χ	χ	123	U+005E U+03C7	"χaltaha,χonoho,χos"	Sakha
+a$	a	144	U+0061 U+0024	"sɨmɨːt_uoɣaha,čopuːska,χortuoska"	Sakha
+a:	aː	1	U+0061 U+003A	"tünnük_ta:ha"	Sakha
+aː	aː	167	U+0061 U+02D0	"bɨlaːččɨya,mɨraːn,χallaːn_küöχ"	Sakha
+d$	d	1	U+0064 U+0024	"belasiped"	Sakha
+e$	e	91	U+0065 U+0024	"tüːppüle,ötüye,ʤie"	Sakha
+eː	eː	28	U+0065 U+02D0	"birikeːsteː,irdeːčči,iːrseːn"	Sakha
+i$	i	33	U+0069 U+0024	"ikki,üːneːyi,čümeči"	Sakha
+iː	iː	45	U+0069 U+02D0	"emiːy,seriː_sebe,tiriːtin_sül"	Sakha
+k$	k	69	U+006B U+0024	"bostuːk,kömülüök,tünnük"	Sakha
+kk	kː	10	U+006B U+006B	"en_bihikki,ikki,ikkis"	Sakha
+ks	k s	3	U+006B U+0073	"balɨksɨt,kiksiː,ɨksaː"	Sakha
+l$	l	78	U+006C U+0024	"bɨːl,isteːχ_buol,ɨal"	Sakha
+ll	lː	24	U+006C U+006C	"biller,bɨha_aːllarbɨt,üller"	Sakha
+ls	l + s	1	U+006C U+0073	"pravitelstva"	Sakha
+m$	m	8	U+006D U+0024	"buom,em,ilim"	Sakha
+mm	mː	3	U+006D U+006D	"alʤammɨt,kumalammɨt,tammalaː"	Sakha
+ms	m s	6	U+006D U+0073	"kemsin,ɨmsɨː,χamsaː"	Sakha
+n$	n	162	U+006E U+0024	"iːn,min,üön"	Sakha
+nn	nː	31	U+006E U+006E	"kenniger,kergennen,onno"	Sakha
+ns	n + s	2	U+006E U+0073	"beːtinse,kensierbe_baːnkata"	Sakha
+o$	o	29	U+006F U+0024	"kürüo,oɣuruo,uol_oɣo"	Sakha
+oː	oː	9	U+006F U+02D0	"boːlʤoχ,moːy,toːroχoy"	Sakha
+p$	p	18	U+0070 U+0024	"söp,tep,χaːmp"	Sakha
+pp	pː	21	U+0070 U+0070	"iːppit_iỹe,laːppɨ,čeppier"	Sakha
+ps	p s	6	U+0070 U+0073	"kupsuːn,sapsɨn,sɨpsɨː"	Sakha
+r$	r	137	U+0072 U+0024	"büör,ɨtɨr,ʤaːkɨr"	Sakha
+rs	r s	8	U+0072 U+0073	"kuorsun,körsüː,sarsɨn"	Sakha
+s$	s	147	U+0073 U+0024	"araɣas,kɨaraɣas,χas"	Sakha
+ss	sː	7	U+0073 U+0073	"kuːrussa,miliːssiye,uːlussa"	Sakha
+t$	t	160	U+0074 U+0024	"aːt,busput,kütüöt"	Sakha
+tt	tː	25	U+0074 U+0074	"biːrge_töröːbütter,kɨtta,sɨttɨk"	Sakha
+u$	u	16	U+0075 U+0024	"sorgu,sɨmɨya_tuohu,χotu"	Sakha
+uː	uː	42	U+0075 U+02D0	"čuguːn,čuːmpu,χoruːda"	Sakha
+x$	x	1	U+0078 U+0024	"taỹax"	Sakha
+y$	y	98	U+0079 U+0024	"iteɣey,kulaːhay,taːy"	Sakha
+ï$	ï/ɯ	1	U+00EF U+0024	"χas_daγanï"	Sakha
+ö$	ö/œ	12	U+00F6 U+0024	"könö,töhö,ʤie_kötörö"	Sakha
+öh	ö/œ h	8	U+00F6 U+0068	"kölüöhe,töhö,ɨnaχ_süöhü"	Sakha
+ös	ö/œ s	4	U+00F6 U+0073	"köstörüːle,küösčüt,üösket"	Sakha
+öː	öː/œː	7	U+00F6 U+02D0	"biːrge_töröːbütter,söptöːχ,töröːbüt_doydu"	Sakha
+ü$	ü/y	4	U+00FC U+0024	"küögü,süöhü,ɨnaχ_süöhü"	Sakha
+üh	ü/y h	6	U+00FC U+0068	"kühün,sülühün,örühüy"	Sakha
+üs	ü/y s	1	U+00FC U+0073	"kömüskeː"	Sakha
+üː	üː/yː	15	U+00FC U+02D0	"tüːn,öyüːn,čüːččü"	Sakha
+čč	tʃː	19	U+010D U+010D	"ičči,čüːččü,χamnaččɨt"	Sakha
+ŋ$	ŋ	17	U+014B U+0024	"kieŋ,kisteleŋ,öŋ"	Sakha
+ŋs	ŋ s	2	U+014B U+0073	"iŋseleːχ,mieliŋse"	Sakha
+ɨ$	ɨ	32	U+0268 U+0024	"bahɨmɲɨ,kɨːmaːyɨ,sappɨkɨ"	Sakha
+ɨː	ɨː	57	U+0268 U+02D0	"bɨːl,kɨrɨːsa,čɨːčaːχ"	Sakha
+χ$	χ	126	U+03C7 U+0024	"bɨhɨːlaːχ,ohoχ,sɨŋaːχ"	Sakha
+χs	χ s	14	U+03C7 U+0073	"moχsoɣol,saχsɨy,χabɨllan_taχsɨbɨt"	Sakha
+χχ	χː	1	U+03C7 U+03C7	"χaχχan"	Sakha
+^-A	+ A/a	1	U+005E U+002D U+0041	"-A_sataː"	Sakha
+^aː	aː	12	U+005E U+0061 U+02D0	"aːl,aːn,aːχ"	Sakha
+^iː	iː	10	U+005E U+0069 U+02D0	"iːppit_iỹe,iːppit_kɨːs,iːrseːn"	Sakha
+^oː	oː	3	U+005E U+006F U+02D0	"oːnɲoː,oːɣuy,oːɣuy_sitime"	Sakha
+^uː	uː	10	U+005E U+0075 U+02D0	"uːga_tüs,uːlussa,uːs"	Sakha
+^öh	ö/œ h	1	U+005E U+00F6 U+0068	"öhüö"	Sakha
+^ös	ö/œ s	2	U+005E U+00F6 U+0073	"östöːχ,östüöküle"	Sakha
+^üh	ü/y h	1	U+005E U+00FC U+0068	"ühüs"	Sakha
+^üs	ü/y s	2	U+005E U+00FC U+0073	"üs_tögül,üste"	Sakha
+^üː	üː/yː	8	U+005E U+00FC U+02D0	"üːnüː,üːteːn,üːtteː"	Sakha
+^ɨː	ɨː	4	U+005E U+0268 U+02D0	"ɨːstaː,ɨːt"	Sakha
+aː$	aː	79	U+0061 U+02D0 U+0024	"aččɨktaː,tamnaː,tuhaχtaː"	Sakha
+eː$	eː	24	U+0065 U+02D0 U+0024	"ilibireː,kömüskeː,silleː"	Sakha
+iː$	iː	14	U+0069 U+02D0 U+0024	"biː,erdiː,itiː"	Sakha
+oː$	oː	7	U+006F U+02D0 U+0024	"bosχoloː,doɣoloŋnoː,oːnɲoː"	Sakha
+uː$	uː	11	U+0075 U+02D0 U+0024	"uruː,χonuː,χorutuː"	Sakha
+ös$	ö/œ s	3	U+00F6 U+0073 U+0024	"kömölös,küös,tüös"	Sakha
+öː$	öː/œː	7	U+00F6 U+02D0 U+0024	"kördöː,töröː,öydöː"	Sakha
+üs$	y s	12	U+00FC U+0073 U+0024	"tüs,uːga_tüs,ügüs"	Sakha
+üː$	üː/yː	12	U+00FC U+02D0 U+0024	"köɣörüː,ölörünüː,üːnüː"	Sakha
+üːh	yː h	2	U+00FC U+02D0 U+0068	"bülüːhe,küːhüleː"	Sakha
+üːs	üː/yː s	3	U+00FC U+02D0 U+0073	"külüːs_tɨla,külüːske,küːsteːχ"	Sakha
+ɨː$	ɨː	27	U+0268 U+02D0 U+0024	"sɨtɨː,ɨarɨː,ɨmsɨː"	Sakha
+üːs$	üː/yː s	4	U+00FC U+02D0 U+0073 U+0024	"külüːs,süːs"	Sakha

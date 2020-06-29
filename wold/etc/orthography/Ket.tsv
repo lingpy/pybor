@@ -1,0 +1,197 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	6	U+005E		
+$	NULL	11	U+0024		
+^a$	a	1	U+005E U+0061 U+0024	"a"	Ket
+^i$	i	1	U+005E U+0069 U+0024	"i"	Ket
+^ē$	ē/e	1	U+005E U+0113 U+0024	"ē"	Ket
+^eˀ$	eˀ	1	U+005E U+0065 U+02C0 U+0024	"eˀ"	Ket
+^ii$	iː	2	U+005E U+0069 U+0069 U+0024	"ii"	Ket
+^iˀ$	iˀ	3	U+005E U+0069 U+02C0 U+0024	"iˀ"	Ket
+^uu$	uː	2	U+005E U+0075 U+0075 U+0024	"uu"	Ket
+^às$	à/a s	1	U+005E U+00E0 U+0073 U+0024	"às"	Ket
+^ùs$	ù/u s	1	U+005E U+00F9 U+0073 U+0024	"ùs"	Ket
+^ās$	ā/a s	1	U+005E U+0101 U+0073 U+0024	"ās"	Ket
+^ēs$	ē/e s	4	U+005E U+0113 U+0073 U+0024	"ēs"	Ket
+^īs$	ī/i s	2	U+005E U+012B U+0073 U+0024	"īs"	Ket
+^əə$	əː	1	U+005E U+0259 U+0259 U+0024	"əə"	Ket
+^peršep$	p e r ʃ e p	2	U+005E U+0070 U+0065 U+0072 U+0161 U+0065 U+0070 U+0024	"peršep"	
+-	+	17	U+002D	"-qan,-sin,ben_-_t_-_a"	Ket
+.	_	3	U+002E	"tam...tam"	Ket
+_	_	101	U+005F	"kàl_deˀŋ,qusam_bənsaŋ_qō,ɯnamas_bisep"	Ket
+a	a	399	U+0061	"isaŋtij,qoŋsajdo,sulaŋ"	Ket
+b	b	111	U+0062	"eeboks,kitbet,əlbaŋ"	Ket
+d	d	58	U+0064	"ogdekup,ugdat,uldo"	Ket
+e	e	252	U+0065	"den,qores,ɯnamas_bisep"	Ket
+g	g	57	U+0067	"bən_saɣingit,tultangit,ulgit"	Ket
+h	h	5	U+0068	"həna_hiɣbisep,iŋɢust_hāt,āmd_hɯ̄j"	Ket
+i	i	224	U+0069	"darij,milisa,utisqan"	Ket
+j	j	56	U+006A	"qoja,sujgiŋ,təja"	Ket
+k	k	53	U+006B	"akus,kupka,lopətka"	Ket
+l	ɮ	189	U+006C	"belim,qolet,silgit"	Ket
+m	m	72	U+006D	"binomnikbet,qomat,umla"	Ket
+n	n	116	U+006E	"bednaj,bines,hingit"	Ket
+o	o	208	U+006F	"aqqot,dədoqs,qonsal"	Ket
+p	p	28	U+0070	"dupta,qopt,əqpes"	Ket
+q	q	59	U+0071	"aqta_dīt,esqontiŋ,toqtet"	Ket
+r	r	65	U+0072	"qores,ulderen,urok"	Ket
+s	s	108	U+0073	"isaŋtij,tam_akus_ana_bən,taska"	Ket
+t	t	173	U+0074	"aqta,mamtkup,postop"	Ket
+u	u	104	U+0075	"esqut,hunnas,tuɣun"	Ket
+v	v	16	U+0076	"ovaŋ,qovetat,tavij"	Ket
+z	z	1	U+007A	"poezd"	Ket
+à	à/a	18	U+00E0	"qà_bisep,qà_hiɣbisep,qàŋ"	Ket
+è	è/e	9	U+00E8	"bèr,dèr,sèl"	Ket
+ì	ì/i	9	U+00EC	"bìl,kìj,tìɣ"	Ket
+ò	ò/o	6	U+00F2	"hòʁ,kòʁtet,qòʁ"	Ket
+ù	ù/u	4	U+00F9	"qùj,sùj,tùl"	Ket
+ā	ā/a	16	U+0101	"kitathāj,qām,qār"	Ket
+č	tʃ	3	U+010D	"kanča,lečitbet,očkaŋ"	
+ē	ē/e	13	U+0113	"həlataŋ_kēŋs,qaˀ_bēj,sēp"	Ket
+ī	ī/i	29	U+012B	"qīl,sīl,sīm"	Ket
+ŋ	ŋ	81	U+014B	"dest_iŋolt,doŋamas_iˀ,iŋɢus"	Ket
+ō	ō/o	16	U+014D	"lōn,qōks,tōŋ"	Ket
+ū	ū/u	23	U+016B	"būl,kūp,qūs"	Ket
+ə	ə	79	U+0259	"həŋntet,qəlaj,qəltet"	Ket
+ɢ	ɢ	5	U+0262	"erɢat,oolɢat,tosa_tɯjiŋɢat"	Ket
+ɣ	ɣ	52	U+0263	"daŋtaɣan,qaɣamas_iˀ,siɣamas_iˀ"	Ket
+ɯ	ɯ	35	U+026F	"bɯst,tɯltet,ɯtɯɣej_keˀt"	Ket
+ʁ	ʁ	22	U+0281	"kòʁtet,qaʁɯn,toʁojiŋ"	Ket
+ʌ	ʌ	1	U+028C	"uldʌptaŋbaŋ"	Ket
+^a	a	67	U+005E U+0061	"aneŋ,anoks_kunsiɣa,anuntu"	Ket
+^b	b	125	U+005E U+0062	"binaʁut,boˀk,bəjbul"	Ket
+^d	d	100	U+005E U+0064	"daˀl,dest_iŋolt,dɯ̄ltij"	Ket
+^e	e	46	U+005E U+0065	"embaŋ,erɢat,eskej"	Ket
+^h	h	84	U+005E U+0068	"halloj,holaj,hɯˀj"	Ket
+^i	i	40	U+005E U+0069	"isqos,iŋolt,iɣet"	Ket
+^k	k	106	U+005E U+006B	"karman,kàl,kɯlto"	Ket
+^l	ɮ	29	U+005E U+006C	"lampa,lamta,loqŋ"	Ket
+^m	m	20	U+005E U+006D	"meˀt,mina,morat_boˀk"	Ket
+^n	n	7	U+005E U+006E	"nara,nela,nela_qariɣa_iˀ"	Ket
+^o	o	20	U+005E U+006F	"ogde,ogora,oltaŋ"	Ket
+^p	p	9	U+005E U+0070	"pasatbet,poezd,pomogat"	Ket
+^q	q	185	U+005E U+0071	"qàŋ,qəltet,qɯ̄kt"	Ket
+^r	r	1	U+005E U+0072	"remna"	Ket
+^s	s	111	U+005E U+0073	"seˀs,sujgiŋ,sīk"	Ket
+^t	t	97	U+005E U+0074	"talɯn,tēm,təɣatu"	Ket
+^u	u	49	U+005E U+0075	"ulvej,utoloks,uŋbet"	Ket
+^v	v	1	U+005E U+0076	"vrag"	Ket
+^à	à/a	4	U+005E U+00E0	"àq,àr,àŋ"	Ket
+^è	è/e	8	U+005E U+00E8	"èj,èn,èr"	Ket
+^ì	ì/i	6	U+005E U+00EC	"ìn,ìr,ìt"	Ket
+^ù	ù/u	1	U+005E U+00F9	"ùt"	Ket
+^ā	ā/a	7	U+005E U+0101	"āl,āmd_hɯ̄j,āt"	Ket
+^č	tʃ	1	U+005E U+010D	"časaŋ"	Ket
+^ē	ē/e	8	U+005E U+0113	"ēn,ēt,ēɣ_suul"	Ket
+^ī	ī/i	6	U+005E U+012B	"īm,īn,īt"	Ket
+^ō	ō/o	5	U+005E U+014D	"ōks,ōp"	Ket
+^š	ʃ	1	U+005E U+0161	"škola"	
+^ū	ū/u	10	U+005E U+016B	"ū,ūs,ūŋ"	Ket
+^ə	ə	14	U+005E U+0259	"əld_ol,əlel_bisep,əɣnok"	Ket
+^ɯ	ɯ	12	U+005E U+026F	"ɯkkon,ɯnam_əɣam_qō,ɯtkij"	Ket
+a$	a	96	U+0061 U+0024	"bɯlda,haj_biksa,hɯtka"	Ket
+aa	aː	17	U+0061 U+0061	"baam,daan_intijs,saan"	Ket
+aˀ	aˀ	35	U+0061 U+02C0	"maˀs,naˀn,saˀq"	Ket
+bb	bː	4	U+0062 U+0062	"abbet,qibbamaŋ,qibbat"	Ket
+d$	d	6	U+0064 U+0024	"deld,ogorod,tugd"	Ket
+dd	dː	3	U+0064 U+0064	"avaŋa_qaddoq_selam,uddiŋ,uddiŋs"	Ket
+e$	e	9	U+0065 U+0024	"qare,qaɣan_seste,ture"	Ket
+eˀ	eˀ	27	U+0065 U+02C0	"qoktə_deˀŋ,seˀs,ətna_deˀŋ"	Ket
+g$	g	3	U+0067 U+0024	"ig,krug,vrag"	Ket
+i$	i	2	U+0069 U+0024	"ili,qogdi"	Ket
+ii	iː	6	U+0069 U+0069	"siik,siin,siis"	Ket
+iˀ	iˀ	9	U+0069 U+02C0	"hiˀt,kiˀs,kiˀt"	Ket
+j$	j	106	U+006A U+0024	"bulsej,qùj,saˀj"	Ket
+k$	k	40	U+006B U+0024	"olənd_quk,qajmuk,əɣnok"	Ket
+kk	kː	7	U+006B U+006B	"bikket,dikkit,ɯkkon"	Ket
+ks	k s	12	U+006B U+0073	"haksem,haksut,qəksin"	Ket
+l$	ɮ	99	U+006C U+0024	"aʁatl,qiil,əld_ol"	Ket
+ll	ɮː	4	U+006C U+006C	"ella,halloj,ollas"	Ket
+ls	l + s	3	U+006C U+0073	"bulsej,həlsej,əəlsin"	Ket
+m$	m	41	U+006D U+0024	"belim,bogdom,qotlam"	Ket
+mm	mː	1	U+006D U+006D	"ammas"	Ket
+n$	n	117	U+006E U+0024	"ulderen,əəlsin,ɯ̄n"	Ket
+nn	nː	7	U+006E U+006E	"ekkinna_boˀk,hunnas,qannɯm"	Ket
+ns	n s	9	U+006E U+0073	"anoks_kunsiɣa,qusam_bənsaŋ_qō,ɯnam_bənsaŋ_qō"	Ket
+o$	o	12	U+006F U+0024	"qoŋsajdo,saldo,tanno"	Ket
+oo	oː	4	U+006F U+006F	"qooj,qool,qoos"	Ket
+oˀ	oˀ	26	U+006F U+02C0	"ekkinna_boˀk,koˀt,qoˀl"	Ket
+p$	p	52	U+0070 U+0024	"bisep,postop,ōp"	Ket
+pp	pː	2	U+0070 U+0070	"hɯppas,oppas"	Ket
+ps	p s	1	U+0070 U+0073	"opsa"	Ket
+q$	q	31	U+0071 U+0024	"aˀq,dəˀq,təˀq"	Ket
+qq	qː	1	U+0071 U+0071	"aqqot"	Ket
+qs	q s	2	U+0071 U+0073	"eqsaq"	Ket
+r$	r	24	U+0072 U+0024	"dèr,qɯ̀r,ìr"	Ket
+rh	r h	1	U+0072 U+0068	"parhot"	Ket
+rs	r s	1	U+0072 U+0073	"lekarsvo"	Ket
+s$	s	85	U+0073 U+0024	"isqos,qūs,təŋnas"	Ket
+ss	sː	11	U+0073 U+0073	"assano,assel,bəssem"	Ket
+t$	t	222	U+0074 U+0024	"bogdot,iltet,kuraŋbet"	Ket
+th	t + h	3	U+0074 U+0068	"kitathaj,kitathāj"	Ket
+ts	ts	1	U+0074 U+0073	"bitsa"	Ket
+tt	tː	8	U+0074 U+0074	"attas,battat,kottej"	Ket
+u$	u	5	U+0075 U+0024	"sintu,təɣatu,ultu"	Ket
+uu	uː	9	U+0075 U+0075	"duus,duut,huul"	Ket
+uˀ	uˀ	10	U+0075 U+02C0	"duˀt,huˀs,kuˀt"	Ket
+òs	ò/o s	2	U+00F2 U+0073	"qòs_keˀt"	Ket
+č$	tʃ	1	U+010D U+0024	"mač"	Ket
+ī$	ī/i	3	U+012B U+0024	"kī,nī,sī"	Ket
+ŋ$	ŋ	128	U+014B U+0024	"qaleŋ,sulaŋ,uldʌptaŋbaŋ"	Ket
+ŋs	ŋ s	1	U+014B U+0073	"qoŋsajdo"	Ket
+ŋŋ	ŋː	2	U+014B U+014B	"eŋŋuŋ,eŋŋuŋbers"	Ket
+ō$	ō/o	10	U+014D U+0024	"qusam_bənsaŋ_qō,qusam_əɣam_qō,ɯnam_bənsaŋ_qō"	Ket
+ū$	ū/u	4	U+016B U+0024	"bū,tū"	Ket
+ə$	ə	2	U+0259 U+0024	"ogə,ɯɯltə"	Ket
+əə	əː	3	U+0259 U+0259	"qəəl,səət,təəl"	Ket
+əˀ	əˀ	16	U+0259 U+02C0	"dəˀq,həˀŋ,qəˀq"	Ket
+ə̀	ə̀/ə	2	U+0259 U+0300	"bə̀ɣ,də̀j"	Ket
+ə̄	ə̄/ə	9	U+0259 U+0304	"bə̄n,kə̄t,tə̄ŋ"	Ket
+ɣ$	ɣ	10	U+0263 U+0024	"dūɣ,hīɣ,utiɣ"	Ket
+ɯˀ	ɯˀ	8	U+026F U+02C0	"bɯˀs,hɯˀp,hɯˀŋ"	Ket
+ɯ̀	ɯ̀/ɯ	3	U+026F U+0300	"hɯ̀s,qɯ̀r"	Ket
+ɯ̄	ɯ̄/ɯ	24	U+026F U+0304	"qɯ̄_baˀŋ,qɯ̄t,tɯ̄t"	Ket
+ʁ$	ʁ	5	U+0281 U+0024	"dàʁ,lə̄ʁ,qòʁ"	Ket
+^aa	aː	3	U+005E U+0061 U+0061	"aal,aas,aaŋ"	Ket
+^aˀ	aˀ	4	U+005E U+0061 U+02C0	"aˀq,aˀt"	
+^ee	eː	1	U+005E U+0065 U+0065	"eeboks"	Ket
+^eˀ	eˀ	3	U+005E U+0065 U+02C0	"eˀj,eˀk,eˀp"	Ket
+^iˀ	iˀ	6	U+005E U+0069 U+02C0	"iˀl,iˀn,iˀs"	Ket
+^oo	oː	4	U+005E U+006F U+006F	"ool,oolɢat,ooŋ"	Ket
+^oˀ	oˀ	2	U+005E U+006F U+02C0	"oˀn"	Ket
+^uu	uː	1	U+005E U+0075 U+0075	"uul"	Ket
+^uˀ	uˀ	1	U+005E U+0075 U+02C0	"uˀt"	Ket
+^əə	əː	3	U+005E U+0259 U+0259	"əəlsin,əəntet,əət"	Ket
+^əˀ	əˀ	3	U+005E U+0259 U+02C0	"əˀk,əˀl"	Ket
+^ə̀	ə̀/ə	2	U+005E U+0259 U+0300	"ə̀ɣ"	Ket
+^ə̄	ə̄/ə	9	U+005E U+0259 U+0304	"ə̄n,ə̄t,ə̄ɣ"	Ket
+^ɯɯ	ɯː	3	U+005E U+026F U+026F	"ɯɯl,ɯɯltə,ɯɯt"	Ket
+^ɯˀ	ɯˀ	1	U+005E U+026F U+02C0	"ɯˀk"	Ket
+^ɯ̀	ɯ̀/ɯ	3	U+005E U+026F U+0300	"ɯ̀n,ɯ̀r,ɯ̀s"	Ket
+^ɯ̄	ɯ̄/ɯ	4	U+005E U+026F U+0304	"ɯ̄ks,ɯ̄n"	Ket
+eˀ$	eˀ	3	U+0065 U+02C0 U+0024	"deˀ,taɣəm_eˀ"	Ket
+ii$	iː	2	U+0069 U+0069 U+0024	"bii,tii"	Ket
+iˀ$	iˀ	17	U+0069 U+02C0 U+0024	"kiˀ,siɣamas_iˀ,tiˀ"	Ket
+js$	j + s	6	U+006A U+0073 U+0024	"daan_intijs,dansolejs,qəlajs"	Ket
+ks$	k s	20	U+006B U+0073 U+0024	"bejoks,duroks,qōks"	Ket
+kss	k sː	1	U+006B U+0073 U+0073	"qonokssajdo"	Ket
+ls$	l + s	6	U+006C U+0073 U+0024	"dangols,oŋtils,qotils"	Ket
+ns$	n + s	3	U+006E U+0073 U+0024	"kəns,usens"	Ket
+oo$	oː	6	U+006F U+006F U+0024	"doo,qoo"	Ket
+oˀ$	oˀ	1	U+006F U+02C0 U+0024	"qoˀ"	Ket
+qs$	q + s	3	U+0071 U+0073 U+0024	"daqs,dədoqs,sijaqs"	Ket
+rs$	r + s	1	U+0072 U+0073 U+0024	"eŋŋuŋbers"	Ket
+ts$	t + s	7	U+0074 U+0073 U+0024	"aŋbets,ejtets,siɣits"	Ket
+uu$	uː	1	U+0075 U+0075 U+0024	"huu"	Ket
+uˀ$	uˀ	2	U+0075 U+02C0 U+0024	"duˀ,kuˀ"	Ket
+ìs$	ì/i s	2	U+00EC U+0073 U+0024	"dìs"	Ket
+òs$	ò/o s	11	U+00F2 U+0073 U+0024	"bena_qòs,qòs"	Ket
+ās$	ā/a s	1	U+0101 U+0073 U+0024	"hās"	Ket
+ēs$	ē/e s	2	U+0113 U+0073 U+0024	"dēs,sēs"	Ket
+ŋs$	ŋ + s	5	U+014B U+0073 U+0024	"handaŋs,həlataŋ_kēŋs,uddiŋs"	Ket
+ōs$	ō/o s	2	U+014D U+0073 U+0024	"lōs"	Ket
+əə$	əː	6	U+0259 U+0259 U+0024	"həə,səə"	Ket
+əˀ$	əˀ	1	U+0259 U+02C0 U+0024	"təˀ"	Ket
+ɯɯ$	ɯː	1	U+026F U+026F U+0024	"sɯɯ"	Ket
+ɯˀ$	ɯˀ	1	U+026F U+02C0 U+0024	"dɯˀ"	Ket
+ɯ̄$	ɯ̄/ɯ	4	U+026F U+0304 U+0024	"kɯ̄,qɯ̄,tɯ̄"	Ket
+lsˀ$	l + sˀ	1	U+006C U+0073 U+02C0 U+0024	"senkalabelsˀ"	Ket

@@ -1,0 +1,85 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	211	U+005E		
+$	NULL	158	U+0024		
+^a$	a	1	U+005E U+0061 U+0024	"a"	Hawaiian
+^i$	i	2	U+005E U+0069 U+0024	"i"	Hawaiian
+^o$	o	1	U+005E U+006F U+0024	"o"	Hawaiian
+^ā$	ā/a	1	U+005E U+0101 U+0024	"ā"	Hawaiian
+^ū$	ū/u	1	U+005E U+016B U+0024	"ū"	Hawaiian
+_	_	239	U+005F	"helu_wahi,ho`omakua_kāne,laki_maika`i"	Hawaiian
+a	a	978	U+0061	"`auwaha,anana,huinahā"	Hawaiian
+b	b	1	U+0062	"musubī"	Hawaiian
+e	e	332	U+0065	"ho`opakele,leo,welu"	Hawaiian
+f	f	1	U+0066	"tōfū"	Hawaiian
+h	h	351	U+0068	"hoa_kaiahome,kula_holoholona,wahi_hana"	Hawaiian
+i	i	496	U+0069	"laikini_ka`a,makahiki,puhi_ahi"	Hawaiian
+k	k	485	U+006B	"laki_maika`i,māka`i,pepehi_kanaka"	Hawaiian
+l	l	534	U+006C	"`olomana,`ōkala,hula"	Hawaiian
+m	m	176	U+006D	"a_me,lumi,momona"	Hawaiian
+n	n	433	U+006E	"makuahūnōai_kāne,mea_inu,wale_nō"	Hawaiian
+o	o	424	U+006F	"kaupaona,mānoa,pounamu"	Hawaiian
+p	p	225	U+0070	"`apōpō,ho`opio,pāpālina"	Hawaiian
+r	ɹ	1	U+0072	"Kristo"	Hawaiian
+s	s	4	U+0073	"Kristo,`iniseka,musubī"	Hawaiian
+t	t	2	U+0074	"Kristo,rītaia"	Hawaiian
+u	u	384	U+0075	"hui,hālua,kaupaona"	Hawaiian
+w	w	107	U+0077	"`oliwa,holowa`a,ku`eku`e_wāwae"	Hawaiian
+ā	ā/a	144	U+0101	"hā`ule,kāne_wahine_make,pākeke"	Hawaiian
+ē	ē/e	10	U+0113	"kēia,kēlā,nēnē"	Hawaiian
+ī	ī/i	13	U+012B	"akenī`au,hīhīmanu,kī_wai"	Hawaiian
+ō	ō/o	58	U+014D	"hō`oki,hō`ā,pō`akahi"	Hawaiian
+ū	ū/u	61	U+016B	"kūamuamu,kūlanakauhale,pūnana"	Hawaiian
+‘	ʔ	4	U+2018	"ho‘oku‘u,ho‘olono,maka‘āinana"	Hawaiian
+^H	H/h	1	U+005E U+0048	"Helene"	Hawaiian
+^K	K/k	3	U+005E U+004B	"Kalema,Kepania,Kristo"	Hawaiian
+^L	L/l	2	U+005E U+004C	"Lalako`a,Lāpule"	Hawaiian
+^M	M/m	1	U+005E U+004D	"Menehune"	Hawaiian
+^N	N/n	1	U+005E U+004E	"Nuhōlani"	Hawaiian
+^P	P/p	3	U+005E U+0050	"Pakoa,Paniolo,Pākē"	Hawaiian
+^a	a	47	U+005E U+0061	"a`a_koko,ala,ao"	Hawaiian
+^e	e	3	U+005E U+0065	"ea,emi,eo"	Hawaiian
+^h	h	245	U+005E U+0068	"hele,ho`āhewa,hokua"	Hawaiian
+^i	i	29	U+005E U+0069	"ikaika,iwa,iwi_hoehoe"	Hawaiian
+^k	k	297	U+005E U+006B	"kamanā,kamipulu,kunu"	Hawaiian
+^l	l	132	U+005E U+006C	"laila,lalo,lohe"	Hawaiian
+^m	m	172	U+005E U+006D	"make,mea,moloā"	Hawaiian
+^n	n	53	U+005E U+006E	"noho,noi,nūpepa"	Hawaiian
+^o	o	9	U+005E U+006F	"omo,one,ono"	Hawaiian
+^p	p	237	U+005E U+0070	"palaoa_ho`owili`ia,pili,pāpālina"	Hawaiian
+^r	ɹ	1	U+005E U+0072	"rītaia"	Hawaiian
+^s	s	1	U+005E U+0073	"sawana"	Hawaiian
+^t	t	3	U+005E U+0074	"tuko,tōfū,tūkana"	Hawaiian
+^u	u	23	U+005E U+0075	"uahi,uaki,uluna"	Hawaiian
+^w	w	59	U+005E U+0077	"wehewehe,wela,welu"	Hawaiian
+^ā	ā/a	3	U+005E U+0101	"ākea,ānuenue,āpau"	Hawaiian
+`a	`a/a	181	U+0060 U+0061	"`a`ole,`aina_kakahiaka,ma`alahi"	
+`e	`e/e	48	U+0060 U+0065	"`eli,ho`ohehe`e,ho`one`e"	
+`i	`i/i	94	U+0060 U+0069	"hō`ike_wahahe`e,mea_ho`opi`i_`ia,pōki`i"	
+`o	`o/o	161	U+0060 U+006F	"`olili`ula,`ōlelo_ho`oweliweli,no`ono`o"	Hawaiian
+`u	`u/u	62	U+0060 U+0075	"`uhane,`upena_nananana,kupapa`u"	
+`ā	`ā/a	23	U+0060 U+0101	"`ohana_`ālani,`āwīwī,ho`ā`o"	
+`ē	`ē/e	8	U+0060 U+0113	"`ēheu,`ēleka,`ēlemu"	
+`ī	`ī/i	7	U+0060 U+012B	"`ā`ī`olo`olo,`īlio_hae,`īā"	
+`ō	`ō/o	35	U+0060 U+014D	"`ō,`ōka`ika`i,kāne_`ōpio"	
+`ū	`ū/u	8	U+0060 U+016B	"`ū`ū,`ūhini,`ūpā"	
+a$	a	443	U+0061 U+0024	"`umi_kūmālua,`ōkala,pu`ua"	Hawaiian
+aa	aː	3	U+0061 U+0061	"huaale,makaaniani,pukaaniani"	Hawaiian
+ch	tʃ	1	U+0063 U+0068	"mōchī"	Hawaiian
+e$	e	230	U+0065 U+0024	"kenikalame,mole,pupule"	Hawaiian
+i$	i	282	U+0069 U+0024	"`ohana_`ālani,pipi,poi"	Hawaiian
+o$	o	145	U+006F U+0024	"ha`aheo,keko,mea_hamo"	Hawaiian
+u$	u	151	U+0075 U+0024	"`ohu,helu,lapu"	Hawaiian
+ā$	ā/a	46	U+0101 U+0024	"hūnā,kopalā,pā"	Hawaiian
+āh	ā/a h	6	U+0101 U+0068	"ināhea,māhoe,māhu"	Hawaiian
+āw	ā/a w	18	U+0101 U+0077	"hele_wāwae,kānāwai,nāwaliwali"	Hawaiian
+ē$	ē/e	14	U+0113 U+0024	"hē,hōkē,kōwē"	Hawaiian
+ēh	ē/e h	1	U+0113 U+0068	"palahēhē"	Hawaiian
+ī$	ī/i	23	U+012B U+0024	"`uī,`āwīwī,konohī"	Hawaiian
+īh	ī/i h	2	U+012B U+0068	"hīhīmanu,pīhopa"	Hawaiian
+īw	ī/i w	3	U+012B U+0077	"`āwīwī,kīwī,wīwī"	Hawaiian
+ō$	ō/o	17	U+014D U+0024	"leikō,na`aupō,nonō"	Hawaiian
+ōh	ō/o h	2	U+014D U+0068	"mōhai,pōhaku"	Hawaiian
+ōw	ō/o w	1	U+014D U+0077	"kōwē"	Hawaiian
+ū$	ū/u	29	U+016B U+0024	"`elelū,mū,palapū"	Hawaiian
+^`A	`A/a	1	U+005E U+0060 U+0041	"`Aikupika"	Hawaiian
+^āh	ā/a h	1	U+005E U+0101 U+0068	"āhea"	Hawaiian

@@ -1,0 +1,95 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	139	U+005E		
+$	NULL	3	U+0024		
+(	NULL	3	U+0028	"(tonolo)_aponɨ,oplan(ɨ],palansi(sin)"	
+)	NULL	2	U+0029	"(tonolo)_aponɨ,palansi(sin)"	
+[	NULL	1	U+005B	"pil[ɨ]"	
+]	NULL	2	U+005D	"oplan(ɨ],pil[ɨ]"	
+-	+	138	U+002D	"-palɨmi,-tulupo,-yelɨ_aponɨ"	Kali'na
+_	_	74	U+005F	"nokɨ_ko,pila_epɨ,tuna_se_wailɨ"	Kali'na
+a	a	839	U+0061	"kaleta,nana,wetumamukatopo"	Kali'na
+b	b	2	U+0062	"dibe,labye"	Kali'na
+c	c	1	U+0063	"mercredi"	Kali'na
+d	d	12	U+0064	"kalden,samedi,vendredi"	Kali'na
+e	e	384	U+0065	"epetɨ,legliz,ukunen"	Kali'na
+f	f	3	U+0066	"kafé,kofuma,lafinèt"	Kali'na
+g	g	2	U+0067	"fromage,legliz"	Kali'na
+i	i	355	U+0069	"legliz,tapita,tuna_isolɨ"	Kali'na
+k	k	410	U+006B	"-emolɨ_sakɨlalɨ,ewuka,wekupi"	Kali'na
+l	l	625	U+006C	"-manatɨlɨ,maloto,molɨ"	Kali'na
+m	m	344	U+006D	"imenka,tɨmiliken,ɨkoima"	Kali'na
+n	n	445	U+006E	"ainatano,ako_tano,pitani"	Kali'na
+o	o	524	U+006F	"anpotɨ,kowekowe,mo’pe"	Kali'na
+p	p	472	U+0070	"itupalɨ,owopo,tanepole"	Kali'na
+q	q	1	U+0071	"plastique"	Kali'na
+r	ɾ	10	U+0072	"buretɨ,mardi,vendredi"	Kali'na
+s	s	164	U+0073	"isamika,isulu,pusipusi"	Kali'na
+t	t	383	U+0074	"amekuntɨ,epekatɨ,epe’kotono"	Kali'na
+u	u	366	U+0075	"-tapulu,kulitanene_papota,oluwatoima"	Kali'na
+v	v	1	U+0076	"serviette"	Kali'na
+w	w	155	U+0077	"kunawalu,mawasa,tawapole"	Kali'na
+y	j	86	U+0079	"-yekɨ,kuliyala,malakaya"	Kali'na
+z	z	2	U+007A	"douze,onze"	Kali'na
+è	è/e	2	U+00E8	"lafinèt,lapèl"	Kali'na
+é	é/e	1	U+00E9	"numéro"	Kali'na
+ɨ	ɨ	267	U+0268	"-yumɨntone,-ɨsaiyɨ,sɨlɨsɨlɨ"	Kali'na
+’	ʔ	59	U+2019	"ako’to,ku’nu,uku’nen"	Kali'na
+'e	ʔ e	1	U+0027 U+0065	"okupa'entoima"	Kali'na
+'k	ʔ k	2	U+0027 U+006B	"kolo'ka,kɨ'ko"	Kali'na
+'m	ʔ m	2	U+0027 U+006D	"anpi'mo,epe'ma"	Kali'na
+'n	ʔ n	2	U+0027 U+006E	"ainatone_kali'na,na'na"	Kali'na
+'p	ʔ p	1	U+0027 U+0070	"u'piyaki"	Kali'na
+'t	ʔ t	6	U+0027 U+0074	"ainapa'tolo,ko'ta,wa'to"	Kali'na
+'u	ʔ u	1	U+0027 U+0075	"t'uke"	Kali'na
+^a	a	179	U+005E U+0061	"akapo,asinpan,atɨsiwa"	Kali'na
+^b	b	9	U+005E U+0062	"bedi,bekima,beni"	Kali'na
+^c	c	3	U+005E U+0063	"cachot,cachot_tano,calendrier"	Kali'na
+^d	d	4	U+005E U+0064	"dibe,diletɨ,douze"	Kali'na
+^e	e	100	U+005E U+0065	"emepanen,etata,ewato"	Kali'na
+^f	f	2	U+005E U+0066	"fromage,fulu"	Kali'na
+^i	i	58	U+005E U+0069	"imamu,imukululu,isanoma"	Kali'na
+^j	j	1	U+005E U+006A	"jeudi"	Kali'na
+^k	k	163	U+005E U+006B	"kaliwaku,komɨina,kumetɨ"	Kali'na
+^l	l	30	U+005E U+006C	"lafinèt,legliz,loto"	Kali'na
+^m	m	67	U+005E U+006D	"malaka,mokalon,moluwa"	Kali'na
+^n	n	28	U+005E U+006E	"nokɨ_ko,nopoko,nopon"	Kali'na
+^o	o	58	U+005E U+006F	"omɨ,onumenkano,otonome"	Kali'na
+^p	p	130	U+005E U+0070	"paliko,pasikita,pɨito"	Kali'na
+^r	ɾ	1	U+005E U+0072	"radio"	Kali'na
+^s	s	66	U+005E U+0073	"salaika,simenn,sɨkɨtame"	Kali'na
+^t	t	109	U+005E U+0074	"tuketuke,tɨpoisinamon,tɨpotɨle"	Kali'na
+^u	u	42	U+005E U+0075	"ulupe,unemɨ,u’tano"	Kali'na
+^v	v	4	U+005E U+0076	"velo,vis,vis_umenen"	Kali'na
+^w	w	142	U+005E U+0077	"watalakan,wenapo,wotapolomɨ"	Kali'na
+^y	j	21	U+005E U+0079	"yakuwa,yawan,yupo"	Kali'na
+^z	z	2	U+005E U+007A	"zeng,zonion"	Kali'na
+^ɨ	ɨ	14	U+005E U+0268	"ɨkako,ɨmeka,ɨmekapo"	Kali'na
+a$	a	342	U+0061 U+0024	"ikamisapa,palika,pɨlata"	Kali'na
+ch	ʃ	6	U+0063 U+0068	"cachot_tano,kaché,machine"	Kali'na
+e$	e	158	U+0065 U+0024	"awosinpe,kuwe,tɨpipa’ke"	Kali'na
+g$	g	1	U+0067 U+0024	"zeng"	Kali'na
+i$	i	120	U+0069 U+0024	"empi,kaikusi,mati"	Kali'na
+l$	l	4	U+006C U+0024	"bal,dilwil,lapèl"	Kali'na
+ll	lː	1	U+006C U+006C	"mille"	Kali'na
+lw	l w	1	U+006C U+0077	"dilwil"	Kali'na
+n$	n	63	U+006E U+0024	"emepanen,tɨpɨken,wesen"	Kali'na
+ns	n s	5	U+006E U+0073	"ensuma,iyansi’pe,mɨnsokoloi"	Kali'na
+o$	o	288	U+006F U+0024	"ako,kɨlino,lupo"	Kali'na
+r$	ɾ	1	U+0072 U+0024	"calendrier"	Kali'na
+s$	s	1	U+0073 U+0024	"vis"	Kali'na
+t$	t	2	U+0074 U+0024	"cachot,lafinèt"	Kali'na
+tt	tː	1	U+0074 U+0074	"serviette"	Kali'na
+u$	u	125	U+0075 U+0024	"kapu,konomelu,tuyuyu"	Kali'na
+z$	z	1	U+007A U+0024	"legliz"	Kali'na
+é$	é/e	4	U+00E9 U+0024	"kaché,maché,paské"	Kali'na
+ï$	ɯ	2	U+00EF U+0024	"-potï,alekï"	Kali'na
+ïi	iː	1	U+00EF U+0069	"-ïino"	
+ɨ$	ɨ	250	U+0268 U+0024	"-epɨ,episamɨ,kumetɨ"	Kali'na
+’s	ʔ s	4	U+2019 U+0073	"-eme’sukulu,mo’se,tɨlomo’se"	Kali'na
+’w	ʔ w	4	U+2019 U+0077	"o’win,o’wine,o’winkalina"	Kali'na
+'a$	ʔ a	4	U+0027 U+0061 U+0024	"a'a,pe'a"	Kali'na
+'e$	ʔ e	1	U+0027 U+0065 U+0024	"apo'e"	Kali'na
+'i$	ʔ ɪ	1	U+0027 U+0069 U+0024	"kuwa'i"	Kali'na
+^kw	kʷ	1	U+005E U+006B U+0077	"kwepi"	Kali'na
+ii$	iː	1	U+0069 U+0069 U+0024	"kupii"	Kali'na
+nn$	nː	1	U+006E U+006E U+0024	"simenn"	Kali'na

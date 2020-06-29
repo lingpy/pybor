@@ -1,0 +1,7258 @@
+pk,jsondata,meaning_pk,name,lang
+1,,1,monde,french
+2,,1,mundo,spanish
+3,,1,Welt,german
+4,,1,мир,russian
+5,,2,terre,french
+6,,2,tierra,spanish
+7,,2,Land,german
+8,,2,"земля, страна",russian
+9,,3,"terre, sol",french
+10,,3,suelo,spanish
+11,,3,Boden,german
+12,,3,"земля, почва",russian
+13,,4,poussière,french
+14,,4,polvo,spanish
+15,,4,Staub,german
+16,,4,пыль,russian
+17,,5,boue,french
+18,,5,lodo,spanish
+19,,5,Schlamm,german
+20,,5,грязь,russian
+21,,6,sable,french
+22,,6,arena,spanish
+23,,6,Sand,german
+24,,6,песок,russian
+25,,7,"montagne, colline",french
+26,,7,"montaña, loma",spanish
+27,,7,Berg oder Hügel,german
+28,,7,"гора, холм",russian
+29,,8,falaise,french
+30,,8,barranca,spanish
+31,,8,Klippe,german
+32,,8,"скала, утес, обрыв",russian
+33,,9,"plaine, campagne",french
+34,,9,"pampa, llano",spanish
+35,,9,Ebene,german
+36,,9,"равнина, поле",russian
+37,,10,vallée,french
+38,,10,valle,spanish
+39,,10,Tal,german
+40,,10,долина,russian
+41,,11,île,french
+42,,11,isla,spanish
+43,,11,Insel,german
+44,,11,остров,russian
+45,,12,continent,french
+46,,12,continente,spanish
+47,,12,Festland,german
+48,,12,континент,russian
+49,,13,"côte, rivage, bord,",french
+50,,13,"ribera, playa",spanish
+51,,13,Küste oder Ufer,german
+52,,13,"берег, побережье",russian
+53,,14,grotte,french
+54,,14,cueva,spanish
+55,,14,Höhle,german
+56,,14,пещера,russian
+57,,15,eau,french
+58,,15,agua,spanish
+59,,15,Wasser,german
+60,,15,вода,russian
+61,,16,mer,french
+62,,16,mar,spanish
+63,,16,Meer,german
+64,,16,море,russian
+65,,17,étale,french
+66,,17,calma [but this is a noun],spanish
+67,,17,windstill,german
+68,,17,спокойный (о море),russian
+69,,18,agité,french
+70,,18,"agitado (mar), borrascoso",spanish
+71,,18,rau,german
+72,,18,бурный (о море),russian
+73,,19,"écume, mousse",french
+74,,19,espuma,spanish
+75,,19,Schaum,german
+76,,19,пена,russian
+77,,20,océan,french
+78,,20,océano,spanish
+79,,20,Ozean,german
+80,,20,океан,russian
+81,,21,lac,french
+82,,21,lago,spanish
+83,,21,See,german
+84,,21,озеро,russian
+85,,22,"golfe, baie",french
+86,,22,"golfo, bahía",spanish
+87,,22,Bucht,german
+88,,22,"залив, бухта",russian
+89,,23,lagune,french
+90,,23,laguna,spanish
+91,,23,Lagune,german
+92,,23,лагуна,russian
+93,,24,récif,french
+94,,24,arrecife,spanish
+95,,24,Riff,german
+96,,24,риф,russian
+97,,25,cap,french
+98,,25,punta,spanish
+99,,25,Kap,german
+100,,25,мыс,russian
+101,,26,vague,french
+102,,26,ola,spanish
+103,,26,Welle,german
+104,,26,волна,russian
+105,,27,marée,french
+106,,27,marea,spanish
+107,,27,Gezeiten,german
+108,,27,морской прилив и отлив,russian
+109,,28,marée basse,french
+110,,28,bajamar,spanish
+111,,28,Ebbe,german
+112,,28,отлив,russian
+113,,29,marée haute,french
+114,,29,pleamar,spanish
+115,,29,Flut,german
+116,,29,прилив,russian
+117,,30,"fleuve, rivière, ruisseau",french
+118,,30,"río, corriente, arroyo",spanish
+119,,30,Fluss oder Strom,german
+120,,30,"река, поток, ручей",russian
+121,,31,tourbillon )d'eau=,french
+122,,31,remolino,spanish
+123,,31,Strudel,german
+124,,31,водоворот,russian
+125,,32,"source,puits, fountaine",french
+126,,32,"manantial, pozo",spanish
+127,,32,Quelle oder Brunnen,german
+128,,32,"родник, источник, колодец",russian
+129,,33,"marais, marécage",french
+130,,33,pantano,spanish
+131,,33,Sumpf,german
+132,,33,болото,russian
+133,,34,"chûte d'eau, cascade",french
+134,,34,cascada,spanish
+135,,34,Wasserfall,german
+136,,34,водопад,russian
+137,,35,"bois, forêt",french
+138,,35,selva,spanish
+139,,35,Wald,german
+140,,35,лес,russian
+141,,36,bois,french
+142,,36,madera,spanish
+143,,36,Holz,german
+144,,36,"дерево (материал), древесина",russian
+145,,37,"pierre, roc, rocher",french
+146,,37,"piedra, roca",spanish
+147,,37,Stein oder Fels(en),german
+148,,37,"камень, скала",russian
+149,,38,"tremblement de terre, séisme",french
+150,,38,terremoto,spanish
+151,,38,Erdbeben,german
+152,,38,землятресение,russian
+153,,39,ciel,french
+154,,39,cielo,spanish
+155,,39,Himmel,german
+156,,39,небо,russian
+157,,40,soleil,french
+158,,40,sol,spanish
+159,,40,Sonne,german
+160,,40,солнце,russian
+161,,41,lune,french
+162,,41,luna,spanish
+163,,41,Mond,german
+164,,41,луна,russian
+165,,42,étoile,french
+166,,42,estrella,spanish
+167,,42,Stern,german
+168,,42,звезда,russian
+169,,43,éclair,french
+170,,43,relámpago,spanish
+171,,43,Blitz,german
+172,,43,молния,russian
+173,,44,tonnerre,french
+174,,44,trueno,spanish
+175,,44,Donner,german
+176,,44,гром,russian
+177,,45,foudre,french
+178,,45,rayo,spanish
+179,,45,Blitzschlag,german
+180,,45,молния,russian
+181,,46,"orage, tempête",french
+182,,46,"tempestad, tormenta",spanish
+183,,46,Sturm,german
+184,,46,"буря, шторм",russian
+185,,47,arc-en-ciel,french
+186,,47,arco-iris,spanish
+187,,47,Regenbogen,german
+188,,47,радуга,russian
+189,,48,lumière,french
+190,,48,luz,spanish
+191,,48,Licht,german
+192,,48,свет,russian
+193,,49,obscurité,french
+194,,49,oscuridad,spanish
+195,,49,Dunkelheit oder Finsternis,german
+196,,49,"темнота, тьма, мрак",russian
+197,,50,ombre,french
+198,,50,sombra,spanish
+199,,50,Schatten,german
+200,,50,тень,russian
+201,,51,rosée,french
+202,,51,rocío,spanish
+203,,51,Tau,german
+204,,51,роса,russian
+205,,52,air,french
+206,,52,aire,spanish
+207,,52,Luft,german
+208,,52,воздух,russian
+209,,53,vent,french
+210,,53,viento,spanish
+211,,53,Wind,german
+212,,53,ветер,russian
+213,,54,nuage,french
+214,,54,nube,spanish
+215,,54,Wolke,german
+216,,54,"облако, туча",russian
+217,,55,"brume, brouillard",french
+218,,55,"neblina, niebla",spanish
+219,,55,Nebel,german
+220,,55,туман,russian
+221,,56,pluie,french
+222,,56,lluvia,spanish
+223,,56,Regen,german
+224,,56,дождь,russian
+225,,57,neige,french
+226,,57,nieve,spanish
+227,,57,Schnee,german
+228,,57,снег,russian
+229,,58,glace,french
+230,,58,hielo,spanish
+231,,58,Eis,german
+232,,58,"лед, гололед",russian
+233,,59,temps,french
+234,,59,tiempo,spanish
+235,,59,Wetter,german
+236,,59,погода,russian
+237,,60,feu,french
+238,,60,fuego,spanish
+239,,60,Feuer,german
+240,,60,огонь,russian
+241,,61,flamme,french
+242,,61,llama,spanish
+243,,61,Flamme,german
+244,,61,пламя,russian
+245,,62,fumée,french
+246,,62,humo,spanish
+247,,62,Rauch,german
+248,,62,дым,russian
+249,,63,cendres,french
+250,,63,cenizas,spanish
+251,,63,Asche,german
+252,,63,пепел,russian
+253,,64,braise,french
+254,,64,brasas,spanish
+255,,64,Glut,german
+256,,64,раскаленные угли,russian
+257,,65,brûler,french
+258,,65,quemar,spanish
+259,,65,verbrennen,german
+260,,65,жечь,russian
+261,,66,brûler,french
+262,,66,arder,spanish
+263,,66,brennen,german
+264,,66,гореть,russian
+265,,67,allumer,french
+266,,67,encender,spanish
+267,,67,anzünden,german
+268,,67,"зажигать, воспламенять",russian
+269,,68,éteindre,french
+270,,68,apagar,spanish
+271,,68,löschen,german
+272,,68,"гасить, тушить",russian
+273,,69,allumette,french
+274,,69,fósforo,spanish
+275,,69,Streichholz,german
+276,,69,спичка,russian
+277,,70,"bois (pour le feu), bûches",french
+278,,70,leña,spanish
+279,,70,Brennholz,german
+280,,70,дрова,russian
+281,,71,charbon de bois,french
+282,,71,carbón,spanish
+283,,71,Holzkohle,german
+284,,71,(древесный) уголь,russian
+285,,72,"personne, être humain",french
+286,,72,persona,spanish
+287,,72,Mensch oder Person,german
+288,,72,"человек, личность",russian
+289,,73,homme,french
+290,,73,hombre,spanish
+291,,73,Mann,german
+292,,73,мужчина,russian
+293,,74,femme,french
+294,,74,mujer,spanish
+295,,74,Frau,german
+296,,74,женщина,russian
+297,,75,mâle,french
+298,,75,"varón, macho",spanish
+299,,75,männlich,german
+300,,75,мужской,russian
+301,,76,femelle,french
+302,,76,hembra,spanish
+303,,76,weiblich,german
+304,,76,женский,russian
+305,,77,garçon,french
+306,,77,muchacho,spanish
+307,,77,Junge,german
+308,,77,мальчик,russian
+309,,78,jeune homme,french
+310,,78,joven,spanish
+311,,78,junger Mann,german
+312,,78,"юноша, молодой человек",russian
+313,,79,fille,french
+314,,79,muchacha,spanish
+315,,79,Mädchen,german
+316,,79,девочка,russian
+317,,80,jeune fille,french
+318,,80,joven,spanish
+319,,80,junges Mädchen oder junge Frau,german
+320,,80,девушка,russian
+321,,81,enfant,french
+322,,81,niño,spanish
+323,,81,Kind,german
+324,,81,ребенок,russian
+325,,82,"enfant, bébé",french
+326,,82,"niño,bebé",spanish
+327,,82,Säugling oder Baby,german
+328,,82,"младенец, ребенок",russian
+329,,83,mari,french
+330,,83,"marido, esposo",spanish
+331,,83,"(Ehe)Mann, (Ehe)Gatte",german
+332,,83,муж,russian
+333,,84,"femme, épouse",french
+334,,84,esposa,spanish
+335,,84,"(Ehe)Frau, (Ehe)Gattin",german
+336,,84,жена,russian
+337,,85,"se marier, épouser",french
+338,,85,casarse,spanish
+339,,85,heiraten,german
+340,,85,"жениться, выйти замуж",russian
+341,,86,"mariage, noces",french
+342,,86,"casamiento, boda",spanish
+343,,86,Hochzeit,german
+344,,86,свадьба,russian
+345,,87,divorce,french
+346,,87,divorcio,spanish
+347,,87,(Ehe)Scheidung,german
+348,,87,развод,russian
+349,,88,père,french
+350,,88,padre,spanish
+351,,88,Vater,german
+352,,88,отец,russian
+353,,89,mère,french
+354,,89,madre,spanish
+355,,89,Mutter,german
+356,,89,мать,russian
+357,,90,parents,french
+358,,90,padres,spanish
+359,,90,Eltern,german
+360,,90,родители,russian
+361,,91,homme marié,french
+362,,91,hombre casado,spanish
+363,,91,verheirateter Mann,german
+364,,91,женатый,russian
+365,,92,femme mariée,french
+366,,92,mujer casada,spanish
+367,,92,verheiratete Frau,german
+368,,92,замужняя,russian
+369,,93,fils,french
+370,,93,hijo,spanish
+371,,93,Sohn,german
+372,,93,сын,russian
+373,,94,fille,french
+374,,94,hija,spanish
+375,,94,Tochter,german
+376,,94,дочь,russian
+377,,95,dauphin,french
+378,,95,delfín,spanish
+379,,95,Delphin oder Schweinswal,german
+380,,95,"морская свинья, дельфин",russian
+381,,96,enfant,french
+382,,96,"hijo, hija",spanish
+383,,96,Kind (i.S.v. Nachkomme),german
+384,,96,"дети,потомство",russian
+385,,97,frère,french
+386,,97,hermano,spanish
+387,,97,Bruder,german
+388,,97,брат,russian
+389,,98,frêre aîné,french
+390,,98,hermano mayor,spanish
+391,,98,älterer Bruder,german
+392,,98,старший брат,russian
+393,,99,frère cadet,french
+394,,99,hermano menor,spanish
+395,,99,jüngerer Bruder,german
+396,,99,младший брат,russian
+397,,100,soeur,french
+398,,100,hermana,spanish
+399,,100,Schwester,german
+400,,100,сестра,russian
+401,,101,soeur aînée,french
+402,,101,hermana mayor,spanish
+403,,101,ältere Schwester,german
+404,,101,старшая сестра,russian
+405,,102,soeur cadette,french
+406,,102,hermana menor,spanish
+407,,102,jüngere Schwester,german
+408,,102,младшая сестра,russian
+409,,103,frère/soeur,french
+410,,103,"hermano, hermana",spanish
+411,,103,Geschwisterkind,german
+412,,103,брат/сестра,russian
+413,,104,jumeaux,french
+414,,104,gemelos,spanish
+415,,104,Zwillinge,german
+416,,104,близнецы,russian
+417,,105,grand-père,french
+418,,105,abuelo,spanish
+419,,105,Großvater,german
+420,,105,дедушка,russian
+421,,106,vieillard,french
+422,,106,hombre viejo,spanish
+423,,106,alter Mann,german
+424,,106,старик,russian
+425,,107,grand-mère,french
+426,,107,abuela,spanish
+427,,107,Großmutter,german
+428,,107,бабушка,russian
+429,,108,vieillarde,french
+430,,108,mujer vieja,spanish
+431,,108,alte Frau,german
+432,,108,старуха,russian
+433,,109,petit-fils,french
+434,,109,nieto,spanish
+435,,109,Enkel(sohn),german
+436,,109,внук,russian
+437,,110,petite-fille,french
+438,,110,nieta,spanish
+439,,110,Enkeltochter,german
+440,,110,внучка,russian
+441,,111,oncle,french
+442,,111,tío,spanish
+443,,111,Onkel,german
+444,,111,дядя,russian
+445,,112,frère de la mère,french
+446,,112,hermano (de la madre),spanish
+447,,112,Bruder der Mutter,german
+448,,112,"дядя, брат матери",russian
+449,,113,frère du père,french
+450,,113,hermano (del padre),spanish
+451,,113,Bruder des Vaters,german
+452,,113,брат отца,russian
+453,,114,tante,french
+454,,114,tía,spanish
+455,,114,Tante,german
+456,,114,тетя,russian
+457,,115,soeur de la mère,french
+458,,115,hermana (de la madre),spanish
+459,,115,Schwester der Mutter,german
+460,,115,"тетя, сестра матери",russian
+461,,116,soeur du père,french
+462,,116,hermana (del padre),spanish
+463,,116,Schester des Vaters,german
+464,,116,"тетя, сестра отца",russian
+465,,117,neveu,french
+466,,117,sobrino,spanish
+467,,117,Neffe,german
+468,,117,племянник,russian
+469,,118,nièce,french
+470,,118,sobrina,spanish
+471,,118,Nichte,german
+472,,118,племянница,russian
+473,,119,"cousin, cousine",french
+474,,119,primo/prima,spanish
+475,,119,Cousin oder Cousine,german
+476,,119,"двоюродный (-ая) брат (сестра), кузен/кузина",russian
+477,,120,"ancêtres,aïeux",french
+478,,120,antepasados,spanish
+479,,120,Ahnen oder Vorfahren,german
+480,,120,предки,russian
+481,,121,descendants,french
+482,,121,descendientes,spanish
+483,,121,"Nachkommen, Abkömmlinge, Nachfahren",german
+484,,121,потомки,russian
+485,,122,beau-père (d'un homme),french
+486,,122,suegro (de hombre),spanish
+487,,122,Schwiegervater (eines Mannes),german
+488,,122,свекор,russian
+489,,123,beau-père (d'une femme),french
+490,,123,suegro (de mujer),spanish
+491,,123,Schwiegervater (einer Frau),german
+492,,123,тесть,russian
+493,,124,belle-mère (d'un homme),french
+494,,124,suegra (de hombre),spanish
+495,,124,Schwiegermutter (eines Mannes),german
+496,,124,свекровь,russian
+497,,125,belle-mère (d'une femme),french
+498,,125,suegra (de mujer),spanish
+499,,125,Schwiegermutter (einer Frau),german
+500,,125,теща,russian
+501,,126,gendre (d'un homme),french
+502,,126,yerno(de hombre),spanish
+503,,126,Schwiegersohn (eines Mannes),german
+504,,126,зять,russian
+505,,127,gendre (d'une femme),french
+506,,127,yerno (de mujer),spanish
+507,,127,Schwiegersohn (einer Frau),german
+508,,127,зять,russian
+509,,128,"bru, belle-fille (d'un homme)",french
+510,,128,nuera (de hombre),spanish
+511,,128,Schwiegertochter (eines Mannes),german
+512,,128,сноха,russian
+513,,129,"bru, belle-fille (d'une femme)",french
+514,,129,nuera (de mujer),spanish
+515,,129,Schwiegertochter (einer Frau),german
+516,,129,невестка,russian
+517,,130,beau-père,french
+518,,130,padrastro,spanish
+519,,130,Stiefvater,german
+520,,130,отчим,russian
+521,,131,belle-mère,french
+522,,131,madrastra,spanish
+523,,131,Stiefmutter,german
+524,,131,мачеха,russian
+525,,132,beau-fils,french
+526,,132,hijastro,spanish
+527,,132,Stiefsohn,german
+528,,132,пасынок,russian
+529,,133,belle-fille,french
+530,,133,hijastra,spanish
+531,,133,Stieftochter,german
+532,,133,падчерица,russian
+533,,134,"orphelin, orpheline",french
+534,,134,huérfano/ huérfana,spanish
+535,,134,Waisenkind,german
+536,,134,сирота,russian
+537,,135,veuve,french
+538,,135,viuda,spanish
+539,,135,Witwe,german
+540,,135,вдова,russian
+541,,136,veuf,french
+542,,136,viudo,spanish
+543,,136,Witwer,german
+544,,136,вдовец,russian
+545,,137,parenté,french
+546,,137,"parientes, parentela",spanish
+547,,137,"Verwandte, Verwandtschaft",german
+548,,137,родственники,russian
+549,,138,famille,french
+550,,138,familia,spanish
+551,,138,Familie,german
+552,,138,семья,russian
+553,,139,"je, moi",french
+554,,139,yo,spanish
+555,,139,ich,german
+556,,139,я,russian
+557,,140,tu,french
+558,,140,"tú, usted",spanish
+559,,140,du,german
+560,,140,"ты, вы",russian
+561,,141,il/elle,french
+562,,141,él/ella/ello,spanish
+563,,141,er/sie/es,german
+564,,141,он/она/оно,russian
+565,,142,nous,french
+566,,142,nosotros/ nosotras,spanish
+567,,142,wir,german
+568,,142,мы,russian
+569,,143,nous,french
+570,,143,nosotros/nosotras (inclusivo),spanish
+571,,143,wir (inklusiv),german
+572,,143,мы,russian
+573,,144,nous,french
+574,,144,nosotros/nosotras (exclusivo),spanish
+575,,144,wir (exklusiv),german
+576,,144,мы,russian
+577,,145,vous,french
+578,,145,ustedes,spanish
+579,,145,ihr,german
+580,,145,вы,russian
+581,,146,"eux, elles",french
+582,,146,"ellos, ellas",spanish
+583,,146,sie,german
+584,,146,они,russian
+585,,147,"animal,bête",french
+6047,,1512,,german
+586,,147,animal,spanish
+587,,147,Tier,german
+588,,147,животное,russian
+589,,148,"mâle, masculin",french
+590,,148,masculino,spanish
+591,,148,männlich,german
+592,,148,самец,russian
+593,,149,"femelle, feminin",french
+594,,149,femenino,spanish
+595,,149,weiblich,german
+596,,149,самка,russian
+597,,150,"bétail, bestiaux",french
+598,,150,ganado,spanish
+599,,150,Vieh,german
+600,,150,(домашний) скот,russian
+601,,151,"pâturage, pâture",french
+602,,151,"pradera, potrero",spanish
+603,,151,Weide,german
+604,,151,"пастбище, выгон",russian
+605,,152,berger,french
+606,,152,pastor,spanish
+607,,152,Hirte,german
+608,,152,пастух,russian
+609,,153,étable,french
+610,,153,establo,spanish
+611,,153,Stall,german
+612,,153,"конюшня, стойло",russian
+613,,154,"grand bétail, bœuf",french
+614,,154,ganado,spanish
+615,,154,Rind,german
+616,,154,крупный рогатый скот,russian
+617,,155,taureau,french
+618,,155,toro,spanish
+619,,155,Stier oder Bulle,german
+620,,155,бык,russian
+621,,156,boeuf,french
+622,,156,buey,spanish
+623,,156,Ochse,german
+624,,156,вол,russian
+625,,157,vache,french
+626,,157,vaca,spanish
+627,,157,Kuh,german
+628,,157,корова,russian
+629,,158,veau,french
+630,,158,"becerro,ternero",spanish
+631,,158,Kalb,german
+632,,158,теленок,russian
+633,,159,mouton,french
+634,,159,oveja,spanish
+635,,159,Schaf,german
+636,,159,"овца, баран",russian
+637,,160,bélier,french
+638,,160,"carnero, morueco",spanish
+639,,160,Widder oder Schafbock,german
+640,,160,баран,russian
+641,,161,brebis,french
+642,,161,oveja,spanish
+643,,161,Mutterschaf,german
+644,,161,овца,russian
+645,,162,agneau,french
+646,,162,"borrego, cordero",spanish
+647,,162,Lamm,german
+648,,162,ягненок,russian
+649,,163,sanglier,french
+650,,163,jabalí,spanish
+651,,163,Wildschwein,german
+652,,163,кабан,russian
+653,,164,truie,french
+654,,164,"puerca, cochina, cerda",spanish
+655,,164,Sau,german
+656,,164,"свинья, свиноматка",russian
+657,,165,"cochon, porc",french
+658,,165,"cerdo, puerco",spanish
+659,,165,Schwein,german
+660,,165,свинья,russian
+661,,166,chèvre,french
+662,,166,cabra,spanish
+663,,166,Ziege,german
+664,,166,коза,russian
+665,,167,bouc,french
+666,,167,chivo,spanish
+667,,167,Ziegenbock,german
+668,,167,козел,russian
+669,,168,chevreau,french
+670,,168,cabrito,spanish
+671,,168,Zicklein,german
+672,,168,козленок,russian
+673,,169,cheval,french
+674,,169,caballo,spanish
+675,,169,Pferd,german
+676,,169,"лошадь, конь",russian
+677,,170,étalon,french
+678,,170,"caballo padre,semental",spanish
+679,,170,Hengst,german
+680,,170,жеребец,russian
+681,,171,jument,french
+682,,171,yegua,spanish
+683,,171,Stute,german
+684,,171,кобыла,russian
+685,,172,poulain,french
+686,,172,potrillo,spanish
+687,,172,Fohlen,german
+688,,172,жеребенок,russian
+689,,173,âne,french
+690,,173,"asno,burro",spanish
+691,,173,Esel,german
+692,,173,осел,russian
+693,,174,mulet,french
+694,,174,mulo,spanish
+695,,174,Maultier,german
+696,,174,мул,russian
+697,,175,poule,french
+698,,175,ave,spanish
+699,,175,Geflügel,german
+700,,175,домашняя птица,russian
+701,,176,coq,french
+702,,176,gallo,spanish
+703,,176,Hahn,german
+704,,176,петух,russian
+705,,177,poule,french
+706,,177,gallina,spanish
+707,,177,Henne,german
+708,,177,курица,russian
+709,,178,poulet,french
+710,,178,pollo,spanish
+711,,178,Huhn,german
+712,,178,цыпленок,russian
+713,,179,oie,french
+714,,179,ganso,spanish
+715,,179,Gans,german
+716,,179,гусь,russian
+717,,180,canard,french
+718,,180,pato,spanish
+719,,180,Ente,german
+720,,180,утка,russian
+721,,181,nid,french
+722,,181,nido,spanish
+723,,181,Nest,german
+724,,181,гнездо,russian
+725,,182,oiseau,french
+726,,182,pájaro,spanish
+727,,182,Vogel,german
+728,,182,птица,russian
+729,,183,mouette,french
+730,,183,gaviota,spanish
+731,,183,Möwe,german
+732,,183,чайка,russian
+733,,184,héron,french
+734,,184,garza,spanish
+735,,184,Reiher,german
+736,,184,цапля,russian
+737,,185,aigle,french
+738,,185,águila,spanish
+739,,185,Adler,german
+740,,185,орел,russian
+741,,186,faucon,french
+742,,186,"gavilán, halcón",spanish
+743,,186,Habicht oder Sperber,german
+744,,186,"ястреб, сокол",russian
+745,,187,vautour,french
+746,,187,buitre,spanish
+747,,187,Geier,german
+748,,187,гриф,russian
+749,,188,chauve-souris,french
+750,,188,murciélago,spanish
+751,,188,Fledermaus,german
+752,,188,летучая мышь,russian
+753,,189,perroquet,french
+754,,189,loro,spanish
+755,,189,Papagei,german
+756,,189,попугай,russian
+757,,190,corbeau,french
+758,,190,cuervo,spanish
+759,,190,Krähe,german
+760,,190,ворона,russian
+761,,191,colombe,french
+762,,191,paloma,spanish
+763,,191,Taube,german
+764,,191,"голубь, голубка",russian
+765,,192,hibou,french
+766,,192,"lechuza, buho",spanish
+767,,192,Eule,german
+768,,192,"сова, филин",russian
+769,,193,chien,french
+770,,193,perro,spanish
+771,,193,Hund,german
+772,,193,"собака, пес",russian
+773,,194,lapin,french
+774,,194,conejo,spanish
+775,,194,Kaninchen,german
+776,,194,заяц (+ кролик),russian
+777,,195,chat,french
+778,,195,gato,spanish
+779,,195,Katze,german
+780,,195,кот,russian
+781,,196,opossum,french
+782,,196,"zarigüeya, tlacuache, comadreja, zorra mochilera",spanish
+783,,196,Opossum (Beutelratte),german
+784,,196,опоссум,russian
+785,,197,"souris, rat",french
+786,,197,"ratón, rata",spanish
+787,,197,Maus oder Ratte,german
+788,,197,"мышь, крыса",russian
+789,,198,poisson,french
+790,,198,"pez, pescado",spanish
+791,,198,Fisch,german
+792,,198,рыба,russian
+793,,199,nageoire,french
+794,,199,aleta,spanish
+795,,199,Flosse,german
+796,,199,плавник,russian
+797,,200,écaille,french
+798,,200,escama,spanish
+799,,200,Schuppe,german
+800,,200,чешуя,russian
+801,,201,ouïes,french
+802,,201,agalla,spanish
+803,,201,Kieme,german
+804,,201,жабры,russian
+805,,202,"coquille, coquillage",french
+806,,202,valva,spanish
+807,,202,Muschel(schale),german
+808,,202,ракушка,russian
+809,,203,requin,french
+810,,203,tiburón,spanish
+811,,203,Hai,german
+812,,203,акула,russian
+813,,204,baleine,french
+814,,204,ballena,spanish
+815,,204,Wal,german
+816,,204,кит,russian
+817,,205,raie,french
+818,,205,"raya, pastinaca",spanish
+819,,205,Rochen,german
+820,,205,"скат, морской кот",russian
+821,,206,anguille d'eau douce,french
+822,,206,anguila de agua dulce,spanish
+823,,206,Flussaal,german
+824,,206,пресноводный угорь,russian
+825,,207,loup,french
+826,,207,lobo,spanish
+827,,207,Wolf,german
+828,,207,волк,russian
+829,,208,lion,french
+830,,208,león,spanish
+831,,208,Löwe,german
+832,,208,лев,russian
+833,,209,ours,french
+834,,209,oso,spanish
+835,,209,Bär,german
+836,,209,медведь,russian
+837,,210,renard,french
+838,,210,zorro,spanish
+839,,210,Fuchs,german
+840,,210,"лиса, лисица",russian
+841,,211,"daim, cerf, chevreuil",french
+842,,211,venado,spanish
+843,,211,Hirsch,german
+844,,211,"олень, лань",russian
+845,,212,singe,french
+846,,212,mono,spanish
+847,,212,Affe,german
+848,,212,обезъяна,russian
+849,,213,éléphant,french
+850,,213,elefante,spanish
+851,,213,Elefant,german
+852,,213,слон,russian
+853,,214,chameau,french
+854,,214,camello,spanish
+855,,214,Kamel,german
+856,,214,верблpд,russian
+857,,215,insecte,french
+858,,215,insecto,spanish
+859,,215,Insekt,german
+860,,215,насекомое,russian
+861,,216,pou,french
+862,,216,piojo,spanish
+863,,216,Kopflaus,german
+864,,216,вошь,russian
+865,,217,lente,french
+866,,217,liendre,spanish
+867,,217,Nisse,german
+868,,217,гнида,russian
+869,,218,puce,french
+870,,218,pulga,spanish
+871,,218,Floh,german
+872,,218,блоха,russian
+873,,219,mille-pattes,french
+874,,219,ciempiés,spanish
+875,,219,Tausendfüßler,german
+876,,219,"многоножка, сороконожка",russian
+877,,220,scorpion,french
+878,,220,alacrán,spanish
+879,,220,Skorpion,german
+880,,220,скорпион,russian
+881,,221,"cafard, cancrelat",french
+882,,221,cucaracha,spanish
+883,,221,"Kakerlak(e), Schabe",german
+884,,221,таракан,russian
+885,,222,fourmi,french
+886,,222,hormiga,spanish
+6273,,1569,,french
+887,,222,Ameise,german
+888,,222,муравей,russian
+889,,223,araignée,french
+890,,223,araña,spanish
+891,,223,Spinne,german
+892,,223,паук,russian
+893,,224,toile d'araignée,french
+894,,224,telaraña,spanish
+895,,224,"Spinnennetz, Spinnwebe",german
+896,,224,паутина,russian
+897,,225,abeille,french
+898,,225,abeja,spanish
+899,,225,Biene,german
+900,,225,пчела,russian
+901,,226,cire d'abeille,french
+902,,226,cera de abeja,spanish
+903,,226,Bienenwachs,german
+904,,226,воск,russian
+905,,227,ruche,french
+906,,227,colmena,spanish
+907,,227,"Bienenstock, Bienenkorb",german
+908,,227,улей,russian
+909,,228,guêpe,french
+910,,228,avispa,spanish
+911,,228,Wespe,german
+912,,228,оса,russian
+913,,229,mouche,french
+914,,229,mosca,spanish
+915,,229,Fliege,german
+916,,229,муха,russian
+917,,230,moucheron,french
+918,,230,jején,spanish
+919,,230,Gnitze,german
+920,,230,"мошкар, мошкара",russian
+921,,231,moustique,french
+922,,231,mosquito,spanish
+923,,231,Mücke,german
+924,,231,комар,russian
+925,,232,ver de terre,french
+926,,232,"lombriz, gusano",spanish
+927,,232,Wurm,german
+928,,232,"червяк, червь",russian
+929,,233,serpent,french
+930,,233,"culebra,serpiente",spanish
+931,,233,Schlange,german
+932,,233,змея,russian
+933,,234,"verluisant, luciole",french
+934,,234,luciérnaga,spanish
+935,,234,Glühwürmchen,german
+936,,234,"светляк, светлячок",russian
+937,,235,papillon,french
+938,,235,mariposa,spanish
+939,,235,Schmetterling,german
+940,,235,бабочка,russian
+941,,236,sauterelle,french
+942,,236,saltamontes,spanish
+943,,236,"Heuschrecke, Grashüpfer",german
+944,,236,кузнечик,russian
+945,,237,escargot,french
+946,,237,caracol,spanish
+947,,237,Schnecke,german
+948,,237,улитка,russian
+949,,238,grenouille,french
+950,,238,rana,spanish
+951,,238,Frosch,german
+952,,238,лягушка,russian
+953,,239,lézard,french
+954,,239,lagartija,spanish
+955,,239,Eidechse,german
+956,,239,ящерица,russian
+957,,240,"crocodile, alligator",french
+958,,240,"cocodrilo, caimán",spanish
+959,,240,Krokodil,german
+960,,240,крокодил,russian
+961,,241,tortue,french
+962,,241,tortuga,spanish
+963,,241,Schildkröte,german
+964,,241,черепаха,russian
+965,,242,corps,french
+966,,242,cuerpo,spanish
+967,,242,Körper,german
+968,,242,тело,russian
+969,,243,"peau, pelage",french
+970,,243,"piel, cutis,pellejo",spanish
+971,,243,Haut oder Fell,german
+972,,243,"кожа, шкура",russian
+973,,244,chair,french
+974,,244,carne,spanish
+975,,244,Fleisch,german
+976,,244,"тело, плоть",russian
+977,,245,cheveu,french
+978,,245,"cabello, pelo",spanish
+979,,245,Haar,german
+980,,245,волос (на голове),russian
+981,,246,barbe,french
+982,,246,barba,spanish
+983,,246,Bart,german
+984,,246,борода,russian
+985,,247,poil,french
+986,,247,vello (del cuerpo),spanish
+987,,247,"Körperhaar, Körperbehaarung",german
+988,,247,волос (на теле),russian
+989,,248,poil pubien,french
+990,,248,pelo púbico,spanish
+991,,248,Schamhaar,german
+992,,248,волос (лобковый),russian
+993,,249,pellicules,french
+994,,249,caspa,spanish
+995,,249,Schuppen,german
+996,,249,перхоть,russian
+997,,250,sang,french
+998,,250,sangre,spanish
+999,,250,Blut,german
+1000,,250,кровь,russian
+1001,,251,"veine, artère",french
+1002,,251,"vena, arteria",spanish
+1003,,251,"Ader, Vene, Arterie",german
+1004,,251,"вена, артерия",russian
+1005,,252,os,french
+1006,,252,hueso,spanish
+1007,,252,Knochen,german
+1008,,252,кость,russian
+1009,,253,côte,french
+1010,,253,costilla,spanish
+1011,,253,Rippe,german
+1012,,253,ребро,russian
+1013,,254,corne,french
+1014,,254,cuerno,spanish
+1015,,254,Horn,german
+1016,,254,рог,russian
+1017,,255,queue,french
+1018,,255,cola,spanish
+1019,,255,Schwanz,german
+1020,,255,хвост,russian
+1021,,256,dos,french
+1022,,256,espalda,spanish
+1023,,256,Rücken,german
+1024,,256,спина,russian
+1025,,257,épine dorsale,french
+1026,,257,"espinazo, espina dorsal",spanish
+1027,,257,"Wirbelsäule, Rückgrat",german
+1028,,257,"спинной хребет, позвоночник",russian
+1029,,258,tête,french
+1030,,258,cabeza,spanish
+1031,,258,Kopf,german
+1032,,258,голова,russian
+1033,,259,tempes,french
+1034,,259,sien,spanish
+1035,,259,Schläfen,german
+1036,,259,висок,russian
+1037,,260,crâne,french
+1038,,260,"cráneo, calavera",spanish
+1039,,260,Schädel,german
+1040,,260,череп,russian
+1041,,261,cerveau,french
+1042,,261,"cerebro, sesos",spanish
+1043,,261,"Gehirn, Hirn",german
+1044,,261,мозг(и),russian
+1045,,262,visage,french
+1046,,262,cara,spanish
+1047,,262,Gesicht,german
+1048,,262,лицо,russian
+1049,,263,front,french
+1050,,263,frente,spanish
+1051,,263,Stirn,german
+1052,,263,лоб,russian
+1053,,264,machoire,french
+1054,,264,mandíbula,spanish
+1055,,264,"Kiefer, Kinnbacken",german
+1056,,264,челюсть,russian
+1057,,265,joue,french
+1058,,265,mejilla,spanish
+1059,,265,Wange,german
+1060,,265,щека,russian
+1061,,266,menton,french
+1062,,266,mentón,spanish
+1063,,266,Kinn,german
+1064,,266,подбородок,russian
+1065,,267,oeil,french
+1066,,267,ojo,spanish
+1067,,267,Auge,german
+1068,,267,глаз,russian
+1069,,268,sourcil,french
+1070,,268,ceja,spanish
+1071,,268,(Augen)Braue,german
+1072,,268,бровь,russian
+1073,,269,paupière,french
+1074,,269,párpado,spanish
+1075,,269,(Augen)Lid,german
+1076,,269,веко,russian
+1077,,270,cil,french
+1078,,270,pestaña,spanish
+1079,,270,Wimper,german
+1080,,270,ресница,russian
+1081,,271,cligner des yeux,french
+1082,,271,parpadear,spanish
+1083,,271,"blinzeln, zwinkern",german
+1084,,271,мигать,russian
+1085,,272,oreille,french
+1086,,272,oreja,spanish
+1087,,272,Ohr,german
+1088,,272,ухо,russian
+1089,,273,lobe de l'oreille,french
+1090,,273,lóbulo (de oreja),spanish
+1091,,273,Ohrläppchen,german
+1092,,273,мочка уха,russian
+1093,,274,"cèrumen, cire d'oreille",french
+1094,,274,cerumen,spanish
+1095,,274,Ohrenschmalz,german
+1096,,274,ушная сера,russian
+1097,,275,nez,french
+1098,,275,nariz,spanish
+1099,,275,Nase,german
+1100,,275,нос,russian
+1101,,276,narine,french
+1102,,276,ventana de la nariz,spanish
+1103,,276,"Nasenloch, Nüster (horse)",german
+1104,,276,ноздря,russian
+1105,,277,"morve, mucus",french
+1106,,277,moco,spanish
+1107,,277,"Rotz, Nasenschleim",german
+1108,,277,"слизь, сопля",russian
+1109,,278,bouche,french
+1110,,278,boca,spanish
+1111,,278,Mund,german
+1112,,278,рот,russian
+1113,,279,bec,french
+1114,,279,pico,spanish
+1115,,279,Schnabel,german
+1116,,279,клюв,russian
+1117,,280,lèvre,french
+1118,,280,labio,spanish
+1119,,280,Lippe,german
+1120,,280,губа,russian
+1121,,281,langue,french
+1122,,281,lengua,spanish
+1123,,281,Zunge,german
+1124,,281,язык,russian
+1125,,282,dent,french
+1126,,282,diente,spanish
+1127,,282,Zahn,german
+1128,,282,зуб,russian
+1129,,283,gencive,french
+1130,,283,encías,spanish
+1131,,283,Zahnfleisch,german
+1132,,283,десны,russian
+1133,,284,molaire,french
+1134,,284,"molar,muela",spanish
+1135,,284,Backenzahn,german
+1136,,284,коренной зуб,russian
+1137,,285,cou,french
+1138,,285,cuello,spanish
+1139,,285,Hals,german
+1140,,285,шея,russian
+1141,,286,nuque,french
+1142,,286,nuca,spanish
+1143,,286,"Nacken, Genick",german
+1144,,286,затылок,russian
+1145,,287,gorge,french
+1146,,287,garganta,spanish
+1147,,287,Kehle,german
+1148,,287,"горло, глотка",russian
+1149,,288,épaule,french
+1150,,288,hombro,spanish
+1151,,288,Schulter,german
+1152,,288,плечо,russian
+1153,,289,omoplate,french
+1154,,289,"escápula,omóplato",spanish
+1155,,289,Schulterblatt,german
+1156,,289,лопатка,russian
+1157,,290,clavicule,french
+1158,,290,clavícula,spanish
+1159,,290,Schlüsselbein,german
+1160,,290,ключица,russian
+1161,,291,bras,french
+1162,,291,brazo,spanish
+1163,,291,Arm,german
+1164,,291,рука,russian
+1165,,292,aisselle,french
+1166,,292,"sobaco, axila",spanish
+1167,,292,"Achsel, Achselhöhle",german
+1168,,292,подмышка,russian
+1169,,293,coude,french
+1170,,293,codo,spanish
+1171,,293,Ellbogen,german
+1172,,293,локоть,russian
+1173,,294,poignet,french
+1174,,294,muñeca,spanish
+1175,,294,Handgelenk,german
+1176,,294,запястье,russian
+1177,,295,main,french
+1178,,295,mano,spanish
+1179,,295,Hand,german
+1180,,295,кисть,russian
+1181,,296,paume,french
+1182,,296,palma de la mano,spanish
+1183,,296,"Handteller, Handfläche",german
+1184,,296,ладонь,russian
+1185,,297,doigt,french
+1186,,297,dedo,spanish
+1187,,297,Finger,german
+1188,,297,палец (рука),russian
+1189,,298,pouce,french
+1190,,298,pulgar,spanish
+1191,,298,Daumen,german
+1192,,298,большой палец,russian
+1193,,299,ongle,french
+1194,,299,uña,spanish
+1195,,299,Fingernagel,german
+1196,,299,ноготь,russian
+1197,,300,griffe,french
+1198,,300,garra,spanish
+1199,,300,"Klaue, Kralle",german
+1200,,300,коготь,russian
+1201,,301,jambe,french
+1202,,301,"pierna,pata",spanish
+1203,,301,Bein,german
+1204,,301,нога,russian
+1205,,302,cuisse,french
+1206,,302,muslo,spanish
+1207,,302,Oberschenkel,german
+1208,,302,бедро,russian
+1209,,303,mollet,french
+1210,,303,pantorrilla,spanish
+1211,,303,Wade,german
+1212,,303,икра ноги,russian
+1213,,304,genou,french
+1214,,304,rodilla,spanish
+1215,,304,Knie,german
+1216,,304,колено,russian
+1217,,305,pied,french
+1218,,305,pie,spanish
+1219,,305,Fuß,german
+1220,,305,ступня,russian
+1221,,306,cheville,french
+1222,,306,tobillo,spanish
+1223,,306,"Fußgelenk, Fußknöchel",german
+1224,,306,лодыжка,russian
+1225,,307,talon,french
+1226,,307,talón,spanish
+1227,,307,Ferse,german
+1228,,307,пятка,russian
+1229,,308,empreinte de pied,french
+1230,,308,huella,spanish
+1231,,308,Fußabdruck,german
+1232,,308,след (ноги),russian
+1233,,309,"orteil, doigt de pied",french
+1234,,309,dedo del pie,spanish
+1235,,309,Zeh,german
+1236,,309,палец (ноги),russian
+1237,,310,aile,french
+1238,,310,ala,spanish
+1239,,310,Flügel,german
+1240,,310,крыло,russian
+1241,,311,plume,french
+1242,,311,pluma,spanish
+1243,,311,Feder,german
+1244,,311,перо,russian
+1245,,312,poitrine,french
+1246,,312,pecho,spanish
+1247,,312,Brust,german
+1248,,312,грудная клетка,russian
+1249,,313,"sein, poitrine",french
+1250,,313,seno,spanish
+1251,,313,Brust,german
+1252,,313,грудь (женская),russian
+1253,,314,"bout du sein (+hum), mamelle (+hum) téton (-hum),",french
+1254,,314,pezón,spanish
+1255,,314,"Brustwarze (+hum), Zitze (-hum)",german
+1256,,314,сосок,russian
+1257,,315,pis,french
+1258,,315,ubre,spanish
+1259,,315,Euter,german
+1260,,315,вымя,russian
+1261,,316,nombril,french
+1262,,316,ombligo,spanish
+1263,,316,Nabel,german
+1264,,316,пуп,russian
+1265,,317,coeur,french
+1266,,317,corazón,spanish
+1267,,317,Herz,german
+1268,,317,сердце,russian
+1269,,318,poumon,french
+1270,,318,pulmón,spanish
+1271,,318,Lunge,german
+1272,,318,легкое,russian
+1273,,319,foie,french
+1274,,319,hígado,spanish
+1275,,319,Leber,german
+1276,,319,печень,russian
+1277,,320,rein,french
+1278,,320,riñón,spanish
+1279,,320,Niere,german
+1280,,320,почка,russian
+1281,,321,rate,french
+1282,,321,bazo,spanish
+1283,,321,Milz,german
+1284,,321,селезенка,russian
+1285,,322,"estomac, (mal au) ventre",french
+6387,,1597,,german
+1286,,322,estómago,spanish
+1287,,322,Magen,german
+1288,,322,желудок,russian
+1289,,323,"intestins, boyaux",french
+1290,,323,intestinos,spanish
+1291,,323,Eingeweide,german
+1292,,323,кишечник,russian
+1293,,324,taille,french
+1294,,324,cintura,spanish
+1295,,324,Taille,german
+1296,,324,талия,russian
+1297,,325,hanche,french
+1298,,325,cadera,spanish
+1299,,325,Hüfte,german
+1300,,325,"бедро, ляжка",russian
+1301,,326,"fesses, derrière",french
+1302,,326,"nalgas,trasero",spanish
+1303,,326,"Hintern, Gesäß",german
+1304,,326,ягодицы,russian
+1305,,327,"utérus, sein de la mère",french
+1306,,327,"matriz,vientre",spanish
+1307,,327,"Mutterleib, Gebärmutter",german
+1308,,327,"матка, лоно",russian
+1309,,328,testicule,french
+1310,,328,testículo,spanish
+1311,,328,Hoden,german
+1312,,328,тестикул,russian
+1313,,329,pénis,french
+1314,,329,pene,spanish
+1315,,329,Penis,german
+1316,,329,пенис,russian
+1317,,330,respirer,french
+1318,,330,"respirar, aliento",spanish
+1319,,330,Atem,german
+1320,,330,дыхание,russian
+1321,,331,bâiller,french
+1322,,331,bostezar,spanish
+1323,,331,gähnen,german
+1324,,331,зевать,russian
+1325,,332,hoqueter,french
+1326,,332,hipo,spanish
+1327,,332,Schluckauf haben,german
+1328,,332,икать,russian
+1329,,333,tousser,french
+1330,,333,toser,spanish
+1331,,333,husten,german
+1332,,333,кашлять,russian
+1333,,334,éternuer,french
+1334,,334,estornudar,spanish
+1335,,334,niesen,german
+1336,,334,чихать,russian
+1337,,335,"transpirer, suer",french
+1338,,335,sudar,spanish
+1339,,335,schwitzen,german
+1340,,335,потеть,russian
+1341,,336,cracher,french
+1342,,336,escupir (saliva [noun]),spanish
+1343,,336,spucken,german
+1344,,336,"плевать(ся), плевок",russian
+1345,,337,vomir,french
+1346,,337,vomitar,spanish
+1347,,337,"brechen, sich erbrechen",german
+1348,,337,страдать рвотой,russian
+1349,,338,mordre,french
+1350,,338,morder,spanish
+1351,,338,beißen,german
+1352,,338,кусать,russian
+1353,,339,lécher,french
+1354,,339,lamer,spanish
+1355,,339,lecken,german
+1356,,339,лизать,russian
+1357,,340,baver,french
+1358,,340,"gotear, babear",spanish
+1359,,340,sabbern,german
+1360,,340,пускать слюну,russian
+1361,,341,dormir,french
+1362,,341,dormir,spanish
+1363,,341,schlafen,german
+1364,,341,спать,russian
+1365,,342,ronfler,french
+1366,,342,roncar,spanish
+1367,,342,schnarchen,german
+1368,,342,храпеть,russian
+1369,,343,rêver,french
+1370,,343,soñar,spanish
+1371,,343,träumen,german
+1372,,343,"видеть сон, мечтать",russian
+1373,,344,"se réveiller, s'eveiller",french
+1374,,344,despertarse,spanish
+1375,,344,aufwachen,german
+1376,,344,просыпаться,russian
+1377,,345,péter,french
+1378,,345,flato,spanish
+1379,,345,furzen,german
+1380,,345,освободиться от газов,russian
+1381,,346,uriner,french
+1382,,346,orinar,spanish
+1383,,346,"pinkeln, pissen",german
+6501,,1626,,french
+1384,,346,мочиться,russian
+1385,,347,déféquer,french
+1386,,347,"defecar, excremento (noun)",spanish
+1387,,347,scheißen,german
+1388,,347,испражняться,russian
+1389,,348,"faire l'amour, copuler",french
+1390,,348,tener relaciones sexuales,spanish
+1391,,348,schlafen (mit),german
+1392,,348,вступать в половой контакт,russian
+1393,,349,"trembler, frissonner",french
+1394,,349,temblar,spanish
+1395,,349,zittern,german
+1396,,349,дрожать,russian
+1397,,350,se baigner,french
+1398,,350,bañar(se),spanish
+1399,,350,baden,german
+1400,,350,купаться,russian
+1401,,351,engendrer,french
+1402,,351,engendrar,spanish
+1403,,351,zeugen,german
+1404,,351,"порождать, рождать (об отце)",russian
+1405,,352,"né,naître",french
+1406,,352,nacer,spanish
+1407,,352,geboren werden,german
+1408,,352,родиться,russian
+1409,,353,enceinte,french
+1410,,353,"embarazada (mujer), preñada (hembra)",spanish
+1411,,353,"schwanger (+hum), trächtig (-hum)",german
+1412,,353,беременная,russian
+1413,,354,concevoir,french
+1414,,354,concebir,spanish
+1415,,354,schwanger werden,german
+1416,,354,"зачать, забеременнеть",russian
+1417,,355,vivre,french
+1418,,355,vivir,spanish
+1419,,355,"aam Leben, lebendig sein",german
+1420,,355,"жить, живой",russian
+1421,,356,mourir,french
+1422,,356,"morir, muerto",spanish
+1423,,356,sterben,german
+1424,,356,"умереть, скончаться, мертвый",russian
+1425,,357,noyé(e),french
+1426,,357,ahogado,spanish
+1427,,357,ertrunken,german
+1428,,357,"утонувший, утопленник",russian
+1429,,358,tuer,french
+1430,,358,matar,spanish
+1431,,358,"töten, umbringen",german
+1432,,358,убивать,russian
+1433,,359,cadavre,french
+1434,,359,cadáver,spanish
+1435,,359,"Leiche, Leichnam",german
+1436,,359,труп,russian
+1437,,360,enterrer,french
+1438,,360,sepultar,spanish
+1439,,360,"beerdigen, begraben, bestatten",german
+1440,,360,хоронить,russian
+1441,,361,tombeau,french
+1442,,361,sepulcro,spanish
+1443,,361,Grab,german
+1444,,361,могила,russian
+1445,,362,"fort,puissant",french
+1446,,362,"fuerte, poderoso",spanish
+1447,,362,"stark, mächtig, kräftig",german
+1448,,362,"сильный, могущественный",russian
+1449,,363,faible,french
+1450,,363,débil,spanish
+1451,,363,schwach,german
+1452,,363,"слабый, хилый",russian
+1453,,364,"santé, en bonne santé",french
+1454,,364,"sano, salud",spanish
+1455,,364,gesund,german
+1456,,364,"здоровый, здоровье",russian
+1457,,365,malade,french
+1458,,365,enfermo,spanish
+1459,,365,krank,german
+1460,,365,больной,russian
+1461,,366,fièvre,french
+1462,,366,fiebre,spanish
+1463,,366,Fieber,german
+1464,,366,"жар, лихорадить",russian
+1465,,367,goître,french
+1466,,367,"bocio, coto",spanish
+1467,,367,Kropf,german
+1468,,367,зоб,russian
+1469,,368,rhume,french
+1470,,368,catarro,spanish
+1471,,368,Erkältung,german
+1472,,368,простуда,russian
+1473,,369,"blessure, plaie",french
+1474,,369,"herida, llaga",spanish
+1475,,369,Wunde,german
+1476,,369,"рана, язва",russian
+1477,,370,"contusion, bleu",french
+1478,,370,magulladura,spanish
+1479,,370,"blauer Fleck, Bluterguss",german
+1480,,370,ушиб,russian
+1481,,371,"bosse, enflure",french
+1482,,371,hinchazón,spanish
+1483,,371,"Beule, Schwellung",german
+1484,,371,опухоль,russian
+1485,,372,démangeaison,french
+1486,,372,comezón,spanish
+1487,,372,"Jucken, Juckreiz",german
+1488,,372,зуд,russian
+1489,,373,ampoule,french
+1490,,373,ampolla,spanish
+1491,,373,Blase,german
+1492,,373,"волдырь, водяной пузырь",russian
+1493,,374,furoncle,french
+1494,,374,"furúnculo, forúnculo",spanish
+1495,,374,"Eiterbeule, Furunkel, Schwäre",german
+1496,,374,"нарыв, фурункул",russian
+1497,,375,pus,french
+1498,,375,pus,spanish
+1499,,375,Eiter,german
+1500,,375,гной,russian
+1501,,376,cicatrice,french
+1502,,376,cicatriz,spanish
+1503,,376,Narbe,german
+1504,,376,"шрам, рубец",russian
+1505,,377,guérir,french
+1506,,377,sanar,spanish
+1507,,377,heilen,german
+1508,,377,"лечить, исцелять",russian
+1509,,378,médecin,french
+1510,,378,"doctor, médico",spanish
+1511,,378,Arzt,german
+1512,,378,"врач, (фельдшер)",russian
+1513,,379,"remède, médecine, médicament",french
+1514,,379,"medicina, remedio",spanish
+1515,,379,"Arznei, Heilmittel, Medizin",german
+1516,,379,"лекарство, средство",russian
+1517,,380,poison,french
+1518,,380,veneno,spanish
+1519,,380,Gift,german
+1520,,380,яд,russian
+1521,,381,fatigué,french
+1522,,381,cansado,spanish
+1523,,381,müde,german
+1524,,381,"усталый, утомленный",russian
+1525,,382,se reposer,french
+1526,,382,descansar,spanish
+1527,,382,(sich) ausruhen,german
+1528,,382,отдыхать,russian
+1529,,383,paresseux,french
+1530,,383,perezoso,spanish
+1531,,383,"faul, träge",german
+1532,,383,ленивый,russian
+1533,,384,chauve,french
+1534,,384,calvo,spanish
+1535,,384,"kahl, glatzköpfig",german
+1536,,384,лысый,russian
+1537,,385,boiteux,french
+1538,,385,lisiado,spanish
+1539,,385,lahm,german
+1540,,385,хромать,russian
+1541,,386,sourd,french
+1542,,386,sordo,spanish
+1543,,386,taub,german
+1544,,386,глухой,russian
+1545,,387,muet,french
+1546,,387,mudo,spanish
+1547,,387,stumm,german
+1548,,387,немой,russian
+1549,,388,aveugle,french
+1550,,388,ciego,spanish
+1551,,388,blind,german
+1552,,388,слепой,russian
+1553,,389,ivre,french
+1554,,389,ebrio,spanish
+1555,,389,betrunken,german
+1556,,389,пьяный,russian
+1557,,390,nu,french
+1558,,390,desnudo,spanish
+1559,,390,nackt,german
+1560,,390,"голый, обнаженный",russian
+1561,,391,manger,french
+1562,,391,comer,spanish
+1563,,391,essen,german
+1564,,391,"есть, кушать",russian
+1565,,392,nourriture,french
+1566,,392,comida,spanish
+1567,,392,Essen,german
+1568,,392,пища,russian
+1569,,393,cuit,french
+1570,,393,cocinado,spanish
+1571,,393,gekocht,german
+1572,,393,вареный,russian
+1573,,394,cru,french
+1574,,394,crudo,spanish
+1575,,394,roh,german
+6615,,1654,,german
+1576,,394,сырой,russian
+1577,,395,mûr,french
+1578,,395,maduro,spanish
+1579,,395,reif,german
+1580,,395,"зрелый, спелый",russian
+1581,,396,vert,french
+1582,,396,"inmaduro, no maduro, verde",spanish
+1583,,396,unreif,german
+1584,,396,"зеленый, неспелый, незрелый",russian
+1585,,397,pourri,french
+1586,,397,podrido,spanish
+1587,,397,verfault,german
+1588,,397,гнилой,russian
+1589,,398,boire,french
+1590,,398,beber,spanish
+1591,,398,trinken,german
+1592,,398,пить,russian
+1593,,399,faim,french
+1594,,399,hambre,spanish
+1595,,399,Hunger haben,german
+1596,,399,голод,russian
+1597,,400,"famine, disette",french
+1598,,400,hambre,spanish
+1599,,400,Hungersnot,german
+1600,,400,"голод, голодание",russian
+1601,,401,soif,french
+1602,,401,sed,spanish
+1603,,401,Durst haben,german
+1604,,401,жажда,russian
+1605,,402,"sucer, téter",french
+1606,,402,chupar,spanish
+1607,,402,saugen,german
+1608,,402,сосать,russian
+1609,,403,"mastiquer, macher",french
+1610,,403,masticar,spanish
+1611,,403,kauen,german
+1612,,403,жевать,russian
+1613,,404,avaler,french
+1614,,404,tragar,spanish
+1615,,404,herunterschlucken,german
+1616,,404,глотать,russian
+1617,,405,étouffer,french
+1618,,405,sofocar,spanish
+1619,,405,zum Ersticken bringen,german
+1620,,405,"душить, вызывать удушье",russian
+1621,,406,cuire,french
+1622,,406,cocinar,spanish
+1623,,406,kochen,german
+1624,,406,варить,russian
+1625,,407,bouillir,french
+1626,,407,hervir,spanish
+1627,,407,kochen,german
+1628,,407,кипятить,russian
+1629,,408,"rôtir, frire",french
+1630,,408,"asar, freír",spanish
+1631,,408,braten,german
+1632,,408,жарить,russian
+1633,,409,cuire au four,french
+1634,,409,hornear,spanish
+1635,,409,backen,german
+1636,,409,печь,russian
+1637,,410,four,french
+1638,,410,horno,spanish
+1639,,410,Ofen,german
+1640,,410,печь,russian
+1641,,411,"casserole, marmite",french
+1642,,411,olla,spanish
+1643,,411,Topf,german
+1644,,411,"котелок, кастрюля",russian
+1645,,412,bouilloire,french
+1646,,412,caldera,spanish
+1647,,412,Kessel,german
+1648,,412,чайник,russian
+1649,,413,poêle,french
+1650,,413,"cacerola, cazuela",spanish
+1651,,413,Pfanne,german
+1652,,413,сковородка,russian
+1653,,414,"plat, assiette",french
+1654,,414,fuente,spanish
+1655,,414,Schüssel,german
+1656,,414,"блюдо, тарелка",russian
+1657,,415,assiette,french
+1658,,415,plato,spanish
+1659,,415,Teller,german
+1660,,415,тарелка,russian
+1661,,416,bol,french
+1662,,416,tazón,spanish
+1663,,416,Schale,german
+1664,,416,"миска, таз",russian
+1665,,417,"cruche, broc",french
+1666,,417,"cántaro, jarro",spanish
+1667,,417,Krug,german
+1668,,417,кувшин,russian
+1669,,418,"tasse, coupe, gobelet",french
+1670,,418,taza,spanish
+1671,,418,"Tasse, Becher",german
+1672,,418,"чашка, кубок",russian
+1673,,419,soucoupe,french
+1674,,419,platillo,spanish
+1675,,419,Untertasse,german
+1676,,419,блюдце,russian
+1677,,420,cuillère,french
+1678,,420,cuchara,spanish
+1679,,420,Löffel,german
+1680,,420,ложка,russian
+1681,,421,couteau (de table),french
+1682,,421,cuchillo (para cortar comida),spanish
+1683,,421,Messer,german
+1684,,421,нож,russian
+1685,,422,fourchette,french
+1686,,422,tenedor,spanish
+1687,,422,Gabel,german
+1688,,422,вилка,russian
+1689,,423,pinces,french
+1690,,423,tenazas,spanish
+1691,,423,Zange,german
+1692,,423,щипцы,russian
+1693,,424,repas,french
+1694,,424,comida,spanish
+1695,,424,Mahlzeit,german
+1696,,424,"еда, принятие пищи",russian
+1697,,425,petit déjeuner,french
+1698,,425,desayuno,spanish
+1699,,425,Frühstück,german
+1700,,425,завтрак,russian
+1701,,426,"déjeuner, repas de midi",french
+1702,,426,almuerzo,spanish
+1703,,426,Mittagessen,german
+1704,,426,обед,russian
+1705,,427,dîner,french
+1706,,427,comida,spanish
+1707,,427,Hauptmahlzeit,german
+1708,,427,обед/ужин,russian
+1709,,428,"souper, repas du soir",french
+1710,,428,cena,spanish
+1711,,428,"Abendessen, Abendbrot",german
+1712,,428,(холодный) ужин,russian
+1713,,429,"peler,éplucher",french
+1714,,429,pelar,spanish
+1715,,429,"schälen, pellen",german
+1716,,429,"чистить, отчищать (овощи, фрукты)",russian
+1717,,430,passer,french
+1718,,430,"cribar, colar, cerner",spanish
+1719,,430,"(durch)sieben, passieren",german
+1720,,430,"просеивать, процеживать",russian
+1721,,431,gratter,french
+1722,,431,raspar,spanish
+1723,,431,"kratzen, schaben, schürfen",german
+1724,,431,тереть,russian
+1725,,432,"mêler, mélanger",french
+1726,,432,"mezclar, mixturar",spanish
+1727,,432,"rühren, mischen",german
+1728,,432,"мешать, помешивать, смешивать",russian
+1729,,433,pain,french
+1730,,433,pan,spanish
+1731,,433,Brot,german
+1732,,433,хлеб,russian
+1733,,434,pâte,french
+1734,,434,masa,spanish
+1735,,434,Teig,german
+1736,,434,тесто,russian
+1737,,435,pétrir,french
+1738,,435,amasar,spanish
+1739,,435,kneten,german
+1740,,435,месить (тесто),russian
+1741,,436,farine,french
+1742,,436,harina,spanish
+1743,,436,Mehl,german
+1744,,436,мука,russian
+1745,,437,moudre,french
+1746,,437,"aplastar, moler",spanish
+1747,,437,"mahlen, zermahlen",german
+1748,,437,"давить, дробить",russian
+1749,,438,moulin,french
+1750,,438,molino,spanish
+1751,,438,Mühle,german
+1752,,438,мельница,russian
+1753,,439,mortier,french
+1754,,439,mortero,spanish
+1755,,439,Mörser,german
+1756,,439,"ступка, ступа",russian
+1757,,440,pilon,french
+1758,,440,mano de mortero,spanish
+1759,,440,Stößel,german
+1760,,440,пестик,russian
+1761,,441,viande,french
+1762,,441,carne,spanish
+1763,,441,Fleisch,german
+1764,,441,мясо,russian
+1765,,442,saucisse,french
+1766,,442,salchicha,spanish
+1767,,442,Wurst,german
+1768,,442,"колбаса, сосиска",russian
+1769,,443,"soupe, potage",french
+1770,,443,sopa,spanish
+1771,,443,Suppe,german
+1772,,443,суп,russian
+1773,,444,légumes,french
+1774,,444,legumbres,spanish
+1775,,444,Gemüse,german
+1776,,444,овощи,russian
+1777,,445,haricot,french
+1778,,445,"frijol, poroto",spanish
+1779,,445,Bohne,german
+1780,,445,боб,russian
+1781,,446,pomme de terre,french
+1782,,446,papa,spanish
+1783,,446,Kartoffel,german
+1784,,446,картофель,russian
+1785,,447,fruit,french
+1786,,447,fruta,spanish
+1787,,447,Obst,german
+1788,,447,фрукт,russian
+1789,,448,botte,french
+1790,,448,racimo,spanish
+1791,,448,Bund,german
+1792,,448,"гроздь, пучок",russian
+1793,,449,figue,french
+1794,,449,higo,spanish
+1795,,449,Feige,german
+1796,,449,инжир,russian
+1797,,450,raisin,french
+1798,,450,uva,spanish
+1799,,450,"Weintraube, Traube, Weinbeere",german
+1800,,450,виноград,russian
+1801,,451,noix,french
+1802,,451,nuez,spanish
+1803,,451,Nuss,german
+1804,,451,орех,russian
+1805,,452,olive,french
+1806,,452,"aceituna, oliva",spanish
+1807,,452,Olive,german
+1808,,452,"олива, маслина",russian
+1809,,453,huile,french
+1810,,453,aceite,spanish
+1811,,453,Öl,german
+1812,,453,растительное масло,russian
+1813,,454,"graisse, le gras",french
+1814,,454,grasa,spanish
+1815,,454,Fett,german
+1816,,454,"жир, сало",russian
+1817,,455,sel,french
+1818,,455,sal,spanish
+1819,,455,Salz,german
+1820,,455,соль,russian
+1821,,456,poivre,french
+1822,,456,pimienta,spanish
+1823,,456,Pfeffer,german
+1824,,456,перец,russian
+1825,,457,piment,french
+1826,,457,ají,spanish
+1827,,457,Cayennepfeffer,german
+1828,,457,острый перец,russian
+1829,,458,miel,french
+1830,,458,miel,spanish
+1831,,458,Honig,german
+1832,,458,мед,russian
+1833,,459,sucre,french
+1834,,459,azúcar,spanish
+1835,,459,Zucker,german
+1836,,459,сахар,russian
+1837,,460,lait,french
+1838,,460,leche,spanish
+1839,,460,Milch,german
+1840,,460,молоко,russian
+1841,,461,traire,french
+1842,,461,ordeñar,spanish
+1843,,461,melken,german
+1844,,461,доить,russian
+1845,,462,fromage,french
+1846,,462,queso,spanish
+1847,,462,Käse,german
+1848,,462,сыр,russian
+1849,,463,beurre,french
+1850,,463,"manteca, mantequilla",spanish
+1851,,463,Butter,german
+1852,,463,сливочное масло,russian
+1853,,464,boisson,french
+1854,,464,bebida,spanish
+1855,,464,Getränk,german
+1856,,464,напиток,russian
+1857,,465,hydromel,french
+1858,,465,aguamiel,spanish
+1859,,465,Met,german
+1860,,465,мед (напиток),russian
+1861,,466,vin,french
+1862,,466,vino,spanish
+1863,,466,Wein,german
+1864,,466,вино,russian
+1865,,467,bière,french
+1866,,467,cerveza,spanish
+1867,,467,Bier,german
+1868,,467,пиво,russian
+1869,,468,boisson fermentée,french
+1870,,468,bebida fermentada,spanish
+1871,,468,vergorenes Getränk,german
+1872,,468,брага,russian
+1873,,469,oeuf,french
+1874,,469,huevo,spanish
+1875,,469,Ei,german
+1876,,469,яйцо,russian
+1877,,470,jaune d'oeuf,french
+1878,,470,yema (de huevo),spanish
+1879,,470,"Eigelb, Dotter",german
+1880,,470,желток,russian
+1881,,471,"porter, mettre (vêtement)",french
+1882,,471,vestirse,spanish
+1883,,471,"anziehen, ankleiden, kleiden",german
+1884,,471,одевать,russian
+1885,,472,"habit, vêtement",french
+1886,,472,ropa,spanish
+1887,,472,"Kleider, Kleidung",german
+1888,,472,одежда,russian
+1889,,473,tailleur,french
+1890,,473,sastre,spanish
+1891,,473,Schneider,german
+1892,,473,портной,russian
+1893,,474,"étoffe,tissu",french
+1894,,474,tela,spanish
+1895,,474,"Stoff, Tuch",german
+1896,,474,"ткань, сукно",russian
+1897,,475,laine,french
+1898,,475,lana,spanish
+1899,,475,Wolle,german
+1900,,475,шерсть (шерстяная ткань),russian
+1901,,476,lin,french
+1902,,476,lino,spanish
+1903,,476,Leinen,german
+1904,,476,лен (льняная ткань),russian
+1905,,477,coton,french
+1906,,477,algodón,spanish
+1907,,477,Baumwolle,german
+1908,,477,хлопок (хлопчатобумажная ткань),russian
+1909,,478,soie,french
+1910,,478,seda,spanish
+1911,,478,Seide,german
+1912,,478,шелк,russian
+1913,,479,feutre,french
+1914,,479,fieltro,spanish
+1915,,479,Filz,german
+1916,,479,"фетр, войлок",russian
+1917,,480,fourrure,french
+1918,,480,piel (de animal),spanish
+1919,,480,Pelz,german
+1920,,480,мех,russian
+1921,,481,cuir,french
+1922,,481,cuero,spanish
+1923,,481,Leder,german
+1924,,481,кожа,russian
+1925,,482,filer,french
+1926,,482,hilar,spanish
+1927,,482,spinnen,german
+1928,,482,прясть,russian
+1929,,483,fuseau,french
+1930,,483,huso,spanish
+1931,,483,Spindel,german
+1932,,483,веретено,russian
+1933,,484,tisser,french
+1934,,484,tejer,spanish
+1935,,484,weben,german
+1936,,484,"плести, ткать",russian
+1937,,485,métier â tisser,french
+1938,,485,telar,spanish
+1939,,485,Webstuhl,german
+1940,,485,ткацкий станок,russian
+1941,,486,coudre,french
+1942,,486,coser,spanish
+1943,,486,nähen,german
+1944,,486,шить,russian
+1945,,487,aiguille,french
+1946,,487,aguja,spanish
+1947,,487,Nadel,german
+1948,,487,игла,russian
+1949,,488,alène,french
+1950,,488,punzón,spanish
+1951,,488,Ahle,german
+1952,,488,шило,russian
+1953,,489,fil,french
+1954,,489,hilo,spanish
+1955,,489,Faden,german
+1956,,489,нитка,russian
+1957,,490,teindre,french
+1958,,490,teñir,spanish
+1959,,490,färben,german
+1960,,490,"красить (vb, not n)",russian
+1961,,491,cape,french
+1962,,491,capa,spanish
+1963,,491,"Mantel, Umhang",german
+1964,,491,плащ,russian
+1965,,492,poncho,french
+1966,,492,"poncho,ruana",spanish
+1967,,492,Poncho,german
+1968,,492,пончо,russian
+1969,,493,échelle,french
+1970,,493,escalera,spanish
+1971,,493,Leiter,german
+6729,,1683,,french
+1972,,493,лестница (приставная),russian
+1973,,494,robe (de femme),french
+1974,,494,vestido,spanish
+1975,,494,Kleid,german
+1976,,494,женское платье,russian
+1977,,495,"manteau, pardessus",french
+1978,,495,"abrigo,saco",spanish
+1979,,495,"(Geh)Rock, Jacke, Mantel",german
+1980,,495,пальто + шуба,russian
+1981,,496,chemise,french
+1982,,496,camisa,spanish
+1983,,496,Hemd,german
+1984,,496,рубашка,russian
+1985,,497,col,french
+1986,,497,cuello,spanish
+1987,,497,Kragen,german
+1988,,497,воротник,russian
+1989,,498,jupe,french
+1990,,498,falda,spanish
+1991,,498,Rock,german
+1992,,498,юбка,russian
+1993,,499,jupe en rafia,french
+1994,,499,falda de hierbas,spanish
+1995,,499,?,german
+1996,,499,юбка из листьев,russian
+1997,,500,pantalon,french
+1998,,500,"pantalones, calzones",spanish
+1999,,500,Hose,german
+2000,,500,"штаны, брюки",russian
+2001,,501,"bas, chaussette",french
+2002,,501,"media, calcetín",spanish
+2003,,501,"(Knie)Strumpf, Socke",german
+2004,,501,"чулок, носок",russian
+2005,,502,"chaussure, soulier",french
+2006,,502,zapato,spanish
+2007,,502,Schuh,german
+2008,,502,"туфель,  ботинок",russian
+2009,,503,botte,french
+2010,,503,bota,spanish
+2011,,503,Stiefel,german
+2012,,503,сапог,russian
+2013,,504,cordonnier,french
+2014,,504,zapatero,spanish
+2015,,504,"Schuhmacher, Schuster",german
+2016,,504,сапожник,russian
+2017,,505,"chapeau, casquette, bonnet",french
+2018,,505,"sombrero, gorro",spanish
+2019,,505,Hut; Mütze,german
+2020,,505,шляпа,russian
+2021,,506,ceinture,french
+2022,,506,"cinturón,faja",spanish
+2023,,506,Gürtel,german
+2024,,506,ремень,russian
+2025,,507,gant,french
+2026,,507,guante,spanish
+2027,,507,Handschuh,german
+2028,,507,перчатка,russian
+2029,,508,voile,french
+2030,,508,velo,spanish
+2031,,508,Schleier,german
+2032,,508,вуаль,russian
+2033,,509,poche,french
+2034,,509,bolsillo,spanish
+2035,,509,"Tasche, Hosentasche",german
+2036,,509,карман,russian
+2037,,510,bouton,french
+2038,,510,botón,spanish
+2039,,510,Knopf,german
+2040,,510,пуговица,russian
+2041,,511,épingle,french
+2042,,511,alfiler,spanish
+2043,,511,Stecknadel,german
+2044,,511,булавка,russian
+2045,,512,ornement,french
+2046,,512,"adorno,ornato",spanish
+2047,,512,Schmuck,german
+2048,,512,"орнамент, украшение",russian
+2049,,513,"bijou, joyau",french
+2050,,513,joya,spanish
+2051,,513,Juwel,german
+2052,,513,"драгоценный камень, ювелирное изделие",russian
+2053,,514,"bague, anneau",french
+2054,,514,"anillo, sortija",spanish
+2055,,514,Ring,german
+2056,,514,кольцо,russian
+2057,,515,bracelet,french
+2058,,515,brazalete,spanish
+2059,,515,Armband,german
+2060,,515,браслет,russian
+2061,,516,collier,french
+2062,,516,collar,spanish
+2063,,516,"Halsband, Halskette",german
+2064,,516,"ожерелье, бусы",russian
+2065,,517,perle,french
+2066,,517,"chaquira, abalorio",spanish
+2067,,517,Perle,german
+2068,,517,бусина,russian
+2069,,518,boucle d'oreille,french
+2070,,518,"arete, aro",spanish
+2071,,518,Ohrring,german
+2072,,518,сережка,russian
+2073,,519,couronne,french
+2074,,519,"cinta (para la cabeza), tocado",spanish
+2075,,519,"Stirnband, Kopfschmuck",german
+2076,,519,"повязка на голову, головной убор",russian
+2077,,520,tatouage,french
+2078,,520,tatuaje,spanish
+2079,,520,Tätowierung,german
+2080,,520,татуировка,russian
+2081,,521,"mouchoir,chiffon",french
+2082,,521,"pañuelo, trapo",spanish
+2083,,521,Taschentuch oder Lappen,german
+2084,,521,носовой платок,russian
+2085,,522,serviette,french
+2086,,522,toalla,spanish
+2087,,522,Handtuch,german
+2088,,522,полотенце,russian
+2089,,523,peigne,french
+2090,,523,peine,spanish
+2091,,523,Kamm,german
+2092,,523,"гребень, расческа",russian
+2093,,524,brosse,french
+2094,,524,cepillo,spanish
+2095,,524,Bürste,german
+2096,,524,щетка,russian
+2097,,525,tresser,french
+2098,,525,trenzar,spanish
+2099,,525,Zopf,german
+2100,,525,коса,russian
+2101,,526,rasoir,french
+2102,,526,navaja de afeitar,spanish
+2103,,526,Rasiermesser,german
+2104,,526,бритва,russian
+2105,,527,"pommade, onguent, crème",french
+2106,,527,ungüento,spanish
+2107,,527,Salbe,german
+2108,,527,мазь,russian
+2109,,528,savon,french
+2110,,528,jabón,spanish
+2111,,528,Seife,german
+2112,,528,мыло,russian
+2113,,529,"miroir, glace",french
+2114,,529,espejo,spanish
+2115,,529,Spiegel,german
+2116,,529,зеркало,russian
+2117,,530,"habiter, demeurer",french
+2118,,530,habitar,spanish
+2119,,530,wohnen,german
+2120,,530,"проживать, жить",russian
+2121,,531,maison,french
+2122,,531,casa,spanish
+2123,,531,Haus,german
+2124,,531,дом,russian
+2125,,532,hutte,french
+2126,,532,"cabaña,choza",spanish
+2127,,532,Hütte,german
+2128,,532,хижина,russian
+2129,,533,cabane de jardin,french
+2130,,533,"casa de huerta, granja",spanish
+2131,,533,"Gartenhaus, Laube",german
+2132,,533,дачный домик,russian
+2133,,534,tente,french
+2134,,534,toldo,spanish
+2135,,534,Zelt,german
+2136,,534,палатка,russian
+2137,,535,cour,french
+2138,,535,cancha,spanish
+2139,,535,Hof,german
+2140,,535,двор,russian
+2141,,536,maison réservée aux hommes,french
+2142,,536,casa de hombres,spanish
+2143,,536,Männerhaus,german
+2144,,536,дом для мужчин,russian
+2145,,537,cuisine,french
+2146,,537,cocina (lugar),spanish
+2147,,537,"Küche, Küchengebäude",german
+2148,,537,кухня (помещение),russian
+2149,,538,maison de réunion,french
+2150,,538,casa de reunión,spanish
+2151,,538,Versammlungshaus,german
+2152,,538,дом для собраний,russian
+2153,,539,"pièce, chambre",french
+2154,,539,"cuarto, pieza",spanish
+2155,,539,"Zimmer, Stube",german
+2156,,539,комната,russian
+2157,,540,porte,french
+2158,,540,puerta,spanish
+2159,,540,"Tür, Tor, Pforte",german
+2160,,540,"дверь, ворота",russian
+2161,,541,pilier,french
+2162,,541,jamba de puerta,spanish
+2163,,541,Pfosten,german
+2164,,541,дверной косяк,russian
+2165,,542,serrure,french
+2166,,542,"cerradura, candado",spanish
+2167,,542,Schloss,german
+2168,,542,замок,russian
+2169,,543,serrure,french
+2170,,543,cerrojo,spanish
+2171,,543,Riegel,german
+2172,,543,"запор, засов",russian
+2173,,544,clef,french
+2174,,544,llave,spanish
+2175,,544,Schlüssel,german
+2176,,544,ключ,russian
+2177,,545,fenêtre,french
+2178,,545,ventana,spanish
+2179,,545,Fenster,german
+2180,,545,окно,russian
+2181,,546,"plancher, sol",french
+2182,,546,suelo,spanish
+2183,,546,"Fußboden, Boden",german
+2184,,546,пол,russian
+2185,,547,mur,french
+2186,,547,"pared, muro",spanish
+2187,,547,"Wand, Mauer",german
+2188,,547,стена,russian
+2189,,548,foyer,french
+2190,,548,fogón,spanish
+2191,,548,"Feuerstätte, Kamin, Herd",german
+2192,,548,камин,russian
+2193,,549,four,french
+2194,,549,estufa,spanish
+2195,,549,Ofen,german
+2196,,549,печь,russian
+2197,,550,cheminée,french
+2198,,550,chimenea,spanish
+2199,,550,"Schornstein, Esse",german
+2200,,550,дымоход,russian
+2201,,551,lit,french
+2202,,551,cama,spanish
+2203,,551,Bett,german
+2204,,551,кровать,russian
+2205,,552,oreiller,french
+2206,,552,almohada,spanish
+2207,,552,Kissen,german
+2208,,552,подушка,russian
+2209,,553,couverture,french
+2210,,553,"frazada,cobija",spanish
+2211,,553,Decke,german
+2212,,553,одеяло,russian
+2213,,554,"chaise,siège",french
+2214,,554,silla,spanish
+2215,,554,Stuhl,german
+2216,,554,стул,russian
+2217,,555,table,french
+2218,,555,mesa,spanish
+2219,,555,Tisch,german
+2220,,555,стол,russian
+2221,,556,lampe,french
+2222,,556,"lámpara, antorcha",spanish
+2223,,556,Lampe,german
+2224,,556,"лампа, фонарь",russian
+2225,,557,"bougie, cierge, chandelle",french
+2226,,557,vela,spanish
+2227,,557,Kerze,german
+2228,,557,свеча,russian
+2229,,558,étagère,french
+2230,,558,repisa,spanish
+2231,,558,"Regal, Bord",german
+2232,,558,полка,russian
+2233,,559,auge,french
+2234,,559,"batea, artesa",spanish
+2235,,559,"Trog, Wanne",german
+2236,,559,желоб для стока воды,russian
+2237,,560,toit,french
+2238,,560,techo,spanish
+2239,,560,Dach,german
+2240,,560,крыша,russian
+2241,,561,toit de chaume,french
+2242,,561,techumbre de paja,spanish
+2243,,561,Strohdach,german
+2244,,561,соломенная крыша,russian
+2245,,562,poutre de faïte,french
+2246,,562,cumbrera,spanish
+2247,,562,Firstbalken,german
+2248,,562,распорка,russian
+2249,,563,poutre,french
+2250,,563,viga,spanish
+2251,,563,Sparren,german
+2252,,563,"стропило, балка",russian
+2253,,564,poutre,french
+2254,,564,viga,spanish
+2255,,564,Balken,german
+2256,,564,"балка, перекладина",russian
+2257,,565,"poteau, poutre",french
+2258,,565,poste,spanish
+2259,,565,Pfahl,german
+2260,,565,столб,russian
+2261,,566,planche,french
+2262,,566,tabla,spanish
+2263,,566,Brett,german
+2264,,566,доска,russian
+2265,,567,arche,french
+2266,,567,arco,spanish
+2267,,567,"Bogen, Gewölbe",german
+2268,,567,арка,russian
+2269,,568,maçon,french
+2270,,568,albañil,spanish
+2271,,568,Maurer,german
+2272,,568,каменщик,russian
+2273,,569,brique,french
+2274,,569,ladrillo,spanish
+2275,,569,"Ziegel, Ziegelstein, Backstein",german
+2276,,569,кирпич,russian
+2277,,570,mortier,french
+2278,,570,argamasa,spanish
+2279,,570,Mörtel,german
+2280,,570,известковый раствор,russian
+2281,,571,adobe,french
+2282,,571,adobe,spanish
+2283,,571,Lehmziegel,german
+2284,,571,глинобитная постройка,russian
+2285,,572,"fermier, paysan",french
+2286,,572,"labrador, ranchero",spanish
+2287,,572,Bauer,german
+2288,,572,фермер,russian
+2289,,573,champ,french
+2290,,573,"campo de cultivo,chacra",spanish
+2291,,573,"Feld, Acker",german
+2292,,573,поле (для обработки),russian
+2293,,574,jardin,french
+2294,,574,"jardín, huerto",spanish
+2295,,574,Garten,german
+2296,,574,сад,russian
+2297,,575,cultiver,french
+2298,,575,"cultivar,labrar",spanish
+2299,,575,"bebauen, beackern, kultivieren",german
+2300,,575,возделывать землю,russian
+2301,,576,clôture,french
+2302,,576,cerco,spanish
+2303,,576,Zaun,german
+2304,,576,забор,russian
+2305,,577,fossé,french
+2306,,577,zanja,spanish
+2307,,577,Graben,german
+2308,,577,"канава, ров",russian
+2309,,578,labourer,french
+2310,,578,arar,spanish
+2311,,578,pflügen,german
+2312,,578,пахать,russian
+2313,,579,sillon,french
+2314,,579,surco,spanish
+2315,,579,Furche,german
+2316,,579,"пашня, борозда",russian
+2317,,580,creuser,french
+2318,,580,"excavar, cavar",spanish
+2319,,580,graben,german
+2320,,580,кoпать,russian
+2321,,581,bêche,french
+2322,,581,azada,spanish
+2323,,581,Spaten,german
+2324,,581,лопата,russian
+2325,,582,pelle,french
+2326,,582,pala,spanish
+2327,,582,Schaufel,german
+2328,,582,"лопата, совок",russian
+2329,,583,"pioche, houe",french
+2330,,583,azadón,spanish
+2331,,583,Hacke,german
+2332,,583,мотыга,russian
+2333,,584,fourche,french
+2334,,584,horqueta,spanish
+2335,,584,"(Grabe)Gabel, Forke",german
+2336,,584,"вилка, вилы",russian
+2337,,585,râteau,french
+2338,,585,"rastro, rastrillo",spanish
+2339,,585,"Rechen, Harke",german
+2340,,585,грабли,russian
+2341,,586,semer,french
+2342,,586,"sembrar, desparramar",spanish
+2343,,586,säen,german
+2344,,586,"сеять, засевать",russian
+2345,,587,"graine, semence",french
+2346,,587,semilla,spanish
+2347,,587,Same(n),german
+2348,,587,семя,russian
+2349,,588,tondre,french
+2350,,588,segar,spanish
+2351,,588,mähen,german
+2352,,588,косить,russian
+2353,,589,"faux,faucille",french
+2354,,589,"hoz, guadaña",spanish
+2355,,589,Sichel oder Sense,german
+2356,,589,"серп, коса",russian
+2357,,590,battre le ble,french
+2358,,590,desgranar,spanish
+2359,,590,dreschen,german
+2360,,590,молотить,russian
+2361,,591,aire de battage,french
+2362,,591,lugar para trillar,spanish
+2363,,591,Tenne,german
+2364,,591,ток,russian
+2365,,592,récolte,french
+2366,,592,cosecha,spanish
+2367,,592,Ernte,german
+2368,,592,урожай,russian
+2369,,593,grain,french
+2370,,593,grano,spanish
+2371,,593,Getreide,german
+2372,,593,"зерно (ячмень, овес и др.)",russian
+2373,,594,blé,french
+2374,,594,trigo,spanish
+2375,,594,Weizen,german
+2376,,594,пшеница,russian
+2377,,595,orge,french
+2378,,595,cebada,spanish
+2379,,595,Gerste,german
+2380,,595,ячмень,russian
+2381,,596,seigle,french
+2382,,596,centeno,spanish
+2383,,596,Roggen,german
+2384,,596,рожь,russian
+2385,,597,avoine,french
+2386,,597,avena,spanish
+2387,,597,Hafer,german
+2388,,597,овес,russian
+2389,,598,maïs,french
+2390,,598,maíz,spanish
+2391,,598,Mais,german
+2392,,598,кукуруза,russian
+2393,,599,riz,french
+2394,,599,arroz,spanish
+2395,,599,Reis,german
+2396,,599,рис,russian
+2397,,600,herbe,french
+2398,,600,"hierba, pasto",spanish
+2399,,600,Gras,german
+2400,,600,трава,russian
+2401,,601,foin,french
+2402,,601,"heno,paja",spanish
+2403,,601,Heu,german
+2404,,601,сено,russian
+2405,,602,plante,french
+2406,,602,planta,spanish
+2407,,602,Pflanze,german
+2408,,602,растение,russian
+2409,,603,planter,french
+2410,,603,"plantar, sembrar",spanish
+2411,,603,pflanzen,german
+2412,,603,выращивать,russian
+2413,,604,racine,french
+2414,,604,raíz,spanish
+2415,,604,Wurzel,german
+2416,,604,корень,russian
+2417,,605,"branche,rameau",french
+2418,,605,rama,spanish
+2419,,605,"Ast, Zweig",german
+2420,,605,"ветвь,  ветка",russian
+2421,,606,feuille,french
+2422,,606,hoja,spanish
+2423,,606,Blatt,german
+2424,,606,лист,russian
+2425,,607,fleur,french
+2426,,607,flor,spanish
+2427,,607,Blume,german
+2428,,607,цветок,russian
+2429,,608,arbre,french
+2430,,608,árbol,spanish
+2431,,608,Baum,german
+2432,,608,дерево,russian
+2433,,609,chêne,french
+2434,,609,roble,spanish
+2435,,609,Eiche,german
+2436,,609,дуб,russian
+2437,,610,hêtre,french
+2438,,610,haya,spanish
+2439,,610,Buche,german
+2440,,610,бук,russian
+2441,,611,bouleau,french
+2442,,611,abedul,spanish
+2443,,611,Birke,german
+2444,,611,береза,russian
+2445,,612,pin,french
+2446,,612,pino,spanish
+2447,,612,Kiefer,german
+2448,,612,сосна,russian
+2449,,613,sapin,french
+2450,,613,abeto,spanish
+2451,,613,Tanne; Fichte,german
+2452,,613,"ель, пихта",russian
+2453,,614,gland,french
+2454,,614,bellota,spanish
+2455,,614,Eichel,german
+2456,,614,желудь,russian
+2457,,615,vigne,french
+2458,,615,"enredadera,bejuco, liana",spanish
+2459,,615,"Weinstock, Rebe",german
+2460,,615,"виноградная лоза, ползучее растение",russian
+2461,,616,tabac,french
+2462,,616,tabaco,spanish
+2463,,616,Tabak,german
+2464,,616,табак,russian
+2465,,617,fumer,french
+2466,,617,fumar,spanish
+2467,,617,rauchen,german
+2468,,617,курить,russian
+2469,,618,pipe,french
+2470,,618,pipa,spanish
+2471,,618,Pfeife,german
+2472,,618,трубка,russian
+2473,,619,souche d'arbre,french
+2474,,619,tocón,spanish
+2475,,619,"Baumstumpf, Stubben",german
+2476,,619,пень,russian
+2477,,620,tronc d'arbre,french
+2478,,620,tronco,spanish
+2479,,620,Baumstamm,german
+2480,,620,ствол дерева,russian
+2481,,621,"branche fourchue, fourche",french
+2482,,621,rama bifurcada,spanish
+2483,,621,Astgabel,german
+2484,,621,ветка с развилкой,russian
+2485,,622,écorce,french
+2486,,622,corteza,spanish
+2487,,622,"Rinde, Borke",german
+2488,,622,кора,russian
+2489,,623,sève,french
+2490,,623,savia,spanish
+2491,,623,Saft,german
+2492,,623,сок растений,russian
+2493,,624,palmier,french
+2494,,624,palmera,spanish
+2495,,624,Palme,german
+2496,,624,пальма,russian
+2497,,625,noix de coco,french
+2498,,625,coco,spanish
+2499,,625,Kokosnuss,german
+2500,,625,кокос,russian
+2501,,626,citrique,french
+2502,,626,cítrico,spanish
+2503,,626,Zitrusfrucht,german
+2504,,626,цитрусовый фрукт,russian
+2505,,627,banane,french
+2506,,627,"plátana, banana",spanish
+2507,,627,Banane,german
+2508,,627,банана,russian
+2509,,628,banyan,french
+2510,,628,baniano,spanish
+2511,,628,Banyanbaum,german
+2512,,628,смоковница,russian
+2513,,629,patate douce,french
+2514,,629,"camote,batata",spanish
+2515,,629,Süßkartoffel,german
+2516,,629,батат,russian
+2517,,630,igname,french
+2518,,630,ñame,spanish
+2519,,630,Yams(wurzel),german
+2520,,630,батат,russian
+2521,,631,manioc,french
+2522,,631,"mandioca, yuca",spanish
+2523,,631,Maniok,german
+2524,,631,маниока,russian
+2525,,632,calebasse,french
+2526,,632,calabaza,spanish
+2527,,632,Kalebasse,german
+2528,,632,тыква,russian
+2529,,633,"courge, potiron, citrouille",french
+2530,,633,"zapallo, calabaza,calabazo",spanish
+2531,,633,Kürbis,german
+2532,,633,тыква,russian
+2533,,634,bambou,french
+2534,,634,bambú,spanish
+2535,,634,Bambus,german
+2536,,634,бамбук,russian
+2537,,635,canne à sucre,french
+2538,,635,caña de azúcar,spanish
+2539,,635,Zuckerrohr,german
+2540,,635,сахарный тростник,russian
+2541,,636,poison a poisson,french
+2542,,636,"veneno (raíz), barbasco",spanish
+2543,,636,Fischgift,german
+2544,,636,рыбий яд (корень),russian
+2545,,637,ortie,french
+2546,,637,ortiga,spanish
+2547,,637,Nessel,german
+2548,,637,крапива,russian
+2549,,638,champignon,french
+2550,,638,"hongo, seta",spanish
+2551,,638,Pilz,german
+2552,,638,гриб,russian
+2553,,639,faire,french
+2554,,639,hacer,spanish
+2555,,639,tun,german
+2556,,639,делать,russian
+2557,,640,travail,french
+2558,,640,trabajar,spanish
+2559,,640,arbeiten,german
+2560,,640,работать,russian
+2561,,641,plier,french
+2562,,641,"encorvar, doblar",spanish
+2563,,641,biegen,german
+2564,,641,сгибать,russian
+2565,,642,plier,french
+2566,,642,doblar,spanish
+2567,,642,falten,german
+2568,,642,"сворачивать, складывать",russian
+2569,,643,lier,french
+2570,,643,"amarrar, atar",spanish
+2571,,643,binden,german
+2572,,643,связывать,russian
+2573,,644,"détacher, délier",french
+2574,,644,desatar,spanish
+2575,,644,losbinden,german
+2576,,644,развязывать,russian
+2577,,645,chaîne,french
+2578,,645,cadena,spanish
+2579,,645,Kette,german
+2580,,645,цепь,russian
+2581,,646,corde,french
+2582,,646,"cuerda, soga",spanish
+2583,,646,Seil,german
+2584,,646,веревка,russian
+2585,,647,nœud,french
+2586,,647,nudo,spanish
+2587,,647,Knoten,german
+2588,,647,узел,russian
+2589,,648,"frapper, battre",french
+2590,,648,golpear,spanish
+2591,,648,schlagen,german
+2592,,648,бить,russian
+2593,,649,marteler de ses poing,french
+2594,,649,machacar con el puño,spanish
+2595,,649,schlagen,german
+2596,,649,колотить кулуком,russian
+2597,,650,couper,french
+2598,,650,cortar,spanish
+2599,,650,durchschneiden,german
+2600,,650,резать,russian
+2601,,651,abattre,french
+2602,,651,"tumbar, talar",spanish
+2603,,651,fällen,german
+2604,,651,сокращать,russian
+2605,,652,"tailler, couper",french
+2606,,652,"tajar, picar",spanish
+2607,,652,hacken,german
+2608,,652,рубить,russian
+2609,,653,poignarder,french
+2610,,653,apuñalar,spanish
+2611,,653,stechen,german
+2612,,653,заколоть,russian
+2613,,654,couteau,french
+2614,,654,cuchillo (herramienta),spanish
+2615,,654,Messer,german
+2616,,654,нож,russian
+2617,,655,ciseaux,french
+2618,,655,tijeras,spanish
+2619,,655,Schere,german
+2620,,655,ножницы,russian
+2621,,656,hache,french
+2622,,656,hacha,spanish
+2623,,656,"Beil, Axt",german
+2624,,656,топор,russian
+2625,,657,herminette,french
+2626,,657,azuela,spanish
+2627,,657,"Dechsel, Breitbeil",german
+2628,,657,тесло,russian
+2629,,658,"casser,briser",french
+2630,,658,quebrar,spanish
+2631,,658,zerbrechen,german
+2632,,658,"разбить, сломать",russian
+2633,,659,"brisé, cassé",french
+2634,,659,quebrado,spanish
+2635,,659,kaputt,german
+2636,,659,"сломанный, разбитый",russian
+2637,,660,fendre,french
+2638,,660,"hender, partir",spanish
+2639,,660,spalten,german
+2640,,660,расколоть,russian
+2641,,661,déchirer,french
+2642,,661,"romper, rasgar",spanish
+2643,,661,"reißen, zerreißen",german
+2644,,661,рвать,russian
+2645,,662,statue,french
+2646,,662,estatua,spanish
+2647,,662,Statue,german
+2648,,662,статуя,russian
+2649,,663,écorcher,french
+2650,,663,desollar,spanish
+2651,,663,"häuten, schinden",german
+2652,,663,сдирать кожу,russian
+2653,,664,frotter,french
+2654,,664,frotar,spanish
+2655,,664,reiben,german
+2656,,664,стереть,russian
+2657,,665,étendre,french
+2658,,665,"alargar, estirar",spanish
+2659,,665,"dehnen, strecken, spannen",german
+2660,,665,"тянуть, натягивать",russian
+2661,,666,tirer,french
+2662,,666,"tirar, jalar",spanish
+2663,,666,ziehen,german
+2664,,666,тянуть,russian
+2665,,667,"étaler, éparpiller",french
+2666,,667,"extender, esparcir",spanish
+2667,,667,"ausbreiten, streuen",german
+2668,,667,"разложить, расстилать",russian
+2669,,668,"suspendre, accrocher, pendre",french
+2670,,668,colgar,spanish
+2671,,668,aufhängen,german
+2672,,668,повесить,russian
+2673,,669,"presser, appuyer",french
+2674,,669,"apretar,oprimir",spanish
+2675,,669,"drücken, pressen",german
+2676,,669,"нажимать, давить",russian
+2677,,670,presser,french
+2678,,670,"estrujar,exprimir",spanish
+2679,,670,"quetschen, wringen",german
+2680,,670,выжимать,russian
+2681,,671,verser,french
+2682,,671,"vaciar, verter,derramar",spanish
+2683,,671,"gießen, schütten",german
+2684,,671,"лить, наливать",russian
+2685,,672,laver,french
+2686,,672,lavar,spanish
+2687,,672,waschen,german
+2688,,672,мыть,russian
+2689,,673,balayer,french
+2690,,673,barrer,spanish
+2691,,673,"fegen, kehren",german
+2692,,673,мести,russian
+2693,,674,balai,french
+2694,,674,escoba,spanish
+2695,,674,Besen,german
+2696,,674,"метла, веник",russian
+2697,,675,outil,french
+2698,,675,herramienta,spanish
+2699,,675,Werkzeug,german
+2700,,675,инструмент,russian
+2701,,676,charpentier,french
+2702,,676,carpintero,spanish
+2703,,676,Zimmermann,german
+2704,,676,плотник,russian
+2705,,677,"bâtir,construire",french
+2706,,677,edificar,spanish
+2707,,677,bauen,german
+2708,,677,строить,russian
+2709,,678,"percer, perforer",french
+2710,,678,perforar,spanish
+2711,,678,bohren,german
+2712,,678,сверлить,russian
+2713,,679,creuser,french
+2714,,679,ahuecar,spanish
+2715,,679,aushöhlen,german
+2716,,679,выдалбливать,russian
+2717,,680,scie,french
+2718,,680,"serrucho, sierra",spanish
+2719,,680,Säge,german
+2720,,680,пила,russian
+2721,,681,marteau,french
+2722,,681,martillo,spanish
+2723,,681,Hammer,german
+2724,,681,молоток,russian
+2725,,682,"clou, ongle",french
+2726,,682,clavo,spanish
+2727,,682,Nagel,german
+2728,,682,гвоздь,russian
+2729,,683,colle,french
+2730,,683,"cola,adhesivo (pegar)",spanish
+2731,,683,Leim,german
+2732,,683,клей,russian
+2733,,684,forgeron,french
+2734,,684,herrero,spanish
+2735,,684,Schmied,german
+2736,,684,кузнец,russian
+2737,,685,forger,french
+2738,,685,fraguar,spanish
+2739,,685,schmieden,german
+2740,,685,ковать,russian
+2741,,686,enclume,french
+2742,,686,yunque,spanish
+2743,,686,Amboss,german
+2744,,686,наковальня,russian
+2745,,687,mouler,french
+2746,,687,fundir,spanish
+2747,,687,gießen,german
+2748,,687,отливать в форму (металлы),russian
+2749,,688,or,french
+2750,,688,oro,spanish
+2751,,688,Gold,german
+2752,,688,золото,russian
+2753,,689,argent,french
+2754,,689,plata,spanish
+2755,,689,Silber,german
+2756,,689,серебро,russian
+2757,,690,cuivre,french
+2758,,690,"cobre, bronce",spanish
+2759,,690,Kupfer,german
+2760,,690,"медь, бронза",russian
+2761,,691,fer,french
+2762,,691,hierro,spanish
+2763,,691,Eisen,german
+2764,,691,железо,russian
+2765,,692,plomb,french
+2766,,692,plomo,spanish
+2767,,692,Blei,german
+2768,,692,свинец,russian
+2769,,693,étain,french
+2770,,693,estaño,spanish
+2771,,693,"Zinn, Blech",german
+2772,,693,(белая) жесть,russian
+2773,,694,potier,french
+2774,,694,alfarero,spanish
+2775,,694,Töpfer,german
+2776,,694,гончар,russian
+2777,,695,"modéler, mouler",french
+2778,,695,"moldear, formar",spanish
+2779,,695,"formen, bilden",german
+2780,,695,формовать,russian
+2781,,696,"argile,glaise",french
+2782,,696,"barro, arcilla",spanish
+2783,,696,"Ton, Lehm",german
+2784,,696,глина,russian
+2785,,697,verre,french
+2786,,697,vidrio,spanish
+2787,,697,Glas,german
+2788,,697,стекло,russian
+2789,,698,tresser,french
+2790,,698,"tejer, trenzar",spanish
+2791,,698,flechten,german
+2792,,698,ткать,russian
+2793,,699,panier,french
+2794,,699,"canasto, canasta",spanish
+2795,,699,Korb,german
+2796,,699,корзина,russian
+2797,,700,paillet,french
+2798,,700,estera,spanish
+2799,,700,Matte,german
+2800,,700,"коврик, половик",russian
+2801,,701,tapis,french
+2802,,701,"tapete,alfombra",spanish
+2803,,701,Teppich,german
+2804,,701,"ковер, плед",russian
+2805,,702,filet,french
+2806,,702,bolsa de malla,spanish
+2807,,702,Netztasche,german
+2808,,702,сетчатая сумка,russian
+2809,,703,éventail,french
+2810,,703,abanico,spanish
+2811,,703,Fächer,german
+2812,,703,"веер, вентилятор",russian
+2813,,704,s'éventer,french
+2814,,704,"abanicar, aventar",spanish
+2815,,704,fächern,german
+2816,,704,"освежать, обмахивать (веером)",russian
+2817,,705,"sculpter,graver",french
+2818,,705,esculpir,spanish
+2819,,705,"aushauen, ausmeißeln",german
+2820,,705,вырезать,russian
+2821,,706,sculpteur,french
+2822,,706,escultor,spanish
+2823,,706,Bildhauer,german
+2824,,706,скульптор,russian
+2825,,707,,french
+2826,,707,,spanish
+2827,,707,,german
+2828,,707,,russian
+2829,,708,"burin, ciseau däacier",french
+2830,,708,"escoplo, cincel",spanish
+2831,,708,Meißel,german
+2832,,708,"резец, долото",russian
+2833,,709,peinture,french
+2834,,709,pintura,spanish
+2835,,709,Farbe,german
+2836,,709,краска,russian
+2837,,710,peindre,french
+2838,,710,pintar,spanish
+2839,,710,anstreichen,german
+2840,,710,"красить, рисовать (краской)",russian
+2841,,711,"mouvoir,bouger",french
+2842,,711,mover,spanish
+2843,,711,bewegen,german
+2844,,711,двигаться,russian
+2845,,712,retourner,french
+2846,,712,"volcar, dar(se) vuelta",spanish
+2847,,712,"wenden, umdrehen",german
+2848,,712,переворачивать(ся),russian
+2849,,713,se retourner,french
+2850,,713,"dar vuelta, voltear",spanish
+2851,,713,drehen,german
+2852,,713,"переворачивать(ся), обернуться",russian
+2853,,714,enrouler,french
+2854,,714,"enrollar,envolver",spanish
+2855,,714,"wickeln, aufwickeln, einwickeln",german
+2856,,714,обертывать,russian
+2857,,715,rouler,french
+2858,,715,"rodar, arrollar, enrollar",spanish
+2859,,715,"wälzen, rollen",german
+2860,,715,"катать, вращать",russian
+2861,,716,laisser tomber,french
+2862,,716,dejar caer,spanish
+2863,,716,fallen lassen,german
+2864,,716,уронить,russian
+2865,,717,tordre,french
+2866,,717,torcer,spanish
+2867,,717,verbiegen,german
+2868,,717,скручивать,russian
+2869,,718,"monter, se lever",french
+2870,,718,ascender,spanish
+2871,,718,"aufstehen, sich erheben, aufsteigen, steigen",german
+2872,,718,"подниматься, восходить",russian
+2873,,719,"lever, élever",french
+2874,,719,levantar,spanish
+2875,,719,"aufheben, heben",german
+2876,,719,поднимать,russian
+2877,,720,tomber,french
+2878,,720,caer,spanish
+2879,,720,fallen,german
+2880,,720,падать,russian
+2881,,721,s'égoutter,french
+2882,,721,"gotear, escurrir",spanish
+2883,,721,tropfen,german
+2884,,721,капать,russian
+2885,,722,jeter,french
+2886,,722,"echar, tirar",spanish
+2887,,722,werfen,german
+2888,,722,бросать,russian
+2889,,723,attraper,french
+2890,,723,coger,spanish
+2891,,723,fangen,german
+2892,,723,ловить,russian
+2893,,724,"secouer,agiter",french
+2894,,724,sacudir,spanish
+2895,,724,schütteln,german
+2896,,724,трясти,russian
+2897,,725,couler,french
+2898,,725,"fluir, correr",spanish
+2899,,725,"fließen, rinnen",german
+2900,,725,"течь, литься потоком",russian
+2901,,726,couler,french
+2902,,726,hundir,spanish
+2903,,726,sinken,german
+2904,,726,"погружаться в воду, тонуть",russian
+2905,,727,flotter,french
+2906,,727,flotar,spanish
+2907,,727,"schwimmen, treiben",german
+2908,,727,плыть по поверхности воды,russian
+2909,,728,nager,french
+2910,,728,nadar,spanish
+2911,,728,schwimmen,german
+2912,,728,плавать,russian
+2913,,729,plonger,french
+2914,,729,zambullirse,spanish
+2915,,729,tauchen,german
+2916,,729,нырять,russian
+2917,,730,éclabousser,french
+2918,,730,salpicar,spanish
+2919,,730,spritzen,german
+2920,,730,плескаться,russian
+2921,,731,naviguer,french
+2922,,731,navegar,spanish
+2923,,731,segeln,german
+2924,,731,плыть под парусом,russian
+2925,,732,voler,french
+2926,,732,volar,spanish
+2927,,732,fliegen,german
+2928,,732,летать,russian
+2929,,733,souffler,french
+2930,,733,soplar,spanish
+2931,,733,"blasen, wehen",german
+2932,,733,дуть,russian
+2933,,734,ramper,french
+2934,,734,gatear,spanish
+2935,,734,"kriechen, schleichen",german
+2936,,734,ползти,russian
+2937,,735,s'agenouiller,french
+2938,,735,arrodillarse,spanish
+2939,,735,knien,german
+2940,,735,становиться на колени,russian
+2941,,736,s'accroupir,french
+2942,,736,"agacharse, ponerse en cuclillas",spanish
+2943,,736,hocken,german
+2944,,736,приседать,russian
+2945,,737,glisser,french
+2946,,737,resbalar,spanish
+2947,,737,"rutschen, ausrutschen",german
+2948,,737,скользить,russian
+2949,,738,sauter,french
+2950,,738,"saltar,brincar",spanish
+2951,,738,springen,german
+6843,,1711,,german
+2952,,738,прыгать,russian
+2953,,739,donner un coup de pied,french
+2954,,739,patear,spanish
+2955,,739,stoßen,german
+2956,,739,пинать,russian
+2957,,740,danser,french
+2958,,740,bailar,spanish
+2959,,740,tanzen,german
+2960,,740,танцевать,russian
+2961,,741,marcher,french
+2962,,741,caminar,spanish
+2963,,741,"gehen, laufen",german
+2964,,741,ходить,russian
+2965,,742,boiter,french
+2966,,742,lisiar,spanish
+2967,,742,hinken,german
+2968,,742,хромать,russian
+2969,,743,courir,french
+2970,,743,correr,spanish
+2971,,743,"rennen, laufen",german
+2972,,743,бежать,russian
+2973,,744,aller,french
+2974,,744,ir,spanish
+2975,,744,"gehen, fahren",german
+2976,,744,идти,russian
+2977,,745,monter,french
+2978,,745,subir,spanish
+2979,,745,hinaufgehen,german
+2980,,745,"подниматься, идти вверх",russian
+2981,,746,grimper,french
+2982,,746,trepar,spanish
+2983,,746,klettern,german
+2984,,746,"подниматься, взбираться",russian
+2985,,747,descendre,french
+2986,,747,bajar,spanish
+2987,,747,hinuntergehen,german
+2988,,747,"спускаться, идти вниз",russian
+2989,,748,sortir,french
+2990,,748,salir,spanish
+2991,,748,hinausgehen,german
+2992,,748,выходить,russian
+2993,,749,venir,french
+2994,,749,venir,spanish
+2995,,749,kommen,german
+2996,,749,приходить,russian
+2997,,750,revenir,french
+2998,,750,volver,spanish
+2999,,750,"zurückkommen, zurückkehren",german
+3000,,750,возвращаться,russian
+3001,,751,"s'en aller,partir",french
+3002,,751,"irse, marcharse",spanish
+3003,,751,weggehen,german
+3004,,751,уходить,russian
+3005,,752,disparaître,french
+3006,,752,desaparecer,spanish
+3007,,752,verschwinden,german
+3008,,752,изчезать,russian
+3009,,753,s'enfuir,french
+3010,,753,huir,spanish
+3011,,753,fliehen,german
+3012,,753,убежать,russian
+3013,,754,suivre,french
+3014,,754,seguir,spanish
+3015,,754,folgen,german
+3016,,754,следовать,russian
+3017,,755,poursuivre,french
+3018,,755,perseguir,spanish
+3019,,755,verfolgen,german
+3020,,755,преследовать,russian
+3021,,756,arriver,french
+3022,,756,"llegar, alcanzar",spanish
+3023,,756,"ankommen, erreichen",german
+3024,,756,"достигать, прибывать",russian
+3025,,757,approcher,french
+3026,,757,acercarse,spanish
+3027,,757,"sich nähern, nahen",german
+3028,,757,приближаться,russian
+3029,,758,entrer,french
+3030,,758,entrar,spanish
+3031,,758,"hineingehen, eintreten",german
+3032,,758,входить,russian
+3033,,759,porter,french
+3034,,759,"llevar, cargar",spanish
+3035,,759,tragen,german
+3036,,759,нести,russian
+3037,,760,porter (dans la main),french
+3038,,760,llevar en la mano,spanish
+3039,,760,etw. in der Hand tragen,german
+3040,,760,нести на руках,russian
+3041,,761,porter (sur l'épaule),french
+3042,,761,llevar a la espalda/ en el hombro,spanish
+3043,,761,etw. auf der Schulter tragen,german
+3044,,761,нести на плечах,russian
+3045,,762,porter (sur la tête),french
+3046,,762,llevar sobre la cabeza,spanish
+3047,,762,etw. auf dem Kopf tragen,german
+3048,,762,нести на голове,russian
+3049,,763,porter (sous le bras),french
+3050,,763,llevar bajo el brazo,spanish
+3051,,763,etw. unter dem Arm tragen,german
+3052,,763,нести под мышкой,russian
+3053,,764,"apporter, amener",french
+3054,,764,traer,spanish
+3055,,764,"bringen, holen",german
+3056,,764,"приносить, привозить",russian
+3057,,765,envoyer,french
+3058,,765,"enviar,mandar",spanish
+3059,,765,"schicken, senden",german
+3060,,765,посылать,russian
+3061,,766,"mener, conduire",french
+3062,,766,guiar,spanish
+3063,,766,"führen, leiten",german
+3064,,766,вести,russian
+3065,,767,conduire,french
+3066,,767,conducir,spanish
+3067,,767,treiben,german
+3068,,767,"ехать на машине, водить машину",russian
+3069,,768,chevaucher,french
+3070,,768,montar,spanish
+3071,,768,reiten,german
+3072,,768,ехать верхом,russian
+3073,,769,pousser,french
+3074,,769,empujar,spanish
+3075,,769,"stoßen, schieben",german
+3076,,769,толкать,russian
+3077,,770,route,french
+3078,,770,carretera,spanish
+3079,,770,"Weg, Straße",german
+3080,,770,дорога,russian
+3081,,771,sentier,french
+3082,,771,"camino, senda",spanish
+3083,,771,"Pfad, Steig",german
+3084,,771,"дорожка, тропинка",russian
+3085,,772,pont,french
+3086,,772,puente,spanish
+3087,,772,Brücke,german
+3088,,772,мост,russian
+3089,,773,"wagon, charrette",french
+3090,,773,"carro, carretón",spanish
+3091,,773,"Wagen, Karre(n)",german
+3092,,773,"экипаж, телега",russian
+3093,,774,roue,french
+3094,,774,rueda,spanish
+3095,,774,Rad,german
+3096,,774,колесо,russian
+3097,,775,essieu,french
+3098,,775,eje,spanish
+3099,,775,Achse,german
+3100,,775,ось,russian
+3101,,776,joug,french
+3102,,776,yugo,spanish
+3103,,776,Joch,german
+3104,,776,ярмо,russian
+3105,,777,"navire,bateau",french
+3106,,777,"buque, barco",spanish
+3107,,777,Schiff,german
+3108,,777,"корабль, судно",russian
+3109,,778,bateau,french
+3110,,778,bote,spanish
+3111,,778,Boot,german
+3112,,778,лодка,russian
+3113,,779,pirogue,french
+3114,,779,canoa,spanish
+3115,,779,Kanu,german
+3116,,779,"каноэ, байдарка",russian
+3117,,780,balancier,french
+3118,,780,batanga,spanish
+3119,,780,Ausleger,german
+3120,,780,шлюпка с выносными уключинами,russian
+3121,,781,radeau,french
+3122,,781,balsa,spanish
+3123,,781,Floß,german
+3124,,781,плот,russian
+3125,,782,rame,french
+3126,,782,remo,spanish
+3127,,782,Ruder,german
+3128,,782,весло,russian
+3129,,783,pagaie,french
+3130,,783,remo corto,spanish
+3131,,783,Paddel,german
+3132,,783,весло,russian
+3133,,784,ramer,french
+3134,,784,remar,spanish
+3135,,784,rudern,german
+3136,,784,грести,russian
+3137,,785,gouvernail,french
+3138,,785,timón,spanish
+3139,,785,Steuerruder,german
+3140,,785,руль,russian
+3141,,786,mât,french
+3142,,786,mástil,spanish
+3143,,786,Mast,german
+3144,,786,мачта,russian
+3145,,787,voile,french
+3146,,787,vela,spanish
+3147,,787,Segel,german
+3148,,787,парус,russian
+3149,,788,ancre,french
+3150,,788,ancla,spanish
+3151,,788,Anker,german
+3152,,788,якорь,russian
+3153,,789,port,french
+3154,,789,puerto,spanish
+3155,,789,Hafen,german
+3156,,789,"гавань, пристань, порт",russian
+3157,,790,atterrir,french
+3158,,790,desembarcar,spanish
+3159,,790,landen,german
+3160,,790,"причаливать, приземляться",russian
+3161,,791,avoir,french
+3162,,791,tener,spanish
+3163,,791,haben,german
+3164,,791,иметь,russian
+3165,,792,posséder,french
+3166,,792,poseer,spanish
+3167,,792,besitzen,german
+3168,,792,владеть,russian
+3169,,793,prendre,french
+3170,,793,tomar,spanish
+3171,,793,nehmen,german
+3172,,793,брать,russian
+3173,,794,"saisir, attraper",french
+3174,,794,"agarrar,empuñar,coger",spanish
+3175,,794,umfassen,german
+3176,,794,"хватать, схватить",russian
+3177,,795,tenir,french
+3178,,795,"tener (en mano),apoyar, asir",spanish
+3179,,795,halten,german
+3180,,795,держать,russian
+3181,,796,obtenir,french
+3182,,796,obtener,spanish
+3183,,796,bekommen,german
+3184,,796,получать,russian
+3185,,797,"garder,retenir",french
+3186,,797,conservar,spanish
+3187,,797,behalten,german
+3188,,797,хранить,russian
+3189,,798,chose,french
+3190,,798,cosa,spanish
+3191,,798,Ding,german
+3192,,798,вещь,russian
+3193,,799,donner,french
+3194,,799,dar,spanish
+3195,,799,geben,german
+3196,,799,давать,russian
+3197,,800,rendre,french
+3198,,800,devolver,spanish
+3199,,800,zurückgeben,german
+3200,,800,возвращать,russian
+3201,,801,préserver,french
+3202,,801,"conservar, proteger",spanish
+3203,,801,"bewahren, erhalten",german
+3204,,801,сохранять,russian
+3205,,802,,french
+3206,,802,,spanish
+3207,,802,,german
+3208,,802,,russian
+3209,,803,sauver,french
+3210,,803,salvar,spanish
+3211,,803,retten,german
+3212,,803,спасать,russian
+3213,,804,détruire,french
+3214,,804,destruir,spanish
+3215,,804,zerstören,german
+3216,,804,разрушать,russian
+3217,,805,blesser,french
+3218,,805,"dañar, herir",spanish
+3219,,805,"beschädigen, verletzen, schaden",german
+3220,,805,наносить ущерб,russian
+3221,,806,chercher,french
+3222,,806,buscar,spanish
+3223,,806,suchen,german
+3224,,806,искать,russian
+3225,,807,trouver,french
+3226,,807,"encontrar,hallar",spanish
+3227,,807,finden,german
+3228,,807,находить,russian
+3229,,808,perdre,french
+3230,,808,perder,spanish
+3231,,808,verlieren,german
+3232,,808,терять,russian
+3233,,809,"libérer, lâcher",french
+3234,,809,soltar,spanish
+3235,,809,loslassen,german
+3236,,809,"освободить, отпустить",russian
+3237,,810,argent,french
+3238,,810,dinero,spanish
+3239,,810,Geld,german
+3240,,810,деньги,russian
+3241,,811,pièce de monnaie,french
+3242,,811,moneda,spanish
+3243,,811,Münze,german
+3244,,811,монета,russian
+3245,,812,riche,french
+3246,,812,rico,spanish
+3247,,812,reich,german
+3248,,812,богатый,russian
+3249,,813,pauvre,french
+3250,,813,pobre,spanish
+3251,,813,arm,german
+3252,,813,бедный,russian
+3253,,814,mendiant,french
+3254,,814,mendigo,spanish
+3255,,814,Bettler,german
+3256,,814,"попрошайка, нищий",russian
+3257,,815,"radin,avare",french
+3258,,815,"avaro,mezquino",spanish
+3259,,815,"geizig, knauserig",german
+3260,,815,скупой,russian
+3261,,816,prêter,french
+3262,,816,prestar,spanish
+3263,,816,"jemandem etwas leihen, borgen",german
+3264,,816,"дать взаймы, одолжать",russian
+3265,,817,emprunter,french
+3266,,817,pedir prestado,spanish
+3267,,817,"sich entwas borgen, leihen",german
+3268,,817,занимать,russian
+3269,,818,devoir,french
+3270,,818,deber,spanish
+3271,,818,schulden,german
+3272,,818,быть должным,russian
+3273,,819,dette,french
+3274,,819,deuda,spanish
+3275,,819,Schuld(en),german
+3276,,819,долг,russian
+3277,,820,payer,french
+3278,,820,pagar,spanish
+3279,,820,(be)zahlen,german
+3280,,820,платить,russian
+3281,,821,compte,french
+3282,,821,cuenta,spanish
+3283,,821,Rechnung,german
+3284,,821,счет,russian
+3285,,822,"taxe,impôt",french
+3286,,822,"impuesto, tributo",spanish
+3287,,822,Steuer,german
+3288,,822,налог,russian
+3289,,823,louer,french
+3290,,823,"alquilar, emplear",spanish
+3291,,823,"anstellen, einstellen",german
+3292,,823,"нанимать, брать на прокат",russian
+3293,,824,salaire,french
+3294,,824,"salario, sueldo",spanish
+3295,,824,"Lohn, Gehalt, Bezahlung",german
+3296,,824,заработная плата,russian
+3297,,825,gagner,french
+3298,,825,ganar (dinero),spanish
+3299,,825,verdienen,german
+3300,,825,зарабатывать,russian
+3301,,826,acheter,french
+3302,,826,comprar,spanish
+3303,,826,kaufen,german
+3304,,826,покупать,russian
+3305,,827,vendre,french
+3306,,827,vender,spanish
+3307,,827,verkaufen,german
+3308,,827,продавать,russian
+3309,,828,échanger,french
+3310,,828,trocar,spanish
+3311,,828,handeln oder tauschen,german
+3312,,828,"торговля, обмен",russian
+3313,,829,"marchand, commerçant",french
+3314,,829,comerciante,spanish
+3315,,829,"Händler, Kaufmann",german
+3316,,829,"купец, торговец",russian
+3317,,830,marché,french
+3318,,830,mercado,spanish
+3319,,830,Markt,german
+3320,,830,"рынок, базар",russian
+3321,,831,"boutique, magasin",french
+3322,,831,tienda,spanish
+3323,,831,"Laden, Geschäft",german
+3324,,831,магазин,russian
+3325,,832,prix,french
+3326,,832,precio,spanish
+3327,,832,Preis,german
+3328,,832,цена,russian
+3329,,833,cher,french
+3330,,833,caro,spanish
+3331,,833,teuer,german
+3332,,833,дорогой,russian
+3333,,834,bon marché,french
+3334,,834,barato,spanish
+3335,,834,billig,german
+3336,,834,дешевый,russian
+3337,,835,partager,french
+3338,,835,repartir,spanish
+3339,,835,"teilen, verteilen",german
+3340,,835,"разделить, делиться",russian
+3341,,836,peser,french
+3342,,836,pesar,spanish
+3343,,836,wiegen,german
+3344,,836,"взвешивать, весить",russian
+3345,,837,après,french
+3346,,837,después de,spanish
+3347,,837,nach,german
+3348,,837,,russian
+3349,,838,derrière,french
+3350,,838,"atrás, detrás de",spanish
+3351,,838,hinter,german
+3352,,838,,russian
+3353,,839,à côté de,french
+3354,,839,al lado de,spanish
+3355,,839,neben,german
+3356,,839,"рядом, у",russian
+3357,,840,"en bas, là-bas",french
+3358,,840,abajo,spanish
+3359,,840,"herunter, hinunter, herab, abwärts",german
+3360,,840,вниз/внизу,russian
+3361,,841,"avant, devant",french
+3362,,841,"delante, antes de",spanish
+3363,,841,vor,german
+3364,,841,"перед, до",russian
+3365,,842,devant,french
+3366,,842,"delantero, delante de",spanish
+3367,,842,vor,german
+3368,,842,,russian
+3369,,843,"dans, dedans",french
+3370,,843,adentro,spanish
+3371,,843,"in, innerhalb",german
+3372,,843,"в, внутри",russian
+3373,,844,dehors,french
+3374,,844,"afuera, exterior",spanish
+3375,,844,"außen, draußen",german
+3376,,844,снаружи,russian
+3377,,845,"dessous, sous",french
+3378,,845,debajo,spanish
+3379,,845,unter,german
+3380,,845,под,russian
+3381,,846,"là-haut, là dessus",french
+3382,,846,arriba,spanish
+3383,,846,"hinauf, herauf",german
+3384,,846,"над, наверху",russian
+3385,,847,"endroit,place, lieu",french
+3386,,847,lugar,spanish
+3387,,847,"Stelle, Ort, Platz",german
+3388,,847,место,russian
+3389,,848,,french
+3390,,848,,spanish
+3391,,848,,german
+3392,,848,,russian
+3393,,849,mettre,french
+3394,,849,poner,spanish
+3395,,849,"setzen, stellen, legen",german
+3396,,849,положить,russian
+3397,,850,"être assis, asseoir",french
+3398,,850,sentar,spanish
+3399,,850,sitzen,german
+3400,,850,"садиться, сидеть",russian
+3401,,851,se coucher,french
+3402,,851,"acostarse,echarse",spanish
+3403,,851,sich hinlegen,german
+3404,,851,ложиться,russian
+3405,,852,se tenir debout,french
+3406,,852,poner(se) de pie,spanish
+3407,,852,stehen,german
+3408,,852,стоять,russian
+3409,,853,"rester, demeurer,attendre",french
+3410,,853,quedar,spanish
+3411,,853,bleiben,german
+3412,,853,оставаться,russian
+3413,,854,reste,french
+3414,,854,sobras,spanish
+3415,,854,Reste,german
+3416,,854,остатки,russian
+3417,,855,recueillir,french
+3418,,855,"recoger, reunir",spanish
+3419,,855,"sammeln, lesen",german
+3420,,855,собирать,russian
+3421,,856,ramasser,french
+3422,,856,recoger,spanish
+3423,,856,aufsammeln,german
+3424,,856,"подбирать, поднимать",russian
+3425,,857,entasser,french
+3426,,857,amontonar,spanish
+3427,,857,"aufhäufen, aufschichten",german
+3428,,857,свалить в кучу,russian
+3429,,858,unir,french
+3430,,858,juntar,spanish
+3431,,858,"verbinden, zusammenfügen, vereinigen",german
+3432,,858,"соединять, объединять",russian
+3433,,859,séparer,french
+3434,,859,"separar,apartar",spanish
+3435,,859,"trennen, (scheiden)",german
+3436,,859,отделять,russian
+3437,,860,diviser,french
+3438,,860,dividir,spanish
+3439,,860,teilen,german
+3440,,860,делить,russian
+3441,,861,ouvrir,french
+3442,,861,abrir,spanish
+3443,,861,"öffnen, aufmachen",german
+3444,,861,открывать,russian
+3445,,862,fermer,french
+3446,,862,cerrar,spanish
+3447,,862,"schließen, zumachen",german
+3448,,862,закрывать,russian
+3449,,863,couvrir,french
+3450,,863,cubrir,spanish
+3451,,863,bedecken,german
+3452,,863,покрывать,russian
+3453,,864,"cacher,dissimuler",french
+3454,,864,esconder,spanish
+3455,,864,"verbergen, verstecken",german
+3456,,864,"прятать, скрывать",russian
+3457,,865,haut,french
+3458,,865,alto,spanish
+3459,,865,hoch,german
+3460,,865,высоко,russian
+3461,,866,bas,french
+3462,,866,bajo,spanish
+3463,,866,niedrig,german
+3464,,866,низко,russian
+3465,,867,"haut,sommet",french
+3466,,867,cima,spanish
+3467,,867,"Spitze, Gipfel",german
+3468,,867,"вершина, макушка",russian
+3469,,868,fond,french
+3470,,868,fondo,spanish
+3471,,868,"Boden, Grund",german
+3472,,868,"дно, низ",russian
+3473,,869,"bout, extrêmité",french
+3474,,869,final,spanish
+3475,,869,Ende,german
+3476,,869,конец,russian
+3477,,870,pointu,french
+3478,,870,puntiagudo,spanish
+3479,,870,spitz,german
+3480,,870,остроконечный,russian
+3481,,871,"bord, orée",french
+3482,,871,"borde, orilla, margen",spanish
+3483,,871,"Kante, Rand",german
+3484,,871,край,russian
+3485,,872,côté,french
+3486,,872,"lado,costado",spanish
+3487,,872,Seite,german
+3488,,872,сторона,russian
+3489,,873,"milieu,centre",french
+3490,,873,"medio, centro",spanish
+3491,,873,"Mitte, Zentrum",german
+3492,,873,"середина, центр",russian
+3493,,874,droite,french
+3494,,874,derecha,spanish
+3495,,874,rechts,german
+3496,,874,правая (сторона),russian
+3497,,875,gauche,french
+3498,,875,izquierda,spanish
+3499,,875,links,german
+3500,,875,левая (сторна),russian
+3501,,876,près,french
+3502,,876,cerca,spanish
+3503,,876,nah(e),german
+3504,,876,близко,russian
+3505,,877,loin,french
+3506,,877,lejos,spanish
+3507,,877,"fern, weit",german
+3508,,877,далеко,russian
+3509,,878,"est,orient",french
+3510,,878,este (punto cardinal),spanish
+3511,,878,Osten,german
+3512,,878,восток,russian
+3513,,879,"ouest, occident",french
+3514,,879,oeste,spanish
+3515,,879,Westen,german
+3516,,879,запад,russian
+3517,,880,nord,french
+3518,,880,norte,spanish
+3519,,880,Norden,german
+3520,,880,север,russian
+3521,,881,sud,french
+3522,,881,sur,spanish
+3523,,881,Süden,german
+3524,,881,юг,russian
+3525,,882,"grandir, croitre, pousser",french
+3526,,882,crecer,spanish
+3527,,882,wachsen,german
+3528,,882,расти,russian
+3529,,883,mesurer,french
+3530,,883,medir,spanish
+3531,,883,messen,german
+3532,,883,"мерить, измерять",russian
+3533,,884,"brasse, toise",french
+3534,,884,braza,spanish
+3535,,884,Klafter,german
+3536,,884,сажень,russian
+3537,,885,"grand, gros",french
+3538,,885,grande,spanish
+3539,,885,groß,german
+3540,,885,большой,russian
+3541,,886,petit,french
+3542,,886,"chico, pequeño",spanish
+3543,,886,klein,german
+3544,,886,маленький,russian
+3545,,887,long,french
+3546,,887,largo,spanish
+3547,,887,lang,german
+3548,,887,длинный,russian
+3549,,888,grand,french
+3550,,888,alto,spanish
+3551,,888,"groß, hoch",german
+3552,,888,высокий,russian
+3553,,889,court,french
+3554,,889,corto,spanish
+3555,,889,kurz,german
+3556,,889,короткий,russian
+3557,,890,large,french
+3558,,890,"ancho,amplio",spanish
+3559,,890,"breit, weit",german
+3560,,890,широкий,russian
+3561,,891,étroit,french
+3562,,891,"angosto,estrecho",spanish
+3563,,891,eng,german
+3564,,891,узкий,russian
+3565,,892,"épais, gros",french
+3566,,892,grueso,spanish
+3567,,892,dick,german
+3568,,892,толстый,russian
+3569,,893,mince,french
+3570,,893,delgado,spanish
+3571,,893,dünn,german
+3572,,893,тонкий,russian
+3573,,894,profond,french
+3574,,894,"profundo,hondo",spanish
+3575,,894,tief,german
+3576,,894,глубокий,russian
+3577,,895,peu profond,french
+3578,,895,"bajo, poco profundo",spanish
+3579,,895,"seicht, flach",german
+3580,,895,мелкий,russian
+3581,,896,plat,french
+3582,,896,plano,spanish
+3583,,896,"flach, platt",german
+3584,,896,плоский,russian
+3585,,897,droit,french
+3586,,897,"derecho,recto",spanish
+3587,,897,gerade,german
+3588,,897,прямой,russian
+3589,,898,"courbé, tordu",french
+3590,,898,torcido,spanish
+3591,,898,krumm,german
+3592,,898,кривой,russian
+3593,,899,crochet,french
+3594,,899,gancho,spanish
+3595,,899,Haken,german
+3596,,899,крюк,russian
+3597,,900,coin,french
+3598,,900,"esquina, rincón",spanish
+3599,,900,"Ecke, Winkel",german
+3600,,900,угол,russian
+3601,,901,croix,french
+3602,,901,cruz,spanish
+3603,,901,Kreuz,german
+3604,,901,крест,russian
+3605,,902,carré,french
+3606,,902,cuadrado,spanish
+3607,,902,Viereck,german
+3608,,902,квадрат,russian
+3609,,903,rond,french
+3610,,903,redondo,spanish
+3611,,903,rund,german
+3612,,903,круглый,russian
+3613,,904,cercle,french
+3614,,904,círculo,spanish
+3615,,904,Kreis,german
+3616,,904,"круг, окружность",russian
+3617,,905,"sphère, ballon",french
+3618,,905,"pelota, esfera, globo",spanish
+3619,,905,Kugel,german
+3620,,905,"сфера, шар",russian
+3621,,906,"ligne, file",french
+3622,,906,línea,spanish
+3623,,906,"Reihe, Linie",german
+3624,,906,линия,russian
+3625,,907,trou,french
+3626,,907,agujero,spanish
+3627,,907,Loch,german
+3628,,907,дыра,russian
+3629,,908,"comme,semblable",french
+3630,,908,semejante,spanish
+3631,,908,ähnlich,german
+3632,,908,"похожий, подобный",russian
+3633,,909,changer,french
+3634,,909,cambiar,spanish
+3635,,909,"verändern, wechseln, vertauschen",german
+3636,,909,менять,russian
+3637,,910,zéro,french
+3638,,910,cero,spanish
+3639,,910,Null,german
+3640,,910,"ноль, ничего",russian
+3641,,911,un,french
+3642,,911,uno,spanish
+3643,,911,eins,german
+3644,,911,,russian
+3645,,912,deux,french
+3646,,912,dos,spanish
+3647,,912,zwei,german
+3648,,912,два,russian
+3649,,913,trois,french
+3650,,913,tres,spanish
+3651,,913,drei,german
+3652,,913,три,russian
+3653,,914,quatre,french
+3654,,914,cuatro,spanish
+3655,,914,vier,german
+3656,,914,четыре,russian
+3657,,915,cinq,french
+3658,,915,cinco,spanish
+3659,,915,fünf,german
+3660,,915,пять,russian
+3661,,916,six,french
+3662,,916,seis,spanish
+3663,,916,sechs,german
+3664,,916,шесть,russian
+3665,,917,sept,french
+3666,,917,siete,spanish
+3667,,917,sieben,german
+3668,,917,семь,russian
+3669,,918,huit,french
+3670,,918,ocho,spanish
+3671,,918,acht,german
+3672,,918,восемь,russian
+3673,,919,neuf,french
+3674,,919,nueve,spanish
+3675,,919,neun,german
+3676,,919,девять,russian
+3677,,920,dix,french
+3678,,920,diez,spanish
+3679,,920,zehn,german
+3680,,920,десять,russian
+3681,,921,onze,french
+3682,,921,once,spanish
+3683,,921,elf,german
+3684,,921,одиннадцать,russian
+3685,,922,douze,french
+3686,,922,doce,spanish
+3687,,922,zwölf,german
+3688,,922,двенадцать,russian
+3689,,923,quinze,french
+3690,,923,quince,spanish
+3691,,923,fünfzehn,german
+3692,,923,пятнадцать,russian
+3693,,924,vingt,french
+3694,,924,veinte,spanish
+3695,,924,zwanzig,german
+3696,,924,двадцать,russian
+3697,,925,cent,french
+3698,,925,"ciento,cien",spanish
+3699,,925,hundert,german
+3700,,925,сто,russian
+3701,,926,mille,french
+3702,,926,mil,spanish
+3703,,926,tausend,german
+3704,,926,тысяча,russian
+3705,,927,compter,french
+3706,,927,contar,spanish
+3707,,927,zählen,german
+3708,,927,считать,russian
+3709,,928,tous,french
+3710,,928,todo,spanish
+3711,,928,alle,german
+3712,,928,"все, каждый",russian
+3713,,929,beaucoup,french
+3714,,929,mucho,spanish
+3715,,929,viele,german
+3716,,929,много,russian
+3717,,930,"plus, encore plus",french
+3718,,930,más,spanish
+3719,,930,mehr,german
+3720,,930,больше,russian
+3721,,931,peu de,french
+3722,,931,poco,spanish
+3723,,931,wenige,german
+3724,,931,мало,russian
+3725,,932,assez,french
+3726,,932,"bastante, suficiente",spanish
+3727,,932,genug,german
+3728,,932,достаточно,russian
+3729,,933,quelques,french
+3730,,933,"algo,alguno",spanish
+3731,,933,einige,german
+3732,,933,несколько,russian
+3733,,934,foule,french
+3734,,934,multitud,spanish
+3735,,934,Menge,german
+3736,,934,множество,russian
+3737,,935,"plein, rempli",french
+3738,,935,lleno,spanish
+3739,,935,voll,german
+3740,,935,полный,russian
+3741,,936,vide,french
+3742,,936,vacío,spanish
+3743,,936,leer,german
+3744,,936,пустой,russian
+3745,,937,"morceau, partie",french
+3746,,937,pedazo,spanish
+3747,,937,Teil,german
+3748,,937,"часть, кусок",russian
+3749,,938,moitié,french
+3750,,938,mitad,spanish
+3751,,938,Hälfte,german
+3752,,938,половина,russian
+3753,,939,seul,french
+3754,,939,"solo, solamente",spanish
+3755,,939,einzig,german
+3756,,939,"один, единственный, только",russian
+3757,,940,premier,french
+3758,,940,primero,spanish
+3759,,940,erster,german
+3760,,940,первый,russian
+3761,,941,dernier,french
+3762,,941,último,spanish
+3763,,941,letzter,german
+3764,,941,последний,russian
+3765,,942,deuxième,french
+3766,,942,segundo,spanish
+3767,,942,zweiter,german
+3768,,942,второй,russian
+3769,,943,"couple, paire",french
+3770,,943,par,spanish
+3771,,943,Paar,german
+3772,,943,пара,russian
+3773,,944,deux fois,french
+3774,,944,dos veces,spanish
+3775,,944,zweimal,german
+3776,,944,два раза,russian
+3777,,945,troisième,french
+3778,,945,tercero,spanish
+3779,,945,dritter,german
+3780,,945,третий,russian
+3781,,946,trois fois,french
+3782,,946,tres veces,spanish
+3783,,946,dreimal,german
+3784,,946,три раза,russian
+3785,,947,heure,french
+3786,,947,tiempo,spanish
+3787,,947,Zeit,german
+3788,,947,время,russian
+3789,,948,âge,french
+3790,,948,edad,spanish
+3791,,948,Alter,german
+3792,,948,"возраст, век, эпоха",russian
+3793,,949,nouveau,french
+3794,,949,nuevo,spanish
+3795,,949,neu,german
+3796,,949,новый,russian
+3797,,950,jeune,french
+3798,,950,"tierno, joven",spanish
+3799,,950,jung,german
+3800,,950,молодой,russian
+3801,,951,"vieux,âgé",french
+3802,,951,viejo,spanish
+3803,,951,alt,german
+3804,,951,"старый, ветхий",russian
+3805,,952,"tôt,de bonne heure",french
+3806,,952,temprano,spanish
+3807,,952,früh,german
+3808,,952,рано,russian
+3809,,953,tard,french
+3810,,953,tarde,spanish
+3811,,953,spät,german
+3812,,953,поздно,russian
+3813,,954,maintenant,french
+3814,,954,ahora,spanish
+3815,,954,"jetzt, nun",german
+3816,,954,сейчас,russian
+3817,,955,tout de suite,french
+3818,,955,inmediatamente,spanish
+3819,,955,sofort,german
+3820,,955,немедленно,russian
+3821,,956,"vite, rapide",french
+3822,,956,rápido,spanish
+3823,,956,"schnell, rasch, geschwind",german
+3824,,956,быстрый,russian
+3825,,957,lent,french
+3826,,957,"despacio,lentamente",spanish
+3827,,957,langsam,german
+3828,,957,медленный,russian
+3829,,958,se dépêcher,french
+3830,,958,apurarse,spanish
+3831,,958,sich beeilen,german
+3832,,958,"спешить, торопить(ся)",russian
+3833,,959,"s’attarder, retarder",french
+3834,,959,demorar,spanish
+3835,,959,sich verspäten,german
+3836,,959,"замедлять, задерживать",russian
+3837,,960,commencer,french
+3838,,960,empezar,spanish
+3839,,960,"beginnen, anfangen",german
+3840,,960,начинать,russian
+3841,,961,durer,french
+3842,,961,durar,spanish
+3843,,961,dauern,german
+3844,,961,"продолжаться, длиться",russian
+3845,,962,fin,french
+3846,,962,fin,spanish
+3847,,962,"Ende, Schluss",german
+3848,,962,конец,russian
+3849,,963,"finir, terminer",french
+3850,,963,"terminar,finalizar",spanish
+3851,,963,"beenden, vollenden",german
+3852,,963,заканчивать,russian
+3853,,964,"cesser, s'arrêter",french
+3854,,964,"terminar, detenerse",spanish
+3855,,964,aufhören,german
+3856,,964,прекращать,russian
+3857,,965,prêt,french
+3858,,965,listo,spanish
+3859,,965,"bereit, fertig",german
+3860,,965,готовый,russian
+3861,,966,toujours,french
+3862,,966,siempre,spanish
+3863,,966,"immer, stets",german
+3864,,966,всегда,russian
+3865,,967,souvent,french
+3866,,967,frecuentemente,spanish
+3867,,967,"oft, häufig",german
+3868,,967,часто,russian
+3869,,968,"parfois, quelquefois",french
+3870,,968,a veces,spanish
+3871,,968,"manchmal, bisweilen",german
+3872,,968,иногда,russian
+3873,,969,bientôt,french
+3874,,969,pronto,spanish
+3875,,969,bald,german
+3876,,969,скоро,russian
+3877,,970,longtemps,french
+3878,,970,por mucho tiempo,spanish
+3879,,970,lange,german
+3880,,970,долгосрочный,russian
+3881,,971,jamais,french
+3882,,971,"nunca, jamás",spanish
+3883,,971,"nie, niemals",german
+3884,,971,никогда,russian
+3885,,972,"encore une fois, encore, de nouveau",french
+3886,,972,otra vez,spanish
+3887,,972,"wieder, nochmal",german
+3888,,972,"опять, снова",russian
+3889,,973,jour,french
+3890,,973,día,spanish
+3891,,973,Tag,german
+3892,,973,день,russian
+3893,,974,nuit,french
+3894,,974,noche,spanish
+3895,,974,Nacht,german
+3896,,974,ночь,russian
+3897,,975,aube,french
+3898,,975,madrugada,spanish
+3899,,975,Morgendämmerung,german
+3900,,975,рассвет,russian
+3901,,976,"matin,matinée",french
+3902,,976,mañana,spanish
+3903,,976,Morgen,german
+3904,,976,утро,russian
+3905,,977,midi,french
+3906,,977,mediodía,spanish
+3907,,977,Mittag,german
+3908,,977,полдень,russian
+3909,,978,après-midi,french
+3910,,978,tarde,spanish
+3911,,978,Nachmittag,german
+3912,,978,после полудня,russian
+3913,,979,soir,french
+3914,,979,"vísperas, noche",spanish
+3915,,979,Abend,german
+3916,,979,вечер,russian
+3917,,980,aujourd'hui,french
+3918,,980,hoy,spanish
+3919,,980,heute,german
+3920,,980,сегодня,russian
+3921,,981,demain,french
+3922,,981,mañana,spanish
+3923,,981,morgen,german
+3924,,981,завтра,russian
+3925,,982,après-demain,french
+3926,,982,pasado mañana,spanish
+3927,,982,übermorgen,german
+3928,,982,послезавтра,russian
+3929,,983,hier,french
+3930,,983,ayer,spanish
+3931,,983,gestern,german
+3932,,983,вчера,russian
+3933,,984,avant-hier,french
+3934,,984,anteayer,spanish
+3935,,984,vorgestern,german
+3936,,984,позавчера,russian
+3937,,985,heure,french
+3938,,985,hora,spanish
+3939,,985,Stunde,german
+3940,,985,час,russian
+3941,,986,"horloge,montre",french
+3942,,986,reloj,spanish
+3943,,986,Uhr,german
+3944,,986,часы,russian
+3945,,987,semaine,french
+3946,,987,semana,spanish
+3947,,987,Woche,german
+3948,,987,неделя,russian
+3949,,988,dimanche,french
+3950,,988,domingo,spanish
+3951,,988,Sonntag,german
+3952,,988,воскресенье,russian
+3953,,989,lundi,french
+3954,,989,lunes,spanish
+3955,,989,Montag,german
+3956,,989,понедельник,russian
+3957,,990,mardi,french
+3958,,990,martes,spanish
+3959,,990,Dienstag,german
+3960,,990,вторник,russian
+3961,,991,mercredi,french
+3962,,991,miércoles,spanish
+3963,,991,Mittwoch,german
+3964,,991,среда,russian
+3965,,992,jeudi,french
+3966,,992,jueves,spanish
+3967,,992,Donnerstag,german
+3968,,992,четверг,russian
+3969,,993,vendredi,french
+3970,,993,viernes,spanish
+3971,,993,Freitag,german
+3972,,993,пятница,russian
+3973,,994,samedi,french
+3974,,994,sábado,spanish
+3975,,994,"Sonnabend, Samstag",german
+3976,,994,суббота,russian
+3977,,995,mois,french
+3978,,995,mes,spanish
+3979,,995,Monat,german
+3980,,995,месяц,russian
+3981,,996,année,french
+3982,,996,año,spanish
+3983,,996,Jahr,german
+3984,,996,год,russian
+3985,,997,hiver,french
+3986,,997,invierno,spanish
+3987,,997,Winter,german
+3988,,997,зима,russian
+3989,,998,printemps,french
+3990,,998,primavera,spanish
+3991,,998,Frühling,german
+3992,,998,весна,russian
+3993,,999,été,french
+3994,,999,verano,spanish
+3995,,999,Sommer,german
+3996,,999,лето,russian
+3997,,1000,automne,french
+3998,,1000,otoño,spanish
+3999,,1000,Herbst,german
+4000,,1000,осень,russian
+4001,,1001,saison,french
+4002,,1001,estación,spanish
+4003,,1001,Jahreszeit,german
+4004,,1001,время года,russian
+4005,,1002,sentir,french
+4006,,1002,"oler, olfatear",spanish
+4007,,1002,riechen,german
+4008,,1002,пахнуть,russian
+4009,,1003,ridé,french
+4010,,1003,arrugado,spanish
+4011,,1003,"runzlig, faltig",german
+4012,,1003,"мятый, сморщенный",russian
+4013,,1004,renifler,french
+4014,,1004,husmear,spanish
+4015,,1004,riechen (an),german
+4016,,1004,"шмыгать,  нюхать",russian
+4017,,1005,sentir,french
+4018,,1005,"oler, olfatear",spanish
+4019,,1005,riechen,german
+4020,,1005,чувствовать запах,russian
+4021,,1006,"odorant, parfumé",french
+4022,,1006,fragante,spanish
+4023,,1006,wohlriechend,german
+4024,,1006,ароматный,russian
+4025,,1007,puant,french
+4026,,1007,hediondo,spanish
+4027,,1007,stinkend,german
+4028,,1007,вонючий,russian
+4029,,1008,"goûter, avoir un goût...",french
+4030,,1008,"gustar, saborear",spanish
+4031,,1008,schmecken,german
+4032,,1008,"различать вкус, попробовать",russian
+4033,,1009,"sucré, doux",french
+4034,,1009,dulce,spanish
+4035,,1009,süß,german
+4036,,1009,сладкий,russian
+4037,,1010,salé,french
+4038,,1010,salado,spanish
+4039,,1010,salzig,german
+4040,,1010,соленый,russian
+4041,,1011,amer,french
+4042,,1011,amargo,spanish
+4043,,1011,bitter,german
+4044,,1011,горький,russian
+4045,,1012,"acide, aigre",french
+4046,,1012,"ácido,agrio",spanish
+4047,,1012,sauer,german
+4048,,1012,кислый,russian
+4049,,1013,saumâtre,french
+4050,,1013,salobre,spanish
+4051,,1013,brackig,german
+4052,,1013,солоноватый,russian
+4053,,1014,entendre,french
+4054,,1014,oír,spanish
+4055,,1014,hören,german
+4056,,1014,слышать,russian
+4057,,1015,écouter,french
+4058,,1015,escuchar,spanish
+4059,,1015,"zuhören, horchen, lauschen",german
+4060,,1015,слушать,russian
+4061,,1016,"son,bruit",french
+4062,,1016,"ruido, sonido",spanish
+4063,,1016,"Laut, Geräusch",german
+4064,,1016,"звук, шум",russian
+4065,,1017,bruyant,french
+4066,,1017,"alta (voz),ruidoso",spanish
+4067,,1017,laut,german
+4068,,1017,громкий,russian
+4069,,1018,"tranquille, silencieux, calme",french
+4070,,1018,"silencio, tranquilo",spanish
+4071,,1018,"still, Stille, (ruhig, Ruhe)",german
+4072,,1018,тишина,russian
+4073,,1019,voir,french
+4074,,1019,ver,spanish
+4075,,1019,sehen,german
+4076,,1019,видеть,russian
+4077,,1020,regarder,french
+4078,,1020,"mirar, contemplar",spanish
+4079,,1020,"ansehen, schauen, blicken",german
+4080,,1020,смотреть (на),russian
+4081,,1021,montrer,french
+4082,,1021,mostrar,spanish
+4083,,1021,zeigen,german
+4084,,1021,показывать,russian
+4085,,1022,briller,french
+4086,,1022,brillar,spanish
+4087,,1022,"scheinen, leuchten, glänzen",german
+4088,,1022,светить,russian
+4089,,1023,"luisant, brillant",french
+4090,,1023,"brillante,resplandor",spanish
+4091,,1023,"hell, glänzend",german
+4092,,1023,яркий,russian
+4093,,1024,couleur,french
+4094,,1024,color,spanish
+4095,,1024,Farbe,german
+4096,,1024,цвет,russian
+4097,,1025,clair,french
+4098,,1025,claro,spanish
+4099,,1025,hell,german
+4100,,1025,светлый,russian
+4101,,1026,"foncé, obscure",french
+4102,,1026,oscuro,spanish
+4103,,1026,dunkel,german
+4104,,1026,темный,russian
+4105,,1027,blanc,french
+4106,,1027,blanco,spanish
+4107,,1027,weiß,german
+4108,,1027,белый,russian
+4109,,1028,noir,french
+4110,,1028,negro,spanish
+4111,,1028,schwarz,german
+4112,,1028,черный,russian
+4113,,1029,rouge,french
+4114,,1029,rojo,spanish
+4115,,1029,rot,german
+4116,,1029,красный,russian
+4117,,1030,bleu,french
+4118,,1030,azul,spanish
+4119,,1030,blau,german
+4120,,1030,"голубой, синий",russian
+4121,,1031,vert,french
+4122,,1031,verde,spanish
+4123,,1031,grün,german
+4124,,1031,зеленый,russian
+4125,,1032,jaune,french
+4126,,1032,amarillo,spanish
+4127,,1032,gelb,german
+4128,,1032,желтый,russian
+4129,,1033,toucher,french
+4130,,1033,tocar,spanish
+4131,,1033,berühren,german
+4132,,1033,трогать,russian
+4133,,1034,pincer,french
+4134,,1034,pellizcar,spanish
+4135,,1034,kneifen,german
+4136,,1034,"щипать, жать",russian
+4137,,1035,"tater, palper",french
+4138,,1035,"tentar, palpar",spanish
+4139,,1035,"fühlen, tasten",german
+4140,,1035,чувствовать,russian
+4141,,1036,dur,french
+4142,,1036,duro,spanish
+4143,,1036,hart,german
+4144,,1036,жесткий,russian
+4145,,1037,doux,french
+4146,,1037,suave,spanish
+4147,,1037,weich,german
+4148,,1037,мягкий,russian
+4149,,1038,rugueux,french
+4150,,1038,áspero,spanish
+4151,,1038,rauh,german
+4152,,1038,"шереховатый, неровный",russian
+4153,,1039,lisse,french
+4154,,1039,"suave,liso",spanish
+4155,,1039,glatt,german
+4156,,1039,гладкий,russian
+4157,,1040,"tranchant, aiguisé",french
+4158,,1040,"afilado, aguzado, filoso",spanish
+4159,,1040,scharf,german
+4160,,1040,острый,russian
+4161,,1041,émoussé,french
+4162,,1041,"romo, embotado",spanish
+4163,,1041,stumpf,german
+4164,,1041,тупой,russian
+4165,,1042,lourd,french
+4166,,1042,pesado,spanish
+4167,,1042,schwer,german
+4168,,1042,тяжелый,russian
+4169,,1043,léger,french
+4170,,1043,"liviano, ligero",spanish
+4171,,1043,leicht,german
+4172,,1043,легкий,russian
+4173,,1044,"mouillé,  humide",french
+4174,,1044,mojado,spanish
+4175,,1044,nass,german
+4176,,1044,мокрый,russian
+4177,,1045,sec,french
+4178,,1045,seco,spanish
+4179,,1045,trocken,german
+4180,,1045,сухой,russian
+4181,,1046,chaud,french
+4182,,1046,caliente,spanish
+4183,,1046,heiß,german
+4184,,1046,"горячий, жаркий",russian
+4185,,1047,chaud,french
+4186,,1047,caliente,spanish
+4187,,1047,warm,german
+4188,,1047,теплый,russian
+4189,,1048,froid,french
+4190,,1048,frío,spanish
+4191,,1048,kalt,german
+4192,,1048,холодный,russian
+4193,,1049,propre,french
+4194,,1049,limpio,spanish
+4195,,1049,"sauber, rein",german
+4196,,1049,чистый,russian
+4197,,1050,"sale,crasseux",french
+4198,,1050,sucio,spanish
+4199,,1050,schmutzig,german
+4200,,1050,грязный,russian
+4201,,1051,"âme, esprit",french
+4202,,1051,alma,spanish
+4203,,1051,"Seele, Geist",german
+4204,,1051,"душа, дух",russian
+4205,,1052,"étonné, surpris",french
+4206,,1052,sorprendido,spanish
+4207,,1052,"überrascht, erstaunt",german
+4208,,1052,удивленный,russian
+4209,,1053,"bonne chance, bonheur",french
+4210,,1053,buena suerte,spanish
+4211,,1053,Glück,german
+4212,,1053,удача,russian
+4213,,1054,"malheur, malchance, infortune",french
+4214,,1054,mala suerte,spanish
+4215,,1054,Unglück,german
+4216,,1054,неудача,russian
+4217,,1055,"joyeux, heureux",french
+4218,,1055,alegre,spanish
+4219,,1055,"froh, glücklich",german
+4220,,1055,"счастливый, радостный",russian
+4221,,1056,rire,french
+4222,,1056,reír,spanish
+4223,,1056,lachen,german
+4224,,1056,смеяться,russian
+4225,,1057,sourire,french
+4226,,1057,sonreír,spanish
+4227,,1057,lächeln,german
+4228,,1057,улыбаться,russian
+4229,,1058,jouer,french
+4230,,1058,jugar,spanish
+4231,,1058,spielen,german
+4232,,1058,играть,russian
+4233,,1059,aimer,french
+4234,,1059,querer,spanish
+4235,,1059,lieben,german
+4236,,1059,любить,russian
+4237,,1060,"baiser,embrasser",french
+4238,,1060,besar,spanish
+4239,,1060,küssen,german
+4240,,1060,целовать,russian
+4241,,1061,embrasser,french
+4242,,1061,abrazar,spanish
+4243,,1061,umarmen,german
+4244,,1061,обниматть,russian
+4245,,1062,douleur,french
+4246,,1062,dolor,spanish
+4247,,1062,Schmerz,german
+4248,,1062,боль,russian
+4249,,1063,"douleur, deuil",french
+4250,,1063,"tristeza, dolor, pena",spanish
+4251,,1063,Trauer,german
+4252,,1063,"печаль, скорбь",russian
+4253,,1064,"inquiétude, soucis",french
+4254,,1064,"ansiedad,angustia",spanish
+4255,,1064,Sorge,german
+4256,,1064,тревога,russian
+4257,,1065,regretter,french
+4258,,1065,lamentar,spanish
+4259,,1065,"bedauern, bereuen",german
+4260,,1065,сожалеть,russian
+4261,,1066,"pitié, compassion",french
+4262,,1066,"compasión, lástima",spanish
+4263,,1066,"Erbarmen, Mitleid",german
+4264,,1066,жалость,russian
+4265,,1067,pleurer,french
+4266,,1067,llorar,spanish
+4267,,1067,weinen,german
+4268,,1067,плакать,russian
+4269,,1068,larme,french
+4270,,1068,lágrima,spanish
+4271,,1068,Träne,german
+4272,,1068,слеза,russian
+4273,,1069,grogner,french
+4274,,1069,gemir,spanish
+4275,,1069,"stöhnen, ächzen",german
+4276,,1069,стонать,russian
+4277,,1070,"haïr, détester",french
+4278,,1070,odiar,spanish
+4279,,1070,hassen,german
+4280,,1070,ненавидеть,russian
+4281,,1071,colère,french
+4282,,1071,enojo,spanish
+4283,,1071,Zorn,german
+4284,,1071,"гнев, злость",russian
+4285,,1072,"envie, jalousie",french
+4286,,1072,"envidia, celos",spanish
+4287,,1072,"Neid, Missgunst, Eifersucht",german
+4288,,1072,"зависть, ревность",russian
+4289,,1073,honte,french
+4290,,1073,vergüenza,spanish
+4291,,1073,Scham,german
+4292,,1073,стыд,russian
+4293,,1074,fier,french
+4294,,1074,orgulloso,spanish
+4295,,1074,stolz,german
+4296,,1074,гордый,russian
+4297,,1075,oser,french
+4298,,1075,"osar,atreverse",spanish
+4299,,1075,wagen,german
+4300,,1075,"осмелиться, отважиться",russian
+4301,,1076,courageux,french
+4302,,1076,valiente,spanish
+4303,,1076,"tapfer, mutig, kühn",german
+4304,,1076,"смелый, храбрый",russian
+4305,,1077,"peur, crainte",french
+4306,,1077,miedo,spanish
+4307,,1077,"Angst, Furcht",german
+4308,,1077,"страх, испуг",russian
+4309,,1078,danger,french
+4310,,1078,peligro,spanish
+4311,,1078,Gefahr,german
+4312,,1078,опасность,russian
+4313,,1079,"vouloir,désirer",french
+4314,,1079,"anhelar,desear",spanish
+4315,,1079,"wünschen, begehren, verlangen",german
+4316,,1079,желание,russian
+4317,,1080,choisir,french
+4318,,1080,escoger,spanish
+4319,,1080,"wählen, auswählen",german
+4320,,1080,выбирать,russian
+4321,,1081,espoir,french
+4322,,1081,esperanza,spanish
+4323,,1081,hoffen,german
+4324,,1081,надеяться,russian
+4325,,1082,fidèle,french
+4326,,1082,fiel,spanish
+4327,,1082,treu,german
+4328,,1082,"преданный, верный",russian
+4329,,1083,vrai,french
+4330,,1083,verdadero,spanish
+4331,,1083,wahr,german
+4332,,1083,настоящий,russian
+4333,,1084,mentir,french
+4334,,1084,mentir,spanish
+4335,,1084,lügen,german
+4336,,1084,лгать,russian
+4337,,1085,"tromperie, fraude, triche",french
+4338,,1085,engaño,spanish
+4339,,1085,"Betrug, List",german
+4340,,1085,обман,russian
+4341,,1086,pardonner,french
+4342,,1086,perdonar,spanish
+4343,,1086,"verzeihen, vergeben",german
+4344,,1086,прощать,russian
+4345,,1087,bon,french
+4346,,1087,bueno,spanish
+4347,,1087,gut,german
+4348,,1087,"хороший,  добрый",russian
+4349,,1088,mauvais,french
+4350,,1088,malo,spanish
+4351,,1088,"schlecht, schlimm, böse, übel",german
+4352,,1088,плохой,russian
+4353,,1089,"juste, correct",french
+4354,,1089,correcto,spanish
+4355,,1089,richtig,german
+4356,,1089,правильный,russian
+4357,,1090,faux,french
+4358,,1090,"incorrecto, falso",spanish
+4359,,1090,falsch,german
+4360,,1090,неправильный,russian
+4361,,1091,faute,french
+4362,,1091,culpa,spanish
+4363,,1091,Schuld,german
+4364,,1091,вина,russian
+4365,,1092,"erreur,faute",french
+4366,,1092,"equivocación,error",spanish
+4367,,1092,"Fehler, Irrtum",german
+4368,,1092,ошибка,russian
+4369,,1093,blâme,french
+4370,,1093,culpa,spanish
+4371,,1093,"Tadel, Vorwurf",german
+4372,,1093,"порицание, осуждение, вина",russian
+4373,,1094,"louange, éloge",french
+4374,,1094,"exaltar,alabar",spanish
+4375,,1094,"Lob, Preis",german
+4376,,1094,хвалить,russian
+4377,,1095,"beau,joli",french
+4378,,1095,hermoso,spanish
+4379,,1095,"schön, hübsch",german
+4380,,1095,красивый,russian
+4381,,1096,laid,french
+4382,,1096,feo,spanish
+4383,,1096,hässlich,german
+4384,,1096,уродливый,russian
+4385,,1097,gourmand,french
+4386,,1097,"codicioso,voraz",spanish
+4387,,1097,"gierig, gefräßig",german
+4388,,1097,жадный,russian
+4389,,1098,"intelligent,rusé",french
+4390,,1098,"hábil,capaz",spanish
+4391,,1098,"klug, schlau",german
+4392,,1098,умный,russian
+4393,,1099,"pensée, avis",french
+4394,,1099,"mente, pensamiento",spanish
+4395,,1099,"Geist, Sinn",german
+4396,,1099,разум,russian
+4397,,1100,penser,french
+4398,,1100,pensar,spanish
+4399,,1100,(nach)denken,german
+4400,,1100,"думать, размышлять",russian
+4401,,1101,"croire, penser",french
+4402,,1101,"creer,suponer",spanish
+4403,,1101,"meinen, denken, glauben",german
+4404,,1101,"думать, считать",russian
+4405,,1102,croire,french
+4406,,1102,creer,spanish
+4407,,1102,glauben,german
+4408,,1102,верить,russian
+4409,,1103,comprendre,french
+4410,,1103,entender,spanish
+4411,,1103,"verstehen, begreifen",german
+4412,,1103,понимать,russian
+4413,,1104,savoir,french
+4414,,1104,saber,spanish
+4415,,1104,"wissen, kennen",german
+4416,,1104,знать,russian
+4417,,1105,deviner,french
+4418,,1105,"adivinar,acertar",spanish
+4419,,1105,raten,german
+4420,,1105,догадываться,russian
+4421,,1106,imiter,french
+4422,,1106,imitar,spanish
+4423,,1106,"imitieren, nachahmen",german
+4424,,1106,"имитировать, подражать",russian
+4425,,1107,sembler,french
+4426,,1107,parecer,spanish
+4427,,1107,scheinen,german
+4428,,1107,казаться,russian
+4429,,1108,idée,french
+6957,,1740,,french
+4430,,1108,"idea,concepto",spanish
+4431,,1108,"Idee, Begriff, Vorstellung",german
+4432,,1108,"идея, понятие",russian
+4433,,1109,"sage,érudit",french
+4434,,1109,sabio,spanish
+4435,,1109,"weise, klug",german
+4436,,1109,мудрый,russian
+4437,,1110,"bête, stupide",french
+4438,,1110,necio,spanish
+4439,,1110,"dumm, blöd, töricht, närrisch, albern",german
+4440,,1110,глупый,russian
+4441,,1111,"fou, bête, idiot",french
+4442,,1111,loco,spanish
+4443,,1111,verrückt,german
+4444,,1111,безумный,russian
+4445,,1112,apprendre,french
+4446,,1112,aprender,spanish
+4447,,1112,lernen,german
+4448,,1112,"узнавать, учить(ся)",russian
+4449,,1113,étudier,french
+4450,,1113,estudiar,spanish
+4451,,1113,studieren,german
+4452,,1113,"учить, изучать",russian
+4453,,1114,enseigner,french
+4454,,1114,enseñar,spanish
+4455,,1114,"lehren, unterrichten, beibringen",german
+4456,,1114,"учить, преподавать",russian
+4457,,1115,élève,french
+4458,,1115,alumno,spanish
+4459,,1115,Schüler,german
+4460,,1115,ученик,russian
+4461,,1116,professeur,french
+4462,,1116,maestro,spanish
+4463,,1116,Lehrer,german
+4464,,1116,учитель,russian
+4465,,1117,école,french
+4466,,1117,escuela,spanish
+4467,,1117,Schule,german
+4468,,1117,школа,russian
+4469,,1118,se souvenir,french
+4470,,1118,"recordar,acordarse",spanish
+4471,,1118,sich erinnern,german
+4472,,1118,помнить,russian
+4473,,1119,oublier,french
+4474,,1119,olvidar,spanish
+4475,,1119,vergessen,german
+4476,,1119,забывать,russian
+4477,,1120,"évident,net, clair",french
+4478,,1120,claro,spanish
+4479,,1120,"klar, deutlich",german
+4480,,1120,ясный,russian
+4481,,1121,obscur,french
+4482,,1121,obscuro,spanish
+4483,,1121,"dunkel, unklar",german
+4484,,1121,непонятный,russian
+4485,,1122,secret,french
+4486,,1122,secreto,spanish
+4487,,1122,"geheim, heimlich",german
+4488,,1122,"секрет, тайна",russian
+4489,,1123,"sûr,certain",french
+4490,,1123,seguro,spanish
+4491,,1123,"sicher, gewiss",german
+4492,,1123,"уверенный, точный",russian
+4493,,1124,expliquer,french
+4494,,1124,explicar,spanish
+4495,,1124,erklären,german
+4496,,1124,объснять,russian
+4497,,1125,but,french
+4498,,1125,propósito,spanish
+4499,,1125,"Absicht, Zweck",german
+4500,,1125,"намерение, цель",russian
+4501,,1126,cause,french
+4502,,1126,causa,spanish
+4503,,1126,"Ursache, Grund",german
+4504,,1126,причина,russian
+4505,,1127,doute,french
+4506,,1127,dudar,spanish
+4507,,1127,zweifeln,german
+4508,,1127,сомнение,russian
+4509,,1128,soupçonner,french
+4510,,1128,sospechar,spanish
+4511,,1128,"verdächtigen, argwöhnen, ahnen",german
+4512,,1128,подозревать,russian
+4513,,1129,trahir,french
+4514,,1129,traicionar,spanish
+4515,,1129,"verraten, betrügen",german
+4516,,1129,предавать,russian
+4517,,1130,"besoin,nécessité",french
+4518,,1130,necesidad,spanish
+4519,,1130,"Bedürfnis, Notwendigkeit",german
+4520,,1130,необходимость,russian
+4521,,1131,facile,french
+4522,,1131,fácil,spanish
+4523,,1131,"einfach, leicht",german
+4524,,1131,"легкий, простой",russian
+7071,,1768,,german
+4525,,1132,difficile,french
+4526,,1132,difícil,spanish
+4527,,1132,"schwierig, schwer",german
+4528,,1132,трудный,russian
+4529,,1133,"essayer, tenter",french
+4530,,1133,probar,spanish
+4531,,1133,versuchen,german
+4532,,1133,пытаться,russian
+4533,,1134,"façon,maniere",french
+4534,,1134,"modo, manera",spanish
+4535,,1134,"Art, Weise, ""Art und Weise""",german
+4536,,1134,способ,russian
+4537,,1135,et,french
+4538,,1135,y,spanish
+4539,,1135,und,german
+4540,,1135,"и, а",russian
+4541,,1136,parce que,french
+4542,,1136,porque,spanish
+4543,,1136,weil,german
+4544,,1136,потому что,russian
+4545,,1137,si,french
+4546,,1137,si,spanish
+4547,,1137,"falls, wenn",german
+4548,,1137,если,russian
+4549,,1138,ou,french
+4550,,1138,o,spanish
+4551,,1138,oder,german
+4552,,1138,или,russian
+4553,,1139,oui,french
+4554,,1139,sí,spanish
+4555,,1139,ja,german
+4556,,1139,да,russian
+4557,,1140,non,french
+4558,,1140,no,spanish
+4559,,1140,nein,german
+4560,,1140,нет,russian
+4561,,1141,comment?,french
+4562,,1141,¿cómo?,spanish
+4563,,1141,Wie?,german
+4564,,1141,как?,russian
+4565,,1142,combien?,french
+4566,,1142,¿cuántos?,spanish
+4567,,1142,Wieviele?,german
+4568,,1142,сколько?,russian
+4569,,1143,combien?,french
+4570,,1143,¿cuánto?,spanish
+4571,,1143,Wieviel?,german
+4572,,1143,сколько?,russian
+4573,,1144,quoi?,french
+4574,,1144,¿qué?,spanish
+4575,,1144,Was?,german
+4576,,1144,что?,russian
+4577,,1145,quand?,french
+4578,,1145,¿cuándo?,spanish
+4579,,1145,Wann?,german
+4580,,1145,когда?,russian
+4581,,1146,où?,french
+4582,,1146,¿dónde?,spanish
+4583,,1146,Wo?,german
+4584,,1146,где? откуда?,russian
+4585,,1147,quel? lequel?,french
+4586,,1147,¿cuál?,spanish
+4587,,1147,"Welche(r,s)?",german
+4588,,1147,какой?,russian
+4589,,1148,qui?,french
+4590,,1148,¿quién?,spanish
+4591,,1148,Wer?,german
+4592,,1148,кто?,russian
+4593,,1149,pourquoi?,french
+4594,,1149,¿por qué?,spanish
+4595,,1149,"Warum?, Weshalb?",german
+4596,,1149,почему?,russian
+4597,,1150,voix,french
+4598,,1150,voz,spanish
+4599,,1150,Stimme,german
+4600,,1150,голос,russian
+4601,,1151,chanter,french
+4602,,1151,cantar,spanish
+4603,,1151,singen,german
+4604,,1151,петь,russian
+4605,,1152,crier,french
+4606,,1152,gritar,spanish
+4607,,1152,"schreien, rufen",german
+4608,,1152,кричать,russian
+4609,,1153,chuchoter,french
+4610,,1153,cuchichear,spanish
+4611,,1153,flüstern,german
+4612,,1153,шептать,russian
+4613,,1154,"marmonner, bredouiller",french
+4614,,1154,"barbotar,hablar entre dientes",spanish
+4615,,1154,"murmeln, nuscheln",german
+4616,,1154,бормотать,russian
+4617,,1155,siffler,french
+4618,,1155,"silbar,chiflar",spanish
+4619,,1155,pfeifen,german
+4620,,1155,свистеть,russian
+4621,,1156,"crier, hurler",french
+4622,,1156,chillar,spanish
+4623,,1156,"kreischen, schreien",german
+4624,,1156,визжать,russian
+4625,,1157,hurler,french
+4626,,1157,aullar,spanish
+4627,,1157,heulen,german
+4628,,1157,выть,russian
+4629,,1158,parler,french
+4630,,1158,hablar,spanish
+4631,,1158,"sprechen, reden",german
+4632,,1158,"говорить, разговаривать",russian
+4633,,1159,"bégayer,balbutier",french
+4634,,1159,"tartamudear, balbucear",spanish
+4635,,1159,"stottern, stammeln",german
+4636,,1159,"заикаться, запинаться",russian
+4637,,1160,dire,french
+4638,,1160,decir,spanish
+4639,,1160,sagen,german
+4640,,1160,сказать,russian
+4641,,1161,raconter,french
+4642,,1161,"narrar, contar",spanish
+4643,,1161,erzählen,german
+4644,,1161,рассказывать,russian
+4645,,1162,"discours, allocution (faire un/une)",french
+4646,,1162,pronunciar un discurso,spanish
+4647,,1162,Rede (halten),german
+4648,,1162,произносить речь,russian
+4649,,1163,se taire,french
+4650,,1163,callarse,spanish
+4651,,1163,schweigen,german
+4652,,1163,молчать,russian
+4653,,1164,"langue, langage",french
+4654,,1164,"lengua,idioma",spanish
+4655,,1164,Sprache,german
+4656,,1164,язык,russian
+4657,,1165,"mot, parole",french
+4658,,1165,palabra,spanish
+4659,,1165,Wort,german
+4660,,1165,слово,russian
+4661,,1166,nom,french
+4662,,1166,nombre,spanish
+4663,,1166,Name,german
+4664,,1166,"название, имя",russian
+4665,,1167,demander,french
+4666,,1167,preguntar,spanish
+4667,,1167,fragen,german
+4668,,1167,спрашивать,russian
+4669,,1168,répondre,french
+4670,,1168,contestar,spanish
+4671,,1168,antworten,german
+4672,,1168,отвечать,russian
+4673,,1169,"admettre, avouer",french
+4674,,1169,"admitir, confesar,reconocer",spanish
+4675,,1169,"zugeben, gestehen, bekennen",german
+4676,,1169,признавать(ся),russian
+4677,,1170,nier,french
+4678,,1170,negar,spanish
+4679,,1170,"abstreiten, leugnen",german
+4680,,1170,отрицать,russian
+4681,,1171,demander,french
+4682,,1171,pedir,spanish
+4683,,1171,bitten,german
+4684,,1171,просить,russian
+4685,,1172,promettre,french
+4686,,1172,prometer,spanish
+4687,,1172,versprechen,german
+4688,,1172,обещать,russian
+4689,,1173,refuser,french
+4690,,1173,rehusar,spanish
+4691,,1173,"verweigern, abschlagen",german
+4692,,1173,отказывать,russian
+4693,,1174,interdire,french
+4694,,1174,prohibir,spanish
+4695,,1174,"verbieten, untersagen",german
+4696,,1174,запрещать,russian
+4697,,1175,gronder,french
+4698,,1175,reprender,spanish
+4699,,1175,"rügen, tadeln, ausschimpfen",german
+4700,,1175,"ругать, упрекать, отчитывать",russian
+4701,,1176,"appeler, hêler",french
+4702,,1176,llamar,spanish
+4703,,1176,rufen,german
+4704,,1176,"вызывать,  звать",russian
+4705,,1177,appeler,french
+4706,,1177,llamarse,spanish
+4707,,1177,"nennen, heißen",german
+4708,,1177,"называть,  звать",russian
+4709,,1178,"annoncer,proclamer",french
+4710,,1178,"anunciar, avisar",spanish
+4711,,1178,"ankündigen, verkündigen",german
+4712,,1178,объявлять,russian
+4713,,1179,menacer,french
+4714,,1179,amenazar,spanish
+4715,,1179,"bedrohen, drohen",german
+4716,,1179,угрожать,russian
+4717,,1180,se vanter,french
+4718,,1180,jactarse,spanish
+4719,,1180,"prahlen, sich rühmen",german
+4720,,1180,хвастаться,russian
+4721,,1181,écrire,french
+4722,,1181,escribir,spanish
+4723,,1181,schreiben,german
+4724,,1181,писать,russian
+4725,,1182,lire,french
+4726,,1182,leer,spanish
+4727,,1182,lesen,german
+4728,,1182,читать,russian
+4729,,1183,papier,french
+4730,,1183,papel,spanish
+4731,,1183,Papier,german
+4732,,1183,бумага,russian
+4733,,1184,plume,french
+4734,,1184,pluma,spanish
+4735,,1184,Feder,german
+4736,,1184,ручка,russian
+4737,,1185,livre,french
+4738,,1185,libro,spanish
+4739,,1185,Buch,german
+4740,,1185,книга,russian
+4741,,1186,poète,french
+4742,,1186,poeta,spanish
+4743,,1186,"Dichter, Poet",german
+4744,,1186,поэт,russian
+4745,,1187,flûte,french
+4746,,1187,flauta,spanish
+4747,,1187,Flöte,german
+4748,,1187,флейта,russian
+4749,,1188,tambour,french
+4750,,1188,"bombo, tambor",spanish
+4751,,1188,Trommel,german
+4752,,1188,барабан,russian
+4753,,1189,"cor, trompette",french
+4754,,1189,trompeta,spanish
+4755,,1189,"Horn, Trompete",german
+4756,,1189,труба,russian
+4757,,1190,"hochet, maracas",french
+4758,,1190,"matraca,cascabel",spanish
+4759,,1190,Rassel,german
+4760,,1190,погремушка,russian
+4761,,1191,pays,french
+4762,,1191,país,spanish
+4763,,1191,Land,german
+4764,,1191,страна,russian
+4765,,1192,patrie,french
+4766,,1192,patria,spanish
+4767,,1192,Heimatland,german
+4768,,1192,родина,russian
+4769,,1193,"cité, ville",french
+4770,,1193,ciudad,spanish
+4771,,1193,Stadt,german
+4772,,1193,город,russian
+4773,,1194,village,french
+4774,,1194,pueblo,spanish
+4775,,1194,Dorf,german
+4776,,1194,деревня,russian
+4777,,1195,"frontière, limite",french
+4778,,1195,"límite, frontera",spanish
+4779,,1195,Grenze,german
+4780,,1195,граница,russian
+4781,,1196,gens,french
+4782,,1196,"pueblo, gente",spanish
+4783,,1196,"Bevölkerung, Volk",german
+4784,,1196,народ,russian
+4785,,1197,"tribu,clan",french
+4786,,1197,"tribu, clan",spanish
+4787,,1197,"Stamm, Geschlecht, Sippe",german
+4788,,1197,"племя, род",russian
+4789,,1198,chef,french
+4790,,1198,"jefe, cacique",spanish
+4791,,1198,"Anführer, Häuptling, (Chef)",german
+4792,,1198,вождь,russian
+4793,,1199,canne,french
+4794,,1199,"bastón, bordón",spanish
+4795,,1199,"(Wander-)Stab, (Geh-, Krück-)Stock",german
+4796,,1199,посох,russian
+4797,,1200,"régner, gouverner",french
+4798,,1200,gobernar,spanish
+4799,,1200,"herrschen, regieren",german
+4800,,1200,править,russian
+4801,,1201,roi,french
+4802,,1201,"rey, gobernante",spanish
+4803,,1201,"König, Herrscher",german
+4804,,1201,"король, правитель",russian
+4805,,1202,reine,french
+4806,,1202,reina,spanish
+4807,,1202,Königin,german
+4808,,1202,королева,russian
+4809,,1203,noble,french
+4810,,1203,noble,spanish
+4811,,1203,"Adlige(r), Edelmann",german
+4812,,1203,"дворянский, дворянин",russian
+4813,,1204,"citoyen, sujet",french
+4814,,1204,"ciudadano, súbdito",spanish
+4815,,1204,Bürger; Untertan,german
+4816,,1204,гражданин,russian
+4817,,1205,maître,french
+4818,,1205,"amo, dueño",spanish
+4819,,1205,Herr,german
+4820,,1205,"господин, хозяин",russian
+4821,,1206,esclave,french
+4822,,1206,esclavo,spanish
+4823,,1206,Sklave,german
+4824,,1206,раб,russian
+4825,,1207,"domestique, serviteur",french
+4826,,1207,sirviente,spanish
+4827,,1207,Diener,german
+4828,,1207,слуга,russian
+4829,,1208,homme libre,french
+4830,,1208,hombre libre,spanish
+4831,,1208,freier Mann,german
+4832,,1208,свободный человек,russian
+4833,,1209,"commander, ordonner",french
+4834,,1209,mandar,spanish
+4835,,1209,befehlen,german
+4836,,1209,приказывать,russian
+4837,,1210,obéir,french
+4838,,1210,obedecer,spanish
+4839,,1210,gehorchen,german
+4840,,1210,повиноваться,russian
+4841,,1211,permettre,french
+4842,,1211,"permitir, dejar",spanish
+4843,,1211,"zulassen, erlauben, gestatten",german
+4844,,1211,разрешать,russian
+4845,,1212,ami,french
+4846,,1212,amigo,spanish
+4847,,1212,Freund,german
+4848,,1212,друг,russian
+4849,,1213,ennemi,french
+4850,,1213,enemigo,spanish
+4851,,1213,Feind,german
+4852,,1213,враг,russian
+4853,,1214,voisin,french
+4854,,1214,vecino,spanish
+4855,,1214,Nachbar,german
+4856,,1214,сосед,russian
+4857,,1215,étranger,french
+4858,,1215,"extranjero, forastero",spanish
+4859,,1215,"Fremde(r), Fremdling",german
+4860,,1215,незнакомец,russian
+4861,,1216,invité,french
+4862,,1216,huésped,spanish
+4863,,1216,Gast,german
+4864,,1216,гость,russian
+4865,,1217,hôte,french
+4866,,1217,hospedero,spanish
+4867,,1217,"Gastgeber, Wirt",german
+4868,,1217,хозяин,russian
+4869,,1218,aider,french
+4870,,1218,ayudar,spanish
+4871,,1218,helfen,german
+4872,,1218,помочь,russian
+4873,,1219,empêcher,french
+4874,,1219,"impedir, estorbar",spanish
+4875,,1219,"(ver)hindern, hemmen, vorbeugen",german
+4876,,1219,"мешать, препятствовать",russian
+4877,,1220,coutume,french
+4878,,1220,costumbre,spanish
+4879,,1220,"Sitte, Brauch",german
+4880,,1220,обычай,russian
+4881,,1221,"lutte, querelle",french
+4882,,1221,"lucha, pleito",spanish
+4883,,1221,"Streit, Zank",german
+4884,,1221,ссора,russian
+4885,,1222,"conspiration,complot",french
+4886,,1222,conspiración,spanish
+4887,,1222,Verschwörung,german
+4888,,1222,заговор,russian
+4889,,1223,rencontrer,french
+4890,,1223,encontrar,spanish
+4891,,1223,"begegnen, treffen",german
+4892,,1223,встречать(ся),russian
+4893,,1224,prostituée,french
+4894,,1224,prostituta,spanish
+4895,,1224,"Hure, Nutte, Prostituierte",german
+4896,,1224,проститутка,russian
+4897,,1225,se battre,french
+4898,,1225,pelear,spanish
+4899,,1225,kämpfen,german
+4900,,1225,"драться, сражаться",russian
+4901,,1226,"guerre, bataille",french
+4902,,1226,"guerra, batalla",spanish
+4903,,1226,"Krieg; Schlacht, Kampf, Gefecht",german
+4904,,1226,"война, битва",russian
+4905,,1227,paix,french
+4906,,1227,paz,spanish
+4907,,1227,Frieden,german
+4908,,1227,мир,russian
+4909,,1228,armée,french
+4910,,1228,"ejército,tropas",spanish
+4911,,1228,"Armee, Heer",german
+4912,,1228,армия,russian
+4913,,1229,soldat,french
+4914,,1229,soldado,spanish
+4915,,1229,Soldat,german
+4916,,1229,солдат,russian
+4917,,1230,armes,french
+4918,,1230,armas,spanish
+4919,,1230,Waffen,german
+4920,,1230,оружие,russian
+4921,,1231,"massue, casse-tête",french
+4922,,1231,"macana, garrote",spanish
+4923,,1231,Keule,german
+4924,,1231,дубина,russian
+4925,,1232,hâche d'armes,french
+4926,,1232,hacha de combate,spanish
+4927,,1232,Streitaxt,german
+4928,,1232,боевой топор,russian
+4929,,1233,fronde,french
+4930,,1233,honda,spanish
+4931,,1233,Schleuder,german
+4932,,1233,праща,russian
+4933,,1234,arc,french
+4934,,1234,arco,spanish
+4935,,1234,Bogen,german
+4936,,1234,лук,russian
+4937,,1235,flèche,french
+4938,,1235,flecha,spanish
+4939,,1235,Pfeil,german
+4940,,1235,стрела,russian
+4941,,1236,"javeline, lance",french
+4942,,1236,lanza,spanish
+4943,,1236,"Speer, Spieß, Lanze",german
+4944,,1236,копье,russian
+4945,,1237,épée,french
+4946,,1237,espada,spanish
+4947,,1237,Schwert,german
+4948,,1237,меч,russian
+4949,,1238,"fusil, canon",french
+4950,,1238,"escopeta, cañón",spanish
+4951,,1238,"Gewehr, Flinte; Kanone, Geschütz",german
+4952,,1238,"ружье, пушка",russian
+4953,,1239,armure,french
+4954,,1239,armadura,spanish
+4955,,1239,"Rüstung, Harnisch",german
+4956,,1239,доспехи,russian
+4957,,1240,casque,french
+4958,,1240,yelmo,spanish
+4959,,1240,Helm,german
+4960,,1240,шлем,russian
+4961,,1241,bouclier,french
+4962,,1241,escudo,spanish
+4963,,1241,Schild,german
+4964,,1241,щит,russian
+4965,,1242,forteresse,french
+4966,,1242,fortaleza,spanish
+4967,,1242,Festung,german
+4968,,1242,крепость,russian
+4969,,1243,tour,french
+4970,,1243,torre,spanish
+4971,,1243,Turm,german
+4972,,1243,башня,russian
+4973,,1244,victoire,french
+4974,,1244,victoria,spanish
+4975,,1244,Sieg,german
+4976,,1244,победа,russian
+4977,,1245,défaite,french
+4978,,1245,derrota,spanish
+4979,,1245,Niederlage,german
+4980,,1245,поражение,russian
+4981,,1246,attaque,french
+4982,,1246,atacar,spanish
+4983,,1246,Angriff,german
+4984,,1246,атаковать,russian
+4985,,1247,défendre,french
+4986,,1247,defender,spanish
+4987,,1247,verteidigen,german
+4988,,1247,"обороняться, защищать",russian
+4989,,1248,"se rétirer, fuir, battre en retraite",french
+4990,,1248,"huir, retirarse",spanish
+4991,,1248,sich zurückziehen,german
+4992,,1248,отступать,russian
+4993,,1249,"céder, se rendre",french
+4994,,1249,rendirse,spanish
+4995,,1249,"sich ergeben, kapitulieren",german
+4996,,1249,сдаваться,russian
+4997,,1250,"prisonnier, captif",french
+4998,,1250,"cautivo, preso",spanish
+4999,,1250,"Gefangene(r), Häftling",german
+5000,,1250,пленник,russian
+5001,,1251,"garde,sentinelle",french
+5002,,1251,"guardia, centinela",spanish
+5003,,1251,"Wache, Wächter",german
+5004,,1251,стража,russian
+5005,,1252,"butin, proie",french
+5006,,1252,botín,spanish
+5007,,1252,Beute,german
+5008,,1252,наргабленное добро,russian
+5009,,1253,"embuscade, guet-apens",french
+5010,,1253,"acechar, emboscar",spanish
+5011,,1253,Hinterhalt,german
+5012,,1253,устраивать засаду,russian
+5013,,1254,pêcheur,french
+5014,,1254,pescador,spanish
+5015,,1254,Fischer,german
+5016,,1254,рыбак,russian
+5017,,1255,hameçon,french
+5018,,1255,anzuelo,spanish
+5019,,1255,Angelhaken,german
+5020,,1255,рыболовный крючок,russian
+5021,,1256,ligne (pour la pêche),french
+5022,,1256,cuerda de pescar,spanish
+5023,,1256,Angelschnur,german
+5024,,1256,леса,russian
+5025,,1257,filet de pêche,french
+5026,,1257,"red, atarraya",spanish
+5027,,1257,Fischernetz,german
+5028,,1257,рыбацкая сеть,russian
+5029,,1258,"nasse, casier",french
+5030,,1258,nasa,spanish
+5031,,1258,Reuse,german
+5032,,1258,верша,russian
+5033,,1259,appât,french
+5034,,1259,"cebo, carnada",spanish
+5035,,1259,Köder,german
+5036,,1259,"насадка, наживка",russian
+5037,,1260,chasser,french
+5038,,1260,cazar,spanish
+5039,,1260,jagen,german
+5040,,1260,охотиться,russian
+5041,,1261,"tirer,fusiller",french
+5042,,1261,"tirar, disparar",spanish
+5043,,1261,schießen,german
+5044,,1261,стрелять,russian
+5045,,1262,"râter, manquer",french
+5046,,1262,"errar, fallar",spanish
+5047,,1262,verfehlen,german
+5048,,1262,промахнуться,russian
+5049,,1263,piège,french
+5050,,1263,trampa,spanish
+5051,,1263,Falle,german
+5052,,1263,ловушка,russian
+5053,,1264,"attraper, prendre au piège",french
+5054,,1264,atrapar,spanish
+5055,,1264,fangen,german
+5056,,1264,ловить (ловушкой),russian
+5057,,1265,loi,french
+5058,,1265,ley,spanish
+5059,,1265,Gesetz,german
+5060,,1265,закон,russian
+5061,,1266,cour,french
+5062,,1266,tribunal,spanish
+5063,,1266,Gericht,german
+5064,,1266,суд,russian
+5065,,1267,à,french
+5066,,1267,"a, en",spanish
+5067,,1267,an,german
+5068,,1267,,russian
+5069,,1268,juger,french
+5070,,1268,juzgar,spanish
+5071,,1268,"urteilen, richten",german
+5072,,1268,судить,russian
+5073,,1269,jugement,french
+5074,,1269,juicio,spanish
+5075,,1269,Urteil,german
+5076,,1269,решение суда,russian
+5077,,1270,juge,french
+5078,,1270,juez,spanish
+5079,,1270,Richter,german
+5080,,1270,судья,russian
+5081,,1271,plaignant,french
+5082,,1271,demandante,spanish
+5083,,1271,(An)kläger,german
+5084,,1271,истец,russian
+5085,,1272,accusé,french
+5086,,1272,acusado,spanish
+5087,,1272,"Beklagter, Angeklagter",german
+5088,,1272,"ответчик, подсудимый, бвиняемый",russian
+5089,,1273,témoin,french
+5090,,1273,testigo,spanish
+5091,,1273,Zeuge,german
+5092,,1273,свидетель,russian
+5093,,1274,jurer,french
+5094,,1274,jurar,spanish
+5095,,1274,schwören,german
+5096,,1274,клясться,russian
+5097,,1275,serment,french
+5098,,1275,juramento,spanish
+5099,,1275,Eid,german
+5100,,1275,клятва,russian
+5101,,1276,accuser,french
+5102,,1276,"acusar, denunciar",spanish
+5103,,1276,"anklagen, beschuldigen",german
+5104,,1276,обвинять,russian
+5105,,1277,condamner,french
+5106,,1277,condenar,spanish
+5107,,1277,verurteilen,german
+5205,,1302,bénir,french
+5108,,1277,"осуждать, приговарывать",russian
+5109,,1278,inculper,french
+5110,,1278,"inculpar, condenar",spanish
+5111,,1278,überführen,german
+5112,,1278,осуждать,russian
+5113,,1279,"absoudre, acquitter",french
+5114,,1279,"absolver,exculpar",spanish
+5115,,1279,freisprechen,german
+5116,,1279,оправдывать,russian
+5117,,1280,coupable,french
+5118,,1280,culpable,spanish
+5119,,1280,schuldig,german
+5120,,1280,виновный,russian
+5121,,1281,innocent,french
+5122,,1281,inocente,spanish
+5123,,1281,unschuldig,german
+5124,,1281,невиновный,russian
+5125,,1282,punition,french
+5126,,1282,castigo,spanish
+5127,,1282,Strafe,german
+5128,,1282,наказание,russian
+5129,,1283,amende,french
+5130,,1283,multa,spanish
+5131,,1283,"(Geld)Buße, Bußgeld",german
+5132,,1283,денежный штраф,russian
+5133,,1284,prison,french
+5134,,1284,cárcel,spanish
+5135,,1284,"Gefängnis, Kerker",german
+5136,,1284,тюрма,russian
+5137,,1285,meurtre,french
+5138,,1285,asesinato,spanish
+5139,,1285,Mord,german
+5140,,1285,убийство,russian
+5141,,1286,adultère,french
+5142,,1286,adulterio,spanish
+5143,,1286,Ehebruch,german
+5144,,1286,прелюбодеяние,russian
+5145,,1287,viol,french
+5146,,1287,violación,spanish
+5147,,1287,"Vergewaltigung, Notzucht",german
+5148,,1287,изнасилование,russian
+5149,,1288,incendie volontaire,french
+5150,,1288,incendio premeditado,spanish
+5151,,1288,Brandstiftung,german
+5152,,1288,поджог,russian
+5153,,1289,parjure,french
+5154,,1289,perjurio,spanish
+5155,,1289,Meineid,german
+5156,,1289,лжесвидетельство,russian
+5157,,1290,"voler, dérober",french
+5158,,1290,robar,spanish
+5159,,1290,stehlen,german
+5160,,1290,"воровать, украсть",russian
+5161,,1291,voleur,french
+5162,,1291,ladrón,spanish
+5163,,1291,Dieb,german
+5164,,1291,вор,russian
+5165,,1292,religion,french
+5166,,1292,religión,spanish
+5167,,1292,Religion,german
+5168,,1292,религия,russian
+5169,,1293,Dieu,french
+5170,,1293,Dios,spanish
+5171,,1293,Gott,german
+5172,,1293,Бог,russian
+5173,,1294,temple,french
+5174,,1294,,spanish
+5175,,1294,Tempel,german
+5176,,1294,храм,russian
+5177,,1295,autel,french
+5178,,1295,altar,spanish
+5179,,1295,Altar,german
+5180,,1295,алтарь,russian
+5181,,1296,"sacrifice, offrande",french
+5182,,1296,ofrenda,spanish
+5183,,1296,Opfer,german
+5184,,1296,жертвоприношение,russian
+5185,,1297,adorer,french
+5186,,1297,culto,spanish
+5187,,1297,"anbeten, verehren",german
+5188,,1297,поклоняться,russian
+5189,,1298,prier,french
+5190,,1298,orar,spanish
+5191,,1298,beten,german
+5192,,1298,молить(ся),russian
+5193,,1299,"prêtre,curé",french
+5194,,1299,"cura,presbítero",spanish
+5195,,1299,Priester,german
+5196,,1299,священник,russian
+5197,,1300,"sacré, saint",french
+5198,,1300,sagrado,spanish
+5199,,1300,heilig,german
+5200,,1300,священный,russian
+5201,,1301,prêcher,french
+5202,,1301,predicar,spanish
+5203,,1301,predigen,german
+5204,,1301,проповедовать,russian
+5206,,1302,bendecir,spanish
+5207,,1302,segnen,german
+5208,,1302,благословлять,russian
+5209,,1303,maudire,french
+5210,,1303,maldecir,spanish
+5211,,1303,"verfluchen, verwünschen",german
+5212,,1303,проклинать,russian
+5213,,1304,jeûner,french
+5214,,1304,ayunar,spanish
+5215,,1304,fasten,german
+5216,,1304,поститься,russian
+5217,,1305,"ciel, cieux",french
+5218,,1305,"cielo,paraíso",spanish
+5219,,1305,Himmel,german
+5220,,1305,"небеса, рай",russian
+5221,,1306,enfer,french
+5222,,1306,infierno,spanish
+5223,,1306,Hölle,german
+5224,,1306,ад,russian
+5225,,1307,démon,french
+5226,,1307,demonio,spanish
+5227,,1307,"Dämon, Unhold",german
+5228,,1307,"демон, злой дух",russian
+5229,,1308,idole,french
+5230,,1308,ídolo,spanish
+5231,,1308,Götze,german
+5232,,1308,идол,russian
+5233,,1309,"magie, sorcellerie",french
+5234,,1309,"brujería, hechicería",spanish
+5235,,1309,"Zauberei, Zauber, Hexerei",german
+5236,,1309,"волшебство, колдовство",russian
+5237,,1310,"sorcier, sorcière",french
+5238,,1310,"brujo/bruja,hechicero",spanish
+5239,,1310,"Zauberer, Zauberin; Hexe",german
+5240,,1310,"колдун, ведьма",russian
+5241,,1311,fée,french
+5242,,1311,"hada, duende",spanish
+5243,,1311,"Fee, Elfe",german
+5244,,1311,"фея, эльф",russian
+5245,,1312,"fantôme, esprit, revenant",french
+5246,,1312,fantasma,spanish
+5247,,1312,Gespenst,german
+5248,,1312,призрак,russian
+5249,,1313,"présage, augure",french
+5250,,1313,"agüero,presagio",spanish
+5251,,1313,"Omen, Vorzeichen",german
+5252,,1313,предзнаменование,russian
+5253,,1314,radio,french
+5254,,1314,,spanish
+5255,,1314,Radio,german
+5256,,1314,,russian
+5257,,1315,télé,french
+5258,,1315,,spanish
+5259,,1315,Fernsehen,german
+5260,,1315,,russian
+5261,,1316,téléphone,french
+5262,,1316,,spanish
+5263,,1316,Telefon,german
+5264,,1316,,russian
+5265,,1317,"moto, motocycle",french
+5266,,1317,,spanish
+5267,,1317,Motorrad,german
+5268,,1317,,russian
+5269,,1318,voiture,french
+5270,,1318,,spanish
+5271,,1318,Auto,german
+5272,,1318,,russian
+5273,,1319,"bus, autobus",french
+5274,,1319,,spanish
+5275,,1319,Bus,german
+5276,,1319,,russian
+5277,,1320,avion,french
+5278,,1320,,spanish
+5279,,1320,Flugzeug,german
+5280,,1320,,russian
+5281,,1321,"électricité, courant",french
+5282,,1321,,spanish
+5283,,1321,Strom,german
+5284,,1321,,russian
+5285,,1322,batterie,french
+5286,,1322,,spanish
+5287,,1322,Batterie,german
+5288,,1322,,russian
+5289,,1323,hôpital,french
+5290,,1323,,spanish
+5291,,1323,Krankenhaus,german
+5292,,1323,,russian
+5293,,1324,infirmière,french
+5294,,1324,,spanish
+5295,,1324,Krankenschwester,german
+5296,,1324,,russian
+5297,,1325,"comprimé, cachet",french
+5298,,1325,,spanish
+5299,,1325,"Pille, Tablette",german
+5300,,1325,,russian
+5301,,1326,"piqûre, injection",french
+5302,,1326,,spanish
+5303,,1326,Spritze,german
+5304,,1326,,russian
+5305,,1327,robinet,french
+5306,,1327,,spanish
+5307,,1327,Wasserhahn,german
+5308,,1327,,russian
+5309,,1328,"évier, lavabo",french
+5310,,1328,,spanish
+5311,,1328,"Spüle, Ausguss, Waschbecken",german
+5312,,1328,,russian
+5313,,1329,toilette,french
+5314,,1329,,spanish
+5315,,1329,Toilette,german
+5316,,1329,,russian
+5317,,1330,matelas,french
+5318,,1330,,spanish
+5319,,1330,Matratze,german
+5320,,1330,,russian
+5321,,1331,gouvernement,french
+5322,,1331,,spanish
+5323,,1331,Regierung,german
+5324,,1331,,russian
+5325,,1332,président,french
+5326,,1332,,spanish
+5327,,1332,Präsident,german
+5328,,1332,,russian
+5329,,1333,ministre,french
+5330,,1333,,spanish
+5331,,1333,Minister,german
+5332,,1333,,russian
+5333,,1334,police,french
+5334,,1334,,spanish
+5335,,1334,Polizei,german
+5336,,1334,,russian
+5337,,1335,permis de conduire,french
+5338,,1335,,spanish
+5339,,1335,"Führerschein, Fahrerlaubnis",german
+5340,,1335,,russian
+5341,,1336,"crime, délit",french
+5342,,1336,,spanish
+5343,,1336,Verbrechen,german
+5344,,1336,,russian
+5345,,1337,élection,french
+5346,,1337,,spanish
+5347,,1337,Wahl,german
+5348,,1337,,russian
+5349,,1338,"courrier, poste",french
+5350,,1338,,spanish
+5351,,1338,Post,german
+5352,,1338,,russian
+5353,,1339,timbre,french
+5354,,1339,,spanish
+5355,,1339,Briefmarke,german
+5356,,1339,,russian
+5357,,1340,lettre,french
+5358,,1340,,spanish
+5359,,1340,Brief,german
+5360,,1340,,russian
+5361,,1341,banque,french
+5362,,1341,,spanish
+5363,,1341,Bank,german
+5364,,1341,,russian
+5365,,1342,boîte,french
+5366,,1342,,spanish
+5367,,1342,"Dose, Büchse",german
+5368,,1342,,russian
+5369,,1343,vis,french
+5370,,1343,,spanish
+5371,,1343,Schraube,german
+5372,,1343,,russian
+5373,,1344,tournevis,french
+5374,,1344,,spanish
+5375,,1344,"Schraubenzieher, Schraubendreher",german
+5376,,1344,,russian
+5377,,1345,bouteille,french
+5378,,1345,,spanish
+5379,,1345,Flasche,german
+5380,,1345,,russian
+5381,,1346,"confiserie, sucrerie, bonbon",french
+5382,,1346,,spanish
+5383,,1346,Süßigkeiten,german
+5384,,1346,,russian
+5385,,1347,lunettes,french
+5386,,1347,,spanish
+5387,,1347,Brille,german
+5388,,1347,,russian
+5389,,1348,plastique,french
+5390,,1348,,spanish
+5391,,1348,"Kunststoff, Plaste, Plastik",german
+5392,,1348,,russian
+5393,,1349,bombe,french
+5394,,1349,,spanish
+5395,,1349,Bombe; Sprengstoff,german
+5396,,1349,,russian
+5397,,1350,atelier,french
+5398,,1350,,spanish
+5399,,1350,Betrieb; Fabrik,german
+5400,,1350,,russian
+5401,,1351,cigarette,french
+5402,,1351,,spanish
+5403,,1351,Zigarette,german
+5404,,1351,,russian
+5405,,1352,calendrier,french
+5406,,1352,,spanish
+5407,,1352,Kalender,german
+5408,,1352,,russian
+5409,,1353,film,french
+5410,,1353,,spanish
+5411,,1353,Film,german
+5412,,1353,,russian
+5413,,1354,musique,french
+5414,,1354,,spanish
+5415,,1354,Musik,german
+5416,,1354,,russian
+5417,,1355,chanson,french
+5418,,1355,,spanish
+5419,,1355,Lied,german
+5420,,1355,,russian
+5421,,1356,journal,french
+5422,,1356,,spanish
+5423,,1356,Zeitung,german
+5424,,1356,,russian
+5425,,1357,adresse,french
+5426,,1357,,spanish
+5427,,1357,Adresse,german
+5428,,1357,,russian
+5429,,1358,"nombre, numéro",french
+5430,,1358,,spanish
+5431,,1358,Zahl,german
+5432,,1358,,russian
+5433,,1359,train,french
+5434,,1359,,spanish
+5435,,1359,"Zug, Eisenbahn",german
+5436,,1359,,russian
+5437,,1360,acte de naissance,french
+5438,,1360,,spanish
+5439,,1360,Geburtsurkunde,german
+5440,,1360,,russian
+5441,,1361,freiner,french
+5442,,1361,,spanish
+5443,,1361,bremsen,german
+5444,,1361,,russian
+5445,,1362,pétrole,french
+5446,,1362,,spanish
+5447,,1362,"Öl, Erdöl",german
+5448,,1362,,russian
+5449,,1363,moteur,french
+5450,,1363,,spanish
+5451,,1363,"Motor, Triebwerk",german
+5452,,1363,,russian
+5453,,1364,machine,french
+5454,,1364,,spanish
+5455,,1364,Maschine,german
+5456,,1364,,russian
+5457,,1365,"vélo, bicyclette",french
+5458,,1365,,spanish
+5459,,1365,Fahrrad,german
+5460,,1365,,russian
+5461,,1366,rue,french
+5462,,1366,,spanish
+5463,,1366,Straße,german
+5464,,1366,,russian
+5465,,1367,libérer,french
+5466,,1367,liberar,spanish
+5467,,1367,befreien,german
+5468,,1367,освобождать,russian
+5469,,1368,inviter,french
+5470,,1368,,spanish
+5471,,1368,einladen,german
+5472,,1368,"приглашать
+пригласить",russian
+5473,,1369,plaque d'immatriculation,french
+5474,,1369,,spanish
+5475,,1369,Nummernschild,german
+5476,,1369,,russian
+5477,,1370,carte postale,french
+5478,,1370,,spanish
+5479,,1370,Postkarte,german
+5480,,1370,,russian
+5481,,1371,être,french
+5482,,1371,"ser, estar",spanish
+5483,,1371,sein,german
+5484,,1371,,russian
+5485,,1372,devenir,french
+5486,,1372,,spanish
+5487,,1372,werden,german
+5488,,1372,,russian
+5489,,1373,sans,french
+5490,,1373,,spanish
+5491,,1373,ohne,german
+5492,,1373,,russian
+5493,,1374,par,french
+5494,,1374,,spanish
+5495,,1374,durch,german
+5496,,1374,,russian
+5497,,1375,même,french
+5498,,1375,,spanish
+5499,,1375,derselbe,german
+5500,,1375,,russian
+5501,,1376,ne... pas,french
+5502,,1376,,spanish
+5503,,1376,nicht,german
+5504,,1376,,russian
+5505,,1377,celui-ci,french
+5506,,1377,,spanish
+5507,,1377,dieser,german
+5508,,1377,,russian
+5509,,1378,сe,french
+5510,,1378,,spanish
+5511,,1378,der,german
+5512,,1378,,russian
+5513,,1379,ici,french
+5514,,1379,,spanish
+5515,,1379,hier,german
+5516,,1379,,russian
+5517,,1380,"là, là-bas",french
+5518,,1380,,spanish
+5519,,1380,dort,german
+5520,,1380,,russian
+5521,,1381,autre,french
+5522,,1381,,spanish
+5523,,1381,andere,german
+5524,,1381,,russian
+5525,,1382,vagin,french
+5526,,1382,,spanish
+5527,,1382,Scheide,german
+5528,,1382,,russian
+5529,,1383,thé,french
+5530,,1383,,spanish
+5531,,1383,Tee,german
+5532,,1383,,russian
+5533,,1384,café,french
+5534,,1384,,spanish
+5535,,1384,Kaffee,german
+5536,,1384,,russian
+5537,,1385,prochain,french
+5538,,1385,,spanish
+5539,,1385,nächster,german
+5540,,1385,,russian
+5541,,1386,coyote,french
+5542,,1386,coyote,spanish
+5543,,1386,Koyote,german
+5544,,1386,,russian
+5545,,1387,lièvre,french
+5546,,1387,liebre,spanish
+5547,,1387,Hase,german
+5548,,1387,,russian
+5549,,1388,caille,french
+5550,,1388,"codorniz, perdiz",spanish
+5551,,1388,Wachtel,german
+5552,,1388,,russian
+5553,,1389,raton laveur,french
+5554,,1389,mapache,spanish
+5555,,1389,Waschbär,german
+5556,,1389,,russian
+5557,,1390,écureuil,french
+5558,,1390,ardilla,spanish
+5559,,1390,Eichhörnchen,german
+5560,,1390,,russian
+5561,,1391,renne,french
+5562,,1391,,spanish
+5563,,1391,"Rentier, Karibu",german
+5564,,1391,,russian
+5565,,1392,"élan, orignal",french
+5566,,1392,,spanish
+5567,,1392,Elch,german
+5568,,1392,,russian
+5569,,1393,castor,french
+5570,,1393,,spanish
+5571,,1393,Biber,german
+5572,,1393,,russian
+5573,,1394,"traîneau, luge",french
+5574,,1394,,spanish
+5575,,1394,Schlitten,german
+5576,,1394,,russian
+5577,,1395,lasso,french
+5578,,1395,,spanish
+5579,,1395,Lasso,german
+5580,,1395,,russian
+5581,,1396,mélèze,french
+5582,,1396,,spanish
+5583,,1396,Lärche,german
+5584,,1396,,russian
+5585,,1397,spicule,french
+5586,,1397,,spanish
+5587,,1397,Nadel,german
+5588,,1397,,russian
+5589,,1398,aurore boréale,french
+5590,,1398,,spanish
+5591,,1398,Nordlicht,german
+5592,,1398,severnoe sijanie,russian
+5593,,1399,tendon,french
+5594,,1399,,spanish
+5595,,1399,Sehne,german
+5596,,1399,,russian
+5597,,1400,tanner,french
+5598,,1400,,spanish
+5599,,1400,gerben,german
+5600,,1400,,russian
+5601,,1401,botte de neige,french
+5602,,1401,,spanish
+5603,,1401,Schneeschuh,german
+5604,,1401,,russian
+5605,,1402,circumcision,french
+5606,,1402,,spanish
+5607,,1402,Beschneidung,german
+5608,,1402,,russian
+5609,,1403,cérémonie d’initiation,french
+5610,,1403,,spanish
+5611,,1403,Initiationsritus,german
+5612,,1403,,russian
+5613,,1404,"cône de sapin, pomme de sapin",french
+5614,,1404,,spanish
+5615,,1404,Zapfen,german
+5616,,1404,shishka,russian
+5617,,1405,pou,french
+5618,,1405,piojo,spanish
+5619,,1405,Körperlaus,german
+5620,,1405,вошь,russian
+5621,,1406,vulve,french
+5622,,1406,,spanish
+5623,,1406,Muschi,german
+5624,,1406,,russian
+5625,,1407,tapir,french
+5626,,1407,,spanish
+5627,,1407,Tapir,german
+5628,,1407,,russian
+5629,,1408,"affiloir, pierre à aguiser",french
+5630,,1408,,spanish
+5631,,1408,Schleifstein,german
+5632,,1408,,russian
+5633,,1409,,french
+5634,,1409,,spanish
+5635,,1409,?,german
+5636,,1409,,russian
+5637,,1410,camp,french
+5638,,1410,,spanish
+5639,,1410,Lager,german
+5640,,1410,,russian
+5641,,1411,,french
+5642,,1411,,spanish
+5643,,1411,Grabstock,german
+5644,,1411,,russian
+5645,,1412,cormoran,french
+5646,,1412,,spanish
+5647,,1412,Kormoran,german
+5648,,1412,,russian
+5649,,1413,crevette,french
+5650,,1413,,spanish
+5651,,1413,Garnele,german
+5652,,1413,,russian
+5653,,1414,termites,french
+5654,,1414,,spanish
+5655,,1414,Termiten,german
+5656,,1414,,russian
+5657,,1415,tique,french
+5658,,1415,,spanish
+5659,,1415,Zecke,german
+5660,,1415,,russian
+5661,,1416,boomerang,french
+5662,,1416,,spanish
+5663,,1416,Bumerang,german
+5664,,1416,,russian
+5665,,1417,kangourou,french
+5666,,1417,,spanish
+5667,,1417,Känguru,german
+5668,,1417,,russian
+5669,,1418,"fourmilier, tamanoir",french
+5670,,1418,,spanish
+5671,,1418,Ameisenbär,german
+5672,,1418,муравьед,russian
+5673,,1419,toucan,french
+5674,,1419,,spanish
+5675,,1419,Tukan,german
+5676,,1419,,russian
+5677,,1420,jaguar,french
+5678,,1420,,spanish
+5679,,1420,Jaguar,german
+5680,,1420,,russian
+5681,,1421,pain de manioc,french
+5682,,1421,,spanish
+5683,,1421,Maniokbrot,german
+5684,,1421,,russian
+5685,,1422,hamac,french
+5686,,1422,,spanish
+5687,,1422,Hängematte,german
+5688,,1422,,russian
+5689,,1423,"mil, millet",french
+5690,,1423,,spanish
+5691,,1423,Hirse,german
+5692,,1423,,russian
+5693,,1424,caméléon,french
+5694,,1424,,spanish
+5695,,1424,Chamäleon,german
+5696,,1424,,russian
+5697,,1425,écoper,french
+5698,,1425,,spanish
+5699,,1425,Wasser schöpfen,german
+5700,,1425,,russian
+5701,,1426,sardine,french
+5702,,1426,,spanish
+5703,,1426,Pflock,german
+5704,,1426,,russian
+5705,,1427,aller à la maison,french
+5706,,1427,,spanish
+5707,,1427,nach Hause gehen/zurückkehren,german
+5708,,1427,,russian
+5709,,1428,"bison, buffle",french
+5710,,1428,,spanish
+5711,,1428,Büffel,german
+5712,,1428,,russian
+5713,,1429,savane,french
+5714,,1429,,spanish
+5715,,1429,Savanna,german
+5716,,1429,,russian
+5717,,1430,vapeur,french
+5718,,1430,,spanish
+5719,,1430,Dampf,german
+5720,,1430,,russian
+5721,,1431,frêre/sœur aîné(e),french
+5722,,1431,,spanish
+5723,,1431,älterer Bruder oder Schwester,german
+5724,,1431,,russian
+5725,,1432,frêre/sœur cadet(te),french
+5726,,1432,,spanish
+5727,,1432,jüngerer Bruder oder Schwester,german
+5728,,1432,,russian
+5729,,1433,grand-parents,french
+5730,,1433,,spanish
+5731,,1433,Großeltern,german
+5732,,1433,,russian
+5733,,1434,petit fils,french
+5734,,1434,,spanish
+5735,,1434,Enkelkind,german
+5736,,1434,,russian
+5737,,1435,"neveu, nièce",french
+5738,,1435,,spanish
+5739,,1435,Nichte oder Neffe,german
+5740,,1435,,russian
+5741,,1436,beaux-parents,french
+5742,,1436,,spanish
+5743,,1436,Schwiegereltern,german
+5744,,1436,,russian
+5745,,1437,"belle-fils, gendre / belle-fille, bru",french
+5746,,1437,,spanish
+5747,,1437,Schwiegersohn oder Schwiegertochter,german
+5748,,1437,,russian
+5749,,1438,beau-frère / belle-sœur,french
+5750,,1438,,spanish
+5751,,1438,Schwager oder Schwägerin,german
+5752,,1438,,russian
+5753,,1439,il,french
+5754,,1439,,spanish
+5755,,1439,er,german
+5756,,1439,,russian
+5757,,1440,elle,french
+5758,,1440,,spanish
+5759,,1440,sie,german
+5760,,1440,,russian
+5761,,1441,,french
+5762,,1441,,spanish
+5763,,1441,es,german
+5764,,1441,,russian
+5765,,1442,vie,french
+5766,,1442,vida,spanish
+5767,,1442,Leben,german
+5768,,1442,жизнь,russian
+5769,,1443,carcasse,french
+5770,,1443,,spanish
+5771,,1443,Kadaver,german
+5772,,1443,,russian
+5773,,1444,maladie,french
+5774,,1444,,spanish
+5775,,1444,Krankheit,german
+5776,,1444,,russian
+5777,,1445,cadenas,french
+5778,,1445,,spanish
+5779,,1445,Vorhängeschloss,german
+5780,,1445,,russian
+5781,,1446,rizière,french
+5782,,1446,,spanish
+5783,,1446,Reisfeld,german
+5784,,1446,,russian
+5785,,1447,endommager,french
+5786,,1447,,spanish
+5787,,1447,beschädigen,german
+5788,,1447,,russian
+5789,,1448,au dessus,french
+5790,,1448,,spanish
+5791,,1448,über,german
+5792,,1448,над,russian
+5793,,1449,"morceau, pièce",french
+5794,,1449,,spanish
+5795,,1449,Stück,german
+5796,,1449,"часть, кусок",russian
+5797,,1450,seul,french
+5798,,1450,,spanish
+5799,,1450,allein,german
+5800,,1450,,russian
+5801,,1451,commencement,french
+5802,,1451,,spanish
+5803,,1451,"Anfang, Beginn",german
+5804,,1451,,russian
+5805,,1452,jour,french
+5806,,1452,,spanish
+5807,,1452,Tag,german
+5808,,1452,,russian
+5809,,1453,église,french
+5810,,1453,iglesia,spanish
+5811,,1453,Kirche,german
+5812,,1453,церковь,russian
+5813,,1454,mosquée,french
+5814,,1454,mezquita,spanish
+5815,,1454,Moschee,german
+5816,,1454,,russian
+5817,,1455,rien,french
+5818,,1455,,spanish
+5819,,1455,nichts,german
+5820,,1455,,russian
+5821,,1456,mort(e),french
+5822,,1456,,spanish
+5823,,1456,tot,german
+5824,,1456,мертвый,russian
+5825,,1457,gratter,french
+5826,,1457,,spanish
+5827,,1457,kratzen,german
+5828,,1457,,russian
+5829,,1458,faire,french
+5830,,1458,hacer,spanish
+5831,,1458,tun,german
+5832,,1458,делать,russian
+5833,,1459,ventre,french
+5834,,1459,barriga,spanish
+5835,,1459,Bauch,german
+5836,,1459,,russian
+5837,,1460,essuyer,french
+5838,,1460,,spanish
+5839,,1460,(ab)wischen,german
+5840,,1460,стереть,russian
+5841,,1461,geler,french
+5842,,1461,helar,spanish
+5843,,1461,gefrieren,german
+5844,,1461,,russian
+5845,,1462,avec,french
+5846,,1462,,spanish
+5847,,1462,mit,german
+5848,,1462,,russian
+5849,,1463,dans,french
+5850,,1463,en,spanish
+5851,,1463,in,german
+5852,,1463,,russian
+5853,,1464,,french
+5854,,1464,,spanish
+5855,,1464,,german
+5856,,1464,,russian
+5857,,1465,,french
+5858,,1465,,spanish
+5859,,1465,,german
+5860,,1465,,russian
+5861,,1466,,french
+5862,,1466,,spanish
+5863,,1466,,german
+5864,,1466,,russian
+5865,,1467,,french
+5866,,1467,,spanish
+5867,,1467,,german
+5868,,1467,,russian
+5869,,1468,,french
+5870,,1468,,spanish
+5871,,1468,,german
+5872,,1468,,russian
+5873,,1469,,french
+5874,,1469,,spanish
+5875,,1469,,german
+5876,,1469,,russian
+5877,,1470,,french
+5878,,1470,,spanish
+5879,,1470,,german
+5880,,1470,,russian
+5881,,1471,,french
+5882,,1471,,spanish
+5883,,1471,,german
+5884,,1471,,russian
+5885,,1472,,french
+5886,,1472,,spanish
+5887,,1472,,german
+5888,,1472,,russian
+5889,,1473,,french
+5890,,1473,,spanish
+5891,,1473,,german
+5892,,1473,,russian
+5893,,1474,,french
+5894,,1474,,spanish
+5895,,1474,,german
+5896,,1474,,russian
+5897,,1475,,french
+5898,,1475,,spanish
+5899,,1475,,german
+5900,,1475,,russian
+5901,,1476,,french
+5902,,1476,,spanish
+5903,,1476,,german
+5904,,1476,,russian
+5905,,1477,,french
+5906,,1477,,spanish
+5907,,1477,,german
+5908,,1477,,russian
+5909,,1478,,french
+5910,,1478,,spanish
+5911,,1478,,german
+5912,,1478,,russian
+5913,,1479,,french
+5914,,1479,,spanish
+5915,,1479,,german
+5916,,1479,,russian
+5917,,1480,,french
+5918,,1480,,spanish
+5919,,1480,,german
+5920,,1480,,russian
+5921,,1481,,french
+5922,,1481,,spanish
+5923,,1481,,german
+5924,,1481,,russian
+5925,,1482,,french
+5926,,1482,,spanish
+5927,,1482,,german
+5928,,1482,,russian
+5929,,1483,,french
+5930,,1483,,spanish
+5931,,1483,,german
+5932,,1483,,russian
+5933,,1484,,french
+5934,,1484,,spanish
+5935,,1484,,german
+5936,,1484,,russian
+5937,,1485,,french
+5938,,1485,,spanish
+5939,,1485,,german
+5940,,1485,,russian
+5941,,1486,,french
+5942,,1486,,spanish
+5943,,1486,,german
+5944,,1486,,russian
+5945,,1487,,french
+5946,,1487,,spanish
+5947,,1487,,german
+5948,,1487,,russian
+5949,,1488,,french
+5950,,1488,,spanish
+5951,,1488,,german
+5952,,1488,,russian
+5953,,1489,,french
+5954,,1489,,spanish
+5955,,1489,,german
+5956,,1489,,russian
+5957,,1490,,french
+5958,,1490,,spanish
+5959,,1490,,german
+5960,,1490,,russian
+5961,,1491,,french
+5962,,1491,cuy,spanish
+5963,,1491,,german
+5964,,1491,,russian
+5965,,1492,,french
+5966,,1492,,spanish
+5967,,1492,,german
+5968,,1492,,russian
+5969,,1493,,french
+5970,,1493,armadillo,spanish
+5971,,1493,,german
+5972,,1493,,russian
+5973,,1494,,french
+5974,,1494,,spanish
+5975,,1494,,german
+5976,,1494,,russian
+5977,,1495,,french
+5978,,1495,,spanish
+5979,,1495,,german
+5980,,1495,,russian
+5981,,1496,,french
+5982,,1496,,spanish
+5983,,1496,,german
+5984,,1496,,russian
+5985,,1497,,french
+5986,,1497,,spanish
+5987,,1497,,german
+5988,,1497,,russian
+5989,,1498,,french
+5990,,1498,,spanish
+5991,,1498,,german
+5992,,1498,,russian
+5993,,1499,,french
+5994,,1499,,spanish
+5995,,1499,,german
+5996,,1499,,russian
+5997,,1500,,french
+5998,,1500,,spanish
+5999,,1500,,german
+6000,,1500,,russian
+6001,,1501,,french
+6002,,1501,,spanish
+6003,,1501,,german
+6004,,1501,,russian
+6005,,1502,,french
+6006,,1502,,spanish
+6007,,1502,,german
+6008,,1502,,russian
+6009,,1503,,french
+6010,,1503,picaflor,spanish
+6011,,1503,,german
+6012,,1503,,russian
+6013,,1504,,french
+6014,,1504,,spanish
+6015,,1504,,german
+6016,,1504,,russian
+6017,,1505,,french
+6018,,1505,,spanish
+6019,,1505,,german
+6020,,1505,,russian
+6021,,1506,,french
+6022,,1506,,spanish
+6023,,1506,,german
+6024,,1506,,russian
+6025,,1507,,french
+6026,,1507,,spanish
+6027,,1507,,german
+6028,,1507,,russian
+6029,,1508,,french
+6030,,1508,,spanish
+6031,,1508,,german
+6032,,1508,,russian
+6033,,1509,,french
+6034,,1509,,spanish
+6035,,1509,,german
+6036,,1509,,russian
+6037,,1510,,french
+6038,,1510,,spanish
+6039,,1510,,german
+6040,,1510,,russian
+6041,,1511,,french
+6042,,1511,,spanish
+6043,,1511,,german
+6044,,1511,,russian
+6045,,1512,,french
+6046,,1512,,spanish
+6048,,1512,,russian
+6049,,1513,,french
+6050,,1513,,spanish
+6051,,1513,,german
+6052,,1513,,russian
+6053,,1514,,french
+6054,,1514,,spanish
+6055,,1514,,german
+6056,,1514,,russian
+6057,,1515,,french
+6058,,1515,,spanish
+6059,,1515,,german
+6060,,1515,,russian
+6061,,1516,,french
+6062,,1516,,spanish
+6063,,1516,,german
+6064,,1516,,russian
+6065,,1517,,french
+6066,,1517,,spanish
+6067,,1517,Piranha,german
+6068,,1517,пиранья,russian
+6069,,1518,,french
+6070,,1518,,spanish
+6071,,1518,,german
+6072,,1518,,russian
+6073,,1519,,french
+6074,,1519,,spanish
+6075,,1519,,german
+6076,,1519,,russian
+6077,,1520,,french
+6078,,1520,,spanish
+6079,,1520,,german
+6080,,1520,,russian
+6081,,1521,,french
+6082,,1521,correcaminos,spanish
+6083,,1521,,german
+6084,,1521,,russian
+6085,,1522,,french
+6086,,1522,,spanish
+6087,,1522,,german
+6088,,1522,,russian
+6089,,1523,,french
+6090,,1523,,spanish
+6091,,1523,,german
+6092,,1523,,russian
+6093,,1524,,french
+6094,,1524,gorrión,spanish
+6095,,1524,,german
+6096,,1524,,russian
+6097,,1525,,french
+6098,,1525,tigre americano,spanish
+6099,,1525,,german
+6100,,1525,,russian
+6101,,1526,,french
+6102,,1526,,spanish
+6103,,1526,,german
+6104,,1526,,russian
+6105,,1527,,french
+6106,,1527,,spanish
+6107,,1527,,german
+6108,,1527,,russian
+6109,,1528,,french
+6110,,1528,,spanish
+6111,,1528,,german
+6112,,1528,,russian
+6113,,1529,,french
+6114,,1529,,spanish
+6115,,1529,,german
+6116,,1529,,russian
+6117,,1530,,french
+6118,,1530,,spanish
+6119,,1530,,german
+6120,,1530,,russian
+6121,,1531,bave,french
+6122,,1531,,spanish
+6123,,1531,,german
+6124,,1531,,russian
+6125,,1532,,french
+6126,,1532,,spanish
+6127,,1532,,german
+6128,,1532,,russian
+6129,,1533,,french
+6130,,1533,,spanish
+6131,,1533,,german
+6132,,1533,,russian
+6133,,1534,,french
+6134,,1534,,spanish
+6135,,1534,,german
+6136,,1534,,russian
+6137,,1535,,french
+6138,,1535,,spanish
+6139,,1535,,german
+6140,,1535,,russian
+6141,,1536,,french
+6142,,1536,,spanish
+6143,,1536,,german
+6144,,1536,,russian
+6145,,1537,,french
+6146,,1537,,spanish
+6147,,1537,,german
+6148,,1537,,russian
+6149,,1538,,french
+6150,,1538,,spanish
+6151,,1538,,german
+6152,,1538,,russian
+6153,,1539,,french
+6154,,1539,,spanish
+6155,,1539,,german
+6156,,1539,,russian
+6157,,1540,figuier,french
+6158,,1540,,spanish
+6159,,1540,Feigenbaum,german
+6160,,1540,,russian
+6161,,1541,,french
+6162,,1541,,spanish
+6163,,1541,,german
+6164,,1541,,russian
+6165,,1542,,french
+6166,,1542,,spanish
+6167,,1542,,german
+6168,,1542,,russian
+6169,,1543,,french
+6170,,1543,,spanish
+6171,,1543,,german
+6172,,1543,,russian
+6173,,1544,,french
+6174,,1544,,spanish
+6175,,1544,,german
+6176,,1544,,russian
+6177,,1545,,french
+6178,,1545,,spanish
+6179,,1545,,german
+6180,,1545,,russian
+6181,,1546,,french
+6182,,1546,,spanish
+6183,,1546,,german
+6184,,1546,,russian
+6185,,1547,,french
+6186,,1547,,spanish
+6187,,1547,,german
+6188,,1547,,russian
+6189,,1548,,french
+6190,,1548,,spanish
+6191,,1548,,german
+6192,,1548,,russian
+6193,,1549,,french
+6194,,1549,,spanish
+6195,,1549,,german
+6196,,1549,,russian
+6197,,1550,,french
+6198,,1550,,spanish
+6199,,1550,,german
+6200,,1550,,russian
+6201,,1551,,french
+6202,,1551,,spanish
+6203,,1551,,german
+6204,,1551,,russian
+6205,,1552,,french
+6206,,1552,,spanish
+6207,,1552,,german
+6208,,1552,,russian
+6209,,1553,,french
+6210,,1553,,spanish
+6211,,1553,,german
+6212,,1553,,russian
+6213,,1554,,french
+6214,,1554,,spanish
+6215,,1554,,german
+6216,,1554,,russian
+6217,,1555,,french
+6218,,1555,,spanish
+6219,,1555,,german
+6220,,1555,,russian
+6221,,1556,,french
+6222,,1556,,spanish
+6223,,1556,,german
+6224,,1556,,russian
+6225,,1557,,french
+6226,,1557,,spanish
+6227,,1557,,german
+6228,,1557,,russian
+6229,,1558,,french
+6230,,1558,,spanish
+6231,,1558,,german
+6232,,1558,,russian
+6233,,1559,,french
+6234,,1559,,spanish
+6235,,1559,,german
+6236,,1559,,russian
+6237,,1560,,french
+6238,,1560,,spanish
+6239,,1560,,german
+6240,,1560,,russian
+6241,,1561,,french
+6242,,1561,,spanish
+6243,,1561,,german
+6244,,1561,,russian
+6245,,1562,,french
+6246,,1562,bolso,spanish
+6247,,1562,,german
+6248,,1562,,russian
+6249,,1563,,french
+6250,,1563,,spanish
+6251,,1563,,german
+6252,,1563,,russian
+6253,,1564,,french
+6254,,1564,,spanish
+6255,,1564,,german
+6256,,1564,,russian
+6257,,1565,,french
+6258,,1565,,spanish
+6259,,1565,,german
+6260,,1565,,russian
+6261,,1566,,french
+6262,,1566,sandalia,spanish
+6263,,1566,,german
+6264,,1566,,russian
+6265,,1567,,french
+6266,,1567,,spanish
+6267,,1567,,german
+6268,,1567,,russian
+6269,,1568,,french
+6270,,1568,,spanish
+6271,,1568,,german
+6272,,1568,,russian
+6274,,1569,,spanish
+6275,,1569,,german
+6276,,1569,,russian
+6277,,1570,,french
+6278,,1570,,spanish
+6279,,1570,,german
+6280,,1570,,russian
+6281,,1571,,french
+6282,,1571,banco,spanish
+6283,,1571,,german
+6284,,1571,,russian
+6285,,1572,cantine,french
+6286,,1572,,spanish
+6287,,1572,,german
+6288,,1572,,russian
+6289,,1573,,french
+6290,,1573,,spanish
+6291,,1573,,german
+6292,,1573,,russian
+6293,,1574,,french
+6294,,1574,,spanish
+6295,,1574,,german
+6296,,1574,,russian
+6297,,1575,,french
+6298,,1575,,spanish
+6299,,1575,,german
+6300,,1575,,russian
+6301,,1576,,french
+6302,,1576,,spanish
+6303,,1576,,german
+6304,,1576,,russian
+6305,,1577,,french
+6306,,1577,,spanish
+6307,,1577,,german
+6308,,1577,,russian
+6309,,1578,,french
+6310,,1578,,spanish
+6311,,1578,,german
+6312,,1578,,russian
+6313,,1579,,french
+6314,,1579,,spanish
+6315,,1579,,german
+6316,,1579,,russian
+6317,,1580,,french
+6318,,1580,pigala,spanish
+6319,,1580,,german
+6320,,1580,,russian
+6321,,1581,,french
+6322,,1581,,spanish
+6323,,1581,,german
+6324,,1581,,russian
+6325,,1582,,french
+6326,,1582,,spanish
+6327,,1582,,german
+6328,,1582,,russian
+6329,,1583,,french
+6330,,1583,,spanish
+6331,,1583,,german
+6332,,1583,,russian
+6333,,1584,,french
+6334,,1584,,spanish
+6335,,1584,,german
+6336,,1584,,russian
+6337,,1585,,french
+6338,,1585,,spanish
+6339,,1585,,german
+6340,,1585,,russian
+6341,,1586,,french
+6342,,1586,,spanish
+6343,,1586,,german
+6344,,1586,,russian
+6345,,1587,,french
+6346,,1587,,spanish
+6347,,1587,,german
+6348,,1587,,russian
+6349,,1588,,french
+6350,,1588,,spanish
+6351,,1588,,german
+6352,,1588,,russian
+6353,,1589,,french
+6354,,1589,,spanish
+6355,,1589,,german
+6356,,1589,,russian
+6357,,1590,,french
+6358,,1590,,spanish
+6359,,1590,,german
+6360,,1590,,russian
+6361,,1591,,french
+6362,,1591,,spanish
+6363,,1591,,german
+6364,,1591,,russian
+6365,,1592,,french
+6366,,1592,mortiño,spanish
+6367,,1592,,german
+6368,,1592,,russian
+6369,,1593,,french
+6370,,1593,,spanish
+6371,,1593,,german
+6372,,1593,,russian
+6373,,1594,,french
+6374,,1594,,spanish
+6375,,1594,,german
+6376,,1594,,russian
+6377,,1595,,french
+6378,,1595,,spanish
+6379,,1595,,german
+6380,,1595,,russian
+6381,,1596,,french
+6382,,1596,,spanish
+6383,,1596,,german
+6384,,1596,,russian
+6385,,1597,,french
+6386,,1597,,spanish
+6388,,1597,,russian
+6389,,1598,,french
+6390,,1598,,spanish
+6391,,1598,,german
+6392,,1598,,russian
+6393,,1599,,french
+6394,,1599,,spanish
+6395,,1599,,german
+6396,,1599,,russian
+6397,,1600,,french
+6398,,1600,chocho,spanish
+6399,,1600,,german
+6400,,1600,,russian
+6401,,1601,,french
+6402,,1601,,spanish
+6403,,1601,,german
+6404,,1601,,russian
+6405,,1602,,french
+6406,,1602,,spanish
+6407,,1602,,german
+6408,,1602,,russian
+6409,,1603,,french
+6410,,1603,,spanish
+6411,,1603,,german
+6412,,1603,,russian
+6413,,1604,,french
+6414,,1604,,spanish
+6415,,1604,,german
+6416,,1604,,russian
+6417,,1605,,french
+6418,,1605,,spanish
+6419,,1605,,german
+6420,,1605,,russian
+6421,,1606,,french
+6422,,1606,,spanish
+6423,,1606,,german
+6424,,1606,,russian
+6425,,1607,,french
+6426,,1607,,spanish
+6427,,1607,,german
+6428,,1607,,russian
+6429,,1608,,french
+6430,,1608,,spanish
+6431,,1608,,german
+6432,,1608,,russian
+6433,,1609,,french
+6434,,1609,,spanish
+6435,,1609,,german
+6436,,1609,,russian
+6437,,1610,,french
+6438,,1610,,spanish
+6439,,1610,,german
+6440,,1610,,russian
+6441,,1611,,french
+6442,,1611,,spanish
+6443,,1611,,german
+6444,,1611,,russian
+6445,,1612,,french
+6446,,1612,,spanish
+6447,,1612,,german
+6448,,1612,,russian
+6449,,1613,,french
+6450,,1613,,spanish
+6451,,1613,,german
+6452,,1613,,russian
+6453,,1614,,french
+6454,,1614,mimosa púdica,spanish
+6455,,1614,,german
+6456,,1614,,russian
+6457,,1615,,french
+6458,,1615,,spanish
+6459,,1615,,german
+6460,,1615,,russian
+6461,,1616,betterave,french
+6462,,1616,,spanish
+6463,,1616,,german
+6464,,1616,,russian
+6465,,1617,,french
+6466,,1617,brea,spanish
+6467,,1617,,german
+6468,,1617,,russian
+6469,,1618,,french
+6470,,1618,,spanish
+6471,,1618,,german
+6472,,1618,,russian
+6473,,1619,,french
+6474,,1619,,spanish
+6475,,1619,,german
+6476,,1619,,russian
+6477,,1620,,french
+6478,,1620,,spanish
+6479,,1620,,german
+6480,,1620,,russian
+6481,,1621,,french
+6482,,1621,vicia,spanish
+6483,,1621,,german
+6484,,1621,,russian
+6485,,1622,,french
+6486,,1622,,spanish
+6487,,1622,,german
+6488,,1622,,russian
+6489,,1623,,french
+6490,,1623,,spanish
+6491,,1623,,german
+6492,,1623,,russian
+6493,,1624,,french
+6494,,1624,,spanish
+6495,,1624,,german
+6496,,1624,,russian
+6497,,1625,,french
+6498,,1625,,spanish
+6499,,1625,,german
+6500,,1625,,russian
+6502,,1626,quinsilgo,spanish
+6503,,1626,,german
+6504,,1626,,russian
+6505,,1627,,french
+6506,,1627,,spanish
+6507,,1627,,german
+6508,,1627,,russian
+6509,,1628,,french
+6510,,1628,,spanish
+6511,,1628,,german
+6512,,1628,,russian
+6513,,1629,,french
+6514,,1629,,spanish
+6515,,1629,,german
+6516,,1629,,russian
+6517,,1630,,french
+6518,,1630,,spanish
+6519,,1630,,german
+6520,,1630,,russian
+6521,,1631,,french
+6522,,1631,,spanish
+6523,,1631,,german
+6524,,1631,,russian
+6525,,1632,,french
+6526,,1632,,spanish
+6527,,1632,,german
+6528,,1632,,russian
+6529,,1633,,french
+6530,,1633,,spanish
+6531,,1633,,german
+6532,,1633,,russian
+6533,,1634,,french
+6534,,1634,,spanish
+6535,,1634,,german
+6536,,1634,,russian
+6537,,1635,,french
+6538,,1635,,spanish
+6539,,1635,,german
+6540,,1635,,russian
+6541,,1636,,french
+6542,,1636,,spanish
+6543,,1636,,german
+6544,,1636,,russian
+6545,,1637,,french
+6546,,1637,,spanish
+6547,,1637,,german
+6548,,1637,,russian
+6549,,1638,,french
+6550,,1638,,spanish
+6551,,1638,,german
+6552,,1638,,russian
+6553,,1639,,french
+6554,,1639,,spanish
+6555,,1639,,german
+6556,,1639,,russian
+6557,,1640,,french
+6558,,1640,,spanish
+6559,,1640,,german
+6560,,1640,,russian
+6561,,1641,,french
+6562,,1641,,spanish
+6563,,1641,,german
+6564,,1641,,russian
+6565,,1642,,french
+6566,,1642,,spanish
+6567,,1642,,german
+6568,,1642,,russian
+6569,,1643,,french
+6570,,1643,,spanish
+6571,,1643,,german
+6572,,1643,,russian
+6573,,1644,,french
+6574,,1644,lápiz,spanish
+6575,,1644,,german
+6576,,1644,,russian
+6577,,1645,,french
+6578,,1645,,spanish
+6579,,1645,,german
+6580,,1645,,russian
+6581,,1646,,french
+6582,,1646,,spanish
+6583,,1646,,german
+6584,,1646,,russian
+6585,,1647,,french
+6586,,1647,,spanish
+6587,,1647,,german
+6588,,1647,,russian
+6589,,1648,outre,french
+6590,,1648,,spanish
+6591,,1648,,german
+6592,,1648,,russian
+6593,,1649,,french
+6594,,1649,,spanish
+6595,,1649,,german
+6596,,1649,,russian
+6597,,1650,,french
+6598,,1650,espuela,spanish
+6599,,1650,,german
+6600,,1650,,russian
+6601,,1651,,french
+6602,,1651,,spanish
+6603,,1651,,german
+6604,,1651,,russian
+6605,,1652,,french
+6606,,1652,,spanish
+6607,,1652,,german
+6608,,1652,,russian
+6609,,1653,,french
+6610,,1653,,spanish
+6611,,1653,,german
+6612,,1653,,russian
+6613,,1654,,french
+6614,,1654,,spanish
+6616,,1654,,russian
+6617,,1655,,french
+6618,,1655,,spanish
+6619,,1655,,german
+6620,,1655,,russian
+6621,,1656,,french
+6622,,1656,,spanish
+6623,,1656,,german
+6624,,1656,,russian
+6625,,1657,,french
+6626,,1657,,spanish
+6627,,1657,,german
+6628,,1657,,russian
+6629,,1658,,french
+6630,,1658,,spanish
+6631,,1658,,german
+6632,,1658,,russian
+6633,,1659,,french
+6634,,1659,,spanish
+6635,,1659,,german
+6636,,1659,,russian
+6637,,1660,,french
+6638,,1660,,spanish
+6639,,1660,,german
+6640,,1660,,russian
+6641,,1661,,french
+6642,,1661,embrollar,spanish
+6643,,1661,,german
+6644,,1661,,russian
+6645,,1662,,french
+6646,,1662,,spanish
+6647,,1662,,german
+6648,,1662,,russian
+6649,,1663,,french
+6650,,1663,,spanish
+6651,,1663,,german
+6652,,1663,,russian
+6653,,1664,,french
+6654,,1664,,spanish
+6655,,1664,,german
+6656,,1664,,russian
+6657,,1665,,french
+6658,,1665,acompañar,spanish
+6659,,1665,,german
+6660,,1665,,russian
+6661,,1666,,french
+6662,,1666,,spanish
+6663,,1666,,german
+6664,,1666,,russian
+6665,,1667,,french
+6666,,1667,,spanish
+6667,,1667,,german
+6668,,1667,,russian
+6669,,1668,,french
+6670,,1668,llevar en ancas,spanish
+6671,,1668,,german
+6672,,1668,,russian
+6673,,1669,,french
+6674,,1669,,spanish
+6675,,1669,,german
+6676,,1669,,russian
+6677,,1670,,french
+6678,,1670,,spanish
+6679,,1670,,german
+6680,,1670,,russian
+6681,,1671,,french
+6682,,1671,,spanish
+6683,,1671,,german
+6684,,1671,,russian
+6685,,1672,,french
+6686,,1672,,spanish
+6687,,1672,,german
+6688,,1672,,russian
+6689,,1673,,french
+6690,,1673,,spanish
+6691,,1673,,german
+6692,,1673,,russian
+6693,,1674,,french
+6694,,1674,,spanish
+6695,,1674,,german
+6696,,1674,,russian
+6697,,1675,,french
+6698,,1675,,spanish
+6699,,1675,,german
+6700,,1675,,russian
+6701,,1676,,french
+6702,,1676,,spanish
+6703,,1676,,german
+6704,,1676,,russian
+6705,,1677,,french
+6706,,1677,,spanish
+6707,,1677,,german
+6708,,1677,,russian
+6709,,1678,,french
+6710,,1678,recibir,spanish
+6711,,1678,,german
+6712,,1678,,russian
+6713,,1679,,french
+6714,,1679,,spanish
+6715,,1679,,german
+6716,,1679,,russian
+6717,,1680,,french
+6718,,1680,,spanish
+6719,,1680,,german
+6720,,1680,,russian
+6721,,1681,,french
+6722,,1681,,spanish
+6723,,1681,,german
+6724,,1681,,russian
+6725,,1682,,french
+6726,,1682,,spanish
+6727,,1682,,german
+6728,,1682,,russian
+6730,,1683,,spanish
+6731,,1683,,german
+6732,,1683,,russian
+6733,,1684,,french
+6734,,1684,,spanish
+6735,,1684,,german
+6736,,1684,,russian
+6737,,1685,,french
+6738,,1685,,spanish
+6739,,1685,,german
+6740,,1685,,russian
+6741,,1686,,french
+6742,,1686,,spanish
+6743,,1686,,german
+6744,,1686,,russian
+6745,,1687,,french
+6746,,1687,,spanish
+6747,,1687,,german
+6748,,1687,,russian
+6749,,1688,,french
+6750,,1688,,spanish
+6751,,1688,,german
+6752,,1688,,russian
+6753,,1689,,french
+6754,,1689,,spanish
+6755,,1689,,german
+6756,,1689,,russian
+6757,,1690,,french
+6758,,1690,,spanish
+6759,,1690,,german
+6760,,1690,,russian
+6761,,1691,,french
+6762,,1691,,spanish
+6763,,1691,,german
+6764,,1691,,russian
+6765,,1692,,french
+6766,,1692,,spanish
+6767,,1692,,german
+6768,,1692,,russian
+6769,,1693,,french
+6770,,1693,,spanish
+6771,,1693,,german
+6772,,1693,,russian
+6773,,1694,,french
+6774,,1694,,spanish
+6775,,1694,,german
+6776,,1694,,russian
+6777,,1695,,french
+6778,,1695,,spanish
+6779,,1695,,german
+6780,,1695,,russian
+6781,,1696,,french
+6782,,1696,,spanish
+6783,,1696,,german
+6784,,1696,,russian
+6785,,1697,,french
+6786,,1697,,spanish
+6787,,1697,,german
+6788,,1697,,russian
+6789,,1698,,french
+6790,,1698,,spanish
+6791,,1698,,german
+6792,,1698,,russian
+6793,,1699,,french
+6794,,1699,,spanish
+6795,,1699,,german
+6796,,1699,,russian
+6797,,1700,,french
+6798,,1700,,spanish
+6799,,1700,,german
+6800,,1700,,russian
+6801,,1701,,french
+6802,,1701,,spanish
+6803,,1701,,german
+6804,,1701,,russian
+6805,,1702,,french
+6806,,1702,,spanish
+6807,,1702,,german
+6808,,1702,,russian
+6809,,1703,,french
+6810,,1703,,spanish
+6811,,1703,,german
+6812,,1703,,russian
+6813,,1704,,french
+6814,,1704,,spanish
+6815,,1704,,german
+6816,,1704,,russian
+6817,,1705,,french
+6818,,1705,,spanish
+6819,,1705,,german
+6820,,1705,,russian
+6821,,1706,,french
+6822,,1706,,spanish
+6823,,1706,,german
+6824,,1706,,russian
+6825,,1707,,french
+6826,,1707,,spanish
+6827,,1707,,german
+6828,,1707,,russian
+6829,,1708,,french
+6830,,1708,,spanish
+6831,,1708,,german
+6832,,1708,,russian
+6833,,1709,,french
+6834,,1709,,spanish
+6835,,1709,,german
+6836,,1709,,russian
+6837,,1710,,french
+6838,,1710,,spanish
+6839,,1710,,german
+6840,,1710,,russian
+6841,,1711,,french
+6842,,1711,,spanish
+6844,,1711,,russian
+6845,,1712,,french
+6846,,1712,,spanish
+6847,,1712,,german
+6848,,1712,,russian
+6849,,1713,,french
+6850,,1713,,spanish
+6851,,1713,,german
+6852,,1713,,russian
+6853,,1714,,french
+6854,,1714,,spanish
+6855,,1714,,german
+6856,,1714,,russian
+6857,,1715,,french
+6858,,1715,,spanish
+6859,,1715,,german
+6860,,1715,,russian
+6861,,1716,,french
+6862,,1716,,spanish
+6863,,1716,,german
+6864,,1716,,russian
+6865,,1717,,french
+6866,,1717,,spanish
+6867,,1717,,german
+6868,,1717,,russian
+6869,,1718,,french
+6870,,1718,,spanish
+6871,,1718,,german
+6872,,1718,,russian
+6873,,1719,,french
+6874,,1719,,spanish
+6875,,1719,,german
+6876,,1719,,russian
+6877,,1720,,french
+6878,,1720,,spanish
+6879,,1720,,german
+6880,,1720,,russian
+6881,,1721,,french
+6882,,1721,,spanish
+6883,,1721,,german
+6884,,1721,,russian
+6885,,1722,,french
+6886,,1722,,spanish
+6887,,1722,,german
+6888,,1722,,russian
+6889,,1723,,french
+6890,,1723,,spanish
+6891,,1723,,german
+6892,,1723,,russian
+6893,,1724,,french
+6894,,1724,,spanish
+6895,,1724,,german
+6896,,1724,,russian
+6897,,1725,,french
+6898,,1725,,spanish
+6899,,1725,,german
+6900,,1725,,russian
+6901,,1726,,french
+6902,,1726,,spanish
+6903,,1726,,german
+6904,,1726,,russian
+6905,,1727,,french
+6906,,1727,,spanish
+6907,,1727,,german
+6908,,1727,,russian
+6909,,1728,,french
+6910,,1728,,spanish
+6911,,1728,,german
+6912,,1728,,russian
+6913,,1729,,french
+6914,,1729,,spanish
+6915,,1729,,german
+6916,,1729,,russian
+6917,,1730,,french
+6918,,1730,,spanish
+6919,,1730,,german
+6920,,1730,,russian
+6921,,1731,,french
+6922,,1731,,spanish
+6923,,1731,,german
+6924,,1731,,russian
+6925,,1732,,french
+6926,,1732,,spanish
+6927,,1732,,german
+6928,,1732,,russian
+6929,,1733,,french
+6930,,1733,,spanish
+6931,,1733,,german
+6932,,1733,реветь,russian
+6933,,1734,,french
+6934,,1734,,spanish
+6935,,1734,,german
+6936,,1734,,russian
+6937,,1735,,french
+6938,,1735,,spanish
+6939,,1735,,german
+6940,,1735,,russian
+6941,,1736,,french
+6942,,1736,,spanish
+6943,,1736,,german
+6944,,1736,,russian
+6945,,1737,,french
+6946,,1737,,spanish
+6947,,1737,,german
+6948,,1737,,russian
+6949,,1738,,french
+6950,,1738,,spanish
+6951,,1738,,german
+6952,,1738,,russian
+6953,,1739,,french
+6954,,1739,,spanish
+6955,,1739,,german
+6956,,1739,,russian
+6958,,1740,,spanish
+6959,,1740,,german
+6960,,1740,,russian
+6961,,1741,,french
+6962,,1741,,spanish
+6963,,1741,,german
+6964,,1741,,russian
+6965,,1742,,french
+6966,,1742,,spanish
+6967,,1742,,german
+6968,,1742,,russian
+6969,,1743,,french
+6970,,1743,don,spanish
+6971,,1743,,german
+6972,,1743,,russian
+6973,,1744,,french
+6974,,1744,,spanish
+6975,,1744,,german
+6976,,1744,,russian
+6977,,1745,,french
+6978,,1745,,spanish
+6979,,1745,,german
+6980,,1745,,russian
+6981,,1746,,french
+6982,,1746,,spanish
+6983,,1746,,german
+6984,,1746,,russian
+6985,,1747,,french
+6986,,1747,,spanish
+6987,,1747,,german
+6988,,1747,,russian
+6989,,1748,,french
+6990,,1748,,spanish
+6991,,1748,,german
+6992,,1748,,russian
+6993,,1749,,french
+6994,,1749,,spanish
+6995,,1749,,german
+6996,,1749,,russian
+6997,,1750,,french
+6998,,1750,,spanish
+6999,,1750,,german
+7000,,1750,,russian
+7001,,1751,,french
+7002,,1751,,spanish
+7003,,1751,,german
+7004,,1751,,russian
+7005,,1752,,french
+7006,,1752,capataz,spanish
+7007,,1752,,german
+7008,,1752,,russian
+7009,,1753,,french
+7010,,1753,,spanish
+7011,,1753,,german
+7012,,1753,,russian
+7013,,1754,,french
+7014,,1754,,spanish
+7015,,1754,,german
+7016,,1754,,russian
+7017,,1755,,french
+7018,,1755,,spanish
+7019,,1755,,german
+7020,,1755,,russian
+7021,,1756,,french
+7022,,1756,,spanish
+7023,,1756,,german
+7024,,1756,,russian
+7025,,1757,,french
+7026,,1757,,spanish
+7027,,1757,,german
+7028,,1757,,russian
+7029,,1758,,french
+7030,,1758,,spanish
+7031,,1758,,german
+7032,,1758,,russian
+7033,,1759,,french
+7034,,1759,compañero,spanish
+7035,,1759,,german
+7036,,1759,,russian
+7037,,1760,,french
+7038,,1760,,spanish
+7039,,1760,,german
+7040,,1760,,russian
+7041,,1761,,french
+7042,,1761,,spanish
+7043,,1761,,german
+7044,,1761,,russian
+7045,,1762,,french
+7046,,1762,,spanish
+7047,,1762,,german
+7048,,1762,,russian
+7049,,1763,,french
+7050,,1763,,spanish
+7051,,1763,,german
+7052,,1763,,russian
+7053,,1764,,french
+7054,,1764,,spanish
+7055,,1764,,german
+7056,,1764,,russian
+7057,,1765,,french
+7058,,1765,,spanish
+7059,,1765,,german
+7060,,1765,,russian
+7061,,1766,,french
+7062,,1766,,spanish
+7063,,1766,,german
+7064,,1766,,russian
+7065,,1767,,french
+7066,,1767,,spanish
+7067,,1767,,german
+7068,,1767,,russian
+7069,,1768,,french
+7070,,1768,,spanish
+7072,,1768,,russian
+7073,,1769,,french
+7074,,1769,,spanish
+7075,,1769,,german
+7076,,1769,,russian
+7077,,1770,,french
+7078,,1770,respetar,spanish
+7079,,1770,,german
+7080,,1770,,russian
+7081,,1771,,french
+7082,,1771,,spanish
+7083,,1771,,german
+7084,,1771,,russian
+7085,,1772,,french
+7086,,1772,,spanish
+7087,,1772,,german
+7088,,1772,,russian
+7089,,1773,sabre,french
+7090,,1773,machete,spanish
+7091,,1773,Buschmesser,german
+7092,,1773,,russian
+7093,,1774,,french
+7094,,1774,,spanish
+7095,,1774,,german
+7096,,1774,,russian
+7097,,1775,,french
+7098,,1775,,spanish
+7099,,1775,,german
+7100,,1775,,russian
+7101,,1776,,french
+7102,,1776,,spanish
+7103,,1776,,german
+7104,,1776,,russian
+7105,,1777,,french
+7106,,1777,,spanish
+7107,,1777,,german
+7108,,1777,,russian
+7109,,1778,,french
+7110,,1778,,spanish
+7111,,1778,,german
+7112,,1778,,russian
+7113,,1779,,french
+7114,,1779,pescar,spanish
+7115,,1779,,german
+7116,,1779,,russian
+7117,,1780,,french
+7118,,1780,,spanish
+7119,,1780,,german
+7120,,1780,,russian
+7121,,1781,,french
+7122,,1781,abogado,spanish
+7123,,1781,,german
+7124,,1781,,russian
+7125,,1782,,french
+7126,,1782,,spanish
+7127,,1782,,german
+7128,,1782,,russian
+7129,,1783,,french
+7130,,1783,,spanish
+7131,,1783,,german
+7132,,1783,,russian
+7133,,1784,,french
+7134,,1784,,spanish
+7135,,1784,,german
+7136,,1784,,russian
+7137,,1785,,french
+7138,,1785,,spanish
+7139,,1785,,german
+7140,,1785,,russian
+7141,,1786,,french
+7142,,1786,,spanish
+7143,,1786,,german
+7144,,1786,,russian
+7145,,1787,,french
+7146,,1787,,spanish
+7147,,1787,,german
+7148,,1787,,russian
+7149,,1788,,french
+7150,,1788,,spanish
+7151,,1788,,german
+7152,,1788,,russian
+7153,,1789,,french
+7154,,1789,,spanish
+7155,,1789,,german
+7156,,1789,,russian
+7157,,1790,,french
+7158,,1790,,spanish
+7159,,1790,,german
+7160,,1790,,russian
+7161,,1791,,french
+7162,,1791,,spanish
+7163,,1791,,german
+7164,,1791,,russian
+7165,,1792,,french
+7166,,1792,,spanish
+7167,,1792,,german
+7168,,1792,,russian
+7169,,1793,,french
+7170,,1793,,spanish
+7171,,1793,,german
+7172,,1793,,russian
+7173,,1794,,french
+7174,,1794,,spanish
+7175,,1794,,german
+7176,,1794,,russian
+7177,,1795,,french
+7178,,1795,,spanish
+7179,,1795,,german
+7180,,1795,,russian
+7181,,1796,,french
+7182,,1796,,spanish
+7183,,1796,,german
+7184,,1796,,russian
+7185,,1797,,french
+7186,,1797,,spanish
+7187,,1797,,german
+7188,,1797,,russian
+7189,,1798,,french
+7190,,1798,,spanish
+7191,,1798,,german
+7192,,1798,,russian
+7193,,1799,,french
+7194,,1799,,spanish
+7195,,1799,,german
+7196,,1799,,russian
+7197,,1800,,french
+7198,,1800,,spanish
+7199,,1800,,german
+7200,,1800,,russian
+7201,,1801,,french
+7202,,1801,,spanish
+7203,,1801,,german
+7204,,1801,,russian
+7205,,1802,,french
+7206,,1802,,spanish
+7207,,1802,,german
+7208,,1802,,russian
+7209,,1803,,french
+7210,,1803,,spanish
+7211,,1803,,german
+7212,,1803,,russian
+7213,,1804,,french
+7214,,1804,,spanish
+7215,,1804,,german
+7216,,1804,,russian
+7217,,1805,,french
+7218,,1805,,spanish
+7219,,1805,,german
+7220,,1805,,russian
+7221,,1806,,french
+7222,,1806,,spanish
+7223,,1806,,german
+7224,,1806,,russian
+7225,,1807,,french
+7226,,1807,,spanish
+7227,,1807,,german
+7228,,1807,,russian
+7229,,1808,,french
+7230,,1808,,spanish
+7231,,1808,,german
+7232,,1808,,russian
+7233,,1809,,french
+7234,,1809,,spanish
+7235,,1809,,german
+7236,,1809,,russian
+7237,,1810,,french
+7238,,1810,,spanish
+7239,,1810,,german
+7240,,1810,,russian
+7241,,1811,,french
+7242,,1811,,spanish
+7243,,1811,,german
+7244,,1811,,russian
+7245,,1812,,french
+7246,,1812,,spanish
+7247,,1812,,german
+7248,,1812,,russian
+7249,,1813,,french
+7250,,1813,,spanish
+7251,,1813,,german
+7252,,1813,,russian
+7253,,1814,,french
+7254,,1814,,spanish
+7255,,1814,,german
+7256,,1814,,russian

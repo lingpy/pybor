@@ -1,0 +1,136 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	2	U+005E		
+$	NULL	3	U+0024		
+(	NULL	5	U+0028	"(ʔille)_paah,roompo_(ʕanɗete),ʔí=powaʕ(aɗ)i"	
+)	NULL	5	U+0029	"(ʕanɗe)_ʔí=t’aarama,=(i)m,roompo_(ʕanɗete)"	
+^ʔí=huli$	ʔ í + h u l i	1	U+005E U+0294 U+00ED U+003D U+0068 U+0075 U+006C U+0069 U+0024	"ʔí=huli"	
+^ʔí=harkišami$	ʔ í + h a r k i ʃ a m i	1	U+005E U+0294 U+00ED U+003D U+0068 U+0061 U+0072 U+006B U+0069 U+0161 U+0061 U+006D U+0069 U+0024	"ʔí=harkišami"	Gawwada
+^ʔiso_(M)/_ʔise_(F)$	ʔ i s o	1	U+005E U+0294 U+0069 U+0073 U+006F U+005F U+0028 U+004D U+0029 U+002F U+005F U+0294 U+0069 U+0073 U+0065 U+005F U+0028 U+0046 U+0029 U+0024	"ʔiso_(M)/_ʔise_(F)"	
+-	+	3	U+002D	"kaʕas-ay,ʔí=ɓoq-q-i"	Gawwada
+=	+	30	U+003D	"huɗɗa=pa_xupin,saalte=pa_coqqollo,ʔí=konɗami"	Gawwada
+_	_	74	U+005F	"maxe_hawɗattito,minne_ʔakimatte,sinkatto_haaše"	Gawwada
+a	a	849	U+0061	"(ʕanɗe)_ʔí=t’aarama,cimmanakko,marfe"	Gawwada
+c	c	15	U+0063	"cucuwitto,qeeca,saalte=pa_coqqollo"	Gawwada
+e	e	86	U+0065	"hawɗatto_sipilete,minne_muunt’ito,ʔoyehe"	Gawwada
+f	f	30	U+0066	"kofine,k’ulfe,ʕafto"	Gawwada
+h	h	55	U+0068	"makahko_teeh,yaha,ʔukaahe"	Gawwada
+i	i	297	U+0069	"mišilte,tamaritto,ɗilanne_minnete"	Gawwada
+k	k	184	U+006B	"kaare_hokete,mankiste,ʔahke"	Gawwada
+l	l	107	U+006C	"minne_ʔislaamatte,palake,ʔolokko"	Gawwada
+m	m	100	U+006D	"rimay,ye=leefamú,ʔamo"	Gawwada
+n	n	156	U+006E	"kanta,šiinanko,ʔašinte"	Gawwada
+o	o	220	U+006F	"kaare_hokete,koɗ,moʔo=nu"	Gawwada
+p	p	115	U+0070	"torpa,ɠaapko,ɠapte"	Gawwada
+q	q	36	U+0071	"loqaɗ,paqeela,ʔoqaaye_xoosti"	Gawwada
+r	r	159	U+0072	"karmo,ʔurkuy,ʕartakko"	Gawwada
+s	s	65	U+0073	"miʔaye_ʕasito,pusullo,ʔasaap"	Gawwada
+t	t	184	U+0074	"humto,kurantitte,taattite"	Gawwada
+u	u	173	U+0075	"qarunte,qupa,xupin"	Gawwada
+w	w	36	U+0077	"hawle,ʔalawte,ʔí=waršooɗi"	Gawwada
+x	x	10	U+0078	"maxatto,maxe_hawɗattito,yurxe"	Gawwada
+y	y	78	U+0079	"haysa,hiyakko,miʔaye_kaankatte"	Gawwada
+z	z	2	U+007A	"kize"	Gawwada
+á	á	2	U+00E1	"háš_pay,k’ám_pay"	Gawwada
+í	í	15	U+00ED	"ʔí=konɗami,ʔí=tarɗi,ʔí=ʕakkaɗa"	Gawwada
+ħ	ħ	2	U+0127	"kawwaʕko_ʔí=ħeereʔi,ʔikaħko"	Gawwada
+š	ʃ	65	U+0161	"hoqqaši,tiišto,šiišaalle"	Gawwada
+ɓ	ɓ	7	U+0253	"huɓa,xaɓo,xiɓte"	Gawwada
+ɗ	ɗ	45	U+0257	"hawɗatto,hawɗatto_sipilete,yaaye_ɗammay"	Gawwada
+ɠ	ɠ	9	U+0260	"maɠakko,qayanɠayo,ʕanɠo"	Gawwada
+ʔ	ʔ	50	U+0294	"loʔo,mahnaʔa,ʔaʔa"	Gawwada
+ʕ	ʕ	68	U+0295	"mart’aat’aʕako,miʔaye_ʕeemtatte,sooʕa"	Gawwada
+ʤ	dʒ	1	U+02A4	"maʤammariya"	Gawwada
+^=	+	6	U+005E U+003D	"=na,=pa,=tta"	Gawwada
+^c	c	12	U+005E U+0063	"cifoote,cimmanakko,cinko"	Gawwada
+^f	f	14	U+005E U+0066	"filme,fokolho,fuʔ"	Gawwada
+^h	h	98	U+005E U+0068	"hafurko,holas,horro"	Gawwada
+^k	k	155	U+005E U+006B	"kaašanko,kanaʕe,kanta"	Gawwada
+^l	l	38	U+005E U+006C	"lakke_lakke,leʕakko,loq"	Gawwada
+^m	m	91	U+005E U+006D	"miira,minne_waakito,mišilte"	Gawwada
+^n	n	15	U+005E U+006E	"nafsatte_ʕak,nakaaše,naʔa"	Gawwada
+^p	p	92	U+005E U+0070	"palante,pasan,peerri"	Gawwada
+^q	q	44	U+005E U+0071	"qawho,qooro,qooɗe"	Gawwada
+^r	r	19	U+005E U+0072	"raf,reetiyo,roompo_(ʕanɗete)"	Gawwada
+^s	s	76	U+005E U+0073	"sansalate,silk’e,suro"	Gawwada
+^t	t	87	U+005E U+0074	"tiltilte,turɠe,tuupe=tta"	Gawwada
+^w	w	13	U+005E U+0077	"waakito,walitte,wark’ate"	Gawwada
+^x	x	34	U+005E U+0078	"xaha,xapul,xinawa"	Gawwada
+^y	y	16	U+005E U+0079	"ye=leefamú,ye=šaʔú,yiʔa"	Gawwada
+^z	z	1	U+005E U+007A	"zayte"	Gawwada
+^ħ	ħ	3	U+005E U+0127	"ħaamo,ħo_t’ulluho"	Gawwada
+^š	ʃ	45	U+005E U+0161	"šaamɓo,šallala,šiišaalle"	Gawwada
+^ɓ	ɓ	2	U+005E U+0253	"ɓaɗ,ɓoqqos"	Gawwada
+^ɗ	ɗ	30	U+005E U+0257	"ɗamʕatto,ɗilanko,ɗumʕe"	Gawwada
+^ɠ	ɠ	24	U+005E U+0260	"ɠaɗo,ɠopolho,ɠullaɗ"	Gawwada
+^ʔ	ʔ	173	U+005E U+0294	"ʔawšaš,ʔašinko,ʔine"	Gawwada
+^ʕ	ʕ	34	U+005E U+0295	"ʕaf,ʕanɗe,ʕuuɠto"	Gawwada
+a$	a	147	U+0061 U+0024	"=ma,ʔappa_ɗamma,ʔit’a"	Gawwada
+aa	aː	160	U+0061 U+0061	"kaarne,nakaaše,waarakkooɗ"	Gawwada
+cc	c c	2	U+0063 U+0063	"kaacca,kaacce"	Gawwada
+e$	e	325	U+0065 U+0024	"kaare_hokete,posikte,xipire"	Gawwada
+ee	eː	71	U+0065 U+0065	"makahko_teeh,ɠeeʕ,ʕeelho"	Gawwada
+f$	f	6	U+0066 U+0024	"tuf,t’af,ʕaf"	Gawwada
+ff	f f	3	U+0066 U+0066	"puffaʕe,puffi,ʔuffi"	Gawwada
+fs	f s	2	U+0066 U+0073	"nafsatte_ʕak,nafse"	Gawwada
+h$	h	12	U+0068 U+0024	"(ʔille)_paah,tah,šoh"	Gawwada
+hh	h h	1	U+0068 U+0068	"lahha"	Gawwada
+i$	i	54	U+0069 U+0024	"=si,kelli,šanni"	Gawwada
+ii	iː	26	U+0069 U+0069	"siikke,tiišto,ɗiiptakko"	Gawwada
+k$	k	24	U+006B U+0024	"šeek,ʕuk,ʕuuk"	Gawwada
+kk	k k	127	U+006B U+006B	"muumanakko,šaanšikko,ʕakkatto"	Gawwada
+k’	kʼ	10	U+006B U+2019	"fak’k’aɗ,hak’e,sak’k’e"	
+l$	l	11	U+006C U+0024	"kantul,teel,ɗal"	Gawwada
+lh	l h	7	U+006C U+0068	"peelho,ɠopolho,ʕeelho"	Gawwada
+ll	l l	44	U+006C U+006C	"kampeello,pusullo,qaallaɗo"	Gawwada
+ls	l s	3	U+006C U+0073	"kalse,kelso,ʔulseeɗ"	Gawwada
+m$	m	10	U+006D U+0024	"kartam,tuqam,t’om"	Gawwada
+mm	m m	25	U+006D U+006D	"hammakko,maʤammariya,ɗamma"	Gawwada
+n$	n	13	U+006E U+0024	"huɗan,toʔon,xupin"	Gawwada
+nn	n n	23	U+006E U+006E	"mekinnate,minne_muunt’ito,minne_ʔakimatte"	Gawwada
+ns	n s	1	U+006E U+0073	"sansalate"	Gawwada
+o$	o	339	U+006F U+0024	"kuuco,k’ork’orro,pokolho"	Gawwada
+oo	oː	76	U+006F U+006F	"moore_ʕale,toonnakko,waarakkooɗ"	Gawwada
+p$	p	11	U+0070 U+0024	"nipaap,sap,t’iip"	Gawwada
+pp	p p	15	U+0070 U+0070	"minne_šappete,ɗippa,ʔasaappo"	Gawwada
+q$	q	7	U+0071 U+0024	"t’oq,šoq,ʔapaq"	Gawwada
+qq	q q	8	U+0071 U+0071	"hoqqaši,lofoqqo,ɓoqqos"	Gawwada
+r$	r	19	U+0072 U+0024	"mar,soor,t’arat’t’ar"	Gawwada
+rh	r h	3	U+0072 U+0068	"ʔorhanko,ʔorhe"	Gawwada
+rr	r r	24	U+0072 U+0072	"peerri,ʔarraapko,ʔirrawo"	Gawwada
+s$	s	35	U+0073 U+0024	"kaʔees,kollis,xoos"	Gawwada
+sh	s h	1	U+0073 U+0068	"ʔishay"	Gawwada
+ss	s s	6	U+0073 U+0073	"kaasse,kassaɗ,nassaɗ"	Gawwada
+t$	t	14	U+0074 U+0024	"kaat,keet,ɗot"	Gawwada
+tt	t t	108	U+0074 U+0074	"mukuʕitte,polisitto,sookitte"	Gawwada
+t’	tʼ	28	U+0074 U+2019	"mat’afa,mayt’a,xot’aɗ"	
+u$	u	5	U+0075 U+0024	"hantu,hantu_hantu,moʔo=nu"	Gawwada
+uu	uː	21	U+0075 U+0075	"minne_muunt’ito,yuut,ʔuruure"	Gawwada
+w$	w	2	U+0077 U+0024	"qaw,ʔintaw"	Gawwada
+wh	w h	4	U+0077 U+0068	"qawho,ʔalawho"	Gawwada
+ws	w s	1	U+0077 U+0073	"kawso"	Gawwada
+ww	w w	4	U+0077 U+0077	"hawwaɗ,kawwaʕko,kawwaʕko_ʔí=ħeereʔi"	Gawwada
+x$	x	2	U+0078 U+0024	"kox,lax"	Gawwada
+xx	x x	1	U+0078 U+0078	"ʔeemaɗakko_ʔixxete"	Gawwada
+y$	y	28	U+0079 U+0024	"haay,keeray,ʔishay"	Gawwada
+yy	y y	8	U+0079 U+0079	"kayye,mayyi,tayye"	Gawwada
+zz	z z	3	U+007A U+007A	"ʔizzah,ʔizzah_ʔizzah"	Gawwada
+ú$	ú	3	U+00FA U+0024	"ye=leefamú,ye=šaʔú,ye=ʔawšú"	Gawwada
+ħ$	ħ	1	U+0127 U+0024	"poħ"	Gawwada
+š$	ʃ	15	U+0161 U+0024	"šikkaaraš,ʔawšaš,ʔooš"	Gawwada
+šš	ʃ ʃ	7	U+0161 U+0161	"kala_ʔašša,qoššo,ʔašša"	Gawwada
+ɓ$	ɓ	1	U+0253 U+0024	"tuɓ"	Gawwada
+ɓɓ	ɓ ɓ	2	U+0253 U+0253	"rooɓɓile,xaaraɓɓo"	Gawwada
+ɗ$	ɗ	46	U+0257 U+0024	"toolaɗ,waarakkooɗ,xasooɗ"	Gawwada
+ɗɗ	ɗ ɗ	10	U+0257 U+0257	"huɗɗa=pa_xupin,qaɗɗummo,šaaɗɗe"	Gawwada
+ɠ$	ɠ	3	U+0260 U+0024	"hiɠ,poɠ,šiɠ"	Gawwada
+ɠɠ	ɠ ɠ	3	U+0260 U+0260	"poɠɠi,ɗaɠɠap,ɗaɠɠis"	Gawwada
+ɲɲ	ɲ ɲ	1	U+0272 U+0272	"mooɲɲe"	Gawwada
+ʔ$	ʔ	7	U+0294 U+0024	"fuʔ,woʔ,šaʔ"	Gawwada
+ʕ$	ʕ	14	U+0295 U+0024	"haʕ,puʕ,ɠeeʕ"	Gawwada
+ʕs	ʕ s	2	U+0295 U+0073	"ʔošoʕsaɗ"	Gawwada
+ʕʕ	ʕ ʕ	3	U+0295 U+0295	"hoʕʕi,leʕʕo"	Gawwada
+^=s	+ s	3	U+005E U+003D U+0073	"=sa,=si"	Gawwada
+^k’	kʼ	21	U+005E U+006B U+2019	"k’aca,k’arat’t’o,k’ám_pay"	
+^t’	tʼ	12	U+005E U+0074 U+2019	"t’af,t’arat’t’ar,t’iip"	
+ee$	eː	1	U+0065 U+0065 U+0024	"ʔee"	Gawwada
+na=sooʕa$	n a + s o o ʕ a	2	U+006E U+0061 U+003D U+0073 U+006F U+006F U+0295 U+0061 U+0024	"ʔille_na=sooʕa"	

@@ -1,0 +1,396 @@
+ID,WOLD_ID,Name,Latitude,Longitude,Glottocode,ISO639P3code
+Swahili,1,Swahili,-6.5,39,swah1253,swh
+Iraqw,2,Iraqw,-4,35.5,iraq1241,irk
+Gawwada,3,Gawwada,5.5,37.25,gaww1239,gwd
+Hausa,4,Hausa,12,7,haus1257,hau
+Kanuri,5,Kanuri,12,13,cent2050,knc
+TarifiytBerber,6,Tarifiyt Berber,34.5,-4,tari1263,rif
+SeychellesCreole,7,Seychelles Creole,-4.75,55.5,sese1246,crs
+Romanian,8,Romanian,46,25,roma1327,ron
+SeliceRomani,9,Selice Romani,48.091,17.9609,west2376,
+LowerSorbian,10,Lower Sorbian,51.75,14.3333,lowe1385,dsb
+OldHighGerman,11,Old High German,50.55,9.68333,oldh1241,
+Dutch,12,Dutch,52.5,6,dutc1256,nld
+English,13,English,52,0,stan1293,eng
+KildinSaami,14,Kildin Saami,67,37,kild1236,sjd
+Bezhta,15,Bezhta,42.0833,46.1667,bezh1248,kap
+Archi,16,Archi,42,46.8333,arch1244,aqc
+Manange,17,Manange,28,84.25,mana1288,nmm
+Ket,18,Ket,64,87,kett1243,ket
+Sakha,19,Sakha,62,130,yaku1245,
+Oroqen,20,Oroqen,51.2829,126.111,oroq1238,orh
+Japanese,21,Japanese,37,140,nucl1643,jpn
+MandarinChinese,22,Mandarin Chinese,34,110,mand1415,cmn
+Thai,23,Thai,16,101,thai1261,tha
+Vietnamese,24,Vietnamese,10.5,106.5,viet1252,vie
+WhiteHmong,25,White Hmong,26,105,hmon1333,mww
+CeqWong,26,Ceq Wong,3.8807,102.456,chew1245,cwg
+Indonesian,27,Indonesian,0,106,indo1316,ind
+Malagasy,28,Malagasy,-20,47,plat1254,plt
+Takia,29,Takia,-4.66667,146,taki1248,tbc
+Hawaiian,30,Hawaiian,19.5833,-155.5,hawa1245,haw
+Gurindji,31,Gurindji,-17.6667,130.667,guri1247,gue
+Yaqui,32,Yaqui,27.5,-110.25,yaqu1251,yaq
+ZinacantanTzotzil,33,Zinacantán Tzotzil,16.8333,-92.8333,tzot1259,tzz
+Qeqchi,34,Q'eqchi',16,-89.8333,kekc1242,kek
+Otomi,35,Otomi,20.1667,-98.8333,mezq1235,ote
+Saramaccan,36,Saramaccan,4.5,-55.5,sara1340,srm
+ImbaburaQuechua,37,Imbabura Quechua,0.333333,-78,imba1240,qvi
+Kalina,38,Kali'na,5.5,-56,gali1262,car
+Hup,39,Hup,0.166667,-69.25,hupd1244,jup
+Wichi,40,Wichí,-22.5,-62.5833,wich1264,mzh
+Mapudungun,41,Mapudungun,-38,-72,mapu1245,arn
+Bantu,42,Bantu,2,14,,
+AfroAsiatic,43,Afro-Asiatic,24.667,30.5942,,
+Ainu,44,Ainu,43,143,ainu1240,ain
+Akkadian,45,Akkadian,33.1,44.1,,
+Alanian,46,Alanian,44.6333,41.9336,,
+Albanian,47,Albanian,41,20,gheg1238,aln
+AlgonquianPowhatan,48,Algonquian (Powhatan),43.2567,-79.8691,,
+Altaic,49,Altaic,49,72,,
+Aluku,50,Aluku,2,-54,ndyu1242,djk
+Amharic,51,Amharic,10,38,amha1245,amh
+Egyptian,52,Egyptian,29.9792,31.1344,,
+Arabic,53,Arabic,25,42,stan1318,arb
+ArabicMoroccan,54,Arabic (Moroccan),34,-6,moro1292,ary
+ArawakanHaiti,55,Arawakan (Haiti),18.5393,-72.3364,,
+Arawakan,56,Arawakan,-2,-78,,
+Armenian,57,Armenian,40.1586,44.4993,nucl1235,hye
+IndoPortuguese,58,Indo-Portuguese,20.7147,70.977,indo1318,idb
+Assyrian,59,Assyrian,35,43,,
+AustroAsiatic,60,Austro-Asiatic,23,98,,
+Austronesian,61,Austronesian,24,121,,
+Avar,62,Avar,42.5,46.5,avar1256,ava
+Aymara,63,Aymara,-17,-69,sout2996,ayc
+Azerbaijani,64,Azerbaijani,40.5,48.5,sout2697,azb
+Balinese,65,Balinese,-8.33333,115.25,bali1278,ban
+Baltic,66,Baltic,55.9321,23.3142,,
+Banda,67,Banda,6.5,20.75,band1344,liy
+Banjarese,68,Banjarese,-3.3285,114.589,banj1239,bjn
+Barbacoan,69,Barbacoan,1,-78,,
+Bargam,70,Bargam,-4.88333,145.75,barg1252,mlp
+Bemba,71,Bemba,-10,28.25,bemb1258,bmy
+Bengali,72,Bengali,24,90,beng1280,ben
+BenueCongo,73,Benue-Congo,7,8,,
+Berber,74,Berber,32,-1,,
+Bulgarian,75,Bulgarian,42.5,25,bulg1262,bul
+Burushaski,76,Burushaski,36.5,74.5,buru1296,bsk
+Buryat,77,Buryat,52,108,,bua
+Cantonese,78,Cantonese,23,113,yuec1235,yue
+Carib,79,Carib,5.5,-56,gali1262,car
+Celtic,80,Celtic,50.1186,-5.53715,,
+CentralTai,81,Central Tai,23,106,,
+Chaochou,82,Ch’ao-chou,23.67,116.63,,
+Cholan,83,Ch’olan,18,-92.5,,
+Cholti,84,Ch’olti’,15.725,-88.5936,,
+Chorti,85,Ch’orti’,14.8333,-89.25,chor1273,caa
+Chadic,86,Chadic,10,14,,
+Cham,87,Cham,12,107.5,east2563,cjm
+Chamic,88,Chamic,12,108,,
+Chinese,89,Chinese,34,110,mand1415,cmn
+Hokkien,90,Hokkien,25,118,minn1241,nan
+Min,91,Min,24.4796,118.089,minb1244,mnp
+NorthernChinese,92,Northern Chinese,37,115,,
+Chol,93,Chol,17.75,-92.5,chol1285,cti
+Chontal,94,Chontal,16.1667,-95.75,high1242,chd
+Chuj,95,Chuj,15.9167,-91.5833,chuj1250,cac
+Latin,96,Latin,41.8955,12.4823,,
+ClassicalArabic,97,Classical Arabic,21.4167,39.8167,,
+ClassicalGreek,98,Classical Greek,37.9792,23.7166,,
+Germanic,99,Germanic,54.9158,8.33083,,
+Comorian,100,Comorian,-12,44,maor1244,swb
+Coptic,101,Coptic,26,32,copt1239,cop
+CuzcoQuechua,102,Cuzco Quechua,-14.5,-71,cusc1236,quz
+Czech,103,Czech,50,15,czec1258,ces
+Dagur,104,Dagur,48,124,daur1238,dta
+Datooga,105,Datooga,-4.33333,35.3333,dato1239,tcc
+Dendi,106,Dendi,12,3.5,dend1243,ddn
+Dharuk,107,Dharuk,-33.8671,151.207,,
+Dravidian,108,Dravidian,19,82,,
+Madurese,109,Madurese,-7,113.5,nucl1460,mad
+Khmer,110,Khmer,12.5,105,cent1989,khm
+Turkic,111,Turkic,48,70,,
+EastTurkic,112,East Turkic,43,66,,
+EasternAbenaki,113,Eastern Abenaki,44,-71,east2544,aaq
+EasternBantu,114,Eastern Bantu,1,30,,
+Spanish,115,Spanish,40,-4,stan1288,spa
+EuropeanColonialLanguage,116,European Colonial Language,,,,
+Evenki,117,Evenki,56,125,even1259,evn
+Fennic,118,Fennic,61,41,,
+Fijian,119,Fijian,-17.8333,178,fiji1243,fij
+FinnoUgric,120,Finno-Ugric,59,41,,
+Fon,121,Fon,6.41667,2.16667,fonn1241,fon
+Frankish,122,Frankish,49,4,,
+French,123,French,48,2,stan1290,fra
+FrenchAngloNorman,124,French (Anglo-Norman),50.86,0.571944,,
+OldFrench,125,Old French,49.2566,4.03309,,
+FrenchPicard,126,French (Picard),49.8939,2.29424,pica1241,pcd
+FrenchWalloon,127,French (Walloon),50.4641,4.86043,wall1255,wln
+Ful,128,Ful,11,-12,,ful
+Gaelic,129,Gaelic,57,-4,scot1245,gla
+Gajirrabeng,130,Gajirrabeng,-15.0833,129,gadj1243,gdh
+Gbe,131,Gbe,6.66667,2.5,,
+Geez,132,Ge‘ez,15.25,39.67,,
+Gedaged,133,Gedaged,-4.95,145.75,geda1237,gdd
+Georgian,134,Georgian,42,44,nucl1302,kat
+German,135,German,52,10,stan1295,deu
+GermanAustrian,136,German (Austrian),48,14,,
+EarlyNewHighGerman,137,Early New High German,49.7943,9.92749,,
+LowGerman,138,Low German,53,10,nort2627,nds
+MiddleHighGerman,139,Middle High German,48.5,8,midd1343,gmh
+MiddleLowGerman,140,Middle Low German,51.8,12.0667,midd1318,gml
+NewHighGerman,141,New High German,52,10,stan1295,deu
+GermanUpperSaxon,142,German (Upper Saxon),51.051,13.7337,uppe1400,sxu
+EastMiddleGerman,143,East Middle German,51.3397,12.3713,,
+WestGermanic,144,West Germanic,52,7,,
+Gothic,145,Gothic,43.2172,25.6111,goth1244,got
+GreaterTzeltalan,146,Greater Tzeltalan,17,-92.5,,
+Greek,147,Greek,37.0378,27.4239,mode1248,ell
+Guarani,148,Guaraní,-26,-56,para1311,gug
+GununaYajuch,149,Gününa Yajüch,-41,-67,puel1244,pue
+GuuguYimidhirr,150,Guugu Yimidhirr,-15,144.833,gugu1255,kky
+GuyaneseFrenchCreole,151,Guyanese French Creole,5,-53,guia1246,gcr
+Hebrew,152,Hebrew,31.5,34.8333,hebr1245,heb
+HighGerman,153,High German,52,10,stan1295,deu
+HindiUrdu,154,Hindi-Urdu,25,71,hind1269,hin
+ArabicHispanic,155,Arabic (Hispanic),37.1765,-3.59793,,
+HmongMien,156,Hmong-Mien,25,106,,
+Huastec,157,Huastec,22.0833,-99.3333,huas1256,hsf
+Hungarian,158,Hungarian,47,20,hung1274,hun
+Igbo,159,Igbo,6,7.33333,nucl1417,ibo
+Illyrian,160,Illyrian,42.0675,19.5131,,
+EnglishIndian,161,English (Indian),22.5697,88.3697,,
+FrenchIndianOcean,162,French (Indian Ocean),-21.1144,55.5325,,
+ArabicIndianOcean,163,Arabic (Indian Ocean),-6.16592,39.2026,,
+IndoEuropean,164,Indo-European,43,35,,
+IndoIranian,165,Indo-Iranian,32,70,,
+PortugueseIndian,166,Portuguese (Indian),15.493,73.818,,
+Iranian,167,Iranian,35,61,,
+MiddlePersian,168,Middle Persian,29.6167,52.5333,,xmn
+Italian,169,Italian,43,12,ital1282,ita
+OldItalian,170,Old Italian,43.7687,11.2569,,
+Itzaj,171,Itzaj,17,-89.8333,itza1241,itz
+JahHut,172,Jah Hut,5.75,101.5,jahh1242,jah
+Jaminjung,173,Jaminjung,-15.0833,130.5,djam1255,djd
+Jaru,174,Jaru,-18.75,128,jaru1254,ddj
+Javanese,175,Javanese,-7,111,java1254,jav
+Jingulu,176,Jingulu,-17.75,134,djin1251,jig
+Kichean,177,K’iche’an,15.1,-90.45,,
+Kalmyk,178,Kalmyk,44,83,kalm1243,xal
+KamSui,179,Kam-Sui,26.5783,106.713,,
+Kannada,180,Kannada,14,76,nucl1305,kan
+Karelian,181,Karelian,64,32,kare1335,krl
+Karranga,182,Karranga,-17.3333,132.083,mudb1240,mwd
+Kaurna,183,Kaurna,-34.25,138.5,,
+Khalkha,184,Khalkha,47,105,halh1238,khk
+Kija,185,Kija,-17.5,127.75,kitj1240,gia
+Komi,186,Komi,61,55,,kom
+Kongo,187,Kongo,-5,15,koon1244,kng
+Konso,188,Konso,5.5,37.5,kons1243,kxc
+Korean,189,Korean,37.5,128,kore1280,kor
+Kriol,190,Kriol,-18.1667,125.583,krio1252,rop
+Kurdish,191,Kurdish,36,44,,kur
+Lak,192,Lak,42.1667,47.1667,lakk1252,lbe
+Lao,193,Lao,18,103,laoo1244,lao
+LateLatin,194,Late Latin,44.4167,12.2,,
+MedievalLatin,195,Medieval Latin,44.5075,11.3514,,
+VulgarLatin,196,Vulgar Latin,40.8167,14.1167,,
+Nheengatu,197,Nheengatú,1.5,-67,nhen1239,yrl
+Loango,198,Loango,-4.8,11.85,,
+LoloBurmese,199,Lolo-Burmese,24,98,,
+ArabicMaghrebi,200,Arabic (Maghrebi),34,-6,moro1292,ary
+Makua,201,Makua,-15,38.6667,makh1264,vmw
+Malay,202,Malay,3,102,stan1306,zsm
+Malayalam,203,Malayalam,10,76.5,mala1464,mal
+Malgwa,204,Malgwa,11.5,13.75,wand1278,mfi
+Mande,205,Mande,10,-7,,
+Mandinka,206,Mandinka,13,-15.6667,mand1436,mnk
+Maori,207,Māori,-40,176,,
+FrenchMauritian,208,French (Mauritian),-20.2,57.5,,
+Mende,209,Mende,7.83333,-11.5,mend1266,men
+SpanishMexican,210,Spanish (Mexican),19.427,-99.1276,,
+MiddleChinese,211,Middle Chinese,34.2667,108.9,midd1344,ltc
+MiddleDutch,212,Middle Dutch,51.7,5.31667,midd1321,dum
+MiddleFrench,213,Middle French,47.5855,1.33095,midd1316,frm
+MiddleIranian,214,Middle Iranian,34,60,,
+MiddleMon,215,Middle Mon,15.8333,100.5,,
+MiddleNorthGermanic,216,Middle North Germanic,60,11,,
+Mikmaq,217,Mikmaq,45,-63,mikm1235,mic
+Minangkabau,218,Minangkabau,-1,101,mina1268,min
+Miriwung,219,Miriwung,-15.6667,129,miri1266,mep
+MixeZoquean,220,Mixe-Zoquean,16,-96,,
+Mocho,221,Mocho,15.3638,-92.2481,moch1257,mhc
+ModernKhmer,222,Modern Khmer,12.5,105,cent1989,khm
+ModernMon,223,Modern Mon,14.8333,100.5,monn1252,mnw
+Mon,224,Mon,14.8333,100.5,monn1252,mnw
+MonKhmer,225,Mon-Khmer,14.5517,102.909,,
+Mongolian,226,Mongolian,47,105,halh1238,khk
+Mongolic,227,Mongolic,45,100,,
+Mopan,228,Mopan,16.5833,-88.6667,mopa1243,mop
+Mudburra,229,Mudburra,-17.3333,132.083,mudb1240,mwd
+Nahuatl,230,Nahuatl,19.4333,-99.1333,,
+Narragansett,231,Narragansett,42.6667,-73.5,mohe1244,mof
+NeoLatin,232,Neo-Latin,59.85,17.6333,,
+Nepali,233,Nepali,28,85,nepa1252,nep
+Ngaliwurru,234,Ngaliwurru,-15.1667,130.667,,
+Ngardi,235,Ngardi,-21,133,,
+Ngarinyman,236,Ngarinyman,-16.5,130.5,ngar1235,nbj
+NigerCongo,237,Niger-Congo,6,9,,
+NiloSaharan,238,Nilo-Saharan,5,30,,
+Nobonob,239,Nobonob,-5.23367,145.789,nobo1238,gaw
+NorthGermanic,240,North Germanic,57.697,11.9864,,
+Norwegian,241,Norwegian,61,8,norw1259,nob
+Nungali,242,Nungali,-13.6767,130.714,nung1291,nug
+Nupe,243,Nupe,9.16667,5.41667,nupe1254,nup
+Nyamwezi,244,Nyamwezi,-5,33,nyam1276,nym
+Nyungar,245,Nyungar,-33.75,122,nyun1247,nys
+Occitan,246,Occitan,44,2,occi1239,oci
+Oghur,247,Oghur,56.1375,47.244,,
+OldChinese,248,Old Chinese,36.1214,114.317,,
+OldFrisian,249,Old Frisian,53.1439,8.21389,,
+Indic,250,Indic,28,76,,
+Sanskrit,251,Sanskrit,25.282,82.9563,sans1269,san
+OldIrish,252,Old Irish,54.5211,-6.76757,,
+OldJavanese,253,Old Javanese,-6.9196,106.927,,
+OldKhmer,254,Old Khmer,13.4333,103.833,,
+OldLithuaninian,255,Old Lithuaninian,55.7333,24.35,,
+OldMon,256,Old Mon,13.8194,100.058,,
+OldNorse,257,Old Norse,47,13,noon1243,nhu
+OldPersian,258,Old Persian,34.3883,47.4367,,
+OldProvencal,259,Old Provençal,46.5819,0.336111,oldp1253,pro
+OldRussian,260,Old Russian,58.545,31.2691,,
+OldSlavic,261,Old Slavic,40.6472,22.9639,,
+OldThai,262,Old Thai,14.35,100.583,,
+Oromo,263,Oromo,6,40,,
+Ossetian,264,Ossetian,43,44,osse1243,oss
+PacificPidginEnglish,265,Pacific Pidgin English,-9.5,147.167,tokp1240,tpi
+Pali,266,Pali,27.4833,83.2833,,
+PamaNyungan,267,Pama-Nyungan,-23,134,,
+Munda,268,Munda,23,85,,
+Persian,269,Persian,32,54,west2369,pes
+Elamite,270,Elamite,32.2,48.25,,
+Phoenician,271,Phoenician,34.1236,35.6511,,
+Pilaga,272,Pilagá,-25,-60,pila1245,plg
+Polish,273,Polish,52,20,poli1260,pol
+Portuguese,274,Portuguese,39,-8,port1283,por
+BatavianPortugueseCreole,275,Batavian Portuguese Creole,-6.21154,106.845,,
+PreMalagasy,276,Pre-Malagasy,-21,46,,
+PreMinangkabau,277,Pre-Minangkabau,-1.16667,101.167,,
+PreOromo,278,Pre-Oromo,9,40,,
+PreRangi,279,Pre-Rangi,-4.5,36,,
+PreSandawe,280,Pre-Sandawe,-5,35,,
+ProtoAustronesian,281,Proto-Austronesian,23,120.833,,
+ProtoAustroasiatic,282,Proto-Austroasiatic,24,97,,
+ProtoCentralEasternMalayoPolynesian,283,Proto Central-Eastern Malayo-Polynesian,-3.83333,121.333,,
+ProtoMalayoPolynesian,284,Proto-Malayo-Polynesian,-1.10612,114.144,,
+ProtoMonKhmer,285,Proto-Mon-Khmer,19,102,,
+ProtoOceanic,286,Proto-Oceanic,-5,150,,
+ProtoAltaic,287,Proto-Altaic,48,73,,
+ProtoChadic,288,Proto-Chadic,11,15,,
+ProtoFinnic,289,Proto-Finnic,60,40,,
+ProtoGermanic,290,Proto-Germanic,55.5,9,,
+ProtoGreaterKanjobalan,291,Proto-Greater Kanjobalan,16,-92,,
+ProtoHmongMien,292,Proto-Hmong-Mien,25,106,,
+ProtoIndoEuropean,293,Proto-Indo-European,42,36,,
+ProtoMixeZoquean,294,Proto-Mixe-Zoquean,17,-95,,
+ProtoMixean,295,Proto-Mixean,17.0833,-96,,
+ProtoMongolic,296,Proto-Mongolic,44,99,,
+ProtoSemitic,297,Proto-Semitic,33,40,,
+ProtoSlavic,298,Proto-Slavic,49,23,,
+ProtoTai,299,Proto-Tai,17,101,,
+ProtoWestChadic,300,Proto-West Chadic,12,9.25,,
+ProtoYucatecan,301,Proto-Yucatecan,18,-90,,
+Qanjobalan,302,Q’anjob’alan,16,-93,,
+Qiangic,303,Qiangic,30,102.667,,
+Quechua,304,Quechua,-14.25,-73,,
+Quiche,305,Quiche,15,-91.4167,kich1262,quc
+Ramoaaina,306,Ramoaaina,-4.13333,152.467,ramo1244,rai
+Rarotongan,307,Rarotongan,-21.2,-159.767,raro1241,rar
+Romance,308,Romance,45.7333,7.31667,,
+Russian,309,Russian,56,38,russ1263,rus
+Ryukyuan,310,Ryukyuan,26.3328,127.749,,
+Saharan,311,Saharan,14,9,,
+Sambaa,312,Sambaa,-4.25,38.25,sham1280,ksb
+Sandawe,313,Sandawe,-5,35,sand1273,sad
+GaelicScottish,314,Gaelic (Scottish),57,-4,scot1245,gla
+Selkup,315,Selkup,65,82,selk1253,sel
+Semitic,316,Semitic,34,41,,
+Sena,317,Sena,-18,35.25,nucl1396,seh
+Serbian,318,Serbian,44.8206,20.4622,serb1264,srp
+Slavic,319,Slavic,50,24,,
+EastSlavic,320,East Slavic,55,33,,
+Slovak,321,Slovak,49,20,slov1269,slk
+Songhay,322,Songhay,17,0,,
+SouthAslian,323,South Aslian,3,102,,
+SouthSlavic,324,South Slavic,43,21,,
+Macedonian,325,Macedonian,41.6667,21.75,mace1250,mkd
+Slovenian,326,Slovenian,46,15,slov1268,slv
+SouthSulawesi,327,South Sulawesi,-5.5,120,,
+SouthCushitic,328,South Cushitic,-4,37,,
+SouthernChinese,329,Southern Chinese,30,120,,
+Wardaman,330,Wardaman,-15.5,131,ward1246,wrr
+Sranan,331,Sranan,5.83333,-55.3333,sran1240,srn
+StandardArabic,332,Standard Arabic,25,42,stan1318,arb
+Sundanese,333,Sundanese,-7,107,sund1252,sun
+SurinamePortuguese,334,Suriname Portuguese,5.8232,-55.1679,,
+Tahitian,335,Tahitian,-17.6667,-149.583,tahi1242,tah
+Tai,336,Tai,18,101,,
+Taino,337,Taino,25.0343,-77.3963,tain1254,tnq
+Tamasheq,338,Tamasheq,23,6,,
+Tamil,339,Tamil,11,78.5,tami1289,tam
+Tatar,340,Tatar,56,49.5,tata1255,tat
+Tharrgari,341,Tharrgari,-23.75,114.917,dhar1247,dhr
+Tibetan,342,Tibetan,30,90,,
+TibetoBurman,343,Tibeto-Burman,29,94,,
+Loloish,344,Loloish,23,101,,
+TobaBatak,345,Toba Batak,2.5,99,bata1289,bbc
+TocharianA,346,Tocharian A,42.9667,89.1833,,
+TocharianB,347,Tocharian B,41.7167,82.9333,,
+Tojolabal,348,Tojolabal,16.3333,-91.5,tojo1241,toj
+TokPisin,349,Tok Pisin,-9.5,147.167,tokp1240,tpi
+Tolai,350,Tolai,-4.25,152.083,kuan1248,ksd
+Tubu,351,Tubu,16,15,daza1242,dzg
+Tukano,352,Tukano,0.5,-69.1667,tuca1252,tuo
+Tupi,353,Tupí,-6,-36,,
+TupiGuarani,354,Tupi-Guaraní,-6,-60,,
+Oghuric,355,Oghuric,56.1375,47.244,,
+Turkish,356,Turkish,39,35,nucl1301,tur
+Tzeltal,357,Tzeltal,16.8333,-92.25,tzel1255,tzb
+ChamulaTzotzil,358,Chamula Tzotzil,16.5,-92.6667,tzot1262,tzc
+Ukrainian,359,Ukrainian,49,33,ukra1253,ukr
+Unidentified,360,Unidentified,,,,
+UpperSorbian,361,Upper Sorbian,51.8333,14.5,uppe1395,hsb
+Ute,362,Ute,39,-109,utes1238,ute
+VlaxRomani,363,Vlax Romani,46,21,vlax1238,rmy
+Voltaic,364,Voltaic,11,-2,,
+Walmajarri,365,Walmajarri,-19.5,125.75,walm1241,wmt
+Wambaya,366,Wambaya,-18.6667,135.75,wamb1258,wmb
+Warlmanpa,367,Warlmanpa,-21.82,132.58,wail1242,wlr
+Warlpiri,368,Warlpiri,-20,132.333,warl1254,wbp
+Warluwarra,369,Warluwarra,-22,138.5,warl1256,wrb
+Warluwarric,370,Warluwarric,-23,139,,
+Warumungu,371,Warumungu,-19.6333,134.167,waru1265,wrm
+Waskia,372,Waskia,-4.5,146,wask1241,wsk
+Welsh,373,Welsh,52,-3,wels1247,cym
+EnglishWestAfricanCoastal,374,English (West African Coastal),5.55,-0.216667,nige1257,pcm
+FrenchWestAfrican,375,French (West African),5.33333,-4.03333,,
+MalayoPolynesian,376,Malayo-Polynesian,-1,114,,
+WesternMayan,377,Western Mayan,18,-93,,
+Wiradjuri,378,Wiradjuri,-36,146,wira1262,wrh
+Wolof,379,Wolof,15.25,-16,nucl1347,wol
+Tabgac,380,Tabgač,40.82,111.65,,
+Xiongnu,381,Xiongnu,46,106,,
+Yanyuwa,382,Yanyuwa,-16.4167,137.167,yany1243,jao
+Yao,383,Yao,-14.5,35.5,yaoo1241,yao
+Yoruba,384,Yoruba,8,4.33333,yoru1245,yor
+Yucatecan,385,Yucatecan,19,-91,,
+Zaramo,386,Zaramo,-6.75,39,zara1247,zaj
+Zigua,387,Zigua,-6,38.6667,zigu1242,ziw
+Kumyk,388,Kumyk,43,47.3333,kumy1244,kum
+Azeri,389,Azeri,38,48,sout2697,azb
+Punic,390,Punic,36.8531,10.3231,puni1241,xpu
+Tongan,391,Tongan,-21.1667,-175.167,tong1325,ton
+Samoan,392,Samoan,-13.9167,-171.833,samo1305,smo
+Marquesan,393,Marquesan,-8.91667,-140.083,sout2866,mqm
+Croatian,394,Croatian,45.8103,15.9781,croa1245,hrv
+Twi,395,Twi,6.33333,-1.25,,twi

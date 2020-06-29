@@ -1,0 +1,159 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	39	U+005E		
+$	NULL	29	U+0024		
+(	NULL	106	U+0028	"(h)nac,scorp(i)o,uzar(ûn)halb"	
+)	NULL	104	U+0029	"bes(a)mo,fers(a)na,un(h)rîfi"	
+^îs$	î/iː s	1	U+005E U+00EE U+0073 U+0024	"îs"	Old High German
+_	_	4	U+005F	"giboran_werdan,wio_manage,zwêne_(zwô"	Old High German
+a	a	569	U+0061	"(h)wal,firrâtan,gomman"	Old High German
+b	b	101	U+0062	"bilîban,scabo,wintbrâwa"	Old High German
+c	c	48	U+0063	"deckî,mennisco,scuoh"	Old High German
+d	d	72	U+0064	"gidank,snîdan,zierida"	Old High German
+e	e	391	U+0065	"(h)wer,fleisc,frîen"	Old High German
+f	f	62	U+0066	"anafang,opfar,zwîfal"	Old High German
+g	g	128	U+0067	"fingar,giziug(i),sigu"	Old High German
+h	x	87	U+0068	"giheizan,lîh(hamo),skuohbuozo"	Old High German
+i	i	488	U+0069	"bilîban,leidazzen,ôheim"	Old High German
+j	j	2	U+006A	"frî(j)atag,fî(j)ant"	
+k	k	74	U+006B	"birka,fiskâri,thrucken"	Old High German
+l	l	207	U+006C	"haltan,intlîhan,sêla"	Old High German
+m	m	78	U+006D	"(gi)smecken,leim(o),smidôn"	Old High German
+n	n	258	U+006E	"hant,wintar,ôrring"	Old High German
+o	o	228	U+006F	"fuolen,guot,wort"	Old High German
+p	p	34	U+0070	"spiagal,tep(p)it,zapfo"	Old High German
+q	q	2	U+0071	"anaqueman,biqueman"	Old High German
+r	r	338	U+0072	"(h)ruofan,bilarn,tiuri"	Old High German
+s	s	86	U+0073	"(h)niosan,hîwiski,mezzisahs"	Old High German
+t	t	198	U+0074	"(h)leitara,intûhhan,sûftôn"	Old High German
+u	u	243	U+0075	"boumwolla,ruodarôn,zunten"	Old High German
+v	v	2	U+0076	"kevar,ovan"	Old High German
+w	w	48	U+0077	"(h)wal,(h)wîz,houwa"	Old High German
+z	ts	45	U+007A	"intsliozan,meizil,stôzan"	Old High German
+â	â/aː	69	U+00E2	"mâlên,sâen,zoubarâri"	Old High German
+ê	ê/eː	36	U+00EA	"lêo,lêren,stên"	Old High German
+î	î/iː	61	U+00EE	"fartîg,skînan,umbisnîda"	Old High German
+ô	ô/oː	76	U+00F4	"holôn,jagôn,scouwôn"	Old High German
+û	û/uː	26	U+00FB	"(h)lûta,nâhgibûr(o),scûfla"	Old High German
+^a	a	44	U+005E U+0061	"ackar,ahs(a)la,altiron"	Old High German
+^b	b	101	U+005E U+0062	"biginnan,bilidôn,bul(l)a"	Old High German
+^d	d	30	U+005E U+0064	"ding,dingen,drescan"	Old High German
+^e	e	36	U+005E U+0065	"eban(i),enkilîn,esil"	Old High German
+^f	f	98	U+005E U+0066	"fimfzehan,findan,fî(j)ant"	Old High German
+^g	g	67	U+005E U+0067	"ginuog,giozan,gireht"	Old High German
+^h	h	90	U+005E U+0068	"haft,hemidi,hêrisôn"	Old High German
+^i	i	24	U+005E U+0069	"ibu,innarûnhalb,intûhhan"	Old High German
+^j	j	11	U+005E U+006A	"jagôn,jukkido,jungeling"	Old High German
+^k	k	63	U+005E U+006B	"kezzil,kuo,kussîn"	Old High German
+^l	l	55	U+005E U+006C	"lamb,lêo,lîh(hamo)"	Old High German
+^m	m	56	U+005E U+006D	"mahhunga,melo,missen"	Old High German
+^n	n	46	U+005E U+006E	"nabulo,narwa,nasa"	Old High German
+^o	o	12	U+005E U+006F	"obaz,ouga,ovan"	Old High German
+^p	p	11	U+005E U+0070	"pelliz,perala,pfîfôn"	Old High German
+^r	r	41	U+005E U+0072	"reba,reganbogo,rouh"	Old High German
+^s	s	185	U+005E U+0073	"sinwel,skopf,springan"	Old High German
+^t	t	53	U+005E U+0074	"tiuri,trahan,tûba"	Old High German
+^u	u	16	U+005E U+0075	"ubarmorgane,unreht,untar"	Old High German
+^v	v	1	U+005E U+0076	"vanga"	Old High German
+^w	w	80	U+005E U+0077	"werfan,wizzan,wâr"	Old High German
+^z	ts	36	U+005E U+007A	"zapfo,zimbarman,zoubar"	Old High German
+^â	â/aː	7	U+005E U+00E2	"âdra,âl,âtamôn"	Old High German
+^ê	ê/eː	2	U+005E U+00EA	"êrgesteren,êristo"	Old High German
+^î	î/iː	2	U+005E U+00EE	"îlen,îsa(r)n"	Old High German
+^ô	ô/oː	4	U+005E U+00F4	"ôrlappa,ôrring,ôrsmero"	Old High German
+^û	û/uː	4	U+005E U+00FB	"ûfgangan,ûfgân,ûzgangan"	Old High German
+a$	a	174	U+0061 U+0024	"nasa,scultira,zwisila"	Old High German
+b$	b	18	U+0062 U+0024	"krumb,lob,tumb"	Old High German
+bb	bː	4	U+0062 U+0062	"ebbunga,ribbi,spinnawebbi"	Old High German
+c$	c	15	U+0063 U+0024	"folc,tisc,tranc"	Old High German
+ch	x	1	U+0063 U+0068	"gisnarchôn"	Old High German
+d$	d	21	U+0064 U+0024	"(h)rind,mord,pfad"	Old High German
+dd	dː	2	U+0064 U+0064	"eddeswanne,feddah"	Old High German
+e$	e	7	U+0065 U+0024	"eddeswanne,sie,ubarmorgane"	Old High German
+f$	f	19	U+0066 U+0024	"scâf,skopf,wolf"	Old High German
+ff	fː	8	U+0066 U+0066	"gioffanôn,pheffur,stioffater"	Old High German
+fs	f s	2	U+0066 U+0073	"stiofsunu,wefsa"	Old High German
+g$	g	42	U+0067 U+0024	"bitrog,frî(j)atag,heilag"	Old High German
+gg	gː	10	U+0067 U+0067	"gizwiggen,irhuggen,sneggo"	Old High German
+gs	g s	1	U+0067 U+0073	"langsam"	Old High German
+h$	h	23	U+0068 U+0024	"astrih,hantscuoh,thah"	Old High German
+hh	xː	32	U+0068 U+0068	"bisuohhen,forazeihhan,kohhôn"	Old High German
+hs	x s	7	U+0068 U+0073	"egidehsa,ohso,wahsan"	Old High German
+i$	i	83	U+0069 U+0024	"lîhti,nâtâri,rîhhi"	Old High German
+k$	k	1	U+006B U+0024	"gidank"	Old High German
+kk	kː	5	U+006B U+006B	"akkarman,kinnibakko,trukkan"	Old High German
+l$	l	52	U+006C U+0024	"sinwel,sluzzil,steinbôzil"	Old High German
+lh	l h	1	U+006C U+0068	"kelhnezzi"	Old High German
+ll	lː	16	U+006C U+006C	"fellen,tollunga,wella"	Old High German
+ls	l s	3	U+006C U+0073	"giswulst,halsbant,halsen"	Old High German
+m$	m	21	U+006D U+0024	"eidum,pînboum,scûm"	Old High German
+mm	mː	4	U+006D U+006D	"flamma,gimma,gomman"	Old High German
+mw	m w	1	U+006D U+0077	"boumwolla"	Old High German
+n$	n	377	U+006E U+0024	"ruowên,slâfan,trukkan"	Old High German
+nh	n x	3	U+006E U+0068	"einhunt,innarûnhalb,unholda"	Old High German
+nn	nː	27	U+006E U+006E	"innarûnhalb,tanna,widarisinnan"	Old High German
+ns	n s	8	U+006E U+0073	"finstar,finstarnessi,segansa"	Old High German
+nw	n w	1	U+006E U+0077	"sinwel"	Old High German
+o$	o	100	U+006F U+0024	"hano,sterro,zecko"	Old High German
+p$	p	1	U+0070 U+0024	"flôzskip"	Old High German
+ph	pf	3	U+0070 U+0068	"kuphar,trophôn,tuphin"	Old High German
+pp	pː	1	U+0070 U+0070	"ôrlappa"	Old High German
+r$	r	81	U+0072 U+0024	"fior,muoter,sil(a)bar"	Old High German
+rh	r h	1	U+0072 U+0068	"irhuggen"	Old High German
+rr	rː	7	U+0072 U+0072	"sterro,turri,ôrring"	Old High German
+rs	r s	10	U+0072 U+0073	"fers(a)na,firstantan,ôrsmero"	Old High German
+rw	r w	3	U+0072 U+0077	"irwahhên,narwa,nidarwallôn"	Old High German
+s$	s	8	U+0073 U+0024	"ackus,glas,gras"	Old High German
+ss	sː	6	U+0073 U+0073	"jussal,kussen,kussîn"	Old High German
+sw	s w	2	U+0073 U+0077	"eddeswanne,giswulst"	Old High German
+t$	t	96	U+0074 U+0024	"einhunt,glat,swert"	Old High German
+th	θ	1	U+0074 U+0068	"firthionôn"	Old High German
+ts	ts	3	U+0074 U+0073	"hantscuoh,intsagen,intsliozan"	Old High German
+tt	tː	15	U+0074 U+0074	"mittawehha,muottât,zittarôn"	Old High German
+tw	t w	2	U+0074 U+0077	"antwurten,samantwist"	Old High German
+u$	u	12	U+0075 U+0024	"fihu,nu,sigu"	Old High German
+z$	ts	27	U+007A U+0024	"(h)niz,(h)nuz,holz"	Old High German
+zs	tsː	2	U+007A U+0073	"flôzskip,fuozspor"	Old High German
+zw	ts w	3	U+007A U+0077	"gizwiggen,wîzwahs,zwêne_(zwô"	Old High German
+zz	sː	27	U+007A U+007A	"ezzan,mezzan,spizzi"	Old High German
+â$	â/aː	1	U+00E2 U+0024	"wantâ"	Old High German
+âh	â/aː h	9	U+00E2 U+0068	"bifâhan,nâhen,nâhgibûr(o)"	Old High German
+âs	â/aː s	2	U+00E2 U+0073	"blâsa,kâsi"	Old High German
+âw	â/aː w	6	U+00E2 U+0077	"blâwî,brâwezzen,klâwa"	Old High German
+êh	ê/eː h	1	U+00EA U+0068	"zêha"	Old High German
+êw	ê/eː w	1	U+00EA U+0077	"wêwa"	Old High German
+î$	î/iː	11	U+00EE U+0024	"blâwî,trûrigî,werî"	Old High German
+îh	î/iː h	5	U+00EE U+0068	"intlîhan,lîhan,lîhti"	Old High German
+îs	î/iː s	3	U+00EE U+0073	"wîsa,wîsi"	Old High German
+îw	î/iː w	3	U+00EE U+0077	"hîwen,hîwiski,spîwan"	Old High German
+ô$	ô/oː	3	U+00F4 U+0024	"(h)rô,naskô,zwêne_(zwô"	Old High German
+ôs	ô/oː s	2	U+00F4 U+0073	"hintarôsto,lôsen"	Old High German
+ôw	ô/oː w	1	U+00F4 U+0077	"gilôwôn"	Old High German
+û$	û/uː	2	U+00FB U+0024	"dû,sû"	Old High German
+ûs	û/uː s	2	U+00FB U+0073	"dûsunt,rûsa"	Old High German
+ûw	û/uː w	1	U+00FB U+0077	"bûwan"	Old High German
+^dw	d w	1	U+005E U+0064 U+0077	"dwahila"	Old High German
+^kw	kʷ	3	U+005E U+006B U+0077	"kwena,kwiti"	Old High German
+^ph	pf	1	U+005E U+0070 U+0068	"pheffur"	Old High German
+^qu	kʷ	4	U+005E U+0071 U+0075	"quemaling,queman,quirn(a)"	Old High German
+^sw	s w	15	U+005E U+0073 U+0077	"swam(b),swester,swâri"	Old High German
+^th	θ	6	U+005E U+0074 U+0068	"thah,thiorna,thonarestag"	Old High German
+^zw	ts w	7	U+005E U+007A U+0077	"zweinzug,zwêne_(zwô,zwîfal"	Old High German
+^âh	â/aː h	1	U+005E U+00E2 U+0068	"âhten"	Old High German
+^êw	ê/eː w	2	U+005E U+00EA U+0077	"êwa,êwawarto"	Old High German
+^ôh	ô/oː h	1	U+005E U+00F4 U+0068	"ôheim"	Old High German
+^ôs	ô/oː s	1	U+005E U+00F4 U+0073	"ôstan"	Old High German
+^ûw	û/uː w	1	U+005E U+00FB U+0077	"ûwila"	Old High German
+hs$	x s	5	U+0068 U+0073 U+0024	"mezzisahs,skarasahs,wîzwahs"	Old High German
+ls$	l s	1	U+006C U+0073 U+0024	"hals"	Old High German
+ns$	n s	1	U+006E U+0073 U+0024	"gans"	Old High German
+ph$	pf	5	U+0070 U+0068 U+0024	"(h)naph,kroph,stumph"	Old High German
+rh$	r h	1	U+0072 U+0068 U+0024	"furh"	Old High German
+rsw	r s w	1	U+0072 U+0073 U+0077	"firswintan"	Old High German
+âh$	â/aː h	2	U+00E2 U+0068 U+0024	"nâh"	Old High German
+âhh	â/aː xː	2	U+00E2 U+0068 U+0068	"lâhhan,sprâhhûs"	Old High German
+îh$	î/iː h	5	U+00EE U+0068 U+0024	"hazlîh,lîh,man(a)lîh"	Old High German
+îhh	î/iː xː	3	U+00EE U+0068 U+0068	"lîhhâr,manalîhha,rîhhi"	Old High German
+ôh$	ô/oː h	4	U+00F4 U+0068 U+0024	"flôh,fôh,hôh"	Old High German
+ûh$	û/uː h	3	U+00FB U+0068 U+0024	"bûh,rûh"	Old High German
+ûhh	û/uː xː	1	U+00FB U+0068 U+0068	"intûhhan"	Old High German
+ûs$	û/uː s	6	U+00FB U+0073 U+0024	"fledarmûs,mûs,sprâhhûs"	Old High German

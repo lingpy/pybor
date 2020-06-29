@@ -1,0 +1,201 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	143	U+005E		
+$	NULL	348	U+0024		
+^īᵑ$	ĩː	1	U+005E U+012B U+1D51 U+0024	"īᵑ"	Bezhta
+^boco$	b o ts o	1	U+005E U+0062 U+006F U+0063 U+006F U+0024	"boco"	Bezhta
+^ničdiyo$	n i tʃ d i j o	1	U+005E U+006E U+0069 U+010D U+0064 U+0069 U+0079 U+006F U+0024	"ničdiyo"	Bezhta
+-	+	580	U+002D	"-ĩzok’-,gisak-,xasar_-ow-"	Bezhta
+_	_	221	U+005F	"ac’ona_hõs,müɣäƛ_-ece-,žawab_niccas_suk’o"	Bezhta
+a	a	740	U+0061	"bazay-wodo,mač’a,ɬaq’eyo"	Bezhta
+b	b	109	U+0062	"habo,rähät_bökči-,t’ibit’izi_-ow-"	Bezhta
+c	ts	61	U+0063	"coco,heƛaɬcoʔos,icilo_iyo"	Bezhta
+d	d	137	U+0064	"küdäy,maydan,ƛaxmadi"	Bezhta
+e	e	292	U+0065	"betana,sestra,ƛobaƛ’as_mex"	Bezhta
+f	f	1	U+0066	"delfin"	Bezhta
+g	g	51	U+0067	"-äᵑqelagi,gogā,ãga"	Bezhta
+h	h	29	U+0068	"-ẽhe-,ilahiyab,zahmatab"	Bezhta
+i	i	487	U+0069	"hič’egol-,sino,xida"	Bezhta
+j	j	1	U+006A	"pijatnica"	Bezhta
+k	k	100	U+006B	"baybikik,hako,kak_yow-"	Bezhta
+l	l	242	U+006C	"hädälä-,äᵑɣäläš_kik,ɣalat’"	Bezhta
+m	m	99	U+006D	"häräm_-ow-,mex-mexlaʔ,xamiz"	Bezhta
+n	n	152	U+006E	"nene,sap’uni,ungo-ungoyab"	Bezhta
+o	o	455	U+006F	"-oɬol-,hoʔō,ƛ’odo"	Bezhta
+p	p	19	U+0070	"lampa,zaipab,šorpa"	Bezhta
+q	q	63	U+0071	"qöqilö,yõsoqan,ölöqänäb"	Bezhta
+r	r	143	U+0072	"buxari,pikro_baq-,ƛ’ärƛ’äri"	Bezhta
+s	s	108	U+0073	"kalaɣas_q’ī,k’emusa,k’iso"	Bezhta
+t	t	62	U+0074	"toxtur,wanas_ustar,zis_toql-"	Bezhta
+u	u	164	U+0075	"muk’ur_-aq-,niƛal_nuc’os,šuša"	Bezhta
+v	v	2	U+0076	"atvyorka,četverg"	Bezhta
+w	w	75	U+0077	"kalkal_bow-,qowo-,q’owa"	Bezhta
+x	x	70	U+0078	"koxi,yöxöš_yow-,ƛüxö-"	Bezhta
+y	j	178	U+0079	"sud_yow-,yöxöš_yow-,ãɬo_yoc’-"	Bezhta
+z	z	69	U+007A	"boza,edeʔzi_-aq-,zizida-"	Bezhta
+ã	ã	11	U+00E3	"-ãk-,-ãsa-,hãq’q’alaʔ"	Bezhta
+ä	æ	201	U+00E4	"hält’i,häräkät_baɣo-,ƛämmö"	Bezhta
+õ	õ	20	U+00F5	"aqo_y-õq’o-yo,kõwa-,ɬõh_t’ikel-"	Bezhta
+ö	œ	62	U+00F6	"böt’t’ö,höᵑššöna,šöʔ"	Bezhta
+ü	y	51	U+00FC	"müɣäƛ_-ẽƛ’e-,püšük’da-,xidalaƛko_čürɣän"	Bezhta
+ā	aː	14	U+0101	"hāyo,ƛiyodā_-ẽƛ’e-,ƛ’oddāk-"	Bezhta
+č	tʃ	37	U+010D	"näp’či,ručka,xidalaƛko_čürɣän"	Bezhta
+ĩ	ĩ	15	U+0129	"-ĩso-,-ĩze-,hĩxɬ-"	Bezhta
+ī	iː	2	U+012B	"-īqo-,nīyo"	Bezhta
+ō	oː	6	U+014D	"k’ok’ōɬi,mäče_laxƛōɬi,talih_buɣōɬi"	Bezhta
+š	ʃ	50	U+0161	"bišeldabāɬi,mašinalis_nomerla,üštel"	Bezhta
+ũ	ũ	9	U+0169	"-ũco-,-ũcola-,cũha"	Bezhta
+ž	ʒ	32	U+017E	"böžäräb,hažatxan,žuržah"	Bezhta
+ƛ	tɬ	76	U+019B	"baƛos_mäče,buƛo,ƛ’ǟ_niƛ-"	Bezhta
+ǟ	æː	12	U+01DF	"müɣättǟš,müɣättǟš_q’äm,ƛ’ǟ_niƛ-"	Bezhta
+ȭ	õː	1	U+022D	"büwähȭɬi"	Bezhta
+ɣ	ɣ	65	U+0263	"-eɣ-,müɣättǟš,ɣalɣači"	Bezhta
+ɬ	ɬ	73	U+026C	"ac’ona_ɬina,berhenɬi,dandeɬizi_-ow-"	Bezhta
+ʔ	ʔ	56	U+0294	"häʔä,ziʔoƛ’a,šeblaʔƛ’ā_-ẽƛ’e-"	Bezhta
+ẽ	ẽ	27	U+1EBD	"-ẽxel-,c’o_yẽyoɬi,müɣäƛ_-ẽƛ’e-"	Bezhta
+‘	ʕ	2	U+2018	"möƛ‘ö,ɬiq‘ol-"	Bezhta
+^A	A/a	1	U+005E U+0041	"Allah"	Bezhta
+^B	B/b	1	U+005E U+0042	"Bet’erhan"	Bezhta
+^a	a	46	U+005E U+0061	"ac’ona_hõs,aguri,anta"	Bezhta
+^b	b	108	U+005E U+0062	"bank’a,baybikik,böƛöqä"	Bezhta
+^c	ts	19	U+005E U+0063	"ciq’i,cot’ā,cumri"	Bezhta
+^d	d	24	U+005E U+0064	"daru,dawla,däräy"	Bezhta
+^e	e	7	U+005E U+0065	"enekzi_-aq-,erkenab_suk’o,ezzeʔan"	Bezhta
+^f	f	1	U+005E U+0066	"ftornik"	Bezhta
+^g	g	25	U+005E U+0067	"gihla-,got’,gul-"	Bezhta
+^h	h	111	U+005E U+0068	"häžä,hükümät,hũk’ā"	Bezhta
+^i	i	43	U+005E U+0069	"ilos_ulka,isi,it’ino_xät’ä"	Bezhta
+^k	k	70	U+005E U+006B	"kalendar,kašiš,kilos_okko"	Bezhta
+^l	l	15	U+005E U+006C	"laga,lampa,leybi"	Bezhta
+^m	m	97	U+005E U+006D	"maq’o,müɣättǟš_q’äm,mǟ"	Bezhta
+^n	n	48	U+005E U+006E	"niqeš_xöxö,niƛal_nuc’os,nuko-"	Bezhta
+^o	o	9	U+005E U+006F	"okda-,otaxi,ot’olāɬi"	Bezhta
+^p	p	39	U+005E U+0070	"panar,picka,pol"	Bezhta
+^q	q	28	U+005E U+0071	"qartay,qohdagi,qälämčäʔkö"	Bezhta
+^r	r	21	U+005E U+0072	"raxas,rul,ruz"	Bezhta
+^s	s	49	U+005E U+0073	"sakoneli,sibowas_mex,sihruɬi"	Bezhta
+^t	t	33	U+005E U+0074	"tammako,tato,tušman"	Bezhta
+^u	u	14	U+005E U+0075	"ukliʔis,unti,urumi"	Bezhta
+^w	w	16	U+005E U+0077	"warač,waya,wixadnoy"	Bezhta
+^x	x	49	U+005E U+0078	"xamiz,xasar_-ow-,xȫᵑ"	Bezhta
+^y	j	44	U+005E U+0079	"yagi,yäže_niƛ-,yöxöš_yow-"	Bezhta
+^z	z	26	U+005E U+007A	"zama-zamalliʔ,zis_toql-,zuk’-zak’-"	Bezhta
+^ã	ã	11	U+005E U+00E3	"ãq’,ãq’lo_gäččö,ãq’o"	Bezhta
+^ä	æ	22	U+005E U+00E4	"ädäläb,änƛ’e,äyibiyaw_egalal"	Bezhta
+^õ	õ	10	U+005E U+00F5	"õs,õx_gähiyo,õƛ’o"	Bezhta
+^ö	œ	10	U+005E U+00F6	"ölöqänäb,ömrö,öžö"	Bezhta
+^ü	y	2	U+005E U+00FC	"üč’äräb,üštel"	Bezhta
+^č	tʃ	16	U+005E U+010D	"čadir,čaynik’,čikeyo"	Bezhta
+^ĩ	ĩ	1	U+005E U+0129	"ĩzo"	Bezhta
+^š	ʃ	29	U+005E U+0161	"šayt’an-mašina,šünä,šüššö"	Bezhta
+^ž	ʒ	13	U+005E U+017E	"žanaza,žawab_niccas_suk’o,žeysa"	Bezhta
+^ƛ	tɬ	22	U+005E U+019B	"ƛis_zaman,ƛiyodā_-ẽƛ’e-,ƛišiyo"	Bezhta
+^ɣ	ɣ	19	U+005E U+0263	"ɣeya-q’ämis,ɣiz,ɣudelo"	Bezhta
+^ɬ	ɬ	27	U+005E U+026C	"ɬiq‘ol-,ɬišel-,ɬüʔ-ƛ-"	Bezhta
+^ʔ	ʔ	2	U+005E U+0294	"ʔãʔũ,ʔäᵑʔäᵑla-"	Bezhta
+^ẽ	ẽ	7	U+005E U+1EBD	"ẽxe_k’äyƛöčäš_mäče,ẽxe_yaɣo-,ẽxeƛ’alƛ’ā_-ẽƛ’e-"	Bezhta
+a$	a	156	U+0061 U+0024	"aqo-qowa,sora,šorpa"	Bezhta
+b$	b	44	U+0062 U+0024	"miskinab,xirayab,ölöqänäb"	Bezhta
+bs	b s	1	U+0062 U+0073	"habsaʔat"	Bezhta
+c$	ts	11	U+0063 U+0024	"c’oys_mic,k’ic,nic"	Bezhta
+cc	ts ts	5	U+0063 U+0063	"-ẽccak’-,waccal,yaccal"	Bezhta
+c’	tsʼ	51	U+0063 U+2019	"-oc’iyo,ac’ona,xuc’mǟ"	
+d$	d	11	U+0064 U+0024	"mesed,sud,šed"	Bezhta
+dd	d d	12	U+0064 U+0064	"c’uddo_c’emuc’,ƛ’oddã_-aɣol-,ƛ’oddã_-ẽƛ’e-"	Bezhta
+e$	e	45	U+0065 U+0024	"hakoɬeče,ƛile,ɣäše"	Bezhta
+g$	g	4	U+0067 U+0024	"nalog,četverg,šag"	Bezhta
+h$	h	8	U+0068 U+0024	"moh,peh,tambih"	Bezhta
+i$	i	136	U+0069 U+0024	"hayri,nukōɬi,šakɬi"	Bezhta
+ii	iː	1	U+0069 U+0069	"-äᵑčiic’l-"	Bezhta
+k$	k	11	U+006B U+0024	"bank,katilok,tok"	Bezhta
+kk	k k	5	U+006B U+006B	"kikko,kilos_okko,okko_-ow-"	Bezhta
+k’	kʼ	79	U+006B U+2019	"-ek’e-,-ok’-,muk’ur_-aq-"	
+l$	l	33	U+006C U+0024	"pil,räʔäl,xiyal"	Bezhta
+ll	l l	8	U+006C U+006C	"Allah,illa,kello"	Bezhta
+m$	m	6	U+006D U+0024	"hem,müɣättǟš_q’äm,t’im"	Bezhta
+mm	m m	2	U+006D U+006D	"tammako,ƛämmö"	Bezhta
+n$	n	57	U+006E U+0024	"ezzeʔan,q’orgiyan,zaman"	Bezhta
+nn	n n	3	U+006E U+006E	"dunnal,panidennik,sunnat"	Bezhta
+ns	n s	1	U+006E U+0073	"insan"	Bezhta
+o$	o	226	U+006F U+0024	"aqo,hino,ɬo"	Bezhta
+oo	oː	1	U+006F U+006F	"käčeɬiyooɬi"	Bezhta
+p$	p	1	U+0070 U+0024	"pöp"	Bezhta
+p’	pʼ	10	U+0070 U+2019	"näp’či,p’ilp’il,sap’uni"	
+q$	q	9	U+0071 U+0024	"halaɬcolāq,hawa-baq,piq"	Bezhta
+qq	q q	1	U+0071 U+0071	"biqqaʔdās_mäče"	Bezhta
+q’	qʼ	89	U+0071 U+2019	"aq’o_y-ẽƛe-,iq’aʔcas_suk’o,müq’ö-box"	
+q”	qʼ	2	U+0071 U+201D	"-õq”o-,öᵑq”öbuƛ’o"	Bezhta
+r$	r	30	U+0072 U+0024	"axir,paq’ir,q’or"	Bezhta
+rh	r h	6	U+0072 U+0068	"Bet’erhan,bet’erhan,gurhel"	Bezhta
+rr	r r	2	U+0072 U+0072	"hörrä-,örrä"	Bezhta
+rs	r s	2	U+0072 U+0073	"dursa"	Bezhta
+s$	s	34	U+0073 U+0024	"adris,has,ɣeya-q’ämis"	Bezhta
+ss	s s	1	U+0073 U+0073	"qusso"	Bezhta
+t$	t	29	U+0074 U+0024	"alat,tit,tualet"	Bezhta
+tt	t t	3	U+0074 U+0074	"müɣättǟ_-üƛ’-,müɣättǟš,müɣättǟš_q’äm"	Bezhta
+t’	tʼ	77	U+0074 U+2019	"it’ino_äkö,p’ip’it’i,sorabet’e"	
+u$	u	8	U+0075 U+0024	"asru,hudizu,zahru"	Bezhta
+w$	w	7	U+0077 U+0024	"kaw,näʔänä_bow,q’orolaw"	Bezhta
+wh	w h	1	U+0077 U+0068	"žawhar"	Bezhta
+x$	x	23	U+0078 U+0024	"emedās_mex,xemux,õx"	Bezhta
+xx	x x	1	U+0078 U+0078	"-ixxo"	Bezhta
+y$	j	23	U+0079 U+0024	"hazay,küdäy,wixadnoy"	Bezhta
+yy	j j	5	U+0079 U+0079	"k’öyyä,soyya,soyyā_gäččo"	Bezhta
+z$	z	10	U+007A U+0024	"hiz,xamiz,yez"	Bezhta
+zz	z z	1	U+007A U+007A	"ezzeʔan"	Bezhta
+ã$	ã	6	U+00E3 U+0024	"c’ãʔã,hã,kẽyã"	Bezhta
+ä$	æ	28	U+00E4 U+0024	"häʔä,xäbä,örrä"	Bezhta
+äh	æ h	15	U+00E4 U+0068	"büwähȭɬi,mäh_baq-,qähbä"	Bezhta
+äᵑ	æ̃	7	U+00E4 U+1D51	"-äᵑqe-,-äᵑčiic’l-,ʔäᵑʔäᵑla-"	Bezhta
+ö$	œ	52	U+00F6 U+0024	"müq’ö,niqeš_xöxö,räč’ö"	Bezhta
+öw	œ w	2	U+00F6 U+0077	"xöwǟ-,ɬöwa-"	Bezhta
+öᵑ	œ̃	3	U+00F6 U+1D51	"höᵑššöna,yöᵑtö,šöᵑƛö"	Bezhta
+üh	y h	3	U+00FC U+0068	"mühkänäb,yühi,č’ühi"	Bezhta
+üw	y w	6	U+00FC U+0077	"-üwö-,büwähȭɬi,häq’üwä"	Bezhta
+üᵑ	ỹ	2	U+00FC U+1D51	"k’äy_-üᵑxö-,k’äy_-üᵑxöl-"	Bezhta
+ā$	aː	16	U+0101 U+0024	"gogā,niyā,äᵑydā"	Bezhta
+ās	aː s	3	U+0101 U+0073	"biqqaʔdās_mäče,emedās_mex,õq’q’aʔdās_mäče"	Bezhta
+č$	tʃ	7	U+010D U+0024	"qanč,warač,xeč"	Bezhta
+čč	tʃ tʃ	5	U+010D U+010D	"käččö,soyyā_gäččo,äyib_gäččö"	Bezhta
+č’	tʃʼ	30	U+010D U+2019	"-üč’-,hič’egol-,yüč’dänä"	
+ĩ$	ĩ	4	U+0129 U+0024	"hĩ,sĩ"	Bezhta
+ī$	ī	2	U+012B U+0024	"kalaɣas_q’ī,q’ī"	Bezhta
+īs	iː s	1	U+012B U+0073	"ɬīs_momola"	Bezhta
+ō$	oː	6	U+014D U+0024	"-ãcō,hoʔō,q’ō"	Bezhta
+š$	ʃ	9	U+0161 U+0024	"müɣättǟš,naq’iš,palaš"	Bezhta
+šš	ʃ ʃ	3	U+0161 U+0161	"-äᵑššö,höᵑššöna,šüššö"	Bezhta
+ũ$	ũ	1	U+0169 U+0024	"ʔãʔũ"	Bezhta
+ūᵑ	ũː	1	U+016B U+1D51	"ɬūᵑs_ɣeč’i"	Bezhta
+ž$	ʒ	4	U+017E U+0024	"bež,xarž,äᵑž"	Bezhta
+ƛ$	tɬ	5	U+019B U+0024	"bogoƛ,istiʔoƛ,müɣäƛ"	Bezhta
+ƛƛ	tɬ tɬ	5	U+019B U+019B	"koƛƛo,koƛƛoɬi,yaƛƛokos"	Bezhta
+ƛ’	tɬʼ	67	U+019B U+2019	"-ecoƛ’a_-ece-,-yek-yõƛ’oyo,änƛ’e"	
+ǟ$	æː	5	U+01DF U+0024	"mǟ,töbǟ,äᵑydǟ"	Bezhta
+ɣ$	ɣ	7	U+0263 U+0024	"halmaɣ,miɣ,raɣ"	Bezhta
+ɬ$	ɬ	3	U+026C U+0024	"hũɬ,hũɬlaɬ,xisalaɬ"	Bezhta
+ɬs	ɬ s	1	U+026C U+0073	"marč’ok’oɬso_mex"	Bezhta
+ʔ$	ʔ	11	U+0294 U+0024	"-ʔ,hãq’q’alaʔ,hõsolaʔ"	Bezhta
+ẽ$	ẽ	1	U+1EBD U+0024	"hẽ"	Bezhta
+^c’	tsʼ	29	U+005E U+0063 U+2019	"c’inda,c’uddo_c’emuc’,c’umi_-ow-"	
+^k’	kʼ	44	U+005E U+006B U+2019	"k’ak’alo,k’aʔab,k’obala"	
+^p’	pʼ	5	U+005E U+0070 U+2019	"p’alt’o,p’ap’iros,p’äp’älö"	
+^q’	q	45	U+005E U+0071 U+2019	"q’arza_niƛ-,q’eyo,q’or"	
+^t’	tʼ	20	U+005E U+0074 U+2019	"t’uco-,t’ugo,t’ut’-"	
+^äh	æ h	1	U+005E U+00E4 U+0068	"ähi"	Bezhta
+^äᵑ	æ̃	11	U+005E U+00E4 U+1D51	"äᵑgä,äᵑydā,äᵑydǟ_yoxcas_kil"	Bezhta
+^öh	œ h	1	U+005E U+00F6 U+0068	"öhdä-"	Bezhta
+^öᵑ	œ̃	2	U+005E U+00F6 U+1D51	"öᵑq’önä,öᵑq”öbuƛ’o"	Bezhta
+^č’	tʃʼ	9	U+005E U+010D U+2019	"č’amal,č’anaɣo-,č’aɣa"	
+^ƛ’	tɬʼ	24	U+005E U+019B U+2019	"ƛ’ärƛ’äri,ƛ’äčäri_-ečel-,ƛ’ǟna"	
+t’$	tʼ	10	U+0074 U+2019 U+0024	"-ut’,babliƛ’ako_c’it’,t’ot’"	
+äh$	æ h	2	U+00E4 U+0068 U+0024	"däh,yaraɣ-mätäh"	Bezhta
+öᵑw	œ̃ w	2	U+00F6 U+1D51 U+0077	"q’eyas_ƛöᵑwä,ƛöᵑwä"	Bezhta
+üh$	y h	1	U+00FC U+0068 U+0024	"rüh"	Bezhta
+üᵑ$	ỹ	1	U+00FC U+1D51 U+0024	"ɬüᵑ"	Bezhta
+ās$	aː s	4	U+0101 U+0073 U+0024	"aboddās,iyoddās"	Bezhta
+āᵑ$	ãː	1	U+0101 U+1D51 U+0024	"cāᵑ"	Bezhta
+č’$	tʃʼ	4	U+010D U+2019 U+0024	"keč’,müč’,yöxič’"	
+īs$	iː s	1	U+012B U+0073 U+0024	"dīs"	Bezhta
+ūᵑ$	ũː	1	U+016B U+1D51 U+0024	"c’ūᵑ"	Bezhta
+ƛ’$	tɬʼ	7	U+019B U+2019 U+0024	"anƛ’,haraƛ’,hũƛ’"	
+ȫᵑ$	œ̃ː	1	U+022B U+1D51 U+0024	"xȫᵑ"	Bezhta
+^äᵑh	æ̃ h	1	U+005E U+00E4 U+1D51 U+0068	"äᵑheyo"	Bezhta

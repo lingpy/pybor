@@ -1,0 +1,2 @@
+pk,jsondata,id,name,description,markup_description,published,publisher_name,publisher_place,publisher_url,license,domain,contact,version
+1,"{""license_name"": ""Creative Commons Attribution 3.0 Germany License"", ""license_icon"": ""cc-by.png""}",wold,WOLD,World Loanword Database,,2009-08-15,Max Planck Institute for Evolutionary Anthropology,Leipzig,http://www.eva.mpg.de,http://creativecommons.org/licenses/by/3.0/de/,wold.clld.org,wold@shh.mpg.de,1

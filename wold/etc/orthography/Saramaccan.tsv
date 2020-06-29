@@ -1,0 +1,130 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+$	NULL	5	U+0024		
+^a$	a	6	U+005E U+0061 U+0024	"a"	Saramaccan
+^i$	i	1	U+005E U+0069 U+0024	"i"	Saramaccan
+^u$	u	3	U+005E U+0075 U+0024	"u"	Saramaccan
+^mösimö́si$	m ö/ɔ s i m ö́/ɔ s i	1	U+005E U+006D U+00F6 U+0073 U+0069 U+006D U+00F6 U+0301 U+0073 U+0069 U+0024	"mösimö́si"	
+_	_	67	U+005F	"bulí_búka,téni_a_féífi,óto__jéside"	Saramaccan
+a	a	256	U+0061	"lapëkökö́ni,sipaí,sumáásaba"	Saramaccan
+b	b	110	U+0062	"jésíbúka,paabí,së́bën"	Saramaccan
+d	d	57	U+0064	"hédi,logodá,tjá_hédi"	Saramaccan
+e	e	36	U+0065	"bebé,dendá,peéli"	Saramaccan
+f	f	63	U+0066	"bófo,míndífési,unfá"	Saramaccan
+g	g	54	U+0067	"bigí,sigalë́ti,sugúu"	Saramaccan
+h	h	11	U+0068	"ahö́máun,buukáhédi,búnúhédi"	Saramaccan
+i	i	134	U+0069	"batiléífátu,opión,sikópu"	Saramaccan
+j	j	50	U+006A	"azönkíjënjën,bajá,kujë́ë"	Saramaccan
+k	k	246	U+006B	"húku,síki,sónúkúmútu"	Saramaccan
+l	l	86	U+006C	"alá,peláwósu,tolá"	Saramaccan
+m	m	119	U+006D	"kasikaásímááka,taamáni,tómpi"	Saramaccan
+n	n	147	U+006E	"lántímááka,línzo,sónugo"	Saramaccan
+o	o	69	U+006F	"boóki,kondá,koósuma"	Saramaccan
+p	p	80	U+0070	"pakapaka,pë́pë,séépi"	Saramaccan
+s	s	137	U+0073	"físi,kasikaásímááka,núsúbáaku"	Saramaccan
+t	t	241	U+0074	"fínga_u_fútu,kö́tö,paáta"	Saramaccan
+u	u	140	U+0075	"fufúuma,hói_kuútu,sukúfu"	Saramaccan
+v	v	8	U+0076	"aviti,taángávë́ntu,vívo"	Saramaccan
+w	w	49	U+0077	"híniwánten,suwá,tuwálufu"	Saramaccan
+z	z	8	U+007A	"azönkíjënjën,lánza,púu_zéibóto"	Saramaccan
+á	á/a	396	U+00E1	"bákámíndí,kasába,pái"	Saramaccan
+é	é/e	131	U+00E9	"djégi,féífi,wéésée"	Saramaccan
+ë	ë/ɛ	25	U+00EB	"lë́bën,sëmbë,së́bën"	Saramaccan
+í	í/i	258	U+00ED	"bákágángáá_ángísa,kamían,më́sítë"	Saramaccan
+ó	ó/o	159	U+00F3	"agómáun,kwátíwójo,wómígánía"	Saramaccan
+ö	ö/ɔ	29	U+00F6	"azönkíjënjën,kölö́ku,lapëkökö́ni"	Saramaccan
+ú	ú/u	166	U+00FA	"lúku,lúsu_[someone]_púu,na_únten"	Saramaccan
+^a	a	62	U+005E U+0061	"a_fési,aniítiputu,aái"	Saramaccan
+^b	b	159	U+005E U+0062	"biibíífóo,bákáfútu,básusë"	Saramaccan
+^d	d	54	U+005E U+0064	"dá,dë́dë,dúngu"	Saramaccan
+^f	f	90	U+005E U+0066	"fulufulu,físíkákísa,fútu"	Saramaccan
+^g	g	61	U+005E U+0067	"gabián,goútu,gulí"	Saramaccan
+^h	h	61	U+005E U+0068	"hánka,hógífóu,hö́nikáká"	Saramaccan
+^j	j	17	U+005E U+006A	"jaa,jabí,joóka"	Saramaccan
+^k	k	131	U+005E U+006B	"kái_[someone]_kó,kíi,kó_sí"	Saramaccan
+^l	l	77	U+005E U+006C	"logodá,láda,léni"	Saramaccan
+^m	m	71	U+005E U+006D	"mataási,maáun,mötjö́"	Saramaccan
+^n	n	29	U+005E U+006E	"ná_wán_soní,nási,në́ti"	Saramaccan
+^o	o	4	U+005E U+006F	"olóísi,opión,otó"	Saramaccan
+^p	p	95	U+005E U+0070	"peetá,poobá,poosián"	Saramaccan
+^s	s	117	U+005E U+0073	"sukúfu,sí,sónúáti"	Saramaccan
+^t	t	98	U+005E U+0074	"tookóo,të́mbë,túlíngi"	Saramaccan
+^u	u	7	U+005E U+0075	"ufö́,un,uwíi"	Saramaccan
+^v	v	4	U+005E U+0076	"vë́ntu,víndema,vívo"	Saramaccan
+^w	w	55	U+005E U+0077	"woókoma,wái,wánwan"	Saramaccan
+^z	z	9	U+005E U+007A	"zonká,zé,zúntu"	Saramaccan
+^á	á/a	4	U+005E U+00E1	"ábi,ásímííi,áíti"	Saramaccan
+^é	é/e	1	U+005E U+00E9	"ée"	Saramaccan
+^ó	ó/o	6	U+005E U+00F3	"óbo,óli,óto"	Saramaccan
+^ú	ú/u	5	U+005E U+00FA	"údu,údúpáki,ún"	Saramaccan
+a$	a	213	U+0061 U+0024	"angísa,hía,sumáásaba"	Saramaccan
+aa	aː	26	U+0061 U+0061	"paamúsi,saasáa,taatá"	Saramaccan
+dj	ɟ	7	U+0064 U+006A	"adjáansi,adjíwáta,gadjabiá"	
+e$	e	12	U+0065 U+0024	"kómpe,mámate,sónde"	Saramaccan
+ee	eː	5	U+0065 U+0065	"djeendjé,feegá,peetá"	Saramaccan
+gb	gb	4	U+0067 U+0062	"agba,agbapáu,agbágba"	
+i$	i	375	U+0069 U+0024	"hái,lë́i,sigalë́ti"	Saramaccan
+ii	iː	11	U+0069 U+0069	"giitá,kiijá,miindjá"	Saramaccan
+kp	kp	8	U+006B U+0070	"ahalakpákpa,djëkpë,kpíngíkpíngi"	
+kw	kʷ	2	U+006B U+0077	"lakwá,lukwétu"	Saramaccan
+m$	m	1	U+006D U+0024	"bölö́m"	Saramaccan
+mb	mb	29	U+006D U+0062	"faándí_mbéi,pëndë́mbéti,tándámbéti"	
+n$	n	85	U+006E U+0024	"kakápuun,sún,talán"	Saramaccan
+nd	nd	58	U+006E U+0064	"féndi,kánda,kö́ndë"	
+ng	ŋg	60	U+006E U+0067	"benga,böngö,paánga"	
+nh	n h	1	U+006E U+0068	"gaánhángi"	Saramaccan
+nj	ɲ	12	U+006E U+006A	"húnjan,njanján,panján"	
+ns	n s	15	U+006E U+0073	"gánsi,na_unsë́,paansú"	Saramaccan
+nw	n w	3	U+006E U+0077	"wánwan,wë́nwën"	Saramaccan
+o$	o	57	U+006F U+0024	"biibíífóo,línzo,tíngífóo"	Saramaccan
+oo	oː	11	U+006F U+006F	"koofája,poobá,pootíma"	Saramaccan
+tj	c	10	U+0074 U+006A	"fitjá,hói_tjína,tjö́nítjö́ni"	
+u$	u	207	U+0075 U+0024	"agbapáu,júu,kéíkíwósu"	Saramaccan
+uu	uː	7	U+0075 U+0075	"buuséma,duumí,kakápuun"	Saramaccan
+á$	á/a	104	U+00E1 U+0024	"baasá,muungá,tooná_dá"	Saramaccan
+áá	áː/aː	11	U+00E1 U+00E1	"sumáásaba,sáápi,sáápísáápi"	Saramaccan
+é$	é/e	16	U+00E9 U+0024	"bebé,kulé,zé"	Saramaccan
+és	é/e s	19	U+00E9 U+0073	"bése,deési,míndífési"	Saramaccan
+éw	é/e w	1	U+00E9 U+0077	"wántéwante"	Saramaccan
+éé	éː/eː	6	U+00E9 U+00E9	"biápéégu,fééda,séépi"	Saramaccan
+ë$	ë/ɛ	45	U+00EB U+0024	"dë́dësëmbë,fëëkë́të,kö́ndë"	Saramaccan
+ës	ë/ɛ s	1	U+00EB U+0073	"dë́dësëmbë"	Saramaccan
+ëë	ëː/ɛː	4	U+00EB U+00EB	"fëëbë́,fëëkë́të,tëëmë́"	Saramaccan
+ë́	ë́/ɛ	60	U+00EB U+0301	"bë́të,dë́dësëmbë,kö́númújë́ë"	Saramaccan
+í$	í/i	61	U+00ED U+0024	"fu_dí,gulí,kaí"	Saramaccan
+íí	íː/iː	5	U+00ED U+00ED	"díí_pási,káúmííi,sikö́tííki"	Saramaccan
+ó$	ó/o	14	U+00F3 U+0024	"avó,otó,pió"	Saramaccan
+óh	ó/o h	2	U+00F3 U+0068	"boókóhédi,hóha"	Saramaccan
+ós	ó/o s	25	U+00F3 U+0073	"kósi,lósu,wósúgóón"	Saramaccan
+ów	ó/o w	2	U+00F3 U+0077	"boókówójo,wójówáta"	Saramaccan
+óó	óː/oː	7	U+00F3 U+00F3	"didíbíwóókoma,wójókókóópúúma,wósúgóón"	Saramaccan
+ö$	ö/ɔ	38	U+00F6 U+0024	"adömítö,fuköfukö,kö́pö"	Saramaccan
+ös	ö/ɔ s	1	U+00F6 U+0073	"bösö"	Saramaccan
+öö	öː/ɔː	2	U+00F6 U+00F6	"mbéi_köökö́ö,töönsö́n"	Saramaccan
+ö́	ö́/ɔ	67	U+00F6 U+0301	"hö́ndi,sikö́tííki,töönsö́n"	Saramaccan
+ú$	ú/u	20	U+00FA U+0024	"bubú,gaántútú,peevú"	Saramaccan
+úú	úː/uː	2	U+00FA U+00FA	"wójókókóópúúma,wójólíbápúúma"	Saramaccan
+^dj	ɟ	20	U+005E U+0064 U+006A	"djulá,djákíti,djúbë́ë"	
+^gb	gb	1	U+005E U+0067 U+0062	"gbaniní"	
+^kp	kp	2	U+005E U+006B U+0070	"kpë́ngë́lë́mö́ni,kpíngíkpíngi"	
+^kw	kʷ	2	U+005E U+006B U+0077	"kwátíwójo,kwíndji"	Saramaccan
+^mb	mb	9	U+005E U+006D U+0062	"mbéi_hékísee,mbétíwósu,mbíi"	
+^nd	nd	4	U+005E U+006E U+0064	"ndekú,ndétíbúka,ndétítáfa"	
+^ng	ŋg	2	U+005E U+006E U+0067	"ngáku,ngö́tö"	
+^nj	ɲ	8	U+005E U+006E U+006A	"njámísi,nján_búka,njúnjun"	
+^tj	c	21	U+005E U+0074 U+006A	"tjubí,tjá_búka_kó,tjö́ni"	
+^ë́	ë́/ɛ	6	U+005E U+00EB U+0301	"ë́lúfu,ë́n,ë́ísi"	Saramaccan
+aa$	aː	3	U+0061 U+0061 U+0024	"jaa,tjangaa"	Saramaccan
+ee$	eː	1	U+0065 U+0065 U+0024	"mbéi_hékísee"	Saramaccan
+ndj	ɲɟ	16	U+006E U+0064 U+006A	"bandjajési,miindjá,píndja"	
+oo$	oː	2	U+006F U+006F U+0024	"awoo,logoo"	Saramaccan
+ëë́	ëː/ɛː	6	U+00EB U+00EB U+0301	"dëë́wáta,këë́,pëë́"	
+ë́$	ë́/ɛ	18	U+00EB U+0301 U+0024	"lëmbë́,na_unsë́,tëndë́"	Saramaccan
+ë́s	ë́/ɛ s	2	U+00EB U+0301 U+0073	"më́sítë,në́si"	Saramaccan
+íí$	íː/iː	3	U+00ED U+00ED U+0024	"miímíí,mujë́ë́míí,wómímíí"	Saramaccan
+öö́	öː/ɔː	9	U+00F6 U+00F6 U+0301	"söö́tö,töö́tö,töö́u"	
+ö́$	ö́/ɔ	12	U+00F6 U+0301 U+0024	"nöngö́,tjökö́,ufö́"	Saramaccan
+ö́s	ö́/ɔ s	4	U+00F6 U+0301 U+0073	"bö́sö,sö́sö,sö́sútu"	Saramaccan
+ë́ë́	ë́ː/ɛː	5	U+00EB U+0301 U+00EB U+0301	"mujë́ë́míí,mujë́ë́síkápu,mújë́ë́kö́nu"	Saramaccan
+ö́ö́	ö́/ɔ	3	U+00F6 U+0301 U+00F6 U+0301	"dö́ö́páu,dö́ö́wáta,nö́ö́mö"	Saramaccan
+_[noun]_	_	4	U+005F U+005B U+006E U+006F U+0075 U+006E U+005D U+005F	"a_[noun]_bandja,dí_[noun]_alá,dí_[noun]_dë́"	
+_[someone]_	_	2	U+005F U+005B U+0073 U+006F U+006D U+0065 U+006F U+006E U+0065 U+005D U+005F	"kái_[someone]_kó,lúsu_[someone]_púu"	

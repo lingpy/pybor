@@ -1,0 +1,39 @@
+{
+    "title": "CLDF dataset derived from Haspelmath and Tadmor's \"World Loanword Database\" from 2009",
+    "access_right": "open",
+    "contributors": [
+        {
+            "name": "Martin Haspelmath",
+            "type": "Editor"
+        },
+        {
+            "name": "Uri Tadmor",
+            "type": "Editor"
+        }
+    ],
+    "communities": [
+        {
+            "identifier": "lexibank"
+        }
+    ],
+    "creators": [
+        {
+            "name": "Tiago Tresoldi"
+        },
+        {
+            "name": "Robert Forkel"
+        },
+        {
+            "name": "Natalia Morozova"
+        }
+    ],
+    "keywords": [
+        "cldf:Wordlist",
+        "linguistics"
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Haspelmath, Martin &amp; Tadmor, Uri (eds.) 2009. World Loanword Database. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at http://wold.clld.org)</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-3.0"
+    }
+}

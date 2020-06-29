@@ -1,0 +1,1815 @@
+pk,jsondata,id,name,description,markup_description,version
+812,,11-51,rich,,,1
+1,,1-1,the world,,,1
+2,,1-21,the land,"'the hard surface of the earth, when compared to the area covered by sea'",,1
+3,,1-212,the soil,'the substance that plants naturally grow in',,1
+4,,1-213,the dust,"'dry powder consisting of extremely small bits of matter, found outside or inside buildings'",,1
+5,,1-214,the mud,'wet earth that has become soft and sticky',,1
+6,,1-215,the sand,,,1
+7,,1-22,the mountain or hill,,,1
+80,,2-261,the young woman,,,1
+8,,1-222,the cliff or precipice,'a high rock with a very steep side (often near the sea)',,1
+9,,1-23,the plain,"'expanse of level ground, open country'",,1
+10,,1-24,the valley,,,1
+11,,1-25,the island,,,1
+12,,1-26,the mainland,"'the main area of land that forms a country, as compared to islands near it'",,1
+13,,1-27,the shore,"'the land along the edge of a large body of water, such as an ocean or a lake'",,1
+14,,1-28,the cave,,,1
+15,,1-31,the water,‘drinking water’,,1
+16,,1-32,the sea,,,1
+17,,1-322,calm,'smooth or having only gentle waves',,1
+18,,1-323,rough(2),'with large waves',,1
+19,,1-324,the foam,,,1
+20,,1-329,the ocean,'any of the world's major bodies of salt water'; generally larger than 'sea',,1
+21,,1-33,the lake,,,1
+22,,1-34,the bay,'an area of the sea that curves inwards towards the land',,1
+23,,1-341,the lagoon,"'a body of sea water partly or completely separated from the sea by sand, rock etc., generally smaller than a bay’",,1
+24,,1-342,the reef,"'a line mass of sharp rocks, often made of coral, near the surface of the sea'",,1
+25,,1-343,the cape,'a large piece of land surrounded on three sides by the sea',,1
+26,,1-35,the wave,,,1
+27,,1-352,the tide,'the regular rising and lowering of the level of the sea',,1
+28,,1-353,the low tide,,,1
+29,,1-354,the high tide,,,1
+30,,1-36,the river or stream,,,1
+31,,1-362,the whirlpool,'a powerful current of water that spins around and can pull things down into it',,1
+32,,1-37,the spring or well,'natural (spring) or artificial (well) source of water',,1
+33,,1-38,the swamp,,,1
+34,,1-39,the waterfall,,,1
+35,,1-41,the woods or forest,,,1
+36,,1-43,the wood,‘material that people get from trees’,,1
+37,,1-44,the stone or rock,,,1
+38,,1-45,the earthquake,,,1
+39,,1-51,the sky,,,1
+40,,1-52,the sun,,,1
+41,,1-53,the moon,,,1
+42,,1-54,the star,,,1
+43,,1-55,the lightning,,,1
+44,,1-56,the thunder,,,1
+45,,1-57,the bolt of lightning,"'a flash of lightning and a noise of thunder together, which hits something'",,1
+46,,1-58,the storm,,,1
+47,,1-59,the rainbow,,,1
+48,,1-61,the light,,,1
+49,,1-62,the darkness,,,1
+50,,1-63,the shade or shadow,,,1
+51,,1-64,the dew,,,1
+52,,1-71,the air,,,1
+53,,1-72,the wind,,,1
+54,,1-73,the cloud,,,1
+55,,1-74,the fog,,,1
+56,,1-75,the rain,,,1
+57,,1-76,the snow,,,1
+58,,1-77,the ice,,,1
+59,,1-78,the weather,,,1
+60,,1-81,the fire,‘a fire lit deliberately for heating or cooking’,,1
+61,,1-82,the flame,,,1
+62,,1-83,the smoke,,,1
+63,,1-84,the ash,,,1
+64,,1-841,the embers,'pieces of wood or coal in a fire that are no longer burning but are still red and very hot',,1
+65,,1-851,to burn(1),'partially or fully destroy with fire',,1
+66,,1-852,to burn(2),"'be on fire, be consumed by fire'",,1
+67,,1-86,to light,'make something burn',,1
+68,,1-861,to extinguish,,,1
+225,,3-82,the bee,,,1
+69,,1-87,the match,'a small wooden stick used to light a fire',,1
+70,,1-88,the firewood,,,1
+71,,1-89,the charcoal,,,1
+72,,2-1,the person,‘human being’,,1
+73,,2-21,the man,(vs. woman),,1
+74,,2-22,the woman,,,1
+75,,2-23,male(1),"(of humans, cf. 3.12)",,1
+76,,2-24,female(1),"(of humans, cf. 3.13)",,1
+77,,2-25,the boy,,,1
+78,,2-251,the young man,,,1
+79,,2-26,the girl,,,1
+81,,2-27,the child(1),'young human' (not kinship term) (cf. 2.43),,1
+82,,2-28,the baby,‘very young human that cannot walk yet’,,1
+83,,2-31,the husband,,,1
+84,,2-32,the wife,,,1
+85,,2-33,to marry,,,1
+86,,2-34,the wedding,,,1
+87,,2-341,the divorce,,,1
+88,,2-35,the father,,,1
+89,,2-36,the mother,,,1
+90,,2-37,the parents,,,1
+91,,2-38,the married man,,,1
+92,,2-39,the married woman,,,1
+93,,2-41,the son,,,1
+94,,2-42,the daughter,,,1
+95,,3-662,the porpoise or dolphin,,,1
+96,,2-43,the child(2),"‘immediate descendant, son or daughter’ (kinship term) (cf. 2.27)",,1
+97,,2-44,the brother,,,1
+98,,2-444,the older brother,,,1
+99,,2-445,the younger brother,,,1
+100,,2-45,the sister,,,1
+101,,2-454,the older sister,,,1
+102,,2-455,the younger sister,,,1
+103,,2-456,the sibling,,,1
+104,,2-458,the twins,,,1
+105,,2-46,the grandfather,,,1
+106,,2-461,the old man,,,1
+107,,2-47,the grandmother,,,1
+108,,2-471,the old woman,,,1
+109,,2-48,the grandson,,,1
+110,,2-49,the granddaughter,,,1
+111,,2-51,the uncle,,,1
+112,,2-511,the mother's brother,,,1
+113,,2-512,the father's brother,,,1
+114,,2-52,the aunt,,,1
+115,,2-521,the mother's sister,,,1
+116,,2-522,the father's sister,,,1
+117,,2-53,the nephew,‘sibling’s son’,,1
+118,,2-54,the niece,‘sibling’s daughter’,,1
+119,,2-55,the cousin,,,1
+120,,2-56,the ancestors,,,1
+121,,2-57,the descendants,,,1
+122,,2-61,the father-in-law (of a man),,,1
+123,,2-611,the father-in-law (of a woman),,,1
+124,,2-62,the mother-in-law (of a man),,,1
+125,,2-621,the mother-in-law (of a woman),,,1
+126,,2-63,the son-in-law (of a man),,,1
+127,,2-631,the son-in-law (of a woman),,,1
+128,,2-64,the daughter-in-law (of a man),,,1
+129,,2-641,the daughter-in-law (of a woman),,,1
+130,,2-71,the stepfather,,,1
+131,,2-72,the stepmother,,,1
+132,,2-73,the stepson,,,1
+133,,2-74,the stepdaughter,,,1
+134,,2-75,the orphan,,,1
+135,,2-76,the widow,,,1
+136,,2-77,the widower,,,1
+137,,2-81,the relatives,,,1
+138,,2-82,the family,"‘group of closely related relatives, consisting minimally of parents and children’",,1
+139,,2-91,I,,,1
+140,,2-92,you (singular),,,1
+141,,2-93,he/she/it,"(third person singular pronoun, regardless of gender/sex)",,1
+142,,2-94,we,,,1
+143,,2-941,we (inclusive),,,1
+144,,2-942,we (exclusive),,,1
+145,,2-95,you (plural),,,1
+146,,2-96,they,,,1
+147,,3-11,the animal,'living creature that can move (including or excluding humans)',,1
+148,,3-12,male(2),(of animals) cf. 2.23,,1
+149,,3-13,female(2),(of animals) cf. 2.24,,1
+150,,3-15,the livestock,"'domestic mammals kept for service or for useful products (cows, horses, donkeys, sheep, goats, pigs, reindeer, camels, etc.)'",,1
+151,,3-16,the pasture,'land or field that is covered with grass and is used for livestock to feed on',,1
+152,,3-18,the herdsman,'a man who looks after a herd of animals',,1
+153,,3-19,the stable or stall,"'building where domestic animals (any kind, not just horses) are kept'",,1
+154,,3-2,the cattle,'(collection of) domestic bovine animals',,1
+155,,3-21,the bull,'male bovine (not castrated)',,1
+237,,3-94,the snail,,,1
+156,,3-22,the ox,"'a castrated bull, often used for working on farms'",,1
+157,,3-23,the cow,'female bovine',,1
+158,,3-24,the calf,'young of a cow',,1
+159,,3-25,the sheep,,,1
+160,,3-26,the ram,'male sheep',,1
+161,,3-28,the ewe,'female sheep',,1
+162,,3-29,the lamb,'young of a sheep',,1
+163,,3-32,the boar,,,1
+164,,3-34,the sow,'female pig',,1
+165,,3-35,the pig,,,1
+166,,3-36,the goat,'(female or generic) goat',,1
+167,,3-37,the he-goat,'male goat',,1
+168,,3-38,the kid,'young of a goat',,1
+169,,3-41,the horse,,,1
+170,,3-42,the stallion,'male horse',,1
+171,,3-44,the mare,'female horse',,1
+172,,3-45,the foal or colt,‘the young of horses’,,1
+173,,3-46,the donkey,,,1
+174,,3-47,the mule,'an animal that has a donkey and a horse as parents',,1
+175,,3-5,the fowl,'a bird that is kept for its meat and eggs',,1
+176,,3-52,the cock/rooster,,,1
+177,,3-54,the hen,,,1
+178,,3-55,the chicken,(Fill in only if there is a general term for 'rooster or hen'.),,1
+179,,3-56,the goose,'domesticated goose',,1
+180,,3-57,the duck,'domesticated duck',,1
+181,,3-58,the nest,,,1
+182,,3-581,the bird,,,1
+183,,3-582,the seagull,,,1
+184,,3-583,the heron,,,1
+185,,3-584,the eagle,,,1
+186,,3-585,the hawk,,,1
+187,,3-586,the vulture,,,1
+188,,3-591,the bat,,,1
+189,,3-592,the parrot,,,1
+190,,3-593,the crow,,,1
+191,,3-594,the dove,,,1
+192,,3-596,the owl,,,1
+193,,3-61,the dog,,,1
+194,,3-614,the rabbit,,,1
+195,,3-62,the cat,,,1
+196,,3-622,the opossum,,,1
+197,,3-63,the mouse or rat,,,1
+198,,3-65,the fish,,,1
+199,,3-652,the fin,'one of the thin body parts that a fish uses to swim',,1
+200,,3-653,the scale,'one of the small flat pieces of skin that cover the bodies of fish',,1
+201,,3-654,the gill,,,1
+202,,3-655,the shell,,,1
+203,,3-661,the shark,,,1
+204,,3-663,the whale,,,1
+205,,3-664,the stingray,,,1
+206,,3-665,the freshwater eel,,,1
+207,,3-71,the wolf,,,1
+208,,3-72,the lion,,,1
+209,,3-73,the bear,,,1
+210,,3-74,the fox,,,1
+211,,3-75,the deer,,,1
+212,,3-76,the monkey,,,1
+213,,3-77,the elephant,,,1
+214,,3-78,the camel,,,1
+215,,3-81,the insect,,,1
+216,,3-811,the head louse,,,1
+217,,3-812,the nit,'an egg of a louse that is sometimes found in people's hair',,1
+218,,3-813,the flea,,,1
+219,,3-814,the centipede,,,1
+220,,3-815,the scorpion,,,1
+221,,3-816,the cockroach,,,1
+222,,3-817,the ant,,,1
+223,,3-818,the spider,,,1
+224,,3-819,the spider web,,,1
+226,,3-821,the beeswax,,,1
+227,,3-822,the beehive,,,1
+228,,3-823,the wasp,,,1
+229,,3-83,the fly,,,1
+230,,3-831,the sandfly or midge or gnat,,,1
+231,,3-832,the mosquito,,,1
+232,,3-84,the worm,,,1
+233,,3-85,the snake,,,1
+234,,3-91,the firefly,,,1
+235,,3-92,the butterfly,,,1
+236,,3-93,the grasshopper,,,1
+238,,3-95,the frog,,,1
+239,,3-96,the lizard,,,1
+240,,3-97,the crocodile or alligator,,,1
+241,,3-98,the turtle,,,1
+242,,4-11,the body,‘the body of a live human’,,1
+243,,4-12,the skin or hide,(skin: of a human; hide: of an animal),,1
+244,,4-13,the flesh,,,1
+245,,4-14,the hair,‘hair on a person’s head’,,1
+246,,4-142,the beard,,,1
+247,,4-144,the body hair,,,1
+248,,4-145,the pubic hair,,,1
+249,,4-146,the dandruff,,,1
+250,,4-15,the blood,,,1
+251,,4-151,the vein or artery,,,1
+252,,4-16,the bone,,,1
+253,,4-162,the rib,,,1
+254,,4-17,the horn,(e.g. of a cow),,1
+255,,4-18,the tail,,,1
+256,,4-19,the back,‘the back of a human body’,,1
+257,,4-191,the spine,,,1
+258,,4-2,the head,,,1
+259,,4-201,the temples,"‘the two fairly flat areas on each side of people’s forehead’, or more generally ‘the two sides of people’s head’",,1
+260,,4-202,the skull,,,1
+261,,4-203,the brain,,,1
+262,,4-204,the face,,,1
+263,,4-205,the forehead,,,1
+264,,4-207,the jaw,‘the lower part of people’s face that moves when they eat’,,1
+265,,4-208,the cheek,,,1
+266,,4-209,the chin,,,1
+267,,4-21,the eye,,,1
+268,,4-212,the eyebrow,,,1
+269,,4-213,the eyelid,,,1
+270,,4-214,the eyelash,,,1
+271,,4-215,to blink,‘to shut and open one’s eyes quickly’,,1
+272,,4-22,the ear,,,1
+273,,4-221,the earlobe,,,1
+274,,4-222,the earwax,,,1
+275,,4-23,the nose,,,1
+276,,4-231,the nostril,,,1
+277,,4-232,the nasal mucus,,,1
+278,,4-24,the mouth,,,1
+279,,4-241,the beak,,,1
+280,,4-25,the lip,,,1
+281,,4-26,the tongue,,,1
+282,,4-27,the tooth,,,1
+283,,4-271,the gums,,,1
+284,,4-272,the molar tooth,,,1
+285,,4-28,the neck,,,1
+286,,4-281,the nape of the neck,,,1
+287,,4-29,the throat,,,1
+288,,4-3,the shoulder,,,1
+289,,4-301,the shoulderblade,,,1
+290,,4-302,the collarbone,,,1
+291,,4-31,the arm,,,1
+292,,4-312,the armpit,,,1
+293,,4-32,the elbow,,,1
+294,,4-321,the wrist,,,1
+295,,4-33,the hand,,,1
+296,,4-331,the palm of the hand,,,1
+297,,4-34,the finger,,,1
+298,,4-342,the thumb,,,1
+299,,4-344,the fingernail,,,1
+300,,4-345,the claw,‘the sharp curved nail on the toe of an animal or bird’,,1
+301,,4-35,the leg,,,1
+302,,4-351,the thigh,"‘the top part of the leg, between the knee and the hip’",,1
+303,,4-352,the calf of the leg,,,1
+304,,4-36,the knee,,,1
+305,,4-37,the foot,,,1
+306,,4-371,the ankle,,,1
+307,,4-372,the heel,,,1
+308,,4-374,the footprint,,,1
+309,,4-38,the toe,,,1
+310,,4-392,the wing,,,1
+311,,4-393,the feather,,,1
+312,,4-4,the chest,,,1
+313,,4-41,the breast,‘the breast of a woman’,,1
+314,,4-412,the nipple or teat,,,1
+315,,4-42,the udder,‘the part of a cow/female goat/... that hangs down between its back legs and that produces milk’,,1
+316,,4-43,the navel,,,1
+317,,4-44,the heart,,,1
+318,,4-441,the lung,,,1
+319,,4-45,the liver,,,1
+320,,4-451,the kidney,,,1
+321,,4-452,the spleen,,,1
+322,,4-46,the stomach,"(internal organ, not 'belly')",,1
+323,,4-461,the intestines or guts,,,1
+324,,4-462,the waist,,,1
+325,,4-463,the hip,,,1
+326,,4-464,the buttocks,‘the fleshy part of one’s body that people sit on’,,1
+327,,4-47,the womb,,,1
+328,,4-49,the testicles,,,1
+329,,4-492,the penis,,,1
+330,,4-51,to breathe,,,1
+331,,4-52,to yawn,,,1
+332,,4-521,to hiccough,,,1
+333,,4-53,to cough,,,1
+334,,4-54,to sneeze,,,1
+335,,4-55,to perspire,,,1
+336,,4-56,to spit,,,1
+337,,4-57,to vomit,,,1
+338,,4-58,to bite,,,1
+339,,4-59,to lick,,,1
+340,,4-591,to dribble,‘to let saliva flow out of one’s mouth onto one’s chin’,,1
+341,,4-61,to sleep,,,1
+342,,4-612,to snore,,,1
+343,,4-62,to dream,,,1
+344,,4-63,to wake up,(intransitive),,1
+345,,4-64,to fart,,,1
+346,,4-65,to piss,,,1
+347,,4-66,to shit,,,1
+348,,4-67,to have sex,,,1
+349,,4-68,to shiver,,,1
+350,,4-69,to bathe,(intransitive),,1
+351,,4-71,to beget,‘become the father of’,,1
+352,,4-72,to be born,,,1
+353,,4-73,pregnant,,,1
+354,,4-732,to conceive,,,1
+355,,4-74,to be alive,,,1
+356,,4-75,to die,,,1
+357,,4-751,to drown,,,1
+358,,4-76,to kill,,,1
+359,,4-77,the corpse,'body of a dead human',,1
+360,,4-78,to bury,‘bury a dead person’,,1
+361,,4-79,the grave,,,1
+362,,4-81,strong,,,1
+363,,4-82,weak,,,1
+364,,4-83,healthy,,,1
+365,,4-84,sick/ill,,,1
+366,,4-841,the fever,,,1
+367,,4-842,the goitre/goiter,‘a disease of the thyroid gland that makes one’s neck very swollen’,,1
+368,,4-843,the cold,‘the common cold’,,1
+369,,4-85,the wound or sore,,,1
+370,,4-852,the bruise,,,1
+371,,4-853,the swelling,,,1
+372,,4-854,the itch,,,1
+373,,4-855,the blister,,,1
+374,,4-856,the boil,‘a painful infected swelling under someone’s skin’,,1
+375,,4-857,the pus,,,1
+376,,4-858,the scar,,,1
+377,,4-86,to cure,,,1
+378,,4-87,the physician,,,1
+379,,4-88,the medicine,"‘drug, medication’",,1
+380,,4-89,the poison,,,1
+381,,4-91,tired,,,1
+382,,4-912,to rest,,,1
+383,,4-92,lazy,,,1
+384,,4-93,bald,,,1
+385,,4-94,lame,,,1
+386,,4-95,deaf,,,1
+387,,4-96,mute,,,1
+388,,4-97,blind,,,1
+389,,4-98,drunk,‘intoxicated’,,1
+390,,4-99,naked,,,1
+391,,5-11,to eat,(transitive),,1
+392,,5-12,the food,,,1
+393,,5-121,cooked,(contrasting with 'raw'),,1
+394,,5-122,raw,,,1
+395,,5-123,ripe,,,1
+396,,5-124,unripe,,,1
+397,,5-125,rotten,(about fruit),,1
+398,,5-13,to drink,,,1
+399,,5-14,to be hungry,,,1
+400,,5-141,the famine,,,1
+401,,5-15,to be thirsty,,,1
+402,,5-16,to suck,(transitive),,1
+403,,5-18,to chew,,,1
+404,,5-181,to swallow,,,1
+405,,5-19,to choke,'prevent from breathing (not necessarily leading to death)’,,1
+406,,5-21,to cook,(transitive),,1
+407,,5-22,to boil,(intransitive),,1
+408,,5-23,to roast or fry,,,1
+409,,5-24,to bake,"'in an oven, using dry heat' (transitive)",,1
+410,,5-25,the oven,,,1
+411,,5-26,the pot,"'a container used for cooking which is round, deep, and usually made of metal'",,1
+412,,5-27,the kettle,"'a metal container with a lid, a handle, and a spout (= for pouring), used to boil water'",,1
+413,,5-28,the pan,"'a round and relatively flat metal container used for cooking, with one long handle'",,1
+414,,5-31,the dish,"'a relatively flat, round vessel from which food is served on the table'",,1
+415,,5-32,the plate,'a flat and usually round vessel that you eat from',,1
+416,,5-33,the bowl,"‘a concave container that is open at the top, usually used to hold food’",,1
+417,,5-34,the jug/pitcher,'a container for holding and pouring liquids with a handle and a spout',,1
+418,,5-35,the cup,‘a drinking vessel not made of glass’,,1
+419,,5-36,the saucer,'a small dish for placing a cup',,1
+420,,5-37,the spoon,,,1
+421,,5-38,the knife(1),'knife for eating' (as opposed to knife used for preparing food),,1
+422,,5-39,the fork,"'tool used for picking up and eating food, with a handle and three or four points'",,1
+423,,5-391,the tongs,"'a tool that consists of two movable bars joined at one end, used to pick up an object'",,1
+424,,5-41,the meal,"'an occasion when one eats food, for example breakfast or lunch'",,1
+425,,5-42,the breakfast,'the meal one has in the morning',,1
+426,,5-43,the lunch,'a meal eaten in the middle of the day',,1
+427,,5-44,the dinner,"'the main meal of the day, eaten in the middle of the day or in the evening'",,1
+428,,5-45,the supper,'the last meal of the evening',,1
+429,,5-46,to peel,'remove the skin from food or vegetables',,1
+430,,5-47,to sieve or to strain,'separate solid things from a liquid by pouring the mixture through a sieve (= a container with very small holes in it)',,1
+431,,5-48,to scrape,"'remove something from a surface, using the edge of a knife, stick, etc.'",,1
+432,,5-49,to stir or to mix,,,1
+433,,5-51,the bread,"'a common important food made from flour, water, and yeast'",,1
+434,,5-53,the dough,"'a mixture of flour and water ready to be baked into bread, pastry etc.'",,1
+435,,5-54,to knead,'press a dough many times with one's hands',,1
+436,,5-55,the flour,,,1
+437,,5-56,to crush or to grind,'press [grain] in order to break it into very small pieces or powder',,1
+438,,5-57,the mill,,,1
+439,,5-58,the mortar(1),'a hard bowl in which substances are crushed with a pestle',,1
+440,,5-59,the pestle,"'a short stick with a heavy round end, used for crushing things in a mortar'",,1
+441,,5-61,the meat,'the flesh of animals or birds eaten as food',,1
+442,,5-63,the sausage,,,1
+443,,5-64,the soup,,,1
+444,,5-65,the vegetables,'an edible plant grown in gardens that is not sweet',,1
+445,,5-66,the bean,,,1
+446,,5-7,the potato,,,1
+447,,5-71,the fruit,"generic name for tree fruit covering apples, pears, mangos, oranges, etc.",,1
+448,,5-712,the bunch,'a group of flowers/fruit that are held together',,1
+449,,5-75,the fig,,,1
+450,,5-76,the grape,,,1
+451,,5-77,the nut,,,1
+452,,5-78,the olive,,,1
+453,,5-79,the oil,"'a smooth, thick liquid made from plants or animals, used especially in cooking'",,1
+454,,5-791,the grease or fat,,,1
+455,,5-81,the salt,,,1
+456,,5-82,the pepper,"'black pepper, a table seasoning produced from the berries of the plant Piper nigrum'",,1
+457,,5-821,the chili pepper,'the fruit of the plant Capsicum',,1
+458,,5-84,the honey,,,1
+459,,5-85,the sugar,,,1
+460,,5-86,the milk,,,1
+461,,5-87,to milk,,,1
+462,,5-88,the cheese,,,1
+463,,5-89,the butter,,,1
+464,,5-9,the drink,'any kind of beverage',,1
+465,,5-91,the mead,,,1
+466,,5-92,the wine,,,1
+467,,5-93,the beer,,,1
+468,,5-94,the fermented drink,,,1
+469,,5-97,the egg,,,1
+470,,5-971,the yolk,'the yellow part in the centre of an egg',,1
+471,,6-11,to put on,(transitive),,1
+472,,6-12,the clothing or clothes,,,1
+473,,6-13,the tailor,,,1
+474,,6-21,the cloth,'woven fabric',,1
+475,,6-22,the wool,,,1
+476,,6-23,the linen,'fabric woven of flax',,1
+477,,6-24,the cotton,,,1
+478,,6-25,the silk,,,1
+479,,6-27,the felt,,,1
+480,,6-28,the fur,,,1
+481,,6-29,the leather,,,1
+482,,6-31,to spin,'to draw out and twist fiber into thread',,1
+483,,6-32,the spindle,'a stick used in spinning fiber into thread',,1
+484,,6-33,to weave,,,1
+485,,6-34,the loom,,,1
+486,,6-35,to sew,,,1
+487,,6-36,the needle(1),(for sewing),,1
+488,,6-37,the awl,'pointed tool for marking or piercing wood or leather',,1
+489,,6-38,the thread,,,1
+490,,6-39,to dye,,,1
+491,,6-41,the cloak,,,1
+492,,6-411,the poncho,,,1
+493,,7-37,the ladder,,,1
+494,,6-42,the (woman's) dress,'garment worn by women over the torso extending to the legs',,1
+495,,6-43,the coat,,,1
+496,,6-44,the shirt,,,1
+497,,6-45,the collar,,,1
+498,,6-46,the skirt,,,1
+499,,6-461,the grass-skirt,,,1
+500,,6-48,the trousers,,,1
+501,,6-49,the sock or stocking,,,1
+502,,6-51,the shoe,,,1
+503,,6-52,the boot,,,1
+504,,6-54,the shoemaker,,,1
+505,,6-55,the hat or cap,,,1
+506,,6-57,the belt,,,1
+507,,6-58,the glove,,,1
+508,,6-59,the veil,,,1
+509,,6-61,the pocket,(in a garment),,1
+510,,6-62,the button,,,1
+511,,6-63,the pin,,,1
+512,,6-71,the ornament or adornment,,,1
+513,,6-72,the jewel,,,1
+514,,6-73,the ring,(for finger),,1
+515,,6-74,the bracelet,,,1
+516,,6-75,the necklace,,,1
+517,,6-76,the bead,,,1
+518,,6-77,the earring,,,1
+519,,6-78,the headband or headdress,,,1
+520,,6-79,the tattoo,,,1
+521,,6-81,the handkerchief or rag,,,1
+522,,6-82,the towel,,,1
+523,,6-91,the comb,,,1
+524,,6-92,the brush,,,1
+525,,6-921,the plait/braid,‘a length of hair that has been separated into three parts and then woven together’,,1
+526,,6-93,the razor,,,1
+527,,6-94,the ointment,,,1
+528,,6-95,the soap,,,1
+529,,6-96,the mirror,,,1
+530,,7-11,to live,"'dwell, reside'",,1
+531,,7-12,the house,,,1
+532,,7-13,the hut,,,1
+533,,7-131,the garden-house,,,1
+534,,7-14,the tent,,,1
+610,,8-62,the beech,,,1
+535,,7-15,the yard or court,"‘enclosed area atttached to a house, whether outside or an inner court’",,1
+536,,7-16,the men's house,,,1
+537,,7-17,the cookhouse,,,1
+538,,7-18,the meeting house,,,1
+539,,7-21,the room,,,1
+540,,7-22,the door or gate,,,1
+541,,7-221,the doorpost,"= ‘jamb, side post of a door’",,1
+542,,7-23,the lock,,,1
+543,,7-231,the latch or door-bolt,,,1
+544,,7-24,the key,,,1
+545,,7-25,the window,,,1
+546,,7-26,the floor,,,1
+547,,7-27,the wall,,,1
+548,,7-31,the fireplace,,,1
+549,,7-32,the stove,,,1
+550,,7-33,the chimney,,,1
+551,,7-42,the bed,,,1
+552,,7-421,the pillow,,,1
+553,,7-422,the blanket,,,1
+554,,7-43,the chair,,,1
+555,,7-44,the table,,,1
+556,,7-45,the lamp or torch,,,1
+557,,7-46,the candle,,,1
+558,,7-47,the shelf,"‘a long flat narrow board fixed onto a wall or in a frame or cupboard, used for putting things on or stroing things on’",,1
+559,,7-48,the trough,‘a long narrow open container that holds water or food for animals’,,1
+560,,7-51,the roof,,,1
+561,,7-52,the thatch,"‘natural roofing material such as straw, reeds, leaves, etc.’",,1
+562,,7-53,the ridgepole,'the highest horizontal beam in a roof',,1
+563,,7-54,the rafter,'a horizontal beam that supports the roof',,1
+564,,7-55,the beam,,,1
+565,,7-56,the post or pole,"= ‘a strong upright piece of wood, metal etc. that is fixed into the ground, especially to support something’",,1
+566,,7-57,the board,,,1
+567,,7-58,the arch,,,1
+568,,7-61,the mason,,,1
+569,,7-62,the brick,,,1
+570,,7-63,the mortar(2),"'a mixture of lime, sand and water, used in building for joining bricks or stones together'",,1
+571,,7-64,the adobe,‘earth and straw that are made into bricks for building houses’,,1
+572,,8-11,the farmer,,,1
+573,,8-12,the field,(for cultivation),,1
+574,,8-13,the garden,,,1
+575,,8-15,to cultivate,,,1
+576,,8-16,the fence,,,1
+577,,8-17,the ditch,"‘a long narrow hole cut into the ground at the side of a field, road etc., especially for water to flow through’",,1
+578,,8-21,to plough/plow,,,1
+579,,8-212,the furrow,,,1
+580,,8-22,to dig,,,1
+581,,8-23,the spade,'tool with handle and blade used for digging in the ground',,1
+582,,8-24,the shovel,'tool with handle and scoop for lifting and throwing material such as soil',,1
+583,,8-25,the hoe,"'tool with handle and blade with two or more prongs used for weeding, raking, etc.'",,1
+584,,8-26,the fork(2)/pitchfork,,,1
+585,,8-27,the rake,,,1
+586,,8-31,to sow,,,1
+587,,8-311,the seed,,,1
+588,,8-32,to mow,,,1
+589,,8-33,the sickle or scythe,,,1
+590,,8-34,to thresh,,,1
+591,,8-35,the threshing-floor,,,1
+592,,8-41,the harvest,,,1
+593,,8-42,the grain,"(barley, oats, etc.)",,1
+594,,8-43,the wheat,,,1
+595,,8-44,the barley,,,1
+596,,8-45,the rye,,,1
+597,,8-46,the oats,,,1
+598,,8-47,the maize/corn,,,1
+599,,8-48,the rice,‘cooked rice as a meal’,,1
+600,,8-51,the grass,,,1
+601,,8-52,the hay,,,1
+602,,8-53,the plant,,,1
+603,,8-531,to plant,,,1
+604,,8-54,the root,,,1
+605,,8-55,the branch,,,1
+606,,8-56,the leaf,,,1
+607,,8-57,the flower,,,1
+608,,8-6,the tree,,,1
+609,,8-61,the oak,,,1
+611,,8-63,the birch,,,1
+612,,8-64,the pine,,,1
+613,,8-65,the fir,,,1
+614,,8-66,the acorn,,,1
+615,,8-67,the vine,,,1
+616,,8-68,the tobacco,,,1
+617,,8-69,to smoke,‘to smoke a cigarette’,,1
+618,,8-691,the pipe,(for smoking),,1
+619,,8-72,the tree stump,,,1
+620,,8-73,the tree trunk,,,1
+621,,8-74,the forked branch,,,1
+622,,8-75,the bark,,,1
+623,,8-76,the sap,,,1
+624,,8-81,the palm tree,,,1
+625,,8-82,the coconut,"(fruit, not tree)",,1
+626,,8-83,the citrus fruit,,,1
+627,,8-84,the banana,,,1
+628,,8-85,the banyan,,,1
+629,,8-91,the sweet potato,,,1
+630,,8-912,the yam,,,1
+631,,8-92,the cassava/manioc,"(the tuber, rather than its plant or products)",,1
+632,,8-93,the gourd,,,1
+633,,8-931,the pumpkin or squash,,,1
+634,,8-94,the bamboo,,,1
+635,,8-941,the sugar cane,,,1
+636,,8-96,the fish poison,"(in Amazonia, a kind of root is apparently used as fish poison)",,1
+637,,8-97,the nettle,,,1
+638,,8-98,the mushroom,,,1
+639,,9-11,to do,(pure action meaning),,1
+640,,9-12,the work,,,1
+641,,9-14,to bend,,,1
+642,,9-15,to fold,,,1
+643,,9-16,to tie,,,1
+644,,9-161,to untie,,,1
+645,,9-18,the chain,,,1
+646,,9-19,the rope,,,1
+647,,9-192,the knot,,,1
+648,,9-21,to strike or hit or beat,,,1
+649,,9-211,to pound,‘with fist’,,1
+650,,9-22,to cut,,,1
+651,,9-221,to cut down,,,1
+652,,9-222,to chop,,,1
+653,,9-223,to stab,,,1
+654,,9-23,the knife(2),'knife for preparing food',,1
+655,,9-24,the scissors or shears,,,1
+656,,9-25,the axe/ax,,,1
+657,,9-251,the adze,"'a sharp tool with the blade at a right angle to the handle, used to shape pieces of wood'",,1
+658,,9-26,to break,,,1
+659,,9-261,broken,"'out of order, not working'",,1
+660,,9-27,to split,,,1
+661,,9-28,to tear,'damage [paper/cloth] by pulling it too hard',,1
+662,,9-83,the statue,,,1
+663,,9-29,to skin,'strip or pull off the skin or hide of',,1
+664,,9-31,to rub,,,1
+665,,9-32,to stretch,'make [something elastic] bigger or looser by pulling it',,1
+666,,9-33,to pull,'use one's hand to make something move towards one or in the direction that one is moving',,1
+667,,9-34,to spread out,,,1
+668,,9-341,to hang up,,,1
+669,,9-342,to press,'push something firmly against a surface',,1
+670,,9-343,to squeeze,'press something tightly',,1
+671,,9-35,to pour,,,1
+672,,9-36,to wash,(transitive),,1
+673,,9-37,to sweep,'clean the dust/dirt from the floor/ground using a broom',,1
+674,,9-38,the broom,"'a large brush with a long handle, used for sweeping floors'",,1
+675,,9-422,the tool,"'an artifact (such as a hammer, a saw or a screwdriver) held in one's hand to help one in performing a particular job'",,1
+676,,9-43,the carpenter,'someone whose job is making and repairing wooden objects',,1
+677,,9-44,to build,,,1
+678,,9-46,to bore,'make a deep round hole in a hard surface',,1
+679,,9-461,to hollow out,'make a hole or empty space by removing the inside part of something',,1
+680,,9-48,the saw,,,1
+681,,9-49,the hammer,,,1
+682,,9-5,the nail,'a thin pointed piece of metal which one forces into a piece of wood with a hammer to fasten the wood to something else',,1
+683,,9-56,the glue,'a sticky substance used for joining things together',,1
+684,,9-6,the blacksmith,,,1
+685,,9-61,to forge,'make something from a piece of metal by heating the metal and shaping it',,1
+686,,9-62,the anvil,'a heavy iron block on which pieces of metal are shaped using a hammer',,1
+687,,9-63,to cast,'form metal objects by pouring the molten metal into molds',,1
+688,,9-64,the gold,,,1
+689,,9-65,the silver,,,1
+690,,9-66,the copper,,,1
+691,,9-67,the iron,,,1
+692,,9-68,the lead,(a kind of metal),,1
+693,,9-69,the tin or tinplate,,,1
+694,,9-71,the potter,,,1
+695,,9-72,to mould/mold,'form articles from clay or other plastic material by molding with the hands',,1
+696,,9-73,the clay,,,1
+697,,9-74,the glass,"(the substance, not the drinking vessel)",,1
+698,,9-75,to weave or plait/braid,‘weave (a basket) or plait/braid (someone’s hair)’,,1
+699,,9-76,the basket,,,1
+700,,9-77,the mat,'a small piece of thick rough material which covers part of the floor',,1
+701,,9-771,the rug,'a piece of thick cloth or wool that is smaller than a carpet and is put on the floor as decoration',,1
+702,,9-78,the netbag,'bag made of net used in Papua to carry things’,,1
+703,,9-79,the fan,,,1
+704,,9-791,to fan,,,1
+705,,9-81,to carve,'cut shapes out of wood or stone',,1
+706,,9-82,the sculptor,,,1
+707,,1-99901,the beach,,,1
+708,,9-84,the chisel,"'a metal tool with a sharp edge, used to cut wood or stone'",,1
+709,,9-88,the paint,'a liquid that one puts on a surface to make it a particular colour',,1
+710,,9-89,to paint,'put paint on a surface',,1
+711,,10-11,to move,(transitive),,1
+712,,10-12,to turn,(transitive),,1
+713,,10-13,to turn around,(intransitive),,1
+714,,10-14,to wrap,,,1
+715,,10-15,to roll,(transitive),,1
+716,,10-16,to drop,(transitive),,1
+717,,10-17,to twist,(transitive),,1
+718,,10-21,to rise,,,1
+719,,10-22,to raise or lift,,,1
+720,,10-23,to fall,,,1
+721,,10-24,to drip,,,1
+722,,10-25,to throw,,,1
+723,,10-252,to catch,,,1
+724,,10-26,to shake,(transitive),,1
+725,,10-32,to flow,,,1
+726,,10-33,to sink,(intransitive),,1
+727,,10-34,to float,(intransitive),,1
+728,,10-35,to swim,,,1
+729,,10-351,to dive,,,1
+730,,10-352,to splash,,,1
+731,,10-36,to sail,,,1
+732,,10-37,to fly,(intransitive),,1
+733,,10-38,to blow,(intransitive),,1
+734,,10-41,to crawl,,,1
+735,,10-412,to kneel,'to get down on one's knees',,1
+736,,10-413,to crouch,‘lower one’s body close to the ground by bending one’s knees completely’,,1
+737,,10-42,to slide or slip,(intransitive),,1
+738,,10-43,to jump,,,1
+739,,10-431,to kick,,,1
+740,,10-44,to dance,,,1
+741,,10-45,to walk,(intransitive),,1
+742,,10-451,to limp,,,1
+743,,10-46,to run,(intransitive),,1
+744,,10-47,to go,,,1
+745,,10-471,to go up,,,1
+746,,10-472,to climb,,,1
+747,,10-473,to go down,,,1
+748,,10-474,to go out,,,1
+749,,10-48,to come,,,1
+750,,10-481,to come back,,,1
+751,,10-49,to leave,"(intransitive) ‘depart, go away’",,1
+752,,10-491,to disappear,,,1
+753,,10-51,to flee,,,1
+754,,10-52,to follow,,,1
+755,,10-53,to pursue,,,1
+756,,10-55,to arrive,,,1
+757,,10-56,to approach,,,1
+758,,10-57,to enter,,,1
+759,,10-61,to carry,,,1
+760,,10-612,to carry in hand,,,1
+761,,10-613,to carry on shoulder,,,1
+762,,10-614,to carry on head,,,1
+763,,10-615,to carry under the arm,,,1
+764,,10-62,to bring,,,1
+765,,10-63,to send,,,1
+766,,10-64,to lead,,,1
+767,,10-65,to drive,(transitive),,1
+768,,10-66,to ride,,,1
+769,,10-67,to push,,,1
+770,,10-71,the road,,,1
+771,,10-72,the path,,,1
+772,,10-74,the bridge,,,1
+773,,10-75,the cart or wagon,,,1
+774,,10-76,the wheel,,,1
+775,,10-77,the axle,,,1
+776,,10-78,the yoke,,,1
+777,,10-81,the ship,,,1
+778,,10-83,the boat,,,1
+779,,10-831,the canoe,,,1
+780,,10-832,the outrigger,,,1
+781,,10-84,the raft,,,1
+782,,10-85,the oar,,,1
+783,,10-851,the paddle,,,1
+784,,10-852,to row,,,1
+785,,10-86,the rudder,,,1
+786,,10-87,the mast,,,1
+787,,10-88,the sail,,,1
+788,,10-89,the anchor,,,1
+789,,10-91,the port,(= harbour),,1
+790,,10-92,to land,,,1
+791,,11-11,to have,'have temporarily (including things that one does not strictly speaking possess)',,1
+792,,11-12,to own,"'possess, have permanently as legal possession'",,1
+793,,11-13,to take,'seize a concrete object in the hand and hold it',,1
+794,,11-14,to grasp,'take and hold something firmly with one's hands',,1
+795,,11-15,to hold,'to have something in one's hand or arms',,1
+796,,11-16,to get,'come into possession of something' (neutral between ‘obtain’ and ‘receive’),,1
+797,,11-17,to keep,"'retain, remain in possession of something'",,1
+798,,11-18,the thing,'concrete object of any kind',,1
+799,,11-21,to give,'physical transfer of an object with one's hands that passes into possession of the recipient',,1
+800,,11-22,to give back,'give something that was earlier in the recipient's possession',,1
+801,,11-24,to preserve,‘save something/someone from being harmed or destroyed’,,1
+802,,1-99903,the coal,,,1
+803,,11-25,to rescue,'make someone safe from danger or harm',,1
+804,,11-27,to destroy,'damage something so badly that it cannot be repaired or so that it no longer exists',,1
+805,,11-28,to injure,'to cause bodily harm',,1
+806,,11-31,to look for,,,1
+807,,11-32,to find,,,1
+808,,11-33,to lose,,,1
+809,,11-34,to let go,‘stop holding something/someone’,,1
+810,,11-43,the money,,,1
+811,,11-44,the coin,,,1
+813,,11-52,poor,,,1
+814,,11-53,the beggar,,,1
+815,,11-54,stingy,,,1
+816,,11-61,to lend,,,1
+817,,11-62,to borrow,,,1
+818,,11-63,to owe,,,1
+819,,11-64,the debt,'sum of money that one owes',,1
+820,,11-65,to pay,,,1
+821,,11-66,the bill,‘written list showing how much a customer has to pay’,,1
+822,,11-69,the tax,,,1
+823,,11-77,to hire,‘employ’,,1
+824,,11-78,the wages,'the money a worker receives for the work done',,1
+825,,11-79,to earn,'receive [money] for regular work',,1
+826,,11-81,to buy,,,1
+827,,11-82,to sell,,,1
+828,,11-83,to trade or barter,,,1
+829,,11-84,the merchant,'someone who buys and sells goods in large quantities',,1
+830,,11-85,the market,(place),,1
+831,,11-86,the shop/store,,,1
+832,,11-87,the price,,,1
+833,,11-88,expensive,,,1
+834,,11-89,cheap,,,1
+835,,11-91,to share,'let someone have part of something that belongs to oneself',,1
+836,,11-92,to weigh,'have a certain weight',,1
+837,,12-01,after,,,1
+838,,12-011,behind,,,1
+839,,12-02,beside,,,1
+840,,12-03,down,,,1
+841,,12-04,before,,,1
+842,,12-041,in front of,,,1
+843,,12-05,inside,,,1
+844,,12-06,outside,,,1
+845,,12-07,under,,,1
+846,,12-08,up,,,1
+847,,12-11,the place,,,1
+848,,1-99904,the constellation,,,1
+849,,12-12,to put,,,1
+850,,12-13,to sit,,,1
+851,,12-14,to lie down,,,1
+852,,12-15,to stand,,,1
+853,,12-16,to remain,,,1
+854,,12-17,the remains,,,1
+855,,12-21,to gather,(transitive),,1
+856,,12-212,to pick up,,,1
+857,,12-213,to pile up,(transitive),,1
+858,,12-22,to join,(transitive),,1
+859,,12-23,to separate,(transitive),,1
+860,,12-232,to divide,(transitive),,1
+861,,12-24,to open,(transitive),,1
+862,,12-25,to shut,(transitive),,1
+863,,12-26,to cover,,,1
+864,,12-27,to hide,‘conceal’ (transitive),,1
+865,,12-31,high,,,1
+866,,12-32,low,,,1
+867,,12-33,the top,,,1
+868,,12-34,the bottom,,,1
+869,,12-35,the end(1),(spatial),,1
+870,,12-352,pointed,,,1
+871,,12-353,the edge,,,1
+872,,12-36,the side,,,1
+873,,12-37,the middle,center,,1
+874,,12-41,right(1),,,1
+875,,12-42,left,,,1
+876,,12-43,near,(adverb),,1
+877,,12-44,far,(adverb),,1
+878,,12-45,the east,,,1
+879,,12-46,the west,,,1
+880,,12-47,the north,,,1
+881,,12-48,the south,,,1
+882,,12-53,to grow,,,1
+883,,12-54,to measure,(transitive),,1
+884,,12-541,the fathom,"‘a unit of length (originally outstretched arms), equal to about 1.8 metres’",,1
+885,,12-55,big,,,1
+886,,12-56,small,,,1
+887,,12-57,long,,,1
+888,,12-58,tall,,,1
+889,,12-59,short,,,1
+890,,12-61,wide,,,1
+891,,12-62,narrow,,,1
+892,,12-63,thick,"(in dimension; as opposed to thick in density, e.g. thick soup, hair)",,1
+893,,12-65,thin,"(in dimension; as opposed to thin in density, e.g. thin soup, hair)",,1
+894,,12-67,deep,,,1
+895,,12-68,shallow,,,1
+896,,12-71,flat,,,1
+897,,12-73,straight,,,1
+898,,12-74,crooked,(opposite of straight),,1
+899,,12-75,the hook,,,1
+900,,12-76,the corner,,,1
+901,,12-77,the cross,,,1
+902,,12-78,the square,,,1
+903,,12-81,round,,,1
+904,,12-82,the circle,,,1
+905,,12-83,the ball,‘sphere’,,1
+906,,12-84,the line,,,1
+907,,12-85,the hole,,,1
+908,,12-92,similar,,,1
+909,,12-93,to change,,,1
+910,,13,zero,,,1
+911,,13-01,one,,,1
+912,,13-02,two,,,1
+913,,13-03,three,,,1
+914,,13-04,four,,,1
+915,,13-05,five,,,1
+916,,13-06,six,,,1
+917,,13-07,seven,,,1
+918,,13-08,eight,,,1
+919,,13-09,nine,,,1
+920,,13-1,ten,,,1
+921,,13-101,eleven,,,1
+922,,13-102,twelve,,,1
+923,,13-103,fifteen,,,1
+924,,13-104,twenty,,,1
+925,,13-105,a hundred,,,1
+926,,13-106,a thousand,,,1
+927,,13-107,to count,'count objects in a set in order to determine the total',,1
+928,,13-14,all,'the complete set of' (applied to a conceptually countable and nonsingular noun),,1
+929,,13-15,many,'a large number of' (applied to a conceptually countable and nonsingular noun),,1
+930,,13-16,more,'a larger number of',,1
+931,,13-17,few,'a large number of',,1
+932,,13-18,enough,,,1
+933,,13-181,some,'a certain number of' (applied to a conceptually countable and nonsingular noun),,1
+934,,13-19,the crowd,'a large number of people in one place',,1
+935,,13-21,full,,,1
+936,,13-22,empty,,,1
+937,,13-23,the part,,,1
+938,,13-24,the half,'either of the two equal parts into which something is divided',,1
+939,,13-33,only,,,1
+940,,13-34,first,,,1
+941,,13-35,last,,,1
+942,,13-36,second,,,1
+943,,13-37,the pair,'two things of the same kind that are used together',,1
+944,,13-38,twice/two times,,,1
+945,,13-42,third,,,1
+946,,13-44,three times,,,1
+947,,14-11,the time,,,1
+948,,14-12,the age,‘time of life’,,1
+949,,14-13,new,,,1
+950,,14-14,young,,,1
+951,,14-15,old,,,1
+952,,14-16,early,,,1
+953,,14-17,late,,,1
+954,,14-18,now,,,1
+955,,14-19,immediately,,,1
+956,,14-21,fast,‘quickly’ (adverb),,1
+957,,14-22,slow,(adverb),,1
+958,,14-23,to hurry,(intransitive),,1
+959,,14-24,to be late,to tarry,,1
+960,,14-25,to begin,(transitive),,1
+961,,14-252,to last,‘take up’,,1
+962,,14-26,the end(2),(temporal),,1
+963,,14-27,to finish,,,1
+964,,14-28,to cease,‘to stop doing something’,,1
+965,,14-29,ready,,,1
+966,,14-31,always,,,1
+967,,14-32,often,,,1
+968,,14-33,sometimes,,,1
+969,,14-331,soon,,,1
+970,,14-332,for a long time,,,1
+971,,14-34,never,,,1
+972,,14-35,again,,,1
+973,,14-41,the day(1),(as opposed to 'night'),,1
+974,,14-42,the night,,,1
+975,,14-43,the dawn,,,1
+976,,14-44,the morning,,,1
+977,,14-45,the midday,,,1
+978,,14-451,the afternoon,,,1
+979,,14-46,the evening,,,1
+980,,14-47,today,,,1
+981,,14-48,tomorrow,,,1
+982,,14-481,the day after tomorrow,(adverbial use),,1
+983,,14-49,yesterday,,,1
+984,,14-491,the day before yesterday,(adverbial use),,1
+985,,14-51,the hour,,,1
+986,,14-53,the clock,,,1
+987,,14-61,the week,,,1
+988,,14-62,Sunday,,,1
+989,,14-63,Monday,,,1
+990,,14-64,Tuesday,,,1
+991,,14-65,Wednesday,,,1
+992,,14-66,Thursday,,,1
+993,,14-67,Friday,,,1
+994,,14-68,Saturday,,,1
+995,,14-71,the month,,,1
+996,,14-73,the year,,,1
+997,,14-74,the winter,,,1
+998,,14-75,the spring(2),,,1
+999,,14-76,the summer,,,1
+1000,,14-77,the autumn/fall,,,1
+1001,,14-78,the season,,,1
+1002,,15-21,to smell(1),'(intransitive) to have a particular smell',,1
+1003,,15-89,wrinkled,,,1
+1004,,15-212,to sniff,'to inhale through one's nose in order to smell something',,1
+1005,,15-22,to smell(2),'(transitive) to notice a particular smell',,1
+1006,,15-25,fragrant,‘good smelling’,,1
+1007,,15-26,stinking,‘bad smelling’,,1
+1008,,15-31,to taste,'have a particular taste',,1
+1009,,15-35,sweet,,,1
+1010,,15-36,salty,,,1
+1011,,15-37,bitter,,,1
+1012,,15-38,sour,,,1
+1013,,15-39,brackish,brackish water: 'water that is not pure but is slightly salty',,1
+1014,,15-41,to hear,,,1
+1015,,15-42,to listen,'pay attention to a sound that one can hear',,1
+1016,,15-44,the sound or noise,'something that one can hear',,1
+1017,,15-45,loud,,,1
+1018,,15-46,quiet,'not making much noise',,1
+1019,,15-51,to see,,,1
+1020,,15-52,to look,,,1
+1021,,15-55,to show,,,1
+1022,,15-56,to shine,,,1
+1023,,15-57,bright,'having a lot of light',,1
+1024,,15-61,the colour/color,,,1
+1025,,15-62,light(2),(as opposed to dark),,1
+1026,,15-63,dark,,,1
+1027,,15-64,white,,,1
+1028,,15-65,black,,,1
+1029,,15-66,red,,,1
+1030,,15-67,blue,,,1
+1031,,15-68,green,,,1
+1032,,15-69,yellow,,,1
+1033,,15-71,to touch,'put one's hand on something/someone so that one can feel them',,1
+1034,,15-712,to pinch,'press a part of someone's flesh very tightly between one's finger and thumb (so that it hurts)',,1
+1035,,15-72,to feel,'touch something to get a tactile perception of it',,1
+1036,,15-74,hard,"'difficult to press down, break or cut'",,1
+1037,,15-75,soft,"'not hard, easy to press/break/cut'",,1
+1038,,15-76,rough(1),'having an uneven surface',,1
+1039,,15-77,smooth,"'completely even/flat, so that the hand moves easiy over it'",,1
+1040,,15-78,sharp,,,1
+1041,,15-79,blunt,,,1
+1042,,15-81,heavy,,,1
+1043,,15-82,light(1),(in weight),,1
+1044,,15-83,wet,'covered in or full of liquid',,1
+1045,,15-84,dry,'without water or liquid inside or on the surface',,1
+1046,,15-85,hot,,,1
+1047,,15-851,warm,,,1
+1048,,15-86,cold,,,1
+1049,,15-87,clean,,,1
+1050,,15-88,dirty,,,1
+1051,,16-11,the soul or spirit,,,1
+1052,,16-15,surprised or astonished,,,1
+1053,,16-18,the good luck,,,1
+1054,,16-19,the bad luck,,,1
+1055,,16-23,happy,,,1
+1056,,16-25,to laugh,,,1
+1057,,16-251,to smile,,,1
+1058,,16-26,to play,,,1
+1059,,16-27,to love,,,1
+1060,,16-29,to kiss,,,1
+1061,,16-3,to embrace,,,1
+1062,,16-31,the pain,,,1
+1063,,16-32,the grief,,,1
+1064,,16-33,the anxiety,,,1
+1065,,16-34,to regret or be sorry,,,1
+1066,,16-35,the pity,,,1
+1067,,16-37,to cry,‘to weep’,,1
+1068,,16-38,the tear,,,1
+1069,,16-39,to groan,,,1
+1070,,16-41,to hate,,,1
+1071,,16-42,the anger,,,1
+1072,,16-44,the envy or jealousy,,,1
+1073,,16-45,the shame,,,1
+1074,,16-48,proud,,,1
+1075,,16-51,to dare,,,1
+1076,,16-52,brave,,,1
+1077,,16-53,the fear,,,1
+1078,,16-54,the danger,,,1
+1079,,16-62,to want,‘to desire’,,1
+1080,,16-622,to choose,,,1
+1081,,16-63,to hope,,,1
+1082,,16-65,faithful,,,1
+1083,,16-66,true,,,1
+1084,,16-67,to lie(2),‘tell lies’,,1
+1085,,16-68,the deceit,,,1
+1086,,16-69,to forgive,,,1
+1087,,16-71,good,,,1
+1088,,16-72,bad,,,1
+1089,,16-73,right(2),‘correct’,,1
+1090,,16-74,wrong,,,1
+1091,,16-76,the fault,,,1
+1092,,16-77,the mistake,,,1
+1093,,16-78,the blame,,,1
+1094,,16-79,the praise,,,1
+1095,,16-81,beautiful,,,1
+1096,,16-82,ugly,,,1
+1097,,16-83,greedy,,,1
+1098,,16-84,clever,,,1
+1099,,17-11,the mind,'the seat of intelligence (as opposed to 'heart’ or 'soul’ as the seat of emotions)',,1
+1100,,17-13,to think(1),‘reflect’,,1
+1101,,17-14,to think(2),‘be of the opinion’,,1
+1102,,17-15,to believe,'be sure that someone is telling the truth',,1
+1103,,17-16,to understand,,,1
+1104,,17-17,to know,,,1
+1105,,17-171,to guess,,,1
+1106,,17-172,to imitate,,,1
+1107,,17-18,to seem,,,1
+1108,,17-19,the idea,,,1
+1109,,17-21,wise,,,1
+1110,,17-22,stupid,,,1
+1111,,17-23,mad,‘insane’,,1
+1112,,17-24,to learn,,,1
+1113,,17-242,to study,,,1
+1114,,17-25,to teach,,,1
+1115,,17-26,the pupil,,,1
+1116,,17-27,the teacher,,,1
+1117,,17-28,the school,,,1
+1118,,17-31,to remember,,,1
+1119,,17-32,to forget,,,1
+1120,,17-34,clear,‘clear to the mind’ (the opposite of ‘obscure’),,1
+1121,,17-35,obscure,‘obscure to the mind’,,1
+1122,,17-36,secret,,,1
+1123,,17-37,certain,,,1
+1124,,17-38,to explain,,,1
+1125,,17-41,the intention,,,1
+1126,,17-42,the cause,,,1
+1127,,17-43,the doubt,,,1
+1128,,17-44,to suspect,,,1
+1129,,17-441,to betray,,,1
+1130,,17-45,the need or necessity,,,1
+1131,,17-46,easy,,,1
+1132,,17-47,difficult,,,1
+1133,,17-48,to try,‘to attempt (to do something)’,,1
+1134,,17-49,the manner,‘the way in which something is done or happens’,,1
+1135,,17-51,and,,,1
+1136,,17-52,because,,,1
+1137,,17-53,if,,,1
+1138,,17-54,or,,,1
+1139,,17-55,yes,,,1
+1140,,17-56,no,,,1
+1141,,17-61,how?,,,1
+1142,,17-62,how many?,,,1
+1143,,17-63,how much?,,,1
+1144,,17-64,what?,,,1
+1145,,17-65,when?,,,1
+1146,,17-66,where?,,,1
+1147,,17-67,which?,,,1
+1148,,17-68,who?,,,1
+1149,,17-69,why?,,,1
+1150,,18-11,the voice,,,1
+1151,,18-12,to sing,,,1
+1152,,18-13,to shout,,,1
+1153,,18-15,to whisper,,,1
+1154,,18-16,to mumble,"‘to say something too quietly and not clearly enough, so that it is difficult or impossible to hear’",,1
+1155,,18-17,to whistle,,,1
+1156,,18-18,to shriek,"‘to make a very high, loud sound’",,1
+1157,,18-19,to howl,"‘(dog/wolf/other mammal:) to make a long, loud sound’",,1
+1158,,18-21,to speak or talk,,,1
+1159,,18-211,to stutter or stammer,,,1
+1160,,18-22,to say,,,1
+1161,,18-221,to tell,‘tell (a story)’,,1
+1162,,18-222,the speech,‘oration’,,1
+1163,,18-23,to be silent,,,1
+1164,,18-24,the language,,,1
+1165,,18-26,the word,,,1
+1166,,18-28,the name,,,1
+1167,,18-31,to ask(1),"‘ask a question, inquire’",,1
+1168,,18-32,to answer,,,1
+1169,,18-33,to admit,,,1
+1170,,18-34,to deny,,,1
+1171,,18-35,to ask(2),"‘ask for something, request’",,1
+1172,,18-36,to promise,,,1
+1173,,18-37,to refuse,,,1
+1174,,18-38,to forbid,,,1
+1175,,18-39,to scold,‘to rebuke’,,1
+1176,,18-41,to call(1),‘to summon’,,1
+1177,,18-42,to call(2),‘to give a name’,,1
+1178,,18-43,to announce,,,1
+1179,,18-44,to threaten,,,1
+1180,,18-45,to boast,,,1
+1181,,18-51,to write,,,1
+1182,,18-52,to read,,,1
+1183,,18-56,the paper,,,1
+1184,,18-57,the pen,,,1
+1185,,18-61,the book,,,1
+1186,,18-67,the poet,,,1
+1187,,18-71,the flute,,,1
+1188,,18-72,the drum,,,1
+1189,,18-73,the horn or trumpet,,,1
+1190,,18-74,the rattle,‘a wooden instrument that makes a loud knocking noise [used by people watching football games]’,,1
+1191,,19-11,the country,,,1
+1192,,19-12,the native country,,,1
+1193,,19-15,the town,‘an urban settlement’,,1
+1194,,19-16,the village,‘a rural settlement’,,1
+1195,,19-17,the boundary,,,1
+1196,,19-21,the people,"'the populace, the inhabitants of a country (as opposed to the ruling class)'",,1
+1197,,19-23,the clan,‘extended family’,,1
+1198,,19-24,the chieftain,'leader/ruler of a tribe/clan',,1
+1199,,19-25,the walking stick,,,1
+1200,,19-31,to rule or govern,,,1
+1201,,19-32,the king,,,1
+1202,,19-33,the queen,"'female monarch', not 'king's wife'",,1
+1203,,19-36,the noble,,,1
+1204,,19-37,the citizen,,,1
+1205,,19-41,the master,"as opposed to 'slave, servant'",,1
+1206,,19-42,the slave,,,1
+1207,,19-43,the servant,,,1
+1208,,19-44,the freeman,,,1
+1209,,19-45,to command or order,"'tell someone to do something, using one's authority or power'",,1
+1210,,19-46,to obey,,,1
+1211,,19-47,to permit,,,1
+1212,,19-51,the friend,,,1
+1213,,19-52,the enemy,,,1
+1214,,19-54,the neighbour,,,1
+1215,,19-55,the stranger,'someone whom one does not know',,1
+1216,,19-56,the guest,,,1
+1217,,19-57,the host,,,1
+1218,,19-58,to help,,,1
+1219,,19-59,to prevent,,,1
+1220,,19-61,the custom,,,1
+1221,,19-62,the quarrel,,,1
+1222,,19-63,the plot,‘conspiracy’,,1
+1223,,19-65,to meet,,,1
+1224,,19-72,the prostitute,,,1
+1225,,20-11,to fight,,,1
+1226,,20-13,the war or battle,,,1
+1227,,20-14,the peace,,,1
+1228,,20-15,the army,‘military forces’,,1
+1229,,20-17,the soldier,,,1
+1230,,20-21,the weapons,,,1
+1231,,20-22,the club,‘large stick used as weapon’,,1
+1232,,20-222,the battle-axe,,,1
+1233,,20-23,the sling,,,1
+1234,,20-24,the bow,'used to shoot arrows',,1
+1235,,20-25,the arrow,'used as a weapon',,1
+1236,,20-26,the spear,,,1
+1237,,20-27,the sword,"'metal weapon with a handle, blade , and sheath'",,1
+1238,,20-28,the gun,‘rifle’,,1
+1239,,20-31,the armour,‘metal or leather clothing worn by soldiers in former times to protect their body’,,1
+1240,,20-33,the helmet,,,1
+1241,,20-34,the shield,,,1
+1242,,20-35,the fortress,,,1
+1243,,20-36,the tower,,,1
+1244,,20-41,the victory,,,1
+1245,,20-42,the defeat,,,1
+1246,,20-43,the attack,,,1
+1247,,20-44,to defend,,,1
+1248,,20-45,to retreat,,,1
+1249,,20-46,to surrender,,,1
+1250,,20-47,the captive or prisoner,,,1
+1251,,20-471,the guard,,,1
+1252,,20-48,the booty,,,1
+1253,,20-49,the ambush,,,1
+1254,,20-51,the fisherman,,,1
+1255,,20-52,the fishhook,,,1
+1256,,20-53,the fishing line,,,1
+1257,,20-54,the fishnet,,,1
+1258,,20-55,the fish trap,,,1
+1259,,20-56,the bait,,,1
+1260,,20-61,to hunt,,,1
+1261,,20-62,to shoot,,,1
+1262,,20-63,to miss,‘miss a target’,,1
+1263,,20-64,the trap,,,1
+1264,,20-65,to trap,,,1
+1265,,21-11,the law,'a rule that people in a particular country (or administrative area) must obey',,1
+1343,,23-55,the screw,,,1
+1266,,21-15,the court,'(the judge and/or the jury in a) place where all the information concerning a crime is given so that it can be judged',,1
+1267,,12-013,at,,,1
+1268,,21-16,to adjudicate,'decide whether someone is guilty of a crime in court',,1
+1269,,21-17,the judgment,'official decision given by a judge or a court of law',,1
+1270,,21-18,the judge,,,1
+1271,,21-21,the plaintiff,,,1
+1272,,21-22,the defendant,,,1
+1273,,21-23,the witness,,,1
+1274,,21-24,to swear,"'make a public official promise, especially in a court of law'",,1
+1275,,21-25,the oath,'act of swearing',,1
+1276,,21-31,to accuse,,,1
+1277,,21-32,to condemn,to find guilty or to sentence,,1
+1278,,21-33,to convict,‘to find guilty’,,1
+1279,,21-34,to acquit,,,1
+1280,,21-35,guilty,,,1
+1281,,21-36,innocent,,,1
+1282,,21-37,the penalty or punishment,,,1
+1283,,21-38,the fine,,,1
+1284,,21-39,the prison,,,1
+1285,,21-42,the murder,'the crime of deliberately killing someone',,1
+1286,,21-43,the adultery,,,1
+1287,,21-44,the rape,,,1
+1288,,21-46,the arson,‘deliberately setting fire to something to cause damage’,,1
+1289,,21-47,the perjury,,,1
+1290,,21-51,to steal,,,1
+1291,,21-52,the thief,,,1
+1292,,22-11,the religion,,,1
+1293,,22-12,the god,,,1
+1294,,22-13,the temple,‘general term for house of worship’,,1
+1295,,22-14,the altar,‘a raised place on which religious rites are performed’,,1
+1296,,22-15,the sacrifice,‘ritual killing of an animal’,,1
+1297,,22-16,to worship,‘to perform a rite in honor of a deity’,,1
+1298,,22-17,to pray,‘to ask a deity for something’,,1
+1299,,22-18,the priest,‘clergy of any religion’,,1
+1300,,22-19,holy,,,1
+1301,,22-22,to preach,,,1
+1302,,22-23,to bless,,,1
+1303,,22-24,to curse,,,1
+1304,,22-26,to fast,‘to refrain from eating’,,1
+1305,,22-31,the heaven,‘the abode of deities’,,1
+1306,,22-32,the hell,,,1
+1307,,22-35,the demon,‘evil spirit’,,1
+1308,,22-37,the idol,‘statue of a deity’,,1
+1309,,22-42,the magic,,,1
+1310,,22-43,the sorcerer or witch,,,1
+1311,,22-44,the fairy or elf,,,1
+1312,,22-45,the ghost,,,1
+1313,,22-47,the omen,,,1
+1314,,23-1,the radio,,,1
+1315,,23-11,the television,,,1
+1316,,23-12,the telephone,,,1
+1317,,23-135,the motorcycle,,,1
+1318,,23-14,the car,‘motor vehicle’,,1
+1319,,23-15,the bus,,,1
+1320,,23-16,the airplane,,,1
+1321,,23-17,the electricity,,,1
+1322,,23-175,the battery,,,1
+1323,,23-2,the hospital,,,1
+1324,,23-21,the nurse,,,1
+1325,,23-22,the pill or tablet,,,1
+1326,,23-23,the injection,(of liquid drugs into the body),,1
+1327,,23-5,the tap/faucet,,,1
+1328,,23-51,the sink,‘washbasin’,,1
+1329,,23-52,the toilet,,,1
+1330,,23-53,the mattress,,,1
+1331,,23-3,the government,,,1
+1332,,23-31,the president,,,1
+1333,,23-32,the minister,'political (not religious)',,1
+1334,,23-33,the police,,,1
+1335,,23-34,the driver's license,,,1
+1336,,23-37,the crime,,,1
+1337,,23-38,the election,,,1
+1338,,23-4,the post/mail,,,1
+1339,,23-41,the postage stamp,,,1
+1340,,23-42,the letter,‘epistula’,,1
+1341,,23-44,the bank,‘financial institution’,,1
+1342,,23-54,the tin/can,‘hermetically sealed metal container for preserved food’,,1
+1344,,23-555,the screwdriver,,,1
+1345,,23-56,the bottle,‘glass container for liquids with narrow neck’,,1
+1346,,23-565,the candy/sweets,,,1
+1347,,23-24,the spectacles/glasses,,,1
+1348,,23-57,the plastic,,,1
+1349,,23-575,the bomb,,,1
+1350,,23-58,the workshop,‘small factory’,,1
+1351,,23-59,the cigarette,,,1
+1352,,23-61,the calendar,,,1
+1353,,23-62,the film/movie,movie,,1
+1354,,23-63,the music,,,1
+1355,,23-64,the song,,,1
+1356,,23-6,the newspaper,,,1
+1357,,23-385,the address,,,1
+1358,,23-39,the number,,,1
+1359,,23-155,the train,,,1
+1360,,23-36,the birth certificate,,,1
+1361,,23-18,to brake,(when driving a vehicle),,1
+1362,,23-195,the petroleum,,,1
+1363,,23-185,the motor,,,1
+1364,,23-19,the machine,,,1
+1365,,23-13,the bicycle,,,1
+1366,,23-395,the street,,,1
+1367,,19-445,to liberate,,,1
+1368,,19-565,to invite,,,1
+1369,,23-35,the license plate,,,1
+1370,,23-43,the postcard,,,1
+1371,,24-01,to be,,,1
+1372,,24-02,to become,,,1
+1373,,24-03,without,,,1
+1374,,24-05,through,,,1
+1375,,24-13,same,,,1
+1376,,24-06,not,,,1
+1377,,24-07,this,,,1
+1378,,24-08,that,,,1
+1379,,24-09,here,,,1
+1380,,24-1,there,,,1
+1381,,24-11,other,,,1
+1382,,4-493,the vagina,‘the passage from a woman’s outer sexual organs to her womb’,,1
+1383,,23-9,the tea,,,1
+1384,,23-91,the coffee,,,1
+1385,,24-12,next,,,1
+1386,,3-862,the coyote,,,1
+1387,,3-863,the hare,,,1
+1388,,3-865,the quail,,,1
+1389,,3-866,the raccoon,,,1
+1390,,3-869,the squirrel,,,1
+1391,,3-871,the reindeer/caribou,,,1
+1392,,3-872,the elk/moose,,,1
+1393,,3-873,the beaver,,,1
+1394,,10-79,the sledge/sled,,,1
+1395,,8-29,the lasso,,,1
+1396,,8-991,the larch,a tree (Larix) of the pine family,,1
+1397,,8-993,the needle(2),‘needle of coniferous tree’,,1
+1398,,1-771,the arctic lights,‘aurora borealis’,,1
+1399,,4-465,the sinew or tendon,,,1
+1400,,7-67,to tan,‘to make animal skin into leather by by treating it with tannin (=a kind of acid)’,,1
+1401,,6-98,the snowshoe,,,1
+1402,,22-5,the circumcision,,,1
+1403,,22-51,the initiation ceremony,,,1
+1404,,8-996,the cone,‘fruit of a pine or fir tree’,,1
+1405,,3-8112,the body louse,,,1
+1406,,4-494,the vulva,‘the outer part of a woman’s sexual organs’,,1
+1407,,3-99,the tapir,,,1
+1408,,9-93,the whetstone,,,1
+1409,,9-92,the tumpline,'a strap slung over the forehead or chest used (especially by native Americans) for carrying packs or loads',,1
+1410,,7-65,the camp,,,1
+1411,,8-28,the digging stick (=yamstick),,,1
+1412,,3-597,the cormorant,(Phalacrocorax etc),,1
+1413,,3-833,the prawns or shrimp,,,1
+1414,,3-834,the termites,(Isoptera),,1
+1415,,3-835,the tick,(Phthiraptera),,1
+1416,,9-87,the boomerang,,,1
+1417,,3-88,the kangaroo,,,1
+1418,,3-89,the anteater,,,1
+1419,,3-598,the toucan,,,1
+1420,,3-9,the jaguar,,,1
+1421,,5-983,the manioc bread,,,1
+1422,,7-66,the hammock,,,1
+1423,,8-911,the millet or sorghum,,,1
+1424,,3-913,the chameleon,,,1
+1425,,9-9,to draw water,,,1
+1426,,9-91,the peg,,,1
+1427,,10-58,to go or return home,,,1
+1428,,3-917,the buffalo,,,1
+1429,,1-411,the savanna,'a large open grassland in tropical and subtropical regions',,1
+1430,,1-831,the steam,,,1
+1431,,2-4561,the older sibling,,,1
+1432,,2-4562,the younger sibling,,,1
+1433,,2-4711,the grandparents,,,1
+1434,,2-5,the grandchild,,,1
+1435,,2-541,the sibling’s child,,,1
+1436,,2-622,the parents-in-law,,,1
+1437,,2-6411,the child-in-law,,,1
+1438,,2-6412,the sibling-in-law,,,1
+1439,,2-931,he,,,1
+1440,,2-932,she,,,1
+1441,,2-933,it,,,1
+1442,,4-741,the life,,,1
+1443,,4-771,the carcass,'body of a dead animal',,1
+1444,,4-844,the disease,,,1
+1445,,7-232,the padlock,,,1
+1446,,8-121,the paddy,'wet land in which rice is grown',,1
+1447,,11-29,to damage,,,1
+1448,,12-081,above,,,1
+1449,,13-231,the piece,,,1
+1450,,13-331,alone,,,1
+1451,,14-251,the beginning,beginning,,1
+1452,,14-411,the day(2),"(unit of time, 24 hours)",,1
+1453,,22-131,the church,‘a Christian house of worship’,,1
+1454,,22-132,the mosque,‘a Muslim house of worship’,,1
+1455,,24-14,nothing,,,1
+1456,,4-7501,dead,,,1
+1457,,4-8541,to scratch,‘to scratch an itch’,,1
+1458,,9-111,to make,‘produce by working’,,1
+1459,,4-431,the belly,,,1
+1460,,9-311,to wipe,,,1
+1461,,1-775,to freeze,,,1
+1462,,24-04,with,,,1
+1463,,12-012,in,,,1
+1464,,1-99905,the jade or jadeite,,,1
+1465,,1-99906,the loam,a rich soil consisting of a mixture of sand and clay and decaying organic materials,,1
+1466,,1-99907,the river,,,1
+1467,,1-99908,the river mouth,,,1
+1468,,1-99909,the short dry season,,,1
+1469,,1-9991,the spring,,,1
+1470,,1-99911,to blaze,,,1
+1471,,1-99912,to melt,,,1
+1472,,2-99902,step-,,,1
+1473,,2-99903,the co-father-in-law,the father-in-law of ego’s child,,1
+1474,,2-99904,the co-mother-in-law,the mother-in-law of ego’s child,,1
+1475,,2-99905,the father-in-law,,,1
+1476,,2-99906,the German,,,1
+1477,,2-99907,the Hungarian,,,1
+1478,,2-99908,the lover,,,1
+1479,,2-99909,the mother-in-law,,,1
+1480,,2-9991,the non-Gypsy,,,1
+1481,,2-99911,the parent’s elder brother,,,1
+1482,,2-99912,the parent’s elder sister,,,1
+1483,,2-99913,the parent’s younger brother,,,1
+1484,,2-99914,the parent’s younger sister,,,1
+1485,,2-99915,the Slovak,,,1
+1486,,2-99916,the spouse,,,1
+1487,,2-99917,the stepchild,,,1
+1488,,2-99918,the Vlax Gypsy,,,1
+1489,,3-99902,the agouti,"A burrowing rodent of the genus Dasyprocta, native to tropical America and usually having brown fur streaked with gray",,1
+1490,,3-99903,the amphibian,,,1
+1491,,3-99904,the Andean guinea pig,"It is raised for food, medicine and ritual in the Andes",,1
+1492,,3-99905,the Andean owl,,,1
+1493,,3-99906,the armadillo,,,1
+1494,,3-99907,the bandicoot,,,1
+1495,,3-99908,the barn owl,,,1
+1496,,3-99909,the bustard,,,1
+1497,,3-9991,the capibara,A large semiaquatic rodent (Hydrochoerus hydrochaeris) of tropical South America,,1
+1498,,3-99911,the caterpillar,,,1
+1499,,3-99912,the codfish,,,1
+1500,,3-99913,the condor,,,1
+1501,,3-99917,the herd,,,1
+1502,,3-99918,the hocco,"the crested curassow, also called royal pheasant",,1
+1503,,3-99919,the humming bird,,,1
+1504,,3-9992,the ibis,,,1
+1505,,3-99921,the iguana,,,1
+1506,,3-99922,the jabiru,k.o. bird,,1
+1507,,3-99923,the kingfisher,,,1
+1508,,3-99924,the louse,,,1
+1509,,3-99925,the Maine lobster,,,1
+1510,,3-99926,the male pig,,,1
+1511,,3-99928,the marail,k.o. bird,,1
+1512,,3-99929,the mole,the animal,,1
+1513,,3-9993,the paca,"A large nocturnal burrowing rodent of the genus Cuniculus, found in South and Central America",,1
+1514,,3-99931,the sleepyhead bird,,,1
+1515,,3-99932,the partridge,,,1
+1516,,3-99933,the pet,,,1
+1517,,3-99934,the piranha,,,1
+1518,,3-99935,the plover,,,1
+1519,,3-99936,the pouched marmot,,,1
+1520,,3-99937,the prairie dog,,,1
+1521,,3-99938,the roadrunner,,,1
+1522,,3-99939,the skunk,,,1
+1523,,3-9994,the songbird,,,1
+1524,,3-99941,the sparrow,,,1
+1525,,3-99942,the tiger,,,1
+1526,,3-99943,the trumpeter bird,,,1
+1527,,4-99901,barefoot,,,1
+1528,,4-99902,swollen,,,1
+1529,,4-99903,the canine tooth,,,1
+1530,,4-99904,the cholesterol,,,1
+1531,,4-99905,the dribble,,,1
+1532,,4-99906,the fist,,,1
+1533,,4-99907,the lap,,,1
+1534,,4-99908,the metabolism,,,1
+1535,,4-9991,the saliva,,,1
+1536,,4-99911,the scabies,,,1
+1537,,4-99912,the strength,,,1
+1538,,4-99913,the umbilical cord,,,1
+1539,,4-99914,to itch,,,1
+1540,,5-99901,the fig tree,,,1
+1541,,5-99902,sated,"satiated, full up",,1
+1542,,5-99903,the soy sauce,,,1
+1543,,5-99904,the ayahuasca,a psychoactive infusion prepared from the Banisteriopsis spp,,1
+1544,,5-99905,the bacon,,,1
+1545,,5-99906,the biscuit,,,1
+1546,,5-99907,the brandy,,,1
+1547,,5-99908,the cabbage,,,1
+1548,,5-99909,the cassava flour,,,1
+1549,,5-9991,the cream,,,1
+1550,,5-99911,the Japanese fish cake,,,1
+1551,,5-99912,the jelly,,,1
+1552,,5-99913,the manioc juice,,,1
+1553,,5-99914,the mochi,,,1
+1554,,5-99915,the ramen noodles,called 'saimin' in Hawaii,,1
+1555,,5-99916,the rice ball or musubi,,,1
+1556,,5-99917,the roasted cassava meal,,,1
+1557,,5-99918,the smoked food,,,1
+1558,,5-99919,the tamale,,,1
+1559,,5-9992,the tofu or bean curd,,,1
+1560,,5-99921,the tortilla,,,1
+1561,,5-99922,the vinegar,,,1
+1562,,6-99901,the bag,,,1
+1563,,6-99903,the fringe,,,1
+1564,,6-99904,the leg band,,,1
+1565,,6-99906,the pompom,,,1
+1566,,6-99907,the sandal,,,1
+1567,,6-99908,the sleeve,,,1
+1568,,6-99909,the smock,,,1
+1569,,6-9991,the style or fashion,,,1
+1570,,6-99911,to wear,,,1
+1571,,7-99901,the bench,,,1
+1572,,7-99902,the case,,,1
+1573,,7-99903,the griddle,,,1
+1574,,7-99904,the guestroom,,,1
+1575,,7-99905,the mosquito net,,,1
+1576,,7-99906,the roof tile,,,1
+1577,,8-99901,the almond,,,1
+1578,,8-99902,the amomum,a genus of plants in the ginger family,,1
+1579,,8-99903,the anatto,"a derivative of the achiote trees of tropical regions of the Americas, used to produce a red food coloring",,1
+1580,,8-99904,the Andean weed,,,1
+1581,,8-99905,the apple,,,1
+1582,,8-99906,the ash tree,,,1
+1583,,8-99907,the black tree dye,,,1
+1584,,8-99908,the broccoli,,,1
+1585,,8-99909,the bromelia,,,1
+1586,,8-9991,the carrot,,,1
+1587,,8-99911,the cashew,,,1
+1588,,8-99912,the Chinese rice flower,"(Aglaia odorata), a shrub or small tree in the mahogany family, from south China and Indo-China, grown ornamentally for the handsome leaves and fragrant flowers, which are tiny, round, and yellow; clusters of them are used for leis",,1
+1589,,8-99914,the coniferous tree,,,1
+1590,,8-99915,the cottontree,,,1
+1591,,8-99916,the creeper,"specifically, an odorant plant that gorws in the bleak plateaus. sp. Micromeria nubigena.",,1
+1592,,8-99917,the mortiño,"Vaccinium mortinia, a dark red berry",,1
+1593,,8-99918,the dung,,,1
+1594,,8-99921,the guava,,,1
+1595,,8-99922,the jarilla,,,1
+1596,,8-99923,the jowar,"Sorghum is a genus of numerous species of grasses, some of which are raised for grain and many of which are used as fodder plants",,1
+1597,,8-99924,the kohlrabi,,,1
+1598,,8-99925,the liana,,,1
+1599,,8-99926,the lima beans,,,1
+1600,,8-99927,the lupin,any plant of the genus Lupin; bearing erect spikes of usually purplish-blue flowers,,1
+1601,,8-99929,the mamuelchoique,k.o. shrub,,1
+1602,,8-9993,the mango,,,1
+1603,,8-99931,the mangrove,,,1
+1604,,8-99932,the melon,,,1
+1605,,8-99933,the millet,,,1
+1606,,8-99935,the onion,,,1
+1607,,8-99936,the orange,,,1
+1608,,8-99937,the pea,,,1
+1609,,8-99938,the pear,,,1
+1610,,8-99939,the pineapple,,,1
+1611,,8-99941,the plum,,,1
+1612,,8-99943,the reed,,,1
+1613,,8-99944,the rubber tree,,,1
+1614,,8-99945,the sensitive mimosa,,,1
+1615,,8-99946,the straw,,,1
+1616,,8-99947,the sugar beet,,,1
+1617,,8-99948,the tar,‘pitch/sap from coniferous trees’,,1
+1618,,8-99949,the taro,,,1
+1619,,8-9995,the tree dye,,,1
+1620,,8-99952,the turnip,,,1
+1621,,8-99953,the vetch,"Any of various herbs of the genus Vicia, having pinnately compound leaves that terminate in tendrils and small, variously colored flowers.",,1
+1622,,8-99954,the watermelon,,,1
+1623,,8-99955,the whip,,,1
+1624,,8-99956,the wild maize,,,1
+1625,,8-99957,the willow,,,1
+1626,,8-99958,the woody shrub,Plant whose wood is used for building huts,,1
+1627,,8-99959,the yerba mate,k.o. leaves that are dried and made into an infusion like tea,,1
+1628,,8-9996,to grow(2),to cause to grow [a plant] (transitive),,1
+1629,,8-99961,to pick,,,1
+1630,,8-99962,to raise,to breed and care for to maturity (transitive),,1
+1631,,9-99901,the barrel,,,1
+1632,,9-99902,the basketry,,,1
+1633,,9-99903,the bucket,,,1
+1634,,9-99904,the cable,,,1
+1635,,9-99905,the canvas sheet,,,1
+1636,,9-99906,the corrugated iron,,,1
+1637,,9-99907,the deck,,,1
+1638,,9-99908,the drill,,,1
+1639,,9-99909,the file,,,1
+1640,,9-9991,the harbour,,,1
+1641,,9-99911,the harpoon,,,1
+1642,,9-99912,the hearthstones,,,1
+1643,,9-99914,the manioc squeezer,,,1
+1644,,9-99915,the pencil,,,1
+1645,,9-99916,the rust,,,1
+1646,,9-99917,the sack,,,1
+1647,,9-99918,the scraper,,,1
+1648,,9-9992,the skin bag,for carrying water,,1
+1649,,9-99921,the slap,,,1
+1650,,9-99922,the spur,,,1
+1651,,9-99923,the string or cord,,,1
+1652,,9-99924,the trail,,,1
+1653,,9-99925,the well,,,1
+1654,,9-99926,the wharf,,,1
+1655,,9-99927,the wheelbarrow,,,1
+1656,,9-99928,to barbecue,,,1
+1657,,9-99929,to close,,,1
+1658,,9-9993,to draw,,,1
+1659,,9-99931,to dwell,,,1
+1660,,9-99932,to go away,,,1
+1661,,9-99933,to muddle,,,1
+1662,,9-99934,to prepare,,,1
+1663,,9-99936,to smear,,,1
+1664,,9-99938,to support,,,1
+1665,,10-99901,to accompany,,,1
+1666,,10-99903,to carry on the back,,,1
+1667,,10-99904,to dip,,,1
+1668,,10-99905,to give a ride,on a horse,,1
+1669,,10-99906,to pass,,,1
+1670,,10-99907,to step,,,1
+1671,,10-99908,to wait,,,1
+1672,,11-99901,for free,gratis,,1
+1673,,11-99902,the card,,,1
+1674,,11-99903,the gift,,,1
+1675,,11-99904,the property,,,1
+1676,,11-99905,the string instrument,,,1
+1677,,11-99906,to be worth,,,1
+1678,,11-99907,to receive,,,1
+1679,,12-99901,apart,,,1
+1680,,12-99902,back,,,1
+1681,,13-99901,a little,,,1
+1682,,13-99902,by,distributive numeral marker,,1
+1683,,13-99903,each or every,,,1
+1684,,13-99904,the centigram,A metric unit of mass equal to one hundredth (10) of a gram.,,1
+1685,,13-99905,the yard,unit of measurement,,1
+1686,,13-99906,thirty,,,1
+1687,,13-99907,to fill,,,1
+1688,,13-99908,to substitute,,,1
+1689,,14-99901,Chinese New Year,,,1
+1690,,14-99902,long ago,,,1
+1691,,14-99903,New Year,holiday,,1
+1692,,14-99905,the period,,,1
+1693,,14-99906,the time(2),the recurring occasion on which something happens,,1
+1694,,15-99901,brown,,,1
+1695,,15-99902,grey,,,1
+1696,,15-99903,orange,colour term,,1
+1697,,15-99904,pink,,,1
+1698,,15-99905,the trace,,,1
+1699,,15-99906,violet,colour term,,1
+1700,,16-99901,better,comparative of ‘good’,,1
+1701,,16-99902,in vain,,,1
+1702,,16-99903,thank you!,,,1
+1703,,16-99904,the evil,,,1
+1704,,16-99905,the mood,,,1
+1705,,16-99906,the trouble,,,1
+1706,,16-99907,to be ashamed,,,1
+1707,,16-99908,to be glad,,,1
+1708,,16-99909,to complain,,,1
+1709,,16-9991,to enthuse,,,1
+1710,,16-99911,to look forward,,,1
+1711,,16-99912,to praise,,,1
+1712,,16-99913,voluptuous,,,1
+1713,,16-99914,wild,,,1
+1714,,16-99915,worse,comparative of ‘bad’,,1
+1715,,17-99901,on purpose,,,1
+1716,,17-99902,the possibility,,,1
+1717,,17-99903,the same,,,1
+1718,,17-99904,the scarcity,,,1
+1719,,17-99905,the state,the condition in which sth. or s.o. exists at a given time,,1
+1720,,17-99906,the study,,,1
+1721,,17-99907,to doubt,,,1
+1722,,18-99901,the fairy tale,,,1
+1723,,18-99902,the hieroglyph or hieroglyphics,,,1
+1724,,18-99903,the joke,,,1
+1725,,18-99904,the poem,,,1
+1726,,18-99905,the upper case or capital letter,,,1
+1727,,18-99906,the violin,,,1
+1728,,18-99907,the violin player,,,1
+1729,,18-99908,to chat,,,1
+1730,,18-99909,to greet,,,1
+1731,,18-9991,to spell,,,1
+1732,,18-99911,to thank,,,1
+1733,,18-99912,to ululate,,,1
+1734,,19-99901,Arabia,,,1
+1735,,19-99902,Australia,,,1
+1736,,19-99903,China,,,1
+1737,,19-99904,Egypt,,,1
+1738,,19-99905,free,,,1
+1739,,19-99906,Greece,,,1
+1740,,19-99907,India,,,1
+1741,,19-99908,Madagascar,,,1
+1742,,19-99909,Rarotonga,,,1
+1743,,19-9991,Sir,epithet that precedes male given names,,1
+1744,,19-99911,Spain,,,1
+1745,,19-99913,the Brazilian,,,1
+1746,,19-99914,the certificate,a document issued by some authority and given to s.o. as a proof of sth.,,1
+1747,,19-99915,the Chinese person,,,1
+1748,,19-99916,the communal labour,,,1
+1749,,19-99917,the European,pejorative,,1
+1750,,19-99918,the Creole or black person,,,1
+1751,,19-9992,the fool,,,1
+1752,,19-99921,the foreman,,,1
+1753,,19-99922,the French person,,,1
+1754,,19-99923,the government document,,,1
+1755,,19-99924,the hermit,,,1
+1756,,19-99925,the hockey,,,1
+1757,,19-99926,the layman,,,1
+1758,,19-99927,the mixed-race Kali’na,,,1
+1759,,19-99928,the partner,,,1
+1760,,19-9993,the policeman,,,1
+1761,,19-99931,the power,,,1
+1762,,19-99932,the settlement,,,1
+1763,,19-99933,the small change,coins,,1
+1764,,19-99934,the socialism,,,1
+1765,,19-99935,the sport,,,1
+1766,,19-99936,the student,,,1
+1767,,19-99937,the vote or ballot or pole,,,1
+1768,,19-99938,to commit a crime,,,1
+1769,,19-9994,to quarrel,,,1
+1770,,19-99941,to respect,,,1
+1771,,19-99942,to retire,,,1
+1772,,19-99943,to say goodbye,,,1
+1773,,20-99902,the cutlass,k.o. short sword,,1
+1774,,20-99903,the force,,,1
+1775,,20-99904,the game animal,,,1
+1776,,20-99905,the letterwood bow,,,1
+1777,,20-99906,the warship,,,1
+1778,,20-99907,to attack,,,1
+1779,,20-99908,to fish,,,1
+1780,,20-99909,to win,,,1
+1781,,21-99901,the lawyer,,,1
+1782,,21-99902,the verdict,,,1
+1783,,22-99901,Christ,,,1
+1784,,22-99902,Christmas,,,1
+1785,,22-99903,Easter,term used by Catholics,,1
+1786,,22-99904,the bishop,term used by Episcopalians,,1
+1787,,22-99905,the funeral,,,1
+1788,,22-99906,the holiday,‘a religious feast day’,,1
+1789,,22-99907,the hymn,,,1
+1790,,22-99908,the lent,,,1
+1791,,22-99909,the Muslim,,,1
+1792,,22-9991,the rosary,,,1
+1793,,22-99911,the shaman,,,1
+1794,,22-99912,the shaman’s spirit,,,1
+1795,,22-99913,the shamanistic song,,,1
+1796,,22-99914,the woman’s rattle,,,1
+1797,,23-99901,the license,the permission issued by some authority to legalize a certain state or recurring action,,1
+1798,,24-99901,and or but,,,1
+1799,,24-99902,can,be able to,,1
+1800,,24-99904,hey!,(address particle),,1
+1801,,24-99905,(interrogative),The word is used in the interrogation and indicates doubt,,1
+1802,,24-99906,let,optative particle,,1
+1803,,24-99907,(negative marker),,,1
+1804,,24-99908,neither,,,1
+1805,,24-99909,nor,second part of the complex coordinating conjunction ‘neither – nor’,,1
+1806,,24-9991,someone,,,1
+1807,,24-99911,(superlative marker),,,1
+1808,,24-99912,then,,,1
+1809,,24-99913,they (dual),,,1
+1810,,24-99914,we (dual inclusive),,,1
+1811,,24-99917,which,relative particle,,1
+1812,,24-99919,you (dual),,,1
+1813,,3-99944,the chipmunk,,,1
+1814,,19-99944,mate,,,1

@@ -1,0 +1,192 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+$	NULL	162	U+0024		
+9$	NULL	1	U+0039 U+0024	"saay9"	
+่$	NULL	1	U+0E48 U+0024	"thàankhú่"	Thai
+^dinfáa-aakàat$	d i n f áa/aː + aː k àa/aː t	1	U+005E U+0064 U+0069 U+006E U+0066 U+00E1 U+0061 U+002D U+0061 U+0061 U+006B U+00E0 U+0061 U+0074 U+0024	"dinfáa-aakàat"	Thai
+-	+	1	U+002D	"khwaam-ìtchǎa"	Thai
+?	ʔ	16	U+003F	"?ɔ̀ɔn?aeae,lâo?aŋùn,phrá?aathít"	Thai
+_	_	5	U+005F	"hây_duu,hây_yʉʉm,rooŋ_phayaabaan"	Thai
+a	a	780	U+0061	"nûat,praysanii,saphôok"	Thai
+b	b	35	U+0062	"kabaan,krabìi,lâenbay"	Thai
+c	c	43	U+0063	"kaansûmcoomtii,khrʉ̂aŋcàk,khâaphacâaw"	Thai
+d	d	47	U+0064	"?udɔɔn,kalandə̂ə,khrʉ̂aŋdʉ̀ʉm"	Thai
+e	e	216	U+0065	"khonplàeknâa,khèetdaaen,mâeaeyaay"	Thai
+f	f	11	U+0066	"fayfáa,fǎafàeaet,kaafaeae"	Thai
+h	h	45	U+0068	"?aahǎanklaaŋwan,rátthabaan,thúpphíkkhaphay"	Thai
+i	i	79	U+0069	"chiwhǎa,phǐifáa,thîinîi"	Thai
+k	k	98	U+006B	"kaaŋkeeŋ,phríkthay,yaakaaráet"	Thai
+l	l	97	U+006C	"banlay,nâaklìat,salàk"	Thai
+m	m	134	U+006D	"náamtaan,phamɔɔn,yaimaeaeŋmum"	Thai
+n	n	158	U+006E	"mɔɔraná,thîinɔɔn,tônkhǎa"	Thai
+o	o	70	U+006F	"khoncharaa,khrʉ̂aŋyon,rátthamontrii"	Thai
+p	p	45	U+0070	"hǎyplaaráa,hǐnlápmîit,maeaeŋpɔ̀ŋ"	Thai
+r	r	114	U+0072	"bùttrii,sàttraa,sòkkapròk"	Thai
+s	s	40	U+0073	"bɔɔrisùt,phaasǐi,sʉ̂ʉsàt"	Thai
+t	t	90	U+0074	"?àtsatà,kratàay,phɔ̂ɔtaa"	Thai
+u	u	49	U+0075	"banpháburùt,khlum,mâeaebuntham"	Thai
+w	w	41	U+0077	"chaawnaa,mâakkwàa,suwan"	Thai
+y	j	100	U+0079	"máaytháaw,phayaa,phayaan"	Thai
+à	à/a	135	U+00E0	"khamàp,khâawfàe,phàendinwǎy"	Thai
+á	á/a	93	U+00E1	"kɔɔŋtháp,lûuksapháy,páttìk"	Thai
+â	â/a	105	U+00E2	"châŋmáay,khâm,lâen"	Thai
+è	è/e	26	U+00E8	"cèt,sèt,sǒmsèt"	Thai
+é	é/e	18	U+00E9	"hét,yaamét,yép"	Thai
+ê	ê/e	5	U+00EA	"lên,sên,sênlʉ̂at"	Thai
+ì	ì/i	60	U+00EC	"dìŋ,sìt,sǎntìphâap"	Thai
+í	í/i	57	U+00ED	"naaywaanít,phíphâaksǎa,thídaa"	Thai
+î	î/i	63	U+00EE	"hîŋ,khîikìat,yîisìp"	Thai
+ò	ò/o	43	U+00F2	"cìŋcòk,kòp,náamtòk"	Thai
+ó	ó/o	37	U+00F3	"sǐnthóp,wáníphók,yók"	Thai
+ô	ô/o	12	U+00F4	"krathôm,sôm,tôm"	Thai
+ù	ù/u	52	U+00F9	"bùttrii,sùnák,sùphaa"	Thai
+ú	ú/u	19	U+00FA	"khúk,máthúrót,thúp"	Thai
+û	û/u	33	U+00FB	"dûay,nûat,sûam"	Thai
+ě	ě/e	11	U+011B	"khěm,khěmklàt,měn"	Thai
+ŋ	ŋ	88	U+014B	"mǎacîŋcɔ̀ɔk,pàakchɔ̂ŋkhlɔ̂ɔt,rɔɔŋtháaw"	Thai
+ǎ	ǎ/a	201	U+01CE	"khǎykhuaŋ,phuukhǎo,thîisǎam"	Thai
+ǐ	ǐ/i	50	U+01D0	"phaasǐi,sǐisà,sǐn"	Thai
+ǒ	ǒ/o	29	U+01D2	"hǒn,sǒŋsǎan,sǒŋsǎy"	Thai
+ǔ	ǔ/u	37	U+01D4	"sǔutibàt,sǔuŋ,thǔŋnɔ̂ɔŋ"	Thai
+ɔ	ɔ	2	U+0254	"phárʉ́hàtsàbɔdii,prathaanaathíbɔdii"	Thai
+ə	ə	3	U+0259	"póotsəkáat,ŋən"	Thai
+ʉ	ʉ	13	U+0289	"miikhlʉ̂ʉn,phʉ̂ʉt,sʉ̂ʉsàt"	Thai
+^?	ʔ	95	U+005E U+003F	"?aacaan,?àatchayaakam,?ìt"	Thai
+^b	b	78	U+005E U+0062	"buuchaa,bìdaa,bɔ̀y"	Thai
+^c	c	50	U+005E U+0063	"con,càkkrayaan,cùt"	Thai
+^d	d	59	U+005E U+0064	"daaw,damrii,dìp"	Thai
+^f	f	34	U+005E U+0066	"fáaphàa,fǎafàeaet,fǎŋ"	Thai
+^h	h	73	U+005E U+0068	"hàt,hàtthǐi,hîŋ"	Thai
+^k	k	91	U+005E U+006B	"kam,kasèettrakɔɔn,kwaaŋ"	Thai
+^l	l	123	U+005E U+006C	"la?ɔɔŋ,laeae,làŋ"	Thai
+^m	m	127	U+005E U+006D	"mîitkoon,múk,mǔu"	Thai
+^n	n	122	U+005E U+006E	"nay,nùm,nǔu"	Thai
+^p	p	67	U+005E U+0070	"pâa,pâaythabianrót,pìi"	Thai
+^r	r	96	U+005E U+0072	"raŋkhaeae,rǐan,rʉ̌ʉ"	Thai
+^s	s	194	U+005E U+0073	"sâaŋ,sìpsɔ̌ɔŋ,sùttháay"	Thai
+^t	t	89	U+005E U+0074	"talɔ̀ɔt,tiin,tuakinmót"	Thai
+^w	w	51	U+005E U+0077	"weelaa,wiwâat,wâa"	Thai
+^y	j	66	U+005E U+0079	"yaasùup,yâak,yǐŋcharaa"	Thai
+^ŋ	ŋ	24	U+005E U+014B	"ŋao,ŋən,ŋʉ̀ak"	Thai
+a$	a	68	U+0061 U+0024	"maŋsǎa,phaahǎa,sǐa"	Thai
+aa	aː	231	U+0061 U+0061	"?ùtthayaan,rátthabaan,yaacòk"	Thai
+ch	tɕ	37	U+0063 U+0068	"dèkphûuchaay,kaanchìityaa,raachaa"	Thai
+e$	e	35	U+0065 U+0024	"kàe,phàeae,pháe"	Thai
+ee	eː	17	U+0065 U+0065	"pheelaa,pleew,weelaa"	Thai
+i$	i	27	U+0069 U+0024	"kâo?îi,phîi,rooŋsǐi"	Thai
+ia	ia	24	U+0069 U+0061	"khiaw,lia,mia"	
+ii	iː	17	U+0069 U+0069	"chiiwaa,piin,thawiikhuun"	Thai
+k$	k	179	U+006B U+0024	"lék,mêek,páttìk"	Thai
+kh	kʰ	53	U+006B U+0068	"hǐnsǒokhrôok,khòmkhʉ̌ʉn,thàankhú่"	Thai
+kk	kk	27	U+006B U+006B	"?òkkày,càkkrayaan,khúkkhào"	Thai
+ks	ks	19	U+006B U+0073	"kradùuksǎnlǎŋ,lûuksapháy,phíphâaksǎa"	Thai
+kw	k w	1	U+006B U+0077	"máaykwàat"	Thai
+m$	m	134	U+006D U+0024	"khom,thòm,tâeaem"	Thai
+mh	m h	3	U+006D U+0068	"khamhâykaanthét,khimhǎn,tûmhǔu"	Thai
+mm	m m	8	U+006D U+006D	"buummaraeaeŋ,thammay,yǐŋŋaammʉaŋ"	Thai
+ms	m s	2	U+006D U+0073	"khamsǎabaan,sǒmsèt"	Thai
+n$	n	340	U+006E U+0024	"chon,kan,nákhɔɔn"	Thai
+ng	ŋ	1	U+006E U+0067	"kronglép"	
+nn	n n	8	U+006E U+006E	"laannûatkhâaw,thinnakɔɔn,wanníi"	Thai
+ns	ns	9	U+006E U+0073	"?insii,kaansûmcoomtii,wâanɔɔnsɔ̌ɔnŋâay"	Thai
+nw	n w	1	U+006E U+0077	"phàendinwǎy"	Thai
+o$	o	58	U+006F U+0024	"khrao,láo,yâo"	Thai
+oo	oː	25	U+006F U+006F	"loomaa,mîitkoon,yoonii"	Thai
+p$	p	89	U+0070 U+0024	"cùup,cɔ̀ɔp,phóp"	Thai
+ph	pʰ	72	U+0070 U+0068	"banpháburùt,lûukphîilûuknɔ́ɔŋ,tuaphûu"	Thai
+pp	p p	4	U+0070 U+0070	"phâapphayon,rûuppân,thúpphíkkhaphay"	Thai
+ps	p s	2	U+0070 U+0073	"sàapsǔun,sìpsɔ̌ɔŋ"	Thai
+t$	t	217	U+0074 U+0024	"nûat,phâeaet,wát"	Thai
+th	tʰ	60	U+0074 U+0068	"kɔɔŋtháp,lə̂əkthâat,sǐnthóp"	Thai
+ts	ts	16	U+0074 U+0073	"mátsayít,pràatsacàak,pàtsawá"	Thai
+tt	tt	19	U+0074 U+0074	"?ùtthayaan,hàtthǐi,ráttikaan"	Thai
+u$	u	10	U+0075 U+0024	"cǔu,mǔu,tûmhǔu"	Thai
+ua	ua	24	U+0075 U+0061	"duaŋtraapraysaniiyaakɔɔn,khrua,ruay"	
+uu	uː	15	U+0075 U+0075	"phuumii,puun,thuun"	Thai
+w$	w	70	U+0077 U+0024	"câaw,khíw,rɔɔŋtháaw"	Thai
+wh	w h	4	U+0077 U+0068	"khamklàawhǎa,klàawhǎa,níwhǔamâeaetháaw"	Thai
+y$	j	245	U+0079 U+0024	"?aray,baay,phàendinyày"	Thai
+yy	j	1	U+0079 U+0079	"sǎyyaa"	Thai
+à$	à/a	12	U+00E0 U+0024	"pancà,sǐisà,thantà"	Thai
+àa	àa/aː	94	U+00E0 U+0061	"dàap,plàaw,prakàat"	
+á$	á/a	16	U+00E1 U+0024	"chiiwá,náwá,pàtsawá"	Thai
+áa	áa/aː	83	U+00E1 U+0061	"?àapnáam,maláaŋ,rákráaae"	
+âa	âa/aː	137	U+00E2 U+0061	"hɔ̌ɔythâak,kâaw,wâa"	
+è$	è/e	1	U+00E8 U+0024	"tè"	Thai
+èe	èe/eː	10	U+00E8 U+0065	"?èek,kaphlòokkaphlèek,lèet"	
+ée	ée/eː	2	U+00E9 U+0065	"bée,patìséet"	
+êe	êe/eː	11	U+00EA U+0065	"manthêet,mêek,thêet"	
+ì$	ì/i	2	U+00EC U+0024	"nâaymáyphlì,nítì"	Thai
+ìi	ìi/iː	22	U+00EC U+0069	"cìi,dìit,krabìi"	
+ìs	ì/i s	3	U+00EC U+0073	"patìsèet,patìséet,pìsàat"	Thai
+í$	í/i	1	U+00ED U+0024	"mí"	Thai
+íi	íi/iː	7	U+00ED U+0069	"bàtníi,khanàníi,phrûŋníi"	
+òo	òo/oː	11	U+00F2 U+006F	"kalòok,khwaamkròot,lòo"	
+ó$	ó/o	1	U+00F3 U+0024	"tó"	Thai
+óo	óo/oː	7	U+00F3 U+006F	"?óok,khóoŋ,lóon"	
+ôo	ôo/oː	19	U+00F4 U+006F	"lôo,níráthôot,rôok"	
+ù$	ù/u	1	U+00F9 U+0024	"càtù"	Thai
+ùs	ù/u s	3	U+00F9 U+0073	"?ùsǎa,pasùsàt"	Thai
+ùu	ùu/uː	33	U+00F9 U+0075	"hùuk,pùu,sabùu"	
+ùw	ù/u w	1	U+00F9 U+0077	"sùwaan"	Thai
+ú$	ú/u	9	U+00FA U+0024	"?aayú,máthú,weelú"	Thai
+úu	úu/uː	2	U+00FA U+0075	"búut,rúu"	
+ûu	ûu/uː	50	U+00FB U+0075	"lûukbuntham,phûuphíphâaksǎa,phûuyǐŋ"	
+ŋ$	ŋ	231	U+014B U+0024	"mʉŋ,ráeaeŋ,râaŋ"	Thai
+ŋh	ŋ h	4	U+014B U+0068	"hìŋhɔ̂y,lɔ̂ŋhǒn,tàaŋhǔu"	Thai
+ŋs	ŋs	13	U+014B U+0073	"maeaeŋsàap,nǎŋsʉ̌ʉphim,nɔ́ɔŋsapháy"	Thai
+ŋw	ŋ w	7	U+014B U+0077	"?aahǎanklaaŋwan,khwaamkaŋwon,klaaŋwan"	Thai
+ŋŋ	ŋ ŋ	4	U+014B U+014B	"rooŋŋaan,tàeŋŋaan,ŋaantàeŋŋaan"	Thai
+ǐw	ǐ/i w	1	U+01D0 U+0077	"hǐwnáam"	Thai
+ɔɔ	ɔː	55	U+0254 U+0254	"bâankə̀ətmʉaŋnɔɔn,klɔɔŋ,phamɔɔn"	Thai
+ɔ̀	ɔ̀/ɔ	9	U+0254 U+0300	"plòtplɔ̀y,plɔ̀ytua,plɔ̀ŋfay"	Thai
+ɔ́	ɔ́/ɔ	6	U+0254 U+0301	"khrɔ́dii,phɔ́plùuk,tɔ́pfîi"	Thai
+ɔ̂	ɔ̂/ɔ	18	U+0254 U+0302	"chɔ̂ŋkhlɔ̂ɔt,hɔ̂ŋ,nɔ̂ŋ"	Thai
+ɔ̌	ɔ̌/ɔ	2	U+0254 U+030C	"krapɔ̌ŋ,thɔ̌y"	Thai
+əə	əː	15	U+0259 U+0259	"?anchəən,chaləəy,mɔɔtəəsay"	Thai
+ʉ$	ʉ	2	U+0289 U+0024	"chʉ̂ʉ,thʉ̂ʉ"	Thai
+ʉa	ʉa	17	U+0289 U+0061	"mʉaŋbon,phonlamʉaŋ,rʉankhrua"	
+ʉʉ	ʉː	13	U+0289 U+0289	"klʉʉn,pʉʉn,waansʉʉn"	Thai
+ʉ̀	ʉ̀/ʉ	24	U+0289 U+0300	"nʉ̀ŋ,sʉ̀a,ŋʉ̀ak"	Thai
+ʉ́	ʉ́/ʉ	10	U+0289 U+0301	"nʉ́a,rʉ́dii,rʉ́duu"	Thai
+ʉ̂	ʉ̂/ʉ	45	U+0289 U+0302	"khrʉ̂aŋyon,phʉ̂ŋ,tʉ̂ʉn"	Thai
+ʉ̌	ʉ̌/ʉ	8	U+0289 U+030C	"hǎaŋsʉ̌a,lʉ̌aŋ,nʉ̌a"	Thai
+^ch	tɕ	65	U+005E U+0063 U+0068	"chonnanii,chám,châŋpân"	Thai
+^kh	kʰ	164	U+005E U+006B U+0068	"khamchom,khâo,khɔ̂ɔtháaw"	Thai
+^kl	k	26	U+005E U+006B U+006C	"klay,klua,klùm"	
+^kr	k	38	U+005E U+006B U+0072	"kradum,kradôŋ,krɔ̀y"	
+^ph	pʰ	124	U+005E U+0070 U+0068	"phaŋ,phûu,phǎaylom"	Thai
+^pl	p	24	U+005E U+0070 U+006C	"plòtplɔ̀y,plùak,plʉ̀ak"	
+^pr	p	17	U+005E U+0070 U+0072	"prachaachon,prathaanaathíbɔdii,pràatsacàak"	
+^th	tʰ	127	U+005E U+0074 U+0068	"thaarók,thǔu,thʉ̀k"	Thai
+^tr	t	6	U+005E U+0074 U+0072	"traeae,traìi,trii"	
+aa$	aː	68	U+0061 U+0061 U+0024	"buuchaa,chiiwaa,raachaa"	Thai
+ee$	eː	4	U+0065 U+0065 U+0024	"plee,rótmee,thalee"	Thai
+ii$	iː	54	U+0069 U+0069 U+0024	"?insii,kaansûmcoomtii,thiiwii"	Thai
+oo$	oː	6	U+006F U+006F U+0024	"khoo,manoo,sǐŋtoo"	Thai
+uu$	uː	17	U+0075 U+0075 U+0024	"khruu,puu,sakruu"	Thai
+âw$	â/a w	1	U+00E2 U+0077 U+0024	"câw"	Thai
+ìw$	ì/i w	1	U+00EC U+0077 U+0024	"sìw"	Thai
+ǐw$	ǐ/i w	4	U+01D0 U+0077 U+0024	"chǐw,hǐw,phǐw"	Thai
+ɔɔ$	ɔː	13	U+0254 U+0254 U+0024	"kradɔɔ,sɔ̂ɔykhɔɔ,ŋɔɔ"	Thai
+ɔ̀$	ɔ̀/ɔ	3	U+0254 U+0300 U+0024	"cɔ̀,krɔ̀,kɔ̀"	Thai
+ɔ̀ɔ	ɔ̀ɔ/ɔː	38	U+0254 U+0300 U+0254	"dɔ̀ɔk,makɔ̀ɔk,mɔ̀ɔk"	
+ɔ́$	ɔ́/ɔ	4	U+0254 U+0301 U+0024	"hǔarɔ́,phrɔ́,phɔ́"	Thai
+ɔ́ɔ	ɔ́ɔ/ɔː	25	U+0254 U+0301 U+0254	"chɔ́ɔn,fɔ́ɔn,nɔ́ɔŋsapháy"	
+ɔ̂ɔ	ɔ̂ɔ/ɔː	39	U+0254 U+0302 U+0254	"phɔ̂ɔbuntham,phɔ̂ɔkày,phɔ̂ɔmâeae"	
+ɔ̌ɔ	ɔ̌ɔ/ɔː	31	U+0254 U+030C U+0254	"kaasɔ̌ɔn,lɔ̌ɔt,samɔ̌ɔŋ"	
+əə$	əː	9	U+0259 U+0259 U+0024	"chəə,cəə,thəə"	Thai
+ə̀ə	ə̀ə/əː	5	U+0259 U+0300 U+0259	"bâankə̀ətmʉaŋnɔɔn,bə̀ək,kə̀ət"	
+ə́ə	ə́ə/əː	1	U+0259 U+0301 U+0259	"chə́ət"	
+ə̂ə	ə̂ə/əː	6	U+0259 U+0302 U+0259	"mɔɔtə̂ə,nə̂ən,rə̂əm"	
+ə̌ə	ə̌ə/əː	7	U+0259 U+030C U+0259	"chalə̌əy,phîikhə̌əy,samə̌ə"	
+ʉʉ$	ʉː	9	U+0289 U+0289 U+0024	"mʉʉ,sadʉʉ,sɔ̂ɔykhɔ̂ɔmʉʉ"	Thai
+ʉ̀$	ʉ̀/ʉ	1	U+0289 U+0300 U+0024	"?ʉ̀"	Thai
+ʉ̀ʉ	ʉ̀ʉ/ʉː	6	U+0289 U+0300 U+0289	"dʉ̀ʉm,khʉ̀ʉ,tʉ̀ʉn"	
+ʉ́ʉ	ʉ́ʉ/ʉː	5	U+0289 U+0301 U+0289	"mʉ́ʉ,phʉ́ʉn,sʉ́ʉ"	
+ʉ̌ʉ	ʉ̌ʉ/ʉː	5	U+0289 U+030C U+0289	"nǎŋsʉ̌ʉ,rʉ̌ʉ,thʉ̌ʉ"	
+^khl	kʰ	8	U+005E U+006B U+0068 U+006C	"khloon,khlumkrʉa,khláay"	
+^khr	kʰ	20	U+005E U+006B U+0068 U+0072	"khruu,khrîip,khrɔ́dii"	
+^khw	kʰ w	24	U+005E U+006B U+0068 U+0077	"khwaamrítsayǎa,khwan,khwáan"	Thai
+^phl	pʰ	9	U+005E U+0070 U+0068 U+006C	"phleeŋ,phlǎeae,phlǎeaepen"	
+^phr	pʰ	15	U+005E U+0070 U+0068 U+0072	"phrácan,phríp,phrɔ́ɔm"	
+ə̀ə̀	ə̀ə̀/əː	1	U+0259 U+0300 U+0259 U+0300	"rabə̀ə̀t"	Thai

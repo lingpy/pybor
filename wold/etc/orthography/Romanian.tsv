@@ -1,0 +1,138 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	4	U+005E		
+$	NULL	15	U+0024		
+(	NULL	42	U+0028	"a_(se)_opri,a_(în)drăzni,ax(ă)"	
+)	NULL	41	U+0029	"a_bea_(tutun),pod(ea),smochin(ă)"	
+^o$	o	1	U+005E U+006F U+0024	"o"	Romanian
+^poncho$	p o n tʃ o	1	U+005E U+0070 U+006F U+006E U+0063 U+0068 U+006F U+0024	"poncho"	
+-	+	8	U+002D	"a(-şi)_aminti,a-i_fi_sete,corb-de-mare"	Romanian
+_	_	680	U+005F	"a_(e)libera,a_arde,a_da_drumul"	Romanian
+a	a	860	U+0061	"brad,momeală,murdar"	Romanian
+b	b	145	U+0062	"albastru,babă,zburătoare"	Romanian
+c	k	319	U+0063	"a_despica,a_recolta,piatră_de_ascuţit"	Romanian
+d	d	271	U+0064	"a_dăuna,monedă,întotdeauna"	Romanian
+e	e	746	U+0065	"a_preda,pleoapă,pribeag"	Romanian
+f	f	94	U+0066	"sfârc,tumefacţie,înfrângere"	Romanian
+g	g	77	U+0067	"a_ruga,a_se_zgârci,cârlig_de_undiţă"	Romanian
+h	h	18	U+0068	"a_(în)junghia,a_duhani,anghilă-de-râu"	Romanian
+i	i	811	U+0069	"a_predica,greşit,stâncă_submarină"	Romanian
+j	ʒ	45	U+006A	"a_forja,a_plonja,a_sta_jos"	Romanian
+k	k	1	U+006B	"zaharikale"	Romanian
+l	l	370	U+006C	"sepultură,socoteală,uliu"	Romanian
+m	m	321	U+006D	"a_omorî,a_se_mândri,comprimat"	Romanian
+n	n	537	U+006E	"leneş,plantă,îndrăzneţ"	Romanian
+o	o	615	U+006F	"a_concepe,bortă,idol"	Romanian
+p	p	273	U+0070	"a_povesti,coamă_(acoperişului),miazănoapte"	Romanian
+r	r	903	U+0072	"cel_din_urmă,străbuni,ştergar"	Romanian
+s	s	289	U+0073	"a_mesteca,a_scărpina,costisitor"	Romanian
+t	t	553	U+0074	"a_se_întoarce_acasă,ceartă,untură"	Romanian
+u	u	632	U+0075	"a_se_repauza,cruce,îngust"	Romanian
+v	v	125	U+0076	"a_vorbi,câţiva,nevastă"	Romanian
+x	ks	7	U+0078	"a_explica,ax(ă),maxilar"	Romanian
+z	z	79	U+007A	"a_refuza,a_răzui,mâzgă"	Romanian
+â	ɨ	173	U+00E2	"a_se_adânci,pământ,stânjen"	Romanian
+î	ɨ	61	U+00EE	"a_se_întoarce_acasă,a_închina,a_întârzia"	Romanian
+ú	ú/u	1	U+00FA	"acúşi"	Romanian
+ă	ə	367	U+0103	"a_răcni,cătun,urmă_de_picior"	Romanian
+ş	ʃ	89	U+015F	"a(-şi)_aminti,domnişor,puşcă"	Romanian
+ţ	ts	100	U+0163	"a_înălţa,bufniţă,viţel"	Romanian
+ǎ	ə	4	U+01CE	"bǎrbat,hǎu,nǎmol"	Romanian
+^a	a	611	U+005E U+0061	"a_se_instrui,a_se_scălda,a_se_îmbăia"	Romanian
+^b	b	99	U+005E U+0062	"buchet,bâtă,bărbat_căsătorit"	Romanian
+^c	k	189	U+005E U+0063	"calcan,copil,cât"	Romanian
+^d	d	77	U+005E U+0064	"daltă,dimineaţă,duşman"	Romanian
+^e	e	14	U+005E U+0065	"echimoză,erete,evantai"	Romanian
+^f	f	95	U+005E U+0066	"falcă,fericit,fierbinţeală"	Romanian
+^g	g	63	U+005E U+0067	"gemeni,glas,grotă"	Romanian
+^h	h	17	U+005E U+0068	"hidromel,hoţ,hâd"	Romanian
+^i	i	40	U+005E U+0069	"ieftin,ilău,ivăr"	Romanian
+^j	ʒ	23	U+005E U+006A	"jaguar,jale,jivină"	Romanian
+^l	l	65	U+005E U+006C	"lacăt,leu,lucru"	Romanian
+^m	m	130	U+005E U+006D	"moş,mult_timp,mătuşă"	Romanian
+^n	n	71	U+005E U+006E	"nepoată,nişte,noroi"	Romanian
+^o	o	52	U+005E U+006F	"ochelari,oltar,orezărie"	Romanian
+^p	p	159	U+005E U+0070	"pisălog,plagă,prânz"	Romanian
+^r	r	45	U+005E U+0072	"raft,regină,rogojină"	Romanian
+^s	s	151	U+005E U+0073	"soaţă,sub,suficient"	Romanian
+^t	t	74	U+005E U+0074	"tare,temniţă,toaletă"	Romanian
+^u	u	39	U+005E U+0075	"ud,unealtă,uşor"	Romanian
+^v	v	78	U+005E U+0076	"veceu,viţel,vopsea"	Romanian
+^z	z	23	U+005E U+007A	"zbârcit,zeu,zgomot"	Romanian
+^î	ɨ	45	U+005E U+00EE	"închipuire,întortocheat,întunecat"	Romanian
+^ş	ʃ	27	U+005E U+015F	"şase,şedea,şosea"	Romanian
+^ţ	ts	18	U+005E U+0163	"ţiţei,ţânţar,ţărm"	Romanian
+a$	a	267	U+0061 U+0024	"a_toca,a_însămânţa,cucuvea"	Romanian
+b$	b	14	U+0062 U+0024	"alb,cuib,rob"	Romanian
+bs	b s	3	U+0062 U+0073	"obscur,obscuritate,subsuoară"	Romanian
+c$	k	70	U+0063 U+0024	"adânc,hamac,puţin_adânc"	Romanian
+cc	ks	1	U+0063 U+0063	"occident"	Romanian
+ce	tʃ e	39	U+0063 U+0065	"a_se_întoarce_acasă,descendenţi,răceală"	
+ch	k	34	U+0063 U+0068	"muchie,pereche,închisoare"	Romanian
+ci	tʃ i	48	U+0063 U+0069	"electricitate,suficient,zbicit"	
+d$	d	41	U+0064 U+0024	"a_fi_flămând,brad,când"	Romanian
+e$	e	329	U+0065 U+0024	"a_scoate,în_spate,încăpere"	Romanian
+ee	e e	3	U+0065 U+0065	"gheenă,maree_joasǎ,maree_înaltă"	Romanian
+f$	f	8	U+0066 U+0024	"pantof,praf,vârf"	Romanian
+g$	g	19	U+0067 U+0024	"catarg,jeg,jug"	Romanian
+ge	dʒ	11	U+0067 U+0065	"alegere,fulger,mărgea"	
+gh	g	5	U+0067 U+0068	"a_ghici,aghesmuit,dulgher"	Romanian
+gi	dʒ	10	U+0067 U+0069	"agitat,margine,religie"	
+h$	h	3	U+0068 U+0024	"duh,maşteh,văzduh"	Romanian
+i$	i	75	U+0069 U+0024	"a_răzui,lopăţica_umărului,numai"	Romanian
+ii	i j	4	U+0069 U+0069	"fiica_vitregă,fiindcă,fiinţă"	Romanian
+j$	ʒ	4	U+006A U+0024	"gâtlej,tatuaj,vârtej"	Romanian
+k$	k	1	U+006B U+0024	"dovleak"	Romanian
+l$	l	54	U+006C U+0024	"chel,porumbel,testicul"	Romanian
+m$	m	19	U+006D U+0024	"cum,pom,ultim"	Romanian
+n$	n	96	U+006E U+0024	"duşman,plămân,telefon"	Romanian
+ng	ŋ g	31	U+006E U+0067	"a_ajunge,a_îngheţa,singur"	
+nh	n h	2	U+006E U+0068	"a_înhuma,branhie"	Romanian
+ns	n s	15	U+006E U+0073	"a_dansa,conspiraţie,insectă"	Romanian
+o$	o	3	U+006F U+0024	"acolo,radio,zero"	Romanian
+p$	p	22	U+0070 U+0024	"ciorap,stâlp,ţap"	Romanian
+ps	p s	5	U+0070 U+0073	"a_vopsi,coapsă,vopsea"	Romanian
+r$	r	128	U+0072 U+0024	"abur,croitor,taur"	Romanian
+rs	r s	10	U+0072 U+0073	"a_vărsa,mursă,ursuleţ_spălător"	Romanian
+s$	s	38	U+0073 U+0024	"curajos,frumos,hidos"	Romanian
+t$	t	187	U+0074 U+0024	"beat,bǎrbat,cutat"	Romanian
+u$	u	65	U+0075 U+0024	"brâu,lucru,tu"	Romanian
+v$	v	11	U+0076 U+0024	"pleşuv,trândav,văduv"	Romanian
+x$	k	1	U+0078 U+0024	"pix"	Romanian
+z$	z	16	U+007A U+0024	"mânz,solz,viteaz"	Romanian
+âs	ɨ s	4	U+00E2 U+0073	"a_vâsli,pâslă,vâslă"	Romanian
+î$	ɨ	10	U+00EE U+0024	"a_borî,a_omorî,a_urî"	Romanian
+ă$	ə	478	U+0103 U+0024	"balenă,dojană,săgeată"	Romanian
+ăs	ə s	23	U+0103 U+0073	"a_apăsa,a_căsca,trăsnet"	Romanian
+ş$	ʃ	21	U+015F U+0024	"covoraş,coş,imaş"	Romanian
+ţ$	ts	17	U+0163 U+0024	"(porc)_mistreţ,hârleţ,răzleţ"	Romanian
+ǎ$	ə	6	U+01CE U+0024	"coastǎ,falezǎ,lagunǎ"	Romanian
+^ce	tʃ e	27	U+005E U+0063 U+0065	"cerb,cerc,cercel"	
+^ch	k	7	U+005E U+0063 U+0068	"chel,chip,chiuvetă"	Romanian
+^ci	tʃ i	17	U+005E U+0063 U+0069	"cicatrice,cioban,cizmă"	
+^gh	g	8	U+005E U+0067 U+0068	"gheenă,ghinion,ghioagă"	Romanian
+bi$	bʲ	7	U+0062 U+0069 U+0024	"a_(se)_grăbi,a_scobi,a_vorbi"	
+ce$	tʃ e	35	U+0063 U+0065 U+0024	"a_conduce,a_interzice,de_ce"	
+ci$	tʃʲ	22	U+0063 U+0069 U+0024	"a_ghici,a_se_chirci,a_tăbăci"	
+di$	dʲ	6	U+0064 U+0069 U+0024	"a_clădi,a_sădi,a_zidi"	
+ee$	e e	4	U+0065 U+0065 U+0024	"fee,idee,moschee"	Romanian
+fi$	fʲ	1	U+0066 U+0069 U+0024	"a_fi"	
+ge$	dʒ	15	U+0067 U+0065 U+0024	"a_alege,a_distruge,a_trage"	
+gi$	dʒʲ	1	U+0067 U+0069 U+0024	"a_fugi"	
+ii$	i	2	U+0069 U+0069 U+0024	"orătănii,încheietura_mâinii"	Romanian
+ji$	ʒʲ	2	U+006A U+0069 U+0024	"a_coji,a_prăji"	
+li$	lʲ	10	U+006C U+0069 U+0024	"a_ciopli,a_vâsli,a_înveli"	
+ls$	l s	1	U+006C U+0073 U+0024	"fals"	Romanian
+mi$	mʲ	4	U+006D U+0069 U+0024	"a_dormi,a_numi,a_primi"	
+ng$	ŋ g	5	U+006E U+0067 U+0024	"lung,îndelung,ştreang"	
+ni$	nʲ	19	U+006E U+0069 U+0024	"a_răni,a_se_odihni,străbuni"	
+ns$	n s	3	U+006E U+0073 U+0024	"prins,surprins,întins"	Romanian
+pi$	pʲ	3	U+0070 U+0069 U+0024	"a_ciupi,a_clipi,a_stropi"	
+ri$	rʲ	35	U+0072 U+0069 U+0024	"a_(se)_opri,a_acoperi,socri"	
+rs$	r s	2	U+0072 U+0073 U+0024	"discurs,urs"	Romanian
+si$	sʲ	6	U+0073 U+0069 U+0024	"a_cosi,a_mărturisi,a_sosi"	
+ti$	tʲ	21	U+0074 U+0069 U+0024	"a_plăti,a_şop(o)ti,aşi_iuti"	
+vi$	vʲ	5	U+0076 U+0069 U+0024	"a_blagoslovi,a_lovi,a_privi"	
+zi$	zʲ	5	U+007A U+0069 U+0024	"a_se_trezi,azi,miazăzi"	
+şi$	ʃʲ	13	U+015F U+0069 U+0024	"a_năduşi,a_însănătoşi,iarăşi"	
+ţi$	tsʲ	13	U+0163 U+0069 U+0024	"a_minţi,câţi,parinţi"	
+chi$	kʲ	10	U+0063 U+0068 U+0069 U+0024	"ochi,rinichi,rărunchi"	

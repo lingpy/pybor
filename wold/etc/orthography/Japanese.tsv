@@ -1,0 +1,102 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^i$	i	1	U+005E U+0069 U+0024	"i"	Japanese
+^o$	o	1	U+005E U+006F U+0024	"o"	Japanese
+^u$	ɯ	1	U+005E U+0075 U+0024	"u"	Japanese
+^ē$	eː	1	U+005E U+0113 U+0024	"ē"	Japanese
+^ō$	oː	1	U+005E U+014D U+0024	"ō"	Japanese
+^ii$	iː	1	U+005E U+0069 U+0069 U+0024	"ii"	Japanese
+-	+	2	U+002D	"aka-chan,koshimino-sukāto"	Japanese
+_	_	78	U+005F	"ana_o_akeru,himei_o_ageru,mō_sugu"	Japanese
+a	a	1129	U+0061	"irakusa,maneru,rappa"	Japanese
+b	b	188	U+0062	"hitobito,kirikabu,terebi"	Japanese
+d	d	80	U+0064	"budō,namida,nendo"	Japanese
+e	e	406	U+0065	"ase_o_kaku,mazeru,subesube"	Japanese
+f	f	23	U+0066	"baishunfu,mōfu,seifu"	Japanese
+g	g	182	U+0067	"dōgu,himei_o_ageru,togaru"	Japanese
+h	h	33	U+0068	"ahiru,hohoemu,kinjo_no_hito"	Japanese
+i	i	701	U+0069	"kichi,rikai,shujin"	Japanese
+j	ʑ	96	U+006A	"hajimete,hiji,kojiki"	Japanese
+k	k	574	U+006B	"ekika,kokonotsu,otoko"	Japanese
+m	m	311	U+006D	"kimi,kimitachi,namari"	Japanese
+n	n	315	U+006E	"akebono,mono,nanji"	Japanese
+o	o	576	U+006F	"dorobō,kabocha,motto"	Japanese
+p	p	18	U+0070	"furaipan,sūpu,toranpetto"	Japanese
+r	r	572	U+0072	"hashira,tori,ōru"	Japanese
+s	s	177	U+0073	"asu,kokonattsu,kosekishōhon"	Japanese
+t	t	211	U+0074	"hitogoroshi,tokutō,watashitachi"	Japanese
+u	u	562	U+0075	"mizusashi,subete,tsuma"	Japanese
+w	w	51	U+0077	"sawaru,utsuwa,uwagi"	Japanese
+y	j	132	U+0079	"sasayaku,shoyū,taiyō"	Japanese
+z	z	85	U+007A	"kuchizuke,mazushii,shinzō"	Japanese
+ā	aː	5	U+0101	"kāpetto,nanbāpurēto,sukāto"	Japanese
+ē	eː	5	U+0113	"burēki,sōsēji,tēburu"	Japanese
+ō	oː	111	U+014D	"chōten,kyōkai,rōfu"	Japanese
+ū	ɯː	58	U+016B	"furūto,shūchō,yūzai_to_suru"	Japanese
+’	+	12	U+2019	"don’yoku,fu’an,kō’un"	Japanese
+^a	a	97	U+005E U+0061	"agaru,ai,akiraka"	Japanese
+^b	b	64	U+005E U+0062	"beddo,bishō,bubun"	Japanese
+^d	d	63	U+005E U+0064	"dare,donaru,dōshite"	Japanese
+^e	e	21	U+005E U+0065	"eguru,enjo,erabu"	Japanese
+^f	ɸ	43	U+005E U+0066	"feruto,fude,fukku"	Japanese
+^g	g	46	U+005E U+0067	"gai,gen’in,gimon"	Japanese
+^h	h	188	U+005E U+0068	"haramu,hori,hoshii"	Japanese
+^i	i	67	U+005E U+0069	"ikura,ima,ippai"	Japanese
+^j	ʑ	39	U+005E U+006A	"jiku,jishin,jo’ō"	Japanese
+^k	k	367	U+005E U+006B	"karamatsu,kokumotsu,kosekishōhon"	Japanese
+^m	m	180	U+005E U+006D	"manabu,mochiageru,mune"	Japanese
+^n	n	134	U+005E U+006E	"nanatsu,netami,noroi"	Japanese
+^o	o	95	U+005E U+006F	"obi,oeru,ohitsuji"	Japanese
+^p	p	13	U+005E U+0070	"padoru,pan,penisu"	Japanese
+^r	r	37	U+005E U+0072	"raisu,reipu,rikai"	Japanese
+^s	s	162	U+005E U+0073	"sawaru,seijitsu,suu"	Japanese
+^t	t	128	U+005E U+0074	"take,tento,toshiyori"	Japanese
+^u	ɯ	47	U+005E U+0075	"usu,utagau,utsuwa"	Japanese
+^w	w	23	U+005E U+0077	"waki_no_shita,wan,washi"	Japanese
+^y	j	81	U+005E U+0079	"ya,yagi,yuka"	Japanese
+^z	z	11	U+005E U+007A	"zenbu,zesshoku,zubon"	Japanese
+^ā	aː	1	U+005E U+0101	"āchi"	Japanese
+^ō	oː	15	U+005E U+014D	"ōbun,ōgon,ōi"	Japanese
+^ū	ɯː	1	U+005E U+016B	"ūru"	Japanese
+a$	a	236	U+0061 U+0024	"haha,rappa,waki_no_shita"	Japanese
+aa	a a	1	U+0061 U+0061	"horaana"	Japanese
+ch	tɕ	95	U+0063 U+0068	"ichibu,nichiyō,tsuchi"	Japanese
+dd	d d	1	U+0064 U+0064	"beddo"	Japanese
+e$	e	128	U+0065 U+0024	"ane,fue,ne"	Japanese
+ff	ɸː	1	U+0066 U+0066	"baffarō"	Japanese
+gg	g g	2	U+0067 U+0067	"autoriggā,nettobaggu"	Japanese
+i$	i	564	U+0069 U+0024	"kayumi,kushi,shitchi"	Japanese
+ii	iː	16	U+0069 U+0069	"chiizu,toriire,yuiitsu"	Japanese
+kk	k k	34	U+006B U+006B	"kekkon,oshikko,sekkō"	Japanese
+n$	n	166	U+006E U+0024	"bakudan,san,shinbun"	Japanese
+nn	n n	10	U+006E U+006E	"danna,minna,onna"	Japanese
+ns	n s	11	U+006E U+0073	"bansan,dansei,sensei"	Japanese
+nw	n w	1	U+006E U+0077	"denwa"	Japanese
+o$	o	206	U+006F U+0024	"kokoro,mado,nendo"	Japanese
+pp	pː	15	U+0070 U+0070	"dappi,kappu,shoppai"	Japanese
+sh	ɕ	143	U+0073 U+0068	"bishō,hobashira,kurubushi"	Japanese
+ss	s s	7	U+0073 U+0073	"chissoku,issakujitsu,opossamu"	Japanese
+ts	ts	110	U+0074 U+0073	"kutsushita,tetsu,tsurutsuru"	Japanese
+tt	t t	22	U+0074 U+0074	"batta,motto,nettobaggu"	Japanese
+u$	ɯ	653	U+0075 U+0024	"hizamazuku,kakusu,kōru"	Japanese
+uu	ɯ ɯ	2	U+0075 U+0075	"akuun,mizuumi"	Japanese
+ā$	aː	6	U+0101 U+0024	"batā,biibā,hanmā"	Japanese
+ās	aː s	3	U+0101 U+0073	"obāsan,okāsan"	Japanese
+ē$	eː	1	U+0113 U+0024	"kyandē"	Japanese
+ēs	eː s	1	U+0113 U+0073	"onēsan"	Japanese
+ō$	oː	117	U+014D U+0024	"gishō,kanchō,taimō"	Japanese
+ōh	oː h	5	U+014D U+0068	"hōhō,kosekishōhon,kōhii"	Japanese
+ōs	oː s	13	U+014D U+0073	"bōsui,hōseki,yōsai"	Japanese
+ū$	ɯː	23	U+016B U+0024	"gunshū,hoyū,kutsū"	Japanese
+^ch	tɕ	38	U+005E U+0063 U+0068	"chi,chinko,chūshoku"	Japanese
+^ii	iː	2	U+005E U+0069 U+0069	"iiarasoi,iie"	Japanese
+^oo	o o	1	U+005E U+006F U+006F	"oou"	Japanese
+^sh	ɕ	114	U+005E U+0073 U+0068	"shika,shinu,shukufuku"	Japanese
+^ts	ts	46	U+005E U+0074 U+0073	"tsubasa,tsurugi,tsūkagirei"	Japanese
+^ōh	oː h	1	U+005E U+014D U+0068	"ōhashi"	Japanese
+ii$	iː	17	U+0069 U+0069 U+0024	"akusesarii,rashii,ureshii"	Japanese
+nsh	n ɕ	10	U+006E U+0073 U+0068	"anshō,jitensha,ninshin"	Japanese
+oo$	o o	1	U+006F U+006F U+0024	"honoo"	Japanese
+ssh	s ɕ	2	U+0073 U+0073 U+0068	"kesshite,zesshoku"	Japanese
+uu$	ɯ ɯ	7	U+0075 U+0075 U+0024	"kuruu,nuu,sukuu"	Japanese
+ēsh	eː ɕ	1	U+0113 U+0073 U+0068	"inishiēshon"	Japanese
+ōsh	oː ɕ	10	U+014D U+0073 U+0068	"keshōshitsu,ryōshi,yōsha"	Japanese

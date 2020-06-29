@@ -1,0 +1,1472 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	Languages
+^I$	aɪ	1	U+005E U+0049 U+0024	"I"	English
+^at$	æ t	1	U+005E U+0061 U+0074 U+0024	"at"	English
+^be$	b iː	1	U+005E U+0062 U+0065 U+0024	"be"	English
+^do$	d uː	1	U+005E U+0064 U+006F U+0024	"do"	English
+^go$	g əʊ	1	U+005E U+0067 U+006F U+0024	"go"	English
+^he$	h iː	1	U+005E U+0068 U+0065 U+0024	"he"	English
+^if$	ɪ f	1	U+005E U+0069 U+0066 U+0024	"if"	English
+^in$	ɪ n	1	U+005E U+0069 U+006E U+0024	"in"	English
+^it$	ɪ t	1	U+005E U+0069 U+0074 U+0024	"it"	English
+^no$	n əʊ	1	U+005E U+006E U+006F U+0024	"no"	English
+^or$	ɔː ɹ	1	U+005E U+006F U+0072 U+0024	"or"	English
+^ox$	ɒ k s	1	U+005E U+006F U+0078 U+0024	"ox"	English
+^up$	ʌ p	1	U+005E U+0075 U+0070 U+0024	"up"	English
+^we$	w iː	1	U+005E U+0077 U+0065 U+0024	"we"	English
+^age$	eɪ dʒ	1	U+005E U+0061 U+0067 U+0065 U+0024	"age"	English
+^air$	ɛə ɹ	1	U+005E U+0061 U+0069 U+0072 U+0024	"air"	English
+^all$	ɔː l	1	U+005E U+0061 U+006C U+006C U+0024	"all"	English
+^and$	æ n d	1	U+005E U+0061 U+006E U+0064 U+0024	"and"	English
+^ant$	æ n t	1	U+005E U+0061 U+006E U+0074 U+0024	"ant"	English
+^arm$	ɑː m	1	U+005E U+0061 U+0072 U+006D U+0024	"arm"	English
+^ash$	æ ʃ	1	U+005E U+0061 U+0073 U+0068 U+0024	"ash"	English
+^ask$	ɑː s k	2	U+005E U+0061 U+0073 U+006B U+0024	"ask"	English
+^awl$	ɔː l	1	U+005E U+0061 U+0077 U+006C U+0024	"awl"	English
+^axe$	æ k s	1	U+005E U+0061 U+0078 U+0065 U+0024	"axe"	English
+^bad$	b æ d	1	U+005E U+0062 U+0061 U+0064 U+0024	"bad"	English
+^bag$	b æ g	1	U+005E U+0062 U+0061 U+0067 U+0024	"bag"	English
+^bat$	b æ t	1	U+005E U+0062 U+0061 U+0074 U+0024	"bat"	English
+^bay$	b eɪ	1	U+005E U+0062 U+0061 U+0079 U+0024	"bay"	English
+^bed$	b ɛ d	1	U+005E U+0062 U+0065 U+0064 U+0024	"bed"	English
+^bee$	b iː	1	U+005E U+0062 U+0065 U+0065 U+0024	"bee"	English
+^big$	b ɪ g	1	U+005E U+0062 U+0069 U+0067 U+0024	"big"	English
+^bow$	b əʊ	1	U+005E U+0062 U+006F U+0077 U+0024	"bow"	English
+^boy$	b ɔɪ	1	U+005E U+0062 U+006F U+0079 U+0024	"boy"	English
+^bus$	b ʌ s	1	U+005E U+0062 U+0075 U+0073 U+0024	"bus"	English
+^buy$	b aɪ	1	U+005E U+0062 U+0075 U+0079 U+0024	"buy"	English
+^cap$	k æ p	1	U+005E U+0063 U+0061 U+0070 U+0024	"cap"	English
+^car$	k ɑː ɹ	1	U+005E U+0063 U+0061 U+0072 U+0024	"car"	English
+^cat$	k æ t	1	U+005E U+0063 U+0061 U+0074 U+0024	"cat"	English
+^cow$	k aʊ	1	U+005E U+0063 U+006F U+0077 U+0024	"cow"	English
+^cry$	k r aɪ	1	U+005E U+0063 U+0072 U+0079 U+0024	"cry"	English
+^cup$	k ʌ p	1	U+005E U+0063 U+0075 U+0070 U+0024	"cup"	English
+^cut$	k ʌ t	1	U+005E U+0063 U+0075 U+0074 U+0024	"cut"	English
+^day$	d eɪ	2	U+005E U+0064 U+0061 U+0079 U+0024	"day"	English
+^dew$	d j uː	1	U+005E U+0064 U+0065 U+0077 U+0024	"dew"	English
+^die$	d aɪ	1	U+005E U+0064 U+0069 U+0065 U+0024	"die"	English
+^dig$	d ɪ g	1	U+005E U+0064 U+0069 U+0067 U+0024	"dig"	English
+^dog$	d ɒ g	1	U+005E U+0064 U+006F U+0067 U+0024	"dog"	English
+^dry$	d r aɪ	1	U+005E U+0064 U+0072 U+0079 U+0024	"dry"	English
+^dye$	d aɪ	1	U+005E U+0064 U+0079 U+0065 U+0024	"dye"	English
+^ear$	ɪə ɹ	1	U+005E U+0065 U+0061 U+0072 U+0024	"ear"	English
+^eat$	iː t	1	U+005E U+0065 U+0061 U+0074 U+0024	"eat"	English
+^eel$	iː l	1	U+005E U+0065 U+0065 U+006C U+0024	"eel"	English
+^egg$	ɛ g	1	U+005E U+0065 U+0067 U+0067 U+0024	"egg"	English
+^elf$	ɛ l f	1	U+005E U+0065 U+006C U+0066 U+0024	"elf"	English
+^elk$	ɛ l k	1	U+005E U+0065 U+006C U+006B U+0024	"elk"	English
+^end$	ɛ n d	2	U+005E U+0065 U+006E U+0064 U+0024	"end"	English
+^ewe$	j uː	1	U+005E U+0065 U+0077 U+0065 U+0024	"ewe"	English
+^eye$	aɪ	1	U+005E U+0065 U+0079 U+0065 U+0024	"eye"	English
+^fan$	f æ n	2	U+005E U+0066 U+0061 U+006E U+0024	"fan"	English
+^far$	f ɑː ɹ	1	U+005E U+0066 U+0061 U+0072 U+0024	"far"	English
+^fat$	f æ t	1	U+005E U+0066 U+0061 U+0074 U+0024	"fat"	English
+^few$	f j uː	1	U+005E U+0066 U+0065 U+0077 U+0024	"few"	English
+^fig$	f ɪ g	1	U+005E U+0066 U+0069 U+0067 U+0024	"fig"	English
+^fin$	f ɪ n	1	U+005E U+0066 U+0069 U+006E U+0024	"fin"	English
+^fir$	f ɜː ɹ	1	U+005E U+0066 U+0069 U+0072 U+0024	"fir"	English
+^fly$	f l aɪ	2	U+005E U+0066 U+006C U+0079 U+0024	"fly"	English
+^fog$	f ɒ g	1	U+005E U+0066 U+006F U+0067 U+0024	"fog"	English
+^fox$	f ɒ k s	1	U+005E U+0066 U+006F U+0078 U+0024	"fox"	English
+^fry$	f r aɪ	1	U+005E U+0066 U+0072 U+0079 U+0024	"fry"	English
+^fur$	f ɜː ɹ	1	U+005E U+0066 U+0075 U+0072 U+0024	"fur"	English
+^get$	g ɛ t	1	U+005E U+0067 U+0065 U+0074 U+0024	"get"	English
+^god$	g ɒ d	1	U+005E U+0067 U+006F U+0064 U+0024	"god"	English
+^gun$	g ʌ n	1	U+005E U+0067 U+0075 U+006E U+0024	"gun"	English
+^hat$	h æ t	1	U+005E U+0068 U+0061 U+0074 U+0024	"hat"	English
+^hay$	h eɪ	1	U+005E U+0068 U+0061 U+0079 U+0024	"hay"	English
+^hen$	h ɛ n	1	U+005E U+0068 U+0065 U+006E U+0024	"hen"	English
+^hip$	h ɪ p	1	U+005E U+0068 U+0069 U+0070 U+0024	"hip"	English
+^hit$	h ɪ t	1	U+005E U+0068 U+0069 U+0074 U+0024	"hit"	English
+^hoe$	h əʊ	1	U+005E U+0068 U+006F U+0065 U+0024	"hoe"	English
+^hot$	h ɒ t	1	U+005E U+0068 U+006F U+0074 U+0024	"hot"	English
+^hug$	h ʌ g	1	U+005E U+0068 U+0075 U+0067 U+0024	"hug"	English
+^hut$	h ʌ t	1	U+005E U+0068 U+0075 U+0074 U+0024	"hut"	English
+^ice$	aɪ s	1	U+005E U+0069 U+0063 U+0065 U+0024	"ice"	English
+^ill$	ɪ l	1	U+005E U+0069 U+006C U+006C U+0024	"ill"	English
+^jaw$	dʒ ɔː	1	U+005E U+006A U+0061 U+0077 U+0024	"jaw"	English
+^jug$	dʒ ʌ g	1	U+005E U+006A U+0075 U+0067 U+0024	"jug"	English
+^key$	k iː	1	U+005E U+006B U+0065 U+0079 U+0024	"key"	English
+^kid$	k ɪ d	1	U+005E U+006B U+0069 U+0064 U+0024	"kid"	English
+^law$	l ɔː	1	U+005E U+006C U+0061 U+0077 U+0024	"law"	English
+^leg$	l ɛ g	1	U+005E U+006C U+0065 U+0067 U+0024	"leg"	English
+^lie$	l aɪ	1	U+005E U+006C U+0069 U+0065 U+0024	"lie"	English
+^lip$	l ɪ p	1	U+005E U+006C U+0069 U+0070 U+0024	"lip"	English
+^low$	l əʊ	1	U+005E U+006C U+006F U+0077 U+0024	"low"	English
+^mad$	m æ d	1	U+005E U+006D U+0061 U+0064 U+0024	"mad"	English
+^man$	m æ n	1	U+005E U+006D U+0061 U+006E U+0024	"man"	English
+^mat$	m æ t	1	U+005E U+006D U+0061 U+0074 U+0024	"mat"	English
+^mix$	m ɪ k s	1	U+005E U+006D U+0069 U+0078 U+0024	"mix"	English
+^mow$	m əʊ	1	U+005E U+006D U+006F U+0077 U+0024	"mow"	English
+^mud$	m ʌ d	1	U+005E U+006D U+0075 U+0064 U+0024	"mud"	English
+^new$	n j uː	1	U+005E U+006E U+0065 U+0077 U+0024	"new"	English
+^nit$	n ɪ t	1	U+005E U+006E U+0069 U+0074 U+0024	"nit"	English
+^not$	n ɒ t	1	U+005E U+006E U+006F U+0074 U+0024	"not"	English
+^now$	n aʊ	1	U+005E U+006E U+006F U+0077 U+0024	"now"	English
+^nut$	n ʌ t	1	U+005E U+006E U+0075 U+0074 U+0024	"nut"	English
+^oak$	əʊ k	1	U+005E U+006F U+0061 U+006B U+0024	"oak"	English
+^oar$	ɔː ɹ	1	U+005E U+006F U+0061 U+0072 U+0024	"oar"	English
+^oat$	əʊ t	1	U+005E U+006F U+0061 U+0074 U+0024	"oat"	English
+^oil$	ɔɪ l	1	U+005E U+006F U+0069 U+006C U+0024	"oil"	English
+^old$	əʊ l d	1	U+005E U+006F U+006C U+0064 U+0024	"old"	English
+^one$	w ʌ n	1	U+005E U+006F U+006E U+0065 U+0024	"one"	English
+^owe$	əʊ	1	U+005E U+006F U+0077 U+0065 U+0024	"owe"	English
+^owl$	aʊ l	1	U+005E U+006F U+0077 U+006C U+0024	"owl"	English
+^own$	əʊ n	1	U+005E U+006F U+0077 U+006E U+0024	"own"	English
+^pan$	p æ n	1	U+005E U+0070 U+0061 U+006E U+0024	"pan"	English
+^pay$	p eɪ	1	U+005E U+0070 U+0061 U+0079 U+0024	"pay"	English
+^peg$	p ɛ g	1	U+005E U+0070 U+0065 U+0067 U+0024	"peg"	English
+^pen$	p ɛ n	1	U+005E U+0070 U+0065 U+006E U+0024	"pen"	English
+^pig$	p ɪ g	1	U+005E U+0070 U+0069 U+0067 U+0024	"pig"	English
+^pin$	p ɪ n	1	U+005E U+0070 U+0069 U+006E U+0024	"pin"	English
+^pot$	p ɒ t	1	U+005E U+0070 U+006F U+0074 U+0024	"pot"	English
+^pus$	p ʌ s	1	U+005E U+0070 U+0075 U+0073 U+0024	"pus"	English
+^put$	p ʊ t	1	U+005E U+0070 U+0075 U+0074 U+0024	"put"	English
+^rag$	r æ g	1	U+005E U+0072 U+0061 U+0067 U+0024	"rag"	English
+^ram$	r æ m	1	U+005E U+0072 U+0061 U+006D U+0024	"ram"	English
+^rat$	r æ t	1	U+005E U+0072 U+0061 U+0074 U+0024	"rat"	English
+^raw$	r ɔː	1	U+005E U+0072 U+0061 U+0077 U+0024	"raw"	English
+^red$	r ɛ d	1	U+005E U+0072 U+0065 U+0064 U+0024	"red"	English
+^rib$	r ɪ b	1	U+005E U+0072 U+0069 U+0062 U+0024	"rib"	English
+^row$	r əʊ	1	U+005E U+0072 U+006F U+0077 U+0024	"row"	English
+^rub$	r ʌ b	1	U+005E U+0072 U+0075 U+0062 U+0024	"rub"	English
+^rug$	r ʌ g	1	U+005E U+0072 U+0075 U+0067 U+0024	"rug"	English
+^run$	r ʌ n	1	U+005E U+0072 U+0075 U+006E U+0024	"run"	English
+^rye$	r aɪ	1	U+005E U+0072 U+0079 U+0065 U+0024	"rye"	English
+^sap$	s æ p	1	U+005E U+0073 U+0061 U+0070 U+0024	"sap"	English
+^saw$	s ɔː	1	U+005E U+0073 U+0061 U+0077 U+0024	"saw"	English
+^say$	s eɪ	1	U+005E U+0073 U+0061 U+0079 U+0024	"say"	English
+^sea$	s iː	1	U+005E U+0073 U+0065 U+0061 U+0024	"sea"	English
+^see$	s iː	1	U+005E U+0073 U+0065 U+0065 U+0024	"see"	English
+^sew$	s əʊ	1	U+005E U+0073 U+0065 U+0077 U+0024	"sew"	English
+^she$	ʃ iː	1	U+005E U+0073 U+0068 U+0065 U+0024	"she"	English
+^sit$	s ɪ t	1	U+005E U+0073 U+0069 U+0074 U+0024	"sit"	English
+^six$	s ɪ k s	1	U+005E U+0073 U+0069 U+0078 U+0024	"six"	English
+^sky$	s k aɪ	1	U+005E U+0073 U+006B U+0079 U+0024	"sky"	English
+^son$	s ʌ n	1	U+005E U+0073 U+006F U+006E U+0024	"son"	English
+^sow$	s əʊ	2	U+005E U+0073 U+006F U+0077 U+0024	"sow"	English
+^sun$	s ʌ n	1	U+005E U+0073 U+0075 U+006E U+0024	"sun"	English
+^tan$	t æ n	1	U+005E U+0074 U+0061 U+006E U+0024	"tan"	English
+^tap$	t æ p	1	U+005E U+0074 U+0061 U+0070 U+0024	"tap"	English
+^tax$	t æ k s	1	U+005E U+0074 U+0061 U+0078 U+0024	"tax"	English
+^tea$	t iː	1	U+005E U+0074 U+0065 U+0061 U+0024	"tea"	English
+^ten$	t ɛ n	1	U+005E U+0074 U+0065 U+006E U+0024	"ten"	English
+^tie$	t aɪ	1	U+005E U+0074 U+0069 U+0065 U+0024	"tie"	English
+^tin$	t ɪ n	2	U+005E U+0074 U+0069 U+006E U+0024	"tin"	English
+^toe$	t əʊ	1	U+005E U+0074 U+006F U+0065 U+0024	"toe"	English
+^top$	t ɒ p	1	U+005E U+0074 U+006F U+0070 U+0024	"top"	English
+^try$	t r aɪ	1	U+005E U+0074 U+0072 U+0079 U+0024	"try"	English
+^two$	t uː	1	U+005E U+0074 U+0077 U+006F U+0024	"two"	English
+^war$	w ɔː ɹ	1	U+005E U+0077 U+0061 U+0072 U+0024	"war"	English
+^wax$	w æ k s	1	U+005E U+0077 U+0061 U+0078 U+0024	"wax"	English
+^way$	w eɪ	1	U+005E U+0077 U+0061 U+0079 U+0024	"way"	English
+^web$	w ɛ b	1	U+005E U+0077 U+0065 U+0062 U+0024	"web"	English
+^wet$	w ɛ t	1	U+005E U+0077 U+0065 U+0074 U+0024	"wet"	English
+^yam$	j æ m	1	U+005E U+0079 U+0061 U+006D U+0024	"yam"	English
+^yes$	j ɛ s	1	U+005E U+0079 U+0065 U+0073 U+0024	"yes"	English
+^you$	j uː	2	U+005E U+0079 U+006F U+0075 U+0024	"you"	English
+^adze$	æ d z	1	U+005E U+0061 U+0064 U+007A U+0065 U+0024	"adze"	English
+^arch$	ɑː tʃ	1	U+005E U+0061 U+0072 U+0063 U+0068 U+0024	"arch"	English
+^army$	ɑː m ɪ	1	U+005E U+0061 U+0072 U+006D U+0079 U+0024	"army"	English
+^arse$	ɑː s	1	U+005E U+0061 U+0072 U+0073 U+0065 U+0024	"arse"	English
+^aunt$	ɑː n t	1	U+005E U+0061 U+0075 U+006E U+0074 U+0024	"aunt"	English
+^axle$	æ k s l̩	1	U+005E U+0061 U+0078 U+006C U+0065 U+0024	"axle"	English
+^baby$	b eɪ b ɪ	1	U+005E U+0062 U+0061 U+0062 U+0079 U+0024	"baby"	English
+^back$	b æ k	1	U+005E U+0062 U+0061 U+0063 U+006B U+0024	"back"	English
+^bait$	b eɪ t	1	U+005E U+0062 U+0061 U+0069 U+0074 U+0024	"bait"	English
+^bake$	b eɪ k	1	U+005E U+0062 U+0061 U+006B U+0065 U+0024	"bake"	English
+^bald$	b ɔː l d	1	U+005E U+0062 U+0061 U+006C U+0064 U+0024	"bald"	English
+^ball$	b ɔː l	1	U+005E U+0062 U+0061 U+006C U+006C U+0024	"ball"	English
+^bank$	b æ ŋ k	1	U+005E U+0062 U+0061 U+006E U+006B U+0024	"bank"	English
+^bark$	b ɑː k	1	U+005E U+0062 U+0061 U+0072 U+006B U+0024	"bark"	English
+^bead$	b iː d	1	U+005E U+0062 U+0065 U+0061 U+0064 U+0024	"bead"	English
+^beak$	b iː k	1	U+005E U+0062 U+0065 U+0061 U+006B U+0024	"beak"	English
+^beam$	b iː m	1	U+005E U+0062 U+0065 U+0061 U+006D U+0024	"beam"	English
+^bean$	b iː n	1	U+005E U+0062 U+0065 U+0061 U+006E U+0024	"bean"	English
+^bear$	b ɛə ɹ	1	U+005E U+0062 U+0065 U+0061 U+0072 U+0024	"bear"	English
+^beat$	b iː t	1	U+005E U+0062 U+0065 U+0061 U+0074 U+0024	"beat"	English
+^beer$	b ɪə ɹ	1	U+005E U+0062 U+0065 U+0065 U+0072 U+0024	"beer"	English
+^belt$	b ɛ l t	1	U+005E U+0062 U+0065 U+006C U+0074 U+0024	"belt"	English
+^bend$	b ɛ n d	1	U+005E U+0062 U+0065 U+006E U+0064 U+0024	"bend"	English
+^bill$	b ɪ l	1	U+005E U+0062 U+0069 U+006C U+006C U+0024	"bill"	English
+^bind$	b aɪ n d	1	U+005E U+0062 U+0069 U+006E U+0064 U+0024	"bind"	English
+^bird$	b ɜː d	1	U+005E U+0062 U+0069 U+0072 U+0064 U+0024	"bird"	English
+^bite$	b aɪ t	1	U+005E U+0062 U+0069 U+0074 U+0065 U+0024	"bite"	English
+^blow$	b l əʊ	1	U+005E U+0062 U+006C U+006F U+0077 U+0024	"blow"	English
+^blue$	b l uː	1	U+005E U+0062 U+006C U+0075 U+0065 U+0024	"blue"	English
+^boar$	b ɔː ɹ	1	U+005E U+0062 U+006F U+0061 U+0072 U+0024	"boar"	English
+^boat$	b əʊ t	1	U+005E U+0062 U+006F U+0061 U+0074 U+0024	"boat"	English
+^body$	b ɒ d ɪ	1	U+005E U+0062 U+006F U+0064 U+0079 U+0024	"body"	English
+^boil$	b ɔɪ l	2	U+005E U+0062 U+006F U+0069 U+006C U+0024	"boil"	English
+^bolt$	b əʊ l t	1	U+005E U+0062 U+006F U+006C U+0074 U+0024	"bolt"	English
+^bomb$	b ɒ m	1	U+005E U+0062 U+006F U+006D U+0062 U+0024	"bomb"	English
+^bone$	b əʊ n	1	U+005E U+0062 U+006F U+006E U+0065 U+0024	"bone"	English
+^book$	b ʊ k	1	U+005E U+0062 U+006F U+006F U+006B U+0024	"book"	English
+^boot$	b uː t	1	U+005E U+0062 U+006F U+006F U+0074 U+0024	"boot"	English
+^bore$	b ɔː ɹ	1	U+005E U+0062 U+006F U+0072 U+0065 U+0024	"bore"	English
+^bowl$	b əʊ l	1	U+005E U+0062 U+006F U+0077 U+006C U+0024	"bowl"	English
+^bull$	b ʊ l	1	U+005E U+0062 U+0075 U+006C U+006C U+0024	"bull"	English
+^burn$	b ɜː n	2	U+005E U+0062 U+0075 U+0072 U+006E U+0024	"burn"	English
+^bury$	b ɛ r ɪ	1	U+005E U+0062 U+0075 U+0072 U+0079 U+0024	"bury"	English
+^calf$	k ɑː f	2	U+005E U+0063 U+0061 U+006C U+0066 U+0024	"calf"	English
+^call$	k ɔː l	2	U+005E U+0063 U+0061 U+006C U+006C U+0024	"call"	English
+^calm$	k ɑː m	1	U+005E U+0063 U+0061 U+006C U+006D U+0024	"calm"	English
+^camp$	k æ m p	1	U+005E U+0063 U+0061 U+006D U+0070 U+0024	"camp"	English
+^cape$	k eɪ p	1	U+005E U+0063 U+0061 U+0070 U+0065 U+0024	"cape"	English
+^cart$	k ɑː t	1	U+005E U+0063 U+0061 U+0072 U+0074 U+0024	"cart"	English
+^cast$	k ɑː s t	1	U+005E U+0063 U+0061 U+0073 U+0074 U+0024	"cast"	English
+^cave$	k eɪ v	1	U+005E U+0063 U+0061 U+0076 U+0065 U+0024	"cave"	English
+^chew$	tʃ uː	1	U+005E U+0063 U+0068 U+0065 U+0077 U+0024	"chew"	English
+^chin$	tʃ ɪ n	1	U+005E U+0063 U+0068 U+0069 U+006E U+0024	"chin"	English
+^chop$	tʃ ɒ p	1	U+005E U+0063 U+0068 U+006F U+0070 U+0024	"chop"	English
+^city$	s ɪ t ɪ	1	U+005E U+0063 U+0069 U+0074 U+0079 U+0024	"city"	English
+^clan$	k l æ n	1	U+005E U+0063 U+006C U+0061 U+006E U+0024	"clan"	English
+^claw$	k l ɔː	1	U+005E U+0063 U+006C U+0061 U+0077 U+0024	"claw"	English
+^clay$	k l eɪ	1	U+005E U+0063 U+006C U+0061 U+0079 U+0024	"clay"	English
+^club$	k l ʌ b	1	U+005E U+0063 U+006C U+0075 U+0062 U+0024	"club"	English
+^coat$	k əʊ t	1	U+005E U+0063 U+006F U+0061 U+0074 U+0024	"coat"	English
+^cock$	k ɒ k	1	U+005E U+0063 U+006F U+0063 U+006B U+0024	"cock"	English
+^coin$	k ɔɪ n	1	U+005E U+0063 U+006F U+0069 U+006E U+0024	"coin"	English
+^cold$	k əʊ l d	2	U+005E U+0063 U+006F U+006C U+0064 U+0024	"cold"	English
+^colt$	k əʊ l t	1	U+005E U+0063 U+006F U+006C U+0074 U+0024	"colt"	English
+^comb$	k əʊ m	1	U+005E U+0063 U+006F U+006D U+0062 U+0024	"comb"	English
+^come$	k ʌ m	1	U+005E U+0063 U+006F U+006D U+0065 U+0024	"come"	English
+^cone$	k əʊ n	1	U+005E U+0063 U+006F U+006E U+0065 U+0024	"cone"	English
+^cook$	k ʊ k	1	U+005E U+0063 U+006F U+006F U+006B U+0024	"cook"	English
+^corn$	k ɔː n	1	U+005E U+0063 U+006F U+0072 U+006E U+0024	"corn"	English
+^crow$	k r əʊ	1	U+005E U+0063 U+0072 U+006F U+0077 U+0024	"crow"	English
+^cure$	k j ʊə r eɪ	1	U+005E U+0063 U+0075 U+0072 U+0065 U+0024	"cure"	English
+^dare$	d ɛə ɹ	1	U+005E U+0064 U+0061 U+0072 U+0065 U+0024	"dare"	English
+^dark$	d ɑː k	1	U+005E U+0064 U+0061 U+0072 U+006B U+0024	"dark"	English
+^dawn$	d ɔː n	1	U+005E U+0064 U+0061 U+0077 U+006E U+0024	"dawn"	English
+^dead$	d ɛ d	1	U+005E U+0064 U+0065 U+0061 U+0064 U+0024	"dead"	English
+^deaf$	d ɛ f	1	U+005E U+0064 U+0065 U+0061 U+0066 U+0024	"deaf"	English
+^debt$	d ɛ t	1	U+005E U+0064 U+0065 U+0062 U+0074 U+0024	"debt"	English
+^deep$	d iː p	1	U+005E U+0064 U+0065 U+0065 U+0070 U+0024	"deep"	English
+^deer$	d ɪə ɹ	1	U+005E U+0064 U+0065 U+0065 U+0072 U+0024	"deer"	English
+^deny$	d ɪ n aɪ	1	U+005E U+0064 U+0065 U+006E U+0079 U+0024	"deny"	English
+^dish$	d ɪ ʃ	1	U+005E U+0064 U+0069 U+0073 U+0068 U+0024	"dish"	English
+^dive$	d aɪ v	1	U+005E U+0064 U+0069 U+0076 U+0065 U+0024	"dive"	English
+^door$	d ɔː ɹ	1	U+005E U+0064 U+006F U+006F U+0072 U+0024	"door"	English
+^dove$	d ʌ v	1	U+005E U+0064 U+006F U+0076 U+0065 U+0024	"dove"	English
+^down$	d aʊ n	1	U+005E U+0064 U+006F U+0077 U+006E U+0024	"down"	English
+^drip$	d r ɪ p	1	U+005E U+0064 U+0072 U+0069 U+0070 U+0024	"drip"	English
+^drop$	d r ɒ p	1	U+005E U+0064 U+0072 U+006F U+0070 U+0024	"drop"	English
+^drum$	d r ʌ m	1	U+005E U+0064 U+0072 U+0075 U+006D U+0024	"drum"	English
+^duck$	d ʌ k	1	U+005E U+0064 U+0075 U+0063 U+006B U+0024	"duck"	English
+^dull$	d ʌ l	1	U+005E U+0064 U+0075 U+006C U+006C U+0024	"dull"	English
+^dust$	d ʌ s t	1	U+005E U+0064 U+0075 U+0073 U+0074 U+0024	"dust"	English
+^earn$	ɜː n	1	U+005E U+0065 U+0061 U+0072 U+006E U+0024	"earn"	English
+^east$	iː s t	1	U+005E U+0065 U+0061 U+0073 U+0074 U+0024	"east"	English
+^easy$	iː z ɪ	1	U+005E U+0065 U+0061 U+0073 U+0079 U+0024	"easy"	English
+^edge$	ɛ dʒ	1	U+005E U+0065 U+0064 U+0067 U+0065 U+0024	"edge"	English
+^envy$	ɛ n v ɪ	1	U+005E U+0065 U+006E U+0076 U+0079 U+0024	"envy"	English
+^face$	f eɪ s	1	U+005E U+0066 U+0061 U+0063 U+0065 U+0024	"face"	English
+^fall$	f ɔː l	1	U+005E U+0066 U+0061 U+006C U+006C U+0024	"fall"	English
+^fart$	f ɑː t	1	U+005E U+0066 U+0061 U+0072 U+0074 U+0024	"fart"	English
+^fast$	f ɑː s t	2	U+005E U+0066 U+0061 U+0073 U+0074 U+0024	"fast"	English
+^fear$	f ɪə ɹ	1	U+005E U+0066 U+0065 U+0061 U+0072 U+0024	"fear"	English
+^feel$	f iː l	1	U+005E U+0066 U+0065 U+0065 U+006C U+0024	"feel"	English
+^felt$	f ɛ l t	1	U+005E U+0066 U+0065 U+006C U+0074 U+0024	"felt"	English
+^film$	f ɪ l m	1	U+005E U+0066 U+0069 U+006C U+006D U+0024	"film"	English
+^find$	f aɪ n d	1	U+005E U+0066 U+0069 U+006E U+0064 U+0024	"find"	English
+^fine$	f aɪ n	1	U+005E U+0066 U+0069 U+006E U+0065 U+0024	"fine"	English
+^fire$	f aɪ ə ɹ	1	U+005E U+0066 U+0069 U+0072 U+0065 U+0024	"fire"	English
+^fish$	f ɪ ʃ	1	U+005E U+0066 U+0069 U+0073 U+0068 U+0024	"fish"	English
+^five$	f aɪ v	1	U+005E U+0066 U+0069 U+0076 U+0065 U+0024	"five"	English
+^flat$	f l æ t	1	U+005E U+0066 U+006C U+0061 U+0074 U+0024	"flat"	English
+^flea$	f l iː	1	U+005E U+0066 U+006C U+0065 U+0061 U+0024	"flea"	English
+^flee$	f l iː	1	U+005E U+0066 U+006C U+0065 U+0065 U+0024	"flee"	English
+^flow$	f l əʊ	1	U+005E U+0066 U+006C U+006F U+0077 U+0024	"flow"	English
+^foal$	f əʊ l	1	U+005E U+0066 U+006F U+0061 U+006C U+0024	"foal"	English
+^foam$	f əʊ m	1	U+005E U+0066 U+006F U+0061 U+006D U+0024	"foam"	English
+^fold$	f əʊ l d	1	U+005E U+0066 U+006F U+006C U+0064 U+0024	"fold"	English
+^food$	f uː d	1	U+005E U+0066 U+006F U+006F U+0064 U+0024	"food"	English
+^foot$	f ʊ t	1	U+005E U+0066 U+006F U+006F U+0074 U+0024	"foot"	English
+^fork$	f ɔː k	1	U+005E U+0066 U+006F U+0072 U+006B U+0024	"fork"	English
+^four$	f ɔː ɹ	1	U+005E U+0066 U+006F U+0075 U+0072 U+0024	"four"	English
+^frog$	f r ɒ g	1	U+005E U+0066 U+0072 U+006F U+0067 U+0024	"frog"	English
+^fuck$	f ʌ k	1	U+005E U+0066 U+0075 U+0063 U+006B U+0024	"fuck"	English
+^full$	f ʊ l	1	U+005E U+0066 U+0075 U+006C U+006C U+0024	"full"	English
+^gate$	g eɪ t	1	U+005E U+0067 U+0061 U+0074 U+0065 U+0024	"gate"	English
+^gill$	g ɪ l	1	U+005E U+0067 U+0069 U+006C U+006C U+0024	"gill"	English
+^girl$	g ɜː l	1	U+005E U+0067 U+0069 U+0072 U+006C U+0024	"girl"	English
+^give$	g ɪ v	1	U+005E U+0067 U+0069 U+0076 U+0065 U+0024	"give"	English
+^glad$	g l æ d	1	U+005E U+0067 U+006C U+0061 U+0064 U+0024	"glad"	English
+^glue$	g l uː	1	U+005E U+0067 U+006C U+0075 U+0065 U+0024	"glue"	English
+^gnat$	n æ t	1	U+005E U+0067 U+006E U+0061 U+0074 U+0024	"gnat"	English
+^goat$	g əʊ t	1	U+005E U+0067 U+006F U+0061 U+0074 U+0024	"goat"	English
+^gold$	g əʊ l d	1	U+005E U+0067 U+006F U+006C U+0064 U+0024	"gold"	English
+^good$	g ʊ d	1	U+005E U+0067 U+006F U+006F U+0064 U+0024	"good"	English
+^grow$	g r əʊ	1	U+005E U+0067 U+0072 U+006F U+0077 U+0024	"grow"	English
+^gums$	g ʌ m z	1	U+005E U+0067 U+0075 U+006D U+0073 U+0024	"gums"	English
+^guts$	g ʌ t s	1	U+005E U+0067 U+0075 U+0074 U+0073 U+0024	"guts"	English
+^hair$	h ɛə ɹ	1	U+005E U+0068 U+0061 U+0069 U+0072 U+0024	"hair"	English
+^half$	h ɑː f	1	U+005E U+0068 U+0061 U+006C U+0066 U+0024	"half"	English
+^hall$	h ɔː l	1	U+005E U+0068 U+0061 U+006C U+006C U+0024	"hall"	English
+^hand$	h æ n d	1	U+005E U+0068 U+0061 U+006E U+0064 U+0024	"hand"	English
+^hang$	h æ ŋ	1	U+005E U+0068 U+0061 U+006E U+0067 U+0024	"hang"	English
+^hard$	h ɑː d	1	U+005E U+0068 U+0061 U+0072 U+0064 U+0024	"hard"	English
+^hare$	h ɛə ɹ	1	U+005E U+0068 U+0061 U+0072 U+0065 U+0024	"hare"	English
+^harm$	h ɑː m	1	U+005E U+0068 U+0061 U+0072 U+006D U+0024	"harm"	English
+^hate$	h eɪ t	1	U+005E U+0068 U+0061 U+0074 U+0065 U+0024	"hate"	English
+^have$	h æ v	1	U+005E U+0068 U+0061 U+0076 U+0065 U+0024	"have"	English
+^hawk$	h ɔː k	1	U+005E U+0068 U+0061 U+0077 U+006B U+0024	"hawk"	English
+^head$	h ɛ d	1	U+005E U+0068 U+0065 U+0061 U+0064 U+0024	"head"	English
+^heal$	h iː l	1	U+005E U+0068 U+0065 U+0061 U+006C U+0024	"heal"	English
+^hear$	h ɪə ɹ	1	U+005E U+0068 U+0065 U+0061 U+0072 U+0024	"hear"	English
+^heel$	h iː l	1	U+005E U+0068 U+0065 U+0065 U+006C U+0024	"heel"	English
+^hell$	h ɛ l	1	U+005E U+0068 U+0065 U+006C U+006C U+0024	"hell"	English
+^help$	h ɛ l p	1	U+005E U+0068 U+0065 U+006C U+0070 U+0024	"help"	English
+^here$	h ɪə ɹ	1	U+005E U+0068 U+0065 U+0072 U+0065 U+0024	"here"	English
+^hide$	h aɪ d	2	U+005E U+0068 U+0069 U+0064 U+0065 U+0024	"hide"	English
+^high$	h aɪ	1	U+005E U+0068 U+0069 U+0067 U+0068 U+0024	"high"	English
+^hill$	h ɪ l	1	U+005E U+0068 U+0069 U+006C U+006C U+0024	"hill"	English
+^hire$	h aɪ ə ɹ	1	U+005E U+0068 U+0069 U+0072 U+0065 U+0024	"hire"	English
+^hive$	h aɪ v	1	U+005E U+0068 U+0069 U+0076 U+0065 U+0024	"hive"	English
+^hold$	h əʊ l d	1	U+005E U+0068 U+006F U+006C U+0064 U+0024	"hold"	English
+^hole$	h əʊ l	1	U+005E U+0068 U+006F U+006C U+0065 U+0024	"hole"	English
+^holy$	h əʊ l ɪ	1	U+005E U+0068 U+006F U+006C U+0079 U+0024	"holy"	English
+^hook$	h ʊ k	1	U+005E U+0068 U+006F U+006F U+006B U+0024	"hook"	English
+^hope$	h əʊ p	1	U+005E U+0068 U+006F U+0070 U+0065 U+0024	"hope"	English
+^horn$	h ɔː n	1	U+005E U+0068 U+006F U+0072 U+006E U+0024	"horn"	English
+^host$	h əʊ s t	1	U+005E U+0068 U+006F U+0073 U+0074 U+0024	"host"	English
+^hour$	aʊ ə ɹ	1	U+005E U+0068 U+006F U+0075 U+0072 U+0024	"hour"	English
+^how?$	h aʊ	1	U+005E U+0068 U+006F U+0077 U+003F U+0024	"how?"	English
+^howl$	h aʊ l	1	U+005E U+0068 U+006F U+0077 U+006C U+0024	"howl"	English
+^hunt$	h ʌ n t	1	U+005E U+0068 U+0075 U+006E U+0074 U+0024	"hunt"	English
+^hurt$	h ɜː t	1	U+005E U+0068 U+0075 U+0072 U+0074 U+0024	"hurt"	English
+^idea$	aɪ d ɪə	1	U+005E U+0069 U+0064 U+0065 U+0061 U+0024	"idea"	English
+^idol$	aɪ d l̩	1	U+005E U+0069 U+0064 U+006F U+006C U+0024	"idol"	English
+^iron$	aɪ ə n	1	U+005E U+0069 U+0072 U+006F U+006E U+0024	"iron"	English
+^itch$	ɪ tʃ	1	U+005E U+0069 U+0074 U+0063 U+0068 U+0024	"itch"	English
+^join$	dʒ ɔɪ n	1	U+005E U+006A U+006F U+0069 U+006E U+0024	"join"	English
+^jump$	dʒ ʌ m p	1	U+005E U+006A U+0075 U+006D U+0070 U+0024	"jump"	English
+^keep$	k iː p	1	U+005E U+006B U+0065 U+0065 U+0070 U+0024	"keep"	English
+^kick$	k ɪ k	1	U+005E U+006B U+0069 U+0063 U+006B U+0024	"kick"	English
+^kill$	k ɪ l	1	U+005E U+006B U+0069 U+006C U+006C U+0024	"kill"	English
+^king$	k ɪ ŋ	1	U+005E U+006B U+0069 U+006E U+0067 U+0024	"king"	English
+^kiss$	k ɪ s	1	U+005E U+006B U+0069 U+0073 U+0073 U+0024	"kiss"	English
+^knee$	n iː	1	U+005E U+006B U+006E U+0065 U+0065 U+0024	"knee"	English
+^knot$	n ɒ t	1	U+005E U+006B U+006E U+006F U+0074 U+0024	"knot"	English
+^know$	n əʊ	1	U+005E U+006B U+006E U+006F U+0077 U+0024	"know"	English
+^lake$	l eɪ k	1	U+005E U+006C U+0061 U+006B U+0065 U+0024	"lake"	English
+^lamb$	l æ m	1	U+005E U+006C U+0061 U+006D U+0062 U+0024	"lamb"	English
+^lame$	l ɑː m eɪ	1	U+005E U+006C U+0061 U+006D U+0065 U+0024	"lame"	English
+^lamp$	l æ m p	1	U+005E U+006C U+0061 U+006D U+0070 U+0024	"lamp"	English
+^land$	l æ n d	2	U+005E U+006C U+0061 U+006E U+0064 U+0024	"land"	English
+^last$	l ɑː s t	1	U+005E U+006C U+0061 U+0073 U+0074 U+0024	"last"	English
+^late$	l eɪ t	2	U+005E U+006C U+0061 U+0074 U+0065 U+0024	"late"	English
+^lazy$	l eɪ z ɪ	1	U+005E U+006C U+0061 U+007A U+0079 U+0024	"lazy"	English
+^lead$	l iː d	2	U+005E U+006C U+0065 U+0061 U+0064 U+0024	"lead"	English
+^leaf$	l iː f	1	U+005E U+006C U+0065 U+0061 U+0066 U+0024	"leaf"	English
+^left$	l ɛ f t	1	U+005E U+006C U+0065 U+0066 U+0074 U+0024	"left"	English
+^lend$	l ɛ n d	1	U+005E U+006C U+0065 U+006E U+0064 U+0024	"lend"	English
+^lick$	l ɪ k	1	U+005E U+006C U+0069 U+0063 U+006B U+0024	"lick"	English
+^life$	l aɪ f	1	U+005E U+006C U+0069 U+0066 U+0065 U+0024	"life"	English
+^lift$	l ɪ f t	1	U+005E U+006C U+0069 U+0066 U+0074 U+0024	"lift"	English
+^limp$	l ɪ m p	1	U+005E U+006C U+0069 U+006D U+0070 U+0024	"limp"	English
+^line$	l aɪ n	1	U+005E U+006C U+0069 U+006E U+0065 U+0024	"line"	English
+^lion$	l aɪ ə n	1	U+005E U+006C U+0069 U+006F U+006E U+0024	"lion"	English
+^live$	l ɪ v	1	U+005E U+006C U+0069 U+0076 U+0065 U+0024	"live"	English
+^lock$	l ɒ k	1	U+005E U+006C U+006F U+0063 U+006B U+0024	"lock"	English
+^long$	l ɒ ŋ	1	U+005E U+006C U+006F U+006E U+0067 U+0024	"long"	English
+^look$	l ʊ k	1	U+005E U+006C U+006F U+006F U+006B U+0024	"look"	English
+^loom$	l uː m	1	U+005E U+006C U+006F U+006F U+006D U+0024	"loom"	English
+^lose$	l uː z	1	U+005E U+006C U+006F U+0073 U+0065 U+0024	"lose"	English
+^loud$	l aʊ d	1	U+005E U+006C U+006F U+0075 U+0064 U+0024	"loud"	English
+^love$	l ʌ v	1	U+005E U+006C U+006F U+0076 U+0065 U+0024	"love"	English
+^lung$	l ʌ ŋ	1	U+005E U+006C U+0075 U+006E U+0067 U+0024	"lung"	English
+^make$	m eɪ k	1	U+005E U+006D U+0061 U+006B U+0065 U+0024	"make"	English
+^male$	m eɪ l	2	U+005E U+006D U+0061 U+006C U+0065 U+0024	"male"	English
+^many$	m ɛ n ɪ	1	U+005E U+006D U+0061 U+006E U+0079 U+0024	"many"	English
+^mare$	m ɑː r eɪ	1	U+005E U+006D U+0061 U+0072 U+0065 U+0024	"mare"	English
+^mast$	m ɑː s t	1	U+005E U+006D U+0061 U+0073 U+0074 U+0024	"mast"	English
+^mead$	m iː d	1	U+005E U+006D U+0065 U+0061 U+0064 U+0024	"mead"	English
+^meal$	m iː l	1	U+005E U+006D U+0065 U+0061 U+006C U+0024	"meal"	English
+^mean$	m iː n	1	U+005E U+006D U+0065 U+0061 U+006E U+0024	"mean"	English
+^meat$	m iː t	1	U+005E U+006D U+0065 U+0061 U+0074 U+0024	"meat"	English
+^meet$	m iː t	1	U+005E U+006D U+0065 U+0065 U+0074 U+0024	"meet"	English
+^milk$	m ɪ l k	2	U+005E U+006D U+0069 U+006C U+006B U+0024	"milk"	English
+^mill$	m ɪ l	1	U+005E U+006D U+0069 U+006C U+006C U+0024	"mill"	English
+^mind$	m aɪ n d	1	U+005E U+006D U+0069 U+006E U+0064 U+0024	"mind"	English
+^miss$	m ɪ s	1	U+005E U+006D U+0069 U+0073 U+0073 U+0024	"miss"	English
+^moon$	m uː n	1	U+005E U+006D U+006F U+006F U+006E U+0024	"moon"	English
+^more$	m ɔː ɹ	1	U+005E U+006D U+006F U+0072 U+0065 U+0024	"more"	English
+^move$	m uː v	1	U+005E U+006D U+006F U+0076 U+0065 U+0024	"move"	English
+^mule$	m j uː l	1	U+005E U+006D U+0075 U+006C U+0065 U+0024	"mule"	English
+^mute$	m j uː t	1	U+005E U+006D U+0075 U+0074 U+0065 U+0024	"mute"	English
+^nail$	n eɪ l	1	U+005E U+006E U+0061 U+0069 U+006C U+0024	"nail"	English
+^name$	n eɪ m	1	U+005E U+006E U+0061 U+006D U+0065 U+0024	"name"	English
+^nape$	n eɪ p	1	U+005E U+006E U+0061 U+0070 U+0065 U+0024	"nape"	English
+^near$	n ɪə ɹ	1	U+005E U+006E U+0065 U+0061 U+0072 U+0024	"near"	English
+^neck$	n ɛ k	1	U+005E U+006E U+0065 U+0063 U+006B U+0024	"neck"	English
+^need$	n iː d	1	U+005E U+006E U+0065 U+0065 U+0064 U+0024	"need"	English
+^nest$	n ɛ s t	1	U+005E U+006E U+0065 U+0073 U+0074 U+0024	"nest"	English
+^next$	n ɛ k s t	1	U+005E U+006E U+0065 U+0078 U+0074 U+0024	"next"	English
+^nine$	n aɪ n	1	U+005E U+006E U+0069 U+006E U+0065 U+0024	"nine"	English
+^noon$	n uː n	1	U+005E U+006E U+006F U+006F U+006E U+0024	"noon"	English
+^nose$	n əʊ z	1	U+005E U+006E U+006F U+0073 U+0065 U+0024	"nose"	English
+^oath$	əʊ θ	1	U+005E U+006F U+0061 U+0074 U+0068 U+0024	"oath"	English
+^obey$	ə b eɪ	1	U+005E U+006F U+0062 U+0065 U+0079 U+0024	"obey"	English
+^omen$	əʊ m ɛ n	1	U+005E U+006F U+006D U+0065 U+006E U+0024	"omen"	English
+^only$	əʊ n l ɪ	1	U+005E U+006F U+006E U+006C U+0079 U+0024	"only"	English
+^open$	əʊ p ə n	1	U+005E U+006F U+0070 U+0065 U+006E U+0024	"open"	English
+^oven$	ʌ v n̩	1	U+005E U+006F U+0076 U+0065 U+006E U+0024	"oven"	English
+^pain$	p eɪ n	1	U+005E U+0070 U+0061 U+0069 U+006E U+0024	"pain"	English
+^pair$	p ɛə ɹ	1	U+005E U+0070 U+0061 U+0069 U+0072 U+0024	"pair"	English
+^palm$	p ɑː m	2	U+005E U+0070 U+0061 U+006C U+006D U+0024	"palm"	English
+^part$	p ɑː t	1	U+005E U+0070 U+0061 U+0072 U+0074 U+0024	"part"	English
+^path$	p ɑː θ	1	U+005E U+0070 U+0061 U+0074 U+0068 U+0024	"path"	English
+^peel$	p iː l	1	U+005E U+0070 U+0065 U+0065 U+006C U+0024	"peel"	English
+^pill$	p ɪ l	1	U+005E U+0070 U+0069 U+006C U+006C U+0024	"pill"	English
+^pine$	p aɪ n	1	U+005E U+0070 U+0069 U+006E U+0065 U+0024	"pine"	English
+^pipe$	p aɪ p	1	U+005E U+0070 U+0069 U+0070 U+0065 U+0024	"pipe"	English
+^piss$	p ɪ s	1	U+005E U+0070 U+0069 U+0073 U+0073 U+0024	"piss"	English
+^pity$	p ɪ t ɪ	1	U+005E U+0070 U+0069 U+0074 U+0079 U+0024	"pity"	English
+^play$	p l eɪ	1	U+005E U+0070 U+006C U+0061 U+0079 U+0024	"play"	English
+^plot$	p l ɒ t	1	U+005E U+0070 U+006C U+006F U+0074 U+0024	"plot"	English
+^poet$	p əʊ ɪ t	1	U+005E U+0070 U+006F U+0065 U+0074 U+0024	"poet"	English
+^poor$	p ɔː ɹ	1	U+005E U+0070 U+006F U+006F U+0072 U+0024	"poor"	English
+^port$	p ɔː t	1	U+005E U+0070 U+006F U+0072 U+0074 U+0024	"port"	English
+^post$	p əʊ s t	2	U+005E U+0070 U+006F U+0073 U+0074 U+0024	"post"	English
+^pour$	p ɔː ɹ	1	U+005E U+0070 U+006F U+0075 U+0072 U+0024	"pour"	English
+^pray$	p r eɪ	1	U+005E U+0070 U+0072 U+0061 U+0079 U+0024	"pray"	English
+^puke$	p j uː k	1	U+005E U+0070 U+0075 U+006B U+0065 U+0024	"puke"	English
+^pull$	p ʊ l	1	U+005E U+0070 U+0075 U+006C U+006C U+0024	"pull"	English
+^push$	p ʊ ʃ	1	U+005E U+0070 U+0075 U+0073 U+0068 U+0024	"push"	English
+^raft$	r ɑː f t	1	U+005E U+0072 U+0061 U+0066 U+0074 U+0024	"raft"	English
+^rain$	r eɪ n	1	U+005E U+0072 U+0061 U+0069 U+006E U+0024	"rain"	English
+^rake$	r eɪ k	1	U+005E U+0072 U+0061 U+006B U+0065 U+0024	"rake"	English
+^rape$	r eɪ p	1	U+005E U+0072 U+0061 U+0070 U+0065 U+0024	"rape"	English
+^read$	r ɛ d	1	U+005E U+0072 U+0065 U+0061 U+0064 U+0024	"read"	English
+^reef$	r iː f	1	U+005E U+0072 U+0065 U+0065 U+0066 U+0024	"reef"	English
+^rest$	r ɛ s t	1	U+005E U+0072 U+0065 U+0073 U+0074 U+0024	"rest"	English
+^rice$	r aɪ s	1	U+005E U+0072 U+0069 U+0063 U+0065 U+0024	"rice"	English
+^rich$	r ɪ tʃ	1	U+005E U+0072 U+0069 U+0063 U+0068 U+0024	"rich"	English
+^ride$	r aɪ d	1	U+005E U+0072 U+0069 U+0064 U+0065 U+0024	"ride"	English
+^ring$	r ɪ ŋ	1	U+005E U+0072 U+0069 U+006E U+0067 U+0024	"ring"	English
+^ripe$	r aɪ p	1	U+005E U+0072 U+0069 U+0070 U+0065 U+0024	"ripe"	English
+^rise$	r aɪ z	1	U+005E U+0072 U+0069 U+0073 U+0065 U+0024	"rise"	English
+^road$	r əʊ d	1	U+005E U+0072 U+006F U+0061 U+0064 U+0024	"road"	English
+^rock$	r ɒ k	1	U+005E U+0072 U+006F U+0063 U+006B U+0024	"rock"	English
+^roll$	r əʊ l	1	U+005E U+0072 U+006F U+006C U+006C U+0024	"roll"	English
+^roof$	r uː f	1	U+005E U+0072 U+006F U+006F U+0066 U+0024	"roof"	English
+^room$	r uː m	1	U+005E U+0072 U+006F U+006F U+006D U+0024	"room"	English
+^root$	r uː t	1	U+005E U+0072 U+006F U+006F U+0074 U+0024	"root"	English
+^rope$	r əʊ p	1	U+005E U+0072 U+006F U+0070 U+0065 U+0024	"rope"	English
+^rule$	r uː l	1	U+005E U+0072 U+0075 U+006C U+0065 U+0024	"rule"	English
+^sail$	s eɪ l	2	U+005E U+0073 U+0061 U+0069 U+006C U+0024	"sail"	English
+^salt$	s ɔː l t	1	U+005E U+0073 U+0061 U+006C U+0074 U+0024	"salt"	English
+^same$	s eɪ m	1	U+005E U+0073 U+0061 U+006D U+0065 U+0024	"same"	English
+^sand$	s æ n d	1	U+005E U+0073 U+0061 U+006E U+0064 U+0024	"sand"	English
+^scar$	s k ɑː ɹ	1	U+005E U+0073 U+0063 U+0061 U+0072 U+0024	"scar"	English
+^seed$	s iː d	1	U+005E U+0073 U+0065 U+0065 U+0064 U+0024	"seed"	English
+^seek$	s iː k	1	U+005E U+0073 U+0065 U+0065 U+006B U+0024	"seek"	English
+^seem$	s iː m	1	U+005E U+0073 U+0065 U+0065 U+006D U+0024	"seem"	English
+^sell$	s ɛ l	1	U+005E U+0073 U+0065 U+006C U+006C U+0024	"sell"	English
+^send$	s ɛ n d	1	U+005E U+0073 U+0065 U+006E U+0064 U+0024	"send"	English
+^shed$	ʃ ɛ d	1	U+005E U+0073 U+0068 U+0065 U+0064 U+0024	"shed"	English
+^ship$	ʃ ɪ p	1	U+005E U+0073 U+0068 U+0069 U+0070 U+0024	"ship"	English
+^shit$	ʃ ɪ t	1	U+005E U+0073 U+0068 U+0069 U+0074 U+0024	"shit"	English
+^shoe$	ʃ uː	1	U+005E U+0073 U+0068 U+006F U+0065 U+0024	"shoe"	English
+^shop$	ʃ ɒ p	1	U+005E U+0073 U+0068 U+006F U+0070 U+0024	"shop"	English
+^show$	ʃ əʊ	1	U+005E U+0073 U+0068 U+006F U+0077 U+0024	"show"	English
+^shut$	ʃ ʌ t	1	U+005E U+0073 U+0068 U+0075 U+0074 U+0024	"shut"	English
+^sick$	s ɪ k	1	U+005E U+0073 U+0069 U+0063 U+006B U+0024	"sick"	English
+^side$	s aɪ d	1	U+005E U+0073 U+0069 U+0064 U+0065 U+0024	"side"	English
+^silk$	s ɪ l k	1	U+005E U+0073 U+0069 U+006C U+006B U+0024	"silk"	English
+^sing$	s ɪ ŋ	1	U+005E U+0073 U+0069 U+006E U+0067 U+0024	"sing"	English
+^sink$	s ɪ ŋ k	2	U+005E U+0073 U+0069 U+006E U+006B U+0024	"sink"	English
+^skin$	s k ɪ n	2	U+005E U+0073 U+006B U+0069 U+006E U+0024	"skin"	English
+^slip$	s l ɪ p	1	U+005E U+0073 U+006C U+0069 U+0070 U+0024	"slip"	English
+^slow$	s l əʊ	1	U+005E U+0073 U+006C U+006F U+0077 U+0024	"slow"	English
+^snot$	s n ɒ t	1	U+005E U+0073 U+006E U+006F U+0074 U+0024	"snot"	English
+^snow$	s n əʊ	1	U+005E U+0073 U+006E U+006F U+0077 U+0024	"snow"	English
+^soap$	s əʊ p	1	U+005E U+0073 U+006F U+0061 U+0070 U+0024	"soap"	English
+^sock$	s ɒ k	1	U+005E U+0073 U+006F U+0063 U+006B U+0024	"sock"	English
+^soft$	s ɒ f t	1	U+005E U+0073 U+006F U+0066 U+0074 U+0024	"soft"	English
+^soil$	s ɔɪ l	1	U+005E U+0073 U+006F U+0069 U+006C U+0024	"soil"	English
+^some$	s ʌ m	1	U+005E U+0073 U+006F U+006D U+0065 U+0024	"some"	English
+^song$	s ɒ ŋ	1	U+005E U+0073 U+006F U+006E U+0067 U+0024	"song"	English
+^soon$	s uː n	1	U+005E U+0073 U+006F U+006F U+006E U+0024	"soon"	English
+^sore$	s ɔː ɹ	1	U+005E U+0073 U+006F U+0072 U+0065 U+0024	"sore"	English
+^soul$	s əʊ l	1	U+005E U+0073 U+006F U+0075 U+006C U+0024	"soul"	English
+^soup$	s uː p	1	U+005E U+0073 U+006F U+0075 U+0070 U+0024	"soup"	English
+^sour$	s aʊ ə ɹ	1	U+005E U+0073 U+006F U+0075 U+0072 U+0024	"sour"	English
+^spin$	s p ɪ n	1	U+005E U+0073 U+0070 U+0069 U+006E U+0024	"spin"	English
+^spit$	s p ɪ t	1	U+005E U+0073 U+0070 U+0069 U+0074 U+0024	"spit"	English
+^stab$	s t æ b	1	U+005E U+0073 U+0074 U+0061 U+0062 U+0024	"stab"	English
+^star$	s t ɑː ɹ	1	U+005E U+0073 U+0074 U+0061 U+0072 U+0024	"star"	English
+^stay$	s t eɪ	1	U+005E U+0073 U+0074 U+0061 U+0079 U+0024	"stay"	English
+^stir$	s t ɜː ɹ	1	U+005E U+0073 U+0074 U+0069 U+0072 U+0024	"stir"	English
+^suck$	s ʌ k	1	U+005E U+0073 U+0075 U+0063 U+006B U+0024	"suck"	English
+^sure$	ʃ ɔː ɹ	1	U+005E U+0073 U+0075 U+0072 U+0065 U+0024	"sure"	English
+^swim$	s w ɪ m	1	U+005E U+0073 U+0077 U+0069 U+006D U+0024	"swim"	English
+^tail$	t eɪ l	1	U+005E U+0074 U+0061 U+0069 U+006C U+0024	"tail"	English
+^take$	t eɪ k	1	U+005E U+0074 U+0061 U+006B U+0065 U+0024	"take"	English
+^talk$	t ɔː k	1	U+005E U+0074 U+0061 U+006C U+006B U+0024	"talk"	English
+^tall$	t ɔː l	1	U+005E U+0074 U+0061 U+006C U+006C U+0024	"tall"	English
+^tear$	t ɛə ɹ	2	U+005E U+0074 U+0065 U+0061 U+0072 U+0024	"tear"	English
+^teat$	t iː t	1	U+005E U+0074 U+0065 U+0061 U+0074 U+0024	"teat"	English
+^tell$	t ɛ l	1	U+005E U+0074 U+0065 U+006C U+006C U+0024	"tell"	English
+^tent$	t ɛ n t	1	U+005E U+0074 U+0065 U+006E U+0074 U+0024	"tent"	English
+^that$	ð æ t	1	U+005E U+0074 U+0068 U+0061 U+0074 U+0024	"that"	English
+^they$	ð eɪ	1	U+005E U+0074 U+0068 U+0065 U+0079 U+0024	"they"	English
+^thin$	θ ɪ n	1	U+005E U+0074 U+0068 U+0069 U+006E U+0024	"thin"	English
+^this$	ð ɪ s	1	U+005E U+0074 U+0068 U+0069 U+0073 U+0024	"this"	English
+^tick$	t ɪ k	1	U+005E U+0074 U+0069 U+0063 U+006B U+0024	"tick"	English
+^tide$	t aɪ d	1	U+005E U+0074 U+0069 U+0064 U+0065 U+0024	"tide"	English
+^time$	t aɪ m	1	U+005E U+0074 U+0069 U+006D U+0065 U+0024	"time"	English
+^tool$	t uː l	1	U+005E U+0074 U+006F U+006F U+006C U+0024	"tool"	English
+^town$	t aʊ n	1	U+005E U+0074 U+006F U+0077 U+006E U+0024	"town"	English
+^trap$	t r æ p	2	U+005E U+0074 U+0072 U+0061 U+0070 U+0024	"trap"	English
+^tree$	t r iː	1	U+005E U+0074 U+0072 U+0065 U+0065 U+0024	"tree"	English
+^true$	t r uː	1	U+005E U+0074 U+0072 U+0075 U+0065 U+0024	"true"	English
+^turn$	t ɜː n	1	U+005E U+0074 U+0075 U+0072 U+006E U+0024	"turn"	English
+^ugly$	ʌ g l ɪ	1	U+005E U+0075 U+0067 U+006C U+0079 U+0024	"ugly"	English
+^veil$	v eɪ l	1	U+005E U+0076 U+0065 U+0069 U+006C U+0024	"veil"	English
+^vein$	v eɪ n	1	U+005E U+0076 U+0065 U+0069 U+006E U+0024	"vein"	English
+^vine$	v aɪ n	1	U+005E U+0076 U+0069 U+006E U+0065 U+0024	"vine"	English
+^walk$	w ɔː k	1	U+005E U+0077 U+0061 U+006C U+006B U+0024	"walk"	English
+^wall$	w ɔː l	1	U+005E U+0077 U+0061 U+006C U+006C U+0024	"wall"	English
+^want$	w ɒ n t	1	U+005E U+0077 U+0061 U+006E U+0074 U+0024	"want"	English
+^warm$	w ɔː m	1	U+005E U+0077 U+0061 U+0072 U+006D U+0024	"warm"	English
+^wash$	w ɒ ʃ	1	U+005E U+0077 U+0061 U+0073 U+0068 U+0024	"wash"	English
+^wasp$	w ɒ s p	1	U+005E U+0077 U+0061 U+0073 U+0070 U+0024	"wasp"	English
+^wave$	w eɪ v	1	U+005E U+0077 U+0061 U+0076 U+0065 U+0024	"wave"	English
+^weak$	w iː k	1	U+005E U+0077 U+0065 U+0061 U+006B U+0024	"weak"	English
+^week$	w iː k	1	U+005E U+0077 U+0065 U+0065 U+006B U+0024	"week"	English
+^weep$	w iː p	1	U+005E U+0077 U+0065 U+0065 U+0070 U+0024	"weep"	English
+^well$	w ɛ l	1	U+005E U+0077 U+0065 U+006C U+006C U+0024	"well"	English
+^west$	w ɛ s t	1	U+005E U+0077 U+0065 U+0073 U+0074 U+0024	"west"	English
+^who?$	h uː	1	U+005E U+0077 U+0068 U+006F U+003F U+0024	"who?"	English
+^why?$	w aɪ	1	U+005E U+0077 U+0068 U+0079 U+003F U+0024	"why?"	English
+^wide$	w aɪ d	1	U+005E U+0077 U+0069 U+0064 U+0065 U+0024	"wide"	English
+^wife$	w aɪ f	1	U+005E U+0077 U+0069 U+0066 U+0065 U+0024	"wife"	English
+^wind$	w aɪ n d	1	U+005E U+0077 U+0069 U+006E U+0064 U+0024	"wind"	English
+^wine$	w aɪ n	1	U+005E U+0077 U+0069 U+006E U+0065 U+0024	"wine"	English
+^wing$	w ɪ ŋ	1	U+005E U+0077 U+0069 U+006E U+0067 U+0024	"wing"	English
+^wipe$	w aɪ p	1	U+005E U+0077 U+0069 U+0070 U+0065 U+0024	"wipe"	English
+^wise$	w aɪ z	1	U+005E U+0077 U+0069 U+0073 U+0065 U+0024	"wise"	English
+^with$	w ɪ ð	1	U+005E U+0077 U+0069 U+0074 U+0068 U+0024	"with"	English
+^wolf$	w ʊ l f	1	U+005E U+0077 U+006F U+006C U+0066 U+0024	"wolf"	English
+^womb$	w uː m	1	U+005E U+0077 U+006F U+006D U+0062 U+0024	"womb"	English
+^wood$	w ʊ d	1	U+005E U+0077 U+006F U+006F U+0064 U+0024	"wood"	English
+^wool$	w ʊ l	1	U+005E U+0077 U+006F U+006F U+006C U+0024	"wool"	English
+^word$	w ɜː d	1	U+005E U+0077 U+006F U+0072 U+0064 U+0024	"word"	English
+^work$	w ɜː k	1	U+005E U+0077 U+006F U+0072 U+006B U+0024	"work"	English
+^worm$	w ɜː m	1	U+005E U+0077 U+006F U+0072 U+006D U+0024	"worm"	English
+^wrap$	r æ p	1	U+005E U+0077 U+0072 U+0061 U+0070 U+0024	"wrap"	English
+^yard$	j ɑː d	1	U+005E U+0079 U+0061 U+0072 U+0064 U+0024	"yard"	English
+^yawn$	j ɔː n	1	U+005E U+0079 U+0061 U+0077 U+006E U+0024	"yawn"	English
+^year$	j ɪə ɹ	1	U+005E U+0079 U+0065 U+0061 U+0072 U+0024	"year"	English
+^yoke$	j əʊ k	1	U+005E U+0079 U+006F U+006B U+0065 U+0024	"yoke"	English
+^yolk$	j əʊ k	1	U+005E U+0079 U+006F U+006C U+006B U+0024	"yolk"	English
+^zero$	z ɪə r əʊ	1	U+005E U+007A U+0065 U+0072 U+006F U+0024	"zero"	English
+^above$	ə b ʌ v	1	U+005E U+0061 U+0062 U+006F U+0076 U+0065 U+0024	"above"	English
+^acorn$	eɪ k ɔː n	1	U+005E U+0061 U+0063 U+006F U+0072 U+006E U+0024	"acorn"	English
+^admit$	ə d m ɪ t	1	U+005E U+0061 U+0064 U+006D U+0069 U+0074 U+0024	"admit"	English
+^adobe$	ə d əʊ b ɪ	1	U+005E U+0061 U+0064 U+006F U+0062 U+0065 U+0024	"adobe"	English
+^after$	ɑː f t ə ɹ	1	U+005E U+0061 U+0066 U+0074 U+0065 U+0072 U+0024	"after"	English
+^again$	ə g ɛ n	1	U+005E U+0061 U+0067 U+0061 U+0069 U+006E U+0024	"again"	English
+^alike$	ə l aɪ k	1	U+005E U+0061 U+006C U+0069 U+006B U+0065 U+0024	"alike"	English
+^alive$	ə l aɪ v	1	U+005E U+0061 U+006C U+0069 U+0076 U+0065 U+0024	"alive"	English
+^allow$	ə l aʊ	1	U+005E U+0061 U+006C U+006C U+006F U+0077 U+0024	"allow"	English
+^alone$	ə l əʊ n	1	U+005E U+0061 U+006C U+006F U+006E U+0065 U+0024	"alone"	English
+^altar$	ɔː l t ə ɹ	1	U+005E U+0061 U+006C U+0074 U+0061 U+0072 U+0024	"altar"	English
+^anger$	æ ŋ g ə ɹ	1	U+005E U+0061 U+006E U+0067 U+0065 U+0072 U+0024	"anger"	English
+^ankle$	æ ŋ k l̩	1	U+005E U+0061 U+006E U+006B U+006C U+0065 U+0024	"ankle"	English
+^anvil$	æ n v ɪ l	1	U+005E U+0061 U+006E U+0076 U+0069 U+006C U+0024	"anvil"	English
+^arrow$	æ r əʊ	1	U+005E U+0061 U+0072 U+0072 U+006F U+0077 U+0024	"arrow"	English
+^arson$	ɑː s n̩	1	U+005E U+0061 U+0072 U+0073 U+006F U+006E U+0024	"arson"	English
+^bathe$	b eɪ ð	1	U+005E U+0062 U+0061 U+0074 U+0068 U+0065 U+0024	"bathe"	English
+^beard$	b ɪə d	1	U+005E U+0062 U+0065 U+0061 U+0072 U+0064 U+0024	"beard"	English
+^beech$	b iː tʃ	1	U+005E U+0062 U+0065 U+0065 U+0063 U+0068 U+0024	"beech"	English
+^beget$	b ɪ g ɛ t	1	U+005E U+0062 U+0065 U+0067 U+0065 U+0074 U+0024	"beget"	English
+^begin$	b ɪ g ɪ n	1	U+005E U+0062 U+0065 U+0067 U+0069 U+006E U+0024	"begin"	English
+^belly$	b ɛ l ɪ	1	U+005E U+0062 U+0065 U+006C U+006C U+0079 U+0024	"belly"	English
+^birch$	b ɜː tʃ	1	U+005E U+0062 U+0069 U+0072 U+0063 U+0068 U+0024	"birch"	English
+^black$	b l æ k	1	U+005E U+0062 U+006C U+0061 U+0063 U+006B U+0024	"black"	English
+^blame$	b l eɪ m	1	U+005E U+0062 U+006C U+0061 U+006D U+0065 U+0024	"blame"	English
+^bless$	b l ɛ s	1	U+005E U+0062 U+006C U+0065 U+0073 U+0073 U+0024	"bless"	English
+^blind$	b l aɪ n d	1	U+005E U+0062 U+006C U+0069 U+006E U+0064 U+0024	"blind"	English
+^blink$	b l ɪ ŋ k	1	U+005E U+0062 U+006C U+0069 U+006E U+006B U+0024	"blink"	English
+^blood$	b l ʌ d	1	U+005E U+0062 U+006C U+006F U+006F U+0064 U+0024	"blood"	English
+^blunt$	b l ʌ n t	1	U+005E U+0062 U+006C U+0075 U+006E U+0074 U+0024	"blunt"	English
+^board$	b ɔː d	1	U+005E U+0062 U+006F U+0061 U+0072 U+0064 U+0024	"board"	English
+^boast$	b əʊ s t	1	U+005E U+0062 U+006F U+0061 U+0073 U+0074 U+0024	"boast"	English
+^booty$	b uː t ɪ	1	U+005E U+0062 U+006F U+006F U+0074 U+0079 U+0024	"booty"	English
+^braid$	b r eɪ d	1	U+005E U+0062 U+0072 U+0061 U+0069 U+0064 U+0024	"braid"	English
+^brain$	b r eɪ n	1	U+005E U+0062 U+0072 U+0061 U+0069 U+006E U+0024	"brain"	English
+^brake$	b r eɪ k	1	U+005E U+0062 U+0072 U+0061 U+006B U+0065 U+0024	"brake"	English
+^brave$	b r eɪ v	1	U+005E U+0062 U+0072 U+0061 U+0076 U+0065 U+0024	"brave"	English
+^bread$	b r ɛ d	1	U+005E U+0062 U+0072 U+0065 U+0061 U+0064 U+0024	"bread"	English
+^break$	b r eɪ k	1	U+005E U+0062 U+0072 U+0065 U+0061 U+006B U+0024	"break"	English
+^brick$	b r ɪ k	1	U+005E U+0062 U+0072 U+0069 U+0063 U+006B U+0024	"brick"	English
+^bring$	b r ɪ ŋ	1	U+005E U+0062 U+0072 U+0069 U+006E U+0067 U+0024	"bring"	English
+^broom$	b r uː m	1	U+005E U+0062 U+0072 U+006F U+006F U+006D U+0024	"broom"	English
+^brush$	b r ʌ ʃ	1	U+005E U+0062 U+0072 U+0075 U+0073 U+0068 U+0024	"brush"	English
+^build$	b ɪ l d	1	U+005E U+0062 U+0075 U+0069 U+006C U+0064 U+0024	"build"	English
+^bunch$	b ʌ n tʃ	1	U+005E U+0062 U+0075 U+006E U+0063 U+0068 U+0024	"bunch"	English
+^camel$	k æ m l̩	1	U+005E U+0063 U+0061 U+006D U+0065 U+006C U+0024	"camel"	English
+^canoe$	k ə n uː	1	U+005E U+0063 U+0061 U+006E U+006F U+0065 U+0024	"canoe"	English
+^carry$	k æ r ɪ	1	U+005E U+0063 U+0061 U+0072 U+0072 U+0079 U+0024	"carry"	English
+^carve$	k ɑː v	1	U+005E U+0063 U+0061 U+0072 U+0076 U+0065 U+0024	"carve"	English
+^catch$	k æ tʃ	1	U+005E U+0063 U+0061 U+0074 U+0063 U+0068 U+0024	"catch"	English
+^cause$	k ɔː z	1	U+005E U+0063 U+0061 U+0075 U+0073 U+0065 U+0024	"cause"	English
+^cease$	s iː s	1	U+005E U+0063 U+0065 U+0061 U+0073 U+0065 U+0024	"cease"	English
+^chain$	tʃ eɪ n	1	U+005E U+0063 U+0068 U+0061 U+0069 U+006E U+0024	"chain"	English
+^chair$	tʃ ɛə ɹ	1	U+005E U+0063 U+0068 U+0061 U+0069 U+0072 U+0024	"chair"	English
+^chase$	tʃ eɪ s	1	U+005E U+0063 U+0068 U+0061 U+0073 U+0065 U+0024	"chase"	English
+^cheap$	tʃ iː p	1	U+005E U+0063 U+0068 U+0065 U+0061 U+0070 U+0024	"cheap"	English
+^cheek$	tʃ iː k	1	U+005E U+0063 U+0068 U+0065 U+0065 U+006B U+0024	"cheek"	English
+^chest$	tʃ ɛ s t	1	U+005E U+0063 U+0068 U+0065 U+0073 U+0074 U+0024	"chest"	English
+^child$	tʃ aɪ l d	2	U+005E U+0063 U+0068 U+0069 U+006C U+0064 U+0024	"child"	English
+^choke$	tʃ əʊ k	1	U+005E U+0063 U+0068 U+006F U+006B U+0065 U+0024	"choke"	English
+^clean$	k l iː n	1	U+005E U+0063 U+006C U+0065 U+0061 U+006E U+0024	"clean"	English
+^clear$	k l ɪə ɹ	1	U+005E U+0063 U+006C U+0065 U+0061 U+0072 U+0024	"clear"	English
+^cliff$	k l ɪ f	1	U+005E U+0063 U+006C U+0069 U+0066 U+0066 U+0024	"cliff"	English
+^climb$	k l aɪ m	1	U+005E U+0063 U+006C U+0069 U+006D U+0062 U+0024	"climb"	English
+^cloak$	k l əʊ k	1	U+005E U+0063 U+006C U+006F U+0061 U+006B U+0024	"cloak"	English
+^clock$	k l ɒ k	1	U+005E U+0063 U+006C U+006F U+0063 U+006B U+0024	"clock"	English
+^close$	k l əʊ s	1	U+005E U+0063 U+006C U+006F U+0073 U+0065 U+0024	"close"	English
+^cloth$	k l ɒ θ	1	U+005E U+0063 U+006C U+006F U+0074 U+0068 U+0024	"cloth"	English
+^cloud$	k l aʊ d	1	U+005E U+0063 U+006C U+006F U+0075 U+0064 U+0024	"cloud"	English
+^cough$	k ɒ f	1	U+005E U+0063 U+006F U+0075 U+0067 U+0068 U+0024	"cough"	English
+^count$	k aʊ n t	1	U+005E U+0063 U+006F U+0075 U+006E U+0074 U+0024	"count"	English
+^court$	k ɔː t	1	U+005E U+0063 U+006F U+0075 U+0072 U+0074 U+0024	"court"	English
+^cover$	k ʌ v ə ɹ	1	U+005E U+0063 U+006F U+0076 U+0065 U+0072 U+0024	"cover"	English
+^crawl$	k r ɔː l	1	U+005E U+0063 U+0072 U+0061 U+0077 U+006C U+0024	"crawl"	English
+^crime$	k r aɪ m	1	U+005E U+0063 U+0072 U+0069 U+006D U+0065 U+0024	"crime"	English
+^cross$	k r ɒ s	1	U+005E U+0063 U+0072 U+006F U+0073 U+0073 U+0024	"cross"	English
+^crowd$	k r aʊ d	1	U+005E U+0063 U+0072 U+006F U+0077 U+0064 U+0024	"crowd"	English
+^crush$	k r ʌ ʃ	1	U+005E U+0063 U+0072 U+0075 U+0073 U+0068 U+0024	"crush"	English
+^curse$	k ɜː s	1	U+005E U+0063 U+0075 U+0072 U+0073 U+0065 U+0024	"curse"	English
+^dance$	d ɑː n s	1	U+005E U+0064 U+0061 U+006E U+0063 U+0065 U+0024	"dance"	English
+^demon$	d iː m ə n	1	U+005E U+0064 U+0065 U+006D U+006F U+006E U+0024	"demon"	English
+^devil$	d ɛ v l̩	1	U+005E U+0064 U+0065 U+0076 U+0069 U+006C U+0024	"devil"	English
+^dirty$	d ɜː t ɪ	1	U+005E U+0064 U+0069 U+0072 U+0074 U+0079 U+0024	"dirty"	English
+^ditch$	d ɪ tʃ	1	U+005E U+0064 U+0069 U+0074 U+0063 U+0068 U+0024	"ditch"	English
+^doubt$	d aʊ t	1	U+005E U+0064 U+006F U+0075 U+0062 U+0074 U+0024	"doubt"	English
+^dough$	d əʊ	1	U+005E U+0064 U+006F U+0075 U+0067 U+0068 U+0024	"dough"	English
+^dream$	d r iː m	1	U+005E U+0064 U+0072 U+0065 U+0061 U+006D U+0024	"dream"	English
+^dress$	d r ɛ s	1	U+005E U+0064 U+0072 U+0065 U+0073 U+0073 U+0024	"dress"	English
+^drink$	d r ɪ ŋ k	2	U+005E U+0064 U+0072 U+0069 U+006E U+006B U+0024	"drink"	English
+^drive$	d r aɪ v	1	U+005E U+0064 U+0072 U+0069 U+0076 U+0065 U+0024	"drive"	English
+^drown$	d r aʊ n	1	U+005E U+0064 U+0072 U+006F U+0077 U+006E U+0024	"drown"	English
+^drunk$	d r ʌ ŋ k	1	U+005E U+0064 U+0072 U+0075 U+006E U+006B U+0024	"drunk"	English
+^eagle$	iː g l̩	1	U+005E U+0065 U+0061 U+0067 U+006C U+0065 U+0024	"eagle"	English
+^early$	ɜː l ɪ	1	U+005E U+0065 U+0061 U+0072 U+006C U+0079 U+0024	"early"	English
+^eight$	eɪ t	1	U+005E U+0065 U+0069 U+0067 U+0068 U+0074 U+0024	"eight"	English
+^elbow$	ɛ l b əʊ	1	U+005E U+0065 U+006C U+0062 U+006F U+0077 U+0024	"elbow"	English
+^empty$	ɛ m p t ɪ	1	U+005E U+0065 U+006D U+0070 U+0074 U+0079 U+0024	"empty"	English
+^enemy$	ɛ n ə m ɪ	1	U+005E U+0065 U+006E U+0065 U+006D U+0079 U+0024	"enemy"	English
+^enter$	ɛ n t ə ɹ	1	U+005E U+0065 U+006E U+0074 U+0065 U+0072 U+0024	"enter"	English
+^fairy$	f ɛə r ɪ	1	U+005E U+0066 U+0061 U+0069 U+0072 U+0079 U+0024	"fairy"	English
+^fault$	f ɔː l t	1	U+005E U+0066 U+0061 U+0075 U+006C U+0074 U+0024	"fault"	English
+^fence$	f ɛ n s	1	U+005E U+0066 U+0065 U+006E U+0063 U+0065 U+0024	"fence"	English
+^fever$	f iː v ə ɹ	1	U+005E U+0066 U+0065 U+0076 U+0065 U+0072 U+0024	"fever"	English
+^field$	f iː l d	1	U+005E U+0066 U+0069 U+0065 U+006C U+0064 U+0024	"field"	English
+^fight$	f aɪ t	1	U+005E U+0066 U+0069 U+0067 U+0068 U+0074 U+0024	"fight"	English
+^first$	f ɜː s t	1	U+005E U+0066 U+0069 U+0072 U+0073 U+0074 U+0024	"first"	English
+^flame$	f l eɪ m	1	U+005E U+0066 U+006C U+0061 U+006D U+0065 U+0024	"flame"	English
+^flesh$	f l ɛ ʃ	1	U+005E U+0066 U+006C U+0065 U+0073 U+0068 U+0024	"flesh"	English
+^float$	f l əʊ t	1	U+005E U+0066 U+006C U+006F U+0061 U+0074 U+0024	"float"	English
+^floor$	f l ɔː ɹ	1	U+005E U+0066 U+006C U+006F U+006F U+0072 U+0024	"floor"	English
+^flour$	f l aʊ ə ɹ	1	U+005E U+0066 U+006C U+006F U+0075 U+0072 U+0024	"flour"	English
+^flute$	f l uː t	1	U+005E U+0066 U+006C U+0075 U+0074 U+0065 U+0024	"flute"	English
+^forge$	f ɔː dʒ	1	U+005E U+0066 U+006F U+0072 U+0067 U+0065 U+0024	"forge"	English
+^fruit$	f r uː t	1	U+005E U+0066 U+0072 U+0075 U+0069 U+0074 U+0024	"fruit"	English
+^ghost$	g əʊ s t	1	U+005E U+0067 U+0068 U+006F U+0073 U+0074 U+0024	"ghost"	English
+^glass$	g l ɑː s	1	U+005E U+0067 U+006C U+0061 U+0073 U+0073 U+0024	"glass"	English
+^glove$	g l ʌ v	1	U+005E U+0067 U+006C U+006F U+0076 U+0065 U+0024	"glove"	English
+^go_up$	g əʊ _ ʌ p	1	U+005E U+0067 U+006F U+005F U+0075 U+0070 U+0024	"go_up"	English
+^goose$	g uː s	1	U+005E U+0067 U+006F U+006F U+0073 U+0065 U+0024	"goose"	English
+^gourd$	g ʊə d	1	U+005E U+0067 U+006F U+0075 U+0072 U+0064 U+0024	"gourd"	English
+^grain$	g r eɪ n	1	U+005E U+0067 U+0072 U+0061 U+0069 U+006E U+0024	"grain"	English
+^grape$	g r eɪ p	1	U+005E U+0067 U+0072 U+0061 U+0070 U+0065 U+0024	"grape"	English
+^grasp$	g r ɑː s p	1	U+005E U+0067 U+0072 U+0061 U+0073 U+0070 U+0024	"grasp"	English
+^grass$	g r ɑː s	1	U+005E U+0067 U+0072 U+0061 U+0073 U+0073 U+0024	"grass"	English
+^grave$	g r eɪ v	1	U+005E U+0067 U+0072 U+0061 U+0076 U+0065 U+0024	"grave"	English
+^green$	g r iː n	1	U+005E U+0067 U+0072 U+0065 U+0065 U+006E U+0024	"green"	English
+^grief$	g r iː f	1	U+005E U+0067 U+0072 U+0069 U+0065 U+0066 U+0024	"grief"	English
+^grind$	g r aɪ n d	1	U+005E U+0067 U+0072 U+0069 U+006E U+0064 U+0024	"grind"	English
+^groan$	g r əʊ n	1	U+005E U+0067 U+0072 U+006F U+0061 U+006E U+0024	"groan"	English
+^guard$	g ɑː d	1	U+005E U+0067 U+0075 U+0061 U+0072 U+0064 U+0024	"guard"	English
+^guess$	g ɛ s	1	U+005E U+0067 U+0075 U+0065 U+0073 U+0073 U+0024	"guess"	English
+^guest$	g ɛ s t	1	U+005E U+0067 U+0075 U+0065 U+0073 U+0074 U+0024	"guest"	English
+^happy$	h æ p ɪ	1	U+005E U+0068 U+0061 U+0070 U+0070 U+0079 U+0024	"happy"	English
+^heart$	h ɑː t	1	U+005E U+0068 U+0065 U+0061 U+0072 U+0074 U+0024	"heart"	English
+^heavy$	h ɛ v ɪ	1	U+005E U+0068 U+0065 U+0061 U+0076 U+0079 U+0024	"heavy"	English
+^heron$	h ɛ r ə n	1	U+005E U+0068 U+0065 U+0072 U+006F U+006E U+0024	"heron"	English
+^honey$	h ʌ n ɪ	1	U+005E U+0068 U+006F U+006E U+0065 U+0079 U+0024	"honey"	English
+^horse$	h ɔː s	1	U+005E U+0068 U+006F U+0072 U+0073 U+0065 U+0024	"horse"	English
+^house$	h aʊ z	1	U+005E U+0068 U+006F U+0075 U+0073 U+0065 U+0024	"house"	English
+^hurry$	h ʌ r ɪ	1	U+005E U+0068 U+0075 U+0072 U+0072 U+0079 U+0024	"hurry"	English
+^jewel$	dʒ uː ə l	1	U+005E U+006A U+0065 U+0077 U+0065 U+006C U+0024	"jewel"	English
+^judge$	dʒ ʌ dʒ	1	U+005E U+006A U+0075 U+0064 U+0067 U+0065 U+0024	"judge"	English
+^knead$	n iː d	1	U+005E U+006B U+006E U+0065 U+0061 U+0064 U+0024	"knead"	English
+^kneel$	n iː l	1	U+005E U+006B U+006E U+0065 U+0065 U+006C U+0024	"kneel"	English
+^knife$	n aɪ f	2	U+005E U+006B U+006E U+0069 U+0066 U+0065 U+0024	"knife"	English
+^larch$	l ɑː tʃ	1	U+005E U+006C U+0061 U+0072 U+0063 U+0068 U+0024	"larch"	English
+^large$	l ɑː dʒ	1	U+005E U+006C U+0061 U+0072 U+0067 U+0065 U+0024	"large"	English
+^lasso$	l æ s uː	1	U+005E U+006C U+0061 U+0073 U+0073 U+006F U+0024	"lasso"	English
+^latch$	l æ tʃ	1	U+005E U+006C U+0061 U+0074 U+0063 U+0068 U+0024	"latch"	English
+^laugh$	l ɑː f	1	U+005E U+006C U+0061 U+0075 U+0067 U+0068 U+0024	"laugh"	English
+^learn$	l ɜː n	1	U+005E U+006C U+0065 U+0061 U+0072 U+006E U+0024	"learn"	English
+^leave$	l iː v	1	U+005E U+006C U+0065 U+0061 U+0076 U+0065 U+0024	"leave"	English
+^lemon$	l ɛ m ə n	1	U+005E U+006C U+0065 U+006D U+006F U+006E U+0024	"lemon"	English
+^light$	l aɪ t	4	U+005E U+006C U+0069 U+0067 U+0068 U+0074 U+0024	"light"	English
+^linen$	l ɪ n ɪ n	1	U+005E U+006C U+0069 U+006E U+0065 U+006E U+0024	"linen"	English
+^liver$	l ɪ v ə ɹ	1	U+005E U+006C U+0069 U+0076 U+0065 U+0072 U+0024	"liver"	English
+^louse$	l aʊ s	1	U+005E U+006C U+006F U+0075 U+0073 U+0065 U+0024	"louse"	English
+^lunch$	l ʌ n tʃ	1	U+005E U+006C U+0075 U+006E U+0063 U+0068 U+0024	"lunch"	English
+^magic$	m æ dʒ ɪ k	1	U+005E U+006D U+0061 U+0067 U+0069 U+0063 U+0024	"magic"	English
+^maize$	m eɪ z	1	U+005E U+006D U+0061 U+0069 U+007A U+0065 U+0024	"maize"	English
+^marry$	m æ r ɪ	1	U+005E U+006D U+0061 U+0072 U+0072 U+0079 U+0024	"marry"	English
+^mason$	m eɪ s n̩	1	U+005E U+006D U+0061 U+0073 U+006F U+006E U+0024	"mason"	English
+^match$	m æ tʃ	1	U+005E U+006D U+0061 U+0074 U+0063 U+0068 U+0024	"match"	English
+^midge$	m ɪ dʒ	1	U+005E U+006D U+0069 U+0064 U+0067 U+0065 U+0024	"midge"	English
+^money$	m ʌ n ɪ	1	U+005E U+006D U+006F U+006E U+0065 U+0079 U+0024	"money"	English
+^month$	m ʌ n θ	1	U+005E U+006D U+006F U+006E U+0074 U+0068 U+0024	"month"	English
+^moose$	m uː s	1	U+005E U+006D U+006F U+006F U+0073 U+0065 U+0024	"moose"	English
+^motor$	m əʊ t ə ɹ	1	U+005E U+006D U+006F U+0074 U+006F U+0072 U+0024	"motor"	English
+^mould$	m əʊ l d	1	U+005E U+006D U+006F U+0075 U+006C U+0064 U+0024	"mould"	English
+^mouse$	m aʊ z	1	U+005E U+006D U+006F U+0075 U+0073 U+0065 U+0024	"mouse"	English
+^mouth$	m aʊ θ	1	U+005E U+006D U+006F U+0075 U+0074 U+0068 U+0024	"mouth"	English
+^music$	m j uː z ɪ k	1	U+005E U+006D U+0075 U+0073 U+0069 U+0063 U+0024	"music"	English
+^naked$	n eɪ k ɪ d	1	U+005E U+006E U+0061 U+006B U+0065 U+0064 U+0024	"naked"	English
+^navel$	n eɪ v l̩	1	U+005E U+006E U+0061 U+0076 U+0065 U+006C U+0024	"navel"	English
+^never$	n ɛ v ə ɹ	1	U+005E U+006E U+0065 U+0076 U+0065 U+0072 U+0024	"never"	English
+^niece$	n iː s	1	U+005E U+006E U+0069 U+0065 U+0063 U+0065 U+0024	"niece"	English
+^night$	n aɪ t	1	U+005E U+006E U+0069 U+0067 U+0068 U+0074 U+0024	"night"	English
+^noble$	n əʊ b l̩	1	U+005E U+006E U+006F U+0062 U+006C U+0065 U+0024	"noble"	English
+^north$	n ɔː θ	1	U+005E U+006E U+006F U+0072 U+0074 U+0068 U+0024	"north"	English
+^nurse$	n ɜː s	1	U+005E U+006E U+0075 U+0072 U+0073 U+0065 U+0024	"nurse"	English
+^ocean$	əʊ ʃ n̩	1	U+005E U+006F U+0063 U+0065 U+0061 U+006E U+0024	"ocean"	English
+^often$	ɒ f n̩	1	U+005E U+006F U+0066 U+0074 U+0065 U+006E U+0024	"often"	English
+^olive$	ɒ l ɪ v	1	U+005E U+006F U+006C U+0069 U+0076 U+0065 U+0024	"olive"	English
+^order$	ɔː d ə ɹ	1	U+005E U+006F U+0072 U+0064 U+0065 U+0072 U+0024	"order"	English
+^other$	ʌ ð ə ɹ	1	U+005E U+006F U+0074 U+0068 U+0065 U+0072 U+0024	"other"	English
+^paddy$	p æ d ɪ	1	U+005E U+0070 U+0061 U+0064 U+0064 U+0079 U+0024	"paddy"	English
+^paint$	p eɪ n t	2	U+005E U+0070 U+0061 U+0069 U+006E U+0074 U+0024	"paint"	English
+^paper$	p eɪ p ə ɹ	1	U+005E U+0070 U+0061 U+0070 U+0065 U+0072 U+0024	"paper"	English
+^peace$	p iː s	1	U+005E U+0070 U+0065 U+0061 U+0063 U+0065 U+0024	"peace"	English
+^penis$	p iː n ɪ s	1	U+005E U+0070 U+0065 U+006E U+0069 U+0073 U+0024	"penis"	English
+^piece$	p iː s	1	U+005E U+0070 U+0069 U+0065 U+0063 U+0065 U+0024	"piece"	English
+^pinch$	p ɪ n tʃ	1	U+005E U+0070 U+0069 U+006E U+0063 U+0068 U+0024	"pinch"	English
+^place$	p l eɪ s	1	U+005E U+0070 U+006C U+0061 U+0063 U+0065 U+0024	"place"	English
+^plain$	p l eɪ n	1	U+005E U+0070 U+006C U+0061 U+0069 U+006E U+0024	"plain"	English
+^plait$	p l æ t	1	U+005E U+0070 U+006C U+0061 U+0069 U+0074 U+0024	"plait"	English
+^plant$	p l ɑː n t	2	U+005E U+0070 U+006C U+0061 U+006E U+0074 U+0024	"plant"	English
+^plate$	p l eɪ t	1	U+005E U+0070 U+006C U+0061 U+0074 U+0065 U+0024	"plate"	English
+^pound$	p aʊ n d	1	U+005E U+0070 U+006F U+0075 U+006E U+0064 U+0024	"pound"	English
+^prawn$	p r ɔː n	1	U+005E U+0070 U+0072 U+0061 U+0077 U+006E U+0024	"prawn"	English
+^press$	p r ɛ s	1	U+005E U+0070 U+0072 U+0065 U+0073 U+0073 U+0024	"press"	English
+^price$	p r aɪ s	1	U+005E U+0070 U+0072 U+0069 U+0063 U+0065 U+0024	"price"	English
+^proud$	p r aʊ d	1	U+005E U+0070 U+0072 U+006F U+0075 U+0064 U+0024	"proud"	English
+^pupil$	p j uː p l̩	1	U+005E U+0070 U+0075 U+0070 U+0069 U+006C U+0024	"pupil"	English
+^quail$	k w eɪ l	1	U+005E U+0071 U+0075 U+0061 U+0069 U+006C U+0024	"quail"	English
+^queen$	k w iː n	1	U+005E U+0071 U+0075 U+0065 U+0065 U+006E U+0024	"queen"	English
+^quick$	k w ɪ k	1	U+005E U+0071 U+0075 U+0069 U+0063 U+006B U+0024	"quick"	English
+^quiet$	k w aɪ ə t	1	U+005E U+0071 U+0075 U+0069 U+0065 U+0074 U+0024	"quiet"	English
+^radio$	r eɪ d ɪə ʊ	1	U+005E U+0072 U+0061 U+0064 U+0069 U+006F U+0024	"radio"	English
+^raise$	r eɪ z	1	U+005E U+0072 U+0061 U+0069 U+0073 U+0065 U+0024	"raise"	English
+^razor$	r eɪ z ə ɹ	1	U+005E U+0072 U+0061 U+007A U+006F U+0072 U+0024	"razor"	English
+^ready$	r ɛ d ɪ	1	U+005E U+0072 U+0065 U+0061 U+0064 U+0079 U+0024	"ready"	English
+^reply$	r ɪ p l aɪ	1	U+005E U+0072 U+0065 U+0070 U+006C U+0079 U+0024	"reply"	English
+^right$	r aɪ t	2	U+005E U+0072 U+0069 U+0067 U+0068 U+0074 U+0024	"right"	English
+^river$	r ɪ v ə ɹ	1	U+005E U+0072 U+0069 U+0076 U+0065 U+0072 U+0024	"river"	English
+^roast$	r ɔː s t	1	U+005E U+0072 U+006F U+0061 U+0073 U+0074 U+0024	"roast"	English
+^rough$	r ʌ f	2	U+005E U+0072 U+006F U+0075 U+0067 U+0068 U+0024	"rough"	English
+^round$	r aʊ n d	1	U+005E U+0072 U+006F U+0075 U+006E U+0064 U+0024	"round"	English
+^salty$	s ɔː l t ɪ	1	U+005E U+0073 U+0061 U+006C U+0074 U+0079 U+0024	"salty"	English
+^scale$	s k eɪ l	1	U+005E U+0073 U+0063 U+0061 U+006C U+0065 U+0024	"scale"	English
+^scold$	s k əʊ l d	1	U+005E U+0073 U+0063 U+006F U+006C U+0064 U+0024	"scold"	English
+^screw$	s k r uː	1	U+005E U+0073 U+0063 U+0072 U+0065 U+0077 U+0024	"screw"	English
+^seven$	s ɛ v n̩	1	U+005E U+0073 U+0065 U+0076 U+0065 U+006E U+0024	"seven"	English
+^shade$	ʃ eɪ d	1	U+005E U+0073 U+0068 U+0061 U+0064 U+0065 U+0024	"shade"	English
+^shake$	ʃ eɪ k	1	U+005E U+0073 U+0068 U+0061 U+006B U+0065 U+0024	"shake"	English
+^shame$	ʃ eɪ m	1	U+005E U+0073 U+0068 U+0061 U+006D U+0065 U+0024	"shame"	English
+^share$	ʃ ɛə ɹ	1	U+005E U+0073 U+0068 U+0061 U+0072 U+0065 U+0024	"share"	English
+^shark$	ʃ ɑː k	1	U+005E U+0073 U+0068 U+0061 U+0072 U+006B U+0024	"shark"	English
+^sharp$	ʃ ɑː p	1	U+005E U+0073 U+0068 U+0061 U+0072 U+0070 U+0024	"sharp"	English
+^sheep$	ʃ iː p	1	U+005E U+0073 U+0068 U+0065 U+0065 U+0070 U+0024	"sheep"	English
+^shelf$	ʃ ɛ l f	1	U+005E U+0073 U+0068 U+0065 U+006C U+0066 U+0024	"shelf"	English
+^shell$	ʃ ɛ l	1	U+005E U+0073 U+0068 U+0065 U+006C U+006C U+0024	"shell"	English
+^shine$	ʃ aɪ n	1	U+005E U+0073 U+0068 U+0069 U+006E U+0065 U+0024	"shine"	English
+^shirt$	ʃ ɜː t	1	U+005E U+0073 U+0068 U+0069 U+0072 U+0074 U+0024	"shirt"	English
+^shoot$	ʃ uː t	1	U+005E U+0073 U+0068 U+006F U+006F U+0074 U+0024	"shoot"	English
+^shore$	ʃ ɔː ɹ	1	U+005E U+0073 U+0068 U+006F U+0072 U+0065 U+0024	"shore"	English
+^short$	ʃ ɔː t	1	U+005E U+0073 U+0068 U+006F U+0072 U+0074 U+0024	"short"	English
+^shout$	ʃ aʊ t	1	U+005E U+0073 U+0068 U+006F U+0075 U+0074 U+0024	"shout"	English
+^sieve$	s ɪ v	1	U+005E U+0073 U+0069 U+0065 U+0076 U+0065 U+0024	"sieve"	English
+^sinew$	s ɪ n j uː	1	U+005E U+0073 U+0069 U+006E U+0065 U+0077 U+0024	"sinew"	English
+^skirt$	s k ɜː t	1	U+005E U+0073 U+006B U+0069 U+0072 U+0074 U+0024	"skirt"	English
+^skull$	s k ʌ l	1	U+005E U+0073 U+006B U+0075 U+006C U+006C U+0024	"skull"	English
+^slave$	s l eɪ v	1	U+005E U+0073 U+006C U+0061 U+0076 U+0065 U+0024	"slave"	English
+^sleep$	s l iː p	1	U+005E U+0073 U+006C U+0065 U+0065 U+0070 U+0024	"sleep"	English
+^slide$	s l aɪ d	1	U+005E U+0073 U+006C U+0069 U+0064 U+0065 U+0024	"slide"	English
+^sling$	s l ɪ ŋ	1	U+005E U+0073 U+006C U+0069 U+006E U+0067 U+0024	"sling"	English
+^small$	s m ɔː l	1	U+005E U+0073 U+006D U+0061 U+006C U+006C U+0024	"small"	English
+^smart$	s m ɑː t	1	U+005E U+0073 U+006D U+0061 U+0072 U+0074 U+0024	"smart"	English
+^smell$	s m ɛ l	2	U+005E U+0073 U+006D U+0065 U+006C U+006C U+0024	"smell"	English
+^smile$	s m aɪ l	1	U+005E U+0073 U+006D U+0069 U+006C U+0065 U+0024	"smile"	English
+^smoke$	s m əʊ k	2	U+005E U+0073 U+006D U+006F U+006B U+0065 U+0024	"smoke"	English
+^snail$	s n eɪ l	1	U+005E U+0073 U+006E U+0061 U+0069 U+006C U+0024	"snail"	English
+^snake$	s n eɪ k	1	U+005E U+0073 U+006E U+0061 U+006B U+0065 U+0024	"snake"	English
+^sniff$	s n ɪ f	1	U+005E U+0073 U+006E U+0069 U+0066 U+0066 U+0024	"sniff"	English
+^snore$	s n ɔː ɹ	1	U+005E U+0073 U+006E U+006F U+0072 U+0065 U+0024	"snore"	English
+^sorry$	s ɒ r ɪ	1	U+005E U+0073 U+006F U+0072 U+0072 U+0079 U+0024	"sorry"	English
+^sound$	s aʊ n d	1	U+005E U+0073 U+006F U+0075 U+006E U+0064 U+0024	"sound"	English
+^south$	s aʊ θ	1	U+005E U+0073 U+006F U+0075 U+0074 U+0068 U+0024	"south"	English
+^spade$	s p eɪ d	1	U+005E U+0073 U+0070 U+0061 U+0064 U+0065 U+0024	"spade"	English
+^speak$	s p iː k	1	U+005E U+0073 U+0070 U+0065 U+0061 U+006B U+0024	"speak"	English
+^spear$	s p ɪə ɹ	1	U+005E U+0073 U+0070 U+0065 U+0061 U+0072 U+0024	"spear"	English
+^spine$	s p aɪ n	1	U+005E U+0073 U+0070 U+0069 U+006E U+0065 U+0024	"spine"	English
+^split$	s p l ɪ t	1	U+005E U+0073 U+0070 U+006C U+0069 U+0074 U+0024	"split"	English
+^spoon$	s p uː n	1	U+005E U+0073 U+0070 U+006F U+006F U+006E U+0024	"spoon"	English
+^stall$	s t ɔː l	1	U+005E U+0073 U+0074 U+0061 U+006C U+006C U+0024	"stall"	English
+^stamp$	s t æ m p	1	U+005E U+0073 U+0074 U+0061 U+006D U+0070 U+0024	"stamp"	English
+^stand$	s t æ n d	1	U+005E U+0073 U+0074 U+0061 U+006E U+0064 U+0024	"stand"	English
+^start$	s t ɑː t	1	U+005E U+0073 U+0074 U+0061 U+0072 U+0074 U+0024	"start"	English
+^steal$	s t iː l	1	U+005E U+0073 U+0074 U+0065 U+0061 U+006C U+0024	"steal"	English
+^steam$	s t iː m	1	U+005E U+0073 U+0074 U+0065 U+0061 U+006D U+0024	"steam"	English
+^stick$	s t ɪ k	1	U+005E U+0073 U+0074 U+0069 U+0063 U+006B U+0024	"stick"	English
+^stone$	s t əʊ n	1	U+005E U+0073 U+0074 U+006F U+006E U+0065 U+0024	"stone"	English
+^store$	s t ɔː ɹ	1	U+005E U+0073 U+0074 U+006F U+0072 U+0065 U+0024	"store"	English
+^storm$	s t ɔː m	1	U+005E U+0073 U+0074 U+006F U+0072 U+006D U+0024	"storm"	English
+^stove$	s t əʊ v	1	U+005E U+0073 U+0074 U+006F U+0076 U+0065 U+0024	"stove"	English
+^study$	s t ʌ d ɪ	1	U+005E U+0073 U+0074 U+0075 U+0064 U+0079 U+0024	"study"	English
+^sugar$	ʃ ʊ g ə ɹ	1	U+005E U+0073 U+0075 U+0067 U+0061 U+0072 U+0024	"sugar"	English
+^swamp$	s w ɒ m p	1	U+005E U+0073 U+0077 U+0061 U+006D U+0070 U+0024	"swamp"	English
+^swear$	s w ɛə ɹ	1	U+005E U+0073 U+0077 U+0065 U+0061 U+0072 U+0024	"swear"	English
+^sweat$	s w ɛ t	1	U+005E U+0073 U+0077 U+0065 U+0061 U+0074 U+0024	"sweat"	English
+^sweep$	s w iː p	1	U+005E U+0073 U+0077 U+0065 U+0065 U+0070 U+0024	"sweep"	English
+^sweet$	s w iː t	1	U+005E U+0073 U+0077 U+0065 U+0065 U+0074 U+0024	"sweet"	English
+^sword$	s ɔː d	1	U+005E U+0073 U+0077 U+006F U+0072 U+0064 U+0024	"sword"	English
+^table$	t eɪ b l̩	1	U+005E U+0074 U+0061 U+0062 U+006C U+0065 U+0024	"table"	English
+^tapir$	t eɪ p ə ɹ	1	U+005E U+0074 U+0061 U+0070 U+0069 U+0072 U+0024	"tapir"	English
+^taste$	t eɪ s t	1	U+005E U+0074 U+0061 U+0073 U+0074 U+0065 U+0024	"taste"	English
+^teach$	t iː tʃ	1	U+005E U+0074 U+0065 U+0061 U+0063 U+0068 U+0024	"teach"	English
+^there$	ð ɛə ɹ	1	U+005E U+0074 U+0068 U+0065 U+0072 U+0065 U+0024	"there"	English
+^thick$	θ ɪ k	1	U+005E U+0074 U+0068 U+0069 U+0063 U+006B U+0024	"thick"	English
+^thief$	θ iː f	1	U+005E U+0074 U+0068 U+0069 U+0065 U+0066 U+0024	"thief"	English
+^thigh$	θ aɪ	1	U+005E U+0074 U+0068 U+0069 U+0067 U+0068 U+0024	"thigh"	English
+^thing$	θ ɪ ŋ	1	U+005E U+0074 U+0068 U+0069 U+006E U+0067 U+0024	"thing"	English
+^think$	θ ɪ ŋ k	2	U+005E U+0074 U+0068 U+0069 U+006E U+006B U+0024	"think"	English
+^third$	θ ɜː d	1	U+005E U+0074 U+0068 U+0069 U+0072 U+0064 U+0024	"third"	English
+^three$	θ r iː	1	U+005E U+0074 U+0068 U+0072 U+0065 U+0065 U+0024	"three"	English
+^throw$	θ r əʊ	1	U+005E U+0074 U+0068 U+0072 U+006F U+0077 U+0024	"throw"	English
+^thumb$	θ ʌ m	1	U+005E U+0074 U+0068 U+0075 U+006D U+0062 U+0024	"thumb"	English
+^tired$	t aɪ ə d	1	U+005E U+0074 U+0069 U+0072 U+0065 U+0064 U+0024	"tired"	English
+^today$	t ə d eɪ	1	U+005E U+0074 U+006F U+0064 U+0061 U+0079 U+0024	"today"	English
+^tongs$	t ɒ ŋ z	1	U+005E U+0074 U+006F U+006E U+0067 U+0073 U+0024	"tongs"	English
+^tooth$	t uː θ	1	U+005E U+0074 U+006F U+006F U+0074 U+0068 U+0024	"tooth"	English
+^torch$	t ɔː tʃ	1	U+005E U+0074 U+006F U+0072 U+0063 U+0068 U+0024	"torch"	English
+^touch$	t ʌ tʃ	1	U+005E U+0074 U+006F U+0075 U+0063 U+0068 U+0024	"touch"	English
+^towel$	t aʊ ə l	1	U+005E U+0074 U+006F U+0077 U+0065 U+006C U+0024	"towel"	English
+^tower$	t aʊ ə ɹ	1	U+005E U+0074 U+006F U+0077 U+0065 U+0072 U+0024	"tower"	English
+^trade$	t r eɪ d	1	U+005E U+0074 U+0072 U+0061 U+0064 U+0065 U+0024	"trade"	English
+^train$	t r eɪ n	1	U+005E U+0074 U+0072 U+0061 U+0069 U+006E U+0024	"train"	English
+^twice$	t w aɪ s	1	U+005E U+0074 U+0077 U+0069 U+0063 U+0065 U+0024	"twice"	English
+^twins$	t w ɪ n z	1	U+005E U+0074 U+0077 U+0069 U+006E U+0073 U+0024	"twins"	English
+^twist$	t w ɪ s t	1	U+005E U+0074 U+0077 U+0069 U+0073 U+0074 U+0024	"twist"	English
+^udder$	ʌ d ə ɹ	1	U+005E U+0075 U+0064 U+0064 U+0065 U+0072 U+0024	"udder"	English
+^uncle$	ʌ ŋ k l̩	1	U+005E U+0075 U+006E U+0063 U+006C U+0065 U+0024	"uncle"	English
+^under$	ʌ n d ə ɹ	1	U+005E U+0075 U+006E U+0064 U+0065 U+0072 U+0024	"under"	English
+^untie$	ʌ n t aɪ	1	U+005E U+0075 U+006E U+0074 U+0069 U+0065 U+0024	"untie"	English
+^voice$	v ɔɪ s	1	U+005E U+0076 U+006F U+0069 U+0063 U+0065 U+0024	"voice"	English
+^vomit$	v ɒ m ɪ t	1	U+005E U+0076 U+006F U+006D U+0069 U+0074 U+0024	"vomit"	English
+^vulva$	v ʌ l v ə	1	U+005E U+0076 U+0075 U+006C U+0076 U+0061 U+0024	"vulva"	English
+^wages$	w eɪ dʒ ɪ z	1	U+005E U+0077 U+0061 U+0067 U+0065 U+0073 U+0024	"wages"	English
+^wagon$	w æ g ə n	1	U+005E U+0077 U+0061 U+0067 U+006F U+006E U+0024	"wagon"	English
+^waist$	w eɪ s t	1	U+005E U+0077 U+0061 U+0069 U+0073 U+0074 U+0024	"waist"	English
+^water$	w ɔː t ə ɹ	1	U+005E U+0077 U+0061 U+0074 U+0065 U+0072 U+0024	"water"	English
+^weave$	w iː v	2	U+005E U+0077 U+0065 U+0061 U+0076 U+0065 U+0024	"weave"	English
+^weigh$	w eɪ	1	U+005E U+0077 U+0065 U+0069 U+0067 U+0068 U+0024	"weigh"	English
+^whale$	w eɪ l	1	U+005E U+0077 U+0068 U+0061 U+006C U+0065 U+0024	"whale"	English
+^what?$	w ɒ t	1	U+005E U+0077 U+0068 U+0061 U+0074 U+003F U+0024	"what?"	English
+^wheat$	w iː t	1	U+005E U+0077 U+0068 U+0065 U+0061 U+0074 U+0024	"wheat"	English
+^wheel$	w iː l	1	U+005E U+0077 U+0068 U+0065 U+0065 U+006C U+0024	"wheel"	English
+^when?$	w ɛ n	1	U+005E U+0077 U+0068 U+0065 U+006E U+003F U+0024	"when?"	English
+^white$	w aɪ t	1	U+005E U+0077 U+0068 U+0069 U+0074 U+0065 U+0024	"white"	English
+^widow$	w ɪ d əʊ	1	U+005E U+0077 U+0069 U+0064 U+006F U+0077 U+0024	"widow"	English
+^witch$	w ɪ tʃ	1	U+005E U+0077 U+0069 U+0074 U+0063 U+0068 U+0024	"witch"	English
+^woman$	w ʊ m ə n	1	U+005E U+0077 U+006F U+006D U+0061 U+006E U+0024	"woman"	English
+^world$	w ɜː l d	1	U+005E U+0077 U+006F U+0072 U+006C U+0064 U+0024	"world"	English
+^worry$	w ʌ r ɪ	1	U+005E U+0077 U+006F U+0072 U+0072 U+0079 U+0024	"worry"	English
+^wound$	w uː n d	1	U+005E U+0077 U+006F U+0075 U+006E U+0064 U+0024	"wound"	English
+^wrist$	r ɪ s t	1	U+005E U+0077 U+0072 U+0069 U+0073 U+0074 U+0024	"wrist"	English
+^write$	r aɪ t	1	U+005E U+0077 U+0072 U+0069 U+0074 U+0065 U+0024	"write"	English
+^wrong$	r ɒ ŋ	1	U+005E U+0077 U+0072 U+006F U+006E U+0067 U+0024	"wrong"	English
+^young$	j ʌ ŋ	1	U+005E U+0079 U+006F U+0075 U+006E U+0067 U+0024	"young"	English
+^Friday$	f r aɪ d ɪ	1	U+005E U+0046 U+0072 U+0069 U+0064 U+0061 U+0079 U+0024	"Friday"	English
+^Monday$	m ʌ n d ɪ	1	U+005E U+004D U+006F U+006E U+0064 U+0061 U+0079 U+0024	"Monday"	English
+^Sunday$	s ʌ n d ɪ	1	U+005E U+0053 U+0075 U+006E U+0064 U+0061 U+0079 U+0024	"Sunday"	English
+^accuse$	ə k j uː z	1	U+005E U+0061 U+0063 U+0063 U+0075 U+0073 U+0065 U+0024	"accuse"	English
+^acquit$	ə k w ɪ t	1	U+005E U+0061 U+0063 U+0071 U+0075 U+0069 U+0074 U+0024	"acquit"	English
+^always$	ɔː l w eɪ z	1	U+005E U+0061 U+006C U+0077 U+0061 U+0079 U+0073 U+0024	"always"	English
+^ambush$	æ m b ʊ ʃ	1	U+005E U+0061 U+006D U+0062 U+0075 U+0073 U+0068 U+0024	"ambush"	English
+^anchor$	æ ŋ k ə ɹ	1	U+005E U+0061 U+006E U+0063 U+0068 U+006F U+0072 U+0024	"anchor"	English
+^animal$	æ n ɪ m l̩	1	U+005E U+0061 U+006E U+0069 U+006D U+0061 U+006C U+0024	"animal"	English
+^answer$	ɑː n s ə ɹ	1	U+005E U+0061 U+006E U+0073 U+0077 U+0065 U+0072 U+0024	"answer"	English
+^armour$	ɑː m ə ɹ	1	U+005E U+0061 U+0072 U+006D U+006F U+0075 U+0072 U+0024	"armour"	English
+^armpit$	ɑː m p ɪ t	1	U+005E U+0061 U+0072 U+006D U+0070 U+0069 U+0074 U+0024	"armpit"	English
+^arrive$	ə r aɪ v	1	U+005E U+0061 U+0072 U+0072 U+0069 U+0076 U+0065 U+0024	"arrive"	English
+^artery$	ɑː t ə r ɪ	1	U+005E U+0061 U+0072 U+0074 U+0065 U+0072 U+0079 U+0024	"artery"	English
+^attack$	ə t æ k	1	U+005E U+0061 U+0074 U+0074 U+0061 U+0063 U+006B U+0024	"attack"	English
+^autumn$	ɔː t ə m	1	U+005E U+0061 U+0075 U+0074 U+0075 U+006D U+006E U+0024	"autumn"	English
+^bamboo$	b æ m b uː	1	U+005E U+0062 U+0061 U+006D U+0062 U+006F U+006F U+0024	"bamboo"	English
+^banana$	b ə n ɑː n ə	1	U+005E U+0062 U+0061 U+006E U+0061 U+006E U+0061 U+0024	"banana"	English
+^banyan$	b æ n ɪə n	1	U+005E U+0062 U+0061 U+006E U+0079 U+0061 U+006E U+0024	"banyan"	English
+^barley$	b ɑː l ɪ	1	U+005E U+0062 U+0061 U+0072 U+006C U+0065 U+0079 U+0024	"barley"	English
+^barter$	b ɑː t ə ɹ	1	U+005E U+0062 U+0061 U+0072 U+0074 U+0065 U+0072 U+0024	"barter"	English
+^basket$	b ɑː s k ɪ t	1	U+005E U+0062 U+0061 U+0073 U+006B U+0065 U+0074 U+0024	"basket"	English
+^battle$	b æ t l̩	1	U+005E U+0062 U+0061 U+0074 U+0074 U+006C U+0065 U+0024	"battle"	English
+^beaver$	b iː v ə ɹ	1	U+005E U+0062 U+0065 U+0061 U+0076 U+0065 U+0072 U+0024	"beaver"	English
+^become$	b ɪ k ʌ m	1	U+005E U+0062 U+0065 U+0063 U+006F U+006D U+0065 U+0024	"become"	English
+^before$	b ɪ f ɔː ɹ	1	U+005E U+0062 U+0065 U+0066 U+006F U+0072 U+0065 U+0024	"before"	English
+^beggar$	b ɛ g ə ɹ	1	U+005E U+0062 U+0065 U+0067 U+0067 U+0061 U+0072 U+0024	"beggar"	English
+^behind$	b ɪ h aɪ n d	1	U+005E U+0062 U+0065 U+0068 U+0069 U+006E U+0064 U+0024	"behind"	English
+^beside$	b ɪ s aɪ d	1	U+005E U+0062 U+0065 U+0073 U+0069 U+0064 U+0065 U+0024	"beside"	English
+^betray$	b ɪ t r eɪ	1	U+005E U+0062 U+0065 U+0074 U+0072 U+0061 U+0079 U+0024	"betray"	English
+^bitter$	b ɪ t ə ɹ	1	U+005E U+0062 U+0069 U+0074 U+0074 U+0065 U+0072 U+0024	"bitter"	English
+^borrow$	b ɒ r əʊ	1	U+005E U+0062 U+006F U+0072 U+0072 U+006F U+0077 U+0024	"borrow"	English
+^bottle$	b ɒ t l̩	1	U+005E U+0062 U+006F U+0074 U+0074 U+006C U+0065 U+0024	"bottle"	English
+^bottom$	b ɒ t ə m	1	U+005E U+0062 U+006F U+0074 U+0074 U+006F U+006D U+0024	"bottom"	English
+^branch$	b r ɑː n tʃ	1	U+005E U+0062 U+0072 U+0061 U+006E U+0063 U+0068 U+0024	"branch"	English
+^breast$	b r ɛ s t	1	U+005E U+0062 U+0072 U+0065 U+0061 U+0073 U+0074 U+0024	"breast"	English
+^bridge$	b r ɪ dʒ	1	U+005E U+0062 U+0072 U+0069 U+0064 U+0067 U+0065 U+0024	"bridge"	English
+^bright$	b r aɪ t	1	U+005E U+0062 U+0072 U+0069 U+0067 U+0068 U+0074 U+0024	"bright"	English
+^broken$	b r əʊ k ə n	1	U+005E U+0062 U+0072 U+006F U+006B U+0065 U+006E U+0024	"broken"	English
+^bruise$	b r uː z	1	U+005E U+0062 U+0072 U+0075 U+0069 U+0073 U+0065 U+0024	"bruise"	English
+^butter$	b ʌ t ə ɹ	1	U+005E U+0062 U+0075 U+0074 U+0074 U+0065 U+0072 U+0024	"butter"	English
+^button$	b ʌ t n̩	1	U+005E U+0062 U+0075 U+0074 U+0074 U+006F U+006E U+0024	"button"	English
+^candle$	k æ n d l̩	1	U+005E U+0063 U+0061 U+006E U+0064 U+006C U+0065 U+0024	"candle"	English
+^carpet$	k ɑː p ɪ t	1	U+005E U+0063 U+0061 U+0072 U+0070 U+0065 U+0074 U+0024	"carpet"	English
+^castle$	k ɑː s l̩	1	U+005E U+0063 U+0061 U+0073 U+0074 U+006C U+0065 U+0024	"castle"	English
+^cattle$	k æ t l̩	1	U+005E U+0063 U+0061 U+0074 U+0074 U+006C U+0065 U+0024	"cattle"	English
+^change$	tʃ eɪ n dʒ	1	U+005E U+0063 U+0068 U+0061 U+006E U+0067 U+0065 U+0024	"change"	English
+^cheese$	tʃ iː z	1	U+005E U+0063 U+0068 U+0065 U+0065 U+0073 U+0065 U+0024	"cheese"	English
+^chisel$	tʃ ɪ z l̩	1	U+005E U+0063 U+0068 U+0069 U+0073 U+0065 U+006C U+0024	"chisel"	English
+^choose$	tʃ uː z	1	U+005E U+0063 U+0068 U+006F U+006F U+0073 U+0065 U+0024	"choose"	English
+^church$	tʃ ɜː tʃ	1	U+005E U+0063 U+0068 U+0075 U+0072 U+0063 U+0068 U+0024	"church"	English
+^circle$	s ɜː k l̩	1	U+005E U+0063 U+0069 U+0072 U+0063 U+006C U+0065 U+0024	"circle"	English
+^citrus$	s ɪ t r ə s	1	U+005E U+0063 U+0069 U+0074 U+0072 U+0075 U+0073 U+0024	"citrus"	English
+^clever$	k l ɛ v ə ɹ	1	U+005E U+0063 U+006C U+0065 U+0076 U+0065 U+0072 U+0024	"clever"	English
+^coffee$	k ɒ f ɪ	1	U+005E U+0063 U+006F U+0066 U+0066 U+0065 U+0065 U+0024	"coffee"	English
+^collar$	k ɒ l ə ɹ	1	U+005E U+0063 U+006F U+006C U+006C U+0061 U+0072 U+0024	"collar"	English
+^colour$	k ʌ l ə ɹ	1	U+005E U+0063 U+006F U+006C U+006F U+0075 U+0072 U+0024	"colour"	English
+^cooked$	k ʊ k t	1	U+005E U+0063 U+006F U+006F U+006B U+0065 U+0064 U+0024	"cooked"	English
+^copper$	k ɒ p ə ɹ	1	U+005E U+0063 U+006F U+0070 U+0070 U+0065 U+0072 U+0024	"copper"	English
+^corner$	k ɔː n ə ɹ	1	U+005E U+0063 U+006F U+0072 U+006E U+0065 U+0072 U+0024	"corner"	English
+^corpse$	k ɔː p s	1	U+005E U+0063 U+006F U+0072 U+0070 U+0073 U+0065 U+0024	"corpse"	English
+^cotton$	k ɒ t n̩	1	U+005E U+0063 U+006F U+0074 U+0074 U+006F U+006E U+0024	"cotton"	English
+^cousin$	k ʌ z n̩	1	U+005E U+0063 U+006F U+0075 U+0073 U+0069 U+006E U+0024	"cousin"	English
+^coyote$	k ɔɪ əʊ t ɪ	1	U+005E U+0063 U+006F U+0079 U+006F U+0074 U+0065 U+0024	"coyote"	English
+^crouch$	k r aʊ tʃ	1	U+005E U+0063 U+0072 U+006F U+0075 U+0063 U+0068 U+0024	"crouch"	English
+^custom$	k ʌ s t ə m	1	U+005E U+0063 U+0075 U+0073 U+0074 U+006F U+006D U+0024	"custom"	English
+^damage$	d æ m ɪ dʒ	1	U+005E U+0064 U+0061 U+006D U+0061 U+0067 U+0065 U+0024	"damage"	English
+^danger$	d eɪ n dʒ ə ɹ	1	U+005E U+0064 U+0061 U+006E U+0067 U+0065 U+0072 U+0024	"danger"	English
+^deceit$	d ɪ s iː t	1	U+005E U+0064 U+0065 U+0063 U+0065 U+0069 U+0074 U+0024	"deceit"	English
+^defeat$	d ɪ f iː t	1	U+005E U+0064 U+0065 U+0066 U+0065 U+0061 U+0074 U+0024	"defeat"	English
+^defend$	d ɪ f ɛ n d	1	U+005E U+0064 U+0065 U+0066 U+0065 U+006E U+0064 U+0024	"defend"	English
+^dinner$	d ɪ n ə ɹ	1	U+005E U+0064 U+0069 U+006E U+006E U+0065 U+0072 U+0024	"dinner"	English
+^divide$	d ɪ v aɪ d	1	U+005E U+0064 U+0069 U+0076 U+0069 U+0064 U+0065 U+0024	"divide"	English
+^doctor$	d ɒ k t ə ɹ	1	U+005E U+0064 U+006F U+0063 U+0074 U+006F U+0072 U+0024	"doctor"	English
+^donkey$	d ɒ ŋ k ɪ	1	U+005E U+0064 U+006F U+006E U+006B U+0065 U+0079 U+0024	"donkey"	English
+^earwax$	ɪə w æ k s	1	U+005E U+0065 U+0061 U+0072 U+0077 U+0061 U+0078 U+0024	"earwax"	English
+^eleven$	ɪ l ɛ v n̩	1	U+005E U+0065 U+006C U+0065 U+0076 U+0065 U+006E U+0024	"eleven"	English
+^embers$	ɛ m b ə z	1	U+005E U+0065 U+006D U+0062 U+0065 U+0072 U+0073 U+0024	"embers"	English
+^enough$	ɪ n ʌ f	1	U+005E U+0065 U+006E U+006F U+0075 U+0067 U+0068 U+0024	"enough"	English
+^eyelid$	aɪ l ɪ d	1	U+005E U+0065 U+0079 U+0065 U+006C U+0069 U+0064 U+0024	"eyelid"	English
+^family$	f æ m ə l ɪ	1	U+005E U+0066 U+0061 U+006D U+0069 U+006C U+0079 U+0024	"family"	English
+^famine$	f æ m ɪ n	1	U+005E U+0066 U+0061 U+006D U+0069 U+006E U+0065 U+0024	"famine"	English
+^farmer$	f ɑː m ə ɹ	1	U+005E U+0066 U+0061 U+0072 U+006D U+0065 U+0072 U+0024	"farmer"	English
+^father$	f ɑː ð ə ɹ	1	U+005E U+0066 U+0061 U+0074 U+0068 U+0065 U+0072 U+0024	"father"	English
+^fathom$	f æ ð ə m	1	U+005E U+0066 U+0061 U+0074 U+0068 U+006F U+006D U+0024	"fathom"	English
+^female$	f iː m eɪ l	2	U+005E U+0066 U+0065 U+006D U+0061 U+006C U+0065 U+0024	"female"	English
+^finger$	f ɪ ŋ g ə ɹ	1	U+005E U+0066 U+0069 U+006E U+0067 U+0065 U+0072 U+0024	"finger"	English
+^finish$	f ɪ n ɪ ʃ	1	U+005E U+0066 U+0069 U+006E U+0069 U+0073 U+0068 U+0024	"finish"	English
+^flower$	f l aʊ ə ɹ	1	U+005E U+0066 U+006C U+006F U+0077 U+0065 U+0072 U+0024	"flower"	English
+^follow$	f ɒ l əʊ	1	U+005E U+0066 U+006F U+006C U+006C U+006F U+0077 U+0024	"follow"	English
+^forbid$	f ə b ɪ d	1	U+005E U+0066 U+006F U+0072 U+0062 U+0069 U+0064 U+0024	"forbid"	English
+^forest$	f ɒ r ɪ s t	1	U+005E U+0066 U+006F U+0072 U+0065 U+0073 U+0074 U+0024	"forest"	English
+^forget$	f ə g ɛ t	1	U+005E U+0066 U+006F U+0072 U+0067 U+0065 U+0074 U+0024	"forget"	English
+^freeze$	f r iː z	1	U+005E U+0066 U+0072 U+0065 U+0065 U+007A U+0065 U+0024	"freeze"	English
+^friend$	f r ɛ n d	1	U+005E U+0066 U+0072 U+0069 U+0065 U+006E U+0064 U+0024	"friend"	English
+^furrow$	f ʌ r əʊ	1	U+005E U+0066 U+0075 U+0072 U+0072 U+006F U+0077 U+0024	"furrow"	English
+^garden$	g ɑː d n̩	1	U+005E U+0067 U+0061 U+0072 U+0064 U+0065 U+006E U+0024	"garden"	English
+^gather$	g æ ð ə ɹ	1	U+005E U+0067 U+0061 U+0074 U+0068 U+0065 U+0072 U+0024	"gather"	English
+^go_out$	g əʊ _ aʊ t	1	U+005E U+0067 U+006F U+005F U+006F U+0075 U+0074 U+0024	"go_out"	English
+^goitre$	g ɔɪ t ə ɹ	1	U+005E U+0067 U+006F U+0069 U+0074 U+0072 U+0065 U+0024	"goitre"	English
+^govern$	g ʌ v n̩	1	U+005E U+0067 U+006F U+0076 U+0065 U+0072 U+006E U+0024	"govern"	English
+^grease$	g r iː s	1	U+005E U+0067 U+0072 U+0065 U+0061 U+0073 U+0065 U+0024	"grease"	English
+^greedy$	g r iː d ɪ	1	U+005E U+0067 U+0072 U+0065 U+0065 U+0064 U+0079 U+0024	"greedy"	English
+^guilty$	g ɪ l t ɪ	1	U+005E U+0067 U+0075 U+0069 U+006C U+0074 U+0079 U+0024	"guilty"	English
+^hammer$	h æ m ə ɹ	1	U+005E U+0068 U+0061 U+006D U+006D U+0065 U+0072 U+0024	"hammer"	English
+^heaven$	h ɛ v n̩	1	U+005E U+0068 U+0065 U+0061 U+0076 U+0065 U+006E U+0024	"heaven"	English
+^helmet$	h ɛ l m ɪ t	1	U+005E U+0068 U+0065 U+006C U+006D U+0065 U+0074 U+0024	"helmet"	English
+^hollow$	h ɒ l əʊ	1	U+005E U+0068 U+006F U+006C U+006C U+006F U+0077 U+0024	"hollow"	English
+^hungry$	h ʌ ŋ g r ɪ	1	U+005E U+0068 U+0075 U+006E U+0067 U+0072 U+0079 U+0024	"hungry"	English
+^injure$	ɪ n dʒ ə ɹ	1	U+005E U+0069 U+006E U+006A U+0075 U+0072 U+0065 U+0024	"injure"	English
+^insect$	ɪ n s ɛ k t	1	U+005E U+0069 U+006E U+0073 U+0065 U+0063 U+0074 U+0024	"insect"	English
+^inside$	ɪ n s aɪ d	1	U+005E U+0069 U+006E U+0073 U+0069 U+0064 U+0065 U+0024	"inside"	English
+^invite$	ɪ n v aɪ t	1	U+005E U+0069 U+006E U+0076 U+0069 U+0074 U+0065 U+0024	"invite"	English
+^island$	aɪ l ə n d	1	U+005E U+0069 U+0073 U+006C U+0061 U+006E U+0064 U+0024	"island"	English
+^jaguar$	dʒ æ g j ʊə ɹ	1	U+005E U+006A U+0061 U+0067 U+0075 U+0061 U+0072 U+0024	"jaguar"	English
+^kettle$	k ɛ t l̩	1	U+005E U+006B U+0065 U+0074 U+0074 U+006C U+0065 U+0024	"kettle"	English
+^kidney$	k ɪ d n ɪ	1	U+005E U+006B U+0069 U+0064 U+006E U+0065 U+0079 U+0024	"kidney"	English
+^ladder$	l æ d ə ɹ	1	U+005E U+006C U+0061 U+0064 U+0064 U+0065 U+0072 U+0024	"ladder"	English
+^lagoon$	l ə g uː n	1	U+005E U+006C U+0061 U+0067 U+006F U+006F U+006E U+0024	"lagoon"	English
+^let_go$	l ɛ t _ g əʊ	1	U+005E U+006C U+0065 U+0074 U+005F U+0067 U+006F U+0024	"let_go"	English
+^letter$	l ɛ t ə ɹ	1	U+005E U+006C U+0065 U+0074 U+0074 U+0065 U+0072 U+0024	"letter"	English
+^listen$	l ɪ s n̩	1	U+005E U+006C U+0069 U+0073 U+0074 U+0065 U+006E U+0024	"listen"	English
+^little$	l ɪ t l̩	1	U+005E U+006C U+0069 U+0074 U+0074 U+006C U+0065 U+0024	"little"	English
+^lizard$	l ɪ z ə d	1	U+005E U+006C U+0069 U+007A U+0061 U+0072 U+0064 U+0024	"lizard"	English
+^manioc$	m æ n ɪ ɒ k	1	U+005E U+006D U+0061 U+006E U+0069 U+006F U+0063 U+0024	"manioc"	English
+^manner$	m æ n ə ɹ	1	U+005E U+006D U+0061 U+006E U+006E U+0065 U+0072 U+0024	"manner"	English
+^market$	m ɑː k ɪ t	1	U+005E U+006D U+0061 U+0072 U+006B U+0065 U+0074 U+0024	"market"	English
+^master$	m ɑː s t ə ɹ	1	U+005E U+006D U+0061 U+0073 U+0074 U+0065 U+0072 U+0024	"master"	English
+^midday$	m ɪ d d eɪ	1	U+005E U+006D U+0069 U+0064 U+0064 U+0061 U+0079 U+0024	"midday"	English
+^middle$	m ɪ d l̩	1	U+005E U+006D U+0069 U+0064 U+0064 U+006C U+0065 U+0024	"middle"	English
+^millet$	m ɪ l ɪ t	1	U+005E U+006D U+0069 U+006C U+006C U+0065 U+0074 U+0024	"millet"	English
+^mirror$	m ɪ r ə ɹ	1	U+005E U+006D U+0069 U+0072 U+0072 U+006F U+0072 U+0024	"mirror"	English
+^monkey$	m ʌ ŋ k ɪ	1	U+005E U+006D U+006F U+006E U+006B U+0065 U+0079 U+0024	"monkey"	English
+^mortar$	m ɔː t ə ɹ	2	U+005E U+006D U+006F U+0072 U+0074 U+0061 U+0072 U+0024	"mortar"	English
+^mosque$	m ɒ s k	1	U+005E U+006D U+006F U+0073 U+0071 U+0075 U+0065 U+0024	"mosque"	English
+^mother$	m ʌ ð ə ɹ	1	U+005E U+006D U+006F U+0074 U+0068 U+0065 U+0072 U+0024	"mother"	English
+^mumble$	m ʌ m b l̩	1	U+005E U+006D U+0075 U+006D U+0062 U+006C U+0065 U+0024	"mumble"	English
+^murder$	m ɜː d ə ɹ	1	U+005E U+006D U+0075 U+0072 U+0064 U+0065 U+0072 U+0024	"murder"	English
+^narrow$	n æ r əʊ	1	U+005E U+006E U+0061 U+0072 U+0072 U+006F U+0077 U+0024	"narrow"	English
+^needle$	n iː d l̩	2	U+005E U+006E U+0065 U+0065 U+0064 U+006C U+0065 U+0024	"needle"	English
+^nephew$	n ɛ v j uː	1	U+005E U+006E U+0065 U+0070 U+0068 U+0065 U+0077 U+0024	"nephew"	English
+^netbag$	n ɛ t b æ g	1	U+005E U+006E U+0065 U+0074 U+0062 U+0061 U+0067 U+0024	"netbag"	English
+^nettle$	n ɛ t l̩	1	U+005E U+006E U+0065 U+0074 U+0074 U+006C U+0065 U+0024	"nettle"	English
+^nipple$	n ɪ p l̩	1	U+005E U+006E U+0069 U+0070 U+0070 U+006C U+0065 U+0024	"nipple"	English
+^number$	n ʌ m b ə ɹ	1	U+005E U+006E U+0075 U+006D U+0062 U+0065 U+0072 U+0024	"number"	English
+^orange$	ɒ r ɪ n dʒ	1	U+005E U+006F U+0072 U+0061 U+006E U+0067 U+0065 U+0024	"orange"	English
+^orphan$	ɔː f n̩	1	U+005E U+006F U+0072 U+0070 U+0068 U+0061 U+006E U+0024	"orphan"	English
+^paddle$	p æ d l̩	1	U+005E U+0070 U+0061 U+0064 U+0064 U+006C U+0065 U+0024	"paddle"	English
+^pardon$	p ɑː d n̩	1	U+005E U+0070 U+0061 U+0072 U+0064 U+006F U+006E U+0024	"pardon"	English
+^parent$	p ɛə r ə n t	1	U+005E U+0070 U+0061 U+0072 U+0065 U+006E U+0074 U+0024	"parent"	English
+^parrot$	p æ r ə t	1	U+005E U+0070 U+0061 U+0072 U+0072 U+006F U+0074 U+0024	"parrot"	English
+^people$	p iː p l̩	1	U+005E U+0070 U+0065 U+006F U+0070 U+006C U+0065 U+0024	"people"	English
+^pepper$	p ɛ p ə ɹ	1	U+005E U+0070 U+0065 U+0070 U+0070 U+0065 U+0072 U+0024	"pepper"	English
+^person$	p ɜː s n̩	1	U+005E U+0070 U+0065 U+0072 U+0073 U+006F U+006E U+0024	"person"	English
+^pestle$	p ɛ s l̩	1	U+005E U+0070 U+0065 U+0073 U+0074 U+006C U+0065 U+0024	"pestle"	English
+^pillow$	p ɪ l əʊ	1	U+005E U+0070 U+0069 U+006C U+006C U+006F U+0077 U+0024	"pillow"	English
+^plough$	p l aʊ	1	U+005E U+0070 U+006C U+006F U+0075 U+0067 U+0068 U+0024	"plough"	English
+^pocket$	p ɒ k ɪ t	1	U+005E U+0070 U+006F U+0063 U+006B U+0065 U+0074 U+0024	"pocket"	English
+^poison$	p ɔɪ z n̩	1	U+005E U+0070 U+006F U+0069 U+0073 U+006F U+006E U+0024	"poison"	English
+^police$	p ə l iː s	1	U+005E U+0070 U+006F U+006C U+0069 U+0063 U+0065 U+0024	"police"	English
+^poncho$	p ɒ n tʃ əʊ	1	U+005E U+0070 U+006F U+006E U+0063 U+0068 U+006F U+0024	"poncho"	English
+^potato$	p ə t eɪ t əʊ	1	U+005E U+0070 U+006F U+0074 U+0061 U+0074 U+006F U+0024	"potato"	English
+^potter$	p ɒ t ə ɹ	1	U+005E U+0070 U+006F U+0074 U+0074 U+0065 U+0072 U+0024	"potter"	English
+^praise$	p r eɪ z	1	U+005E U+0070 U+0072 U+0061 U+0069 U+0073 U+0065 U+0024	"praise"	English
+^preach$	p r iː tʃ	1	U+005E U+0070 U+0072 U+0065 U+0061 U+0063 U+0068 U+0024	"preach"	English
+^priest$	p r iː s t	1	U+005E U+0070 U+0072 U+0069 U+0065 U+0073 U+0074 U+0024	"priest"	English
+^prison$	p r ɪ z n̩	1	U+005E U+0070 U+0072 U+0069 U+0073 U+006F U+006E U+0024	"prison"	English
+^pursue$	p ə s j uː	1	U+005E U+0070 U+0075 U+0072 U+0073 U+0075 U+0065 U+0024	"pursue"	English
+^put_on$	p ʊ t _ ɒ n	1	U+005E U+0070 U+0075 U+0074 U+005F U+006F U+006E U+0024	"put_on"	English
+^rabbit$	r æ b ɪ t	1	U+005E U+0072 U+0061 U+0062 U+0062 U+0069 U+0074 U+0024	"rabbit"	English
+^rafter$	r ɑː f t ə ɹ	1	U+005E U+0072 U+0061 U+0066 U+0074 U+0065 U+0072 U+0024	"rafter"	English
+^rattle$	r æ t l̩	1	U+005E U+0072 U+0061 U+0074 U+0074 U+006C U+0065 U+0024	"rattle"	English
+^refuse$	r ɛ f j uː s	1	U+005E U+0072 U+0065 U+0066 U+0075 U+0073 U+0065 U+0024	"refuse"	English
+^regret$	r ɪ g r ɛ t	1	U+005E U+0072 U+0065 U+0067 U+0072 U+0065 U+0074 U+0024	"regret"	English
+^remain$	r ɪ m eɪ n	1	U+005E U+0072 U+0065 U+006D U+0061 U+0069 U+006E U+0024	"remain"	English
+^rescue$	r ɛ s k j uː	1	U+005E U+0072 U+0065 U+0073 U+0063 U+0075 U+0065 U+0024	"rescue"	English
+^return$	r ɪ t ɜː n	1	U+005E U+0072 U+0065 U+0074 U+0075 U+0072 U+006E U+0024	"return"	English
+^rotten$	r ɒ t n̩	1	U+005E U+0072 U+006F U+0074 U+0074 U+0065 U+006E U+0024	"rotten"	English
+^rudder$	r ʌ d ə ɹ	1	U+005E U+0072 U+0075 U+0064 U+0064 U+0065 U+0072 U+0024	"rudder"	English
+^saucer$	s ɔː s ə ɹ	1	U+005E U+0073 U+0061 U+0075 U+0063 U+0065 U+0072 U+0024	"saucer"	English
+^school$	s k uː l	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006C U+0024	"school"	English
+^scrape$	s k r eɪ p	1	U+005E U+0073 U+0063 U+0072 U+0061 U+0070 U+0065 U+0024	"scrape"	English
+^scythe$	s aɪ ð	1	U+005E U+0073 U+0063 U+0079 U+0074 U+0068 U+0065 U+0024	"scythe"	English
+^season$	s iː z n̩	1	U+005E U+0073 U+0065 U+0061 U+0073 U+006F U+006E U+0024	"season"	English
+^second$	s ɛ k ə n d	1	U+005E U+0073 U+0065 U+0063 U+006F U+006E U+0064 U+0024	"second"	English
+^secret$	s iː k r ɪ t	1	U+005E U+0073 U+0065 U+0063 U+0072 U+0065 U+0074 U+0024	"secret"	English
+^shadow$	ʃ æ d əʊ	1	U+005E U+0073 U+0068 U+0061 U+0064 U+006F U+0077 U+0024	"shadow"	English
+^shears$	ʃ ɪə z	1	U+005E U+0073 U+0068 U+0065 U+0061 U+0072 U+0073 U+0024	"shears"	English
+^shield$	ʃ iː l d	1	U+005E U+0073 U+0068 U+0069 U+0065 U+006C U+0064 U+0024	"shield"	English
+^shiver$	ʃ ɪ v ə ɹ	1	U+005E U+0073 U+0068 U+0069 U+0076 U+0065 U+0072 U+0024	"shiver"	English
+^shovel$	ʃ ʌ v l̩	1	U+005E U+0073 U+0068 U+006F U+0076 U+0065 U+006C U+0024	"shovel"	English
+^shriek$	ʃ r iː k	1	U+005E U+0073 U+0068 U+0072 U+0069 U+0065 U+006B U+0024	"shriek"	English
+^shrimp$	ʃ r ɪ m p	1	U+005E U+0073 U+0068 U+0072 U+0069 U+006D U+0070 U+0024	"shrimp"	English
+^sickle$	s ɪ k l̩	1	U+005E U+0073 U+0069 U+0063 U+006B U+006C U+0065 U+0024	"sickle"	English
+^silver$	s ɪ l v ə ɹ	1	U+005E U+0073 U+0069 U+006C U+0076 U+0065 U+0072 U+0024	"silver"	English
+^sister$	s ɪ s t ə ɹ	1	U+005E U+0073 U+0069 U+0073 U+0074 U+0065 U+0072 U+0024	"sister"	English
+^sledge$	s l ɛ dʒ	1	U+005E U+0073 U+006C U+0065 U+0064 U+0067 U+0065 U+0024	"sledge"	English
+^smooth$	s m uː ð	1	U+005E U+0073 U+006D U+006F U+006F U+0074 U+0068 U+0024	"smooth"	English
+^sneeze$	s n iː z	1	U+005E U+0073 U+006E U+0065 U+0065 U+007A U+0065 U+0024	"sneeze"	English
+^speech$	s p iː tʃ	1	U+005E U+0073 U+0070 U+0065 U+0065 U+0063 U+0068 U+0024	"speech"	English
+^spider$	s p aɪ d ə ɹ	1	U+005E U+0073 U+0070 U+0069 U+0064 U+0065 U+0072 U+0024	"spider"	English
+^spirit$	s p ɪ r ɪ t	1	U+005E U+0073 U+0070 U+0069 U+0072 U+0069 U+0074 U+0024	"spirit"	English
+^splash$	s p l æ ʃ	1	U+005E U+0073 U+0070 U+006C U+0061 U+0073 U+0068 U+0024	"splash"	English
+^spleen$	s p l iː n	1	U+005E U+0073 U+0070 U+006C U+0065 U+0065 U+006E U+0024	"spleen"	English
+^spring$	s p r ɪ ŋ	2	U+005E U+0073 U+0070 U+0072 U+0069 U+006E U+0067 U+0024	"spring"	English
+^square$	s k w ɛə ɹ	1	U+005E U+0073 U+0071 U+0075 U+0061 U+0072 U+0065 U+0024	"square"	English
+^squash$	s k w ɒ ʃ	1	U+005E U+0073 U+0071 U+0075 U+0061 U+0073 U+0068 U+0024	"squash"	English
+^stable$	s t eɪ b l̩	1	U+005E U+0073 U+0074 U+0061 U+0062 U+006C U+0065 U+0024	"stable"	English
+^statue$	s t æ tʃ uː	1	U+005E U+0073 U+0074 U+0061 U+0074 U+0075 U+0065 U+0024	"statue"	English
+^stingy$	s t ɪ n dʒ ɪ	1	U+005E U+0073 U+0074 U+0069 U+006E U+0067 U+0079 U+0024	"stingy"	English
+^strain$	s t r eɪ n	1	U+005E U+0073 U+0074 U+0072 U+0061 U+0069 U+006E U+0024	"strain"	English
+^stream$	s t r iː m	1	U+005E U+0073 U+0074 U+0072 U+0065 U+0061 U+006D U+0024	"stream"	English
+^street$	s t r iː t	1	U+005E U+0073 U+0074 U+0072 U+0065 U+0065 U+0074 U+0024	"street"	English
+^strike$	s t r aɪ k	1	U+005E U+0073 U+0074 U+0072 U+0069 U+006B U+0065 U+0024	"strike"	English
+^strong$	s t r ɒ ŋ	1	U+005E U+0073 U+0074 U+0072 U+006F U+006E U+0067 U+0024	"strong"	English
+^stupid$	s t j uː p ɪ d	1	U+005E U+0073 U+0074 U+0075 U+0070 U+0069 U+0064 U+0024	"stupid"	English
+^summer$	s ʌ m ə ɹ	1	U+005E U+0073 U+0075 U+006D U+006D U+0065 U+0072 U+0024	"summer"	English
+^supper$	s ʌ p ə ɹ	1	U+005E U+0073 U+0075 U+0070 U+0070 U+0065 U+0072 U+0024	"supper"	English
+^sweets$	s w iː t s	1	U+005E U+0073 U+0077 U+0065 U+0065 U+0074 U+0073 U+0024	"sweets"	English
+^tablet$	t æ b l ɪ t	1	U+005E U+0074 U+0061 U+0062 U+006C U+0065 U+0074 U+0024	"tablet"	English
+^tailor$	t eɪ l ə ɹ	1	U+005E U+0074 U+0061 U+0069 U+006C U+006F U+0072 U+0024	"tailor"	English
+^tattoo$	t ə t uː	1	U+005E U+0074 U+0061 U+0074 U+0074 U+006F U+006F U+0024	"tattoo"	English
+^temple$	t ɛ m p l̩	1	U+005E U+0074 U+0065 U+006D U+0070 U+006C U+0065 U+0024	"temple"	English
+^tendon$	t ɛ n d ə n	1	U+005E U+0074 U+0065 U+006E U+0064 U+006F U+006E U+0024	"tendon"	English
+^thatch$	θ æ tʃ	1	U+005E U+0074 U+0068 U+0061 U+0074 U+0063 U+0068 U+0024	"thatch"	English
+^thread$	θ r ɛ d	1	U+005E U+0074 U+0068 U+0072 U+0065 U+0061 U+0064 U+0024	"thread"	English
+^thresh$	θ r ɛ ʃ	1	U+005E U+0074 U+0068 U+0072 U+0065 U+0073 U+0068 U+0024	"thresh"	English
+^throat$	θ r əʊ t	1	U+005E U+0074 U+0068 U+0072 U+006F U+0061 U+0074 U+0024	"throat"	English
+^toilet$	t ɔɪ l ɪ t	1	U+005E U+0074 U+006F U+0069 U+006C U+0065 U+0074 U+0024	"toilet"	English
+^tongue$	t ʌ ŋ	1	U+005E U+0074 U+006F U+006E U+0067 U+0075 U+0065 U+0024	"tongue"	English
+^toucan$	t uː k ə n	1	U+005E U+0074 U+006F U+0075 U+0063 U+0061 U+006E U+0024	"toucan"	English
+^trough$	t r ɒ f	1	U+005E U+0074 U+0072 U+006F U+0075 U+0067 U+0068 U+0024	"trough"	English
+^turtle$	t ɜː t l̩	1	U+005E U+0074 U+0075 U+0072 U+0074 U+006C U+0065 U+0024	"turtle"	English
+^twelve$	t w ɛ l v	1	U+005E U+0074 U+0077 U+0065 U+006C U+0076 U+0065 U+0024	"twelve"	English
+^twenty$	t w ɛ n t ɪ	1	U+005E U+0074 U+0077 U+0065 U+006E U+0074 U+0079 U+0024	"twenty"	English
+^unripe$	ʌ n r aɪ p	1	U+005E U+0075 U+006E U+0072 U+0069 U+0070 U+0065 U+0024	"unripe"	English
+^vagina$	v ə dʒ aɪ n ə	1	U+005E U+0076 U+0061 U+0067 U+0069 U+006E U+0061 U+0024	"vagina"	English
+^valley$	v æ l ɪ	1	U+005E U+0076 U+0061 U+006C U+006C U+0065 U+0079 U+0024	"valley"	English
+^where?$	w ɛə ɹ	1	U+005E U+0077 U+0068 U+0065 U+0072 U+0065 U+003F U+0024	"where?"	English
+^which?$	w ɪ tʃ	1	U+005E U+0077 U+0068 U+0069 U+0063 U+0068 U+003F U+0024	"which?"	English
+^window$	w ɪ n d əʊ	1	U+005E U+0077 U+0069 U+006E U+0064 U+006F U+0077 U+0024	"window"	English
+^winter$	w ɪ n t ə ɹ	1	U+005E U+0077 U+0069 U+006E U+0074 U+0065 U+0072 U+0024	"winter"	English
+^yellow$	j ɛ l əʊ	1	U+005E U+0079 U+0065 U+006C U+006C U+006F U+0077 U+0024	"yellow"	English
+^Tuesday$	t j uː z d ɪ	1	U+005E U+0054 U+0075 U+0065 U+0073 U+0064 U+0061 U+0079 U+0024	"Tuesday"	English
+^address$	ə d r ɛ s	1	U+005E U+0061 U+0064 U+0064 U+0072 U+0065 U+0073 U+0073 U+0024	"address"	English
+^alcohol$	æ l k ə h ɒ l	1	U+005E U+0061 U+006C U+0063 U+006F U+0068 U+006F U+006C U+0024	"alcohol"	English
+^anxiety$	æ ŋ z aɪ ə t ɪ	1	U+005E U+0061 U+006E U+0078 U+0069 U+0065 U+0074 U+0079 U+0024	"anxiety"	English
+^battery$	b æ t ə r ɪ	1	U+005E U+0062 U+0061 U+0074 U+0074 U+0065 U+0072 U+0079 U+0024	"battery"	English
+^be_born$	b iː _ b ɔː n	1	U+005E U+0062 U+0065 U+005F U+0062 U+006F U+0072 U+006E U+0024	"be_born"	English
+^because$	b ɪ k ɒ z	1	U+005E U+0062 U+0065 U+0063 U+0061 U+0075 U+0073 U+0065 U+0024	"because"	English
+^believe$	b ɪ l iː v	1	U+005E U+0062 U+0065 U+006C U+0069 U+0065 U+0076 U+0065 U+0024	"believe"	English
+^bicycle$	b aɪ s ɪ k l̩	1	U+005E U+0062 U+0069 U+0063 U+0079 U+0063 U+006C U+0065 U+0024	"bicycle"	English
+^blanket$	b l æ ŋ k ɪ t	1	U+005E U+0062 U+006C U+0061 U+006E U+006B U+0065 U+0074 U+0024	"blanket"	English
+^blister$	b l ɪ s t ə ɹ	1	U+005E U+0062 U+006C U+0069 U+0073 U+0074 U+0065 U+0072 U+0024	"blister"	English
+^breathe$	b r iː ð	1	U+005E U+0062 U+0072 U+0065 U+0061 U+0074 U+0068 U+0065 U+0024	"breathe"	English
+^brother$	b r ʌ ð ə ɹ	1	U+005E U+0062 U+0072 U+006F U+0074 U+0068 U+0065 U+0072 U+0024	"brother"	English
+^buffalo$	b ʌ f ə l əʊ	1	U+005E U+0062 U+0075 U+0066 U+0066 U+0061 U+006C U+006F U+0024	"buffalo"	English
+^captive$	k æ p t ɪ v	1	U+005E U+0063 U+0061 U+0070 U+0074 U+0069 U+0076 U+0065 U+0024	"captive"	English
+^carcass$	k ɑː k ə s	1	U+005E U+0063 U+0061 U+0072 U+0063 U+0061 U+0073 U+0073 U+0024	"carcass"	English
+^caribou$	k æ r ɪ b uː	1	U+005E U+0063 U+0061 U+0072 U+0069 U+0062 U+006F U+0075 U+0024	"caribou"	English
+^cassava$	k ə s ɑː v ə	1	U+005E U+0063 U+0061 U+0073 U+0073 U+0061 U+0076 U+0061 U+0024	"cassava"	English
+^certain$	s ɜː t n̩	1	U+005E U+0063 U+0065 U+0072 U+0074 U+0061 U+0069 U+006E U+0024	"certain"	English
+^chicken$	tʃ ɪ k ɪ n	1	U+005E U+0063 U+0068 U+0069 U+0063 U+006B U+0065 U+006E U+0024	"chicken"	English
+^chimney$	tʃ ɪ m n ɪ	1	U+005E U+0063 U+0068 U+0069 U+006D U+006E U+0065 U+0079 U+0024	"chimney"	English
+^citizen$	s ɪ t ɪ z n̩	1	U+005E U+0063 U+0069 U+0074 U+0069 U+007A U+0065 U+006E U+0024	"citizen"	English
+^clothes$	k l əʊ ð z	1	U+005E U+0063 U+006C U+006F U+0074 U+0068 U+0065 U+0073 U+0024	"clothes"	English
+^coconut$	k əʊ k ə n ʌ t	1	U+005E U+0063 U+006F U+0063 U+006F U+006E U+0075 U+0074 U+0024	"coconut"	English
+^collect$	k ɒ l ɛ k t	1	U+005E U+0063 U+006F U+006C U+006C U+0065 U+0063 U+0074 U+0024	"collect"	English
+^command$	k ə m ɑː n d	1	U+005E U+0063 U+006F U+006D U+006D U+0061 U+006E U+0064 U+0024	"command"	English
+^condemn$	k ə n d ɛ m	1	U+005E U+0063 U+006F U+006E U+0064 U+0065 U+006D U+006E U+0024	"condemn"	English
+^convict$	k ɒ n v ɪ k t	1	U+005E U+0063 U+006F U+006E U+0076 U+0069 U+0063 U+0074 U+0024	"convict"	English
+^country$	k ʌ n t r ɪ	1	U+005E U+0063 U+006F U+0075 U+006E U+0074 U+0072 U+0079 U+0024	"country"	English
+^crooked$	k r ʊ k ɪ d	1	U+005E U+0063 U+0072 U+006F U+006F U+006B U+0065 U+0064 U+0024	"crooked"	English
+^destroy$	d ɪ s t r ɔɪ	1	U+005E U+0064 U+0065 U+0073 U+0074 U+0072 U+006F U+0079 U+0024	"destroy"	English
+^disease$	d ɪ z iː z	1	U+005E U+0064 U+0069 U+0073 U+0065 U+0061 U+0073 U+0065 U+0024	"disease"	English
+^divorce$	d ɪ v ɔː s	1	U+005E U+0064 U+0069 U+0076 U+006F U+0072 U+0063 U+0065 U+0024	"divorce"	English
+^dolphin$	d ɒ l f ɪ n	1	U+005E U+0064 U+006F U+006C U+0070 U+0068 U+0069 U+006E U+0024	"dolphin"	English
+^dribble$	d r ɪ b l̩	1	U+005E U+0064 U+0072 U+0069 U+0062 U+0062 U+006C U+0065 U+0024	"dribble"	English
+^earlobe$	ɪə l əʊ b	1	U+005E U+0065 U+0061 U+0072 U+006C U+006F U+0062 U+0065 U+0024	"earlobe"	English
+^earring$	ɪə r ɪ ŋ	1	U+005E U+0065 U+0061 U+0072 U+0072 U+0069 U+006E U+0067 U+0024	"earring"	English
+^embrace$	ɪ m b r eɪ s	1	U+005E U+0065 U+006D U+0062 U+0072 U+0061 U+0063 U+0065 U+0024	"embrace"	English
+^evening$	iː v n̩ ɪ ŋ	1	U+005E U+0065 U+0076 U+0065 U+006E U+0069 U+006E U+0067 U+0024	"evening"	English
+^explain$	ɪ k s p l eɪ n	1	U+005E U+0065 U+0078 U+0070 U+006C U+0061 U+0069 U+006E U+0024	"explain"	English
+^eyebrow$	aɪ b r aʊ	1	U+005E U+0065 U+0079 U+0065 U+0062 U+0072 U+006F U+0077 U+0024	"eyebrow"	English
+^eyelash$	aɪ l æ ʃ	1	U+005E U+0065 U+0079 U+0065 U+006C U+0061 U+0073 U+0068 U+0024	"eyelash"	English
+^falsity$	f ɔː l s ə t ɪ	1	U+005E U+0066 U+0061 U+006C U+0073 U+0069 U+0074 U+0079 U+0024	"falsity"	English
+^feather$	f ɛ ð ə ɹ	1	U+005E U+0066 U+0065 U+0061 U+0074 U+0068 U+0065 U+0072 U+0024	"feather"	English
+^fifteen$	f ɪ f t iː n	1	U+005E U+0066 U+0069 U+0066 U+0074 U+0065 U+0065 U+006E U+0024	"fifteen"	English
+^firefly$	f aɪ ə f l aɪ	1	U+005E U+0066 U+0069 U+0072 U+0065 U+0066 U+006C U+0079 U+0024	"firefly"	English
+^forgive$	f ə g ɪ v	1	U+005E U+0066 U+006F U+0072 U+0067 U+0069 U+0076 U+0065 U+0024	"forgive"	English
+^freeman$	f r iː m ə n	1	U+005E U+0066 U+0072 U+0065 U+0065 U+006D U+0061 U+006E U+0024	"freeman"	English
+^glasses$	g l ɑː s ɪ z	1	U+005E U+0067 U+006C U+0061 U+0073 U+0073 U+0065 U+0073 U+0024	"glasses"	English
+^go_down$	g əʊ _ d aʊ n	1	U+005E U+0067 U+006F U+005F U+0064 U+006F U+0077 U+006E U+0024	"go_down"	English
+^hammock$	h æ m ə k	1	U+005E U+0068 U+0061 U+006D U+006D U+006F U+0063 U+006B U+0024	"hammock"	English
+^harvest$	h ɑː v ɪ s t	1	U+005E U+0068 U+0061 U+0072 U+0076 U+0065 U+0073 U+0074 U+0024	"harvest"	English
+^healthy$	h ɛ l θ ɪ	1	U+005E U+0068 U+0065 U+0061 U+006C U+0074 U+0068 U+0079 U+0024	"healthy"	English
+^hundred$	h ʌ n d r ə d	1	U+005E U+0068 U+0075 U+006E U+0064 U+0072 U+0065 U+0064 U+0024	"hundred"	English
+^husband$	h ʌ z b ə n d	1	U+005E U+0068 U+0075 U+0073 U+0062 U+0061 U+006E U+0064 U+0024	"husband"	English
+^imitate$	ɪ m ɪ t eɪ t	1	U+005E U+0069 U+006D U+0069 U+0074 U+0061 U+0074 U+0065 U+0024	"imitate"	English
+^jealous$	dʒ ɛ l ə s	1	U+005E U+006A U+0065 U+0061 U+006C U+006F U+0075 U+0073 U+0024	"jealous"	English
+^kitchen$	k ɪ tʃ ɪ n	1	U+005E U+006B U+0069 U+0074 U+0063 U+0068 U+0065 U+006E U+0024	"kitchen"	English
+^leather$	l ɛ ð ə ɹ	1	U+005E U+006C U+0065 U+0061 U+0074 U+0068 U+0065 U+0072 U+0024	"leather"	English
+^machine$	m ə ʃ iː n	1	U+005E U+006D U+0061 U+0063 U+0068 U+0069 U+006E U+0065 U+0024	"machine"	English
+^measure$	m ɛ ʒ ə ɹ	1	U+005E U+006D U+0065 U+0061 U+0073 U+0075 U+0072 U+0065 U+0024	"measure"	English
+^mistake$	m ɪ s t eɪ k	1	U+005E U+006D U+0069 U+0073 U+0074 U+0061 U+006B U+0065 U+0024	"mistake"	English
+^morning$	m ɔː n ɪ ŋ	1	U+005E U+006D U+006F U+0072 U+006E U+0069 U+006E U+0067 U+0024	"morning"	English
+^nostril$	n ɒ s t r ə l	1	U+005E U+006E U+006F U+0073 U+0074 U+0072 U+0069 U+006C U+0024	"nostril"	English
+^nothing$	n ʌ θ ɪ ŋ	1	U+005E U+006E U+006F U+0074 U+0068 U+0069 U+006E U+0067 U+0024	"nothing"	English
+^obscure$	ə b s k j ʊə ɹ	1	U+005E U+006F U+0062 U+0073 U+0063 U+0075 U+0072 U+0065 U+0024	"obscure"	English
+^old_man$	əʊ l d _ m æ n	1	U+005E U+006F U+006C U+0064 U+005F U+006D U+0061 U+006E U+0024	"old_man"	English
+^opossum$	ə p ɒ s ə m	1	U+005E U+006F U+0070 U+006F U+0073 U+0073 U+0075 U+006D U+0024	"opossum"	English
+^outside$	aʊ t s aɪ d	1	U+005E U+006F U+0075 U+0074 U+0073 U+0069 U+0064 U+0065 U+0024	"outside"	English
+^padlock$	p æ d l ɒ k	1	U+005E U+0070 U+0061 U+0064 U+006C U+006F U+0063 U+006B U+0024	"padlock"	English
+^pasture$	p ɑː s tʃ ə ɹ	1	U+005E U+0070 U+0061 U+0073 U+0074 U+0075 U+0072 U+0065 U+0024	"pasture"	English
+^perjury$	p ɜː dʒ ə r ɪ	1	U+005E U+0070 U+0065 U+0072 U+006A U+0075 U+0072 U+0079 U+0024	"perjury"	English
+^pick_up$	p ɪ k _ ʌ p	1	U+005E U+0070 U+0069 U+0063 U+006B U+005F U+0075 U+0070 U+0024	"pick_up"	English
+^pile_up$	p aɪ l _ ʌ p	1	U+005E U+0070 U+0069 U+006C U+0065 U+005F U+0075 U+0070 U+0024	"pile_up"	English
+^plastic$	p l æ s t ɪ k	1	U+005E U+0070 U+006C U+0061 U+0073 U+0074 U+0069 U+0063 U+0024	"plastic"	English
+^pointed$	p ɔɪ n t ɪ d	1	U+005E U+0070 U+006F U+0069 U+006E U+0074 U+0065 U+0064 U+0024	"pointed"	English
+^poultry$	p əʊ l t r ɪ	1	U+005E U+0070 U+006F U+0075 U+006C U+0074 U+0072 U+0079 U+0024	"poultry"	English
+^prevent$	p r ɪ v ɛ n t	1	U+005E U+0070 U+0072 U+0065 U+0076 U+0065 U+006E U+0074 U+0024	"prevent"	English
+^promise$	p r ɒ m ɪ s	1	U+005E U+0070 U+0072 U+006F U+006D U+0069 U+0073 U+0065 U+0024	"promise"	English
+^pumpkin$	p ʌ m p k ɪ n	1	U+005E U+0070 U+0075 U+006D U+0070 U+006B U+0069 U+006E U+0024	"pumpkin"	English
+^quarrel$	k w ɒ r ə l	1	U+005E U+0071 U+0075 U+0061 U+0072 U+0072 U+0065 U+006C U+0024	"quarrel"	English
+^raccoon$	r ə k uː n	1	U+005E U+0072 U+0061 U+0063 U+0063 U+006F U+006F U+006E U+0024	"raccoon"	English
+^rainbow$	r eɪ n b əʊ	1	U+005E U+0072 U+0061 U+0069 U+006E U+0062 U+006F U+0077 U+0024	"rainbow"	English
+^remains$	r ɪ m eɪ n z	1	U+005E U+0072 U+0065 U+006D U+0061 U+0069 U+006E U+0073 U+0024	"remains"	English
+^retreat$	r ɪ t r iː t	1	U+005E U+0072 U+0065 U+0074 U+0072 U+0065 U+0061 U+0074 U+0024	"retreat"	English
+^rooster$	r uː s t ə ɹ	1	U+005E U+0072 U+006F U+006F U+0073 U+0074 U+0065 U+0072 U+0024	"rooster"	English
+^sausage$	s ɒ s ɪ dʒ	1	U+005E U+0073 U+0061 U+0075 U+0073 U+0061 U+0067 U+0065 U+0024	"sausage"	English
+^savanna$	s ə v æ n ə	1	U+005E U+0073 U+0061 U+0076 U+0061 U+006E U+006E U+0061 U+0024	"savanna"	English
+^scratch$	s k r æ tʃ	1	U+005E U+0073 U+0063 U+0072 U+0061 U+0074 U+0063 U+0068 U+0024	"scratch"	English
+^servant$	s ɜː v ə n t	1	U+005E U+0073 U+0065 U+0072 U+0076 U+0061 U+006E U+0074 U+0024	"servant"	English
+^shallow$	ʃ æ l əʊ	1	U+005E U+0073 U+0068 U+0061 U+006C U+006C U+006F U+0077 U+0024	"shallow"	English
+^sibling$	s ɪ b l ɪ ŋ	1	U+005E U+0073 U+0069 U+0062 U+006C U+0069 U+006E U+0067 U+0024	"sibling"	English
+^similar$	s ɪ m ɪ l ə ɹ	1	U+005E U+0073 U+0069 U+006D U+0069 U+006C U+0061 U+0072 U+0024	"similar"	English
+^soldier$	s əʊ l dʒ ə ɹ	1	U+005E U+0073 U+006F U+006C U+0064 U+0069 U+0065 U+0072 U+0024	"soldier"	English
+^spindle$	s p ɪ n d l̩	1	U+005E U+0073 U+0070 U+0069 U+006E U+0064 U+006C U+0065 U+0024	"spindle"	English
+^squeeze$	s k w iː z	1	U+005E U+0073 U+0071 U+0075 U+0065 U+0065 U+007A U+0065 U+0024	"squeeze"	English
+^stammer$	s t æ m ə ɹ	1	U+005E U+0073 U+0074 U+0061 U+006D U+006D U+0065 U+0072 U+0024	"stammer"	English
+^stepson$	s t ɛ p s ʌ n	1	U+005E U+0073 U+0074 U+0065 U+0070 U+0073 U+006F U+006E U+0024	"stepson"	English
+^stomach$	s t ʌ m ə k	1	U+005E U+0073 U+0074 U+006F U+006D U+0061 U+0063 U+0068 U+0024	"stomach"	English
+^stretch$	s t r ɛ tʃ	1	U+005E U+0073 U+0074 U+0072 U+0065 U+0074 U+0063 U+0068 U+0024	"stretch"	English
+^stutter$	s t ʌ t ə ɹ	1	U+005E U+0073 U+0074 U+0075 U+0074 U+0074 U+0065 U+0072 U+0024	"stutter"	English
+^suspect$	s ʌ s p ɛ k t	1	U+005E U+0073 U+0075 U+0073 U+0070 U+0065 U+0063 U+0074 U+0024	"suspect"	English
+^swallow$	s w ɒ l əʊ	1	U+005E U+0073 U+0077 U+0061 U+006C U+006C U+006F U+0077 U+0024	"swallow"	English
+^teacher$	t iː tʃ ə ɹ	1	U+005E U+0074 U+0065 U+0061 U+0063 U+0068 U+0065 U+0072 U+0024	"teacher"	English
+^termite$	t ɜː m aɪ t	1	U+005E U+0074 U+0065 U+0072 U+006D U+0069 U+0074 U+0065 U+0024	"termite"	English
+^thirsty$	θ ɜː s t ɪ	1	U+005E U+0074 U+0068 U+0069 U+0072 U+0073 U+0074 U+0079 U+0024	"thirsty"	English
+^through$	θ r uː	1	U+005E U+0074 U+0068 U+0072 U+006F U+0075 U+0067 U+0068 U+0024	"through"	English
+^thunder$	θ ʌ n d ə ɹ	1	U+005E U+0074 U+0068 U+0075 U+006E U+0064 U+0065 U+0072 U+0024	"thunder"	English
+^to_last$	t uː _ l ɑː s t	1	U+005E U+0074 U+006F U+005F U+006C U+0061 U+0073 U+0074 U+0024	"to_last"	English
+^tobacco$	t ə b æ k əʊ	1	U+005E U+0074 U+006F U+0062 U+0061 U+0063 U+0063 U+006F U+0024	"tobacco"	English
+^trumpet$	t r ʌ m p ɪ t	1	U+005E U+0074 U+0072 U+0075 U+006D U+0070 U+0065 U+0074 U+0024	"trumpet"	English
+^urinate$	j ʊə r ɪ n eɪ t	1	U+005E U+0075 U+0072 U+0069 U+006E U+0061 U+0074 U+0065 U+0024	"urinate"	English
+^victory$	v ɪ k t ə r ɪ	1	U+005E U+0076 U+0069 U+0063 U+0074 U+006F U+0072 U+0079 U+0024	"victory"	English
+^village$	v ɪ l ɪ dʒ	1	U+005E U+0076 U+0069 U+006C U+006C U+0061 U+0067 U+0065 U+0024	"village"	English
+^vulture$	v ʌ l tʃ ə ɹ	1	U+005E U+0076 U+0075 U+006C U+0074 U+0075 U+0072 U+0065 U+0024	"vulture"	English
+^weapons$	w ɛ p ə n z	1	U+005E U+0077 U+0065 U+0061 U+0070 U+006F U+006E U+0073 U+0024	"weapons"	English
+^weather$	w ɛ ð ə ɹ	1	U+005E U+0077 U+0065 U+0061 U+0074 U+0068 U+0065 U+0072 U+0024	"weather"	English
+^wedding$	w ɛ d ɪ ŋ	1	U+005E U+0077 U+0065 U+0064 U+0064 U+0069 U+006E U+0067 U+0024	"wedding"	English
+^whisper$	w ɪ s p ə ɹ	1	U+005E U+0077 U+0068 U+0069 U+0073 U+0070 U+0065 U+0072 U+0024	"whisper"	English
+^whistle$	w ɪ s l̩	1	U+005E U+0077 U+0068 U+0069 U+0073 U+0074 U+006C U+0065 U+0024	"whistle"	English
+^widower$	w ɪ d əʊ ə ɹ	1	U+005E U+0077 U+0069 U+0064 U+006F U+0077 U+0065 U+0072 U+0024	"widower"	English
+^without$	w ɪ ð aʊ t	1	U+005E U+0077 U+0069 U+0074 U+0068 U+006F U+0075 U+0074 U+0024	"without"	English
+^witness$	w ɪ t n ɪ s	1	U+005E U+0077 U+0069 U+0074 U+006E U+0065 U+0073 U+0073 U+0024	"witness"	English
+^wood(s)$	w ʊ d	1	U+005E U+0077 U+006F U+006F U+0064 U+0028 U+0073 U+0029 U+0024	"wood(s)"	English
+^worship$	w ɜː ʃ ɪ p	1	U+005E U+0077 U+006F U+0072 U+0073 U+0068 U+0069 U+0070 U+0024	"worship"	English
+^Saturday$	s æ t ə d ɪ	1	U+005E U+0053 U+0061 U+0074 U+0075 U+0072 U+0064 U+0061 U+0079 U+0024	"Saturday"	English
+^Thursday$	θ ɜː z d ɪ	1	U+005E U+0054 U+0068 U+0075 U+0072 U+0073 U+0064 U+0061 U+0079 U+0024	"Thursday"	English
+^adultery$	ə d ʌ l t ə r ɪ	1	U+005E U+0061 U+0064 U+0075 U+006C U+0074 U+0065 U+0072 U+0079 U+0024	"adultery"	English
+^ancestor$	æ n s ɛ s t ə ɹ	1	U+005E U+0061 U+006E U+0063 U+0065 U+0073 U+0074 U+006F U+0072 U+0024	"ancestor"	English
+^announce$	ə n aʊ n s	1	U+005E U+0061 U+006E U+006E U+006F U+0075 U+006E U+0063 U+0065 U+0024	"announce"	English
+^anteater$	æ n t iː t ə ɹ	1	U+005E U+0061 U+006E U+0074 U+0065 U+0061 U+0074 U+0065 U+0072 U+0024	"anteater"	English
+^approach$	ə p r əʊ tʃ	1	U+005E U+0061 U+0070 U+0070 U+0072 U+006F U+0061 U+0063 U+0068 U+0024	"approach"	English
+^boundary$	b aʊ n d ə r ɪ	1	U+005E U+0062 U+006F U+0075 U+006E U+0064 U+0061 U+0072 U+0079 U+0024	"boundary"	English
+^bracelet$	b r eɪ s l ɪ t	1	U+005E U+0062 U+0072 U+0061 U+0063 U+0065 U+006C U+0065 U+0074 U+0024	"bracelet"	English
+^brackish$	b r æ k ɪ ʃ	1	U+005E U+0062 U+0072 U+0061 U+0063 U+006B U+0069 U+0073 U+0068 U+0024	"brackish"	English
+^buttocks$	b ʌ t ə k s	1	U+005E U+0062 U+0075 U+0074 U+0074 U+006F U+0063 U+006B U+0073 U+0024	"buttocks"	English
+^calendar$	k æ l ɪ n d ə ɹ	1	U+005E U+0063 U+0061 U+006C U+0065 U+006E U+0064 U+0061 U+0072 U+0024	"calendar"	English
+^charcoal$	tʃ ɑː k əʊ l	1	U+005E U+0063 U+0068 U+0061 U+0072 U+0063 U+006F U+0061 U+006C U+0024	"charcoal"	English
+^conceive$	k ə n s iː v	1	U+005E U+0063 U+006F U+006E U+0063 U+0065 U+0069 U+0076 U+0065 U+0024	"conceive"	English
+^copulate$	k ɒ p j ʊ l eɪ t	1	U+005E U+0063 U+006F U+0070 U+0075 U+006C U+0061 U+0074 U+0065 U+0024	"copulate"	English
+^dandruff$	d æ n d r ʌ f	1	U+005E U+0064 U+0061 U+006E U+0064 U+0072 U+0075 U+0066 U+0066 U+0024	"dandruff"	English
+^darkness$	d ɑː k n ɪ s	1	U+005E U+0064 U+0061 U+0072 U+006B U+006E U+0065 U+0073 U+0073 U+0024	"darkness"	English
+^daughter$	d ɔː t ə ɹ	1	U+005E U+0064 U+0061 U+0075 U+0067 U+0068 U+0074 U+0065 U+0072 U+0024	"daughter"	English
+^defecate$	d ɛ f ə k eɪ t	1	U+005E U+0064 U+0065 U+0066 U+0065 U+0063 U+0061 U+0074 U+0065 U+0024	"defecate"	English
+^doorpost$	d ɔː ɹ p əʊ s t	1	U+005E U+0064 U+006F U+006F U+0072 U+0070 U+006F U+0073 U+0074 U+0024	"doorpost"	English
+^election$	ɪ l ɛ k ʃ n̩	1	U+005E U+0065 U+006C U+0065 U+0063 U+0074 U+0069 U+006F U+006E U+0024	"election"	English
+^elephant$	ɛ l ɪ f ə n t	1	U+005E U+0065 U+006C U+0065 U+0070 U+0068 U+0061 U+006E U+0074 U+0024	"elephant"	English
+^faithful$	f eɪ θ f ʊ l	1	U+005E U+0066 U+0061 U+0069 U+0074 U+0068 U+0066 U+0075 U+006C U+0024	"faithful"	English
+^firewood$	f aɪ ə w ʊ d	1	U+005E U+0066 U+0069 U+0072 U+0065 U+0077 U+006F U+006F U+0064 U+0024	"firewood"	English
+^fishhook$	f ɪ ʃ h ʊ k	1	U+005E U+0066 U+0069 U+0073 U+0068 U+0068 U+006F U+006F U+006B U+0024	"fishhook"	English
+^forehead$	f ɒ r ɪ d	1	U+005E U+0066 U+006F U+0072 U+0065 U+0068 U+0065 U+0061 U+0064 U+0024	"forehead"	English
+^fortress$	f ɔː t r ɪ s	1	U+005E U+0066 U+006F U+0072 U+0074 U+0072 U+0065 U+0073 U+0073 U+0024	"fortress"	English
+^fragrant$	f r eɪ g r ə n t	1	U+005E U+0066 U+0072 U+0061 U+0067 U+0072 U+0061 U+006E U+0074 U+0024	"fragrant"	English
+^grandson$	g r æ n s ʌ n	1	U+005E U+0067 U+0072 U+0061 U+006E U+0064 U+0073 U+006F U+006E U+0024	"grandson"	English
+^headband$	h ɛ d b æ n d	1	U+005E U+0068 U+0065 U+0061 U+0064 U+0062 U+0061 U+006E U+0064 U+0024	"headband"	English
+^herdsman$	h ɜː d z m ə n	1	U+005E U+0068 U+0065 U+0072 U+0064 U+0073 U+006D U+0061 U+006E U+0024	"herdsman"	English
+^hiccough$	h ɪ k ʌ p	1	U+005E U+0068 U+0069 U+0063 U+0063 U+006F U+0075 U+0067 U+0068 U+0024	"hiccough"	English
+^homeland$	h əʊ m l æ n d	1	U+005E U+0068 U+006F U+006D U+0065 U+006C U+0061 U+006E U+0064 U+0024	"homeland"	English
+^hospital$	h ɒ s p ɪ t l̩	1	U+005E U+0068 U+006F U+0073 U+0070 U+0069 U+0074 U+0061 U+006C U+0024	"hospital"	English
+^innocent$	ɪ n ə s n̩ t	1	U+005E U+0069 U+006E U+006E U+006F U+0063 U+0065 U+006E U+0074 U+0024	"innocent"	English
+^judgment$	dʒ ʌ dʒ m ə n t	1	U+005E U+006A U+0075 U+0064 U+0067 U+006D U+0065 U+006E U+0074 U+0024	"judgment"	English
+^kangaroo$	k æ ŋ g ə r uː	1	U+005E U+006B U+0061 U+006E U+0067 U+0061 U+0072 U+006F U+006F U+0024	"kangaroo"	English
+^language$	l æ ŋ g w ɪ dʒ	1	U+005E U+006C U+0061 U+006E U+0067 U+0075 U+0061 U+0067 U+0065 U+0024	"language"	English
+^liberate$	l ɪ b ə r eɪ t	1	U+005E U+006C U+0069 U+0062 U+0065 U+0072 U+0061 U+0074 U+0065 U+0024	"liberate"	English
+^lie_down$	l aɪ _ d aʊ n	1	U+005E U+006C U+0069 U+0065 U+005F U+0064 U+006F U+0077 U+006E U+0024	"lie_down"	English
+^look_for$	l ʊ k _ f ɔː ɹ	1	U+005E U+006C U+006F U+006F U+006B U+005F U+0066 U+006F U+0072 U+0024	"look_for"	English
+^low_tide$	l əʊ _ t aɪ d	1	U+005E U+006C U+006F U+0077 U+005F U+0074 U+0069 U+0064 U+0065 U+0024	"low_tide"	English
+^mainland$	m eɪ n l ə n d	1	U+005E U+006D U+0061 U+0069 U+006E U+006C U+0061 U+006E U+0064 U+0024	"mainland"	English
+^mattress$	m æ t r ɪ s	1	U+005E U+006D U+0061 U+0074 U+0074 U+0072 U+0065 U+0073 U+0073 U+0024	"mattress"	English
+^medicine$	m ɛ d s ɪ n	1	U+005E U+006D U+0065 U+0064 U+0069 U+0063 U+0069 U+006E U+0065 U+0024	"medicine"	English
+^merchant$	m ɜː tʃ ə n t	1	U+005E U+006D U+0065 U+0072 U+0063 U+0068 U+0061 U+006E U+0074 U+0024	"merchant"	English
+^minister$	m ɪ n ɪ s t ə ɹ	1	U+005E U+006D U+0069 U+006E U+0069 U+0073 U+0074 U+0065 U+0072 U+0024	"minister"	English
+^mosquito$	m ə s k iː t əʊ	1	U+005E U+006D U+006F U+0073 U+0071 U+0075 U+0069 U+0074 U+006F U+0024	"mosquito"	English
+^mountain$	m aʊ n t ɪ n	1	U+005E U+006D U+006F U+0075 U+006E U+0074 U+0061 U+0069 U+006E U+0024	"mountain"	English
+^mushroom$	m ʌ ʃ r ʊ m	1	U+005E U+006D U+0075 U+0073 U+0068 U+0072 U+006F U+006F U+006D U+0024	"mushroom"	English
+^necklace$	n ɛ k l ɪ s	1	U+005E U+006E U+0065 U+0063 U+006B U+006C U+0061 U+0063 U+0065 U+0024	"necklace"	English
+^ointment$	ɔɪ n t m ə n t	1	U+005E U+006F U+0069 U+006E U+0074 U+006D U+0065 U+006E U+0074 U+0024	"ointment"	English
+^ornament$	ɔː n ə m ə n t	1	U+005E U+006F U+0072 U+006E U+0061 U+006D U+0065 U+006E U+0074 U+0024	"ornament"	English
+^porpoise$	p ɔː p ə s	1	U+005E U+0070 U+006F U+0072 U+0070 U+006F U+0069 U+0073 U+0065 U+0024	"porpoise"	English
+^postcard$	p əʊ s t k ɑː d	1	U+005E U+0070 U+006F U+0073 U+0074 U+0063 U+0061 U+0072 U+0064 U+0024	"postcard"	English
+^pregnant$	p r ɛ g n ə n t	1	U+005E U+0070 U+0072 U+0065 U+0067 U+006E U+0061 U+006E U+0074 U+0024	"pregnant"	English
+^preserve$	p r ɪ z ɜː v	1	U+005E U+0070 U+0072 U+0065 U+0073 U+0065 U+0072 U+0076 U+0065 U+0024	"preserve"	English
+^prisoner$	p r ɪ z n̩ ə ɹ	1	U+005E U+0070 U+0072 U+0069 U+0073 U+006F U+006E U+0065 U+0072 U+0024	"prisoner"	English
+^reindeer$	r eɪ n d ɪə ɹ	1	U+005E U+0072 U+0065 U+0069 U+006E U+0064 U+0065 U+0065 U+0072 U+0024	"reindeer"	English
+^relative$	r ɛ l ə t ɪ v	1	U+005E U+0072 U+0065 U+006C U+0061 U+0074 U+0069 U+0076 U+0065 U+0024	"relative"	English
+^religion$	r ɪ l ɪ dʒ ə n	1	U+005E U+0072 U+0065 U+006C U+0069 U+0067 U+0069 U+006F U+006E U+0024	"religion"	English
+^remember$	r ɪ m ɛ m b ə ɹ	1	U+005E U+0072 U+0065 U+006D U+0065 U+006D U+0062 U+0065 U+0072 U+0024	"remember"	English
+^scissors$	s ɪ z ə z	1	U+005E U+0073 U+0063 U+0069 U+0073 U+0073 U+006F U+0072 U+0073 U+0024	"scissors"	English
+^scorpion$	s k ɔː p j ə n	1	U+005E U+0073 U+0063 U+006F U+0072 U+0070 U+0069 U+006F U+006E U+0024	"scorpion"	English
+^sculptor$	s k ʌ l p t ə ɹ	1	U+005E U+0073 U+0063 U+0075 U+006C U+0070 U+0074 U+006F U+0072 U+0024	"sculptor"	English
+^separate$	s ɛ p ə r eɪ t	1	U+005E U+0073 U+0065 U+0070 U+0061 U+0072 U+0061 U+0074 U+0065 U+0024	"separate"	English
+^shoulder$	ʃ əʊ l d ə ɹ	1	U+005E U+0073 U+0068 U+006F U+0075 U+006C U+0064 U+0065 U+0072 U+0024	"shoulder"	English
+^snowshoe$	s n əʊ ʃ uː	1	U+005E U+0073 U+006E U+006F U+0077 U+0073 U+0068 U+006F U+0065 U+0024	"snowshoe"	English
+^sorcerer$	s ɔː s ə r ə ɹ	1	U+005E U+0073 U+006F U+0072 U+0063 U+0065 U+0072 U+0065 U+0072 U+0024	"sorcerer"	English
+^squirrel$	s k ɪ r ə l	1	U+005E U+0073 U+0071 U+0075 U+0069 U+0072 U+0072 U+0065 U+006C U+0024	"squirrel"	English
+^stallion$	s t æ l j ə n	1	U+005E U+0073 U+0074 U+0061 U+006C U+006C U+0069 U+006F U+006E U+0024	"stallion"	English
+^stinking$	s t ɪ ŋ k ɪ ŋ	1	U+005E U+0073 U+0074 U+0069 U+006E U+006B U+0069 U+006E U+0067 U+0024	"stinking"	English
+^stocking$	s t ɒ k ɪ ŋ	1	U+005E U+0073 U+0074 U+006F U+0063 U+006B U+0069 U+006E U+0067 U+0024	"stocking"	English
+^straight$	s t r eɪ t	1	U+005E U+0073 U+0074 U+0072 U+0061 U+0069 U+0067 U+0068 U+0074 U+0024	"straight"	English
+^stranger$	s t r eɪ n dʒ ə ɹ	1	U+005E U+0073 U+0074 U+0072 U+0061 U+006E U+0067 U+0065 U+0072 U+0024	"stranger"	English
+^swelling$	s w ɛ l ɪ ŋ	1	U+005E U+0073 U+0077 U+0065 U+006C U+006C U+0069 U+006E U+0067 U+0024	"swelling"	English
+^thousand$	θ aʊ z n̩ d	1	U+005E U+0074 U+0068 U+006F U+0075 U+0073 U+0061 U+006E U+0064 U+0024	"thousand"	English
+^threaten$	θ r ɛ t n̩	1	U+005E U+0074 U+0068 U+0072 U+0065 U+0061 U+0074 U+0065 U+006E U+0024	"threaten"	English
+^tomorrow$	t ə m ɒ r əʊ	1	U+005E U+0074 U+006F U+006D U+006F U+0072 U+0072 U+006F U+0077 U+0024	"tomorrow"	English
+^trousers$	t r aʊ z ə z	1	U+005E U+0074 U+0072 U+006F U+0075 U+0073 U+0065 U+0072 U+0073 U+0024	"trousers"	English
+^workshop$	w ɜː k ʃ ɒ p	1	U+005E U+0077 U+006F U+0072 U+006B U+0073 U+0068 U+006F U+0070 U+0024	"workshop"	English
+^wrinkled$	r ɪ ŋ k l̩ d	1	U+005E U+0077 U+0072 U+0069 U+006E U+006B U+006C U+0065 U+0064 U+0024	"wrinkled"	English
+^(sea)gull$	g ʌ l	1	U+005E U+0028 U+0073 U+0065 U+0061 U+0029 U+0067 U+0075 U+006C U+006C U+0024	"(sea)gull"	English
+^Wednesday$	w ɛ n z d ɪ	1	U+005E U+0057 U+0065 U+0064 U+006E U+0065 U+0073 U+0064 U+0061 U+0079 U+0024	"Wednesday"	English
+^aeroplane$	ɛə r ə p l eɪ n	1	U+005E U+0061 U+0065 U+0072 U+006F U+0070 U+006C U+0061 U+006E U+0065 U+0024	"aeroplane"	English
+^afternoon$	ɑː f t ə n uː n	1	U+005E U+0061 U+0066 U+0074 U+0065 U+0072 U+006E U+006F U+006F U+006E U+0024	"afternoon"	English
+^alligator$	æ l ɪ g eɪ t ə ɹ	1	U+005E U+0061 U+006C U+006C U+0069 U+0067 U+0061 U+0074 U+006F U+0072 U+0024	"alligator"	English
+^beautiful$	b j uː t ə f ʊ l	1	U+005E U+0062 U+0065 U+0061 U+0075 U+0074 U+0069 U+0066 U+0075 U+006C U+0024	"beautiful"	English
+^beginning$	b ɪ g ɪ n ɪ ŋ	1	U+005E U+0062 U+0065 U+0067 U+0069 U+006E U+006E U+0069 U+006E U+0067 U+0024	"beginning"	English
+^boomerang$	b uː m ə r æ ŋ	1	U+005E U+0062 U+006F U+006F U+006D U+0065 U+0072 U+0061 U+006E U+0067 U+0024	"boomerang"	English
+^breakfast$	b r ɛ k f ə s t	1	U+005E U+0062 U+0072 U+0065 U+0061 U+006B U+0066 U+0061 U+0073 U+0074 U+0024	"breakfast"	English
+^butterfly$	b ʌ t ə f l aɪ	1	U+005E U+0062 U+0075 U+0074 U+0074 U+0065 U+0072 U+0066 U+006C U+0079 U+0024	"butterfly"	English
+^carpenter$	k ɑː p ə n t ə ɹ	1	U+005E U+0063 U+0061 U+0072 U+0070 U+0065 U+006E U+0074 U+0065 U+0072 U+0024	"carpenter"	English
+^centipede$	s ɛ n t ɪ p iː d	1	U+005E U+0063 U+0065 U+006E U+0074 U+0069 U+0070 U+0065 U+0064 U+0065 U+0024	"centipede"	English
+^chameleon$	k ə m iː l j ə n	1	U+005E U+0063 U+0068 U+0061 U+006D U+0065 U+006C U+0065 U+006F U+006E U+0024	"chameleon"	English
+^chieftain$	tʃ iː f t ə n	1	U+005E U+0063 U+0068 U+0069 U+0065 U+0066 U+0074 U+0061 U+0069 U+006E U+0024	"chieftain"	English
+^cigarette$	s ɪ g ə r ɛ t	1	U+005E U+0063 U+0069 U+0067 U+0061 U+0072 U+0065 U+0074 U+0074 U+0065 U+0024	"cigarette"	English
+^cockroach$	k ɒ k r əʊ tʃ	1	U+005E U+0063 U+006F U+0063 U+006B U+0072 U+006F U+0061 U+0063 U+0068 U+0024	"cockroach"	English
+^come_back$	k ʌ m _ b æ k	1	U+005E U+0063 U+006F U+006D U+0065 U+005F U+0062 U+0061 U+0063 U+006B U+0024	"come_back"	English
+^cormorant$	k ɔː m ə r ə n t	1	U+005E U+0063 U+006F U+0072 U+006D U+006F U+0072 U+0061 U+006E U+0074 U+0024	"cormorant"	English
+^crocodile$	k r ɒ k ə d aɪ l	1	U+005E U+0063 U+0072 U+006F U+0063 U+006F U+0064 U+0069 U+006C U+0065 U+0024	"crocodile"	English
+^cultivate$	k ʌ l t ɪ v eɪ t	1	U+005E U+0063 U+0075 U+006C U+0074 U+0069 U+0076 U+0061 U+0074 U+0065 U+0024	"cultivate"	English
+^defendant$	d ɪ f ɛ n d ə n t	1	U+005E U+0064 U+0065 U+0066 U+0065 U+006E U+0064 U+0061 U+006E U+0074 U+0024	"defendant"	English
+^difficult$	d ɪ f ɪ k ə l t	1	U+005E U+0064 U+0069 U+0066 U+0066 U+0069 U+0063 U+0075 U+006C U+0074 U+0024	"difficult"	English
+^disappear$	d ɪ s ə p ɪə ɹ	1	U+005E U+0064 U+0069 U+0073 U+0061 U+0070 U+0070 U+0065 U+0061 U+0072 U+0024	"disappear"	English
+^expensive$	ɪ k s p ɛ n s ɪ v	1	U+005E U+0065 U+0078 U+0070 U+0065 U+006E U+0073 U+0069 U+0076 U+0065 U+0024	"expensive"	English
+^fireplace$	f aɪ ə p l eɪ s	1	U+005E U+0066 U+0069 U+0072 U+0065 U+0070 U+006C U+0061 U+0063 U+0065 U+0024	"fireplace"	English
+^fisherman$	f ɪ ʃ ə m ə n	1	U+005E U+0066 U+0069 U+0073 U+0068 U+0065 U+0072 U+006D U+0061 U+006E U+0024	"fisherman"	English
+^footprint$	f ʊ t p r ɪ n t	1	U+005E U+0066 U+006F U+006F U+0074 U+0070 U+0072 U+0069 U+006E U+0074 U+0024	"footprint"	English
+^give_back$	g ɪ v _ b æ k	1	U+005E U+0067 U+0069 U+0076 U+0065 U+005F U+0062 U+0061 U+0063 U+006B U+0024	"give_back"	English
+^high_tide$	h aɪ _ t aɪ d	1	U+005E U+0068 U+0069 U+0067 U+0068 U+005F U+0074 U+0069 U+0064 U+0065 U+0024	"high_tide"	English
+^how_many?$	h aʊ _ m ɛ n ɪ	1	U+005E U+0068 U+006F U+0077 U+005F U+006D U+0061 U+006E U+0079 U+003F U+0024	"how_many?"	English
+^how_much?$	h aʊ _ m ʌ tʃ	1	U+005E U+0068 U+006F U+0077 U+005F U+006D U+0075 U+0063 U+0068 U+003F U+0024	"how_much?"	English
+^injection$	ɪ n dʒ ɛ k ʃ n̩	1	U+005E U+0069 U+006E U+006A U+0065 U+0063 U+0074 U+0069 U+006F U+006E U+0024	"injection"	English
+^intention$	ɪ n t ɛ n ʃ n̩	1	U+005E U+0069 U+006E U+0074 U+0065 U+006E U+0074 U+0069 U+006F U+006E U+0024	"intention"	English
+^lightning$	l aɪ t n ɪ ŋ	1	U+005E U+006C U+0069 U+0067 U+0068 U+0074 U+006E U+0069 U+006E U+0067 U+0024	"lightning"	English
+^livestock$	l aɪ v s t ɒ k	1	U+005E U+006C U+0069 U+0076 U+0065 U+0073 U+0074 U+006F U+0063 U+006B U+0024	"livestock"	English
+^make_love$	m eɪ k _ l ʌ v	1	U+005E U+006D U+0061 U+006B U+0065 U+005F U+006C U+006F U+0076 U+0065 U+0024	"make_love"	English
+^necessity$	n ɪ s ɛ s ə t ɪ	1	U+005E U+006E U+0065 U+0063 U+0065 U+0073 U+0073 U+0069 U+0074 U+0079 U+0024	"necessity"	English
+^neighbour$	n eɪ b ə ɹ	1	U+005E U+006E U+0065 U+0069 U+0067 U+0068 U+0062 U+006F U+0075 U+0072 U+0024	"neighbour"	English
+^newspaper$	n j uː s p eɪ p ə ɹ	1	U+005E U+006E U+0065 U+0077 U+0073 U+0070 U+0061 U+0070 U+0065 U+0072 U+0024	"newspaper"	English
+^old_woman$	əʊ l d _ w ʊ m ə n	1	U+005E U+006F U+006C U+0064 U+005F U+0077 U+006F U+006D U+0061 U+006E U+0024	"old_woman"	English
+^outrigger$	aʊ t r ɪ g ə ɹ	1	U+005E U+006F U+0075 U+0074 U+0072 U+0069 U+0067 U+0067 U+0065 U+0072 U+0024	"outrigger"	English
+^pitchfork$	p ɪ tʃ f ɔː k	1	U+005E U+0070 U+0069 U+0074 U+0063 U+0068 U+0066 U+006F U+0072 U+006B U+0024	"pitchfork"	English
+^plaintiff$	p l eɪ n t ɪ f	1	U+005E U+0070 U+006C U+0061 U+0069 U+006E U+0074 U+0069 U+0066 U+0066 U+0024	"plaintiff"	English
+^precipice$	p r ɛ s ɪ p ɪ s	1	U+005E U+0070 U+0072 U+0065 U+0063 U+0069 U+0070 U+0069 U+0063 U+0065 U+0024	"precipice"	English
+^president$	p r ɛ z ɪ d ə n t	1	U+005E U+0070 U+0072 U+0065 U+0073 U+0069 U+0064 U+0065 U+006E U+0074 U+0024	"president"	English
+^ridgepole$	r ɪ dʒ p əʊ l	1	U+005E U+0072 U+0069 U+0064 U+0067 U+0065 U+0070 U+006F U+006C U+0065 U+0024	"ridgepole"	English
+^sacrifice$	s æ k r ɪ f aɪ s	1	U+005E U+0073 U+0061 U+0063 U+0072 U+0069 U+0066 U+0069 U+0063 U+0065 U+0024	"sacrifice"	English
+^shoemaker$	ʃ uː m eɪ k ə ɹ	1	U+005E U+0073 U+0068 U+006F U+0065 U+006D U+0061 U+006B U+0065 U+0072 U+0024	"shoemaker"	English
+^sometimes$	s ʌ m t aɪ m z	1	U+005E U+0073 U+006F U+006D U+0065 U+0074 U+0069 U+006D U+0065 U+0073 U+0024	"sometimes"	English
+^surprised$	s ə p r aɪ z d	1	U+005E U+0073 U+0075 U+0072 U+0070 U+0072 U+0069 U+0073 U+0065 U+0064 U+0024	"surprised"	English
+^surrender$	s ə r ɛ n d ə ɹ	1	U+005E U+0073 U+0075 U+0072 U+0072 U+0065 U+006E U+0064 U+0065 U+0072 U+0024	"surrender"	English
+^telephone$	t ɛ l ɪ f əʊ n	1	U+005E U+0074 U+0065 U+006C U+0065 U+0070 U+0068 U+006F U+006E U+0065 U+0024	"telephone"	English
+^temple(s)$	t ɛ m p l̩	1	U+005E U+0074 U+0065 U+006D U+0070 U+006C U+0065 U+0028 U+0073 U+0029 U+0024	"temple(s)"	English
+^testicles$	t ɛ s t ɪ k l̩ z	1	U+005E U+0074 U+0065 U+0073 U+0074 U+0069 U+0063 U+006C U+0065 U+0073 U+0024	"testicles"	English
+^wake_(up)$	w eɪ k	1	U+005E U+0077 U+0061 U+006B U+0065 U+005F U+0028 U+0075 U+0070 U+0029 U+0024	"wake_(up)"	English
+^waterfall$	w ɔː t ə f ɔː l	1	U+005E U+0077 U+0061 U+0074 U+0065 U+0072 U+0066 U+0061 U+006C U+006C U+0024	"waterfall"	English
+^whetstone$	w ɛ t s t əʊ n	1	U+005E U+0077 U+0068 U+0065 U+0074 U+0073 U+0074 U+006F U+006E U+0065 U+0024	"whetstone"	English
+^whirlpool$	w ɜː l p uː l	1	U+005E U+0077 U+0068 U+0069 U+0072 U+006C U+0070 U+006F U+006F U+006C U+0024	"whirlpool"	English
+^yesterday$	j ɛ s t ə d ɪ	1	U+005E U+0079 U+0065 U+0073 U+0074 U+0065 U+0072 U+0064 U+0061 U+0079 U+0024	"yesterday"	English
+^(sting)ray$	r eɪ	1	U+005E U+0028 U+0073 U+0074 U+0069 U+006E U+0067 U+0029 U+0072 U+0061 U+0079 U+0024	"(sting)ray"	English
+^adjudicate$	ə dʒ uː d ɪ k eɪ t	1	U+005E U+0061 U+0064 U+006A U+0075 U+0064 U+0069 U+0063 U+0061 U+0074 U+0065 U+0024	"adjudicate"	English
+^astonished$	ə s t ɒ n ɪ ʃ t	1	U+005E U+0061 U+0073 U+0074 U+006F U+006E U+0069 U+0073 U+0068 U+0065 U+0064 U+0024	"astonished"	English
+^battle-axe$	b æ t l̩ æ k s	1	U+005E U+0062 U+0061 U+0074 U+0074 U+006C U+0065 U+002D U+0061 U+0078 U+0065 U+0024	"battle-axe"	English
+^billy-goat$	b ɪ l ɪ g əʊ t	1	U+005E U+0062 U+0069 U+006C U+006C U+0079 U+002D U+0067 U+006F U+0061 U+0074 U+0024	"billy-goat"	English
+^blacksmith$	b l æ k s m ɪ θ	1	U+005E U+0062 U+006C U+0061 U+0063 U+006B U+0073 U+006D U+0069 U+0074 U+0068 U+0024	"blacksmith"	English
+^collarbone$	k ɒ l ə b əʊ n	1	U+005E U+0063 U+006F U+006C U+006C U+0061 U+0072 U+0062 U+006F U+006E U+0065 U+0024	"collarbone"	English
+^descendant$	d ɪ s ɛ n d ə n t	1	U+005E U+0064 U+0065 U+0073 U+0063 U+0065 U+006E U+0064 U+0061 U+006E U+0074 U+0024	"descendant"	English
+^earthquake$	ɜː θ k w eɪ k	1	U+005E U+0065 U+0061 U+0072 U+0074 U+0068 U+0071 U+0075 U+0061 U+006B U+0065 U+0024	"earthquake"	English
+^extinguish$	ɪ k s t ɪ ŋ g w ɪ ʃ	1	U+005E U+0065 U+0078 U+0074 U+0069 U+006E U+0067 U+0075 U+0069 U+0073 U+0068 U+0024	"extinguish"	English
+^government$	g ʌ v n̩ m ə n t	1	U+005E U+0067 U+006F U+0076 U+0065 U+0072 U+006E U+006D U+0065 U+006E U+0074 U+0024	"government"	English
+^grandchild$	g r æ n tʃ aɪ l d	1	U+005E U+0067 U+0072 U+0061 U+006E U+0064 U+0063 U+0068 U+0069 U+006C U+0064 U+0024	"grandchild"	English
+^intestines$	ɪ n t ɛ s t ɪ n z	1	U+005E U+0069 U+006E U+0074 U+0065 U+0073 U+0074 U+0069 U+006E U+0065 U+0073 U+0024	"intestines"	English
+^motorcycle$	m əʊ t ə s aɪ k l̩	1	U+005E U+006D U+006F U+0074 U+006F U+0072 U+0063 U+0079 U+0063 U+006C U+0065 U+0024	"motorcycle"	English
+^prostitute$	p r ɒ s t ɪ t j uː t	1	U+005E U+0070 U+0072 U+006F U+0073 U+0074 U+0069 U+0074 U+0075 U+0074 U+0065 U+0024	"prostitute"	English
+^pubic_hair$	p j uː b ɪ k _ h ɛə ɹ	1	U+005E U+0070 U+0075 U+0062 U+0069 U+0063 U+005F U+0068 U+0061 U+0069 U+0072 U+0024	"pubic_hair"	English
+^punishment$	p ʌ n ɪ ʃ m ə n t	1	U+005E U+0070 U+0075 U+006E U+0069 U+0073 U+0068 U+006D U+0065 U+006E U+0074 U+0024	"punishment"	English
+^son-in-law$	s ʌ n ɪ n l ɔː	1	U+005E U+0073 U+006F U+006E U+002D U+0069 U+006E U+002D U+006C U+0061 U+0077 U+0024	"son-in-law"	English
+^spread_out$	s p r ɛ d _ aʊ t	1	U+005E U+0073 U+0070 U+0072 U+0065 U+0061 U+0064 U+005F U+006F U+0075 U+0074 U+0024	"spread_out"	English
+^stepfather$	s t ɛ p f ɑː ð ə ɹ	1	U+005E U+0073 U+0074 U+0065 U+0070 U+0066 U+0061 U+0074 U+0068 U+0065 U+0072 U+0024	"stepfather"	English
+^stepmother$	s t ɛ p m ʌ ð ə ɹ	1	U+005E U+0073 U+0074 U+0065 U+0070 U+006D U+006F U+0074 U+0068 U+0065 U+0072 U+0024	"stepmother"	English
+^sugar_cane$	ʃ ʊ g ə ɹ _ k eɪ n	1	U+005E U+0073 U+0075 U+0067 U+0061 U+0072 U+005F U+0063 U+0061 U+006E U+0065 U+0024	"sugar_cane"	English
+^television$	t ɛ l ɪ v ɪ ʒ n̩	1	U+005E U+0074 U+0065 U+006C U+0065 U+0076 U+0069 U+0073 U+0069 U+006F U+006E U+0024	"television"	English
+^tree_trunk$	t r iː _ t r ʌ ŋ k	1	U+005E U+0074 U+0072 U+0065 U+0065 U+005F U+0074 U+0072 U+0075 U+006E U+006B U+0024	"tree_trunk"	English
+^understand$	ʌ n d ə s t æ n d	1	U+005E U+0075 U+006E U+0064 U+0065 U+0072 U+0073 U+0074 U+0061 U+006E U+0064 U+0024	"understand"	English
+^vegetables$	v ɛ dʒ t ə b l̩ z	1	U+005E U+0076 U+0065 U+0067 U+0065 U+0074 U+0061 U+0062 U+006C U+0065 U+0073 U+0024	"vegetables"	English
+^(be)_silent$	s aɪ l ə n t	1	U+005E U+0028 U+0062 U+0065 U+0029 U+005F U+0073 U+0069 U+006C U+0065 U+006E U+0074 U+0024	"(be)_silent"	English
+^(good)_luck$	l ʌ k	1	U+005E U+0028 U+0067 U+006F U+006F U+0064 U+0029 U+005F U+006C U+0075 U+0063 U+006B U+0024	"(good)_luck"	English
+^electricity$	ɪ l ɛ k t r ɪ s ə t ɪ	1	U+005E U+0065 U+006C U+0065 U+0063 U+0074 U+0072 U+0069 U+0063 U+0069 U+0074 U+0079 U+0024	"electricity"	English
+^fishing_net$	f ɪ ʃ ɪ ŋ _ n ɛ t	1	U+005E U+0066 U+0069 U+0073 U+0068 U+0069 U+006E U+0067 U+005F U+006E U+0065 U+0074 U+0024	"fishing_net"	English
+^grandfather$	g r æ n d f ɑː ð ə ɹ	1	U+005E U+0067 U+0072 U+0061 U+006E U+0064 U+0066 U+0061 U+0074 U+0068 U+0065 U+0072 U+0024	"grandfather"	English
+^grandmother$	g r æ n m ʌ ð ə ɹ	1	U+005E U+0067 U+0072 U+0061 U+006E U+0064 U+006D U+006F U+0074 U+0068 U+0065 U+0072 U+0024	"grandmother"	English
+^grandparent$	g r æ n p ɛə r ə n t	1	U+005E U+0067 U+0072 U+0061 U+006E U+0064 U+0070 U+0061 U+0072 U+0065 U+006E U+0074 U+0024	"grandparent"	English
+^grass-skirt$	g r ɑː s _ s k ɜː t	1	U+005E U+0067 U+0072 U+0061 U+0073 U+0073 U+002D U+0073 U+006B U+0069 U+0072 U+0074 U+0024	"grass-skirt"	English
+^grasshopper$	g r ɑː s h ɒ p ə ɹ	1	U+005E U+0067 U+0072 U+0061 U+0073 U+0073 U+0068 U+006F U+0070 U+0070 U+0065 U+0072 U+0024	"grasshopper"	English
+^immediately$	ɪ m iː d j ə t l ɪ	1	U+005E U+0069 U+006D U+006D U+0065 U+0064 U+0069 U+0061 U+0074 U+0065 U+006C U+0079 U+0024	"immediately"	English
+^in_front_of$	ɪ n _ f r ʌ n t _ ɒ v	1	U+005E U+0069 U+006E U+005F U+0066 U+0072 U+006F U+006E U+0074 U+005F U+006F U+0066 U+0024	"in_front_of"	English
+^petrol(eum)$	p ɛ t r ə l	1	U+005E U+0070 U+0065 U+0074 U+0072 U+006F U+006C U+0028 U+0065 U+0075 U+006D U+0029 U+0024	"petrol(eum)"	English
+^screwdriver$	s k r uː d r aɪ v ə ɹ	1	U+005E U+0073 U+0063 U+0072 U+0065 U+0077 U+0064 U+0072 U+0069 U+0076 U+0065 U+0072 U+0024	"screwdriver"	English
+^turn_around$	t ɜː n _ ə r aʊ n d	1	U+005E U+0074 U+0075 U+0072 U+006E U+005F U+0061 U+0072 U+006F U+0075 U+006E U+0064 U+0024	"turn_around"	English
+^(finger)nail$	n eɪ l	1	U+005E U+0028 U+0066 U+0069 U+006E U+0067 U+0065 U+0072 U+0029 U+006E U+0061 U+0069 U+006C U+0024	"(finger)nail"	English
+^(tree-)stump$	s t ʌ m p	1	U+005E U+0028 U+0074 U+0072 U+0065 U+0065 U+002D U+0029 U+0073 U+0074 U+0075 U+006D U+0070 U+0024	"(tree-)stump"	English
+^circumcision$	s ɜː k ə m s ɪ ʒ n̩	1	U+005E U+0063 U+0069 U+0072 U+0063 U+0075 U+006D U+0063 U+0069 U+0073 U+0069 U+006F U+006E U+0024	"circumcision"	English
+^fishing_line$	f ɪ ʃ ɪ ŋ _ l aɪ n	1	U+005E U+0066 U+0069 U+0073 U+0068 U+0069 U+006E U+0067 U+005F U+006C U+0069 U+006E U+0065 U+0024	"fishing_line"	English
+^handkerchief$	h æ ŋ k ə tʃ iː f	1	U+005E U+0068 U+0061 U+006E U+0064 U+006B U+0065 U+0072 U+0063 U+0068 U+0069 U+0065 U+0066 U+0024	"handkerchief"	English
+^number_plate$	n ʌ m b ə ɹ _ p l eɪ t	1	U+005E U+006E U+0075 U+006D U+0062 U+0065 U+0072 U+005F U+0070 U+006C U+0061 U+0074 U+0065 U+0024	"number_plate"	English
+^stepdaughter$	s t ɛ p d ɔː t ə ɹ	1	U+005E U+0073 U+0074 U+0065 U+0070 U+0064 U+0061 U+0075 U+0067 U+0068 U+0074 U+0065 U+0072 U+0024	"stepdaughter"	English
+^sweet_potato$	s w iː t _ p ə t eɪ t əʊ	1	U+005E U+0073 U+0077 U+0065 U+0065 U+0074 U+005F U+0070 U+006F U+0074 U+0061 U+0074 U+006F U+0024	"sweet_potato"	English
+^father-in-law$	f ɑː ð ə r ɪ n l ɔː	1	U+005E U+0066 U+0061 U+0074 U+0068 U+0065 U+0072 U+002D U+0069 U+006E U+002D U+006C U+0061 U+0077 U+0024	"father-in-law"	English
+^granddaughter$	g r æ n d ɔː t ə ɹ	1	U+005E U+0067 U+0072 U+0061 U+006E U+0064 U+0064 U+0061 U+0075 U+0067 U+0068 U+0074 U+0065 U+0072 U+0024	"granddaughter"	English
+^molar_(tooth)$	m əʊ l ə ɹ	1	U+005E U+006D U+006F U+006C U+0061 U+0072 U+005F U+0028 U+0074 U+006F U+006F U+0074 U+0068 U+0029 U+0024	"molar_(tooth)"	English
+^mother-in-law$	m ʌ ð ə r ɪ n l ɔː	1	U+005E U+006D U+006F U+0074 U+0068 U+0065 U+0072 U+002D U+0069 U+006E U+002D U+006C U+0061 U+0077 U+0024	"mother-in-law"	English
+^shoulderblade$	ʃ əʊ l d ə ɹ b l eɪ d	1	U+005E U+0073 U+0068 U+006F U+0075 U+006C U+0064 U+0065 U+0072 U+0062 U+006C U+0061 U+0064 U+0065 U+0024	"shoulderblade"	English
+^chili_(pepper)$	tʃ ɪ l ɪ	1	U+005E U+0063 U+0068 U+0069 U+006C U+0069 U+005F U+0028 U+0070 U+0065 U+0070 U+0070 U+0065 U+0072 U+0029 U+0024	"chili_(pepper)"	English
+^lightning_bolt$	l aɪ t n ɪ ŋ _ b əʊ l t	1	U+005E U+006C U+0069 U+0067 U+0068 U+0074 U+006E U+0069 U+006E U+0067 U+005F U+0062 U+006F U+006C U+0074 U+0024	"lightning_bolt"	English
+^daughter-in-law$	d ɔː t ə r ɪ n l ɔː	1	U+005E U+0064 U+0061 U+0075 U+0067 U+0068 U+0074 U+0065 U+0072 U+002D U+0069 U+006E U+002D U+006C U+0061 U+0077 U+0024	"daughter-in-law"	English
+^driving_licence$	d r aɪ v ɪ ŋ _ l aɪ s ə n s	1	U+005E U+0064 U+0072 U+0069 U+0076 U+0069 U+006E U+0067 U+005F U+006C U+0069 U+0063 U+0065 U+006E U+0063 U+0065 U+0024	"driving_licence"	English
+^northern_lights$	n ɔː ð n̩ _ l aɪ t s	1	U+005E U+006E U+006F U+0072 U+0074 U+0068 U+0065 U+0072 U+006E U+005F U+006C U+0069 U+0067 U+0068 U+0074 U+0073 U+0024	"northern_lights"	English
+^threshing-floor$	θ r ɛ ʃ ɪ ŋ f l ɔː ɹ	1	U+005E U+0074 U+0068 U+0072 U+0065 U+0073 U+0068 U+0069 U+006E U+0067 U+002D U+0066 U+006C U+006F U+006F U+0072 U+0024	"threshing-floor"	English
+^birth_certificate$	b ɜː θ _ s ə t ɪ f ɪ k ə t	1	U+005E U+0062 U+0069 U+0072 U+0074 U+0068 U+005F U+0063 U+0065 U+0072 U+0074 U+0069 U+0066 U+0069 U+0063 U+0061 U+0074 U+0065 U+0024	"birth_certificate"	English

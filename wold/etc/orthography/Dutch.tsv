@@ -1,0 +1,1486 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	Languages
+^as$	ɑ s	2	U+005E U+0061 U+0073 U+0024	"as"	Dutch
+^eb$	ɛ p	1	U+005E U+0065 U+0062 U+0024	"eb"	Dutch
+^ei$	ɛi	1	U+005E U+0065 U+0069 U+0024	"ei"	Dutch
+^en$	ɛ n	1	U+005E U+0065 U+006E U+0024	"en"	Dutch
+^ik$	ɪ k	1	U+005E U+0069 U+006B U+0024	"ik"	Dutch
+^in$	ɪ n	3	U+005E U+0069 U+006E U+0024	"in"	Dutch
+^ja$	j aː	1	U+005E U+006A U+0061 U+0024	"ja"	Dutch
+^na$	n aː	1	U+005E U+006E U+0061 U+0024	"na"	Dutch
+^nu$	n yː	1	U+005E U+006E U+0075 U+0024	"nu"	Dutch
+^of$	ɔ f	1	U+005E U+006F U+0066 U+0024	"of"	Dutch
+^op$	ɔ p	1	U+005E U+006F U+0070 U+0024	"op"	Dutch
+^os$	ɔ s	1	U+005E U+006F U+0073 U+0024	"os"	Dutch
+^te$	t ə	1	U+005E U+0074 U+0065 U+0024	"te"	Dutch
+^wc$	ʋ eɪ s eɪ	1	U+005E U+0077 U+0063 U+0024	"wc"	Dutch
+^aap$	aː p	1	U+005E U+0061 U+0061 U+0070 U+0024	"aap"	Dutch
+^aas$	aː s	1	U+005E U+0061 U+0061 U+0073 U+0024	"aas"	Dutch
+^als$	ɑ l s	1	U+005E U+0061 U+006C U+0073 U+0024	"als"	Dutch
+^arm$	ɑ r m	2	U+005E U+0061 U+0072 U+006D U+0024	"arm"	Dutch
+^bal$	b ɑ l	1	U+005E U+0062 U+0061 U+006C U+0024	"bal"	Dutch
+^bed$	b ɛ t	1	U+005E U+0062 U+0065 U+0064 U+0024	"bed"	Dutch
+^bek$	b ɛ k	1	U+005E U+0062 U+0065 U+006B U+0024	"bek"	Dutch
+^bij$	b ɛi	1	U+005E U+0062 U+0069 U+006A U+0024	"bij"	Dutch
+^bok$	b ɔ k	1	U+005E U+0062 U+006F U+006B U+0024	"bok"	Dutch
+^bol$	b ɔ l	1	U+005E U+0062 U+006F U+006C U+0024	"bol"	Dutch
+^bom$	b ɔ m	1	U+005E U+0062 U+006F U+006D U+0024	"bom"	Dutch
+^bos$	b ɔ s	1	U+005E U+0062 U+006F U+0073 U+0024	"bos"	Dutch
+^bot$	b ɔ t	2	U+005E U+0062 U+006F U+0074 U+0024	"bot"	Dutch
+^bus$	b ʏ s	1	U+005E U+0062 U+0075 U+0073 U+0024	"bus"	Dutch
+^dag$	d ɑ x	2	U+005E U+0064 U+0061 U+0067 U+0024	"dag"	Dutch
+^dak$	d ɑ k	1	U+005E U+0064 U+0061 U+006B U+0024	"dak"	Dutch
+^dal$	d ɑ l	1	U+005E U+0064 U+0061 U+006C U+0024	"dal"	Dutch
+^den$	d ɛ n	1	U+005E U+0064 U+0065 U+006E U+0024	"den"	Dutch
+^die$	d iː	1	U+005E U+0064 U+0069 U+0065 U+0024	"die"	Dutch
+^dij$	d ɛi	1	U+005E U+0064 U+0069 U+006A U+0024	"dij"	Dutch
+^dik$	d ɪ k	1	U+005E U+0064 U+0069 U+006B U+0024	"dik"	Dutch
+^dom$	d ɔ m	1	U+005E U+0064 U+006F U+006D U+0024	"dom"	Dutch
+^dun$	d ʏ n	1	U+005E U+0064 U+0075 U+006E U+0024	"dun"	Dutch
+^eed$	eː t	1	U+005E U+0065 U+0065 U+0064 U+0024	"eed"	Dutch
+^een$	eː n	1	U+005E U+0065 U+0065 U+006E U+0024	"een"	Dutch
+^eik$	ɛi k	1	U+005E U+0065 U+0069 U+006B U+0024	"eik"	Dutch
+^elf$	ɛ l f	2	U+005E U+0065 U+006C U+0066 U+0024	"elf"	Dutch
+^els$	ɛ l s	1	U+005E U+0065 U+006C U+0073 U+0024	"els"	Dutch
+^fee$	f eː	1	U+005E U+0066 U+0065 U+0065 U+0024	"fee"	Dutch
+^gat$	x ɑ t	1	U+005E U+0067 U+0061 U+0074 U+0024	"gat"	Dutch
+^gek$	x ɛ k	1	U+005E U+0067 U+0065 U+006B U+0024	"gek"	Dutch
+^gif$	x ɪ f	1	U+005E U+0067 U+0069 U+0066 U+0024	"gif"	Dutch
+^god$	x ɔ t	1	U+005E U+0067 U+006F U+0064 U+0024	"god"	Dutch
+^hek$	h ɛ k	1	U+005E U+0068 U+0065 U+006B U+0024	"hek"	Dutch
+^hel$	h ɛ l	2	U+005E U+0068 U+0065 U+006C U+0024	"hel"	Dutch
+^hen$	h ɛ n	1	U+005E U+0068 U+0065 U+006E U+0024	"hen"	Dutch
+^het$	ə t	2	U+005E U+0068 U+0065 U+0074 U+0024	"het"	Dutch
+^hij$	h ɛi	2	U+005E U+0068 U+0069 U+006A U+0024	"hij"	Dutch
+^hoe$	h uː	1	U+005E U+0068 U+006F U+0065 U+0024	"hoe"	Dutch
+^hof$	h ɔ f	1	U+005E U+0068 U+006F U+0066 U+0024	"hof"	Dutch
+^hut$	h ʏ t	1	U+005E U+0068 U+0075 U+0074 U+0024	"hut"	Dutch
+^ijs$	ɛi s	1	U+005E U+0069 U+006A U+0073 U+0024	"ijs"	Dutch
+^jas$	j ɑ s	2	U+005E U+006A U+0061 U+0073 U+0024	"jas"	Dutch
+^jij$	j ɛi	1	U+005E U+006A U+0069 U+006A U+0024	"jij"	Dutch
+^juk$	j ʏ k	1	U+005E U+006A U+0075 U+006B U+0024	"juk"	Dutch
+^kam$	k ɑ m	1	U+005E U+006B U+0061 U+006D U+0024	"kam"	Dutch
+^kar$	k ɑ r	1	U+005E U+006B U+0061 U+0072 U+0024	"kar"	Dutch
+^kat$	k ɑ t	1	U+005E U+006B U+0061 U+0074 U+0024	"kat"	Dutch
+^kin$	k ɪ n	1	U+005E U+006B U+0069 U+006E U+0024	"kin"	Dutch
+^kip$	k ɪ p	1	U+005E U+006B U+0069 U+0070 U+0024	"kip"	Dutch
+^koe$	k uː	1	U+005E U+006B U+006F U+0065 U+0024	"koe"	Dutch
+^kom$	k ɔ m	1	U+005E U+006B U+006F U+006D U+0024	"kom"	Dutch
+^kop$	k ɔ p	1	U+005E U+006B U+006F U+0070 U+0024	"kop"	Dutch
+^lam$	l ɑ m	2	U+005E U+006C U+0061 U+006D U+0024	"lam"	Dutch
+^lip$	l ɪ p	1	U+005E U+006C U+0069 U+0070 U+0024	"lip"	Dutch
+^lof$	l ɔ f	1	U+005E U+006C U+006F U+0066 U+0024	"lof"	Dutch
+^lui$	l œy	1	U+005E U+006C U+0075 U+0069 U+0024	"lui"	Dutch
+^man$	m ɑ n	3	U+005E U+006D U+0061 U+006E U+0024	"man"	Dutch
+^mat$	m ɑ t	1	U+005E U+006D U+0061 U+0074 U+0024	"mat"	Dutch
+^mes$	m ɛ s	2	U+005E U+006D U+0065 U+0073 U+0024	"mes"	Dutch
+^met$	m ɛ t	1	U+005E U+006D U+0065 U+0074 U+0024	"met"	Dutch
+^moe$	m uː	1	U+005E U+006D U+006F U+0065 U+0024	"moe"	Dutch
+^mug$	m ʏ x	1	U+005E U+006D U+0075 U+0067 U+0024	"mug"	Dutch
+^nat$	n ɑ t	1	U+005E U+006E U+0061 U+0074 U+0024	"nat"	Dutch
+^nee$	n eː	1	U+005E U+006E U+0065 U+0065 U+0024	"nee"	Dutch
+^nek$	n ɛ k	1	U+005E U+006E U+0065 U+006B U+0024	"nek"	Dutch
+^nok$	n ɔ k	1	U+005E U+006E U+006F U+006B U+0024	"nok"	Dutch
+^nul$	n ʏ l	1	U+005E U+006E U+0075 U+006C U+0024	"nul"	Dutch
+^oog$	oː x	1	U+005E U+006F U+006F U+0067 U+0024	"oog"	Dutch
+^ooi$	oː j	1	U+005E U+006F U+006F U+0069 U+0024	"ooi"	Dutch
+^oom$	oː m	3	U+005E U+006F U+006F U+006D U+0024	"oom"	Dutch
+^oor$	oː r	1	U+005E U+006F U+006F U+0072 U+0024	"oor"	Dutch
+^oud$	ɑu t	1	U+005E U+006F U+0075 U+0064 U+0024	"oud"	Dutch
+^pad$	p ɑ t	1	U+005E U+0070 U+0061 U+0064 U+0024	"pad"	Dutch
+^pan$	p ɑ n	1	U+005E U+0070 U+0061 U+006E U+0024	"pan"	Dutch
+^pen$	p ɛ n	1	U+005E U+0070 U+0065 U+006E U+0024	"pen"	Dutch
+^pil$	p ɪ l	1	U+005E U+0070 U+0069 U+006C U+0024	"pil"	Dutch
+^pin$	p ɪ n	1	U+005E U+0070 U+0069 U+006E U+0024	"pin"	Dutch
+^pot$	p ɔ t	1	U+005E U+0070 U+006F U+0074 U+0024	"pot"	Dutch
+^pus$	p ʏ s	1	U+005E U+0070 U+0075 U+0073 U+0024	"pus"	Dutch
+^ram$	r ɑ m	1	U+005E U+0072 U+0061 U+006D U+0024	"ram"	Dutch
+^rat$	r ɑ t	1	U+005E U+0072 U+0061 U+0074 U+0024	"rat"	Dutch
+^rib$	r ɪ p	1	U+005E U+0072 U+0069 U+0062 U+0024	"rib"	Dutch
+^rif$	r ɪ f	1	U+005E U+0072 U+0069 U+0066 U+0024	"rif"	Dutch
+^rog$	r ɔ x	1	U+005E U+0072 U+006F U+0067 U+0024	"rog"	Dutch
+^rok$	r ɔ k	1	U+005E U+0072 U+006F U+006B U+0024	"rok"	Dutch
+^rot$	r ɔ t	1	U+005E U+0072 U+006F U+0074 U+0024	"rot"	Dutch
+^rug$	r ʏ x	1	U+005E U+0072 U+0075 U+0067 U+0024	"rug"	Dutch
+^ruw$	r yː ʋ	2	U+005E U+0072 U+0075 U+0077 U+0024	"ruw"	Dutch
+^sap$	s ɑ p	1	U+005E U+0073 U+0061 U+0070 U+0024	"sap"	Dutch
+^sok$	s ɔ k	1	U+005E U+0073 U+006F U+006B U+0024	"sok"	Dutch
+^tak$	t ɑ k	1	U+005E U+0074 U+0061 U+006B U+0024	"tak"	Dutch
+^tin$	t ɪ n	1	U+005E U+0074 U+0069 U+006E U+0024	"tin"	Dutch
+^top$	t ɔ p	1	U+005E U+0074 U+006F U+0070 U+0024	"top"	Dutch
+^uil$	œy l	1	U+005E U+0075 U+0069 U+006C U+0024	"uil"	Dutch
+^uur$	yː r	1	U+005E U+0075 U+0075 U+0072 U+0024	"uur"	Dutch
+^val$	v ɑ l	1	U+005E U+0076 U+0061 U+006C U+0024	"val"	Dutch
+^vee$	v eː	1	U+005E U+0076 U+0065 U+0065 U+0024	"vee"	Dutch
+^ver$	v ɛ r	1	U+005E U+0076 U+0065 U+0072 U+0024	"ver"	Dutch
+^vet$	v ɛ t	1	U+005E U+0076 U+0065 U+0074 U+0024	"vet"	Dutch
+^vin$	v ɪ n	1	U+005E U+0076 U+0069 U+006E U+0024	"vin"	Dutch
+^vis$	v ɪ s	1	U+005E U+0076 U+0069 U+0073 U+0024	"vis"	Dutch
+^vlo$	v l oː	1	U+005E U+0076 U+006C U+006F U+0024	"vlo"	Dutch
+^vol$	v ɔ l	1	U+005E U+0076 U+006F U+006C U+0024	"vol"	Dutch
+^vos$	v ɔ s	1	U+005E U+0076 U+006F U+0073 U+0024	"vos"	Dutch
+^wat$	ʋ ɑ t	1	U+005E U+0077 U+0061 U+0074 U+0024	"wat"	Dutch
+^web$	ʋ ɛ p	1	U+005E U+0077 U+0065 U+0062 U+0024	"web"	Dutch
+^weg$	ʋ ɛ x	1	U+005E U+0077 U+0065 U+0067 U+0024	"weg"	Dutch
+^wet$	ʋ ɛ t	1	U+005E U+0077 U+0065 U+0074 U+0024	"wet"	Dutch
+^wie$	ʋ iː	1	U+005E U+0077 U+0069 U+0065 U+0024	"wie"	Dutch
+^wij$	ʋ ɛi	3	U+005E U+0077 U+0069 U+006A U+0024	"wij"	Dutch
+^wit$	ʋ ɪ t	1	U+005E U+0077 U+0069 U+0074 U+0024	"wit"	Dutch
+^wol$	ʋ ɔ l	1	U+005E U+0077 U+006F U+006C U+0024	"wol"	Dutch
+^yam$	j ɑ m	1	U+005E U+0079 U+0061 U+006D U+0024	"yam"	Dutch
+^zak$	z ɑ k	1	U+005E U+007A U+0061 U+006B U+0024	"zak"	Dutch
+^zee$	z eː	1	U+005E U+007A U+0065 U+0065 U+0024	"zee"	Dutch
+^zes$	z ɛ s	1	U+005E U+007A U+0065 U+0073 U+0024	"zes"	Dutch
+^zij$	z ɛi	3	U+005E U+007A U+0069 U+006A U+0024	"zij"	Dutch
+^zon$	z ɔ n	1	U+005E U+007A U+006F U+006E U+0024	"zon"	Dutch
+^acht$	ɑ x t	1	U+005E U+0061 U+0063 U+0068 U+0074 U+0024	"acht"	Dutch
+^ader$	aː d ə r	1	U+005E U+0061 U+0064 U+0065 U+0072 U+0024	"ader"	Dutch
+^alle$	ɑ l ə	1	U+005E U+0061 U+006C U+006C U+0065 U+0024	"alle"	Dutch
+^arts$	ɑ r t s	1	U+005E U+0061 U+0072 U+0074 U+0073 U+0024	"arts"	Dutch
+^auto$	ɑu t oː	1	U+005E U+0061 U+0075 U+0074 U+006F U+0024	"auto"	Dutch
+^baai$	b aː j	1	U+005E U+0062 U+0061 U+0061 U+0069 U+0024	"baai"	Dutch
+^baas$	b aː s	1	U+005E U+0062 U+0061 U+0061 U+0073 U+0024	"baas"	Dutch
+^baby$	b eː b iː	1	U+005E U+0062 U+0061 U+0062 U+0079 U+0024	"baby"	Dutch
+^balk$	b ɑ l k	1	U+005E U+0062 U+0061 U+006C U+006B U+0024	"balk"	Dutch
+^bank$	b ɑ ŋ k	1	U+005E U+0062 U+0061 U+006E U+006B U+0024	"bank"	Dutch
+^bast$	b ɑ s t	1	U+005E U+0062 U+0061 U+0073 U+0074 U+0024	"bast"	Dutch
+^been$	b eː n	1	U+005E U+0062 U+0065 U+0065 U+006E U+0024	"been"	Dutch
+^beer$	b eː r	1	U+005E U+0062 U+0065 U+0065 U+0072 U+0024	"beer"	Dutch
+^berg$	b ɛ r x	1	U+005E U+0062 U+0065 U+0072 U+0067 U+0024	"berg"	Dutch
+^berk$	b ɛ r k	1	U+005E U+0062 U+0065 U+0072 U+006B U+0024	"berk"	Dutch
+^beuk$	b øː k	1	U+005E U+0062 U+0065 U+0075 U+006B U+0024	"beuk"	Dutch
+^bier$	b iː r	1	U+005E U+0062 U+0069 U+0065 U+0072 U+0024	"bier"	Dutch
+^bijl$	b ɛi l	1	U+005E U+0062 U+0069 U+006A U+006C U+0024	"bijl"	Dutch
+^blad$	b l ɑ t	1	U+005E U+0062 U+006C U+0061 U+0064 U+0024	"blad"	Dutch
+^blik$	b l ɪ k	1	U+005E U+0062 U+006C U+0069 U+006B U+0024	"blik"	Dutch
+^boek$	b uː k	1	U+005E U+0062 U+006F U+0065 U+006B U+0024	"boek"	Dutch
+^boer$	b uː r	1	U+005E U+0062 U+006F U+0065 U+0072 U+0024	"boer"	Dutch
+^bont$	b ɔ n t	1	U+005E U+0062 U+006F U+006E U+0074 U+0024	"bont"	Dutch
+^boog$	b oː x	2	U+005E U+0062 U+006F U+006F U+0067 U+0024	"boog"	Dutch
+^boom$	b oː m	1	U+005E U+0062 U+006F U+006F U+006D U+0024	"boom"	Dutch
+^boon$	b oː n	1	U+005E U+0062 U+006F U+006F U+006E U+0024	"boon"	Dutch
+^boot$	b oː t	1	U+005E U+0062 U+006F U+006F U+0074 U+0024	"boot"	Dutch
+^bord$	b ɔ r t	1	U+005E U+0062 U+006F U+0072 U+0064 U+0024	"bord"	Dutch
+^brak$	b r ɑ k	1	U+005E U+0062 U+0072 U+0061 U+006B U+0024	"brak"	Dutch
+^bril$	b r ɪ l	1	U+005E U+0062 U+0072 U+0069 U+006C U+0024	"bril"	Dutch
+^bron$	b r ɔ n	1	U+005E U+0062 U+0072 U+006F U+006E U+0024	"bron"	Dutch
+^brug$	b r ʏ x	1	U+005E U+0062 U+0072 U+0075 U+0067 U+0024	"brug"	Dutch
+^buik$	b œy k	1	U+005E U+0062 U+0075 U+0069 U+006B U+0024	"buik"	Dutch
+^buit$	b œy t	1	U+005E U+0062 U+0075 U+0069 U+0074 U+0024	"buit"	Dutch
+^buur$	b yː r	1	U+005E U+0062 U+0075 U+0075 U+0072 U+0024	"buur"	Dutch
+^daar$	d aː r	1	U+005E U+0064 U+0061 U+0061 U+0072 U+0024	"daar"	Dutch
+^dauw$	d ɑu ʋ	1	U+005E U+0064 U+0061 U+0075 U+0077 U+0024	"dauw"	Dutch
+^deeg$	d eː x	1	U+005E U+0064 U+0065 U+0065 U+0067 U+0024	"deeg"	Dutch
+^deel$	d eː l	1	U+005E U+0064 U+0065 U+0065 U+006C U+0024	"deel"	Dutch
+^deur$	d øː r	1	U+005E U+0064 U+0065 U+0075 U+0072 U+0024	"deur"	Dutch
+^deze$	d eː z ə	1	U+005E U+0064 U+0065 U+007A U+0065 U+0024	"deze"	Dutch
+^dief$	d iː f	1	U+005E U+0064 U+0069 U+0065 U+0066 U+0024	"dief"	Dutch
+^diep$	d iː p	1	U+005E U+0064 U+0069 U+0065 U+0070 U+0024	"diep"	Dutch
+^dier$	d iː r	1	U+005E U+0064 U+0069 U+0065 U+0072 U+0024	"dier"	Dutch
+^ding$	d ɪ ŋ	1	U+005E U+0064 U+0069 U+006E U+0067 U+0024	"ding"	Dutch
+^doen$	d uː n	1	U+005E U+0064 U+006F U+0065 U+006E U+0024	"doen"	Dutch
+^dood$	d oː t	1	U+005E U+0064 U+006F U+006F U+0064 U+0024	"dood"	Dutch
+^doof$	d oː f	1	U+005E U+0064 U+006F U+006F U+0066 U+0024	"doof"	Dutch
+^door$	d oː r	1	U+005E U+0064 U+006F U+006F U+0072 U+0024	"door"	Dutch
+^dorp$	d ɔ r p	1	U+005E U+0064 U+006F U+0072 U+0070 U+0024	"dorp"	Dutch
+^drie$	d r iː	1	U+005E U+0064 U+0072 U+0069 U+0065 U+0024	"drie"	Dutch
+^duif$	d œy f	1	U+005E U+0064 U+0075 U+0069 U+0066 U+0024	"duif"	Dutch
+^duim$	d œy m	1	U+005E U+0064 U+0075 U+0069 U+006D U+0024	"duim"	Dutch
+^duur$	d yː r	1	U+005E U+0064 U+0075 U+0075 U+0072 U+0024	"duur"	Dutch
+^eend$	eː n t	1	U+005E U+0065 U+0065 U+006E U+0064 U+0024	"eend"	Dutch
+^eten$	eː t ə	1	U+005E U+0065 U+0074 U+0065 U+006E U+0024	"eten"	Dutch
+^ezel$	eː z ə l	1	U+005E U+0065 U+007A U+0065 U+006C U+0024	"ezel"	Dutch
+^film$	f ɪ l m	1	U+005E U+0066 U+0069 U+006C U+006D U+0024	"film"	Dutch
+^fles$	f l ɛ s	1	U+005E U+0066 U+006C U+0065 U+0073 U+0024	"fles"	Dutch
+^fout$	f ɑu t	1	U+005E U+0066 U+006F U+0075 U+0074 U+0024	"fout"	Dutch
+^fuik$	f œy k	1	U+005E U+0066 U+0075 U+0069 U+006B U+0024	"fuik"	Dutch
+^gaan$	x aː n	1	U+005E U+0067 U+0061 U+0061 U+006E U+0024	"gaan"	Dutch
+^gans$	x ɑ n s	1	U+005E U+0067 U+0061 U+006E U+0073 U+0024	"gans"	Dutch
+^gast$	x ɑ s t	1	U+005E U+0067 U+0061 U+0073 U+0074 U+0024	"gast"	Dutch
+^gauw$	x ɑu ʋ	1	U+005E U+0067 U+0061 U+0075 U+0077 U+0024	"gauw"	Dutch
+^geel$	x eː l	1	U+005E U+0067 U+0065 U+0065 U+006C U+0024	"geel"	Dutch
+^geit$	x ɛi t	1	U+005E U+0067 U+0065 U+0069 U+0074 U+0024	"geit"	Dutch
+^geld$	x ɛ l t	1	U+005E U+0067 U+0065 U+006C U+0064 U+0024	"geld"	Dutch
+^gier$	x iː r	1	U+005E U+0067 U+0069 U+0065 U+0072 U+0024	"gier"	Dutch
+^glad$	x l ɑ t	1	U+005E U+0067 U+006C U+0061 U+0064 U+0024	"glad"	Dutch
+^glas$	x l ɑ s	1	U+005E U+0067 U+006C U+0061 U+0073 U+0024	"glas"	Dutch
+^goed$	x uː t	1	U+005E U+0067 U+006F U+0065 U+0064 U+0024	"goed"	Dutch
+^golf$	x ɔ l f	1	U+005E U+0067 U+006F U+006C U+0066 U+0024	"golf"	Dutch
+^goud$	x ɑu t	1	U+005E U+0067 U+006F U+0075 U+0064 U+0024	"goud"	Dutch
+^graf$	x r ɑ f	1	U+005E U+0067 U+0072 U+0061 U+0066 U+0024	"graf"	Dutch
+^gras$	x r ɑ s	1	U+005E U+0067 U+0072 U+0061 U+0073 U+0024	"gras"	Dutch
+^grot$	x r ɔ t	1	U+005E U+0067 U+0072 U+006F U+0074 U+0024	"grot"	Dutch
+^haai$	h aː j	1	U+005E U+0068 U+0061 U+0061 U+0069 U+0024	"haai"	Dutch
+^haak$	h aː k	1	U+005E U+0068 U+0061 U+0061 U+006B U+0024	"haak"	Dutch
+^haan$	h aː n	1	U+005E U+0068 U+0061 U+0061 U+006E U+0024	"haan"	Dutch
+^haar$	h aː r	1	U+005E U+0068 U+0061 U+0061 U+0072 U+0024	"haar"	Dutch
+^haas$	h aː s	1	U+005E U+0068 U+0061 U+0061 U+0073 U+0024	"haas"	Dutch
+^hals$	h ɑ l s	1	U+005E U+0068 U+0061 U+006C U+0073 U+0024	"hals"	Dutch
+^hand$	h ɑ n t	1	U+005E U+0068 U+0061 U+006E U+0064 U+0024	"hand"	Dutch
+^hard$	h ɑ r t	1	U+005E U+0068 U+0061 U+0072 U+0064 U+0024	"hard"	Dutch
+^hark$	h ɑ r k	1	U+005E U+0068 U+0061 U+0072 U+006B U+0024	"hark"	Dutch
+^hart$	h ɑ r t	1	U+005E U+0068 U+0061 U+0072 U+0074 U+0024	"hart"	Dutch
+^heet$	h eː t	1	U+005E U+0068 U+0065 U+0065 U+0074 U+0024	"heet"	Dutch
+^heks$	h ɛ k s	1	U+005E U+0068 U+0065 U+006B U+0073 U+0024	"heks"	Dutch
+^helm$	h ɛ l m	1	U+005E U+0068 U+0065 U+006C U+006D U+0024	"helm"	Dutch
+^hemd$	h ɛ m t	1	U+005E U+0068 U+0065 U+006D U+0064 U+0024	"hemd"	Dutch
+^hert$	h ɛ r t	1	U+005E U+0068 U+0065 U+0072 U+0074 U+0024	"hert"	Dutch
+^heup$	h øː p	1	U+005E U+0068 U+0065 U+0075 U+0070 U+0024	"heup"	Dutch
+^hiel$	h iː l	1	U+005E U+0068 U+0069 U+0065 U+006C U+0024	"hiel"	Dutch
+^hier$	h iː r	1	U+005E U+0068 U+0069 U+0065 U+0072 U+0024	"hier"	Dutch
+^hoed$	h uː t	1	U+005E U+0068 U+006F U+0065 U+0064 U+0024	"hoed"	Dutch
+^hoek$	h uː k	1	U+005E U+0068 U+006F U+0065 U+006B U+0024	"hoek"	Dutch
+^hoer$	h uː r	1	U+005E U+0068 U+006F U+0065 U+0072 U+0024	"hoer"	Dutch
+^hond$	h ɔ n t	1	U+005E U+0068 U+006F U+006E U+0064 U+0024	"hond"	Dutch
+^hoog$	h oː x	2	U+005E U+0068 U+006F U+006F U+0067 U+0024	"hoog"	Dutch
+^hooi$	h oː j	1	U+005E U+0068 U+006F U+006F U+0069 U+0024	"hooi"	Dutch
+^hout$	h ɑu t	1	U+005E U+0068 U+006F U+0075 U+0074 U+0024	"hout"	Dutch
+^huid$	h œy t	1	U+005E U+0068 U+0075 U+0069 U+0064 U+0024	"huid"	Dutch
+^huis$	h œy s	1	U+005E U+0068 U+0075 U+0069 U+0073 U+0024	"huis"	Dutch
+^idee$	iː d eː	1	U+005E U+0069 U+0064 U+0065 U+0065 U+0024	"idee"	Dutch
+^jaar$	j aː r	1	U+005E U+006A U+0061 U+0061 U+0072 U+0024	"jaar"	Dutch
+^jeuk$	j øː k	1	U+005E U+006A U+0065 U+0075 U+006B U+0024	"jeuk"	Dutch
+^jong$	j ɔ ŋ	1	U+005E U+006A U+006F U+006E U+0067 U+0024	"jong"	Dutch
+^jurk$	j ʏ r k	1	U+005E U+006A U+0075 U+0072 U+006B U+0024	"jurk"	Dutch
+^kaak$	k aː k	1	U+005E U+006B U+0061 U+0061 U+006B U+0024	"kaak"	Dutch
+^kaal$	k aː l	1	U+005E U+006B U+0061 U+0061 U+006C U+0024	"kaal"	Dutch
+^kaap$	k aː p	1	U+005E U+006B U+0061 U+0061 U+0070 U+0024	"kaap"	Dutch
+^kaas$	k aː s	1	U+005E U+006B U+0061 U+0061 U+0073 U+0024	"kaas"	Dutch
+^kalf$	k ɑ l f	1	U+005E U+006B U+0061 U+006C U+0066 U+0024	"kalf"	Dutch
+^kalm$	k ɑ l m	1	U+005E U+006B U+0061 U+006C U+006D U+0024	"kalm"	Dutch
+^kamp$	k ɑ m p	1	U+005E U+006B U+0061 U+006D U+0070 U+0024	"kamp"	Dutch
+^kano$	k aː n oː	1	U+005E U+006B U+0061 U+006E U+006F U+0024	"kano"	Dutch
+^kant$	k ɑ n t	2	U+005E U+006B U+0061 U+006E U+0074 U+0024	"kant"	Dutch
+^keel$	k eː l	1	U+005E U+006B U+0065 U+0065 U+006C U+0024	"keel"	Dutch
+^kerk$	k ɛ r k	1	U+005E U+006B U+0065 U+0072 U+006B U+0024	"kerk"	Dutch
+^kies$	k iː s	1	U+005E U+006B U+0069 U+0065 U+0073 U+0024	"kies"	Dutch
+^kind$	k ɪ n t	2	U+005E U+006B U+0069 U+006E U+0064 U+0024	"kind"	Dutch
+^klei$	k l ɛi	1	U+005E U+006B U+006C U+0065 U+0069 U+0024	"klei"	Dutch
+^klif$	k l ɪ f	1	U+005E U+006B U+006C U+0069 U+0066 U+0024	"klif"	Dutch
+^klok$	k l ɔ k	1	U+005E U+006B U+006C U+006F U+006B U+0024	"klok"	Dutch
+^knie$	k n iː	1	U+005E U+006B U+006E U+0069 U+0065 U+0024	"knie"	Dutch
+^kort$	k ɔ r t	1	U+005E U+006B U+006F U+0072 U+0074 U+0024	"kort"	Dutch
+^koud$	k ɑu t	1	U+005E U+006B U+006F U+0075 U+0064 U+0024	"koud"	Dutch
+^kous$	k ɑu s	1	U+005E U+006B U+006F U+0075 U+0073 U+0024	"kous"	Dutch
+^krom$	k r ɔ m	1	U+005E U+006B U+0072 U+006F U+006D U+0024	"krom"	Dutch
+^krop$	k r ɔ p	1	U+005E U+006B U+0072 U+006F U+0070 U+0024	"krop"	Dutch
+^kuit$	k œy t	1	U+005E U+006B U+0075 U+0069 U+0074 U+0024	"kuit"	Dutch
+^laag$	l aː x	1	U+005E U+006C U+0061 U+0061 U+0067 U+0024	"laag"	Dutch
+^laat$	l aː t	1	U+005E U+006C U+0061 U+0061 U+0074 U+0024	"laat"	Dutch
+^lamp$	l ɑ m p	1	U+005E U+006C U+0061 U+006D U+0070 U+0024	"lamp"	Dutch
+^land$	l ɑ n t	2	U+005E U+006C U+0061 U+006E U+0064 U+0024	"land"	Dutch
+^lang$	l ɑ ŋ	2	U+005E U+006C U+0061 U+006E U+0067 U+0024	"lang"	Dutch
+^leeg$	l eː x	1	U+005E U+006C U+0065 U+0065 U+0067 U+0024	"leeg"	Dutch
+^leer$	l eː r	1	U+005E U+006C U+0065 U+0065 U+0072 U+0024	"leer"	Dutch
+^lied$	l iː t	1	U+005E U+006C U+0069 U+0065 U+0064 U+0024	"lied"	Dutch
+^lijk$	l ɛi k	1	U+005E U+006C U+0069 U+006A U+006B U+0024	"lijk"	Dutch
+^lijm$	l ɛi m	1	U+005E U+006C U+0069 U+006A U+006D U+0024	"lijm"	Dutch
+^lijn$	l ɛi n	1	U+005E U+006C U+0069 U+006A U+006E U+0024	"lijn"	Dutch
+^long$	l ɔ ŋ	1	U+005E U+006C U+006F U+006E U+0067 U+0024	"long"	Dutch
+^lood$	l oː t	1	U+005E U+006C U+006F U+006F U+0064 U+0024	"lood"	Dutch
+^loon$	l oː n	1	U+005E U+006C U+006F U+006F U+006E U+0024	"loon"	Dutch
+^luid$	l œy t	1	U+005E U+006C U+0075 U+0069 U+0064 U+0024	"luid"	Dutch
+^luis$	l œy s	2	U+005E U+006C U+0075 U+0069 U+0073 U+0024	"luis"	Dutch
+^maag$	m aː x	1	U+005E U+006D U+0061 U+0061 U+0067 U+0024	"maag"	Dutch
+^maan$	m aː n	1	U+005E U+006D U+0061 U+0061 U+006E U+0024	"maan"	Dutch
+^mand$	m ɑ n t	1	U+005E U+006D U+0061 U+006E U+0064 U+0024	"mand"	Dutch
+^mast$	m ɑ s t	1	U+005E U+006D U+0061 U+0073 U+0074 U+0024	"mast"	Dutch
+^maïs$	m ɑ j s	1	U+005E U+006D U+0061 U+00EF U+0073 U+0024	"maïs"	Dutch
+^mede$	m eː d ə	1	U+005E U+006D U+0065 U+0064 U+0065 U+0024	"mede"	Dutch
+^meel$	m eː l	1	U+005E U+006D U+0065 U+0065 U+006C U+0024	"meel"	Dutch
+^meer$	m eː r	2	U+005E U+006D U+0065 U+0065 U+0072 U+0024	"meer"	Dutch
+^melk$	m ɛ l k	1	U+005E U+006D U+0065 U+006C U+006B U+0024	"melk"	Dutch
+^mens$	m ɛ n s	1	U+005E U+006D U+0065 U+006E U+0073 U+0024	"mens"	Dutch
+^mier$	m iː r	1	U+005E U+006D U+0069 U+0065 U+0072 U+0024	"mier"	Dutch
+^milt$	m ɪ l t	1	U+005E U+006D U+0069 U+006C U+0074 U+0024	"milt"	Dutch
+^mist$	m ɪ s t	1	U+005E U+006D U+0069 U+0073 U+0074 U+0024	"mist"	Dutch
+^mond$	m ɔ n t	1	U+005E U+006D U+006F U+006E U+0064 U+0024	"mond"	Dutch
+^mooi$	m oː j	1	U+005E U+006D U+006F U+006F U+0069 U+0024	"mooi"	Dutch
+^muis$	m œy s	1	U+005E U+006D U+0075 U+0069 U+0073 U+0024	"muis"	Dutch
+^munt$	m ʏ n t	1	U+005E U+006D U+0075 U+006E U+0074 U+0024	"munt"	Dutch
+^muts$	m ʏ t s	1	U+005E U+006D U+0075 U+0074 U+0073 U+0024	"muts"	Dutch
+^muur$	m yː r	1	U+005E U+006D U+0075 U+0075 U+0072 U+0024	"muur"	Dutch
+^naam$	n aː m	1	U+005E U+006E U+0061 U+0061 U+006D U+0024	"naam"	Dutch
+^nauw$	n ɑu ʋ	1	U+005E U+006E U+0061 U+0075 U+0077 U+0024	"nauw"	Dutch
+^neef$	n eː f	3	U+005E U+006E U+0065 U+0065 U+0066 U+0024	"neef"	Dutch
+^neet$	n eː t	1	U+005E U+006E U+0065 U+0065 U+0074 U+0024	"neet"	Dutch
+^nest$	n ɛ s t	1	U+005E U+006E U+0065 U+0073 U+0074 U+0024	"nest"	Dutch
+^neus$	n øː s	1	U+005E U+006E U+0065 U+0075 U+0073 U+0024	"neus"	Dutch
+^nier$	n iː r	1	U+005E U+006E U+0069 U+0065 U+0072 U+0024	"nier"	Dutch
+^niet$	n iː t	1	U+005E U+006E U+0069 U+0065 U+0074 U+0024	"niet"	Dutch
+^noot$	n oː t	1	U+005E U+006E U+006F U+006F U+0074 U+0024	"noot"	Dutch
+^olie$	oː l iː	1	U+005E U+006F U+006C U+0069 U+0065 U+0024	"olie"	Dutch
+^oven$	oː v ə	1	U+005E U+006F U+0076 U+0065 U+006E U+0024	"oven"	Dutch
+^paal$	p aː l	1	U+005E U+0070 U+0061 U+0061 U+006C U+0024	"paal"	Dutch
+^paar$	p aː r	1	U+005E U+0070 U+0061 U+0061 U+0072 U+0024	"paar"	Dutch
+^palm$	p ɑ l m	2	U+005E U+0070 U+0061 U+006C U+006D U+0024	"palm"	Dutch
+^pech$	p ɛ x	1	U+005E U+0070 U+0065 U+0063 U+0068 U+0024	"pech"	Dutch
+^pijl$	p ɛi l	1	U+005E U+0070 U+0069 U+006A U+006C U+0024	"pijl"	Dutch
+^pijn$	p ɛi n	1	U+005E U+0070 U+0069 U+006A U+006E U+0024	"pijn"	Dutch
+^pijp$	p ɛi p	1	U+005E U+0070 U+0069 U+006A U+0070 U+0024	"pijp"	Dutch
+^plat$	p l ɑ t	1	U+005E U+0070 U+006C U+0061 U+0074 U+0024	"plat"	Dutch
+^pols$	p ɔ l s	1	U+005E U+0070 U+006F U+006C U+0073 U+0024	"pols"	Dutch
+^post$	p ɔ s t	2	U+005E U+0070 U+006F U+0073 U+0074 U+0024	"post"	Dutch
+^raam$	r aː m	1	U+005E U+0072 U+0061 U+0061 U+006D U+0024	"raam"	Dutch
+^rand$	r ɑ n t	1	U+005E U+0072 U+0061 U+006E U+0064 U+0024	"rand"	Dutch
+^rauw$	r ɑu ʋ	1	U+005E U+0072 U+0061 U+0075 U+0077 U+0024	"rauw"	Dutch
+^riem$	r iː m	1	U+005E U+0072 U+0069 U+0065 U+006D U+0024	"riem"	Dutch
+^rijk$	r ɛi k	1	U+005E U+0072 U+0069 U+006A U+006B U+0024	"rijk"	Dutch
+^rijp$	r ɛi p	1	U+005E U+0072 U+0069 U+006A U+0070 U+0024	"rijp"	Dutch
+^ring$	r ɪ ŋ	1	U+005E U+0072 U+0069 U+006E U+0067 U+0024	"ring"	Dutch
+^roer$	r uː r	1	U+005E U+0072 U+006F U+0065 U+0072 U+0024	"roer"	Dutch
+^rond$	r ɔ n t	1	U+005E U+0072 U+006F U+006E U+0064 U+0024	"rond"	Dutch
+^rood$	r oː t	1	U+005E U+0072 U+006F U+006F U+0064 U+0024	"rood"	Dutch
+^rook$	r oː k	1	U+005E U+0072 U+006F U+006F U+006B U+0024	"rook"	Dutch
+^roos$	r oː s	1	U+005E U+0072 U+006F U+006F U+0073 U+0024	"roos"	Dutch
+^rots$	r ɔ t s	1	U+005E U+0072 U+006F U+0074 U+0073 U+0024	"rots"	Dutch
+^rund$	r ʏ n t	1	U+005E U+0072 U+0075 U+006E U+0064 U+0024	"rund"	Dutch
+^slak$	s l ɑ k	1	U+005E U+0073 U+006C U+0061 U+006B U+0024	"slak"	Dutch
+^slim$	s l ɪ m	1	U+005E U+0073 U+006C U+0069 U+006D U+0024	"slim"	Dutch
+^slot$	s l ɔ t	1	U+005E U+0073 U+006C U+006F U+0074 U+0024	"slot"	Dutch
+^smid$	s m ɪ t	1	U+005E U+0073 U+006D U+0069 U+0064 U+0024	"smid"	Dutch
+^snel$	s n ɛ l	1	U+005E U+0073 U+006E U+0065 U+006C U+0024	"snel"	Dutch
+^snot$	s n ɔ t	1	U+005E U+0073 U+006E U+006F U+0074 U+0024	"snot"	Dutch
+^soep$	s uː p	1	U+005E U+0073 U+006F U+0065 U+0070 U+0024	"soep"	Dutch
+^soms$	s ɔ m s	1	U+005E U+0073 U+006F U+006D U+0073 U+0024	"soms"	Dutch
+^spar$	s p ɑ r	1	U+005E U+0073 U+0070 U+0061 U+0072 U+0024	"spar"	Dutch
+^spin$	s p ɪ n	1	U+005E U+0073 U+0070 U+0069 U+006E U+0024	"spin"	Dutch
+^stad$	s t ɑ t	1	U+005E U+0073 U+0074 U+0061 U+0064 U+0024	"stad"	Dutch
+^stal$	s t ɑ l	1	U+005E U+0073 U+0074 U+0061 U+006C U+0024	"stal"	Dutch
+^stem$	s t ɛ m	1	U+005E U+0073 U+0074 U+0065 U+006D U+0024	"stem"	Dutch
+^ster$	s t ɛ r	1	U+005E U+0073 U+0074 U+0065 U+0072 U+0024	"ster"	Dutch
+^stil$	s t ɪ l	1	U+005E U+0073 U+0074 U+0069 U+006C U+0024	"stil"	Dutch
+^stof$	s t ɔ f	2	U+005E U+0073 U+0074 U+006F U+0066 U+0024	"stof"	Dutch
+^stom$	s t ɔ m	1	U+005E U+0073 U+0074 U+006F U+006D U+0024	"stom"	Dutch
+^stuk$	s t ʏ k	2	U+005E U+0073 U+0074 U+0075 U+006B U+0024	"stuk"	Dutch
+^taal$	t aː l	1	U+005E U+0074 U+0061 U+0061 U+006C U+0024	"taal"	Dutch
+^tand$	t ɑ n t	1	U+005E U+0074 U+0061 U+006E U+0064 U+0024	"tand"	Dutch
+^tang$	t ɑ ŋ	1	U+005E U+0074 U+0061 U+006E U+0067 U+0024	"tang"	Dutch
+^teek$	t eː k	1	U+005E U+0074 U+0065 U+0065 U+006B U+0024	"teek"	Dutch
+^teen$	t eː n	1	U+005E U+0074 U+0065 U+0065 U+006E U+0024	"teen"	Dutch
+^tent$	t ɛ n t	1	U+005E U+0074 U+0065 U+006E U+0074 U+0024	"tent"	Dutch
+^thee$	t eː	1	U+005E U+0074 U+0068 U+0065 U+0065 U+0024	"thee"	Dutch
+^tien$	t iː n	1	U+005E U+0074 U+0069 U+0065 U+006E U+0024	"tien"	Dutch
+^tijd$	t ɛi t	1	U+005E U+0074 U+0069 U+006A U+0064 U+0024	"tijd"	Dutch
+^tong$	t ɔ ŋ	1	U+005E U+0074 U+006F U+006E U+0067 U+0024	"tong"	Dutch
+^touw$	t ɑu ʋ	1	U+005E U+0074 U+006F U+0075 U+0077 U+0024	"touw"	Dutch
+^trog$	t r ɔ x	1	U+005E U+0074 U+0072 U+006F U+0067 U+0024	"trog"	Dutch
+^trom$	t r ɔ m	1	U+005E U+0074 U+0072 U+006F U+006D U+0024	"trom"	Dutch
+^tuin$	t œy n	1	U+005E U+0074 U+0075 U+0069 U+006E U+0024	"tuin"	Dutch
+^twee$	t ʋ eː	1	U+005E U+0074 U+0077 U+0065 U+0065 U+0024	"twee"	Dutch
+^uier$	œy j ə r	1	U+005E U+0075 U+0069 U+0065 U+0072 U+0024	"uier"	Dutch
+^vaak$	v aː k	1	U+005E U+0076 U+0061 U+0061 U+006B U+0024	"vaak"	Dutch
+^veel$	v eː l	1	U+005E U+0076 U+0065 U+0065 U+006C U+0024	"veel"	Dutch
+^veer$	v eː r	1	U+005E U+0076 U+0065 U+0065 U+0072 U+0024	"veer"	Dutch
+^veld$	v ɛ l t	1	U+005E U+0076 U+0065 U+006C U+0064 U+0024	"veld"	Dutch
+^verf$	v ɛ r f	1	U+005E U+0076 U+0065 U+0072 U+0066 U+0024	"verf"	Dutch
+^vier$	v iː r	1	U+005E U+0076 U+0069 U+0065 U+0072 U+0024	"vier"	Dutch
+^vijf$	v ɛi f	1	U+005E U+0076 U+0069 U+006A U+0066 U+0024	"vijf"	Dutch
+^vijg$	v ɛi x	1	U+005E U+0076 U+0069 U+006A U+0067 U+0024	"vijg"	Dutch
+^vilt$	v ɪ l t	1	U+005E U+0076 U+0069 U+006C U+0074 U+0024	"vilt"	Dutch
+^vlak$	v l ɑ k	1	U+005E U+0076 U+006C U+0061 U+006B U+0024	"vlak"	Dutch
+^vlam$	v l ɑ m	1	U+005E U+0076 U+006C U+0061 U+006D U+0024	"vlam"	Dutch
+^vlot$	v l ɔ t	1	U+005E U+0076 U+006C U+006F U+0074 U+0024	"vlot"	Dutch
+^voet$	v uː t	1	U+005E U+0076 U+006F U+0065 U+0074 U+0024	"voet"	Dutch
+^voor$	v oː r	2	U+005E U+0076 U+006F U+006F U+0072 U+0024	"voor"	Dutch
+^vore$	v oː r ə	1	U+005E U+0076 U+006F U+0072 U+0065 U+0024	"vore"	Dutch
+^vork$	v ɔ r k	2	U+005E U+0076 U+006F U+0072 U+006B U+0024	"vork"	Dutch
+^vuil$	v œy l	1	U+005E U+0076 U+0075 U+0069 U+006C U+0024	"vuil"	Dutch
+^vuur$	v yː r	1	U+005E U+0076 U+0075 U+0075 U+0072 U+0024	"vuur"	Dutch
+^waar$	ʋ aː r	2	U+005E U+0077 U+0061 U+0061 U+0072 U+0024	"waar"	Dutch
+^wang$	ʋ ɑ ŋ	1	U+005E U+0077 U+0061 U+006E U+0067 U+0024	"wang"	Dutch
+^warm$	ʋ ɑ r m	1	U+005E U+0077 U+0061 U+0072 U+006D U+0024	"warm"	Dutch
+^week$	ʋ eː k	1	U+005E U+0077 U+0065 U+0065 U+006B U+0024	"week"	Dutch
+^weer$	ʋ eː r	2	U+005E U+0077 U+0065 U+0065 U+0072 U+0024	"weer"	Dutch
+^wees$	ʋ eː s	1	U+005E U+0077 U+0065 U+0065 U+0073 U+0024	"wees"	Dutch
+^werk$	ʋ ɛ r k	1	U+005E U+0077 U+0065 U+0072 U+006B U+0024	"werk"	Dutch
+^wesp$	ʋ ɛ s p	1	U+005E U+0077 U+0065 U+0073 U+0070 U+0024	"wesp"	Dutch
+^wiel$	ʋ iː l	1	U+005E U+0077 U+0069 U+0065 U+006C U+0024	"wiel"	Dutch
+^wijd$	ʋ ɛi t	1	U+005E U+0077 U+0069 U+006A U+0064 U+0024	"wijd"	Dutch
+^wijn$	ʋ ɛi n	1	U+005E U+0077 U+0069 U+006A U+006E U+0024	"wijn"	Dutch
+^wijs$	ʋ ɛi s	2	U+005E U+0077 U+0069 U+006A U+0073 U+0024	"wijs"	Dutch
+^wind$	ʋ ɪ n t	1	U+005E U+0077 U+0069 U+006E U+0064 U+0024	"wind"	Dutch
+^wolf$	ʋ ɔ l f	1	U+005E U+0077 U+006F U+006C U+0066 U+0024	"wolf"	Dutch
+^wolk$	ʋ ɔ l k	1	U+005E U+0077 U+006F U+006C U+006B U+0024	"wolk"	Dutch
+^wond$	ʋ ɔ n t	1	U+005E U+0077 U+006F U+006E U+0064 U+0024	"wond"	Dutch
+^worm$	ʋ ɔ r m	1	U+005E U+0077 U+006F U+0072 U+006D U+0024	"worm"	Dutch
+^woud$	ʋ ɑu t	1	U+005E U+0077 U+006F U+0075 U+0064 U+0024	"woud"	Dutch
+^zaad$	z aː t	1	U+005E U+007A U+0061 U+0061 U+0064 U+0024	"zaad"	Dutch
+^zaag$	z aː x	1	U+005E U+007A U+0061 U+0061 U+0067 U+0024	"zaag"	Dutch
+^zalf$	z ɑ l f	1	U+005E U+007A U+0061 U+006C U+0066 U+0024	"zalf"	Dutch
+^zand$	z ɑ n t	1	U+005E U+007A U+0061 U+006E U+0064 U+0024	"zand"	Dutch
+^zeep$	z eː p	1	U+005E U+007A U+0065 U+0065 U+0070 U+0024	"zeep"	Dutch
+^zeil$	z ɛi l	1	U+005E U+007A U+0065 U+0069 U+006C U+0024	"zeil"	Dutch
+^zeis$	z ɛi s	1	U+005E U+007A U+0065 U+0069 U+0073 U+0024	"zeis"	Dutch
+^zeug$	z øː x	1	U+005E U+007A U+0065 U+0075 U+0067 U+0024	"zeug"	Dutch
+^ziek$	z iː k	1	U+005E U+007A U+0069 U+0065 U+006B U+0024	"ziek"	Dutch
+^ziel$	z iː l	1	U+005E U+007A U+0069 U+0065 U+006C U+0024	"ziel"	Dutch
+^zien$	z iː n	1	U+005E U+007A U+0069 U+0065 U+006E U+0024	"zien"	Dutch
+^zijn$	z ɛi n	1	U+005E U+007A U+0069 U+006A U+006E U+0024	"zijn"	Dutch
+^zoet$	z uː t	1	U+005E U+007A U+006F U+0065 U+0074 U+0024	"zoet"	Dutch
+^zoon$	z oː n	1	U+005E U+007A U+006F U+006F U+006E U+0024	"zoon"	Dutch
+^zorg$	z ɔ r x	1	U+005E U+007A U+006F U+0072 U+0067 U+0024	"zorg"	Dutch
+^zout$	z ɑu t	2	U+005E U+007A U+006F U+0075 U+0074 U+0024	"zout"	Dutch
+^zuur$	z yː r	1	U+005E U+007A U+0075 U+0075 U+0072 U+0024	"zuur"	Dutch
+^zwak$	z ʋ ɑ k	1	U+005E U+007A U+0077 U+0061 U+006B U+0024	"zwak"	Dutch
+^adres$	ɑ d r ɛ s	1	U+005E U+0061 U+0064 U+0072 U+0065 U+0073 U+0024	"adres"	Dutch
+^afgod$	ɑ f x ɔ t	1	U+005E U+0061 U+0066 U+0067 U+006F U+0064 U+0024	"afgod"	Dutch
+^akker$	ɑ k ə r	1	U+005E U+0061 U+006B U+006B U+0065 U+0072 U+0024	"akker"	Dutch
+^angst$	ɑ ŋ s t	1	U+005E U+0061 U+006E U+0067 U+0073 U+0074 U+0024	"angst"	Dutch
+^anker$	ɑ ŋ k ə r	1	U+005E U+0061 U+006E U+006B U+0065 U+0072 U+0024	"anker"	Dutch
+^avond$	aː v ɔ n t	1	U+005E U+0061 U+0076 U+006F U+006E U+0064 U+0024	"avond"	Dutch
+^baard$	b aː r t	1	U+005E U+0062 U+0061 U+0061 U+0072 U+0064 U+0024	"baard"	Dutch
+^baden$	b aː d ə	1	U+005E U+0062 U+0061 U+0064 U+0065 U+006E U+0024	"baden"	Dutch
+^beest$	b eː s t	1	U+005E U+0062 U+0065 U+0065 U+0073 U+0074 U+0024	"beest"	Dutch
+^begin$	b ə ɣ ɪ n	1	U+005E U+0062 U+0065 U+0067 U+0069 U+006E U+0024	"begin"	Dutch
+^bever$	b eː v ə r	1	U+005E U+0062 U+0065 U+0076 U+0065 U+0072 U+0024	"bever"	Dutch
+^bezem$	b eː z ə m	1	U+005E U+0062 U+0065 U+007A U+0065 U+006D U+0024	"bezem"	Dutch
+^blaar$	b l aː r	1	U+005E U+0062 U+006C U+0061 U+0061 U+0072 U+0024	"blaar"	Dutch
+^blauw$	b l ɑu ʋ	1	U+005E U+0062 U+006C U+0061 U+0075 U+0077 U+0024	"blauw"	Dutch
+^blind$	b l ɪ n t	1	U+005E U+0062 U+006C U+0069 U+006E U+0064 U+0024	"blind"	Dutch
+^bloed$	b l uː t	1	U+005E U+0062 U+006C U+006F U+0065 U+0064 U+0024	"bloed"	Dutch
+^bloem$	b l uː m	1	U+005E U+0062 U+006C U+006F U+0065 U+006D U+0024	"bloem"	Dutch
+^bodem$	b oː d ə m	2	U+005E U+0062 U+006F U+0064 U+0065 U+006D U+0024	"bodem"	Dutch
+^boete$	b uː t ə	1	U+005E U+0062 U+006F U+0065 U+0074 U+0065 U+0024	"boete"	Dutch
+^boren$	b oː r ə	1	U+005E U+0062 U+006F U+0072 U+0065 U+006E U+0024	"boren"	Dutch
+^borst$	b ɔ r s t	2	U+005E U+0062 U+006F U+0072 U+0073 U+0074 U+0024	"borst"	Dutch
+^boter$	b oː t ə r	1	U+005E U+0062 U+006F U+0074 U+0065 U+0072 U+0024	"boter"	Dutch
+^boven$	b oː v ə	1	U+005E U+0062 U+006F U+0076 U+0065 U+006E U+0024	"boven"	Dutch
+^breed$	b r eː t	1	U+005E U+0062 U+0072 U+0065 U+0065 U+0064 U+0024	"breed"	Dutch
+^brief$	b r iː f	1	U+005E U+0062 U+0072 U+0069 U+0065 U+0066 U+0024	"brief"	Dutch
+^broek$	b r uː k	1	U+005E U+0062 U+0072 U+006F U+0065 U+006B U+0024	"broek"	Dutch
+^broer$	b r uː r	6	U+005E U+0062 U+0072 U+006F U+0065 U+0072 U+0024	"broer"	Dutch
+^brood$	b r oː t	1	U+005E U+0062 U+0072 U+006F U+006F U+0064 U+0024	"brood"	Dutch
+^deken$	d eː k ə	1	U+005E U+0064 U+0065 U+006B U+0065 U+006E U+0024	"deken"	Dutch
+^delen$	d eː l ə	1	U+005E U+0064 U+0065 U+006C U+0065 U+006E U+0024	"delen"	Dutch
+^demon$	d eː m ɔ n	1	U+005E U+0064 U+0065 U+006D U+006F U+006E U+0024	"demon"	Dutch
+^derde$	d ɛ r d ə	1	U+005E U+0064 U+0065 U+0072 U+0064 U+0065 U+0024	"derde"	Dutch
+^diner$	d iː n eː	1	U+005E U+0064 U+0069 U+006E U+0065 U+0072 U+0024	"diner"	Dutch
+^doden$	d oː d ə	1	U+005E U+0064 U+006F U+0064 U+0065 U+006E U+0024	"doden"	Dutch
+^doven$	d oː v ə	1	U+005E U+0064 U+006F U+0076 U+0065 U+006E U+0024	"doven"	Dutch
+^draad$	d r aː t	1	U+005E U+0064 U+0072 U+0061 U+0061 U+0064 U+0024	"draad"	Dutch
+^drank$	d r ɑ ŋ k	1	U+005E U+0064 U+0072 U+0061 U+006E U+006B U+0024	"drank"	Dutch
+^droog$	d r oː x	1	U+005E U+0064 U+0072 U+006F U+006F U+0067 U+0024	"droog"	Dutch
+^druif$	d r œy f	1	U+005E U+0064 U+0072 U+0075 U+0069 U+0066 U+0024	"druif"	Dutch
+^duren$	d yː r ə	1	U+005E U+0064 U+0075 U+0072 U+0065 U+006E U+0024	"duren"	Dutch
+^duwen$	d yː ʋ ə	1	U+005E U+0064 U+0075 U+0077 U+0065 U+006E U+0024	"duwen"	Dutch
+^edele$	eː d ə l ə	1	U+005E U+0065 U+0064 U+0065 U+006C U+0065 U+0024	"edele"	Dutch
+^eikel$	ɛi k ə l	1	U+005E U+0065 U+0069 U+006B U+0065 U+006C U+0024	"eikel"	Dutch
+^einde$	ɛi n d ə	2	U+005E U+0065 U+0069 U+006E U+0064 U+0065 U+0024	"einde"	Dutch
+^eland$	eː l ɑ n t	1	U+005E U+0065 U+006C U+0061 U+006E U+0064 U+0024	"eland"	Dutch
+^enige$	eː n ə ɣ ə	1	U+005E U+0065 U+006E U+0069 U+0067 U+0065 U+0024	"enige"	Dutch
+^enkel$	ɛ ŋ k ə l	1	U+005E U+0065 U+006E U+006B U+0065 U+006C U+0024	"enkel"	Dutch
+^etter$	ɛ t ə r	1	U+005E U+0065 U+0074 U+0074 U+0065 U+0072 U+0024	"etter"	Dutch
+^fiets$	f iː t s	1	U+005E U+0066 U+0069 U+0065 U+0074 U+0073 U+0024	"fiets"	Dutch
+^fluit$	f l œy t	1	U+005E U+0066 U+006C U+0075 U+0069 U+0074 U+0024	"fluit"	Dutch
+^fruit$	f r œy t	1	U+005E U+0066 U+0072 U+0075 U+0069 U+0074 U+0024	"fruit"	Dutch
+^geest$	x eː s t	2	U+005E U+0067 U+0065 U+0065 U+0073 U+0074 U+0024	"geest"	Dutch
+^geluk$	x ə l ʏ k	1	U+005E U+0067 U+0065 U+006C U+0075 U+006B U+0024	"geluk"	Dutch
+^gerst$	x ɛ r s t	1	U+005E U+0067 U+0065 U+0072 U+0073 U+0074 U+0024	"gerst"	Dutch
+^getal$	x ə t ɑ l	1	U+005E U+0067 U+0065 U+0074 U+0061 U+006C U+0024	"getal"	Dutch
+^geven$	x eː v ə	1	U+005E U+0067 U+0065 U+0076 U+0065 U+006E U+0024	"geven"	Dutch
+^gezin$	x ə z ɪ n	1	U+005E U+0067 U+0065 U+007A U+0069 U+006E U+0024	"gezin"	Dutch
+^graan$	x r aː n	1	U+005E U+0067 U+0072 U+0061 U+0061 U+006E U+0024	"graan"	Dutch
+^grens$	x r ɛ n s	1	U+005E U+0067 U+0072 U+0065 U+006E U+0073 U+0024	"grens"	Dutch
+^groen$	x r uː n	1	U+005E U+0067 U+0072 U+006F U+0065 U+006E U+0024	"groen"	Dutch
+^groot$	x r oː t	2	U+005E U+0067 U+0072 U+006F U+006F U+0074 U+0024	"groot"	Dutch
+^haard$	h aː r t	1	U+005E U+0068 U+0061 U+0061 U+0072 U+0064 U+0024	"haard"	Dutch
+^hamer$	h aː m ə r	1	U+005E U+0068 U+0061 U+006D U+0065 U+0072 U+0024	"hamer"	Dutch
+^haten$	h aː t ə	1	U+005E U+0068 U+0061 U+0074 U+0065 U+006E U+0024	"haten"	Dutch
+^haven$	h aː v ə	1	U+005E U+0068 U+0061 U+0076 U+0065 U+006E U+0024	"haven"	Dutch
+^haver$	h aː v ə r	1	U+005E U+0068 U+0061 U+0076 U+0065 U+0072 U+0024	"haver"	Dutch
+^havik$	h aː v ɪ k	1	U+005E U+0068 U+0061 U+0076 U+0069 U+006B U+0024	"havik"	Dutch
+^helft$	h ɛ l f t	1	U+005E U+0068 U+0065 U+006C U+0066 U+0074 U+0024	"helft"	Dutch
+^hemel$	h eː m ə l	2	U+005E U+0068 U+0065 U+006D U+0065 U+006C U+0024	"hemel"	Dutch
+^hoofd$	h oː f t	1	U+005E U+0068 U+006F U+006F U+0066 U+0064 U+0024	"hoofd"	Dutch
+^hoorn$	h oː r n	2	U+005E U+0068 U+006F U+006F U+0072 U+006E U+0024	"hoorn"	Dutch
+^hopen$	h oː p ə	1	U+005E U+0068 U+006F U+0070 U+0065 U+006E U+0024	"hopen"	Dutch
+^horen$	h oː r ə	1	U+005E U+0068 U+006F U+0072 U+0065 U+006E U+0024	"horen"	Dutch
+^ijzer$	ɛi z ə r	1	U+005E U+0069 U+006A U+007A U+0065 U+0072 U+0024	"ijzer"	Dutch
+^jagen$	j aː ɣ ə	1	U+005E U+006A U+0061 U+0067 U+0065 U+006E U+0024	"jagen"	Dutch
+^juist$	j œy s t	1	U+005E U+006A U+0075 U+0069 U+0073 U+0074 U+0024	"juist"	Dutch
+^kaars$	k aː r s	1	U+005E U+006B U+0061 U+0061 U+0072 U+0073 U+0024	"kaars"	Dutch
+^kamer$	k aː m ə r	1	U+005E U+006B U+0061 U+006D U+0065 U+0072 U+0024	"kamer"	Dutch
+^kapot$	k aː p ɔ t	1	U+005E U+006B U+0061 U+0070 U+006F U+0074 U+0024	"kapot"	Dutch
+^ketel$	k eː t ə l	1	U+005E U+006B U+0065 U+0074 U+0065 U+006C U+0024	"ketel"	Dutch
+^keten$	k eː t ə	1	U+005E U+006B U+0065 U+0074 U+0065 U+006E U+0024	"keten"	Dutch
+^kieuw$	k iː ʋ	1	U+005E U+006B U+0069 U+0065 U+0075 U+0077 U+0024	"kieuw"	Dutch
+^klaar$	k l aː r	1	U+005E U+006B U+006C U+0061 U+0061 U+0072 U+0024	"klaar"	Dutch
+^klauw$	k l ɑu ʋ	1	U+005E U+006B U+006C U+0061 U+0075 U+0077 U+0024	"klauw"	Dutch
+^klein$	k l ɛi n	1	U+005E U+006B U+006C U+0065 U+0069 U+006E U+0024	"klein"	Dutch
+^kleur$	k l øː r	1	U+005E U+006B U+006C U+0065 U+0075 U+0072 U+0024	"kleur"	Dutch
+^klink$	k l ɪ ŋ k	1	U+005E U+006B U+006C U+0069 U+006E U+006B U+0024	"klink"	Dutch
+^knoop$	k n oː p	2	U+005E U+006B U+006E U+006F U+006F U+0070 U+0024	"knoop"	Dutch
+^koken$	k oː k ə	2	U+005E U+006B U+006F U+006B U+0065 U+006E U+0024	"koken"	Dutch
+^komen$	k oː m ə	1	U+005E U+006B U+006F U+006D U+0065 U+006E U+0024	"komen"	Dutch
+^kopen$	k oː p ə	1	U+005E U+006B U+006F U+0070 U+0065 U+006E U+0024	"kopen"	Dutch
+^koper$	k oː p ə r	1	U+005E U+006B U+006F U+0070 U+0065 U+0072 U+0024	"koper"	Dutch
+^kraag$	k r aː x	1	U+005E U+006B U+0072 U+0061 U+0061 U+0067 U+0024	"kraag"	Dutch
+^kraai$	k r aː j	1	U+005E U+006B U+0072 U+0061 U+0061 U+0069 U+0024	"kraai"	Dutch
+^kraal$	k r aː l	1	U+005E U+006B U+0072 U+0061 U+0061 U+006C U+0024	"kraal"	Dutch
+^kraan$	k r aː n	1	U+005E U+006B U+0072 U+0061 U+0061 U+006E U+0024	"kraan"	Dutch
+^krant$	k r ɑ n t	1	U+005E U+006B U+0072 U+0061 U+006E U+0074 U+0024	"krant"	Dutch
+^kruik$	k r œy k	1	U+005E U+006B U+0072 U+0075 U+0069 U+006B U+0024	"kruik"	Dutch
+^kruis$	k r œy s	1	U+005E U+006B U+0072 U+0075 U+0069 U+0073 U+0024	"kruis"	Dutch
+^laars$	l aː r s	1	U+005E U+006C U+0061 U+0061 U+0072 U+0073 U+0024	"laars"	Dutch
+^lasso$	l ɑ s oː	1	U+005E U+006C U+0061 U+0073 U+0073 U+006F U+0024	"lasso"	Dutch
+^leeuw$	l eː ʋ	1	U+005E U+006C U+0065 U+0065 U+0075 U+0077 U+0024	"leeuw"	Dutch
+^leger$	l eː ɣ ə r	1	U+005E U+006C U+0065 U+0067 U+0065 U+0072 U+0024	"leger"	Dutch
+^lenen$	l eː n ə	2	U+005E U+006C U+0065 U+006E U+0065 U+006E U+0024	"lenen"	Dutch
+^lente$	l ɛ n t ə	1	U+005E U+006C U+0065 U+006E U+0074 U+0065 U+0024	"lente"	Dutch
+^lepel$	l eː p ə l	1	U+005E U+006C U+0065 U+0070 U+0065 U+006C U+0024	"lepel"	Dutch
+^leren$	l eː r ə	1	U+005E U+006C U+0065 U+0072 U+0065 U+006E U+0024	"leren"	Dutch
+^leven$	l eː v ə	2	U+005E U+006C U+0065 U+0076 U+0065 U+006E U+0024	"leven"	Dutch
+^lever$	l eː v ə r	1	U+005E U+006C U+0065 U+0076 U+0065 U+0072 U+0024	"lever"	Dutch
+^lezen$	l eː z ə	1	U+005E U+006C U+0065 U+007A U+0065 U+006E U+0024	"lezen"	Dutch
+^licht$	l ɪ x t	3	U+005E U+006C U+0069 U+0063 U+0068 U+0074 U+0024	"licht"	Dutch
+^links$	l ɪ ŋ k s	1	U+005E U+006C U+0069 U+006E U+006B U+0073 U+0024	"links"	Dutch
+^lopen$	l oː p ə	1	U+005E U+006C U+006F U+0070 U+0065 U+006E U+0024	"lopen"	Dutch
+^lucht$	l ʏ x t	1	U+005E U+006C U+0075 U+0063 U+0068 U+0074 U+0024	"lucht"	Dutch
+^lunch$	l ʏ n ʃ	1	U+005E U+006C U+0075 U+006E U+0063 U+0068 U+0024	"lunch"	Dutch
+^maand$	m aː n t	1	U+005E U+006D U+0061 U+0061 U+006E U+0064 U+0024	"maand"	Dutch
+^maken$	m aː k ə	1	U+005E U+006D U+0061 U+006B U+0065 U+006E U+0024	"maken"	Dutch
+^malen$	m aː l ə	1	U+005E U+006D U+0061 U+006C U+0065 U+006E U+0024	"malen"	Dutch
+^markt$	m ɑ r k t	1	U+005E U+006D U+0061 U+0072 U+006B U+0074 U+0024	"markt"	Dutch
+^meeuw$	m eː ʋ	1	U+005E U+006D U+0065 U+0065 U+0075 U+0077 U+0024	"meeuw"	Dutch
+^menen$	m eː n ə	1	U+005E U+006D U+0065 U+006E U+0065 U+006E U+0024	"menen"	Dutch
+^meten$	m eː t ə	1	U+005E U+006D U+0065 U+0074 U+0065 U+006E U+0024	"meten"	Dutch
+^molen$	m oː l ə	1	U+005E U+006D U+006F U+006C U+0065 U+006E U+0024	"molen"	Dutch
+^moord$	m oː r t	1	U+005E U+006D U+006F U+006F U+0072 U+0064 U+0024	"moord"	Dutch
+^motor$	m oː t ɔ r	1	U+005E U+006D U+006F U+0074 U+006F U+0072 U+0024	"motor"	Dutch
+^naakt$	n aː k t	1	U+005E U+006E U+0061 U+0061 U+006B U+0074 U+0024	"naakt"	Dutch
+^naald$	n aː l t	2	U+005E U+006E U+0061 U+0061 U+006C U+0064 U+0024	"naald"	Dutch
+^naast$	n aː s t	1	U+005E U+006E U+0061 U+0061 U+0073 U+0074 U+0024	"naast"	Dutch
+^nacht$	n ɑ x t	1	U+005E U+006E U+0061 U+0063 U+0068 U+0074 U+0024	"nacht"	Dutch
+^nagel$	n aː ɣ ə l	2	U+005E U+006E U+0061 U+0067 U+0065 U+006C U+0024	"nagel"	Dutch
+^navel$	n aː v ə l	1	U+005E U+006E U+0061 U+0076 U+0065 U+006C U+0024	"navel"	Dutch
+^negen$	n eː ɣ ə	1	U+005E U+006E U+0065 U+0067 U+0065 U+006E U+0024	"negen"	Dutch
+^nemen$	n eː m ə	1	U+005E U+006E U+0065 U+006D U+0065 U+006E U+0024	"nemen"	Dutch
+^netel$	n eː t ə l	1	U+005E U+006E U+0065 U+0074 U+0065 U+006C U+0024	"netel"	Dutch
+^nicht$	n ɪ x t	3	U+005E U+006E U+0069 U+0063 U+0068 U+0074 U+0024	"nicht"	Dutch
+^niets$	n iː t s	1	U+005E U+006E U+0069 U+0065 U+0074 U+0073 U+0024	"niets"	Dutch
+^nieuw$	n iː ʋ	1	U+005E U+006E U+0069 U+0065 U+0075 U+0077 U+0024	"nieuw"	Dutch
+^nooit$	n oː j t	1	U+005E U+006E U+006F U+006F U+0069 U+0074 U+0024	"nooit"	Dutch
+^oever$	uː v ə r	1	U+005E U+006F U+0065 U+0076 U+0065 U+0072 U+0024	"oever"	Dutch
+^offer$	ɔ f ə r	1	U+005E U+006F U+0066 U+0066 U+0065 U+0072 U+0024	"offer"	Dutch
+^oksel$	ɔ k s ə l	1	U+005E U+006F U+006B U+0073 U+0065 U+006C U+0024	"oksel"	Dutch
+^olijf$	oː l ɛi f	1	U+005E U+006F U+006C U+0069 U+006A U+0066 U+0024	"olijf"	Dutch
+^omdat$	ɔ m d ɑ t	1	U+005E U+006F U+006D U+0064 U+0061 U+0074 U+0024	"omdat"	Dutch
+^onder$	ɔ n d ə r	1	U+005E U+006F U+006E U+0064 U+0065 U+0072 U+0024	"onder"	Dutch
+^oogst$	oː x s t	1	U+005E U+006F U+006F U+0067 U+0073 U+0074 U+0024	"oogst"	Dutch
+^paard$	p aː r t	1	U+005E U+0070 U+0061 U+0061 U+0072 U+0064 U+0024	"paard"	Dutch
+^penis$	p eː n ə s	1	U+005E U+0070 U+0065 U+006E U+0069 U+0073 U+0024	"penis"	Dutch
+^peper$	p eː p ə r	1	U+005E U+0070 U+0065 U+0070 U+0065 U+0072 U+0024	"peper"	Dutch
+^plank$	p l ɑ ŋ k	2	U+005E U+0070 U+006C U+0061 U+006E U+006B U+0024	"plank"	Dutch
+^plant$	p l ɑ n t	1	U+005E U+0070 U+006C U+0061 U+006E U+0074 U+0024	"plant"	Dutch
+^poort$	p oː r t	1	U+005E U+0070 U+006F U+006F U+0072 U+0074 U+0024	"poort"	Dutch
+^priem$	p r iː m	1	U+005E U+0070 U+0072 U+0069 U+0065 U+006D U+0024	"priem"	Dutch
+^prijs$	p r ɛi s	1	U+005E U+0070 U+0072 U+0069 U+006A U+0073 U+0024	"prijs"	Dutch
+^raden$	r aː d ə	1	U+005E U+0072 U+0061 U+0064 U+0065 U+006E U+0024	"raden"	Dutch
+^radio$	r aː d iː j oː	1	U+005E U+0072 U+0061 U+0064 U+0069 U+006F U+0024	"radio"	Dutch
+^ratel$	r aː t ə l	1	U+005E U+0072 U+0061 U+0074 U+0065 U+006C U+0024	"ratel"	Dutch
+^recht$	r ɛ x t	1	U+005E U+0072 U+0065 U+0063 U+0068 U+0074 U+0024	"recht"	Dutch
+^reden$	r eː d ə	1	U+005E U+0072 U+0065 U+0064 U+0065 U+006E U+0024	"reden"	Dutch
+^regen$	r eː ɣ ə	1	U+005E U+0072 U+0065 U+0067 U+0065 U+006E U+0024	"regen"	Dutch
+^rijst$	r ɛi s t	1	U+005E U+0072 U+0069 U+006A U+0073 U+0074 U+0024	"rijst"	Dutch
+^rogge$	r ɔ ɣ ə	1	U+005E U+0072 U+006F U+0067 U+0067 U+0065 U+0024	"rogge"	Dutch
+^roken$	r oː k ə	1	U+005E U+0072 U+006F U+006B U+0065 U+006E U+0024	"roken"	Dutch
+^ruzie$	r yː z iː	1	U+005E U+0072 U+0075 U+007A U+0069 U+0065 U+0024	"ruzie"	Dutch
+^schip$	s x ɪ p	1	U+005E U+0073 U+0063 U+0068 U+0069 U+0070 U+0024	"schip"	Dutch
+^schop$	s x ɔ p	1	U+005E U+0073 U+0063 U+0068 U+006F U+0070 U+0024	"schop"	Dutch
+^schub$	s x ʏ p	1	U+005E U+0073 U+0063 U+0068 U+0075 U+0062 U+0024	"schub"	Dutch
+^slaaf$	s l aː f	1	U+005E U+0073 U+006C U+0061 U+0061 U+0066 U+0024	"slaaf"	Dutch
+^slaan$	s l aː n	1	U+005E U+0073 U+006C U+0061 U+0061 U+006E U+0024	"slaan"	Dutch
+^slaap$	s l aː p	1	U+005E U+0073 U+006C U+0061 U+0061 U+0070 U+0024	"slaap"	Dutch
+^slang$	s l ɑ ŋ	1	U+005E U+0073 U+006C U+0061 U+006E U+0067 U+0024	"slang"	Dutch
+^sloot$	s l oː t	1	U+005E U+0073 U+006C U+006F U+006F U+0074 U+0024	"sloot"	Dutch
+^snoep$	s n uː p	1	U+005E U+0073 U+006E U+006F U+0065 U+0070 U+0024	"snoep"	Dutch
+^spade$	s p aː d ə	1	U+005E U+0073 U+0070 U+0061 U+0064 U+0065 U+0024	"spade"	Dutch
+^speer$	s p eː r	1	U+005E U+0073 U+0070 U+0065 U+0065 U+0072 U+0024	"speer"	Dutch
+^speld$	s p ɛ l t	1	U+005E U+0073 U+0070 U+0065 U+006C U+0064 U+0024	"speld"	Dutch
+^spits$	s p ɪ t s	1	U+005E U+0073 U+0070 U+0069 U+0074 U+0073 U+0024	"spits"	Dutch
+^spook$	s p oː k	1	U+005E U+0073 U+0070 U+006F U+006F U+006B U+0024	"spook"	Dutch
+^staan$	s t aː n	1	U+005E U+0073 U+0074 U+0061 U+0061 U+006E U+0024	"staan"	Dutch
+^steen$	s t eː n	1	U+005E U+0073 U+0074 U+0065 U+0065 U+006E U+0024	"steen"	Dutch
+^sterk$	s t ɛ r k	1	U+005E U+0073 U+0074 U+0065 U+0072 U+006B U+0024	"sterk"	Dutch
+^stier$	s t iː r	1	U+005E U+0073 U+0074 U+0069 U+0065 U+0072 U+0024	"stier"	Dutch
+^stoel$	s t uː l	1	U+005E U+0073 U+0074 U+006F U+0065 U+006C U+0024	"stoel"	Dutch
+^stoom$	s t oː m	1	U+005E U+0073 U+0074 U+006F U+006F U+006D U+0024	"stoom"	Dutch
+^storm$	s t ɔ r m	1	U+005E U+0073 U+0074 U+006F U+0072 U+006D U+0024	"storm"	Dutch
+^straf$	s t r ɑ f	1	U+005E U+0073 U+0074 U+0072 U+0061 U+0066 U+0024	"straf"	Dutch
+^strik$	s t r ɪ k	1	U+005E U+0073 U+0074 U+0072 U+0069 U+006B U+0024	"strik"	Dutch
+^tabak$	t aː b ɑ k	1	U+005E U+0074 U+0061 U+0062 U+0061 U+006B U+0024	"tabak"	Dutch
+^tafel$	t aː f ə l	1	U+005E U+0074 U+0061 U+0066 U+0065 U+006C U+0024	"tafel"	Dutch
+^tante$	t ɑ n t ə	3	U+005E U+0074 U+0061 U+006E U+0074 U+0065 U+0024	"tante"	Dutch
+^tapir$	t aː p iː r	1	U+005E U+0074 U+0061 U+0070 U+0069 U+0072 U+0024	"tapir"	Dutch
+^tarwe$	t ɑ r ʋ ə	1	U+005E U+0074 U+0061 U+0072 U+0077 U+0065 U+0024	"tarwe"	Dutch
+^tepel$	t eː p ə l	1	U+005E U+0074 U+0065 U+0070 U+0065 U+006C U+0024	"tepel"	Dutch
+^tonen$	t oː n ə	1	U+005E U+0074 U+006F U+006E U+0065 U+006E U+0024	"tonen"	Dutch
+^toren$	t oː r ə	1	U+005E U+0074 U+006F U+0072 U+0065 U+006E U+0024	"toren"	Dutch
+^traag$	t r aː x	1	U+005E U+0074 U+0072 U+0061 U+0061 U+0067 U+0024	"traag"	Dutch
+^traan$	t r aː n	1	U+005E U+0074 U+0072 U+0061 U+0061 U+006E U+0024	"traan"	Dutch
+^trein$	t r ɛi n	1	U+005E U+0074 U+0072 U+0065 U+0069 U+006E U+0024	"trein"	Dutch
+^trots$	t r ɔ t s	1	U+005E U+0074 U+0072 U+006F U+0074 U+0073 U+0024	"trots"	Dutch
+^trouw$	t r ɑu ʋ	1	U+005E U+0074 U+0072 U+006F U+0075 U+0077 U+0024	"trouw"	Dutch
+^vadem$	v aː d ə m	1	U+005E U+0076 U+0061 U+0064 U+0065 U+006D U+0024	"vadem"	Dutch
+^vader$	v aː d ə r	1	U+005E U+0076 U+0061 U+0064 U+0065 U+0072 U+0024	"vader"	Dutch
+^vegen$	v eː ɣ ə	1	U+005E U+0076 U+0065 U+0067 U+0065 U+006E U+0024	"vegen"	Dutch
+^vlees$	v l eː s	2	U+005E U+0076 U+006C U+0065 U+0065 U+0073 U+0024	"vlees"	Dutch
+^vlieg$	v l iː x	1	U+005E U+0076 U+006C U+0069 U+0065 U+0067 U+0024	"vlieg"	Dutch
+^vloed$	v l uː t	1	U+005E U+0076 U+006C U+006F U+0065 U+0064 U+0024	"vloed"	Dutch
+^vloer$	v l uː r	1	U+005E U+0076 U+006C U+006F U+0065 U+0072 U+0024	"vloer"	Dutch
+^vogel$	v oː ɣ ə l	1	U+005E U+0076 U+006F U+0067 U+0065 U+006C U+0024	"vogel"	Dutch
+^vrede$	v r eː d ə	1	U+005E U+0076 U+0072 U+0065 U+0064 U+0065 U+0024	"vrede"	Dutch
+^vrije$	v r ɛi j ə	1	U+005E U+0076 U+0072 U+0069 U+006A U+0065 U+0024	"vrije"	Dutch
+^vroeg$	v r uː x	1	U+005E U+0076 U+0072 U+006F U+0065 U+0067 U+0024	"vroeg"	Dutch
+^vrouw$	v r ɑu ʋ	3	U+005E U+0076 U+0072 U+006F U+0075 U+0077 U+0024	"vrouw"	Dutch
+^vulva$	v ʏ l v aː	1	U+005E U+0076 U+0075 U+006C U+0076 U+0061 U+0024	"vulva"	Dutch
+^wagen$	ʋ aː ɣ ə	1	U+005E U+0077 U+0061 U+0067 U+0065 U+006E U+0024	"wagen"	Dutch
+^water$	ʋ aː t ə r	1	U+005E U+0077 U+0061 U+0074 U+0065 U+0072 U+0024	"water"	Dutch
+^wegen$	ʋ eː ɣ ə	1	U+005E U+0077 U+0065 U+0067 U+0065 U+006E U+0024	"wegen"	Dutch
+^weide$	ʋ ɛi d ə	1	U+005E U+0077 U+0065 U+0069 U+0064 U+0065 U+0024	"weide"	Dutch
+^welke$	ʋ ɛ l k ə	1	U+005E U+0077 U+0065 U+006C U+006B U+0065 U+0024	"welke"	Dutch
+^wenen$	ʋ eː n ə	1	U+005E U+0077 U+0065 U+006E U+0065 U+006E U+0024	"wenen"	Dutch
+^weten$	ʋ eː t ə	1	U+005E U+0077 U+0065 U+0074 U+0065 U+006E U+0024	"weten"	Dutch
+^weven$	ʋ eː v ə	1	U+005E U+0077 U+0065 U+0076 U+0065 U+006E U+0024	"weven"	Dutch
+^woede$	ʋ uː d ə	1	U+005E U+0077 U+006F U+0065 U+0064 U+0065 U+0024	"woede"	Dutch
+^wonen$	ʋ oː n ə	1	U+005E U+0077 U+006F U+006E U+0065 U+006E U+0024	"wonen"	Dutch
+^woord$	ʋ oː r t	1	U+005E U+0077 U+006F U+006F U+0072 U+0064 U+0024	"woord"	Dutch
+^worst$	ʋ ɔ r s t	1	U+005E U+0077 U+006F U+0072 U+0073 U+0074 U+0024	"worst"	Dutch
+^zacht$	z ɑ x t	1	U+005E U+007A U+0061 U+0063 U+0068 U+0074 U+0024	"zacht"	Dutch
+^zeker$	z eː k ə r	1	U+005E U+007A U+0065 U+006B U+0065 U+0072 U+0024	"zeker"	Dutch
+^zenuw$	z eː n yː ʋ	1	U+005E U+007A U+0065 U+006E U+0075 U+0077 U+0024	"zenuw"	Dutch
+^zeven$	z eː v ə	2	U+005E U+007A U+0065 U+0076 U+0065 U+006E U+0024	"zeven"	Dutch
+^zijde$	z ɛi d ə	1	U+005E U+007A U+0069 U+006A U+0064 U+0065 U+0024	"zijde"	Dutch
+^zomer$	z oː m ə r	1	U+005E U+007A U+006F U+006D U+0065 U+0072 U+0024	"zomer"	Dutch
+^zwaar$	z ʋ aː r	1	U+005E U+007A U+0077 U+0061 U+0061 U+0072 U+0024	"zwaar"	Dutch
+^zwart$	z ʋ ɑ r t	1	U+005E U+007A U+0077 U+0061 U+0072 U+0074 U+0024	"zwart"	Dutch
+^aanval$	aː n v ɑ l	1	U+005E U+0061 U+0061 U+006E U+0076 U+0061 U+006C U+0024	"aanval"	Dutch
+^achter$	ɑ x t ə r	1	U+005E U+0061 U+0063 U+0068 U+0074 U+0065 U+0072 U+0024	"achter"	Dutch
+^ademen$	aː d ə m ə	1	U+005E U+0061 U+0064 U+0065 U+006D U+0065 U+006E U+0024	"ademen"	Dutch
+^alleen$	ɑ l eː n	1	U+005E U+0061 U+006C U+006C U+0065 U+0065 U+006E U+0024	"alleen"	Dutch
+^altaar$	ɑ l t aː r	1	U+005E U+0061 U+006C U+0074 U+0061 U+0061 U+0072 U+0024	"altaar"	Dutch
+^altijd$	ɑ l t ɛi t	1	U+005E U+0061 U+006C U+0074 U+0069 U+006A U+0064 U+0024	"altijd"	Dutch
+^andere$	ɑ n d ə r ə	1	U+005E U+0061 U+006E U+0064 U+0065 U+0072 U+0065 U+0024	"andere"	Dutch
+^bakken$	b ɑ k ə	1	U+005E U+0062 U+0061 U+006B U+006B U+0065 U+006E U+0024	"bakken"	Dutch
+^ballen$	b ɑ l ə	1	U+005E U+0062 U+0061 U+006C U+006C U+0065 U+006E U+0024	"ballen"	Dutch
+^bamboe$	b ɑ m b uː	1	U+005E U+0062 U+0061 U+006D U+0062 U+006F U+0065 U+0024	"bamboe"	Dutch
+^banaan$	b aː n aː n	1	U+005E U+0062 U+0061 U+006E U+0061 U+0061 U+006E U+0024	"banaan"	Dutch
+^banyan$	b ɑ n j a n	1	U+005E U+0062 U+0061 U+006E U+0079 U+0061 U+006E U+0024	"banyan"	Dutch
+^bataat$	b aː t aː t	1	U+005E U+0062 U+0061 U+0074 U+0061 U+0061 U+0074 U+0024	"bataat"	Dutch
+^bedrog$	b ə d r ɔ x	1	U+005E U+0062 U+0065 U+0064 U+0072 U+006F U+0067 U+0024	"bedrog"	Dutch
+^beitel$	b ɛi t ə l	1	U+005E U+0062 U+0065 U+0069 U+0074 U+0065 U+006C U+0024	"beitel"	Dutch
+^bidden$	b ɪ d ə	1	U+005E U+0062 U+0069 U+0064 U+0064 U+0065 U+006E U+0024	"bidden"	Dutch
+^bijten$	b ɛi t ə	1	U+005E U+0062 U+0069 U+006A U+0074 U+0065 U+006E U+0024	"bijten"	Dutch
+^billen$	b ɪ l ə	1	U+005E U+0062 U+0069 U+006C U+006C U+0065 U+006E U+0024	"billen"	Dutch
+^binden$	b ɪ n d ə	1	U+005E U+0062 U+0069 U+006E U+0064 U+0065 U+006E U+0024	"binden"	Dutch
+^binnen$	b ɪ n ə	1	U+005E U+0062 U+0069 U+006E U+006E U+0065 U+006E U+0024	"binnen"	Dutch
+^bitter$	b ɪ t ə r	1	U+005E U+0062 U+0069 U+0074 U+0074 U+0065 U+0072 U+0024	"bitter"	Dutch
+^blazen$	b l aː z ə	1	U+005E U+0062 U+006C U+0061 U+007A U+0065 U+006E U+0024	"blazen"	Dutch
+^bonzen$	b ɔ n z ə	1	U+005E U+0062 U+006F U+006E U+007A U+0065 U+006E U+0024	"bonzen"	Dutch
+^bouwen$	b ɑu ʋ ə	1	U+005E U+0062 U+006F U+0075 U+0077 U+0065 U+006E U+0024	"bouwen"	Dutch
+^braden$	b r aː d ə	1	U+005E U+0062 U+0072 U+0061 U+0064 U+0065 U+006E U+0024	"braden"	Dutch
+^braken$	b r aː k ə	1	U+005E U+0062 U+0072 U+0061 U+006B U+0065 U+006E U+0024	"braken"	Dutch
+^breken$	b r eː k ə	1	U+005E U+0062 U+0072 U+0065 U+006B U+0065 U+006E U+0024	"breken"	Dutch
+^buffel$	b ʏ f ə l	1	U+005E U+0062 U+0075 U+0066 U+0066 U+0065 U+006C U+0024	"buffel"	Dutch
+^buigen$	b œy ɣ ə	1	U+005E U+0062 U+0075 U+0069 U+0067 U+0065 U+006E U+0024	"buigen"	Dutch
+^buiten$	b œy t ə	1	U+005E U+0062 U+0075 U+0069 U+0074 U+0065 U+006E U+0024	"buiten"	Dutch
+^burger$	b ʏ r ɣ ə r	1	U+005E U+0062 U+0075 U+0072 U+0067 U+0065 U+0072 U+0024	"burger"	Dutch
+^cirkel$	s ɪ r k ə l	1	U+005E U+0063 U+0069 U+0072 U+006B U+0065 U+006C U+0024	"cirkel"	Dutch
+^coyote$	k oː j oː t ə	1	U+005E U+0063 U+006F U+0079 U+006F U+0074 U+0065 U+0024	"coyote"	Dutch
+^dansen$	d ɑ n s ə	1	U+005E U+0064 U+0061 U+006E U+0073 U+0065 U+006E U+0024	"dansen"	Dutch
+^dapper$	d ɑ p ə r	1	U+005E U+0064 U+0061 U+0070 U+0070 U+0065 U+0072 U+0024	"dapper"	Dutch
+^denken$	d ɛ ŋ k ə	1	U+005E U+0064 U+0065 U+006E U+006B U+0065 U+006E U+0024	"denken"	Dutch
+^direct$	d iː r ɛ k t	1	U+005E U+0064 U+0069 U+0072 U+0065 U+0063 U+0074 U+0024	"direct"	Dutch
+^dissel$	d ɪ s ə l	1	U+005E U+0064 U+0069 U+0073 U+0073 U+0065 U+006C U+0024	"dissel"	Dutch
+^dokter$	d ɔ k t ə r	1	U+005E U+0064 U+006F U+006B U+0074 U+0065 U+0072 U+0024	"dokter"	Dutch
+^donder$	d ɔ n d ə r	1	U+005E U+0064 U+006F U+006E U+0064 U+0065 U+0072 U+0024	"donder"	Dutch
+^donker$	d ɔ ŋ k ə r	1	U+005E U+0064 U+006F U+006E U+006B U+0065 U+0072 U+0024	"donker"	Dutch
+^dooier$	d oː j ə r	1	U+005E U+0064 U+006F U+006F U+0069 U+0065 U+0072 U+0024	"dooier"	Dutch
+^dorsen$	d ɔ r s ə	1	U+005E U+0064 U+006F U+0072 U+0073 U+0065 U+006E U+0024	"dorsen"	Dutch
+^dragen$	d r aː ɣ ə	5	U+005E U+0064 U+0072 U+0061 U+0067 U+0065 U+006E U+0024	"dragen"	Dutch
+^dromen$	d r oː m ə	1	U+005E U+0064 U+0072 U+006F U+006D U+0065 U+006E U+0024	"dromen"	Dutch
+^duiken$	d œy k ə	1	U+005E U+0064 U+0075 U+0069 U+006B U+0065 U+006E U+0024	"duiken"	Dutch
+^durven$	d ʏ r v ə	1	U+005E U+0064 U+0075 U+0072 U+0076 U+0065 U+006E U+0024	"durven"	Dutch
+^eerste$	eː r s t ə	1	U+005E U+0065 U+0065 U+0072 U+0073 U+0074 U+0065 U+0024	"eerste"	Dutch
+^eiland$	ɛi l ɑ n t	1	U+005E U+0065 U+0069 U+006C U+0061 U+006E U+0064 U+0024	"eiland"	Dutch
+^enkele$	ɛ ŋ k ə l ə	1	U+005E U+0065 U+006E U+006B U+0065 U+006C U+0065 U+0024	"enkele"	Dutch
+^geheim$	x ə h ɛi m	1	U+005E U+0067 U+0065 U+0068 U+0065 U+0069 U+006D U+0024	"geheim"	Dutch
+^geitje$	x ɛi t j ə	1	U+005E U+0067 U+0065 U+0069 U+0074 U+006A U+0065 U+0024	"geitje"	Dutch
+^gelijk$	x ə l ɛi k	1	U+005E U+0067 U+0065 U+006C U+0069 U+006A U+006B U+0024	"gelijk"	Dutch
+^geluid$	x ə l œy t	1	U+005E U+0067 U+0065 U+006C U+0075 U+0069 U+0064 U+0024	"geluid"	Dutch
+^genoeg$	x ə n uː x	1	U+005E U+0067 U+0065 U+006E U+006F U+0065 U+0067 U+0024	"genoeg"	Dutch
+^gereed$	x ə r eː t	1	U+005E U+0067 U+0065 U+0072 U+0065 U+0065 U+0064 U+0024	"gereed"	Dutch
+^gevaar$	x ə v aː r	1	U+005E U+0067 U+0065 U+0076 U+0061 U+0061 U+0072 U+0024	"gevaar"	Dutch
+^geweer$	x ə ʋ eː r	1	U+005E U+0067 U+0065 U+0077 U+0065 U+0065 U+0072 U+0024	"geweer"	Dutch
+^gezond$	x ə z ɔ n t	1	U+005E U+0067 U+0065 U+007A U+006F U+006E U+0064 U+0024	"gezond"	Dutch
+^gierig$	x iː r ə x	1	U+005E U+0067 U+0069 U+0065 U+0072 U+0069 U+0067 U+0024	"gierig"	Dutch
+^gierst$	x iː r s t	1	U+005E U+0067 U+0069 U+0065 U+0072 U+0073 U+0074 U+0024	"gierst"	Dutch
+^gieten$	x iː t ə	1	U+005E U+0067 U+0069 U+0065 U+0074 U+0065 U+006E U+0024	"gieten"	Dutch
+^gissen$	x iː s ə	1	U+005E U+0067 U+0069 U+0073 U+0073 U+0065 U+006E U+0024	"gissen"	Dutch
+^gooien$	x oː j ə	1	U+005E U+0067 U+006F U+006F U+0069 U+0065 U+006E U+0024	"gooien"	Dutch
+^gordel$	x ɔ r d ə l	1	U+005E U+0067 U+006F U+0072 U+0064 U+0065 U+006C U+0024	"gordel"	Dutch
+^graven$	x r aː v ə	1	U+005E U+0067 U+0072 U+0061 U+0076 U+0065 U+006E U+0024	"graven"	Dutch
+^gulzig$	x ʏ l z ə x	1	U+005E U+0067 U+0075 U+006C U+007A U+0069 U+0067 U+0024	"gulzig"	Dutch
+^hakken$	h ɑ k ə	1	U+005E U+0068 U+0061 U+006B U+006B U+0065 U+006E U+0024	"hakken"	Dutch
+^haring$	h aː r ɪ ŋ	1	U+005E U+0068 U+0061 U+0072 U+0069 U+006E U+0067 U+0024	"haring"	Dutch
+^harnas$	h ɑ r n ɑ s	1	U+005E U+0068 U+0061 U+0072 U+006E U+0061 U+0073 U+0024	"harnas"	Dutch
+^hebben$	h ɛ b ə	1	U+005E U+0068 U+0065 U+0062 U+0062 U+0065 U+006E U+0024	"hebben"	Dutch
+^heilig$	h ɛi l ə x	1	U+005E U+0068 U+0065 U+0069 U+006C U+0069 U+0067 U+0024	"heilig"	Dutch
+^helder$	h ɛ l d ə r	1	U+005E U+0068 U+0065 U+006C U+0064 U+0065 U+0072 U+0024	"helder"	Dutch
+^helpen$	h ɛ l p ə	1	U+005E U+0068 U+0065 U+006C U+0070 U+0065 U+006E U+0024	"helpen"	Dutch
+^hengst$	h ɛ ŋ s t	1	U+005E U+0068 U+0065 U+006E U+0067 U+0073 U+0074 U+0024	"hengst"	Dutch
+^herder$	h ɛ r d ə r	1	U+005E U+0068 U+0065 U+0072 U+0064 U+0065 U+0072 U+0024	"herder"	Dutch
+^herfst$	h ɛ r f s t	1	U+005E U+0068 U+0065 U+0072 U+0066 U+0073 U+0074 U+0024	"herfst"	Dutch
+^heuvel$	h øː v ə l	1	U+005E U+0068 U+0065 U+0075 U+0076 U+0065 U+006C U+0024	"heuvel"	Dutch
+^hikken$	h ɪ k ə	1	U+005E U+0068 U+0069 U+006B U+006B U+0065 U+006E U+0024	"hikken"	Dutch
+^hinken$	h ɪ ŋ k ə	1	U+005E U+0068 U+0069 U+006E U+006B U+0065 U+006E U+0024	"hinken"	Dutch
+^honing$	h oː n ɪ ŋ	2	U+005E U+0068 U+006F U+006E U+0069 U+006E U+0067 U+0024	"honing"	Dutch
+^houden$	h ɑu d ə	1	U+005E U+0068 U+006F U+0075 U+0064 U+0065 U+006E U+0024	"houden"	Dutch
+^huilen$	h œy l ə	2	U+005E U+0068 U+0075 U+0069 U+006C U+0065 U+006E U+0024	"huilen"	Dutch
+^hurken$	h ʏ r k ə	1	U+005E U+0068 U+0075 U+0072 U+006B U+0065 U+006E U+0024	"hurken"	Dutch
+^indien$	ɪ n d iː n	1	U+005E U+0069 U+006E U+0064 U+0069 U+0065 U+006E U+0024	"indien"	Dutch
+^insect$	ɪ n s ɛ k t	1	U+005E U+0069 U+006E U+0073 U+0065 U+0063 U+0074 U+0024	"insect"	Dutch
+^jaguar$	j aː g uː ʋ ɑ r	1	U+005E U+006A U+0061 U+0067 U+0075 U+0061 U+0072 U+0024	"jaguar"	Dutch
+^jongen$	j ɔ ŋ ə	1	U+005E U+006A U+006F U+006E U+0067 U+0065 U+006E U+0024	"jongen"	Dutch
+^jullie$	j ʏ l iː	1	U+005E U+006A U+0075 U+006C U+006C U+0069 U+0065 U+0024	"jullie"	Dutch
+^juweel$	j yː ʋ eː l	1	U+005E U+006A U+0075 U+0077 U+0065 U+0065 U+006C U+0024	"juweel"	Dutch
+^kachel$	k ɑ x ə l	1	U+005E U+006B U+0061 U+0063 U+0068 U+0065 U+006C U+0024	"kachel"	Dutch
+^kameel$	k aː m eː l	1	U+005E U+006B U+0061 U+006D U+0065 U+0065 U+006C U+0024	"kameel"	Dutch
+^katoen$	k aː t uː n	1	U+005E U+006B U+0061 U+0074 U+006F U+0065 U+006E U+0024	"katoen"	Dutch
+^kauwen$	k ɑu ʋ ə	1	U+005E U+006B U+0061 U+0075 U+0077 U+0065 U+006E U+0024	"kauwen"	Dutch
+^kerven$	k ɛ r v ə	1	U+005E U+006B U+0065 U+0072 U+0076 U+0065 U+006E U+0024	"kerven"	Dutch
+^keuken$	k øː k ə	1	U+005E U+006B U+0065 U+0075 U+006B U+0065 U+006E U+0024	"keuken"	Dutch
+^kiezen$	k iː z ə	1	U+005E U+006B U+0069 U+0065 U+007A U+0065 U+006E U+0024	"kiezen"	Dutch
+^kijken$	k ɛi k ə	1	U+005E U+006B U+0069 U+006A U+006B U+0065 U+006E U+0024	"kijken"	Dutch
+^kikker$	k ɪ k ə r	1	U+005E U+006B U+0069 U+006B U+006B U+0065 U+0072 U+0024	"kikker"	Dutch
+^kleren$	k l eː r ə	1	U+005E U+006B U+006C U+0065 U+0072 U+0065 U+006E U+0024	"kleren"	Dutch
+^kneden$	k n eː d ə	1	U+005E U+006B U+006E U+0065 U+0064 U+0065 U+006E U+0024	"kneden"	Dutch
+^koffie$	k ɔ f iː	1	U+005E U+006B U+006F U+0066 U+0066 U+0069 U+0065 U+0024	"koffie"	Dutch
+^konijn$	k oː n ɛi n	1	U+005E U+006B U+006F U+006E U+0069 U+006A U+006E U+0024	"konijn"	Dutch
+^koning$	k oː n ɪ ŋ	1	U+005E U+006B U+006F U+006E U+0069 U+006E U+0067 U+0024	"koning"	Dutch
+^koorts$	k oː r t s	1	U+005E U+006B U+006F U+006F U+0072 U+0074 U+0073 U+0024	"koorts"	Dutch
+^kuiken$	k œy k ə	1	U+005E U+006B U+0075 U+0069 U+006B U+0065 U+006E U+0024	"kuiken"	Dutch
+^kussen$	k ʏ s ə	2	U+005E U+006B U+0075 U+0073 U+0073 U+0065 U+006E U+0024	"kussen"	Dutch
+^lachen$	l ɑ x ə	1	U+005E U+006C U+0061 U+0063 U+0068 U+0065 U+006E U+0024	"lachen"	Dutch
+^ladder$	l ɑ d ə r	1	U+005E U+006C U+0061 U+0064 U+0064 U+0065 U+0072 U+0024	"ladder"	Dutch
+^lagune$	l aː ɣ yː n ə	1	U+005E U+006C U+0061 U+0067 U+0075 U+006E U+0065 U+0024	"lagune"	Dutch
+^lariks$	l aː r ɪ k s	1	U+005E U+006C U+0061 U+0072 U+0069 U+006B U+0073 U+0024	"lariks"	Dutch
+^leggen$	l ɛ ɣ ə	1	U+005E U+006C U+0065 U+0067 U+0067 U+0065 U+006E U+0024	"leggen"	Dutch
+^leiden$	l ɛi d ə	1	U+005E U+006C U+0065 U+0069 U+0064 U+0065 U+006E U+0024	"leiden"	Dutch
+^leider$	l ɛi d ə r	1	U+005E U+006C U+0065 U+0069 U+0064 U+0065 U+0072 U+0024	"leider"	Dutch
+^lelijk$	l eː l ə k	1	U+005E U+006C U+0065 U+006C U+0069 U+006A U+006B U+0024	"lelijk"	Dutch
+^leraar$	l eː r aː r	1	U+005E U+006C U+0065 U+0072 U+0061 U+0061 U+0072 U+0024	"leraar"	Dutch
+^liegen$	l iː ɣ ə	1	U+005E U+006C U+0069 U+0065 U+0067 U+0065 U+006E U+0024	"liegen"	Dutch
+^lijken$	l ɛi k ə	1	U+005E U+006C U+0069 U+006A U+006B U+0065 U+006E U+0024	"lijken"	Dutch
+^likken$	l ɪ k ə	1	U+005E U+006C U+0069 U+006B U+006B U+0065 U+006E U+0024	"likken"	Dutch
+^linnen$	l ɪ n ə	1	U+005E U+006C U+0069 U+006E U+006E U+0065 U+006E U+0024	"linnen"	Dutch
+^looien$	l oː j ə	1	U+005E U+006C U+006F U+006F U+0069 U+0065 U+006E U+0024	"looien"	Dutch
+^maaien$	m aː j ə	1	U+005E U+006D U+0061 U+0061 U+0069 U+0065 U+006E U+0024	"maaien"	Dutch
+^manier$	m aː n iː r	1	U+005E U+006D U+0061 U+006E U+0069 U+0065 U+0072 U+0024	"manier"	Dutch
+^maniok$	m aː n iː j ɔ k	1	U+005E U+006D U+0061 U+006E U+0069 U+006F U+006B U+0024	"maniok"	Dutch
+^mantel$	m ɑ n t ə l	1	U+005E U+006D U+0061 U+006E U+0074 U+0065 U+006C U+0024	"mantel"	Dutch
+^matras$	m ɑ t r ɑ s	1	U+005E U+006D U+0061 U+0074 U+0072 U+0061 U+0073 U+0024	"matras"	Dutch
+^meisje$	m ɛi s j ə	2	U+005E U+006D U+0065 U+0069 U+0073 U+006A U+0065 U+0024	"meisje"	Dutch
+^melken$	m ɛ l k ə	1	U+005E U+006D U+0065 U+006C U+006B U+0065 U+006E U+0024	"melken"	Dutch
+^merrie$	m ɛ r iː	1	U+005E U+006D U+0065 U+0072 U+0072 U+0069 U+0065 U+0024	"merrie"	Dutch
+^middag$	m ɪ d ɑ x	2	U+005E U+006D U+0069 U+0064 U+0064 U+0061 U+0067 U+0024	"middag"	Dutch
+^middel$	m ɪ d ə l	1	U+005E U+006D U+0069 U+0064 U+0064 U+0065 U+006C U+0024	"middel"	Dutch
+^midden$	m ɪ d ə	1	U+005E U+006D U+0069 U+0064 U+0064 U+0065 U+006E U+0024	"midden"	Dutch
+^missen$	m ɪ s ə	1	U+005E U+006D U+0069 U+0073 U+0073 U+0065 U+006E U+0024	"missen"	Dutch
+^modder$	m ɔ d ə r	1	U+005E U+006D U+006F U+0064 U+0064 U+0065 U+0072 U+0024	"modder"	Dutch
+^moeder$	m uː d ə r	1	U+005E U+006D U+006F U+0065 U+0064 U+0065 U+0072 U+0024	"moeder"	Dutch
+^moeras$	m uː r ɑ s	1	U+005E U+006D U+006F U+0065 U+0072 U+0061 U+0073 U+0024	"moeras"	Dutch
+^morgen$	m ɔ r ɣ ə	1	U+005E U+006D U+006F U+0072 U+0067 U+0065 U+006E U+0024	"morgen"	Dutch
+^mortel$	m ɔ r t ə l	1	U+005E U+006D U+006F U+0072 U+0074 U+0065 U+006C U+0024	"mortel"	Dutch
+^moskee$	m ɔ s k eː	1	U+005E U+006D U+006F U+0073 U+006B U+0065 U+0065 U+0024	"moskee"	Dutch
+^muziek$	m yː z iː k	1	U+005E U+006D U+0075 U+007A U+0069 U+0065 U+006B U+0024	"muziek"	Dutch
+^naaien$	n aː j ə	1	U+005E U+006E U+0061 U+0061 U+0069 U+0065 U+006E U+0024	"naaien"	Dutch
+^nadoen$	n aː d uː n	1	U+005E U+006E U+0061 U+0064 U+006F U+0065 U+006E U+0024	"nadoen"	Dutch
+^najaar$	n aː j aː r	1	U+005E U+006E U+0061 U+006A U+0061 U+0061 U+0072 U+0024	"najaar"	Dutch
+^nettas$	n ɛ t _ t ɑ s	1	U+005E U+006E U+0065 U+0074 U+0074 U+0061 U+0073 U+0024	"nettas"	Dutch
+^niezen$	n iː z ə	1	U+005E U+006E U+0069 U+0065 U+007A U+0065 U+006E U+0024	"niezen"	Dutch
+^noemen$	n uː m ə	1	U+005E U+006E U+006F U+0065 U+006D U+0065 U+006E U+0024	"noemen"	Dutch
+^oceaan$	oː s eː j aː n	1	U+005E U+006F U+0063 U+0065 U+0061 U+0061 U+006E U+0024	"oceaan"	Dutch
+^omhoog$	ɔ m h oː x	1	U+005E U+006F U+006D U+0068 U+006F U+006F U+0067 U+0024	"omhoog"	Dutch
+^omlaag$	ɔ m l aː x	1	U+005E U+006F U+006D U+006C U+0061 U+0061 U+0067 U+0024	"omlaag"	Dutch
+^ondiep$	ɔ n d iː p	1	U+005E U+006F U+006E U+0064 U+0069 U+0065 U+0070 U+0024	"ondiep"	Dutch
+^onrijp$	ɔ n r ɛi p	1	U+005E U+006F U+006E U+0072 U+0069 U+006A U+0070 U+0024	"onrijp"	Dutch
+^ooglid$	oː ɣ l ɪ t	1	U+005E U+006F U+006F U+0067 U+006C U+0069 U+0064 U+0024	"ooglid"	Dutch
+^oorbel$	oː r b ɛ l	1	U+005E U+006F U+006F U+0072 U+0062 U+0065 U+006C U+0024	"oorbel"	Dutch
+^oorlel$	oː r l ɛ l	1	U+005E U+006F U+006F U+0072 U+006C U+0065 U+006C U+0024	"oorlel"	Dutch
+^oorlog$	oː r l ɔ x	1	U+005E U+006F U+006F U+0072 U+006C U+006F U+0067 U+0024	"oorlog"	Dutch
+^oosten$	oː s t ə	1	U+005E U+006F U+006F U+0073 U+0074 U+0065 U+006E U+0024	"oosten"	Dutch
+^openen$	oː p ə n ə	1	U+005E U+006F U+0070 U+0065 U+006E U+0065 U+006E U+0024	"openen"	Dutch
+^ouders$	ɑu d ə r s	1	U+005E U+006F U+0075 U+0064 U+0065 U+0072 U+0073 U+0024	"ouders"	Dutch
+^paling$	p aː l ɪ ŋ	1	U+005E U+0070 U+0061 U+006C U+0069 U+006E U+0067 U+0024	"paling"	Dutch
+^papier$	p aː p iː r	1	U+005E U+0070 U+0061 U+0070 U+0069 U+0065 U+0072 U+0024	"papier"	Dutch
+^peddel$	p ɛ d ə l	1	U+005E U+0070 U+0065 U+0064 U+0064 U+0065 U+006C U+0024	"peddel"	Dutch
+^pellen$	p ɛ l ə	1	U+005E U+0070 U+0065 U+006C U+006C U+0065 U+006E U+0024	"pellen"	Dutch
+^pissen$	p ɪ s ə	1	U+005E U+0070 U+0069 U+0073 U+0073 U+0065 U+006E U+0024	"pissen"	Dutch
+^plaats$	p l aː t s	1	U+005E U+0070 U+006C U+0061 U+0061 U+0074 U+0073 U+0024	"plaats"	Dutch
+^poepen$	p uː p ə	1	U+005E U+0070 U+006F U+0065 U+0070 U+0065 U+006E U+0024	"poepen"	Dutch
+^poncho$	p ɔ n ʃ oː	1	U+005E U+0070 U+006F U+006E U+0063 U+0068 U+006F U+0024	"poncho"	Dutch
+^preken$	p r eː k ə	1	U+005E U+0070 U+0072 U+0065 U+006B U+0065 U+006E U+0024	"preken"	Dutch
+^rechts$	r ɛ x t s	1	U+005E U+0072 U+0065 U+0063 U+0068 U+0074 U+0073 U+0024	"rechts"	Dutch
+^redden$	r ɛ d ə	1	U+005E U+0072 U+0065 U+0064 U+0064 U+0065 U+006E U+0024	"redden"	Dutch
+^reiger$	r ɛi ɣ ə r	1	U+005E U+0072 U+0065 U+0069 U+0067 U+0065 U+0072 U+0024	"reiger"	Dutch
+^remmen$	r ɛ m ə	1	U+005E U+0072 U+0065 U+006D U+006D U+0065 U+006E U+0024	"remmen"	Dutch
+^rennen$	r ɛ n ə	1	U+005E U+0072 U+0065 U+006E U+006E U+0065 U+006E U+0024	"rennen"	Dutch
+^resten$	r ɛ s t ə	1	U+005E U+0072 U+0065 U+0073 U+0074 U+0065 U+006E U+0024	"resten"	Dutch
+^rijden$	r ɛi d ə	1	U+005E U+0072 U+0069 U+006A U+0064 U+0065 U+006E U+0024	"rijden"	Dutch
+^rillen$	r ɪ l ə	1	U+005E U+0072 U+0069 U+006C U+006C U+0065 U+006E U+0024	"rillen"	Dutch
+^rivier$	r iː v iː r	1	U+005E U+0072 U+0069 U+0076 U+0069 U+0065 U+0072 U+0024	"rivier"	Dutch
+^roeien$	r uː j ə	1	U+005E U+0072 U+006F U+0065 U+0069 U+0065 U+006E U+0024	"roeien"	Dutch
+^roeren$	r uː r ə	1	U+005E U+0072 U+006F U+0065 U+0072 U+0065 U+006E U+0024	"roeren"	Dutch
+^rollen$	r ɔ l ə	1	U+005E U+0072 U+006F U+006C U+006C U+0065 U+006E U+0024	"rollen"	Dutch
+^ruiken$	r œy k ə	3	U+005E U+0072 U+0075 U+0069 U+006B U+0065 U+006E U+0024	"ruiken"	Dutch
+^ruilen$	r œy l ə	1	U+005E U+0072 U+0075 U+0069 U+006C U+0065 U+006E U+0024	"ruilen"	Dutch
+^rusten$	r ʏ s t ə	1	U+005E U+0072 U+0075 U+0073 U+0074 U+0065 U+006E U+0024	"rusten"	Dutch
+^rustig$	r ʏ s t ə x	1	U+005E U+0072 U+0075 U+0073 U+0074 U+0069 U+0067 U+0024	"rustig"	Dutch
+^schaal$	s x aː l	1	U+005E U+0073 U+0063 U+0068 U+0061 U+0061 U+006C U+0024	"schaal"	Dutch
+^schaap$	s x aː p	1	U+005E U+0073 U+0063 U+0068 U+0061 U+0061 U+0070 U+0024	"schaap"	Dutch
+^schaar$	s x aː r	1	U+005E U+0073 U+0063 U+0068 U+0061 U+0061 U+0072 U+0024	"schaar"	Dutch
+^schede$	s x eː d ə	1	U+005E U+0073 U+0063 U+0068 U+0065 U+0064 U+0065 U+0024	"schede"	Dutch
+^schelp$	s x ɛ l p	1	U+005E U+0073 U+0063 U+0068 U+0065 U+006C U+0070 U+0024	"schelp"	Dutch
+^scherp$	s x ɛ r p	1	U+005E U+0073 U+0063 U+0068 U+0065 U+0072 U+0070 U+0024	"scherp"	Dutch
+^schild$	s x ɪ l t	1	U+005E U+0073 U+0063 U+0068 U+0069 U+006C U+0064 U+0024	"schild"	Dutch
+^schoen$	s x uː n	1	U+005E U+0073 U+0063 U+0068 U+006F U+0065 U+006E U+0024	"schoen"	Dutch
+^school$	s x oː l	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006C U+0024	"school"	Dutch
+^schoon$	s x oː n	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+0024	"schoon"	Dutch
+^schuim$	s x œy m	1	U+005E U+0073 U+0063 U+0068 U+0075 U+0069 U+006D U+0024	"schuim"	Dutch
+^schuld$	s x ʏ l t	3	U+005E U+0073 U+0063 U+0068 U+0075 U+006C U+0064 U+0024	"schuld"	Dutch
+^sintel$	s ɪ n t ə l	1	U+005E U+0073 U+0069 U+006E U+0074 U+0065 U+006C U+0024	"sintel"	Dutch
+^slapen$	s l aː p ə	1	U+005E U+0073 U+006C U+0061 U+0070 U+0065 U+006E U+0024	"slapen"	Dutch
+^slecht$	s l ɛ x t	1	U+005E U+0073 U+006C U+0065 U+0063 U+0068 U+0074 U+0024	"slecht"	Dutch
+^sluier$	s l œy j ə r	1	U+005E U+0073 U+006C U+0075 U+0069 U+0065 U+0072 U+0024	"sluier"	Dutch
+^smaken$	s m aː k ə	1	U+005E U+0073 U+006D U+0061 U+006B U+0065 U+006E U+0024	"smaken"	Dutch
+^smeden$	s m eː d ə	1	U+005E U+0073 U+006D U+0065 U+0064 U+0065 U+006E U+0024	"smeden"	Dutch
+^sneeuw$	s n eː ʋ	1	U+005E U+0073 U+006E U+0065 U+0065 U+0075 U+0077 U+0024	"sneeuw"	Dutch
+^specie$	s p eː s iː	1	U+005E U+0073 U+0070 U+0065 U+0063 U+0069 U+0065 U+0024	"specie"	Dutch
+^spelen$	s p eː l ə	1	U+005E U+0073 U+0070 U+0065 U+006C U+0065 U+006E U+0024	"spelen"	Dutch
+^spugen$	s p yː ɣ ə	1	U+005E U+0073 U+0070 U+0075 U+0067 U+0065 U+006E U+0024	"spugen"	Dutch
+^staart$	s t aː r t	1	U+005E U+0073 U+0074 U+0061 U+0061 U+0072 U+0074 U+0024	"staart"	Dutch
+^steken$	s t eː k ə	1	U+005E U+0073 U+0074 U+0065 U+006B U+0065 U+006E U+0024	"steken"	Dutch
+^stelen$	s t eː l ə	1	U+005E U+0073 U+0074 U+0065 U+006C U+0065 U+006E U+0024	"stelen"	Dutch
+^straat$	s t r aː t	1	U+005E U+0073 U+0074 U+0072 U+0061 U+0061 U+0074 U+0024	"straat"	Dutch
+^strijd$	s t r ɛi t	1	U+005E U+0073 U+0074 U+0072 U+0069 U+006A U+0064 U+0024	"strijd"	Dutch
+^stronk$	s t r ɔ ŋ k	1	U+005E U+0073 U+0074 U+0072 U+006F U+006E U+006B U+0024	"stronk"	Dutch
+^stroom$	s t r oː m	1	U+005E U+0073 U+0074 U+0072 U+006F U+006F U+006D U+0024	"stroom"	Dutch
+^sturen$	s t yː r ə	1	U+005E U+0073 U+0074 U+0075 U+0072 U+0065 U+006E U+0024	"sturen"	Dutch
+^suiker$	s œy k ə r	1	U+005E U+0073 U+0075 U+0069 U+006B U+0065 U+0072 U+0024	"suiker"	Dutch
+^tapijt$	t aː p ɛi t	1	U+005E U+0074 U+0061 U+0070 U+0069 U+006A U+0074 U+0024	"tapijt"	Dutch
+^tellen$	t ɛ l ə	1	U+005E U+0074 U+0065 U+006C U+006C U+0065 U+006E U+0024	"tellen"	Dutch
+^tempel$	t ɛ m p ə l	1	U+005E U+0074 U+0065 U+006D U+0070 U+0065 U+006C U+0024	"tempel"	Dutch
+^toekan$	t uː k ɑ n	1	U+005E U+0074 U+006F U+0065 U+006B U+0061 U+006E U+0024	"toekan"	Dutch
+^toilet$	t ʋ ɑ l ɛ t	1	U+005E U+0074 U+006F U+0069 U+006C U+0065 U+0074 U+0024	"toilet"	Dutch
+^twaalf$	t ʋ aː l f	1	U+005E U+0074 U+0077 U+0061 U+0061 U+006C U+0066 U+0024	"twaalf"	Dutch
+^tweede$	t ʋ eː d ə	1	U+005E U+0074 U+0077 U+0065 U+0065 U+0064 U+0065 U+0024	"tweede"	Dutch
+^vagina$	v aː ɣ iː n aː	1	U+005E U+0076 U+0061 U+0067 U+0069 U+006E U+0061 U+0024	"vagina"	Dutch
+^vallei$	v ɑ l ɛi	1	U+005E U+0076 U+0061 U+006C U+006C U+0065 U+0069 U+0024	"vallei"	Dutch
+^vallen$	v ɑ l ə	1	U+005E U+0076 U+0061 U+006C U+006C U+0065 U+006E U+0024	"vallen"	Dutch
+^vangen$	v ɑ ŋ ə	2	U+005E U+0076 U+0061 U+006E U+0067 U+0065 U+006E U+0024	"vangen"	Dutch
+^varken$	v ɑ r k ə	1	U+005E U+0076 U+0061 U+0072 U+006B U+0065 U+006E U+0024	"varken"	Dutch
+^vasten$	v ɑ s t ə	1	U+005E U+0076 U+0061 U+0073 U+0074 U+0065 U+006E U+0024	"vasten"	Dutch
+^vellen$	v ɛ l ə	1	U+005E U+0076 U+0065 U+006C U+006C U+0065 U+006E U+0024	"vellen"	Dutch
+^verven$	v ɛ r v ə	2	U+005E U+0076 U+0065 U+0072 U+0076 U+0065 U+006E U+0024	"verven"	Dutch
+^veulen$	v øː l ə	1	U+005E U+0076 U+0065 U+0075 U+006C U+0065 U+006E U+0024	"veulen"	Dutch
+^vijand$	v ɛi j ɑ n t	1	U+005E U+0076 U+0069 U+006A U+0061 U+006E U+0064 U+0024	"vijand"	Dutch
+^vijzel$	v ɛi z ə l	1	U+005E U+0076 U+0069 U+006A U+007A U+0065 U+006C U+0024	"vijzel"	Dutch
+^villen$	v ɪ l ə	1	U+005E U+0076 U+0069 U+006C U+006C U+0065 U+006E U+0024	"villen"	Dutch
+^vinden$	v ɪ n d ə	1	U+005E U+0076 U+0069 U+006E U+0064 U+0065 U+006E U+0024	"vinden"	Dutch
+^vinger$	v ɪ ŋ ə r	1	U+005E U+0076 U+0069 U+006E U+0067 U+0065 U+0072 U+0024	"vinger"	Dutch
+^visnet$	v ɪ s n ɛ t	1	U+005E U+0076 U+0069 U+0073 U+006E U+0065 U+0074 U+0024	"visnet"	Dutch
+^visser$	v ɪ s ə r	1	U+005E U+0076 U+0069 U+0073 U+0073 U+0065 U+0072 U+0024	"visser"	Dutch
+^vlakte$	v l ɑ k t ə	1	U+005E U+0076 U+006C U+0061 U+006B U+0074 U+0065 U+0024	"vlakte"	Dutch
+^vlecht$	v l ɛ x t	1	U+005E U+0076 U+006C U+0065 U+0063 U+0068 U+0074 U+0024	"vlecht"	Dutch
+^voelen$	v uː l ə	1	U+005E U+0076 U+006F U+0065 U+006C U+0065 U+006E U+0024	"voelen"	Dutch
+^volgen$	v ɔ l ɣ ə	1	U+005E U+0076 U+006F U+006C U+0067 U+0065 U+006E U+0024	"volgen"	Dutch
+^vonnis$	v ɔ n ə s	1	U+005E U+0076 U+006F U+006E U+006E U+0069 U+0073 U+0024	"vonnis"	Dutch
+^vouwen$	v ɑu ʋ ə	1	U+005E U+0076 U+006F U+0075 U+0077 U+0065 U+006E U+0024	"vouwen"	Dutch
+^vragen$	v r aː ɣ ə	2	U+005E U+0076 U+0072 U+0061 U+0067 U+0065 U+006E U+0024	"vragen"	Dutch
+^vriend$	v r iː n t	1	U+005E U+0076 U+0072 U+0069 U+0065 U+006E U+0064 U+0024	"vriend"	Dutch
+^waaier$	ʋ aː j ə r	1	U+005E U+0077 U+0061 U+0061 U+0069 U+0065 U+0072 U+0024	"waaier"	Dutch
+^waarom$	ʋ aː r ɔ m	1	U+005E U+0077 U+0061 U+0061 U+0072 U+006F U+006D U+0024	"waarom"	Dutch
+^walvis$	ʋ ɑ l v ɪ s	1	U+005E U+0077 U+0061 U+006C U+0076 U+0069 U+0073 U+0024	"walvis"	Dutch
+^wapens$	ʋ aː p ə n s	1	U+005E U+0077 U+0061 U+0070 U+0065 U+006E U+0073 U+0024	"wapens"	Dutch
+^wassen$	ʋ ɑ s ə	1	U+005E U+0077 U+0061 U+0073 U+0073 U+0065 U+006E U+0024	"wassen"	Dutch
+^weduwe$	ʋ eː d yː ʋ ə	1	U+005E U+0077 U+0065 U+0064 U+0075 U+0077 U+0065 U+0024	"weduwe"	Dutch
+^weinig$	ʋ ɛi n ə x	1	U+005E U+0077 U+0065 U+0069 U+006E U+0069 U+0067 U+0024	"weinig"	Dutch
+^wekken$	ʋ ɛ k ə	1	U+005E U+0077 U+0065 U+006B U+006B U+0065 U+006E U+0024	"wekken"	Dutch
+^wensen$	ʋ ɛ n s ə	1	U+005E U+0077 U+0065 U+006E U+0073 U+0065 U+006E U+0024	"wensen"	Dutch
+^wereld$	ʋ eː r ə l t	1	U+005E U+0077 U+0065 U+0072 U+0065 U+006C U+0064 U+0024	"wereld"	Dutch
+^werpen$	ʋ ɛ r p ə	1	U+005E U+0077 U+0065 U+0072 U+0070 U+0065 U+006E U+0024	"werpen"	Dutch
+^westen$	ʋ ɛ s t ə	1	U+005E U+0077 U+0065 U+0073 U+0074 U+0065 U+006E U+0024	"westen"	Dutch
+^winkel$	ʋ ɪ ŋ k ə l	1	U+005E U+0077 U+0069 U+006E U+006B U+0065 U+006C U+0024	"winkel"	Dutch
+^winter$	ʋ ɪ n t ə r	1	U+005E U+0077 U+0069 U+006E U+0074 U+0065 U+0072 U+0024	"winter"	Dutch
+^worden$	ʋ ɔ r d ə	1	U+005E U+0077 U+006F U+0072 U+0064 U+0065 U+006E U+0024	"worden"	Dutch
+^wortel$	ʋ ɔ r t ə l	1	U+005E U+0077 U+006F U+0072 U+0074 U+0065 U+006C U+0024	"wortel"	Dutch
+^zaaien$	z aː j ə	1	U+005E U+007A U+0061 U+0061 U+0069 U+0065 U+006E U+0024	"zaaien"	Dutch
+^zeggen$	z ɛ ɣ ə	1	U+005E U+007A U+0065 U+0067 U+0067 U+0065 U+006E U+0024	"zeggen"	Dutch
+^zeilen$	z ɛi l ə	1	U+005E U+007A U+0065 U+0069 U+006C U+0065 U+006E U+0024	"zeilen"	Dutch
+^zenden$	z ɛ n d ə	1	U+005E U+007A U+0065 U+006E U+0064 U+0065 U+006E U+0024	"zenden"	Dutch
+^ziekte$	z iː k t ə	1	U+005E U+007A U+0069 U+0065 U+006B U+0074 U+0065 U+0024	"ziekte"	Dutch
+^zilver$	z ɪ l v ə r	1	U+005E U+007A U+0069 U+006C U+0076 U+0065 U+0072 U+0024	"zilver"	Dutch
+^zingen$	z ɪ ŋ ə	1	U+005E U+007A U+0069 U+006E U+0067 U+0065 U+006E U+0024	"zingen"	Dutch
+^zinken$	z ɪ ŋ k ə	1	U+005E U+007A U+0069 U+006E U+006B U+0065 U+006E U+0024	"zinken"	Dutch
+^zitten$	z ɪ t ə	1	U+005E U+007A U+0069 U+0074 U+0074 U+0065 U+006E U+0024	"zitten"	Dutch
+^zoeken$	z uː k ə	1	U+005E U+007A U+006F U+0065 U+006B U+0065 U+006E U+0024	"zoeken"	Dutch
+^zondag$	z ɔ n d ɑ x	1	U+005E U+007A U+006F U+006E U+0064 U+0061 U+0067 U+0024	"zondag"	Dutch
+^zonder$	z ɔ n d ə r	1	U+005E U+007A U+006F U+006E U+0064 U+0065 U+0072 U+0024	"zonder"	Dutch
+^zuiden$	z œy d ə	1	U+005E U+007A U+0075 U+0069 U+0064 U+0065 U+006E U+0024	"zuiden"	Dutch
+^zuigen$	z œy ɣ ə	1	U+005E U+007A U+0075 U+0069 U+0067 U+0065 U+006E U+0024	"zuigen"	Dutch
+^zwaard$	z ʋ aː r t	1	U+005E U+007A U+0077 U+0061 U+0061 U+0072 U+0064 U+0024	"zwaard"	Dutch
+^zwager$	z ʋ aː ɣ ə r	1	U+005E U+007A U+0077 U+0061 U+0067 U+0065 U+0072 U+0024	"zwager"	Dutch
+^zweren$	z ʋ eː r ə	1	U+005E U+007A U+0077 U+0065 U+0072 U+0065 U+006E U+0024	"zweren"	Dutch
+^zweten$	z ʋ eː t ə	1	U+005E U+007A U+0077 U+0065 U+0074 U+0065 U+006E U+0024	"zweten"	Dutch
+^adelaar$	aː d ə l aː r	1	U+005E U+0061 U+0064 U+0065 U+006C U+0061 U+0061 U+0072 U+0024	"adelaar"	Dutch
+^afgunst$	ɑ f x ʏ n s t	1	U+005E U+0061 U+0066 U+0067 U+0075 U+006E U+0073 U+0074 U+0024	"afgunst"	Dutch
+^afmaken$	ɑ f m aː k ə	1	U+005E U+0061 U+0066 U+006D U+0061 U+006B U+0065 U+006E U+0024	"afmaken"	Dutch
+^afvegen$	ɑ f eː ɣ ə	1	U+005E U+0061 U+0066 U+0076 U+0065 U+0067 U+0065 U+006E U+0024	"afvegen"	Dutch
+^armband$	ɑ r m b ɑ n t	1	U+005E U+0061 U+0072 U+006D U+0062 U+0061 U+006E U+0064 U+0024	"armband"	Dutch
+^beloven$	b ə l oː v ə	1	U+005E U+0062 U+0065 U+006C U+006F U+0076 U+0065 U+006E U+0024	"beloven"	Dutch
+^betalen$	b ə t aː l ə	1	U+005E U+0062 U+0065 U+0074 U+0061 U+006C U+0065 U+006E U+0024	"betalen"	Dutch
+^bevelen$	b ə v eː l ə	1	U+005E U+0062 U+0065 U+0076 U+0065 U+006C U+0065 U+006E U+0024	"bevelen"	Dutch
+^bewaker$	b ə ʋ aː k ə r	1	U+005E U+0062 U+0065 U+0077 U+0061 U+006B U+0065 U+0072 U+0024	"bewaker"	Dutch
+^bewaren$	b ə ʋ aː r ə	1	U+005E U+0062 U+0065 U+0077 U+0061 U+0072 U+0065 U+006E U+0024	"bewaren"	Dutch
+^bewegen$	b ə ʋ eː ɣ ə	1	U+005E U+0062 U+0065 U+0077 U+0065 U+0067 U+0065 U+006E U+0024	"bewegen"	Dutch
+^blijven$	b l ɛi v ə	1	U+005E U+0062 U+006C U+0069 U+006A U+0076 U+0065 U+006E U+0024	"blijven"	Dutch
+^bliksem$	b l ɪ k s ə m	1	U+005E U+0062 U+006C U+0069 U+006B U+0073 U+0065 U+006D U+0024	"bliksem"	Dutch
+^borstel$	b ɔ r s t ə l	1	U+005E U+0062 U+006F U+0072 U+0073 U+0074 U+0065 U+006C U+0024	"borstel"	Dutch
+^bos(je)$	b ɔ s	1	U+005E U+0062 U+006F U+0073 U+0028 U+006A U+0065 U+0029 U+0024	"bos(je)"	Dutch
+^branden$	b r ɑ n d ə	1	U+005E U+0062 U+0072 U+0061 U+006E U+0064 U+0065 U+006E U+0024	"branden"	Dutch
+^brengen$	b r ɛ ŋ ə	1	U+005E U+0062 U+0072 U+0065 U+006E U+0067 U+0065 U+006E U+0024	"brengen"	Dutch
+^cassave$	k ɑ s aː v ə	1	U+005E U+0063 U+0061 U+0073 U+0073 U+0061 U+0076 U+0065 U+0024	"cassave"	Dutch
+^dakspar$	d ɑ k s p ɑ r	1	U+005E U+0064 U+0061 U+006B U+0073 U+0070 U+0061 U+0072 U+0024	"dakspar"	Dutch
+^dichter$	d ɪ x t ə r	1	U+005E U+0064 U+0069 U+0063 U+0068 U+0074 U+0065 U+0072 U+0024	"dichter"	Dutch
+^dinsdag$	d ɪ n z d ɑ x	1	U+005E U+0064 U+0069 U+006E U+0073 U+0064 U+0061 U+0067 U+0024	"dinsdag"	Dutch
+^dochter$	d ɔ x t ə r	1	U+005E U+0064 U+006F U+0063 U+0068 U+0074 U+0065 U+0072 U+0024	"dochter"	Dutch
+^dolfijn$	d ɔ l f ɛi n	1	U+005E U+0064 U+006F U+006C U+0066 U+0069 U+006A U+006E U+0024	"dolfijn"	Dutch
+^draaien$	d r aː j ə	1	U+005E U+0064 U+0072 U+0061 U+0061 U+0069 U+0065 U+006E U+0024	"draaien"	Dutch
+^dreigen$	d r ɛi ɣ ə	1	U+005E U+0064 U+0072 U+0065 U+0069 U+0067 U+0065 U+006E U+0024	"dreigen"	Dutch
+^drijven$	d r ɛi v ə	1	U+005E U+0064 U+0072 U+0069 U+006A U+0076 U+0065 U+006E U+0024	"drijven"	Dutch
+^drinken$	d r ɪ ŋ k ə	1	U+005E U+0064 U+0072 U+0069 U+006E U+006B U+0065 U+006E U+0024	"drinken"	Dutch
+^dronken$	d r ɔ ŋ k ə	1	U+005E U+0064 U+0072 U+006F U+006E U+006B U+0065 U+006E U+0024	"dronken"	Dutch
+^drukken$	d r ʏ k ə	1	U+005E U+0064 U+0072 U+0075 U+006B U+006B U+0065 U+006E U+0024	"drukken"	Dutch
+^duizend$	d œy z ə n t	1	U+005E U+0064 U+0075 U+0069 U+007A U+0065 U+006E U+0064 U+0024	"duizend"	Dutch
+^familie$	f aː m iː l iː	1	U+005E U+0066 U+0061 U+006D U+0069 U+006C U+0069 U+0065 U+0024	"familie"	Dutch
+^fluiten$	f l œy t ə	1	U+005E U+0066 U+006C U+0075 U+0069 U+0074 U+0065 U+006E U+0024	"fluiten"	Dutch
+^garnaal$	x ɑ r n aː l	1	U+005E U+0067 U+0061 U+0072 U+006E U+0061 U+0061 U+006C U+0024	"garnaal"	Dutch
+^geeuwen$	x eː ʋ ə	1	U+005E U+0067 U+0065 U+0065 U+0075 U+0077 U+0065 U+006E U+0024	"geeuwen"	Dutch
+^gekookt$	x ə k oː k t	1	U+005E U+0067 U+0065 U+006B U+006F U+006F U+006B U+0074 U+0024	"gekookt"	Dutch
+^geloven$	x ə l oː v ə	1	U+005E U+0067 U+0065 U+006C U+006F U+0076 U+0065 U+006E U+0024	"geloven"	Dutch
+^genezen$	x ə n eː z ə	1	U+005E U+0067 U+0065 U+006E U+0065 U+007A U+0065 U+006E U+0024	"genezen"	Dutch
+^getuige$	x ə t œy ɣ ə	1	U+005E U+0067 U+0065 U+0074 U+0075 U+0069 U+0067 U+0065 U+0024	"getuige"	Dutch
+^gevecht$	x ə v ɛ x t	1	U+005E U+0067 U+0065 U+0076 U+0065 U+0063 U+0068 U+0074 U+0024	"gevecht"	Dutch
+^gezicht$	x ə z ɪ x t	1	U+005E U+0067 U+0065 U+007A U+0069 U+0063 U+0068 U+0074 U+0024	"gezicht"	Dutch
+^glijden$	x l ɛi d ə	1	U+005E U+0067 U+006C U+0069 U+006A U+0064 U+0065 U+006E U+0024	"glijden"	Dutch
+^groeien$	x r uː j ə	1	U+005E U+0067 U+0072 U+006F U+0065 U+0069 U+0065 U+006E U+0024	"groeien"	Dutch
+^groente$	x r uː n t ə	1	U+005E U+0067 U+0072 U+006F U+0065 U+006E U+0074 U+0065 U+0024	"groente"	Dutch
+^hagedis$	h aː ɣ ə d ɪ s	1	U+005E U+0068 U+0061 U+0067 U+0065 U+0064 U+0069 U+0073 U+0024	"hagedis"	Dutch
+^hangmat$	h ɑ ŋ m ɑ t	1	U+005E U+0068 U+0061 U+006E U+0067 U+006D U+0061 U+0074 U+0024	"hangmat"	Dutch
+^heersen$	h eː r s ə	1	U+005E U+0068 U+0065 U+0065 U+0072 U+0073 U+0065 U+006E U+0024	"heersen"	Dutch
+^hoesten$	h uː s t ə	1	U+005E U+0068 U+006F U+0065 U+0073 U+0074 U+0065 U+006E U+0024	"hoesten"	Dutch
+^hoeveel$	h uː v eː l	2	U+005E U+0068 U+006F U+0065 U+0076 U+0065 U+0065 U+006C U+0024	"hoeveel"	Dutch
+^honderd$	h ɔ n d ə r t	1	U+005E U+0068 U+006F U+006E U+0064 U+0065 U+0072 U+0064 U+0024	"honderd"	Dutch
+^kadaver$	k aː d aː v ə r	1	U+005E U+006B U+0061 U+0064 U+0061 U+0076 U+0065 U+0072 U+0024	"kadaver"	Dutch
+^kalebas$	k aː l ə b ɑ s	1	U+005E U+006B U+0061 U+006C U+0065 U+0062 U+0061 U+0073 U+0024	"kalebas"	Dutch
+^kariboe$	k aː r iː b uː	1	U+005E U+006B U+0061 U+0072 U+0069 U+0062 U+006F U+0065 U+0024	"kariboe"	Dutch
+^ketting$	k ɛ t ɪ ŋ	2	U+005E U+006B U+0065 U+0074 U+0074 U+0069 U+006E U+0067 U+0024	"ketting"	Dutch
+^kleding$	k l eː d ɪ ŋ	1	U+005E U+006B U+006C U+0065 U+0064 U+0069 U+006E U+0067 U+0024	"kleding"	Dutch
+^klimmen$	k l ɪ m ə	1	U+005E U+006B U+006C U+0069 U+006D U+006D U+0065 U+006E U+0024	"klimmen"	Dutch
+^knielen$	k n iː l ə	1	U+005E U+006B U+006E U+0069 U+0065 U+006C U+0065 U+006E U+0024	"knielen"	Dutch
+^knijpen$	k n ɛi p ə	1	U+005E U+006B U+006E U+0069 U+006A U+0070 U+0065 U+006E U+0024	"knijpen"	Dutch
+^knuppel$	k n ʏ p ə l	1	U+005E U+006B U+006E U+0075 U+0070 U+0070 U+0065 U+006C U+0024	"knuppel"	Dutch
+^krabben$	k r ɑ b ə	1	U+005E U+006B U+0072 U+0061 U+0062 U+0062 U+0065 U+006E U+0024	"krabben"	Dutch
+^kreunen$	k r øː n ə	1	U+005E U+006B U+0072 U+0065 U+0075 U+006E U+0065 U+006E U+0024	"kreunen"	Dutch
+^krijgen$	k r ɛi ɣ ə	1	U+005E U+006B U+0072 U+0069 U+006A U+0067 U+0065 U+006E U+0024	"krijgen"	Dutch
+^krijsen$	k r ɛi s ə	1	U+005E U+006B U+0072 U+0069 U+006A U+0073 U+0065 U+006E U+0024	"krijsen"	Dutch
+^kruipen$	k r œy p ə	1	U+005E U+006B U+0072 U+0075 U+0069 U+0070 U+0065 U+006E U+0024	"kruipen"	Dutch
+^kwartel$	k ʋ ɑ r t ə l	1	U+005E U+006B U+0077 U+0061 U+0072 U+0074 U+0065 U+006C U+0024	"kwartel"	Dutch
+^kwijlen$	k ʋ ɛi l ə	1	U+005E U+006B U+0077 U+0069 U+006A U+006C U+0065 U+006E U+0024	"kwijlen"	Dutch
+^laatste$	l aː t s t ə	1	U+005E U+006C U+0061 U+0061 U+0074 U+0073 U+0074 U+0065 U+0024	"laatste"	Dutch
+^lichaam$	l ɪ x aː m	1	U+005E U+006C U+0069 U+0063 U+0068 U+0061 U+0061 U+006D U+0024	"lichaam"	Dutch
+^lucifer$	l yː s iː f ɛ r	1	U+005E U+006C U+0075 U+0063 U+0069 U+0066 U+0065 U+0072 U+0024	"lucifer"	Dutch
+^maandag$	m aː n d ɑ x	1	U+005E U+006D U+0061 U+0061 U+006E U+0064 U+0061 U+0067 U+0024	"maandag"	Dutch
+^machine$	m ɑ ʃ iː n ə	1	U+005E U+006D U+0061 U+0063 U+0068 U+0069 U+006E U+0065 U+0024	"machine"	Dutch
+^meester$	m eː s t ə r	1	U+005E U+006D U+0065 U+0065 U+0073 U+0074 U+0065 U+0072 U+0024	"meester"	Dutch
+^meineed$	m ɛi n eː t	1	U+005E U+006D U+0065 U+0069 U+006E U+0065 U+0065 U+0064 U+0024	"meineed"	Dutch
+^menigte$	m eː n ə x t ə	1	U+005E U+006D U+0065 U+006E U+0069 U+0067 U+0074 U+0065 U+0024	"menigte"	Dutch
+^misdaad$	m ɪ z d aː t	1	U+005E U+006D U+0069 U+0073 U+0064 U+0061 U+0061 U+0064 U+0024	"misdaad"	Dutch
+^muskiet$	m ʏ s k iː t	1	U+005E U+006D U+0075 U+0073 U+006B U+0069 U+0065 U+0074 U+0024	"muskiet"	Dutch
+^naderen$	n aː d ə r ə	1	U+005E U+006E U+0061 U+0064 U+0065 U+0072 U+0065 U+006E U+0024	"naderen"	Dutch
+^nazaten$	n aː z aː t ə	1	U+005E U+006E U+0061 U+007A U+0061 U+0074 U+0065 U+006E U+0024	"nazaten"	Dutch
+^noorden$	n oː r d ə	1	U+005E U+006E U+006F U+006F U+0072 U+0064 U+0065 U+006E U+0024	"noorden"	Dutch
+^ochtend$	ɔ x t ə n t	1	U+005E U+006F U+0063 U+0068 U+0074 U+0065 U+006E U+0064 U+0024	"ochtend"	Dutch
+^olifant$	oː l iː f ɑ n t	1	U+005E U+006F U+006C U+0069 U+0066 U+0061 U+006E U+0074 U+0024	"olifant"	Dutch
+^ongeluk$	ɔ ŋ ɣ ə l ʏ k	1	U+005E U+006F U+006E U+0067 U+0065 U+006C U+0075 U+006B U+0024	"ongeluk"	Dutch
+^ontbijt$	ɔ n d b ɛi t	1	U+005E U+006F U+006E U+0074 U+0062 U+0069 U+006A U+0074 U+0024	"ontbijt"	Dutch
+^ooghaar$	oː x h aː r	1	U+005E U+006F U+006F U+0067 U+0068 U+0061 U+0061 U+0072 U+0024	"ooghaar"	Dutch
+^oorzaak$	oː r z aː k	1	U+005E U+006F U+006F U+0072 U+007A U+0061 U+0061 U+006B U+0024	"oorzaak"	Dutch
+^opkomen$	ɔ p k oː m ə	1	U+005E U+006F U+0070 U+006B U+006F U+006D U+0065 U+006E U+0024	"opkomen"	Dutch
+^opnieuw$	ɔ p n iː ʋ	1	U+005E U+006F U+0070 U+006E U+0069 U+0065 U+0075 U+0077 U+0024	"opnieuw"	Dutch
+^opossum$	oː p ɔ s ʏ m	1	U+005E U+006F U+0070 U+006F U+0073 U+0073 U+0075 U+006D U+0024	"opossum"	Dutch
+^persoon$	p ə r s oː n	1	U+005E U+0070 U+0065 U+0072 U+0073 U+006F U+006F U+006E U+0024	"persoon"	Dutch
+^planten$	p l ɑ n t ə	1	U+005E U+0070 U+006C U+0061 U+006E U+0074 U+0065 U+006E U+0024	"planten"	Dutch
+^plassen$	p l ɑ s ə	1	U+005E U+0070 U+006C U+0061 U+0073 U+0073 U+0065 U+006E U+0024	"plassen"	Dutch
+^plastic$	p l ɛ s t ɪ k	1	U+005E U+0070 U+006C U+0061 U+0073 U+0074 U+0069 U+0063 U+0024	"plastic"	Dutch
+^ploegen$	p l uː ɣ ə	1	U+005E U+0070 U+006C U+006F U+0065 U+0067 U+0065 U+006E U+0024	"ploegen"	Dutch
+^politie$	p oː l iː t s iː	1	U+005E U+0070 U+006F U+006C U+0069 U+0074 U+0069 U+0065 U+0024	"politie"	Dutch
+^pompoen$	p ɔ m p uː n	1	U+005E U+0070 U+006F U+006D U+0070 U+006F U+0065 U+006E U+0024	"pompoen"	Dutch
+^proeven$	p r uː v ə	1	U+005E U+0070 U+0072 U+006F U+0065 U+0076 U+0065 U+006E U+0024	"proeven"	Dutch
+^rechter$	r ɛ x t ə r	1	U+005E U+0072 U+0065 U+0063 U+0068 U+0074 U+0065 U+0072 U+0024	"rechter"	Dutch
+^regeren$	r ə ɣ eː r ə	1	U+005E U+0072 U+0065 U+0067 U+0065 U+0072 U+0065 U+006E U+0024	"regeren"	Dutch
+^rendier$	r ɛ n d iː r	1	U+005E U+0072 U+0065 U+006E U+0064 U+0069 U+0065 U+0072 U+0024	"rendier"	Dutch
+^salaris$	s aː l aː r ə s	1	U+005E U+0073 U+0061 U+006C U+0061 U+0072 U+0069 U+0073 U+0024	"salaris"	Dutch
+^savanne$	s aː v ɑ n ə	1	U+005E U+0073 U+0061 U+0076 U+0061 U+006E U+006E U+0065 U+0024	"savanne"	Dutch
+^schaduw$	s x aː d yː ʋ	1	U+005E U+0073 U+0063 U+0068 U+0061 U+0064 U+0075 U+0077 U+0024	"schaduw"	Dutch
+^schedel$	s x eː d ə l	1	U+005E U+0073 U+0063 U+0068 U+0065 U+0064 U+0065 U+006C U+0024	"schedel"	Dutch
+^schotel$	s x oː t ə l	1	U+005E U+0073 U+0063 U+0068 U+006F U+0074 U+0065 U+006C U+0024	"schotel"	Dutch
+^schroef$	s x r uː f	1	U+005E U+0073 U+0063 U+0068 U+0072 U+006F U+0065 U+0066 U+0024	"schroef"	Dutch
+^seizoen$	s ɛi z uː n	1	U+005E U+0073 U+0065 U+0069 U+007A U+006F U+0065 U+006E U+0024	"seizoen"	Dutch
+^sieraad$	s iː r aː t	1	U+005E U+0073 U+0069 U+0065 U+0072 U+0061 U+0061 U+0064 U+0024	"sieraad"	Dutch
+^sigaret$	s iː ɣ aː r ɛ t	1	U+005E U+0073 U+0069 U+0067 U+0061 U+0072 U+0065 U+0074 U+0024	"sigaret"	Dutch
+^sle(d)e$	s l eː d ə	1	U+005E U+0073 U+006C U+0065 U+0028 U+0064 U+0029 U+0065 U+0024	"sle(d)e"	Dutch
+^sleutel$	s l øː t ə l	1	U+005E U+0073 U+006C U+0065 U+0075 U+0074 U+0065 U+006C U+0024	"sleutel"	Dutch
+^sluiten$	s l œy t ə	1	U+005E U+0073 U+006C U+0075 U+0069 U+0074 U+0065 U+006E U+0024	"sluiten"	Dutch
+^snurken$	s n ʏ r k ə	1	U+005E U+0073 U+006E U+0075 U+0072 U+006B U+0065 U+006E U+0024	"snurken"	Dutch
+^soldaat$	s ɔ l d aː t	1	U+005E U+0073 U+006F U+006C U+0064 U+0061 U+0061 U+0074 U+0024	"soldaat"	Dutch
+^sorghum$	s ɔ r ɣ ʏ m	1	U+005E U+0073 U+006F U+0072 U+0067 U+0068 U+0075 U+006D U+0024	"sorghum"	Dutch
+^spatten$	s p ɑ t ə	1	U+005E U+0073 U+0070 U+0061 U+0074 U+0074 U+0065 U+006E U+0024	"spatten"	Dutch
+^spiegel$	s p iː ɣ ə l	1	U+005E U+0073 U+0070 U+0069 U+0065 U+0067 U+0065 U+006C U+0024	"spiegel"	Dutch
+^spijker$	s p ɛi k ə r	1	U+005E U+0073 U+0070 U+0069 U+006A U+006B U+0065 U+0072 U+0024	"spijker"	Dutch
+^spindel$	s p ɪ n d ə l	1	U+005E U+0073 U+0070 U+0069 U+006E U+0064 U+0065 U+006C U+0024	"spindel"	Dutch
+^spinnen$	s p ɪ n ə	1	U+005E U+0073 U+0070 U+0069 U+006E U+006E U+0065 U+006E U+0024	"spinnen"	Dutch
+^spoedig$	s p uː d ə x	1	U+005E U+0073 U+0070 U+006F U+0065 U+0064 U+0069 U+0067 U+0024	"spoedig"	Dutch
+^spreken$	s p r eː k ə	1	U+005E U+0073 U+0070 U+0072 U+0065 U+006B U+0065 U+006E U+0024	"spreken"	Dutch
+^stamper$	s t ɑ m p ə r	1	U+005E U+0073 U+0074 U+0061 U+006D U+0070 U+0065 U+0072 U+0024	"stamper"	Dutch
+^sterven$	s t ɛ r v ə	1	U+005E U+0073 U+0074 U+0065 U+0072 U+0076 U+0065 U+006E U+0024	"sterven"	Dutch
+^stoppen$	s t ɔ p ə	1	U+005E U+0073 U+0074 U+006F U+0070 U+0070 U+0065 U+006E U+0024	"stoppen"	Dutch
+^strodak$	s t r oː d ɑ k	1	U+005E U+0073 U+0074 U+0072 U+006F U+0064 U+0061 U+006B U+0024	"strodak"	Dutch
+^stromen$	s t r oː m ə	1	U+005E U+0073 U+0074 U+0072 U+006F U+006D U+0065 U+006E U+0024	"stromen"	Dutch
+^termiet$	t ɛ r m iː t	1	U+005E U+0074 U+0065 U+0072 U+006D U+0069 U+0065 U+0074 U+0024	"termiet"	Dutch
+^toverij$	t oː v ə r ɛi	1	U+005E U+0074 U+006F U+0076 U+0065 U+0072 U+0069 U+006A U+0024	"toverij"	Dutch
+^trappen$	t r ɑ p ə	1	U+005E U+0074 U+0072 U+0061 U+0070 U+0070 U+0065 U+006E U+0024	"trappen"	Dutch
+^trekken$	t r ɛ k ə	1	U+005E U+0074 U+0072 U+0065 U+006B U+006B U+0065 U+006E U+0024	"trekken"	Dutch
+^trommel$	t r ɔ m ə l	1	U+005E U+0074 U+0072 U+006F U+006D U+006D U+0065 U+006C U+0024	"trommel"	Dutch
+^trompet$	t r ɔ m p ɛ t	1	U+005E U+0074 U+0072 U+006F U+006D U+0070 U+0065 U+0074 U+0024	"trompet"	Dutch
+^trouwen$	t r ɑu ʋ ə	1	U+005E U+0074 U+0072 U+006F U+0075 U+0077 U+0065 U+006E U+0024	"trouwen"	Dutch
+^twijfel$	t ʋ ɛi f ə l	1	U+005E U+0074 U+0077 U+0069 U+006A U+0066 U+0065 U+006C U+0024	"twijfel"	Dutch
+^twintig$	t ʋ ɪ n t ə x	1	U+005E U+0074 U+0077 U+0069 U+006E U+0074 U+0069 U+0067 U+0024	"twintig"	Dutch
+^vandaag$	v ɑ n d aː x	1	U+005E U+0076 U+0061 U+006E U+0064 U+0061 U+0061 U+0067 U+0024	"vandaag"	Dutch
+^vechten$	v ɛ x t ə	1	U+005E U+0076 U+0065 U+0063 U+0068 U+0074 U+0065 U+006E U+0024	"vechten"	Dutch
+^venster$	v ɛ n s t ə r	1	U+005E U+0076 U+0065 U+006E U+0073 U+0074 U+0065 U+0072 U+0024	"venster"	Dutch
+^vereren$	v ə r eː r ə	1	U+005E U+0076 U+0065 U+0072 U+0065 U+0072 U+0065 U+006E U+0024	"vereren"	Dutch
+^vesting$	v ɛ s t ɪ ŋ	1	U+005E U+0076 U+0065 U+0073 U+0074 U+0069 U+006E U+0067 U+0024	"vesting"	Dutch
+^vishaak$	v ɪ s h aː k	1	U+005E U+0076 U+0069 U+0073 U+0068 U+0061 U+0061 U+006B U+0024	"vishaak"	Dutch
+^vislijn$	v ɪ s l ɛi n	1	U+005E U+0076 U+0069 U+0073 U+006C U+0069 U+006A U+006E U+0024	"vislijn"	Dutch
+^vleugel$	v l øː ɣ ə l	1	U+005E U+0076 U+006C U+0065 U+0075 U+0067 U+0065 U+006C U+0024	"vleugel"	Dutch
+^vliegen$	v l iː ɣ ə	1	U+005E U+0076 U+006C U+0069 U+0065 U+0067 U+0065 U+006E U+0024	"vliegen"	Dutch
+^vlinder$	v l ɪ n d ə r	1	U+005E U+0076 U+006C U+0069 U+006E U+0064 U+0065 U+0072 U+0024	"vlinder"	Dutch
+^voedsel$	v uː t s ə l	1	U+005E U+0076 U+006F U+0065 U+0064 U+0073 U+0065 U+006C U+0024	"voedsel"	Dutch
+^vreemde$	v r eː m d ə	1	U+005E U+0076 U+0072 U+0065 U+0065 U+006D U+0064 U+0065 U+0024	"vreemde"	Dutch
+^vrijdag$	v r ɛi d ɑ x	1	U+005E U+0076 U+0072 U+0069 U+006A U+0064 U+0061 U+0067 U+0024	"vrijdag"	Dutch
+^wanneer$	ʋ ɑ n eː r	1	U+005E U+0077 U+0061 U+006E U+006E U+0065 U+0065 U+0072 U+0024	"wanneer"	Dutch
+^wasbeer$	ʋ ɑ z b eː r	1	U+005E U+0077 U+0061 U+0073 U+0062 U+0065 U+0065 U+0072 U+0024	"wasbeer"	Dutch
+^weggaan$	ʋ ɛ ɣ aː n	2	U+005E U+0077 U+0065 U+0067 U+0067 U+0061 U+0061 U+006E U+0024	"weggaan"	Dutch
+^wingerd$	ʋ ɪ ŋ ə r t	1	U+005E U+0077 U+0069 U+006E U+0067 U+0065 U+0072 U+0064 U+0024	"wingerd"	Dutch
+^wrijven$	ʋ r ɛi v ə	1	U+005E U+0077 U+0072 U+0069 U+006A U+0076 U+0065 U+006E U+0024	"wrijven"	Dutch
+^zakdoek$	z ɑ g d uː k	1	U+005E U+007A U+0061 U+006B U+0064 U+006F U+0065 U+006B U+0024	"zakdoek"	Dutch
+^zegenen$	z eː ɣ ə n ə	1	U+005E U+007A U+0065 U+0067 U+0065 U+006E U+0065 U+006E U+0024	"zegenen"	Dutch
+^zwanger$	z ʋ ɑ ŋ ə r	1	U+005E U+007A U+0077 U+0061 U+006E U+0067 U+0065 U+0072 U+0024	"zwanger"	Dutch
+^zwemmen$	z ʋ ɛ m ə	1	U+005E U+007A U+0077 U+0065 U+006D U+006D U+0065 U+006E U+0024	"zwemmen"	Dutch
+^zwijgen$	z ʋ ɛi ɣ ə	1	U+005E U+007A U+0077 U+0069 U+006A U+0067 U+0065 U+006E U+0024	"zwijgen"	Dutch
+^aambeeld$	aː m b eː l t	1	U+005E U+0061 U+0061 U+006D U+0062 U+0065 U+0065 U+006C U+0064 U+0024	"aambeeld"	Dutch
+^aankomen$	aː ŋ k oː m ə	1	U+005E U+0061 U+0061 U+006E U+006B U+006F U+006D U+0065 U+006E U+0024	"aankomen"	Dutch
+^aanraken$	aː n r aː k ə	1	U+005E U+0061 U+0061 U+006E U+0072 U+0061 U+006B U+0065 U+006E U+0024	"aanraken"	Dutch
+^aardolie$	aː r d oː l iː	1	U+005E U+0061 U+0061 U+0072 U+0064 U+006F U+006C U+0069 U+0065 U+0024	"aardolie"	Dutch
+^baksteen$	b ɑ k s t eː n	1	U+005E U+0062 U+0061 U+006B U+0073 U+0074 U+0065 U+0065 U+006E U+0024	"baksteen"	Dutch
+^batterij$	b ɑ t ə r ɛi	1	U+005E U+0062 U+0061 U+0074 U+0074 U+0065 U+0072 U+0069 U+006A U+0024	"batterij"	Dutch
+^bedekken$	b ə d ɛ k ə	1	U+005E U+0062 U+0065 U+0064 U+0065 U+006B U+006B U+0065 U+006E U+0024	"bedekken"	Dutch
+^bedelaar$	b eː d ə l aː r	1	U+005E U+0062 U+0065 U+0064 U+0065 U+006C U+0061 U+0061 U+0072 U+0024	"bedelaar"	Dutch
+^bediende$	b ə d iː n d ə	1	U+005E U+0062 U+0065 U+0064 U+0069 U+0065 U+006E U+0064 U+0065 U+0024	"bediende"	Dutch
+^beginnen$	b ə ɣ ɪ n ə	1	U+005E U+0062 U+0065 U+0067 U+0069 U+006E U+006E U+0065 U+006E U+0024	"beginnen"	Dutch
+^begraven$	b ə ɣ r aː v ə	1	U+005E U+0062 U+0065 U+0067 U+0072 U+0061 U+0076 U+0065 U+006E U+0024	"begraven"	Dutch
+^behouden$	b ə h ɑu d ə	1	U+005E U+0062 U+0065 U+0068 U+006F U+0075 U+0064 U+0065 U+006E U+0024	"behouden"	Dutch
+^bekennen$	b ə k ɛ n ə	1	U+005E U+0062 U+0065 U+006B U+0065 U+006E U+006E U+0065 U+006E U+0024	"bekennen"	Dutch
+^berispen$	b ə r ɪ s p ə	1	U+005E U+0062 U+0065 U+0072 U+0069 U+0073 U+0070 U+0065 U+006E U+0024	"berispen"	Dutch
+^bezitten$	b ə z ɪ t ə	1	U+005E U+0062 U+0065 U+007A U+0069 U+0074 U+0074 U+0065 U+006E U+0024	"bezitten"	Dutch
+^bloedvat$	b l uː t f ɑ t	1	U+005E U+0062 U+006C U+006F U+0065 U+0064 U+0076 U+0061 U+0074 U+0024	"bloedvat"	Dutch
+^boomstam$	b oː m s t ɑ m	1	U+005E U+0062 U+006F U+006F U+006D U+0073 U+0074 U+0061 U+006D U+0024	"boomstam"	Dutch
+^bruiloft$	b r œy l ɔ f t	1	U+005E U+0062 U+0072 U+0075 U+0069 U+006C U+006F U+0066 U+0074 U+0024	"bruiloft"	Dutch
+^ceintuur$	s ɛ n t yː r	1	U+005E U+0063 U+0065 U+0069 U+006E U+0074 U+0075 U+0075 U+0072 U+0024	"ceintuur"	Dutch
+^dageraad$	d aː ɣ ə r aː t	1	U+005E U+0064 U+0061 U+0067 U+0065 U+0072 U+0061 U+0061 U+0064 U+0024	"dageraad"	Dutch
+^deurpost$	d øː r p ɔ s t	1	U+005E U+0064 U+0065 U+0075 U+0072 U+0070 U+006F U+0073 U+0074 U+0024	"deurpost"	Dutch
+^dezelfde$	d ə z ɛ l v d ə	1	U+005E U+0064 U+0065 U+007A U+0065 U+006C U+0066 U+0064 U+0065 U+0024	"dezelfde"	Dutch
+^dichtbij$	d ɪ ɣ d b ɛi	1	U+005E U+0064 U+0069 U+0063 U+0068 U+0074 U+0062 U+0069 U+006A U+0024	"dichtbij"	Dutch
+^driemaal$	d r iː m aː l	1	U+005E U+0064 U+0072 U+0069 U+0065 U+006D U+0061 U+0061 U+006C U+0024	"driemaal"	Dutch
+^eekhoorn$	eː k h oː r n	1	U+005E U+0065 U+0065 U+006B U+0068 U+006F U+006F U+0072 U+006E U+0024	"eekhoorn"	Dutch
+^elleboog$	ɛ l ə b oː x	1	U+005E U+0065 U+006C U+006C U+0065 U+0062 U+006F U+006F U+0067 U+0024	"elleboog"	Dutch
+^gastheer$	x ɑ s t h eː r	1	U+005E U+0067 U+0061 U+0073 U+0074 U+0068 U+0065 U+0065 U+0072 U+0024	"gastheer"	Dutch
+^gedaagde$	x ə d aː ɣ d ə	1	U+005E U+0067 U+0065 U+0064 U+0061 U+0061 U+0067 U+0064 U+0065 U+0024	"gedaagde"	Dutch
+^gelukkig$	x ə l ʏ k ə x	1	U+005E U+0067 U+0065 U+006C U+0075 U+006B U+006B U+0069 U+0067 U+0024	"gelukkig"	Dutch
+^geslacht$	x ə s l ɑ x t	1	U+005E U+0067 U+0065 U+0073 U+006C U+0061 U+0063 U+0068 U+0074 U+0024	"geslacht"	Dutch
+^gewoonte$	x ə ʋ oː n t ə	1	U+005E U+0067 U+0065 U+0077 U+006F U+006F U+006E U+0074 U+0065 U+0024	"gewoonte"	Dutch
+^gisteren$	x ɪ s t ə r ə	1	U+005E U+0067 U+0069 U+0073 U+0074 U+0065 U+0072 U+0065 U+006E U+0024	"gisteren"	Dutch
+^glimworm$	x l ɪ m ʋ ɔ r m	1	U+005E U+0067 U+006C U+0069 U+006D U+0077 U+006F U+0072 U+006D U+0024	"glimworm"	Dutch
+^goedkoop$	x uː t k oː p	1	U+005E U+0067 U+006F U+0065 U+0064 U+006B U+006F U+006F U+0070 U+0024	"goedkoop"	Dutch
+^handdoek$	h ɑ n d uː k	1	U+005E U+0068 U+0061 U+006E U+0064 U+0064 U+006F U+0065 U+006B U+0024	"handdoek"	Dutch
+^handelen$	h ɑ n d ə l ə	1	U+005E U+0068 U+0061 U+006E U+0064 U+0065 U+006C U+0065 U+006E U+0024	"handelen"	Dutch
+^hangslot$	h ɑ ŋ s l ɔ t	1	U+005E U+0068 U+0061 U+006E U+0067 U+0073 U+006C U+006F U+0074 U+0024	"hangslot"	Dutch
+^hersenen$	h ɛ r s ə n ə	1	U+005E U+0068 U+0065 U+0072 U+0073 U+0065 U+006E U+0065 U+006E U+0024	"hersenen"	Dutch
+^imiteren$	iː m iː t eː r ə	1	U+005E U+0069 U+006D U+0069 U+0074 U+0065 U+0072 U+0065 U+006E U+0024	"imiteren"	Dutch
+^injectie$	ɪ n j ɛ k s iː	1	U+005E U+0069 U+006E U+006A U+0065 U+0063 U+0074 U+0069 U+0065 U+0024	"injectie"	Dutch
+^jaloezie$	j aː l uː z iː	1	U+005E U+006A U+0061 U+006C U+006F U+0065 U+007A U+0069 U+0065 U+0024	"jaloezie"	Dutch
+^jongeman$	j ɔ ŋ ə m ɑ n	1	U+005E U+006A U+006F U+006E U+0067 U+0065 U+006D U+0061 U+006E U+0024	"jongeman"	Dutch
+^kalender$	k aː l ɛ n d ə r	1	U+005E U+006B U+0061 U+006C U+0065 U+006E U+0064 U+0065 U+0072 U+0024	"kalender"	Dutch
+^kameleon$	k aː m eː l eː j ɔ n	1	U+005E U+006B U+0061 U+006D U+0065 U+006C U+0065 U+006F U+006E U+0024	"kameleon"	Dutch
+^katapult$	k ɑ t aː p ʏ l t	1	U+005E U+006B U+0061 U+0074 U+0061 U+0070 U+0075 U+006C U+0074 U+0024	"katapult"	Dutch
+^kneuzing$	k n øː z ɪ ŋ	1	U+005E U+006B U+006E U+0065 U+0075 U+007A U+0069 U+006E U+0067 U+0024	"kneuzing"	Dutch
+^koningin$	k oː n ɪ ŋ ɪ n	1	U+005E U+006B U+006F U+006E U+0069 U+006E U+0067 U+0069 U+006E U+0024	"koningin"	Dutch
+^krokodil$	k r oː k oː d ɪ l	1	U+005E U+006B U+0072 U+006F U+006B U+006F U+0064 U+0069 U+006C U+0024	"krokodil"	Dutch
+^langzaam$	l ɑ ŋ z aː m	1	U+005E U+006C U+0061 U+006E U+0067 U+007A U+0061 U+0061 U+006D U+0024	"langzaam"	Dutch
+^leeftijd$	l eː f t ɛi t	1	U+005E U+006C U+0065 U+0065 U+0066 U+0074 U+0069 U+006A U+0064 U+0024	"leeftijd"	Dutch
+^leerling$	l eː r l ɪ ŋ	1	U+005E U+006C U+0065 U+0065 U+0072 U+006C U+0069 U+006E U+0067 U+0024	"leerling"	Dutch
+^litteken$	l ɪ t eː k ə	1	U+005E U+006C U+0069 U+0074 U+0074 U+0065 U+006B U+0065 U+006E U+0024	"litteken"	Dutch
+^loslaten$	l ɔ s l aː t ə	1	U+005E U+006C U+006F U+0073 U+006C U+0061 U+0074 U+0065 U+006E U+0024	"loslaten"	Dutch
+^losmaken$	l ɔ s m aː k ə	1	U+005E U+006C U+006F U+0073 U+006D U+0061 U+006B U+0065 U+006E U+0024	"losmaken"	Dutch
+^maaltijd$	m aː l t ɛi t	1	U+005E U+006D U+0061 U+0061 U+006C U+0074 U+0069 U+006A U+0064 U+0024	"maaltijd"	Dutch
+^medicijn$	m eː d iː s ɛi n	1	U+005E U+006D U+0065 U+0064 U+0069 U+0063 U+0069 U+006A U+006E U+0024	"medicijn"	Dutch
+^mestvork$	m ɛ s t f ɔ r k	1	U+005E U+006D U+0065 U+0073 U+0074 U+0076 U+006F U+0072 U+006B U+0024	"mestvork"	Dutch
+^minister$	m iː n ɪ s t ə r	1	U+005E U+006D U+0069 U+006E U+0069 U+0073 U+0074 U+0065 U+0072 U+0024	"minister"	Dutch
+^moeilijk$	m uː j l ə k	1	U+005E U+006D U+006F U+0065 U+0069 U+006C U+0069 U+006A U+006B U+0024	"moeilijk"	Dutch
+^mompelen$	m ɔ m p ə l ə	1	U+005E U+006D U+006F U+006D U+0070 U+0065 U+006C U+0065 U+006E U+0024	"mompelen"	Dutch
+^muildier$	m œy l d iː r	1	U+005E U+006D U+0075 U+0069 U+006C U+0064 U+0069 U+0065 U+0072 U+0024	"muildier"	Dutch
+^muilezel$	m œy l eː z ə l	1	U+005E U+006D U+0075 U+0069 U+006C U+0065 U+007A U+0065 U+006C U+0024	"muilezel"	Dutch
+^noodzaak$	n oː t s aː k	1	U+005E U+006E U+006F U+006F U+0064 U+007A U+0061 U+0061 U+006B U+0024	"noodzaak"	Dutch
+^omhelzen$	ɔ m h ɛ l z ə	1	U+005E U+006F U+006D U+0068 U+0065 U+006C U+007A U+0065 U+006E U+0024	"omhelzen"	Dutch
+^oorsmeer$	oː r s m eː r	1	U+005E U+006F U+006F U+0072 U+0073 U+006D U+0065 U+0065 U+0072 U+0024	"oorsmeer"	Dutch
+^opdragen$	ɔ b d r aː ɣ ə	1	U+005E U+006F U+0070 U+0064 U+0072 U+0061 U+0067 U+0065 U+006E U+0024	"opdragen"	Dutch
+^ophangen$	ɔ p h ɑ ŋ ə	1	U+005E U+006F U+0070 U+0068 U+0061 U+006E U+0067 U+0065 U+006E U+0024	"ophangen"	Dutch
+^ophouden$	ɔ p h ɑu d ə	1	U+005E U+006F U+0070 U+0068 U+006F U+0075 U+0064 U+0065 U+006E U+0024	"ophouden"	Dutch
+^optillen$	ɔ p t ɪ l ə	2	U+005E U+006F U+0070 U+0074 U+0069 U+006C U+006C U+0065 U+006E U+0024	"optillen"	Dutch
+^overspel$	oː v ə r s p ɛ l	1	U+005E U+006F U+0076 U+0065 U+0072 U+0073 U+0070 U+0065 U+006C U+0024	"overspel"	Dutch
+^papegaai$	p ɑ p ə ɣ aː j	1	U+005E U+0070 U+0061 U+0070 U+0065 U+0067 U+0061 U+0061 U+0069 U+0024	"papegaai"	Dutch
+^pijnboom$	p ɛi m b oː m	1	U+005E U+0070 U+0069 U+006A U+006E U+0062 U+006F U+006F U+006D U+0024	"pijnboom"	Dutch
+^pluimvee$	p l œy m v eː	1	U+005E U+0070 U+006C U+0075 U+0069 U+006D U+0076 U+0065 U+0065 U+0024	"pluimvee"	Dutch
+^priester$	p r iː s t ə r	1	U+005E U+0070 U+0072 U+0069 U+0065 U+0073 U+0074 U+0065 U+0072 U+0024	"priester"	Dutch
+^proberen$	p r oː b eː r ə	1	U+005E U+0070 U+0072 U+006F U+0062 U+0065 U+0072 U+0065 U+006E U+0024	"proberen"	Dutch
+^regering$	r ə ɣ eː r ɪ ŋ	1	U+005E U+0072 U+0065 U+0067 U+0065 U+0072 U+0069 U+006E U+0067 U+0024	"regering"	Dutch
+^rekening$	r eː k ə n ɪ ŋ	1	U+005E U+0072 U+0065 U+006B U+0065 U+006E U+0069 U+006E U+0067 U+0024	"rekening"	Dutch
+^rimpelig$	r ɪ m p ə l ə x	1	U+005E U+0072 U+0069 U+006D U+0070 U+0065 U+006C U+0069 U+0067 U+0024	"rimpelig"	Dutch
+^schaamte$	s x aː m t ə	1	U+005E U+0073 U+0063 U+0068 U+0061 U+0061 U+006D U+0074 U+0065 U+0024	"schaamte"	Dutch
+^scheiden$	s x ɛi d ə	1	U+005E U+0073 U+0063 U+0068 U+0065 U+0069 U+0064 U+0065 U+006E U+0024	"scheiden"	Dutch
+^schenken$	s x ɛ ŋ k ə	1	U+005E U+0073 U+0063 U+0068 U+0065 U+006E U+006B U+0065 U+006E U+0024	"schenken"	Dutch
+^scheuren$	s x øː r ə	1	U+005E U+0073 U+0063 U+0068 U+0065 U+0075 U+0072 U+0065 U+006E U+0024	"scheuren"	Dutch
+^schieten$	s x iː t ə	1	U+005E U+0073 U+0063 U+0068 U+0069 U+0065 U+0074 U+0065 U+006E U+0024	"schieten"	Dutch
+^schijnen$	s x ɛi n ə	1	U+005E U+0073 U+0063 U+0068 U+0069 U+006A U+006E U+0065 U+006E U+0024	"schijnen"	Dutch
+^schijten$	s x ɛi t ə	1	U+005E U+0073 U+0063 U+0068 U+0069 U+006A U+0074 U+0065 U+006E U+0024	"schijten"	Dutch
+^schillen$	s x ɪ l ə	1	U+005E U+0073 U+0063 U+0068 U+0069 U+006C U+006C U+0065 U+006E U+0024	"schillen"	Dutch
+^schoffel$	s x ɔ f ə l	1	U+005E U+0073 U+0063 U+0068 U+006F U+0066 U+0066 U+0065 U+006C U+0024	"schoffel"	Dutch
+^schouder$	s x ɑu d ə r	1	U+005E U+0073 U+0063 U+0068 U+006F U+0075 U+0064 U+0065 U+0072 U+0024	"schouder"	Dutch
+^schudden$	s x ʏ d ə	1	U+005E U+0073 U+0063 U+0068 U+0075 U+0064 U+0064 U+0065 U+006E U+0024	"schudden"	Dutch
+^schuldig$	s x ʏ l d ə x	1	U+005E U+0073 U+0063 U+0068 U+0075 U+006C U+0064 U+0069 U+0067 U+0024	"schuldig"	Dutch
+^splijten$	s p l ɛi t ə	1	U+005E U+0073 U+0070 U+006C U+0069 U+006A U+0074 U+0065 U+006E U+0024	"splijten"	Dutch
+^springen$	s p r ɪ ŋ ə	1	U+005E U+0073 U+0070 U+0072 U+0069 U+006E U+0067 U+0065 U+006E U+0024	"springen"	Dutch
+^stamelen$	s t aː m ə l ə	1	U+005E U+0073 U+0074 U+0061 U+006D U+0065 U+006C U+0065 U+006E U+0024	"stamelen"	Dutch
+^stinkend$	s t ɪ ŋ k ə n t	1	U+005E U+0073 U+0074 U+0069 U+006E U+006B U+0065 U+006E U+0064 U+0024	"stinkend"	Dutch
+^strijden$	s t r ɛi d ə	1	U+005E U+0073 U+0074 U+0072 U+0069 U+006A U+0064 U+0065 U+006E U+0024	"strijden"	Dutch
+^studeren$	s t yː d eː r ə	1	U+005E U+0073 U+0074 U+0075 U+0064 U+0065 U+0072 U+0065 U+006E U+0024	"studeren"	Dutch
+^telefoon$	t eː l ə f oː n	1	U+005E U+0074 U+0065 U+006C U+0065 U+0066 U+006F U+006F U+006E U+0024	"telefoon"	Dutch
+^toegeven$	t uː ɣ eː v ə	1	U+005E U+0074 U+006F U+0065 U+0067 U+0065 U+0076 U+0065 U+006E U+0024	"toegeven"	Dutch
+^toestaan$	t uː s t aː n	1	U+005E U+0074 U+006F U+0065 U+0073 U+0074 U+0061 U+0061 U+006E U+0024	"toestaan"	Dutch
+^tovenaar$	t oː v ə n aː r	1	U+005E U+0074 U+006F U+0076 U+0065 U+006E U+0061 U+0061 U+0072 U+0024	"tovenaar"	Dutch
+^trachten$	t r ɑ x t ə	1	U+005E U+0074 U+0072 U+0061 U+0063 U+0068 U+0074 U+0065 U+006E U+0024	"trachten"	Dutch
+^tuinhuis$	t œy n h œy s	1	U+005E U+0074 U+0075 U+0069 U+006E U+0068 U+0075 U+0069 U+0073 U+0024	"tuinhuis"	Dutch
+^tweeling$	t ʋ eː l ɪ ŋ	1	U+005E U+0074 U+0077 U+0065 U+0065 U+006C U+0069 U+006E U+0067 U+0024	"tweeling"	Dutch
+^tweemaal$	t ʋ eː m aː l	1	U+005E U+0074 U+0077 U+0065 U+0065 U+006D U+0061 U+0061 U+006C U+0024	"tweemaal"	Dutch
+^verbaasd$	v ə r b aː s t	1	U+005E U+0076 U+0065 U+0072 U+0062 U+0061 U+0061 U+0073 U+0064 U+0024	"verbaasd"	Dutch
+^verdelen$	v ə r d eː l ə	1	U+005E U+0076 U+0065 U+0072 U+0064 U+0065 U+006C U+0065 U+006E U+0024	"verdelen"	Dutch
+^verdriet$	v ə r d r iː t	1	U+005E U+0076 U+0065 U+0072 U+0064 U+0072 U+0069 U+0065 U+0074 U+0024	"verdriet"	Dutch
+^vergeten$	v ə r ɣ eː t ə	1	U+005E U+0076 U+0065 U+0072 U+0067 U+0065 U+0074 U+0065 U+006E U+0024	"vergeten"	Dutch
+^vergeven$	v ə r ɣ eː v ə	1	U+005E U+0076 U+0065 U+0072 U+0067 U+0065 U+0076 U+0065 U+006E U+0024	"vergeven"	Dutch
+^verkeerd$	v ə r k eː r t	1	U+005E U+0076 U+0065 U+0072 U+006B U+0065 U+0065 U+0072 U+0064 U+0024	"verkeerd"	Dutch
+^verkopen$	v ə r k oː p ə	1	U+005E U+0076 U+0065 U+0072 U+006B U+006F U+0070 U+0065 U+006E U+0024	"verkopen"	Dutch
+^verraden$	v ə r aː d ə	1	U+005E U+0076 U+0065 U+0072 U+0072 U+0061 U+0064 U+0065 U+006E U+0024	"verraden"	Dutch
+^verstand$	v ə r s t ɑ n t	1	U+005E U+0076 U+0065 U+0072 U+0073 U+0074 U+0061 U+006E U+0064 U+0024	"verstand"	Dutch
+^vierkant$	v iː r k ɑ n t	1	U+005E U+0076 U+0069 U+0065 U+0072 U+006B U+0061 U+006E U+0074 U+0024	"vierkant"	Dutch
+^vijftien$	v ɛi f t iː n	1	U+005E U+0076 U+0069 U+006A U+0066 U+0074 U+0069 U+0065 U+006E U+0024	"vijftien"	Dutch
+^vlechten$	v l ɛ x t ə	1	U+005E U+0076 U+006C U+0065 U+0063 U+0068 U+0074 U+0065 U+006E U+0024	"vlechten"	Dutch
+^vluchten$	v l ʏ x t ə	1	U+005E U+0076 U+006C U+0075 U+0063 U+0068 U+0074 U+0065 U+006E U+0024	"vluchten"	Dutch
+^volgende$	v ɔ l ɣ ə n d ə	1	U+005E U+0076 U+006F U+006C U+0067 U+0065 U+006E U+0064 U+0065 U+0024	"volgende"	Dutch
+^voorjaar$	v oː r j aː r	1	U+005E U+0076 U+006F U+006F U+0072 U+006A U+0061 U+0061 U+0072 U+0024	"voorjaar"	Dutch
+^waterval$	ʋ aː t ə r v ɑ l	1	U+005E U+0077 U+0061 U+0074 U+0065 U+0072 U+0076 U+0061 U+006C U+0024	"waterval"	Dutch
+^weigeren$	ʋ ɛi ɣ ə r ə	1	U+005E U+0077 U+0065 U+0069 U+0067 U+0065 U+0072 U+0065 U+006E U+0024	"weigeren"	Dutch
+^werktuig$	ʋ ɛ r k t œy x	1	U+005E U+0077 U+0065 U+0072 U+006B U+0074 U+0075 U+0069 U+0067 U+0024	"werktuig"	Dutch
+^wikkelen$	ʋ ɪ k ə l ə	1	U+005E U+0077 U+0069 U+006B U+006B U+0065 U+006C U+0065 U+006E U+0024	"wikkelen"	Dutch
+^woensdag$	ʋ uː n z d ɑ x	1	U+005E U+0077 U+006F U+0065 U+006E U+0073 U+0064 U+0061 U+0067 U+0024	"woensdag"	Dutch
+^zaterdag$	z aː t ə r d ɑ x	1	U+005E U+007A U+0061 U+0074 U+0065 U+0072 U+0064 U+0061 U+0067 U+0024	"zaterdag"	Dutch
+^zus(ter)$	z ʏ s	6	U+005E U+007A U+0075 U+0073 U+0028 U+0074 U+0065 U+0072 U+0029 U+0024	"zus(ter)"	Dutch
+^zwelling$	z ʋ ɛ l ɪ ŋ	1	U+005E U+007A U+0077 U+0065 U+006C U+006C U+0069 U+006E U+0067 U+0024	"zwelling"	Dutch
+^aanbidden$	aː m b ɪ d ə	1	U+005E U+0061 U+0061 U+006E U+0062 U+0069 U+0064 U+0064 U+0065 U+006E U+0024	"aanbidden"	Dutch
+^aanklager$	aː ŋ k l aː ɣ ə r	1	U+005E U+0061 U+0061 U+006E U+006B U+006C U+0061 U+0067 U+0065 U+0072 U+0024	"aanklager"	Dutch
+^aansteken$	aː n s t eː k ə	1	U+005E U+0061 U+0061 U+006E U+0073 U+0074 U+0065 U+006B U+0065 U+006E U+0024	"aansteken"	Dutch
+^aardappel$	aː r d ɑ p ə l	1	U+005E U+0061 U+0061 U+0072 U+0064 U+0061 U+0070 U+0070 U+0065 U+006C U+0024	"aardappel"	Dutch
+^alligator$	ɑ l iː ɣ aː t ɔ r	1	U+005E U+0061 U+006C U+006C U+0069 U+0067 U+0061 U+0074 U+006F U+0072 U+0024	"alligator"	Dutch
+^avondeten$	aː v ɔ n d eː t ə	2	U+005E U+0061 U+0076 U+006F U+006E U+0064 U+0065 U+0074 U+0065 U+006E U+0024	"avondeten"	Dutch
+^bedoeling$	b ə d uː l ɪ ŋ	1	U+005E U+0062 U+0065 U+0064 U+006F U+0065 U+006C U+0069 U+006E U+0067 U+0024	"bedoeling"	Dutch
+^begrijpen$	b ə ɣ r ɛi p ə	1	U+005E U+0062 U+0065 U+0067 U+0072 U+0069 U+006A U+0070 U+0065 U+006E U+0024	"begrijpen"	Dutch
+^belasting$	b ə l ɑ s t ɪ ŋ	1	U+005E U+0062 U+0065 U+006C U+0061 U+0073 U+0074 U+0069 U+006E U+0067 U+0024	"belasting"	Dutch
+^bevolking$	b ə v ɔ l k ɪ ŋ	1	U+005E U+0062 U+0065 U+0076 U+006F U+006C U+006B U+0069 U+006E U+0067 U+0024	"bevolking"	Dutch
+^bevriezen$	b ə v r iː z ə	1	U+005E U+0062 U+0065 U+0076 U+0072 U+0069 U+0065 U+007A U+0065 U+006E U+0024	"bevriezen"	Dutch
+^bevrijden$	b ə v r ɛi d ə	1	U+005E U+0062 U+0065 U+0076 U+0072 U+0069 U+006A U+0064 U+0065 U+006E U+0024	"bevrijden"	Dutch
+^bijenkorf$	b ɛi j ə k ɔ r f	1	U+005E U+0062 U+0069 U+006A U+0065 U+006E U+006B U+006F U+0072 U+0066 U+0024	"bijenkorf"	Dutch
+^boemerang$	b uː m ə r ɑ ŋ	1	U+005E U+0062 U+006F U+0065 U+006D U+0065 U+0072 U+0061 U+006E U+0067 U+0024	"boemerang"	Dutch
+^boetseren$	b uː t s eː r ə	1	U+005E U+0062 U+006F U+0065 U+0074 U+0073 U+0065 U+0072 U+0065 U+006E U+0024	"boetseren"	Dutch
+^brandhout$	b r ɑ n t h ɑu t	1	U+005E U+0062 U+0072 U+0061 U+006E U+0064 U+0068 U+006F U+0075 U+0074 U+0024	"brandhout"	Dutch
+^donderdag$	d ɔ n d ə r d ɑ x	1	U+005E U+0064 U+006F U+006E U+0064 U+0065 U+0072 U+0064 U+0061 U+0067 U+0024	"donderdag"	Dutch
+^dorsvloer$	d ɔ r s f l uː r	1	U+005E U+0064 U+006F U+0072 U+0073 U+0076 U+006C U+006F U+0065 U+0072 U+0024	"dorsvloer"	Dutch
+^draagband$	d r aː ɣ b ɑ n t	1	U+005E U+0064 U+0072 U+0061 U+0061 U+0067 U+0062 U+0061 U+006E U+0064 U+0024	"draagband"	Dutch
+^draaikolk$	d r aː j k ɔ l k	1	U+005E U+0064 U+0072 U+0061 U+0061 U+0069 U+006B U+006F U+006C U+006B U+0024	"draaikolk"	Dutch
+^druppelen$	d r ʏ p ə l ə	1	U+005E U+0064 U+0072 U+0075 U+0070 U+0070 U+0065 U+006C U+0065 U+006E U+0024	"druppelen"	Dutch
+^duidelijk$	d œy d ə l ə k	1	U+005E U+0064 U+0075 U+0069 U+0064 U+0065 U+006C U+0069 U+006A U+006B U+0024	"duidelijk"	Dutch
+^fijnmalen$	f ɛi n m aː l ə	1	U+005E U+0066 U+0069 U+006A U+006E U+006D U+0061 U+006C U+0065 U+006E U+0024	"fijnmalen"	Dutch
+^gerimpeld$	x ə r ɪ m p ə l t	1	U+005E U+0067 U+0065 U+0072 U+0069 U+006D U+0070 U+0065 U+006C U+0064 U+0024	"gerimpeld"	Dutch
+^getij(de)$	x ə t ɛi	1	U+005E U+0067 U+0065 U+0074 U+0069 U+006A U+0028 U+0064 U+0065 U+0029 U+0024	"getij(de)"	Dutch
+^gevangene$	x ə v ɑ ŋ ə n ə	1	U+005E U+0067 U+0065 U+0076 U+0061 U+006E U+0067 U+0065 U+006E U+0065 U+0024	"gevangene"	Dutch
+^gootsteen$	x oː t s t eː n	1	U+005E U+0067 U+006F U+006F U+0074 U+0073 U+0074 U+0065 U+0065 U+006E U+0024	"gootsteen"	Dutch
+^graafstok$	x r aː f s t ɔ k	1	U+005E U+0067 U+0072 U+0061 U+0061 U+0066 U+0073 U+0074 U+006F U+006B U+0024	"graafstok"	Dutch
+^grasrokje$	x r ɑ s r ɔ k j ə	1	U+005E U+0067 U+0072 U+0061 U+0073 U+0072 U+006F U+006B U+006A U+0065 U+0024	"grasrokje"	Dutch
+^handelaar$	h ɑ n d ə l aː r	1	U+005E U+0068 U+0061 U+006E U+0064 U+0065 U+006C U+0061 U+0061 U+0072 U+0024	"handelaar"	Dutch
+^hoofdband$	h oː v d b ɑ n t	1	U+005E U+0068 U+006F U+006F U+0066 U+0064 U+0062 U+0061 U+006E U+0064 U+0024	"hoofdband"	Dutch
+^hoofdluis$	h oː v d l œy s	1	U+005E U+0068 U+006F U+006F U+0066 U+0064 U+006C U+0075 U+0069 U+0073 U+0024	"hoofdluis"	Dutch
+^houtskool$	h ɑu t s k oː l	1	U+005E U+0068 U+006F U+0075 U+0074 U+0073 U+006B U+006F U+006F U+006C U+0024	"houtskool"	Dutch
+^kakkerlak$	k ɑ k ə r l ɑ k	1	U+005E U+006B U+0061 U+006B U+006B U+0065 U+0072 U+006C U+0061 U+006B U+0024	"kakkerlak"	Dutch
+^kangoeroe$	k ɑ ŋ ɣ uː r uː	1	U+005E U+006B U+0061 U+006E U+0067 U+006F U+0065 U+0072 U+006F U+0065 U+0024	"kangoeroe"	Dutch
+^kleinkind$	k l ɛi ŋ k ɪ n t	1	U+005E U+006B U+006C U+0065 U+0069 U+006E U+006B U+0069 U+006E U+0064 U+0024	"kleinkind"	Dutch
+^kleinzoon$	k l ɛi n z oː n	1	U+005E U+006B U+006C U+0065 U+0069 U+006E U+007A U+006F U+006F U+006E U+0024	"kleinzoon"	Dutch
+^knipperen$	k n ɪ p ə r ə	1	U+005E U+006B U+006E U+0069 U+0070 U+0070 U+0065 U+0072 U+0065 U+006E U+0024	"knipperen"	Dutch
+^kokosnoot$	k oː k ɔ s n oː t	1	U+005E U+006B U+006F U+006B U+006F U+0073 U+006E U+006F U+006F U+0074 U+0024	"kokosnoot"	Dutch
+^laat_zijn$	l aː t _ z ɛi n	1	U+005E U+006C U+0061 U+0061 U+0074 U+005F U+007A U+0069 U+006A U+006E U+0024	"laat_zijn"	Dutch
+^luisteren$	l œy s t ə r ə	1	U+005E U+006C U+0075 U+0069 U+0073 U+0074 U+0065 U+0072 U+0065 U+006E U+0024	"luisteren"	Dutch
+^mannelijk$	m ɑ n ə l ə k	1	U+005E U+006D U+0061 U+006E U+006E U+0065 U+006C U+0069 U+006A U+006B U+0024	"mannelijk"	Dutch
+^metselaar$	m ɛ t s ə l aː r	1	U+005E U+006D U+0065 U+0074 U+0073 U+0065 U+006C U+0061 U+0061 U+0072 U+0024	"metselaar"	Dutch
+^nederlaag$	n eː d ə r l aː x	1	U+005E U+006E U+0065 U+0064 U+0065 U+0072 U+006C U+0061 U+0061 U+0067 U+0024	"nederlaag"	Dutch
+^omdraaien$	ɔ m d r aː j ə	1	U+005E U+006F U+006D U+0064 U+0072 U+0061 U+0061 U+0069 U+0065 U+006E U+0024	"omdraaien"	Dutch
+^ontginnen$	ɔ n t x ɪ n ə	1	U+005E U+006F U+006E U+0074 U+0067 U+0069 U+006E U+006E U+0065 U+006E U+0024	"ontginnen"	Dutch
+^ontkennen$	ɔ n t k ɛ n ə	1	U+005E U+006F U+006E U+0074 U+006B U+0065 U+006E U+006E U+0065 U+006E U+0024	"ontkennen"	Dutch
+^ontmoeten$	ɔ n t m uː t ə	1	U+005E U+006F U+006E U+0074 U+006D U+006F U+0065 U+0074 U+0065 U+006E U+0024	"ontmoeten"	Dutch
+^outrigger$	ɑu t r i ɣ ə r	1	U+005E U+006F U+0075 U+0074 U+0072 U+0069 U+0067 U+0067 U+0065 U+0072 U+0024	"outrigger"	Dutch
+^postzegel$	p ɔ s t s eː ɣ ə l	1	U+005E U+0070 U+006F U+0073 U+0074 U+007A U+0065 U+0067 U+0065 U+006C U+0024	"postzegel"	Dutch
+^president$	p r eː z iː d ɛ n t	1	U+005E U+0070 U+0072 U+0065 U+0073 U+0069 U+0064 U+0065 U+006E U+0074 U+0024	"president"	Dutch
+^rechtbank$	r ɛ ɣ d b ɑ ŋ k	1	U+005E U+0072 U+0065 U+0063 U+0068 U+0074 U+0062 U+0061 U+006E U+006B U+0024	"rechtbank"	Dutch
+^regenboog$	r eː ɣ ə m b oː x	1	U+005E U+0072 U+0065 U+0067 U+0065 U+006E U+0062 U+006F U+006F U+0067 U+0024	"regenboog"	Dutch
+^rijbewijs$	r ɛi b ə ʋ ɛi s	1	U+005E U+0072 U+0069 U+006A U+0062 U+0065 U+0077 U+0069 U+006A U+0073 U+0024	"rijbewijs"	Dutch
+^rijstveld$	r ɛi s t f ɛ l t	1	U+005E U+0072 U+0069 U+006A U+0073 U+0074 U+0076 U+0065 U+006C U+0064 U+0024	"rijstveld"	Dutch
+^scheermes$	s x eː r m ɛ s	1	U+005E U+0073 U+0063 U+0068 U+0065 U+0065 U+0072 U+006D U+0065 U+0073 U+0024	"scheermes"	Dutch
+^scheiding$	s x ɛi d ɪ ŋ	1	U+005E U+0073 U+0063 U+0068 U+0065 U+0069 U+0064 U+0069 U+006E U+0067 U+0024	"scheiding"	Dutch
+^schildpad$	s x ɪ l t p ɑ t	1	U+005E U+0073 U+0063 U+0068 U+0069 U+006C U+0064 U+0070 U+0061 U+0064 U+0024	"schildpad"	Dutch
+^schrappen$	s x r ɑ p ə	1	U+005E U+0073 U+0063 U+0068 U+0072 U+0061 U+0070 U+0070 U+0065 U+006E U+0024	"schrappen"	Dutch
+^schrijven$	s x r ɛi v ə	1	U+005E U+0073 U+0063 U+0068 U+0072 U+0069 U+006A U+0076 U+0065 U+006E U+0024	"schrijven"	Dutch
+^stiefzoon$	s t iː f s oː n	1	U+005E U+0073 U+0074 U+0069 U+0065 U+0066 U+007A U+006F U+006F U+006E U+0024	"stiefzoon"	Dutch
+^stotteren$	s t ɔ t ə r ə	1	U+005E U+0073 U+0074 U+006F U+0074 U+0074 U+0065 U+0072 U+0065 U+006E U+0024	"stotteren"	Dutch
+^tandvlees$	t ɑ n t f l eː s	1	U+005E U+0074 U+0061 U+006E U+0064 U+0076 U+006C U+0065 U+0065 U+0073 U+0024	"tandvlees"	Dutch
+^televisie$	t eː l ə v iː z iː	1	U+005E U+0074 U+0065 U+006C U+0065 U+0076 U+0069 U+0073 U+0069 U+0065 U+0024	"televisie"	Dutch
+^testikels$	t ɛ s t iː k ə l s	1	U+005E U+0074 U+0065 U+0073 U+0074 U+0069 U+006B U+0065 U+006C U+0073 U+0024	"testikels"	Dutch
+^timmerman$	t ɪ m ə r m ɑ n	1	U+005E U+0074 U+0069 U+006D U+006D U+0065 U+0072 U+006D U+0061 U+006E U+0024	"timmerman"	Dutch
+^toespraak$	t uː s p r aː k	1	U+005E U+0074 U+006F U+0065 U+0073 U+0070 U+0072 U+0061 U+0061 U+006B U+0024	"toespraak"	Dutch
+^uithollen$	œy t h ɔ l ə	1	U+005E U+0075 U+0069 U+0074 U+0068 U+006F U+006C U+006C U+0065 U+006E U+0024	"uithollen"	Dutch
+^uitleggen$	œy t l ɛ ɣ ə	1	U+005E U+0075 U+0069 U+0074 U+006C U+0065 U+0067 U+0067 U+0065 U+006E U+0024	"uitleggen"	Dutch
+^uitpersen$	œy t p ɛ r s ə	1	U+005E U+0075 U+0069 U+0074 U+0070 U+0065 U+0072 U+0073 U+0065 U+006E U+0024	"uitpersen"	Dutch
+^uitrekken$	œy t r ɛ k ə	1	U+005E U+0075 U+0069 U+0074 U+0072 U+0065 U+006B U+006B U+0065 U+006E U+0024	"uitrekken"	Dutch
+^vaderland$	v aː d ə r l ɑ n t	1	U+005E U+0076 U+0061 U+0064 U+0065 U+0072 U+006C U+0061 U+006E U+0064 U+0024	"vaderland"	Dutch
+^vasteland$	v ɑ s t ə l ɑ n t	1	U+005E U+0076 U+0061 U+0073 U+0074 U+0065 U+006C U+0061 U+006E U+0064 U+0024	"vasteland"	Dutch
+^verbergen$	v ə r b ɛ r ɣ ə	1	U+005E U+0076 U+0065 U+0072 U+0062 U+0065 U+0072 U+0067 U+0065 U+006E U+0024	"verbergen"	Dutch
+^verbieden$	v ə r b iː d ə	1	U+005E U+0076 U+0065 U+0072 U+0062 U+0069 U+0065 U+0064 U+0065 U+006E U+0024	"verbieden"	Dutch
+^verbinden$	v ə r b ɪ n d ə	1	U+005E U+0076 U+0065 U+0072 U+0062 U+0069 U+006E U+0064 U+0065 U+006E U+0024	"verbinden"	Dutch
+^verdachte$	v ə r d ɑ x t ə	1	U+005E U+0076 U+0065 U+0072 U+0064 U+0061 U+0063 U+0068 U+0074 U+0065 U+0024	"verdachte"	Dutch
+^verdienen$	v ə r d iː n ə	1	U+005E U+0076 U+0065 U+0072 U+0064 U+0069 U+0065 U+006E U+0065 U+006E U+0024	"verdienen"	Dutch
+^verlangen$	v ə r l ɑ ŋ ə	1	U+005E U+0076 U+0065 U+0072 U+006C U+0061 U+006E U+0067 U+0065 U+006E U+0024	"verlangen"	Dutch
+^verliezen$	v ə r l iː z ə	1	U+005E U+0076 U+0065 U+0072 U+006C U+0069 U+0065 U+007A U+0065 U+006E U+0024	"verliezen"	Dutch
+^vermoeden$	v ə r m uː d ə	1	U+005E U+0076 U+0065 U+0072 U+006D U+006F U+0065 U+0064 U+0065 U+006E U+0024	"vermoeden"	Dutch
+^vertellen$	v ə r t ɛ l ə	1	U+005E U+0076 U+0065 U+0072 U+0074 U+0065 U+006C U+006C U+0065 U+006E U+0024	"vertellen"	Dutch
+^verwanten$	v ə r ʋ ɑ n t ə	1	U+005E U+0076 U+0065 U+0072 U+0077 U+0061 U+006E U+0074 U+0065 U+006E U+0024	"verwanten"	Dutch
+^verwekken$	v ə r ʋ ɛ k ə	1	U+005E U+0076 U+0065 U+0072 U+0077 U+0065 U+006B U+006B U+0065 U+006E U+0024	"verwekken"	Dutch
+^verwonden$	v ə r ʋ ɔ n d ə	1	U+005E U+0076 U+0065 U+0072 U+0077 U+006F U+006E U+0064 U+0065 U+006E U+0024	"verwonden"	Dutch
+^verzoeken$	v ə r z uː k ə	1	U+005E U+0076 U+0065 U+0072 U+007A U+006F U+0065 U+006B U+0065 U+006E U+0024	"verzoeken"	Dutch
+^vissengif$	v ɪ s ə x ɪ f	1	U+005E U+0076 U+0069 U+0073 U+0073 U+0065 U+006E U+0067 U+0069 U+0066 U+0024	"vissengif"	Dutch
+^vleermuis$	v l eː r m œy s	1	U+005E U+0076 U+006C U+0065 U+0065 U+0072 U+006D U+0075 U+0069 U+0073 U+0024	"vleermuis"	Dutch
+^vliegtuig$	v l iː x t œy x	1	U+005E U+0076 U+006C U+0069 U+0065 U+0067 U+0074 U+0075 U+0069 U+0067 U+0024	"vliegtuig"	Dutch
+^voorhoofd$	v oː r h oː f t	1	U+005E U+0076 U+006F U+006F U+0072 U+0068 U+006F U+006F U+0066 U+0064 U+0024	"voorhoofd"	Dutch
+^voorteken$	v oː r t eː k ə	1	U+005E U+0076 U+006F U+006F U+0072 U+0074 U+0065 U+006B U+0065 U+006E U+0024	"voorteken"	Dutch
+^weduwnaar$	ʋ eː d yː ʋ n aː r	1	U+005E U+0077 U+0065 U+0064 U+0075 U+0077 U+006E U+0061 U+0061 U+0072 U+0024	"weduwnaar"	Dutch
+^wenkbrauw$	ʋ ɛ ŋ g b r ɑu ʋ	1	U+005E U+0077 U+0065 U+006E U+006B U+0062 U+0072 U+0061 U+0075 U+0077 U+0024	"wenkbrauw"	Dutch
+^aanranding$	aː n r ɑ n d ɪ ŋ	1	U+005E U+0061 U+0061 U+006E U+0072 U+0061 U+006E U+0064 U+0069 U+006E U+0067 U+0024	"aanranding"	Dutch
+^aanstellen$	aː n s t ɛ l ə	1	U+005E U+0061 U+0061 U+006E U+0073 U+0074 U+0065 U+006C U+006C U+0065 U+006E U+0024	"aanstellen"	Dutch
+^aantrekken$	aː n t r ɛ k ə	1	U+005E U+0061 U+0061 U+006E U+0074 U+0072 U+0065 U+006B U+006B U+0065 U+006E U+0024	"aantrekken"	Dutch
+^aardbeving$	aː r d b eː v ɪ ŋ	1	U+005E U+0061 U+0061 U+0072 U+0064 U+0062 U+0065 U+0076 U+0069 U+006E U+0067 U+0024	"aardbeving"	Dutch
+^antwoorden$	ɑ n t ʋ oː r d ə	1	U+005E U+0061 U+006E U+0074 U+0077 U+006F U+006F U+0072 U+0064 U+0065 U+006E U+0024	"antwoorden"	Dutch
+^autorijden$	ɑu t oː r ɛi d ə	1	U+005E U+0061 U+0075 U+0074 U+006F U+0072 U+0069 U+006A U+0064 U+0065 U+006E U+0024	"autorijden"	Dutch
+^baarmoeder$	b aː r m uː d ə r	1	U+005E U+0062 U+0061 U+0061 U+0072 U+006D U+006F U+0065 U+0064 U+0065 U+0072 U+0024	"baarmoeder"	Dutch
+^briefkaart$	b r iː f k aː r t	1	U+005E U+0062 U+0072 U+0069 U+0065 U+0066 U+006B U+0061 U+0061 U+0072 U+0074 U+0024	"briefkaart"	Dutch
+^duisternis$	d œy s t ə r n ɪ s	1	U+005E U+0064 U+0075 U+0069 U+0073 U+0074 U+0065 U+0072 U+006E U+0069 U+0073 U+0024	"duisternis"	Dutch
+^echtgenoot$	ɛ x t x ə n oː t	1	U+005E U+0065 U+0063 U+0068 U+0074 U+0067 U+0065 U+006E U+006F U+006F U+0074 U+0024	"echtgenoot"	Dutch
+^echtgenote$	ɛ x t x ə n oː t ə	1	U+005E U+0065 U+0063 U+0068 U+0074 U+0067 U+0065 U+006E U+006F U+0074 U+0065 U+0024	"echtgenote"	Dutch
+^fluisteren$	f l œy s t ə r ə	1	U+005E U+0066 U+006C U+0075 U+0069 U+0073 U+0074 U+0065 U+0072 U+0065 U+006E U+0024	"fluisteren"	Dutch
+^gevangenis$	x ə v ɑ ŋ ə n ɪ s	1	U+005E U+0067 U+0065 U+0076 U+0061 U+006E U+0067 U+0065 U+006E U+0069 U+0073 U+0024	"gevangenis"	Dutch
+^glimlachen$	x l ɪ m l ɑ x ə	1	U+005E U+0067 U+006C U+0069 U+006D U+006C U+0061 U+0063 U+0068 U+0065 U+006E U+0024	"glimlachen"	Dutch
+^godsdienst$	x ɔ d z d iː n s t	1	U+005E U+0067 U+006F U+0064 U+0073 U+0064 U+0069 U+0065 U+006E U+0073 U+0074 U+0024	"godsdienst"	Dutch
+^grootvader$	x r oː t f aː d ə r	1	U+005E U+0067 U+0072 U+006F U+006F U+0074 U+0076 U+0061 U+0064 U+0065 U+0072 U+0024	"grootvader"	Dutch
+^handschoen$	h ɑ n t s x uː n	1	U+005E U+0068 U+0061 U+006E U+0064 U+0073 U+0063 U+0068 U+006F U+0065 U+006E U+0024	"handschoen"	Dutch
+^hinderlaag$	h ɪ n d ə r l aː x	1	U+005E U+0068 U+0069 U+006E U+0064 U+0065 U+0072 U+006C U+0061 U+0061 U+0067 U+0024	"hinderlaag"	Dutch
+^houden_van$	h ɑu d ə _ v ɑ n	1	U+005E U+0068 U+006F U+0075 U+0064 U+0065 U+006E U+005F U+0076 U+0061 U+006E U+0024	"houden_van"	Dutch
+^ingewanden$	ɪ ŋ ɣ ə ʋ ɑ n d ə	1	U+005E U+0069 U+006E U+0067 U+0065 U+0077 U+0061 U+006E U+0064 U+0065 U+006E U+0024	"ingewanden"	Dutch
+^kleermaker$	k l eː r m aː k ə r	1	U+005E U+006B U+006C U+0065 U+0065 U+0072 U+006D U+0061 U+006B U+0065 U+0072 U+0024	"kleermaker"	Dutch
+^mannenhuis$	m ɑ n ə h œy s	1	U+005E U+006D U+0061 U+006E U+006E U+0065 U+006E U+0068 U+0075 U+0069 U+0073 U+0024	"mannenhuis"	Dutch
+^mannetjes-$	m ɑ n ə t j ə s	1	U+005E U+006D U+0061 U+006E U+006E U+0065 U+0074 U+006A U+0065 U+0073 U+002D U+0024	"mannetjes-"	Dutch
+^medelijden$	m eː d ə l ɛi d ə	1	U+005E U+006D U+0065 U+0064 U+0065 U+006C U+0069 U+006A U+0064 U+0065 U+006E U+0024	"medelijden"	Dutch
+^middageten$	m ɪ d ɑ ɣ eː t ə	1	U+005E U+006D U+0069 U+0064 U+0064 U+0061 U+0067 U+0065 U+0074 U+0065 U+006E U+0024	"middageten"	Dutch
+^miereneter$	m iː r ə eː t ə r	1	U+005E U+006D U+0069 U+0065 U+0072 U+0065 U+006E U+0065 U+0074 U+0065 U+0072 U+0024	"miereneter"	Dutch
+^motorfiets$	m oː t ɔ r f iː t s	1	U+005E U+006D U+006F U+0074 U+006F U+0072 U+0066 U+0069 U+0065 U+0074 U+0073 U+0024	"motorfiets"	Dutch
+^onschuldig$	ɔ n s x ʏ l d ə x	1	U+005E U+006F U+006E U+0073 U+0063 U+0068 U+0075 U+006C U+0064 U+0069 U+0067 U+0024	"onschuldig"	Dutch
+^opscheppen$	ɔ p s x ɛ p ə	1	U+005E U+006F U+0070 U+0073 U+0063 U+0068 U+0065 U+0070 U+0070 U+0065 U+006E U+0024	"opscheppen"	Dutch
+^opstapelen$	ɔ p s t aː p ə l ə	1	U+005E U+006F U+0070 U+0073 U+0074 U+0061 U+0070 U+0065 U+006C U+0065 U+006E U+0024	"opstapelen"	Dutch
+^overmorgen$	oː v ə r m ɔ r ɣ ə	1	U+005E U+006F U+0076 U+0065 U+0072 U+006D U+006F U+0072 U+0067 U+0065 U+006E U+0024	"overmorgen"	Dutch
+^prostituee$	p r ɔ s t iː t yː ʋ eː	1	U+005E U+0070 U+0072 U+006F U+0073 U+0074 U+0069 U+0074 U+0075 U+0065 U+0065 U+0024	"prostituee"	Dutch
+^rode_peper$	r oː d ə _ p eː p ə r	1	U+005E U+0072 U+006F U+0064 U+0065 U+005F U+0070 U+0065 U+0070 U+0065 U+0072 U+0024	"rode_peper"	Dutch
+^schaamhaar$	s x aː m h aː r	1	U+005E U+0073 U+0063 U+0068 U+0061 U+0061 U+006D U+0068 U+0061 U+0061 U+0072 U+0024	"schaamhaar"	Dutch
+^schilderen$	s x ɪ l d ə r ə	1	U+005E U+0073 U+0063 U+0068 U+0069 U+006C U+0064 U+0065 U+0072 U+0065 U+006E U+0024	"schilderen"	Dutch
+^schoonkind$	s x oː n k ɪ n t	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+006B U+0069 U+006E U+0064 U+0024	"schoonkind"	Dutch
+^schoonzoon$	s x oː n z oː n	2	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+007A U+006F U+006F U+006E U+0024	"schoonzoon"	Dutch
+^schorpioen$	s x ɔ r p iː j uː n	1	U+005E U+0073 U+0063 U+0068 U+006F U+0072 U+0070 U+0069 U+006F U+0065 U+006E U+0024	"schorpioen"	Dutch
+^schreeuwen$	s x r eː ʋ ə	2	U+005E U+0073 U+0063 U+0068 U+0072 U+0065 U+0065 U+0075 U+0077 U+0065 U+006E U+0024	"schreeuwen"	Dutch
+^slijpsteen$	s l ɛi p s t eː n	1	U+005E U+0073 U+006C U+0069 U+006A U+0070 U+0073 U+0074 U+0065 U+0065 U+006E U+0024	"slijpsteen"	Dutch
+^sprinkhaan$	s p r ɪ ŋ k h aː n	1	U+005E U+0073 U+0070 U+0072 U+0069 U+006E U+006B U+0068 U+0061 U+0061 U+006E U+0024	"sprinkhaan"	Dutch
+^standbeeld$	s t ɑ n d b eː l t	1	U+005E U+0073 U+0074 U+0061 U+006E U+0064 U+0062 U+0065 U+0065 U+006C U+0064 U+0024	"standbeeld"	Dutch
+^steenpuist$	s t eː m p œy s t	1	U+005E U+0073 U+0074 U+0065 U+0065 U+006E U+0070 U+0075 U+0069 U+0073 U+0074 U+0024	"steenpuist"	Dutch
+^stiefvader$	s t iː f aː d ə r	1	U+005E U+0073 U+0074 U+0069 U+0065 U+0066 U+0076 U+0061 U+0064 U+0065 U+0072 U+0024	"stiefvader"	Dutch
+^strijdbijl$	s t r ɛi d b ɛi l	1	U+005E U+0073 U+0074 U+0072 U+0069 U+006A U+0064 U+0062 U+0069 U+006A U+006C U+0024	"strijdbijl"	Dutch
+^suikerriet$	s œy k ə r iː t	1	U+005E U+0073 U+0075 U+0069 U+006B U+0065 U+0072 U+0072 U+0069 U+0065 U+0074 U+0024	"suikerriet"	Dutch
+^tatoeëring$	t a t u eː r ɪ ŋ	1	U+005E U+0074 U+0061 U+0074 U+006F U+0065 U+00EB U+0072 U+0069 U+006E U+0067 U+0024	"tatoeëring"	Dutch
+^teruggeven$	t ə r ʏ ɣ eː v ə	1	U+005E U+0074 U+0065 U+0072 U+0075 U+0067 U+0067 U+0065 U+0076 U+0065 U+006E U+0024	"teruggeven"	Dutch
+^terugkomen$	t ə r ʏ x k oː m ə	1	U+005E U+0074 U+0065 U+0072 U+0075 U+0067 U+006B U+006F U+006D U+0065 U+006E U+0024	"terugkomen"	Dutch
+^uitnodigen$	œy t n oː d ə ɣ ə	1	U+005E U+0075 U+0069 U+0074 U+006E U+006F U+0064 U+0069 U+0067 U+0065 U+006E U+0024	"uitnodigen"	Dutch
+^vasthouden$	v ɑ s t h ɑu d ə	1	U+005E U+0076 U+0061 U+0073 U+0074 U+0068 U+006F U+0075 U+0064 U+0065 U+006E U+0024	"vasthouden"	Dutch
+^vastpakken$	v ɑ s t p ɑ k ə	1	U+005E U+0076 U+0061 U+0073 U+0074 U+0070 U+0061 U+006B U+006B U+0065 U+006E U+0024	"vastpakken"	Dutch
+^veranderen$	v ə r ɑ n d ə r ə	1	U+005E U+0076 U+0065 U+0072 U+0061 U+006E U+0064 U+0065 U+0072 U+0065 U+006E U+0024	"veranderen"	Dutch
+^verbranden$	v ə r b r ɑ n d ə	1	U+005E U+0076 U+0065 U+0072 U+0062 U+0072 U+0061 U+006E U+0064 U+0065 U+006E U+0024	"verbranden"	Dutch
+^verdedigen$	v ə r d eː d ə ɣ ə	1	U+005E U+0076 U+0065 U+0072 U+0064 U+0065 U+0064 U+0069 U+0067 U+0065 U+006E U+0024	"verdedigen"	Dutch
+^verdrinken$	v ə r d r ɪ ŋ k ə	1	U+005E U+0076 U+0065 U+0072 U+0064 U+0072 U+0069 U+006E U+006B U+0065 U+006E U+0024	"verdrinken"	Dutch
+^verdwijnen$	v ə r d ʋ ɛi n ə	1	U+005E U+0076 U+0065 U+0072 U+0064 U+0077 U+0069 U+006A U+006E U+0065 U+006E U+0024	"verdwijnen"	Dutch
+^verkiezing$	v ə r k iː z ɪ ŋ	1	U+005E U+0076 U+0065 U+0072 U+006B U+0069 U+0065 U+007A U+0069 U+006E U+0067 U+0024	"verkiezing"	Dutch
+^verstandig$	v ə r s t ɑ n d ə x	1	U+005E U+0076 U+0065 U+0072 U+0073 U+0074 U+0061 U+006E U+0064 U+0069 U+0067 U+0024	"verstandig"	Dutch
+^verstikken$	v ə r s t ɪ k ə	1	U+005E U+0076 U+0065 U+0072 U+0073 U+0074 U+0069 U+006B U+006B U+0065 U+006E U+0024	"verstikken"	Dutch
+^verstoppen$	v ə r s t ɔ p ə	1	U+005E U+0076 U+0065 U+0072 U+0073 U+0074 U+006F U+0070 U+0070 U+0065 U+006E U+0024	"verstoppen"	Dutch
+^vervloeken$	v ə r v l uː k ə	1	U+005E U+0076 U+0065 U+0072 U+0076 U+006C U+006F U+0065 U+006B U+0065 U+006E U+0024	"vervloeken"	Dutch
+^verzamelen$	v ə r z aː m ə l ə	1	U+005E U+0076 U+0065 U+0072 U+007A U+0061 U+006D U+0065 U+006C U+0065 U+006E U+0024	"verzamelen"	Dutch
+^voetafdruk$	v uː t ɑ v d r ʏ k	1	U+005E U+0076 U+006F U+0065 U+0074 U+0061 U+0066 U+0064 U+0072 U+0075 U+006B U+0024	"voetafdruk"	Dutch
+^voorouders$	v oː r ɑu d ə r s	1	U+005E U+0076 U+006F U+006F U+0072 U+006F U+0075 U+0064 U+0065 U+0072 U+0073 U+0024	"voorouders"	Dutch
+^vrouwelijk$	v r ɑu ʋ ə l ə k	1	U+005E U+0076 U+0072 U+006F U+0075 U+0077 U+0065 U+006C U+0069 U+006A U+006B U+0024	"vrouwelijk"	Dutch
+^vrouwtjes-$	v r ɑu ʋ t j ə s	1	U+005E U+0076 U+0072 U+006F U+0075 U+0077 U+0074 U+006A U+0065 U+0073 U+002D U+0024	"vrouwtjes-"	Dutch
+^wandelstok$	ʋ ɑ n d ə l s t ɔ k	1	U+005E U+0077 U+0061 U+006E U+0064 U+0065 U+006C U+0073 U+0074 U+006F U+006B U+0024	"wandelstok"	Dutch
+^weefgetouw$	ʋ eː f x ə t ɑu ʋ	1	U+005E U+0077 U+0065 U+0065 U+0066 U+0067 U+0065 U+0074 U+006F U+0075 U+0077 U+0024	"weefgetouw"	Dutch
+^weerhouden$	ʋ eː r h ɑu d ə	1	U+005E U+0077 U+0065 U+0065 U+0072 U+0068 U+006F U+0075 U+0064 U+0065 U+006E U+0024	"weerhouden"	Dutch
+^welriekend$	ʋ ɛ l r iː k ə n t	1	U+005E U+0077 U+0065 U+006C U+0072 U+0069 U+0065 U+006B U+0065 U+006E U+0064 U+0024	"welriekend"	Dutch
+^werkplaats$	ʋ ɛ r k p l aː t s	1	U+005E U+0077 U+0065 U+0072 U+006B U+0070 U+006C U+0061 U+0061 U+0074 U+0073 U+0024	"werkplaats"	Dutch
+^wild_zwijn$	ʋ ɪ l t _ z ʋ ɛi n	1	U+005E U+0077 U+0069 U+006C U+0064 U+005F U+007A U+0077 U+0069 U+006A U+006E U+0024	"wild_zwijn"	Dutch
+^ziekenhuis$	z iː k ə h œy s	1	U+005E U+007A U+0069 U+0065 U+006B U+0065 U+006E U+0068 U+0075 U+0069 U+0073 U+0024	"ziekenhuis"	Dutch
+^aalscholver$	aː l s x ɔ l v ə r	1	U+005E U+0061 U+0061 U+006C U+0073 U+0063 U+0068 U+006F U+006C U+0076 U+0065 U+0072 U+0024	"aalscholver"	Dutch
+^aankondigen$	aː ŋ k ɔ n d ə ɣ ə	1	U+005E U+0061 U+0061 U+006E U+006B U+006F U+006E U+0064 U+0069 U+0067 U+0065 U+006E U+0024	"aankondigen"	Dutch
+^beeldhouwer$	b eː l t h ɑu ʋ ə r	1	U+005E U+0062 U+0065 U+0065 U+006C U+0064 U+0068 U+006F U+0075 U+0077 U+0065 U+0072 U+0024	"beeldhouwer"	Dutch
+^beschadigen$	b ə s x aː d ə ɣ ə	1	U+005E U+0062 U+0065 U+0073 U+0063 U+0068 U+0061 U+0064 U+0069 U+0067 U+0065 U+006E U+0024	"beschadigen"	Dutch
+^besnijdenis$	b ə s n ɛi d ə n ɪ s	1	U+005E U+0062 U+0065 U+0073 U+006E U+0069 U+006A U+0064 U+0065 U+006E U+0069 U+0073 U+0024	"besnijdenis"	Dutch
+^binnenkomen$	b ɪ n ə k oː m ə	1	U+005E U+0062 U+0069 U+006E U+006E U+0065 U+006E U+006B U+006F U+006D U+0065 U+006E U+0024	"binnenkomen"	Dutch
+^dennenappel$	d ɛ n ə ɑ p ə l	1	U+005E U+0064 U+0065 U+006E U+006E U+0065 U+006E U+0061 U+0070 U+0070 U+0065 U+006C U+0024	"dennenappel"	Dutch
+^doorslikken$	d oː r s l ɪ k ə	1	U+005E U+0064 U+006F U+006F U+0072 U+0073 U+006C U+0069 U+006B U+006B U+0065 U+006E U+0024	"doorslikken"	Dutch
+^doorsnijden$	d oː r s n ɛi d ə	1	U+005E U+0064 U+006F U+006F U+0072 U+0073 U+006E U+0069 U+006A U+0064 U+0065 U+006E U+0024	"doorsnijden"	Dutch
+^duizendpoot$	d œy z ə n t p oː t	1	U+005E U+0064 U+0075 U+0069 U+007A U+0065 U+006E U+0064 U+0070 U+006F U+006F U+0074 U+0024	"duizendpoot"	Dutch
+^eergisteren$	eː r ɣ ɪ s t ə r ə	1	U+005E U+0065 U+0065 U+0072 U+0067 U+0069 U+0073 U+0074 U+0065 U+0072 U+0065 U+006E U+0024	"eergisteren"	Dutch
+^gaan_liggen$	x aː n _ l ɪ ɣ ə	1	U+005E U+0067 U+0061 U+0061 U+006E U+005F U+006C U+0069 U+0067 U+0067 U+0065 U+006E U+0024	"gaan_liggen"	Dutch
+^gehoorzamen$	x ə h oː r z aː m ə	1	U+005E U+0067 U+0065 U+0068 U+006F U+006F U+0072 U+007A U+0061 U+006D U+0065 U+006E U+0024	"gehoorzamen"	Dutch
+^gemakkelijk$	x ə m ɑ k ə l ə k	1	U+005E U+0067 U+0065 U+006D U+0061 U+006B U+006B U+0065 U+006C U+0069 U+006A U+006B U+0024	"gemakkelijk"	Dutch
+^gereedschap$	x ə r eː t s x ɑ p	1	U+005E U+0067 U+0065 U+0072 U+0065 U+0065 U+0064 U+0073 U+0063 U+0068 U+0061 U+0070 U+0024	"gereedschap"	Dutch
+^grootmoeder$	x r oː t m uː d ə r	1	U+005E U+0067 U+0072 U+006F U+006F U+0074 U+006D U+006F U+0065 U+0064 U+0065 U+0072 U+0024	"grootmoeder"	Dutch
+^grootouders$	x r oː t ɑu d ə r s	1	U+005E U+0067 U+0072 U+006F U+006F U+0074 U+006F U+0075 U+0064 U+0065 U+0072 U+0073 U+0024	"grootouders"	Dutch
+^hongersnood$	h ɔ ŋ ə r s n oː t	1	U+005E U+0068 U+006F U+006E U+0067 U+0065 U+0072 U+0073 U+006E U+006F U+006F U+0064 U+0024	"hongersnood"	Dutch
+^maniokbrood$	m aː n iː j ɔ k b r oː t	1	U+005E U+006D U+0061 U+006E U+0069 U+006F U+006B U+0062 U+0072 U+006F U+006F U+0064 U+0024	"maniokbrood"	Dutch
+^neusvleugel$	n øː s f l øː ɣ ə l	1	U+005E U+006E U+0065 U+0075 U+0073 U+0076 U+006C U+0065 U+0075 U+0067 U+0065 U+006C U+0024	"neusvleugel"	Dutch
+^nummerplaat$	n ʏ m ə r p l aː t	1	U+005E U+006E U+0075 U+006D U+006D U+0065 U+0072 U+0070 U+006C U+0061 U+0061 U+0074 U+0024	"nummerplaat"	Dutch
+^onderwijzen$	ɔ n d ə r ʋ ɛi z ə	1	U+005E U+006F U+006E U+0064 U+0065 U+0072 U+0077 U+0069 U+006A U+007A U+0065 U+006E U+0024	"onderwijzen"	Dutch
+^onduidelijk$	ɔ n d œy d ə l ə k	1	U+005E U+006F U+006E U+0064 U+0075 U+0069 U+0064 U+0065 U+006C U+0069 U+006A U+006B U+0024	"onduidelijk"	Dutch
+^overwinning$	oː v ə r ʋ ɪ n ɪ ŋ	1	U+005E U+006F U+0076 U+0065 U+0072 U+0077 U+0069 U+006E U+006E U+0069 U+006E U+0067 U+0024	"overwinning"	Dutch
+^paddenstoel$	p ɑ d ə s t uː l	1	U+005E U+0070 U+0061 U+0064 U+0064 U+0065 U+006E U+0073 U+0074 U+006F U+0065 U+006C U+0024	"paddenstoel"	Dutch
+^ruggengraat$	r ʏ ɣ ə x r aː t	1	U+005E U+0072 U+0075 U+0067 U+0067 U+0065 U+006E U+0067 U+0072 U+0061 U+0061 U+0074 U+0024	"ruggengraat"	Dutch
+^samenvoegen$	s aː m ə n v uː ɣ ə	1	U+005E U+0073 U+0061 U+006D U+0065 U+006E U+0076 U+006F U+0065 U+0067 U+0065 U+006E U+0024	"samenvoegen"	Dutch
+^schoenmaker$	s x uː n m aː k ə r	1	U+005E U+0073 U+0063 U+0068 U+006F U+0065 U+006E U+006D U+0061 U+006B U+0065 U+0072 U+0024	"schoenmaker"	Dutch
+^schoonbroer$	s x oː m b r uː r	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+0062 U+0072 U+006F U+0065 U+0072 U+0024	"schoonbroer"	Dutch
+^schoonvader$	s x oː n v aː d ə r	2	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+0076 U+0061 U+0064 U+0065 U+0072 U+0024	"schoonvader"	Dutch
+^schoorsteen$	s x oː r s t eː n	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+0072 U+0073 U+0074 U+0065 U+0065 U+006E U+0024	"schoorsteen"	Dutch
+^seks_hebben$	s ɛ k s _ h ɛ b ə	1	U+005E U+0073 U+0065 U+006B U+0073 U+005F U+0068 U+0065 U+0062 U+0062 U+0065 U+006E U+0024	"seks_hebben"	Dutch
+^sleutelbeen$	s l øː t ə l b eː n	1	U+005E U+0073 U+006C U+0065 U+0075 U+0074 U+0065 U+006C U+0062 U+0065 U+0065 U+006E U+0024	"sleutelbeen"	Dutch
+^stiefmoeder$	s t iː f m uː d ə r	1	U+005E U+0073 U+0074 U+0069 U+0065 U+0066 U+006D U+006F U+0065 U+0064 U+0065 U+0072 U+0024	"stiefmoeder"	Dutch
+^uitspreiden$	œy t s p r ɛi d ə	1	U+005E U+0075 U+0069 U+0074 U+0073 U+0070 U+0072 U+0065 U+0069 U+0064 U+0065 U+006E U+0024	"uitspreiden"	Dutch
+^verhinderen$	v ə r h ɪ n d ə r ə	1	U+005E U+0076 U+0065 U+0072 U+0068 U+0069 U+006E U+0064 U+0065 U+0072 U+0065 U+006E U+0024	"verhinderen"	Dutch
+^verkoudheid$	v ə r k ɑu t h ɛi t	1	U+005E U+0076 U+0065 U+0072 U+006B U+006F U+0075 U+0064 U+0068 U+0065 U+0069 U+0064 U+0024	"verkoudheid"	Dutch
+^vernietigen$	v ə r n iː t ə ɣ ə	1	U+005E U+0076 U+0065 U+0072 U+006E U+0069 U+0065 U+0074 U+0069 U+0067 U+0065 U+006E U+0024	"vernietigen"	Dutch
+^veroordelen$	v ə r oː r d eː l ə	2	U+005E U+0076 U+0065 U+0072 U+006F U+006F U+0072 U+0064 U+0065 U+006C U+0065 U+006E U+0024	"veroordelen"	Dutch
+^vreemdeling$	v r eː m d ə l ɪ ŋ	1	U+005E U+0076 U+0072 U+0065 U+0065 U+006D U+0064 U+0065 U+006C U+0069 U+006E U+0067 U+0024	"vreemdeling"	Dutch
+^vrijspreken$	v r ɛi s p r eː k ə	1	U+005E U+0076 U+0072 U+0069 U+006A U+0073 U+0070 U+0072 U+0065 U+006B U+0065 U+006E U+0024	"vrijspreken"	Dutch
+^achtervolgen$	ɑ x t ə r v ɔ l ɣ ə	1	U+005E U+0061 U+0063 U+0068 U+0074 U+0065 U+0072 U+0076 U+006F U+006C U+0067 U+0065 U+006E U+0024	"achtervolgen"	Dutch
+^beschuldigen$	b ə s x ʏ l d ə ɣ ə	1	U+005E U+0062 U+0065 U+0073 U+0063 U+0068 U+0075 U+006C U+0064 U+0069 U+0067 U+0065 U+006E U+0024	"beschuldigen"	Dutch
+^bijeenroepen$	b ɛi eː n r uː p ə	1	U+005E U+0062 U+0069 U+006A U+0065 U+0065 U+006E U+0072 U+006F U+0065 U+0070 U+0065 U+006E U+0024	"bijeenroepen"	Dutch
+^binnenplaats$	b ɪ n ə p l aː t s	1	U+005E U+0062 U+0069 U+006E U+006E U+0065 U+006E U+0070 U+006C U+0061 U+0061 U+0074 U+0073 U+0024	"binnenplaats"	Dutch
+^citrusvrucht$	s iː t r ʏ s f r ʏ x t	1	U+005E U+0063 U+0069 U+0074 U+0072 U+0075 U+0073 U+0076 U+0072 U+0075 U+0063 U+0068 U+0074 U+0024	"citrusvrucht"	Dutch
+^dorst_hebben$	d ɔ r s t _ h ɛ b ə	1	U+005E U+0064 U+006F U+0072 U+0073 U+0074 U+005F U+0068 U+0065 U+0062 U+0062 U+0065 U+006E U+0024	"dorst_hebben"	Dutch
+^gevorkte_tak$	x ə v ɔ r k t ə _ t ɑ k	1	U+005E U+0067 U+0065 U+0076 U+006F U+0072 U+006B U+0074 U+0065 U+005F U+0074 U+0061 U+006B U+0024	"gevorkte_tak"	Dutch
+^kleindochter$	k l ɛi n d ɔ x t ə r	1	U+005E U+006B U+006C U+0065 U+0069 U+006E U+0064 U+006F U+0063 U+0068 U+0074 U+0065 U+0072 U+0024	"kleindochter"	Dutch
+^laten_vallen$	l aː t ə _ v ɑ l ə	1	U+005E U+006C U+0061 U+0074 U+0065 U+006E U+005F U+0076 U+0061 U+006C U+006C U+0065 U+006E U+0024	"laten_vallen"	Dutch
+^lichaamshaar$	l ɪ x aː m s h aː r	1	U+005E U+006C U+0069 U+0063 U+0068 U+0061 U+0061 U+006D U+0073 U+0068 U+0061 U+0061 U+0072 U+0024	"lichaamshaar"	Dutch
+^naar_beneden$	n aː r _ b ə n eː d ə	1	U+005E U+006E U+0061 U+0061 U+0072 U+005F U+0062 U+0065 U+006E U+0065 U+0064 U+0065 U+006E U+0024	"naar_beneden"	Dutch
+^nakomelingen$	n aː k oː m ə l ɪ ŋ ə	1	U+005E U+006E U+0061 U+006B U+006F U+006D U+0065 U+006C U+0069 U+006E U+0067 U+0065 U+006E U+0024	"nakomelingen"	Dutch
+^noorderlicht$	n oː r d ə r l ɪ x t	1	U+005E U+006E U+006F U+006F U+0072 U+0064 U+0065 U+0072 U+006C U+0069 U+0063 U+0068 U+0074 U+0024	"noorderlicht"	Dutch
+^onmiddellijk$	ɔ n m ɪ d ə l ə k	1	U+005E U+006F U+006E U+006D U+0069 U+0064 U+0064 U+0065 U+006C U+006C U+0069 U+006A U+006B U+0024	"onmiddellijk"	Dutch
+^overblijfels$	oː v ə r b l ɛi f ə l s	1	U+005E U+006F U+0076 U+0065 U+0072 U+0062 U+006C U+0069 U+006A U+0066 U+0065 U+006C U+0073 U+0024	"overblijfels"	Dutch
+^pottenbakker$	p ɔ t ə b ɑ k ə r	1	U+005E U+0070 U+006F U+0074 U+0074 U+0065 U+006E U+0062 U+0061 U+006B U+006B U+0065 U+0072 U+0024	"pottenbakker"	Dutch
+^rechtspreken$	r ɛ x t s p r eː k ə	1	U+005E U+0072 U+0065 U+0063 U+0068 U+0074 U+0073 U+0070 U+0072 U+0065 U+006B U+0065 U+006E U+0024	"rechtspreken"	Dutch
+^samenzwering$	s aː m ə n z ʋ eː r ɪ ŋ	1	U+005E U+0073 U+0061 U+006D U+0065 U+006E U+007A U+0077 U+0065 U+0072 U+0069 U+006E U+0067 U+0024	"samenzwering"	Dutch
+^schaamspleet$	s x aː m s p l eː t	1	U+005E U+0073 U+0063 U+0068 U+0061 U+0061 U+006D U+0073 U+0070 U+006C U+0065 U+0065 U+0074 U+0024	"schaamspleet"	Dutch
+^schoonmoeder$	s x oː n m uː d ə r	2	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+006D U+006F U+0065 U+0064 U+0065 U+0072 U+0024	"schoonmoeder"	Dutch
+^schoonouders$	s x oː n ɑu d ə r s	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+006F U+0075 U+0064 U+0065 U+0072 U+0073 U+0024	"schoonouders"	Dutch
+^schoonzuster$	s x oː n z ʏ s t ə r	1	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+007A U+0075 U+0073 U+0074 U+0065 U+0072 U+0024	"schoonzuster"	Dutch
+^schouderblad$	s x ɑu d ə r b l ɑ t	1	U+005E U+0073 U+0063 U+0068 U+006F U+0075 U+0064 U+0065 U+0072 U+0062 U+006C U+0061 U+0064 U+0024	"schouderblad"	Dutch
+^sneeuwschoen$	s n eː ʋ s x uː n	1	U+005E U+0073 U+006E U+0065 U+0065 U+0075 U+0077 U+0073 U+0063 U+0068 U+006F U+0065 U+006E U+0024	"sneeuwschoen"	Dutch
+^spijt_hebben$	s p ɛi t _ h ɛ b ə	1	U+005E U+0073 U+0070 U+0069 U+006A U+0074 U+005F U+0068 U+0065 U+0062 U+0062 U+0065 U+006E U+0024	"spijt_hebben"	Dutch
+^stiefdochter$	s t iː v d ɔ x t ə r	1	U+005E U+0073 U+0074 U+0069 U+0065 U+0066 U+0064 U+006F U+0063 U+0068 U+0074 U+0065 U+0072 U+0024	"stiefdochter"	Dutch
+^vergaderhuis$	v ə r ɣ aː d ə r h œy s	1	U+005E U+0076 U+0065 U+0072 U+0067 U+0061 U+0064 U+0065 U+0072 U+0068 U+0075 U+0069 U+0073 U+0024	"vergaderhuis"	Dutch
+^verpleegster$	v ə r p l eː x s t ə r	1	U+005E U+0076 U+0065 U+0072 U+0070 U+006C U+0065 U+0065 U+0067 U+0073 U+0074 U+0065 U+0072 U+0024	"verpleegster"	Dutch
+^water_putten$	ʋ aː t ə r _ p ʏ t ə	1	U+005E U+0077 U+0061 U+0074 U+0065 U+0072 U+005F U+0070 U+0075 U+0074 U+0074 U+0065 U+006E U+0024	"water_putten"	Dutch
+^zich_haasten$	z ɪ x _ h aː s t ə	1	U+005E U+007A U+0069 U+0063 U+0068 U+005F U+0068 U+0061 U+0061 U+0073 U+0074 U+0065 U+006E U+0024	"zich_haasten"	Dutch
+^aan_land_gaan$	aː n _ l ɑ n t _ x aː n	1	U+005E U+0061 U+0061 U+006E U+005F U+006C U+0061 U+006E U+0064 U+005F U+0067 U+0061 U+0061 U+006E U+0024	"aan_land_gaan"	Dutch
+^elektriciteit$	eː l ɛ k t r iː s iː t ɛi t	1	U+005E U+0065 U+006C U+0065 U+006B U+0074 U+0072 U+0069 U+0063 U+0069 U+0074 U+0065 U+0069 U+0074 U+0024	"elektriciteit"	Dutch
+^getrouwde_man$	x ə t r ɑu ʋ d ə _ m ɑ n	1	U+005E U+0067 U+0065 U+0074 U+0072 U+006F U+0075 U+0077 U+0064 U+0065 U+005F U+006D U+0061 U+006E U+0024	"getrouwde_man"	Dutch
+^honger_hebben$	h ɔ ŋ ə r _ h ɛ b ə	1	U+005E U+0068 U+006F U+006E U+0067 U+0065 U+0072 U+005F U+0068 U+0065 U+0062 U+0062 U+0065 U+006E U+0024	"honger_hebben"	Dutch
+^ochtendgloren$	ɔ x t ə t x l oː r ə	1	U+005E U+006F U+0063 U+0068 U+0074 U+0065 U+006E U+0064 U+0067 U+006C U+006F U+0072 U+0065 U+006E U+0024	"ochtendgloren"	Dutch
+^schoondochter$	s x oː n d ɔ x t ə r	2	U+005E U+0073 U+0063 U+0068 U+006F U+006F U+006E U+0064 U+006F U+0063 U+0068 U+0074 U+0065 U+0072 U+0024	"schoondochter"	Dutch
+^schuldig_zijn$	s x ʏ l d ə x _ z ɛi n	1	U+005E U+0073 U+0063 U+0068 U+0075 U+006C U+0064 U+0069 U+0067 U+005F U+007A U+0069 U+006A U+006E U+0024	"schuldig_zijn"	Dutch
+^bliksemschicht$	b l ɪ k s ə m s x ɪ x t	1	U+005E U+0062 U+006C U+0069 U+006B U+0073 U+0065 U+006D U+0073 U+0063 U+0068 U+0069 U+0063 U+0068 U+0074 U+0024	"bliksemschicht"	Dutch
+^brandstichting$	b r ɑ n t s t ɪ x t ɪ ŋ	1	U+005E U+0062 U+0072 U+0061 U+006E U+0064 U+0073 U+0074 U+0069 U+0063 U+0068 U+0074 U+0069 U+006E U+0067 U+0024	"brandstichting"	Dutch
+^geboortebewijs$	x ə b oː r t ə b ə ʋ ɛi s	1	U+005E U+0067 U+0065 U+0062 U+006F U+006F U+0072 U+0074 U+0065 U+0062 U+0065 U+0077 U+0069 U+006A U+0073 U+0024	"geboortebewijs"	Dutch
+^geboren_worden$	x ə b oː r ə _ ʋ ɔ r d ə	1	U+005E U+0067 U+0065 U+0062 U+006F U+0072 U+0065 U+006E U+005F U+0077 U+006F U+0072 U+0064 U+0065 U+006E U+0024	"geboren_worden"	Dutch
+^lemen_baksteen$	l eː m ə _ b ɑ k s t eː n	1	U+005E U+006C U+0065 U+006D U+0065 U+006E U+005F U+0062 U+0061 U+006B U+0073 U+0074 U+0065 U+0065 U+006E U+0024	"lemen_baksteen"	Dutch
+^naar_huis_gaan$	n aː r _ h œy s _ x aː n	1	U+005E U+006E U+0061 U+0061 U+0072 U+005F U+0068 U+0075 U+0069 U+0073 U+005F U+0067 U+0061 U+0061 U+006E U+0024	"naar_huis_gaan"	Dutch
+^zich_omdraaien$	z ɪ x _ ɔ m d r aː j ə	1	U+005E U+007A U+0069 U+0063 U+0068 U+005F U+006F U+006D U+0064 U+0072 U+0061 U+0061 U+0069 U+0065 U+006E U+0024	"zich_omdraaien"	Dutch
+^zich_overgeven$	z ɪ x _ oː v ə r ɣ eː v ə	1	U+005E U+007A U+0069 U+0063 U+0068 U+005F U+006F U+0076 U+0065 U+0072 U+0067 U+0065 U+0076 U+0065 U+006E U+0024	"zich_overgeven"	Dutch
+^zwanger_worden$	z ʋ ɑ ŋ ə r _ ʋ ɔ r d ə	1	U+005E U+007A U+0077 U+0061 U+006E U+0067 U+0065 U+0072 U+005F U+0077 U+006F U+0072 U+0064 U+0065 U+006E U+0024	"zwanger_worden"	Dutch
+^getrouwde_vrouw$	x ə t r ɑu ʋ d ə _ v r ɑu ʋ	1	U+005E U+0067 U+0065 U+0074 U+0072 U+006F U+0075 U+0077 U+0064 U+0065 U+005F U+0076 U+0072 U+006F U+0075 U+0077 U+0024	"getrouwde_vrouw"	Dutch
+^in_dienst_nemen$	ɪ n _ d iː n s t _ n eː m ə	1	U+005E U+0069 U+006E U+005F U+0064 U+0069 U+0065 U+006E U+0073 U+0074 U+005F U+006E U+0065 U+006D U+0065 U+006E U+0024	"in_dienst_nemen"	Dutch
+^naar_boven_gaan$	n aː r _ b oː v ə _ x aː n	1	U+005E U+006E U+0061 U+0061 U+0072 U+005F U+0062 U+006F U+0076 U+0065 U+006E U+005F U+0067 U+0061 U+0061 U+006E U+0024	"naar_boven_gaan"	Dutch
+^zich_herinneren$	z ɪ x _ h ɛ r ɪ n ə r ə	1	U+005E U+007A U+0069 U+0063 U+0068 U+005F U+0068 U+0065 U+0072 U+0069 U+006E U+006E U+0065 U+0072 U+0065 U+006E U+0024	"zich_herinneren"	Dutch
+^zoete_aardappel$	z uː t ə _ aː r d ɑ p ə l	1	U+005E U+007A U+006F U+0065 U+0074 U+0065 U+005F U+0061 U+0061 U+0072 U+0064 U+0061 U+0070 U+0070 U+0065 U+006C U+0024	"zoete_aardappel"	Dutch
+^een_scheet_laten$	eː n _ s x eː t _ l aː t ə	1	U+005E U+0065 U+0065 U+006E U+005F U+0073 U+0063 U+0068 U+0065 U+0065 U+0074 U+005F U+006C U+0061 U+0074 U+0065 U+006E U+0024	"een_scheet_laten"	Dutch
+^koelte_toewaaien$	k uː l t ə _ t uː ʋ aː j ə	1	U+005E U+006B U+006F U+0065 U+006C U+0074 U+0065 U+005F U+0074 U+006F U+0065 U+0077 U+0061 U+0061 U+0069 U+0065 U+006E U+0024	"koelte_toewaaien"	Dutch
+^schroevendraaier$	s x r uː v ə d r aː j ə r	1	U+005E U+0073 U+0063 U+0068 U+0072 U+006F U+0065 U+0076 U+0065 U+006E U+0064 U+0072 U+0061 U+0061 U+0069 U+0065 U+0072 U+0024	"schroevendraaier"	Dutch
+^naar_beneden_gaan$	n aː r _ b ə n eː d ə _ x aː n	1	U+005E U+006E U+0061 U+0061 U+0072 U+005F U+0062 U+0065 U+006E U+0065 U+0064 U+0065 U+006E U+005F U+0067 U+0061 U+0061 U+006E U+0024	"naar_beneden_gaan"	Dutch
+^zich_terugtrekken$	z ɪ x _ t ə r ʏ x t r ɛ k ə	1	U+005E U+007A U+0069 U+0063 U+0068 U+005F U+0074 U+0065 U+0072 U+0075 U+0067 U+0074 U+0072 U+0065 U+006B U+006B U+0065 U+006E U+0024	"zich_terugtrekken"	Dutch
+^alcoholische_drank$	ɑ l k oː h oː l iː s ə _ d r ɑ ŋ k	1	U+005E U+0061 U+006C U+0063 U+006F U+0068 U+006F U+006C U+0069 U+0073 U+0063 U+0068 U+0065 U+005F U+0064 U+0072 U+0061 U+006E U+006B U+0024	"alcoholische_drank"	Dutch
+^initiatieplechtigheid$	iː n iː t ʃ aː t s iː p l ɛ x t ə x h ɛi t	1	U+005E U+0069 U+006E U+0069 U+0074 U+0069 U+0061 U+0074 U+0069 U+0065 U+0070 U+006C U+0065 U+0063 U+0068 U+0074 U+0069 U+0067 U+0068 U+0065 U+0069 U+0064 U+0024	"initiatieplechtigheid"	Dutch
+^inwijdingsplechtigheid$	ɪ n ʋ ɛi d ɪ ŋ s p l ɛ x t ə x h ɛi t	1	U+005E U+0069 U+006E U+0077 U+0069 U+006A U+0064 U+0069 U+006E U+0067 U+0073 U+0070 U+006C U+0065 U+0063 U+0068 U+0074 U+0069 U+0067 U+0068 U+0065 U+0069 U+0064 U+0024	"inwijdingsplechtigheid"	Dutch

@@ -1,0 +1,59 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	13	U+005E		
+$	NULL	276	U+0024		
+(	NULL	1	U+0028	"jipu(n)_pa-"	
+)	NULL	1	U+0029	"jipu(n)_pa-"	
+^karri-_with_LOCATVE$	k a r r i	1	U+005E U+006B U+0061 U+0072 U+0072 U+0069 U+002D U+005F U+0077 U+0069 U+0074 U+0068 U+005F U+004C U+004F U+0043 U+0041 U+0054 U+0056 U+0045 U+0024	"karri-_with_LOCATVE"	
+^ngka_(and_allomorphs)$	ŋ k a	1	U+005E U+006E U+0067 U+006B U+0061 U+005F U+0028 U+0061 U+006E U+0064 U+005F U+0061 U+006C U+006C U+006F U+006D U+006F U+0072 U+0070 U+0068 U+0073 U+0029 U+0024	"ngka_(and_allomorphs)"	
+^-ngka_(and_allomorphs)$	+ ŋ k a	1	U+005E U+002D U+006E U+0067 U+006B U+0061 U+005F U+0028 U+0061 U+006E U+0064 U+005F U+0061 U+006C U+006C U+006F U+006D U+006F U+0072 U+0070 U+0068 U+0073 U+0029 U+0024	"-ngka_(and_allomorphs)"	
+-	+	298	U+002D	"nyuk_paya-,paraj_wani-,yingin_yuwa-"	Gurindji
+.	_	3	U+002E	"nyamu...nga"	Gurindji
+_	_	266	U+005F	"jakarr_ma-,murlng_karrwa-,purrngpurrngkarra_karri-"	Gurindji
+a	a	1341	U+0061	"jalya,pakara,tarlukurru"	Gurindji
+g	g	2	U+0067	"parnnga,parnngirri"	Gurindji
+i	i	545	U+0069	"kirritinkarra_yuwa-,tiwu_ya-,yijarni"	Gurindji
+j	j	199	U+006A	"minija,tartajkarraaji,wanyjika"	Gurindji
+k	k	308	U+006B	"janka,juluj_ka-,mukmuk"	Gurindji
+l	l	285	U+006C	"parlkij,tarlarlap_karri-,winkilying"	Gurindji
+m	m	239	U+006D	"ngarlarrip_ma-,purriip_marn-,rampali"	Gurindji
+n	n	202	U+006E	"pakuntarri,taruk_wani-,wajintayi"	Gurindji
+p	p	261	U+0070	"limpal,paraj_pu-,pirlpirlji"	Gurindji
+r	r	389	U+0072	"kaputkari,tarla,turlurlup"	Gurindji
+t	t	185	U+0074	"jurtat_ma-,muntarla,pat_ma-"	Gurindji
+u	u	595	U+0075	"kitangkurra_ya-,lut_wani-,puju"	Gurindji
+w	w	158	U+0077	"ngalawuny,ngawanginyi,yapawurru"	Gurindji
+y	y	179	U+0079	"ngulynguly_paya-,parlak_yuwa-,wajintayi"	Gurindji
+^j	j	145	U+005E U+006A	"jaju,japa,jirrip_pa-"	Gurindji
+^k	k	187	U+005E U+006B	"kaapikaapi,kamurra,kilypikilypi"	Gurindji
+^l	l	53	U+005E U+006C	"larnti,lungkura,lunkurrngarna"	Gurindji
+^m	m	108	U+005E U+006D	"mayani,mijal,muwup_ma-"	Gurindji
+^n	n	22	U+005E U+006E	"nampiyita,nungkuru,nurlu_yuwa-"	Gurindji
+^p	p	113	U+005E U+0070	"pirnti,puka,purntaru"	Gurindji
+^r	r	7	U+005E U+0072	"rampali,rawurru,rumpa"	Gurindji
+^t	t	65	U+005E U+0074	"talymip,tinung,tirrirn_ngaya-"	Gurindji
+^w	w	140	U+005E U+0077	"wilmurr,wulyuk_ma-,wuruny_ma-"	Gurindji
+^y	y	55	U+005E U+0079	"yany_ma-,yijarni,yingin_pa-"	Gurindji
+a$	a	205	U+0061 U+0024	"jangarnka,kujarra,nampula"	Gurindji
+aa	a a	15	U+0061 U+0061	"jawurraaji,kaapikaapi,wangaak"	Gurindji
+i$	i	192	U+0069 U+0024	"jangayi,waringarri,wuyurrurnkarraaji"	Gurindji
+ii	iː	6	U+0069 U+0069	"kuii_karri-,purriip_marn-,wiingki"	Gurindji
+j$	j	16	U+006A U+0024	"kampij,karlaj,wankaj"	Gurindji
+k$	k	28	U+006B U+0024	"kukkuk,parntamarik,tumpalak"	Gurindji
+kk	k k	5	U+006B U+006B	"turlkkaji,turlkkarra_pa-,warukku_wumara"	Gurindji
+l$	l	27	U+006C U+0024	"kaninyjal,mijal,niil"	Gurindji
+lw	l w	5	U+006C U+0077	"jalwa,papulwari,pulwarr"	Gurindji
+m$	m	2	U+006D U+0024	"mum"	Gurindji
+n$	n	44	U+006E U+0024	"karrngan,patawarn,wuyurrurn"	Gurindji
+ng	ŋ	143	U+006E U+0067	"janga,jangarra_yuwa-,ngurrangkurra_ya-"	
+nn	n n	2	U+006E U+006E	"parnnga,parnngirri"	Gurindji
+ny	ɲ	78	U+006E U+0079	"kaminyjarr,nganany_ma-,tanypal_ma-"	
+p$	p	11	U+0070 U+0024	"kurrjalp,ngurrulyp,talymip"	Gurindji
+rr	r r	334	U+0072 U+0072	"jarrwa,kajirri,pina_karri-"	Gurindji
+t$	t	15	U+0074 U+0024	"jawut,kilpukut,murnkurt"	Gurindji
+u$	u	120	U+0075 U+0024	"juru,ngapuju,walawuru"	Gurindji
+uu	u u	1	U+0075 U+0075	"puul"	Gurindji
+^ng	ŋ	89	U+005E U+006E U+0067	"ngirlngirl,ngumparna,ngurluk"	
+^ny	ɲ	28	U+005E U+006E U+0079	"nyamu...nga,nyirn_ma-,nyitjira"	
+ng$	ŋ	44	U+006E U+0067 U+0024	"kulanypung,ngapurung,tulang"	
+ny$	ɲ	23	U+006E U+0079 U+0024	"-wariny,jakiliny,milnginymilnginy"	
+rr$	r r	22	U+0072 U+0072 U+0024	"kaminyjarr,nakurr,pinkirr"	Gurindji

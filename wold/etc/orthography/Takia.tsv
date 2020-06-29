@@ -1,0 +1,125 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	273	U+005E		
+$	NULL	165	U+0024		
+^a$	a	1	U+005E U+0061 U+0024	"a"	Takia
+^i$	i	1	U+005E U+0069 U+0024	"i"	Takia
+^o$	o	1	U+005E U+006F U+0024	"o"	Takia
+^-fffu$	+ fː u	1	U+005E U+002D U+0066 U+0066 U+0066 U+0075 U+0024	"-fffu"	Takia
+-	+	801	U+002D	"-dad,-kok,pal-aŋ"	Takia
+=	+	5	U+003D	"-bol=oŋ,=ta=p,salso=p"	Takia
+B	B/b	1	U+0042	"holim_Baibel"	Takia
+_	_	239	U+005F	"ai_sklo-n,dina_-pani,kteka-n_da-p"	Takia
+a	a	1007	U+0061	"gab,sakar,tan"	Takia
+b	b	149	U+0062	"-rbrib,gbate-,kbol"	Takia
+d	d	116	U+0064	"sduk,tdom-tbu-n,weil_i-raklawi_da"	Takia
+e	e	346	U+0065	"pein,tim_tae-n,wei"	Takia
+f	f	43	U+0066	"-flani,-fot,bafolo"	Takia
+g	g	96	U+0067	"gamu_geig,mdger,patu-n_kdabog-an"	Takia
+i	i	281	U+0069	"bia,grismas,kwai_te_-bol"	Takia
+k	k	101	U+006B	"-kbyai,basket,poket"	Takia
+l	l	245	U+006C	"-loŋ,ad_i-du_da-k_lo,altar"	Takia
+m	m	124	U+006D	"fou-n-mi,grma-rou-k,mal-mala-n"	Takia
+n	n	313	U+006E	"-kbyani,-mslani,wanana-"	Takia
+o	o	302	U+006F	"gdgod_tamol,goun_na_ut,kbol"	Takia
+p	p	86	U+0070	"-pis,bbe-_-pani,msuk_-pani"	Takia
+r	r	200	U+0072	"-pare_-du,awa-n_-r-pani,grismas"	Takia
+s	s	130	U+0073	"ai_sklo-n,mel_sae-n,you_wanna-n_san_ur"	Takia
+t	t	175	U+0074	"-gtani,katka-,nao-n_tan_na_ya"	Takia
+u	u	190	U+0075	"pao-n_tatuw-a-n,skru-,ŋrŋur"	Takia
+v	v	3	U+0076	"draiva_laisens,gavman,skrudraiva"	Takia
+w	w	64	U+0077	"-wen_uya-n,ai_wada-n,awa-itaw"	Takia
+y	j	50	U+0079	"aiyaw,lwa-n_an_da_ya,mryasa-"	Takia
+ŋ	ŋ	63	U+014B	"-sŋani,aŋkanak,graŋe-"	Takia
+^=	+	2	U+005E U+003D	"=ta=g,=ta=p"	Takia
+^a	a	69	U+005E U+0061	"abi,awa-n_dabi-n,aŋ"	Takia
+^b	b	76	U+005E U+0062	"bafolo,beig_awa-n_tbu-n,bet"	Takia
+^c	c	2	U+005E U+0063	"compleina,cot"	Takia
+^d	d	49	U+005E U+0064	"did_panu,dmui,dob"	Takia
+^e	e	5	U+005E U+0065	"eis,elefan,eleksin"	Takia
+^f	f	31	U+005E U+0066	"flya-,ftfota-,fui"	Takia
+^g	g	57	U+005E U+0067	"gbdai,greŋ,gub"	Takia
+^h	h	8	U+005E U+0068	"haia,hani,haŋgisip"	Takia
+^i	i	42	U+005E U+0069	"ilo-_-pani,iwa-,iŋ"	Takia
+^j	j	2	U+005E U+006A	"jag,jas"	Takia
+^k	k	93	U+005E U+006B	"kbakan,kbyae-ŋ,kofi"	Takia
+^l	l	25	U+005E U+006C	"lalol,loli,ltot"	Takia
+^m	m	90	U+005E U+006D	"mda-,meit,minista"	Takia
+^n	n	53	U+005E U+006E	"nao-n_kaek,nor,nun_a-n_da_ya"	Takia
+^o	o	3	U+005E U+006F	"oliv,oul,oŋ"	Takia
+^p	p	62	U+005E U+0070	"pein_iwo-n_da_ya,praipan,presiden"	Takia
+^r	r	16	U+005E U+0072	"ragarag,rawe-k,rgeŋ"	Takia
+^s	s	103	U+005E U+0073	"sakar,spun,sut"	Takia
+^t	t	98	U+005E U+0074	"ta,tamol-pein,tin"	Takia
+^u	u	22	U+005E U+0075	"ui,uranek,uya-ssai"	Takia
+^w	w	36	U+005E U+0077	"wanana-,weil_i-fni,wlwale-mi"	Takia
+^y	j	33	U+005E U+0079	"yok,yu,yu_sa-n_byouŋ"	Takia
+^ŋ	ŋ	18	U+005E U+014B	"ŋai,ŋdu-n_awa-n,ŋe-n_sae-n"	Takia
+a$	a	93	U+0061 U+0024	"da_i-sda,stua,ta"	Takia
+b$	b	24	U+0062 U+0024	"barag_ab,gub,ubou_ab"	Takia
+bs	b s	3	U+0062 U+0073	"-bsei-_-aw,pein_bsmak,tamol_bsmak"	Takia
+d$	d	24	U+0064 U+0024	"ded,piksakad,tbrod"	Takia
+dd	dː	3	U+0064 U+0064	"-ra-ddari,-sa-ddni,mala-n_ddawe-n"	Takia
+e$	e	51	U+0065 U+0024	"-bol_-glle,-gane,-rare"	Takia
+f$	f	4	U+0066 U+0024	"faif,gfgaf,twelf"	Takia
+ff	fː	2	U+0066 U+0066	"gnaffur,mala-n_fflu-n"	Takia
+g$	g	28	U+0067 U+0024	"beig,bog,daeg"	Takia
+gs	g s	2	U+0067 U+0073	"mala-n_sgsig,sgsog"	Takia
+i$	i	232	U+0069 U+0024	"-swi,-waebi,uya-ssai"	Takia
+k$	k	97	U+006B U+0024	"bod_be-k,plastik,tamol_bsmak"	Takia
+ks	k s	4	U+006B U+0073	"eleksin,tni-ksalai,woksap"	Takia
+kw	kʷ	1	U+006B U+0077	"skwe"	Takia
+l$	l	72	U+006C U+0024	"-bal,nkol,pedbol"	Takia
+ll	lː	9	U+006C U+006C	"-bol_-glle,kllid,klloy"	Takia
+ls	l s	4	U+006C U+0073	"-lsu,salso,salso=p"	Takia
+lw	lʷ	7	U+006C U+0077	"-lwi,ai_lwa-n,wlwale-mi"	Takia
+m$	m	30	U+006D U+0024	"-mam,bbarum,nal_pempem"	Takia
+n$	n	149	U+006E U+0024	"gavman,gbun,grma-n_kape-n"	Takia
+nn	nː	1	U+006E U+006E	"you_wanna-n_san_ur"	Takia
+nw	nʷ	1	U+006E U+0077	"anwil"	Takia
+o$	o	24	U+006F U+0024	"geo,geo-geo,makao"	Takia
+p$	p	20	U+0070 U+0024	"naip,sop,woksap"	Takia
+pp	pː	3	U+0070 U+0070	"-ppi,-su-ppi,su_-ppi"	Takia
+r$	r	53	U+0072 U+0024	"ager,parer,tir"	Takia
+rr	rː	3	U+0072 U+0072	"-rri,sarrei,you_brruk"	Takia
+rs	r s	4	U+0072 U+0073	"nanu-n_ir-tarsin-ek,tama-n_ir-tarsin-ek,tna-n_ir-tarsin-ek"	Takia
+rw	rʷ	3	U+0072 U+0077	"ilo-mrwa-n,mrwa-"	Takia
+s$	s	53	U+0073 U+0024	"aiglas,jas,pos"	Takia
+ss	s + s	3	U+0073 U+0073	"-rassani,-sel-ssi,uya-ssai"	Takia
+sw	sʷ	8	U+0073 U+0077	"-swe,nanuk_swa_te,tru-_tan_i-swe"	Takia
+t$	t	58	U+0074 U+0024	"cot,goun_na_ut,maket"	Takia
+tt	t + t	3	U+0074 U+0074	"-ttawi,-tte,-ttŋani"	Takia
+tw	tʷ	2	U+0074 U+0077	"-abi-twani,-twani"	Takia
+u$	u	58	U+0075 U+0024	"-lao-du,tatu,yu"	Takia
+v$	v	1	U+0076 U+0024	"oliv"	Takia
+w$	w	21	U+0077 U+0024	"klmo-kaw,pae-n_na_-aw,sasaw"	Takia
+y$	j	13	U+0079 U+0024	"grgroy,koy,srawoy"	Takia
+ŋ$	ŋ	50	U+014B U+0024	"-loŋ,maŋaw_-loŋ,riŋ"	Takia
+^bb	bː	3	U+005E U+0062 U+0062	"bbarum,bbaŋa-n_tbu-n,bbe-_-pani"	Takia
+^bs	b s	1	U+005E U+0062 U+0073	"bso-"	Takia
+^bw	bʷ	1	U+005E U+0062 U+0077	"bwab"	Takia
+^dd	dː	3	U+005E U+0064 U+0064	"ddi,ddi-,ddir"	Takia
+^dw	dʷ	1	U+005E U+0064 U+0077	"dwadaw"	Takia
+^ff	fː	4	U+005E U+0066 U+0066	"fflu-,ffo_na"	Takia
+^gg	gː	6	U+005E U+0067 U+0067	"ggare-,ggoy,ggreŋ"	Takia
+^kk	kː	3	U+005E U+006B U+006B	"kkdo-,kkdo-_awe-n,kkdo-n_i-taw"	Takia
+^ks	k s	2	U+005E U+006B U+0073	"ksaek,ksalom"	Takia
+^kw	kʷ	4	U+005E U+006B U+0077	"kwai_te_-gane,kwai_te_ya,kwin"	Takia
+^ll	lː	3	U+005E U+006C U+006C	"llaman,llit,llŋan"	Takia
+^lw	lʷ	4	U+005E U+006C U+0077	"lwa-,lwa-n_an_da_ya,lwaliu"	Takia
+^mm	mː	3	U+005E U+006D U+006D	"mmaŋe-,mmre-,mmur"	Takia
+^ms	m s	1	U+005E U+006D U+0073	"msuk_-pani"	Takia
+^nn	nː	2	U+005E U+006E U+006E	"nnae-ŋ_ab,nni"	Takia
+^nw	nʷ	1	U+005E U+006E U+0077	"nwi"	Takia
+^pp	pː	1	U+005E U+0070 U+0070	"ppae-"	Takia
+^rr	rː	2	U+005E U+0072 U+0072	"rre-k,rre-k_tya"	Takia
+^ss	sː	2	U+005E U+0073 U+0073	"ssanu-,ssei"	Takia
+^sw	sʷ	2	U+005E U+0073 U+0077	"sw-aŋ,swir"	Takia
+^ts	t s	1	U+005E U+0074 U+0073	"tsa-"	Takia
+^tt	tː	3	U+005E U+0074 U+0074	"ttawit,ttu,ttyane-k"	Takia
+^tw	tʷ	2	U+005E U+0074 U+0077	"twelf,twenti"	Takia
+^ŋs	ŋ s	1	U+005E U+014B U+0073	"ŋsa-ŋes"	Takia
+ks$	k s	1	U+006B U+0073 U+0024	"siks"	Takia
+ls$	l s	1	U+006C U+0073 U+0024	"tuls"	Takia
+ns$	n s	2	U+006E U+0073 U+0024	"draiva_laisens,lans"	Takia
+ŋs$	ŋ s	1	U+014B U+0073 U+0024	"toŋs"	Takia
+^kss	ks + s	1	U+005E U+006B U+0073 U+0073	"kssik_-bol"	Takia

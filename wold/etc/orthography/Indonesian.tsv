@@ -1,0 +1,118 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	30	U+005E		
+$	NULL	29	U+0024		
+(	NULL	59	U+0028	"(burung)_merpati,kulit_(binatang),panci_(goréng)"	
+)	NULL	59	U+0029	"(buah)_anggur,(ikan)_paus,mengantar(kan)"	
+^TV$	t i f i	1	U+005E U+0054 U+0056 U+0024	"TV"	Indonesian
+^WC$	w e s e	1	U+005E U+0057 U+0043 U+0024	"WC"	Indonesian
+^és$	é/e s	1	U+005E U+00E9 U+0073 U+0024	"és"	Indonesian
+^PSK$	p eː s k a	1	U+005E U+0050 U+0053 U+004B U+0024	"PSK"	Indonesian
+^SIM$	s i m	1	U+005E U+0053 U+0049 U+004D U+0024	"SIM"	Indonesian
+^WTS$	w é/e t éé/eː s	1	U+005E U+0057 U+0054 U+0053 U+0024	"WTS"	Indonesian
+-	+	34	U+002D	"serta-merta,tanah-air,yatim-piatu"	Indonesian
+A	A/a	1	U+0041	"(hari)_Ahad"	
+M	M/m	1	U+004D	"(hari)_Minggu"	
+_	_	168	U+005F	"kartu_pos,sepéda_motor,tukang_sihir"	Indonesian
+a	a	1902	U+0061	"jagung,membalas,pinggan"	Indonesian
+b	b	258	U+0062	"Sabtu,baju_baja,memberi(kan)"	Indonesian
+c	tʃ	52	U+0063	"alas_cangkir,kecoa,paceklik"	Indonesian
+d	d	196	U+0064	"adat,kandang,pidato"	Indonesian
+e	e	1069	U+0065	"bengkak,bersua,suster"	Indonesian
+f	f	3	U+0066	"bernafas,memaafkan,wastafel"	Indonesian
+g	g	168	U+0067	"enggak,menyinggung,tunggul"	Indonesian
+h	h	129	U+0068	"lahir,sembahyang,tahu"	Indonesian
+i	i	649	U+0069	"bis,bukit,pria"	Indonesian
+j	dʒ	67	U+006A	"kejayaan,prajurit,rajawali"	Indonesian
+k	k	340	U+006B	"cukup,emak_tiri,pikir"	Indonesian
+l	l	365	U+006C	"alamat,balik,tulang_belulang"	Indonesian
+m	m	360	U+006D	"memercikkan,menimbun(kan),samping"	Indonesian
+n	n	366	U+006E	"cinta,menanam,terbenam"	Indonesian
+o	o	207	U+006F	"bergolak,kosong,persekongkolan"	Indonesian
+p	p	206	U+0070	"kapal,sarapan,tupai"	Indonesian
+r	r	499	U+0072	"gara-gara,ngobrol,tergelincir"	Indonesian
+s	s	178	U+0073	"berlangsung,kegelisahan,sisik"	Indonesian
+t	t	332	U+0074	"menghantam,suntikan,tukang_tembikar"	Indonesian
+u	u	727	U+0075	"anggur,menyusul,tuma"	Indonesian
+v	v	5	U+0076	"memvonis,olive,télevisi"	Indonesian
+w	w	38	U+0077	"awal,awan,rajawali"	Indonesian
+y	j	52	U+0079	"membayar,mengguyur,sembahyang"	Indonesian
+z	z	3	U+007A	"(buah)_zaitun,jenazah,zina(h)"	Indonesian
+é	é/e	140	U+00E9	"lébar,mencétak,nokén"	Indonesian
+'a	ʔ a	1	U+0027 U+0061	"Jum'at"	Indonesian
+I$	i	1	U+0049 U+0024	"menghalangI"	Indonesian
+^J	J/dʒ	1	U+005E U+004A	"Jum'at"	Indonesian
+^K	K/k	1	U+005E U+004B	"Kamis"	Indonesian
+^R	R/r	1	U+005E U+0052	"Rabu"	Indonesian
+^S	S/s	3	U+005E U+0053	"Sabtu,Selasa,Senin"	Indonesian
+^a	a	71	U+005E U+0061	"agama,alur,awan"	Indonesian
+^b	b	230	U+005E U+0062	"bagian,budek,bégo"	Indonesian
+^c	tʃ	46	U+005E U+0063	"camar_(laut),cawan,cucu"	Indonesian
+^d	d	63	U+005E U+0064	"daksina,dara,dungu"	Indonesian
+^e	e	7	U+005E U+0065	"elang,embun,empat"	Indonesian
+^f	f	4	U+005E U+0066	"fajar,famili,flu"	Indonesian
+^g	g	53	U+005E U+0067	"gandar,garam,guru"	Indonesian
+^h	h	37	U+005E U+0068	"hati,huk,hélem"	Indonesian
+^i	i	29	U+005E U+0069	"ibu,ijuk,injéksi"	Indonesian
+^j	dʒ	46	U+005E U+006A	"jangkar,jari_kaki,jerami"	Indonesian
+^k	k	223	U+005E U+006B	"keponakan,kerbau,klosét"	Indonesian
+^l	l	85	U+005E U+006C	"laki-laki,lambat,lengan"	Indonesian
+^m	m	445	U+005E U+006D	"makan_pagi,menari,mencederai"	Indonesian
+^n	n	21	U+005E U+006E	"nampak,negara,nomor"	Indonesian
+^o	o	13	U+005E U+006F	"obat,obor,om"	Indonesian
+^p	p	202	U+005E U+0070	"paya,pemerkosaan,penanggalan"	Indonesian
+^r	r	49	U+005E U+0072	"reruntuhan,romo,rumah_sakit"	Indonesian
+^s	s	162	U+005E U+0073	"sabana,sanak,serangan"	Indonesian
+^t	t	168	U+005E U+0074	"tato,toilét,tukang_jahit"	Indonesian
+^u	u	23	U+005E U+0075	"urat,usus,utara"	Indonesian
+^v	v	2	U+005E U+0076	"vagina,vonis"	Indonesian
+^w	w	12	U+005E U+0077	"wanita,warna,wine"	Indonesian
+^y	j	3	U+005E U+0079	"ya,yakin,yatim-piatu"	Indonesian
+^é	é/e	4	U+005E U+00E9	"écék-écék,ékor,énténg"	Indonesian
+a$	a	289	U+0061 U+0024	"berjumpa,iga,membéla"	Indonesian
+aa	aː	7	U+0061 U+0061	"memaafkan,mentaati,pemerkosaan"	Indonesian
+b$	b	8	U+0062 U+0024	"arnab,jilbab,menjawab"	Indonesian
+d$	d	5	U+0064 U+0024	"maksud,masjid,murid"	Indonesian
+e$	e	3	U+0065 U+0024	"olive,tante,wine"	Indonesian
+g$	g	1	U+0067 U+0024	"maag"	Indonesian
+gg	g g	1	U+0067 U+0067	"meggulingkan"	Indonesian
+h$	h	109	U+0068 U+0024	"mahkamah,membasuh,tengah"	Indonesian
+i$	i	185	U+0069 U+0024	"dini,mengadili,peniti"	Indonesian
+k$	ʔ	161	U+006B U+0024	"(burung)_gagak,lunak,menebak"	Indonesian
+kh	x	6	U+006B U+0068	"akhir,berkhotbah,mengkhianati"	Indonesian
+kk	k k	9	U+006B U+006B	"membéngkokkan,menekukkan,menunjukkan"	Indonesian
+ks	ks	8	U+006B U+0073	"bijaksana,injéksi,sanksi"	Indonesian
+kw	kʷ	2	U+006B U+0077	"mendakwa,terdakwa"	Indonesian
+l$	l	65	U+006C U+0024	"bersiul,kamar_kecil,membual"	Indonesian
+ls	l s	1	U+006C U+0073	"sumpah_palsu"	Indonesian
+m$	m	62	U+006D U+0024	"daun_jarum,hitam,mencium"	Indonesian
+n$	n	304	U+006E U+0024	"cincin,kalian,penanggalan"	Indonesian
+nc	ɲ	49	U+006E U+0063	"mencekik,mencium,menciumi"	
+ng	ŋ	319	U+006E U+0067	"(burung)_puyuh,mengipasi,sapu_tangan"	
+nj	ɲ	32	U+006E U+006A	"injéksi,menjual,penjara"	
+ns	n s	4	U+006E U+0073	"berdansa,insan,konspirasi"	Indonesian
+ny	ɲ	53	U+006E U+0079	"mengunyah,menyemprot,menyobék"	
+o$	o	15	U+006F U+0024	"cabo,pidato,toko"	Indonesian
+p$	p	36	U+0070 U+0024	"atap,mengelap,menggarap"	Indonesian
+r$	r	151	U+0072 U+0024	"berlayar,sinar,tukang_tembikar"	Indonesian
+rh	r h	5	U+0072 U+0068	"berhala,berhenti,berhutang"	Indonesian
+rs	r s	14	U+0072 U+0073	"bersalah,bersumpah,tersenyum"	Indonesian
+rw	r w	3	U+0072 U+0077	"arwah,terwélu"	Indonesian
+s$	s	73	U+0073 U+0024	"cerdas,garis,pelipis"	Indonesian
+ss	ss/s	1	U+0073 U+0073	"massa"	Indonesian
+sy	ʃ	1	U+0073 U+0079	"lembaga_pemasyarakatan"	
+t$	t	162	U+0074 U+0024	"adat,berangkat,prajurit"	Indonesian
+u$	u	111	U+0075 U+0024	"aku,kuku,palu"	Indonesian
+é$	é/e	6	U+00E9 U+0024	"cabé,ketombé,sué"	Indonesian
+éh	é/e h	3	U+00E9 U+0068	"léhér,memperboléhkan,séhat"	Indonesian
+és	é/e s	7	U+00E9 U+0073	"bésok,menggésék,présidén"	Indonesian
+éw	é/e w	5	U+00E9 U+0077	"bréwok,déwa,léwat"	Indonesian
+^kh	kʰ	1	U+005E U+006B U+0068	"khitan"	Indonesian
+^ng	ŋ	2	U+005E U+006E U+0067	"ngobrol,ngomong"	
+^ny	ɲ	4	U+005E U+006E U+0079	"nyala_(api),nyamuk,nyawa"	
+^sh	s	1	U+005E U+0073 U+0068	"sholat"	Indonesian
+^sy	ʃ	1	U+005E U+0073 U+0079	"syurga"	
+ai$	aɪ	31	U+0061 U+0069 U+0024	"anak_sungai,mencurigai,mengendarai"	
+au$	aʊ	18	U+0061 U+0075 U+0024	"beliau,hijau,kau"	
+ng$	ŋ	216	U+006E U+0067 U+0024	"cangklong,lengkung,tulang"	
+éh$	é/e h	1	U+00E9 U+0068 U+0024	"téh"	Indonesian
+és$	é/e s	1	U+00E9 U+0073 U+0024	"menétés"	Indonesian

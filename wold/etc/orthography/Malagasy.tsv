@@ -1,0 +1,99 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	7	U+005E		
+$	NULL	17	U+0024		
+(	NULL	11	U+0028	"(làmba)_rongonimbazàha,mivèly_(vàry),voanì(h)o"	
+)	NULL	11	U+0029	"(làmba)_rongonimbazàha,man(gina-)gìna,mivèly_(vàry)"	
+.	NULL	9	U+002E	"tsy...na_oviana_na_ovìana,àman’...,àmin’..."	Malagasy
+!$	NULL	3	U+0021 U+0024	"faingàna!,haingàna!,hàingana!"	Malagasy
+-	+	30	U+002D	"fitodian-tsàmbo,mi-tomàny,zana-tsipìka"	Malagasy
+N	N/n	1	U+004E	"aN-"	Malagasy
+_	_	121	U+005F	"manòvo_ràno,mpanèfy_vy,trano_fivavàhana"	Malagasy
+a	a	1290	U+0061	"lalàna,miandòha,radìô"	Malagasy
+b	b	70	U+0062	"fanasan-bilìa,kibondrànjo,mibolàsitra"	Malagasy
+d	d	126	U+0064	"angàdy,atòdy,àdy"	Malagasy
+e	e	76	U+0065	"elektrisitè,manòme_tòky,mieritrèritra"	Malagasy
+f	f	127	U+0066	"hazofìsaka,lelàfo,mandràfy"	Malagasy
+g	g	10	U+0067	"eglìzy,fihogontàny,ganagàna"	Malagasy
+h	h	142	U+0068	"fahorìana,fandrahòana,vehivàvy_manambàdy"	Malagasy
+i	i	654	U+0069	"mifòka,mitòvy,miàla"	Malagasy
+j	dz	12	U+006A	"mijànona,mijèry,vehivàvy_janga"	Malagasy
+k	k	334	U+006B	"akòra,lòbaka,tranompokonòlona"	Malagasy
+l	l	283	U+006C	"ampèla,fanasan-bilìa,manòlana"	Malagasy
+m	m	152	U+006D	"governemànta,ranomòdy,voromahailàla"	Malagasy
+n	n	785	U+006E	"angadinòmby,manòdy,ànaka"	Malagasy
+o	o	476	U+006F	"bolòky,mangorìana,mikàoka"	Malagasy
+p	p	72	U+0070	"mpanào_kiràro,mpitsàbo,tapàny"	Malagasy
+r	r	356	U+0072	"mitèry,mpi-tòry,tsirìry"	Malagasy
+s	s	62	U+0073	"famosavìana,loha-sàha,plastìka"	Malagasy
+t	t	192	U+0074	"lahatèny,mitàdy,tokotàny"	Malagasy
+u	u	2	U+0075	"rua_ambi-ny_folo,ruampolo"	Malagasy
+v	v	221	U+0076	"mpivàrotra,vehivàvy,zàvatra"	Malagasy
+y	y	48	U+0079	"(zànaka_vàvy_ny_vàdy),bìby_fiòmpy,ròa_lìvatra_ny_lànjan’ny_èntana"	Malagasy
+z	z	103	U+007A	"landihàzo,ràzana,zazavàvy"	Malagasy
+à	à/a	656	U+00E0	"fehintànana,miàro,tsàra_tarèhy"	Malagasy
+è	è/e	205	U+00E8	"irètsy,mipètraka,ròa_lìvatra_ny_lànjan’ny_èntana"	Malagasy
+ì	ì/i	219	U+00EC	"maìvana,ny_maìzina,sìvy"	Malagasy
+ò	ò/o	306	U+00F2	"maromàro_kokòa,mijòro,mitatào_vovònana_(ny_àndro)"	Malagasy
+ô	ô/o	2	U+00F4	"bômbô,pôlìsy"	Malagasy
+ù	ù/u	1	U+00F9	"ambùa"	Malagasy
+^a	a	101	U+005E U+0061	"afokàsoka,alatsinàiny,anìlany"	Malagasy
+^b	b	34	U+005E U+0062	"be_vòhoka,boribòry,bòntsina"	Malagasy
+^d	d	21	U+005E U+0064	"dite,divày,dòkotra"	Malagasy
+^e	e	7	U+005E U+0065	"eglìzy,eriminèty,et`y"	Malagasy
+^f	f	147	U+005E U+0066	"fahantràna,fitsaràna,fàry"	Malagasy
+^g	g	8	U+005E U+0067	"gantànana,goàika,gìsa"	Malagasy
+^h	h	71	U+005E U+0068	"harèza,hèlo,hìdy"	Malagasy
+^i	i	22	U+005E U+0069	"indrày,irèo,itèna"	Malagasy
+^j	dz	5	U+005E U+006A	"jàko,jàmba,jòno"	Malagasy
+^k	k	44	U+005E U+006B	"kiràro,kàmo,kèly"	Malagasy
+^l	l	79	U+005E U+006C	"lapèlina,làmba_làndy,lòko"	Malagasy
+^m	m	547	U+005E U+006D	"manampontsàmpona,mankahàla,manàfina"	Malagasy
+^n	n	16	U+005E U+006E	"nimeraon’aotomobìla,nono,nìfy"	Malagasy
+^o	o	13	U+005E U+006F	"ombivàvy,orampànala,osivàvy"	Malagasy
+^p	p	18	U+005E U+0070	"patalòha,pèratra,pôlìsy"	Malagasy
+^r	r	75	U+005E U+0072	"ramolè,rèfy,ròatra"	Malagasy
+^s	s	79	U+005E U+0073	"sasany,sàoka,sòavaly_vàvy"	Malagasy
+^t	t	109	U+005E U+0074	"tokotàny,tranombàrotra,tètika"	Malagasy
+^v	v	111	U+005E U+0076	"vàry,vàtana,vòna"	Malagasy
+^z	z	49	U+005E U+007A	"zazavàvy,zàfy,zàotra"	Malagasy
+^à	à/a	38	U+005E U+00E0	"àlitara,ànana,àntitra"	Malagasy
+^è	è/e	12	U+005E U+00E8	"èfitra,ènina,èrana"	Malagasy
+^ì	ì/i	13	U+005E U+00EC	"ìvo,ìzao,ìzay"	Malagasy
+^ò	ò/o	16	U+005E U+00F2	"òlitra,òra,òrona"	Malagasy
+`y	`y/y	9	U+0060 U+0079	"fiarandalamb`y,izat`y,laboz`y"	Malagasy
+a$	a	933	U+0061 U+0024	"efamìra,manìdina,mi-tsàhatra"	Malagasy
+e$	e	6	U+0065 U+0024	"antoandro_be,manào_hoe,manòme"	Malagasy
+k’	kʼ	7	U+006B U+2019	"zanak’anadàhy,zanak’òmby,zanak’òsy"	
+mb	ⁿb	96	U+006D U+0062	"miambakàvaka,ombivàvy,vorombazàha"	
+mp	ⁿp	48	U+006D U+0070	"didimpòitra,manèmpotra,olompirènena"	
+n$	n	1	U+006E U+0024	"manìdy_frein"	Malagasy
+nd	ⁿd	57	U+006E U+0064	"fifandìrana,mandàdy,manèndy"	
+ng	ŋg	83	U+006E U+0067	"mandrìnga,mangahàzo,mangàro"	
+nj	ⁿdz	29	U+006E U+006A	"kibondrànjo,manjàka,rànjo"	
+nk	ŋk	16	U+006E U+006B	"mankahàla,miketronkètrona,mitsinkàfona"	
+nt	ⁿt	57	U+006E U+0074	"gantànana,mampanantèna,mpamìntana"	
+n’	n’	8	U+006E U+2019	"nimeraon’aotomobìla,vozon’akànjo,àmin’..."	
+o$	o	255	U+006F U+0024	"haràto,lòko,tròndro"	Malagasy
+rs	r s	1	U+0072 U+0073	"orsa"	Malagasy
+tr	ʈ r	190	U+0074 U+0072	"mangòtraka,mavèsatra,tòngotra"	
+ts	ts	71	U+0074 U+0073	"bètsaka,mamòtsotra,mitsinkàfona"	Malagasy
+y$	y	434	U+0079 U+0024	"mamònjy,vinànto_vàvy,zanak’anadàhy"	Malagasy
+à$	à/a	5	U+00E0 U+0024	"kadanà,mandà,zomà"	Malagasy
+àh	à/a h	58	U+00E0 U+0068	"fisaràhana,ialàhy,tòvo_làhy"	Malagasy
+às	à/a s	36	U+00E0 U+0073	"helodranomàsina,làsa,sàsatra"	Malagasy
+è$	è/e	18	U+00E8 U+0024	"afobè,fiarabè,maharè"	Malagasy
+èh	è/e h	17	U+00E8 U+0068	"anatrèhana,mirèhitra,ràtsy_tarèhy"	Malagasy
+ès	è/e s	7	U+00E8 U+0073	"fandrèsena,hàzo_kèsika,mavèsatra"	Malagasy
+ìh	ì/i h	8	U+00EC U+0068	"farìhy,kìho,mahìhitra"	Malagasy
+ìs	ì/i s	23	U+00EC U+0073	"aotobìsy,dìso,pìso"	Malagasy
+ò$	ò/o	5	U+00F2 U+0024	"ambavafò,be_herimpò,marotò"	Malagasy
+òh	ò/o h	31	U+00F2 U+0068	"akòho_làhy,alòha,tòhatra"	Malagasy
+òs	ò/o s	13	U+00F2 U+0073	"boròsy,lamòsina,mandòsitra"	Malagasy
+ô$	ô/o	3	U+00F4 U+0024	"bômbô,radìô,zèrô"	Malagasy
+^ts	ts	34	U+005E U+0074 U+0073	"tsy_mìsy_elanèlana,tsàra,tsìlo"	Malagasy
+^àh	à/a h	2	U+005E U+00E0 U+0068	"àhitra,àho"	Malagasy
+^às	à/a s	1	U+005E U+00E0 U+0073	"àsa"	Malagasy
+^ìs	ì/i s	1	U+005E U+00EC U+0073	"ìsa"	Malagasy
+ndr	ɳ ɖ r	105	U+006E U+0064 U+0072	"manàndrana,mpandràfitra,taratàsy_fahazòana_mitòndra_fiarakodìa"	
+ntr	ɳ ʈ r	4	U+006E U+0074 U+0072	"fahantràna,tompontràno,àntra"	
+nts	ⁿts	21	U+006E U+0074 U+0073	"bòntsina,mihìntsana,ràntsana"	

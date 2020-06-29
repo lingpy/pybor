@@ -1,0 +1,158 @@
+Grapheme	IPA	FREQUENCY	CODEPOINTS	EXAMPLES	LANGUAGES
+^	NULL	48	U+005E		
+$	NULL	35	U+0024		
+^mangwaré’$	m a ŋqʷ a r é/e ʔ	1	U+005E U+006D U+0061 U+006E U+0067 U+0077 U+0061 U+0072 U+00E9 U+2019 U+0024	"mangwaré’"	
+-	+	1	U+002D	"kil’-"	Iraqw
+/	ʕ̰/ʕ	177	U+002F	"/aay,bi/ri,dee/armóo_tseeree"	
+_	_	87	U+005F	"al_hhe'eesay,diqi_ta_guftano,diqi_ur"	Iraqw
+a	a	712	U+0061	"daa/alusmo,mibeeri_tsar,slahhangw"	Iraqw
+b	b	47	U+0062	"mibeeri_tsar,tlambebe/iit,tumbara'aat"	Iraqw
+d	d	56	U+0064	"iidaahh,kundáy,tsadiit"	Iraqw
+e	e	47	U+0065	"petroli,qaren,tsaxwel"	Iraqw
+f	f	48	U+0066	"afa_tlawi,guftano,mifugo"	Iraqw
+g	g	35	U+0067	"digma,duguno,indege"	Iraqw
+h	h	35	U+0068	"bohongw,mahaangw,pohami"	Iraqw
+i	i	225	U+0069	"hhiyo_niina,ki/ima_waket,wawitá"	Iraqw
+j	dʒ	4	U+006A	"injin,injolood,moqonjó"	Iraqw
+k	k	75	U+006B	"askaari,breki_tseeg,talaka"	Iraqw
+l	l	137	U+006C	"inslaawmo,mulki,mulqmo"	Iraqw
+m	m	196	U+006D	"heemá,pohami,stempu"	Iraqw
+n	n	151	U+006E	"dahhsani,ganaa',geenangw"	Iraqw
+o	o	70	U+006F	"daamóot,dee/armóo_tseeree,nor'oos"	Iraqw
+p	p	28	U+0070	"/aampa,hhampa,parampehh"	Iraqw
+q	q	53	U+0071	"faaro_qomeesa,ququmaar,tlaquut"	Iraqw
+r	ɾ	244	U+0072	"hara'ankiis,kuru,tseeree"	Iraqw
+s	s	77	U+0073	"dahasiingw,meesa,peesa"	Iraqw
+t	t	94	U+0074	"giwti,lat'áangw,wawitá"	Iraqw
+u	u	167	U+0075	"afór_ur,kupiga_rangi,muhoogo"	Iraqw
+w	w	64	U+0077	"afa_tlawi,ii'a_wasl,miwaani"	Iraqw
+x	x	12	U+0078	"duuxoo,duxa,tlaxoo"	Iraqw
+y	j	72	U+0079	"/ayiim,/ayo,hhiyo_niina"	Iraqw
+á	á/a	49	U+00E1	"fartá_saga,hhansáy,maamáy"	Iraqw
+é	é/e	5	U+00E9	"atén,ga/alér_tluway,slambaré/"	Iraqw
+í	í/i	7	U+00ED	"girirík,kasíis,kíing"	Iraqw
+ó	ó/o	21	U+00F3	"deelór_tám,deelór_yaariir,na/óo_shuulee"	Iraqw
+ú	ú/u	12	U+00FA	"afkú_doo',mugúl,umúu"	Iraqw
+’	ʔ	11	U+2019	"hat_hho’oo,kik’i,lu’us"	Iraqw
+'$	ʔ	54	U+0027 U+0024	"daa',hara_gwaa',hhamparara'"	Iraqw
+'a	ʔ a	34	U+0027 U+0061	"ka'aas,kankee'amo,wa'alah"	Iraqw
+'e	ʔ e	11	U+0027 U+0065	"de'eeamusmo,gwe'eedo,ya'ee"	Iraqw
+'i	ʔ i	10	U+0027 U+0069	"dahay'iis,ila'iwaa/,wawi'itiim"	Iraqw
+'n	ʔ n	3	U+0027 U+006E	"fu'naay,xa'noo"	Iraqw
+'o	ʔ o	9	U+0027 U+006F	"hho'oo,nor'oos,sokno'oot"	Iraqw
+'u	ʔ u	9	U+0027 U+0075	"fu'unay,pu'umpuu',tlee'usmo"	Iraqw
+'á	ʔ á/a	4	U+0027 U+00E1	"ba'ár,deelór_koo'án,lat'áangw"	Iraqw
+'í	ʔ í/i	2	U+0027 U+00ED	"ee'ít,inoo'ín"	Iraqw
+^a	a	73	U+005E U+0061	"al/uutl,alkii/,ayarén"	Iraqw
+^b	b	60	U+005E U+0062	"baaba,basa,burumbuur"	Iraqw
+^d	d	119	U+005E U+0064	"daangi,deelór_koo'án,dirisha"	Iraqw
+^f	f	35	U+005E U+0066	"faaro_qomeesa,faini,fala"	Iraqw
+^g	g	91	U+005E U+0067	"garangaar,gari_la_moshi,gila"	Iraqw
+^h	h	63	U+005E U+0068	"hamtí,haratlaw,hatlit"	Iraqw
+^i	i	40	U+005E U+0069	"ila'iwaa/,intsaahh,itnaa"	Iraqw
+^j	dʒ	1	U+005E U+006A	"jeela"	Iraqw
+^k	k	75	U+005E U+006B	"karatasi,kasiis,kitsinqaay"	Iraqw
+^l	l	37	U+005E U+006C	"lahhóo',leeleehh,loosí"	Iraqw
+^m	m	92	U+005E U+006D	"ma'aas,miwaani,munee"	Iraqw
+^n	n	33	U+005E U+006E	"naanú,neetlangw,nuundu"	Iraqw
+^o	o	1	U+005E U+006F	"oili"	Iraqw
+^p	p	27	U+005E U+0070	"paynú,peeráy,piindo"	Iraqw
+^q	q	33	U+005E U+0071	"qafi,qanqani,qoon"	Iraqw
+^r	ɾ	3	U+005E U+0072	"rais,rangi,reediyo"	Iraqw
+^s	s	40	U+005E U+0073	"saaqáan,sihhiit,siiq"	Iraqw
+^t	t	25	U+005E U+0074	"ta'iim,taahh,tumbiim"	Iraqw
+^u	u	15	U+005E U+0075	"umeme,umtusee,ur"	Iraqw
+^w	w	30	U+005E U+0077	"wak,wanaanaa',wawi'itiim"	Iraqw
+^x	x	31	U+005E U+0078	"xaarmo,xaw,xooro"	Iraqw
+^y	j	13	U+005E U+0079	"ya'ee,ya/aam,yawa"	Iraqw
+^z	z	1	U+005E U+007A	"zahabu"	Iraqw
+a$	a	192	U+0061 U+0024	"baloqa,gurú_niina,kuma"	Iraqw
+aa	aː	263	U+0061 U+0061	"duuqaay,kalaamu,saaqáan"	Iraqw
+ch	tʃ	2	U+0063 U+0068	"muchele,uchagusi"	Iraqw
+d$	d	4	U+0064 U+0024	"gawid,huland,injolood"	Iraqw
+e$	e	14	U+0065 U+0024	"deebe,kundóo_ya'ee,ya'ee"	Iraqw
+ee	eː	141	U+0065 U+0065	"/eet,geenangw,leeleehh"	Iraqw
+f$	f	8	U+0066 U+0024	"diif,harahhiif,tla/aaf"	Iraqw
+g$	g	5	U+0067 U+0024	"doog,tliig,tseeg"	Iraqw
+gw	gʷ	1	U+0067 U+0077	"hara_gwaa'"	Iraqw
+h$	h	11	U+0068 U+0024	"hardah,ina_'oh,wa'alah"	Iraqw
+hh	ħ	44	U+0068 U+0068	"al_hhe’eesay,hat_hhiya,oo_hho’o"	Iraqw
+hw	h w	1	U+0068 U+0077	"kahwa"	Iraqw
+i$	i	168	U+0069 U+0024	"patri,rangi,teeri"	Iraqw
+ii	iː	128	U+0069 U+0069	"/ifiit,alkii/,tumbiim"	Iraqw
+k$	k	9	U+006B U+0024	"ak,mibaangw_nee_wak,tuntuuk"	Iraqw
+ks	k s	1	U+006B U+0073	"soksi"	Iraqw
+kw	kʷ	7	U+006B U+0077	"afkwá_isimo,hikwaa,tlakwaay"	Iraqw
+l$	l	14	U+006C U+0024	"diwíl,hiinsl,tsaxwel"	Iraqw
+ll	l l	1	U+006C U+006C	"filliimbi"	Iraqw
+lw	l w	1	U+006C U+0077	"ilwa"	Iraqw
+m$	m	40	U+006D U+0024	"aleeya/aam,du'uum,ni/iim"	Iraqw
+n$	n	12	U+006E U+0024	"ayarén,koo'án,saaqáan"	Iraqw
+ng	ŋ	26	U+006E U+0067	"duunga',foxár_duunga',kifungo"	
+ns	n s	14	U+006E U+0073	"hinsla,inslaahh,slansli"	Iraqw
+nw	n w	1	U+006E U+0077	"anwaani"	Iraqw
+ny	ɲ	2	U+006E U+0079	"maynyaar,ponyuus"	
+o$	o	88	U+006F U+0024	"funguo,hho'oo,qaymo"	Iraqw
+oo	oː	90	U+006F U+006F	"goow,idoomá,mooyaangw"	Iraqw
+q$	q	11	U+0071 U+0024	"daaq,fiiq,tsuuq"	Iraqw
+qs	q s	1	U+0071 U+0073	"muqsli"	Iraqw
+qw	qʷ	9	U+0071 U+0077	"deeqwa,laqwaal,slaqwara"	Iraqw
+r$	ɾ	51	U+0072 U+0024	"fiir,kaahaar,qantsar"	Iraqw
+rs	ɾ s	1	U+0072 U+0073	"murslaqat"	Iraqw
+rw	ɾ w	4	U+0072 U+0077	"arwi,irwaa,surwaali"	Iraqw
+s$	s	74	U+0073 U+0024	"/untsuus,kuhhuus,kuus"	Iraqw
+sh	ʃ	10	U+0073 U+0068	"dayshimo,dayshimóo_bee/i,dirisha"	Iraqw
+sl	ɬ	23	U+0073 U+006C	"asla,doosliitmo,xaslasla'"	
+t$	t	65	U+0074 U+0024	"hat,muut,sol'oot"	Iraqw
+tl	tɬ	31	U+0074 U+006C	"/antlamo,haratlaw,iitlaw"	
+ts	tsʼ	43	U+0074 U+0073	"/untsuus,intsahhatiis,kutsuuhh"	Iraqw
+u$	u	36	U+0075 U+0024	"/uuru,stempu,tsiiru"	Iraqw
+uu	uː	86	U+0075 U+0075	"/akuut,huuw,nuqunuuq"	Iraqw
+w$	w	33	U+0077 U+0024	"geemaw,tutuuw,xaw"	Iraqw
+x$	x	8	U+0078 U+0024	"daraax,muux,tsororoox"	Iraqw
+xs	x s	1	U+0078 U+0073	"gixsa"	Iraqw
+xw	xʷ	6	U+0078 U+0077	"axwees,tsaxwel,xwaranxwaar"	Iraqw
+y$	j	55	U+0079 U+0024	"ma'ay,maamáy,tluway"	Iraqw
+á$	á/a	20	U+00E1 U+0024	"adá,muuná,qipá"	Iraqw
+é$	é/e	1	U+00E9 U+0024	"malé"	Iraqw
+í$	í/i	9	U+00ED U+0024	"laarí,makookí,maytsí"	Iraqw
+ó$	ó/o	4	U+00F3 U+0024	"baló,moqonjó,siiyó"	Iraqw
+ú$	ú/u	11	U+00FA U+0024	"daandú,gamú,naanú"	Iraqw
+’$	ʔ	6	U+2019 U+0024	"diidá’,gura’,gwaa’"	Iraqw
+'a$	ʔ a	7	U+0027 U+0061 U+0024	"ii'a,ilahhoo'a,taa'a"	Iraqw
+'i$	ʔ i	14	U+0027 U+0069 U+0024	"gi'i,kik'i,tlee'i"	Iraqw
+'o$	ʔ o	6	U+0027 U+006F U+0024	"/ayto'o,bambaa'o,hho'o"	Iraqw
+^aa	aː	10	U+005E U+0061 U+0061	"aahh,aakoo,aayo"	Iraqw
+^ch	tʃ	4	U+005E U+0063 U+0068	"chay,choo,chumba"	Iraqw
+^ee	eː	3	U+005E U+0065 U+0065	"ee'ít,eehar,eem"	Iraqw
+^gw	gʷ	16	U+005E U+0067 U+0077	"gwaanda,gwangwaraa',gwe'eedo"	Iraqw
+^hh	ħ	43	U+005E U+0068 U+0068	"hhe'ees,hhiyo_niina,hhoo'"	Iraqw
+^ii	iː	14	U+005E U+0069 U+0069	"iigu'uus,iiraakw,iitlaw"	Iraqw
+^kw	kʷ	15	U+005E U+006B U+0077	"kwa'akwaa',kwasiiyangw,kwasleema"	Iraqw
+^oo	oː	11	U+005E U+006F U+006F	"oo',oo_hho’o,oowi"	Iraqw
+^qw	qʷ	6	U+005E U+0071 U+0077	"qwaar,qwalaa/,qwaree/amo"	Iraqw
+^sh	ʃ	4	U+005E U+0073 U+0068	"shaati,shayiiri,shitakuus"	Iraqw
+^sl	ɬ	38	U+005E U+0073 U+006C	"slaax,slahhangw,slipiis"	
+^tl	tɬ	44	U+005E U+0074 U+006C	"tlangí,tlatiim,tlooma"	
+^ts	tsʼ	63	U+005E U+0074 U+0073	"tsa',tsa/ay,tsuuq"	Iraqw
+^xw	xʷ	4	U+005E U+0078 U+0077	"xwaranxwaar,xwaylitee,xweera"	Iraqw
+aa$	aː	16	U+0061 U+0061 U+0024	"mushumaa,naanaa,tlankaa"	Iraqw
+ee$	eː	24	U+0065 U+0065 U+0024	"munee,muree,xuree"	Iraqw
+hh$	ħ	34	U+0068 U+0068 U+0024	"iidaahh,intsaahh,parampehh"	Iraqw
+hhs	ħ s	1	U+0068 U+0068 U+0073	"dahhsani"	Iraqw
+ii$	iː	1	U+0069 U+0069 U+0024	"dii"	Iraqw
+kw$	kʷ	10	U+006B U+0077 U+0024	"aldaakw,gita/a_tlaakw,tlaakw"	Iraqw
+lhh	l ħ	1	U+006C U+0068 U+0068	"malhhari"	Iraqw
+mhh	m ħ	3	U+006D U+0068 U+0068	"hhamhhamo"	Iraqw
+ng$	ŋ	3	U+006E U+0067 U+0024	"aníng,kíing,kúung"	
+ngw	ũ	5	U+006E U+0067 U+0077	"gwangwaraa',mibaangw_nee_koo'an,mibaangw_nee_wak"	
+nhh	n ħ	2	U+006E U+0068 U+0068	"na/óo_qanhhi,qanhhi"	Iraqw
+oo$	oː	27	U+006F U+006F U+0024	"afoo,gitsoo,lamabu'uusmoo"	Iraqw
+qw$	qʷ	2	U+0071 U+0077 U+0024	"faanqw,slaaqw"	Iraqw
+rhh	ɾ ħ	3	U+0072 U+0068 U+0068	"hharhhár,hhirhheermo,slarhhamá"	Iraqw
+sl$	ɬ	9	U+0073 U+006C U+0024	"na/asl,wasl,xoosl"	
+tl$	tɬ	12	U+0074 U+006C U+0024	"/eetl,haatl,hamaatl"	
+ts$	tsʼ	9	U+0074 U+0073 U+0024	"/aankwets,hhuunts,qweets"	Iraqw
+xw$	xʷ	3	U+0078 U+0077 U+0024	"intlaaxw,tlaaxw"	Iraqw
+ós$	ó/o s	2	U+00F3 U+0073 U+0024	"inós,kilós"	Iraqw
+ngw$	ũ	44	U+006E U+0067 U+0077 U+0024	"diraangw,hhasaangw,naangw"	

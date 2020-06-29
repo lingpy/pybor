@@ -56,6 +56,20 @@ class LexibankDataset(object):
                 out.append([row["ID"], row[form], row[classification]])
         return out
 
+    def get_donor_table(self, language=None, form="Form", classification="Borrowed"):
+        out = []
+        for row in self.forms:
+            if not language or row["Language"] == language:
+                out.append([row["ID"], row[form], row[classification],
+                    row["donor_language"],
+                    row["donor_description"],
+                    row["donor_value"],
+                    row["age_description"],
+                    row["age_start_year"],
+                    row["age_end_year"],])
+
+        return out
+
 
 # =============================================================================
 # Apply user function to tables from WOLD.
@@ -163,7 +177,7 @@ def get_lexibank_access():
             "wold",
             transform={
                 "Loan": lambda x, y, z: 1
-                if x["Borrowed"] != "" and float(x["Borrowed"]) >= 0.9
+                if x["Borrowed_score"] != "" and float(x["Borrowed_score"]) >= 0.9
                 else 0
             },
         )

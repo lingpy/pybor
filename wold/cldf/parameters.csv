@@ -1,0 +1,1815 @@
+ID,Name,Concepticon_ID,Concepticon_Gloss
+1_theworld,the world,965,WORLD
+2_theland,the land,626,LAND
+3_thesoil,the soil,1228,EARTH (SOIL)
+4_thedust,the dust,2,DUST
+5_themud,the mud,640,MUD
+6_thesand,the sand,671,SAND
+7_themountainorhill,the mountain or hill,2118,MOUNTAIN OR HILL
+8_theclifforprecipice,the cliff or precipice,618,PRECIPICE
+9_theplain,the plain,652,PLAIN
+10_thevalley,the valley,921,VALLEY
+11_theisland,the island,622,ISLAND
+12_themainland,the mainland,166,MAINLAND
+13_theshore,the shore,113,SHORE
+14_thecave,the cave,1155,CAVE
+15_thewater,the water,948,WATER
+16_thesea,the sea,1474,SEA
+17_calm,calm,258,CALM
+18_rough2,rough(2),259,ROUGH (OF SEA)
+19_thefoam,the foam,1768,FOAM
+20_theocean,the ocean,645,OCEAN
+21_thelake,the lake,624,LAKE
+22_thebay,the bay,663,BAY
+23_thelagoon,the lagoon,623,LAGOON
+24_thereef,the reef,660,REEF
+25_thecape,the cape,1662,CAPE
+26_thewave,the wave,978,WAVE
+27_thetide,the tide,891,TIDE
+28_thelowtide,the low tide,1026,LOW TIDE
+29_thehightide,the high tide,613,HIGH TIDE
+30_theriverorstream,the river or stream,3311,FLOWING BODY OF WATER
+31_thewhirlpool,the whirlpool,1982,WHIRLPOOL
+32_thespringorwell,the spring or well,2144,SPRING OR WELL
+33_theswamp,the swamp,1145,SWAMP
+34_thewaterfall,the waterfall,943,WATERFALL
+35_thewoodsorforest,the woods or forest,420,FOREST
+36_thewood,the wood,1803,WOOD
+37_thestoneorrock,the stone or rock,2125,STONE OR ROCK
+38_theearthquake,the earthquake,6,EARTHQUAKE
+39_thesky,the sky,1732,SKY
+40_thesun,the sun,1343,SUN
+41_themoon,the moon,1313,MOON
+42_thestar,the star,1430,STAR
+43_thelightning,the lightning,1654,LIGHTNING
+44_thethunder,the thunder,1150,THUNDER
+45_theboltoflightning,the bolt of lightning,2007,BOLT (OF LIGHTNING)
+46_thestorm,the storm,858,STORM
+47_therainbow,the rainbow,1733,RAINBOW
+48_thelight,the light,630,LIGHT (RADIATION)
+49_thedarkness,the darkness,11,DARKNESS
+50_theshadeorshadow,the shade or shadow,1388,SHADE
+51_thedew,the dew,1977,DEW
+52_theair,the air,27,AIR
+53_thewind,the wind,960,WIND
+54_thecloud,the cloud,1489,CLOUD
+55_thefog,the fog,249,FOG
+56_therain,the rain,658,RAIN (PRECIPITATION)
+57_thesnow,the snow,784,SNOW
+58_theice,the ice,617,ICE
+59_theweather,the weather,952,WEATHER
+60_thefire,the fire,221,FIRE
+61_theflame,the flame,889,FLAME
+62_thesmoke,the smoke,778,SMOKE (EXHAUST)
+63_theash,the ash,646,ASH
+64_theembers,the embers,67,EMBERS
+65_toburn1,to burn(1),141,BURN (SOMETHING)
+66_toburn2,to burn(2),1428,BURNING
+67_tolight,to light,737,LIGHT (IGNITE)
+68_toextinguish,to extinguish,127,EXTINGUISH
+69_thematch,the match,1133,MATCH
+70_thefirewood,the firewood,10,FIREWOOD
+71_thecharcoal,the charcoal,1188,CHARCOAL
+72_theperson,the person,683,PERSON
+73_theman,the man,1554,MAN
+74_thewoman,the woman,962,WOMAN
+75_male1,male(1),2261,MALE (OF PERSON)
+76_female1,female(1),2260,FEMALE (OF PERSON)
+77_theboy,the boy,1366,BOY
+78_theyoungman,the young man,76,YOUNG MAN
+79_thegirl,the girl,1646,GIRL
+80_theyoungwoman,the young woman,77,YOUNG WOMAN
+81_thechild1,the child(1),1304,CHILD (YOUNG HUMAN)
+82_thebaby,the baby,1289,BABY
+83_thehusband,the husband,1200,HUSBAND
+84_thewife,the wife,1199,WIFE
+85_tomarry,to marry,203,MARRY
+86_thewedding,the wedding,1259,WEDDING
+87_thedivorce,the divorce,1134,DIVORCE
+88_thefather,the father,1217,FATHER
+89_themother,the mother,1216,MOTHER
+90_theparents,the parents,505,PARENTS
+91_themarriedman,the married man,424,MARRIED MAN
+92_themarriedwoman,the married woman,426,MARRIED WOMAN
+93_theson,the son,1620,SON
+94_thedaughter,the daughter,1357,DAUGHTER
+95_theporpoiseordolphin,the porpoise or dolphin,1479,DOLPHIN
+96_thechild2,the child(2),1801,CHILD (DESCENDANT)
+97_thebrother,the brother,1262,BROTHER
+98_theolderbrother,the older brother,1759,OLDER BROTHER
+99_theyoungerbrother,the younger brother,1760,YOUNGER BROTHER
+100_thesister,the sister,1263,SISTER
+101_theoldersister,the older sister,1758,OLDER SISTER
+102_theyoungersister,the younger sister,1761,YOUNGER SISTER
+103_thesibling,the sibling,1640,SIBLING
+104_thetwins,the twins,1005,TWINS
+105_thegrandfather,the grandfather,1383,GRANDFATHER
+106_theoldman,the old man,406,OLD MAN
+107_thegrandmother,the grandmother,1496,GRANDMOTHER
+108_theoldwoman,the old woman,907,OLD WOMAN
+109_thegrandson,the grandson,1618,GRANDSON
+110_thegranddaughter,the granddaughter,1619,GRANDDAUGHTER
+111_theuncle,the uncle,1327,UNCLE
+112_themothersbrother,the mother's brother,2692,MATERNAL UNCLE (MOTHER'S BROTHER)
+113_thefathersbrother,the father's brother,1985,PATERNAL UNCLE (FATHER'S BROTHER)
+114_theaunt,the aunt,1272,AUNT
+115_themotherssister,the mother's sister,2693,MATERNAL AUNT (MOTHER'S SISTER)
+116_thefatherssister,the father's sister,2691,PATERNAL AUNT (FATHER'S SISTER)
+117_thenephew,the nephew,1063,NEPHEW
+118_theniece,the niece,1642,NIECE
+119_thecousin,the cousin,1643,COUSIN
+120_theancestors,the ancestors,1669,ANCESTORS
+121_thedescendants,the descendants,490,DESCENDANTS
+122_thefatherinlawofaman,the father-in-law (of a man),2255,FATHER-IN-LAW (OF MAN)
+123_thefatherinlawofawoman,the father-in-law (of a woman),2254,FATHER-IN-LAW (OF WOMAN)
+124_themotherinlawofaman,the mother-in-law (of a man),2257,MOTHER-IN-LAW (OF MAN)
+125_themotherinlawofawoman,the mother-in-law (of a woman),2256,MOTHER-IN-LAW (OF WOMAN)
+126_thesoninlawofaman,the son-in-law (of a man),2267,SON-IN-LAW (OF MAN)
+127_thesoninlawofawoman,the son-in-law (of a woman),2266,SON-IN-LAW (OF WOMAN)
+128_thedaughterinlawofaman,the daughter-in-law (of a man),2265,DAUGHTER-IN-LAW (OF MAN)
+129_thedaughterinlawofawoman,the daughter-in-law (of a woman),2264,DAUGHTER-IN-LAW (OF WOMAN)
+130_thestepfather,the stepfather,237,STEPFATHER
+131_thestepmother,the stepmother,236,STEPMOTHER
+132_thestepson,the stepson,1059,STEPSON
+133_thestepdaughter,the stepdaughter,1058,STEPDAUGHTER
+134_theorphan,the orphan,1149,ORPHAN
+135_thewidow,the widow,1756,WIDOW
+136_thewidower,the widower,1981,WIDOWER
+137_therelatives,the relatives,1644,RELATIVES
+138_thefamily,the family,194,FAMILY
+139_i,I,1209,I
+140_yousingular,you (singular),1215,THOU
+141_hesheit,he/she/it,262,HE OR SHE OR IT
+142_we,we,1212,WE
+143_weinclusive,we (inclusive),1131,WE (INCLUSIVE)
+144_weexclusive,we (exclusive),1130,WE (EXCLUSIVE)
+145_youplural,you (plural),1213,YOU
+146_they,they,817,THEY
+147_theanimal,the animal,619,ANIMAL
+148_male2,male(2),2263,MALE (OF ANIMAL)
+149_female2,female(2),2262,FEMALE (OF ANIMAL)
+150_thelivestock,the livestock,631,LIVESTOCK
+151_thepasture,the pasture,649,PASTURE
+152_theherdsman,the herdsman,263,HERDSMAN
+153_thestableorstall,the stable or stall,851,STABLE
+154_thecattle,the cattle,1153,CATTLE
+155_thebull,the bull,1008,BULL
+156_theox,the ox,1169,OX
+157_thecow,the cow,1007,COW
+158_thecalf,the calf,1989,CALF
+159_thesheep,the sheep,1331,SHEEP
+160_theram,the ram,1344,RAM
+161_theewe,the ewe,1345,EWE
+162_thelamb,the lamb,820,LAMB
+163_theboar,the boar,1348,BOAR (MALE PIG)
+164_thesow,the sow,1351,SOW (FEMALE PIG)
+165_thepig,the pig,1337,PIG
+166_thegoat,the goat,1502,GOAT
+167_thehegoat,the he-goat,2475,MALE GOAT
+168_thekid,the kid,1972,KID
+169_thehorse,the horse,615,HORSE
+170_thestallion,the stallion,936,STALLION
+171_themare,the mare,938,MARE
+172_thefoalorcolt,the foal or colt,1647,FOAL
+173_thedonkey,the donkey,1862,DONKEY
+174_themule,the mule,890,MULE
+175_thefowl,the fowl,265,FOWL
+176_thecockrooster,the cock/rooster,1511,ROOSTER
+177_thehen,the hen,1514,HEN
+178_thechicken,the chicken,1318,CHICKEN
+179_thegoose,the goose,1187,GOOSE
+180_theduck,the duck,1360,DUCK
+181_thenest,the nest,539,NEST
+182_thebird,the bird,937,BIRD
+183_theseagull,the seagull,950,SEAGULL
+184_theheron,the heron,758,HERON
+185_theeagle,the eagle,1905,EAGLE
+186_thehawk,the hawk,307,HAWK
+187_thevulture,the vulture,1185,VULTURE
+188_thebat,the bat,1793,BAT
+189_theparrot,the parrot,882,PARROT
+190_thecrow,the crow,913,CROW
+191_thedove,the dove,1853,DOVE
+192_theowl,the owl,735,OWL
+193_thedog,the dog,2009,DOG
+194_therabbit,the rabbit,1136,RABBIT
+195_thecat,the cat,1208,CAT
+196_theopossum,the opossum,309,OPOSSUM
+197_themouseorrat,the mouse or rat,2139,MUROID (MOUSE OR RAT)
+198_thefish,the fish,227,FISH
+199_thefin,the fin,213,FIN
+200_thescale,the scale,266,SCALE
+201_thegill,the gill,1916,GILL
+202_theshell,the shell,598,SHELL
+203_theshark,the shark,1110,SHARK
+204_thewhale,the whale,957,WHALE
+205_thestingray,the stingray,1910,STINGRAY
+206_thefreshwatereel,the freshwater eel,1013,FRESHWATER EEL
+207_thewolf,the wolf,522,WOLF
+208_thelion,the lion,1386,LION
+209_thebear,the bear,1820,BEAR
+210_thefox,the fox,1312,FOX
+211_thedeer,the deer,1936,DEER
+212_themonkey,the monkey,1350,MONKEY
+213_theelephant,the elephant,1290,ELEPHANT
+214_thecamel,the camel,1871,CAMEL
+215_theinsect,the insect,620,INSECT
+216_theheadlouse,the head louse,310,HEAD LOUSE
+217_thenit,the nit,267,NIT
+218_theflea,the flea,232,FLEA
+219_thecentipede,the centipede,1974,CENTIPEDE
+220_thescorpion,the scorpion,1538,SCORPION
+221_thecockroach,the cockroach,1575,COCKROACH
+222_theant,the ant,587,ANT
+223_thespider,the spider,843,SPIDER
+224_thespiderweb,the spider web,1065,SPIDER WEB
+225_thebee,the bee,665,BEE
+226_thebeeswax,the beeswax,1931,BEESWAX
+227_thebeehive,the beehive,88,BEEHIVE
+228_thewasp,the wasp,1517,WASP
+229_thefly,the fly,1504,FLY (INSECT)
+230_thesandflyormidgeorgnat,the sandfly or midge or gnat,95,SANDFLY
+231_themosquito,the mosquito,1509,MOSQUITO
+232_theworm,the worm,1219,WORM
+233_thesnake,the snake,730,SNAKE
+234_thefirefly,the firefly,206,FIREFLY
+235_thebutterfly,the butterfly,1791,BUTTERFLY
+236_thegrasshopper,the grasshopper,607,GRASSHOPPER
+237_thesnail,the snail,1543,SNAIL
+238_thefrog,the frog,503,FROG
+239_thelizard,the lizard,632,LIZARD
+240_thecrocodileoralligator,the crocodile or alligator,1857,CROCODILE
+241_theturtle,the turtle,112,TURTLE
+242_thebody,the body,1480,BODY
+243_theskinorhide,the skin or hide,763,SKIN
+244_theflesh,the flesh,2259,FLESH
+245_thehair,the hair,2648,HAIR (HEAD)
+246_thebeard,the beard,678,BEARD
+247_thebodyhair,the body hair,189,HAIR (BODY)
+248_thepubichair,the pubic hair,36,PUBIC HAIR
+249_thedandruff,the dandruff,576,DANDRUFF
+250_theblood,the blood,946,BLOOD
+251_theveinorartery,the vein or artery,525,BLOOD VESSEL
+252_thebone,the bone,1394,BONE
+253_therib,the rib,801,RIB
+254_thehorn,the horn,1393,HORN (ANATOMY)
+255_thetail,the tail,1220,TAIL
+256_theback,the back,1291,BACK
+257_thespine,the spine,805,SPINE
+258_thehead,the head,1256,HEAD
+259_thetemples,the temples,1604,TEMPLES
+260_theskull,the skull,1605,SKULL
+261_thebrain,the brain,1583,BRAIN
+262_theface,the face,1560,FACE
+263_theforehead,the forehead,123,FOREHEAD
+264_thejaw,the jaw,798,JAW
+265_thecheek,the cheek,1730,CHEEK
+266_thechin,the chin,1510,CHIN
+267_theeye,the eye,1248,EYE
+268_theeyebrow,the eyebrow,1173,EYEBROW
+269_theeyelid,the eyelid,17,EYELID
+270_theeyelash,the eyelash,1540,EYELASH
+271_toblink,to blink,1655,BLINK
+272_theear,the ear,1247,EAR
+273_theearlobe,the earlobe,18,EARLOBE
+274_theearwax,the earwax,32,EARWAX
+275_thenose,the nose,1221,NOSE
+276_thenostril,the nostril,1178,NOSTRIL
+277_thenasalmucus,the nasal mucus,208,NASAL MUCUS (SNOT)
+278_themouth,the mouth,674,MOUTH
+279_thebeak,the beak,73,BEAK
+280_thelip,the lip,478,LIP
+281_thetongue,the tongue,1205,TONGUE
+282_thetooth,the tooth,1380,TOOTH
+283_thegums,the gums,139,GUMS
+284_themolartooth,the molar tooth,1049,MOLAR TOOTH
+285_theneck,the neck,1333,NECK
+286_thenapeoftheneck,the nape of the neck,1347,NAPE (OF NECK)
+287_thethroat,the throat,1346,THROAT
+288_theshoulder,the shoulder,1482,SHOULDER
+289_theshoulderblade,the shoulderblade,172,SHOULDERBLADE
+290_thecollarbone,the collarbone,1994,COLLARBONE
+291_thearm,the arm,1673,ARM
+292_thearmpit,the armpit,1886,ARMPIT
+293_theelbow,the elbow,981,ELBOW
+294_thewrist,the wrist,799,WRIST
+295_thehand,the hand,1277,HAND
+296_thepalmofthehand,the palm of the hand,1183,PALM OF HAND
+297_thefinger,the finger,1303,FINGER
+298_thethumb,the thumb,1781,THUMB
+299_thefingernail,the fingernail,1258,FINGERNAIL
+300_theclaw,the claw,72,CLAW
+301_theleg,the leg,1297,LEG
+302_thethigh,the thigh,800,THIGH
+303_thecalfoftheleg,the calf of the leg,498,CALF OF LEG
+304_theknee,the knee,1371,KNEE
+305_thefoot,the foot,1301,FOOT
+306_theankle,the ankle,803,ANKLE
+307_theheel,the heel,980,HEEL
+308_thefootprint,the footprint,318,FOOTPRINT
+309_thetoe,the toe,1389,TOE
+310_thewing,the wing,1257,WING
+311_thefeather,the feather,1201,FEATHER
+312_thechest,the chest,1592,CHEST
+313_thebreast,the breast,1402,BREAST
+314_thenippleorteat,the nipple or teat,796,NIPPLE
+315_theudder,the udder,154,UDDER
+316_thenavel,the navel,1838,NAVEL
+317_theheart,the heart,1223,HEART
+318_thelung,the lung,688,LUNG
+319_theliver,the liver,1224,LIVER
+320_thekidney,the kidney,489,KIDNEY
+321_thespleen,the spleen,1744,SPLEEN
+322_thestomach,the stomach,819,STOMACH
+323_theintestinesorguts,the intestines or guts,1991,INTESTINES
+324_thewaist,the waist,1681,WAIST
+325_thehip,the hip,1745,HIP
+326_thebuttocks,the buttocks,834,BUTTOCKS
+327_thewomb,the womb,804,WOMB
+328_thetesticles,the testicles,797,TESTICLES
+329_thepenis,the penis,1222,PENIS
+330_tobreathe,to breathe,1407,BREATHE
+331_toyawn,to yawn,1028,YAWN
+332_tohiccough,to hiccough,162,HICCOUGH
+333_tocough,to cough,879,COUGH
+334_tosneeze,to sneeze,1621,SNEEZE
+335_toperspire,to perspire,126,SWEAT (PERSPIRE)
+336_tospit,to spit,1440,SPIT
+337_tovomit,to vomit,1278,VOMIT
+338_tobite,to bite,1403,BITE
+339_tolick,to lick,319,LICK
+340_todribble,to dribble,268,DRIBBLE
+341_tosleep,to sleep,1585,SLEEP
+342_tosnore,to snore,1983,SNORE
+343_todream,to dream,1920,DREAM (SOMETHING)
+344_towakeup,to wake up,1602,WAKE UP
+345_tofart,to fart,1159,FART
+346_topiss,to piss,592,PISS
+347_toshit,to shit,676,SHIT (DEFECATE)
+348_tohavesex,to have sex,1785,HAVE SEX
+349_toshiver,to shiver,52,SHIVER
+350_tobathe,to bathe,138,BATHE
+351_tobeget,to beget,1152,BEGET
+352_tobeborn,to be born,1090,BE BORN
+353_pregnant,pregnant,1123,PREGNANT
+354_toconceive,to conceive,1087,CONCEIVE
+355_tobealive,to be alive,1422,BE ALIVE
+356_todie,to die,1494,DIE
+357_todrown,to drown,1904,DROWN
+358_tokill,to kill,1417,KILL
+359_thecorpse,the corpse,767,CORPSE
+360_tobury,to bury,1719,BURY
+361_thegrave,the grave,1773,GRAVE
+362_strong,strong,785,STRONG
+363_weak,weak,1601,WEAK
+364_healthy,healthy,1364,HEALTHY
+365_sickill,sick/ill,1847,SICK
+366_thefever,the fever,1534,FEVER
+367_thegoitregoiter,the goitre/goiter,1957,GOITER
+368_thecold,the cold,102,COMMON COLD (DISEASE)
+369_thewoundorsore,the wound or sore,1109,WOUND
+370_thebruise,the bruise,1148,BRUISE
+371_theswelling,the swelling,1903,SWELLING
+372_theitch,the itch,148,ITCH
+373_theblister,the blister,1584,BLISTER
+374_theboil,the boil,793,BOIL (OF SKIN)
+375_thepus,the pus,1808,PUS
+376_thescar,the scar,497,SCAR
+377_tocure,to cure,499,CURE
+378_thephysician,the physician,597,PHYSICIAN
+379_themedicine,the medicine,1372,MEDICINE
+380_thepoison,the poison,655,POISON
+381_tired,tired,1757,TIRED
+382_torest,to rest,168,REST
+383_lazy,lazy,1564,LAZY
+384_bald,bald,1125,BALD
+385_lame,lame,320,LAME
+386_deaf,deaf,996,DEAF
+387_mute,mute,1666,MUTE
+388_blind,blind,1653,BLIND
+389_drunk,drunk,1463,DRUNK
+390_naked,naked,590,NAKED
+391_toeat,to eat,1336,EAT
+392_thefood,the food,256,FOOD
+393_cooked,cooked,269,COOKED
+394_raw,raw,1959,RAW
+395_ripe,ripe,178,RIPE
+396_unripe,unripe,1958,UNRIPE
+397_rotten,rotten,1728,ROTTEN
+398_todrink,to drink,1401,DRINK
+399_tobehungry,to be hungry,1533,BE HUNGRY
+400_thefamine,the famine,199,FAMINE
+401_tobethirsty,to be thirsty,3474,BE THIRSTY
+402_tosuck,to suck,1421,SUCK
+403_tochew,to chew,321,CHEW
+404_toswallow,to swallow,897,SWALLOW
+405_tochoke,to choke,129,CHOKE
+406_tocook,to cook,1100,COOK (SOMETHING)
+407_toboil,to boil,792,BOIL (OF LIQUID)
+408_toroastorfry,to roast or fry,2146,ROAST OR FRY
+409_tobake,to bake,183,BAKE
+410_theoven,the oven,1143,OVEN
+411_thepot,the pot,1462,POT
+412_thekettle,the kettle,854,KETTLE
+413_thepan,the pan,31,PAN
+414_thedish,the dish,481,DISH
+415_theplate,the plate,480,PLATE
+416_thebowl,the bowl,1530,BOWL
+417_thejugpitcher,the jug/pitcher,270,JUG
+418_thecup,the cup,476,CUP
+419_thesaucer,the saucer,271,SAUCER
+420_thespoon,the spoon,1378,SPOON
+421_theknife1,the knife(1),3210,KNIFE (FOR EATING)
+422_thefork,the fork,1302,FORK
+423_thetongs,the tongs,272,TONGS
+424_themeal,the meal,1526,MEAL
+425_thebreakfast,the breakfast,1322,BREAKFAST
+426_thelunch,the lunch,768,LUNCH
+427_thedinner,the dinner,1833,DINNER (SUPPER)
+428_thesupper,the supper,1833,DINNER (SUPPER)
+429_topeel,to peel,275,PEEL
+430_tosieveortostrain,to sieve or to strain,3448,SIEVE OR STRAIN
+431_toscrape,to scrape,1767,SCRAPE
+432_tostirortomix,to stir or to mix,2017,MIX
+433_thebread,the bread,1368,BREAD
+434_thedough,the dough,273,DOUGH
+435_toknead,to knead,274,KNEAD
+436_theflour,the flour,1594,FLOUR
+437_tocrushortogrind,to crush or to grind,1033,GRIND
+438_themill,the mill,636,MILL
+439_themortar1,the mortar(1),224,MORTAR
+440_thepestle,the pestle,225,PESTLE
+441_themeat,the meat,634,MEAT
+442_thesausage,the sausage,1874,SAUSAGE
+443_thesoup,the soup,1547,SOUP
+444_thevegetables,the vegetables,924,VEGETABLES
+445_thebean,the bean,832,BEAN
+446_thepotato,the potato,593,POTATO
+447_thefruit,the fruit,1507,FRUIT
+448_thebunch,the bunch,1966,BUNCH
+449_thefig,the fig,322,FIG
+450_thegrape,the grape,920,GRAPE
+451_thenut,the nut,191,NUT
+452_theolive,the olive,1154,OLIVE
+453_theoil,the oil,1484,OIL (ORGANIC SUBSTANCE)
+454_thegreaseorfat,the grease or fat,323,FAT (ORGANIC SUBSTANCE)
+455_thesalt,the salt,1274,SALT
+456_thepepper,the pepper,1385,PEPPER
+457_thechilipepper,the chili pepper,919,CHILI PEPPER
+458_thehoney,the honey,942,HONEY
+459_thesugar,the sugar,862,SUGAR
+460_themilk,the milk,635,MILK
+461_tomilk,to milk,93,DRAW MILK
+462_thecheese,the cheese,1569,CHEESE
+463_thebutter,the butter,1245,BUTTER
+464_thedrink,the drink,731,BEVERAGE
+465_themead,the mead,941,MEAD
+466_thewine,the wine,1524,WINE
+467_thebeer,the beer,1639,BEER
+468_thefermenteddrink,the fermented drink,404,ALCOHOL (FERMENTED DRINK)
+469_theegg,the egg,744,EGG
+470_theyolk,the yolk,1556,YOLK
+471_toputon,to put on,158,PUT ON
+472_theclothingorclothes,the clothing or clothes,1895,CLOTHES
+473_thetailor,the tailor,881,TAILOR
+474_thecloth,the cloth,1616,CLOTH
+475_thewool,the wool,964,WOOL
+476_thelinen,the linen,916,LINEN
+477_thecotton,the cotton,1850,COTTON
+478_thesilk,the silk,1641,SILK
+479_thefelt,the felt,325,FELT
+480_thefur,the fur,580,FUR
+481_theleather,the leather,629,LEATHER
+482_tospin,to spin,121,SPIN
+483_thespindle,the spindle,277,SPINDLE
+484_toweave,to weave,133,WEAVE
+485_theloom,the loom,1787,LOOM
+486_tosew,to sew,1457,SEW
+487_theneedle1,the needle(1),1382,NEEDLE (FOR SEWING)
+488_theawl,the awl,278,AWL
+489_thethread,the thread,1161,THREAD
+490_todye,to dye,157,DYE
+491_thecloak,the cloak,326,CLOAK
+492_theponcho,the poncho,327,PONCHO
+493_theladder,the ladder,1464,LADDER
+494_thewomansdress,the (woman's) dress,474,DRESS
+495_thecoat,the coat,603,COAT
+496_theshirt,the shirt,1622,SHIRT
+497_thecollar,the collar,2012,COLLAR
+498_theskirt,the skirt,1600,SKIRT
+499_thegrassskirt,the grass-skirt,328,GRASS-SKIRT
+500_thetrousers,the trousers,809,TROUSERS
+501_thesockorstocking,the sock or stocking,329,STOCKING
+502_theshoe,the shoe,1381,SHOE
+503_theboot,the boot,585,BOOT
+504_theshoemaker,the shoemaker,875,SHOEMAKER
+505_thehatorcap,the hat or cap,2130,HEADGEAR
+506_thebelt,the belt,772,BELT
+507_theglove,the glove,867,GLOVE
+508_theveil,the veil,1151,VEIL
+509_thepocket,the pocket,1851,POCKET
+510_thebutton,the button,757,BUTTON
+511_thepin,the pin,64,PIN
+512_theornamentoradornment,the ornament or adornment,917,ORNAMENT
+513_thejewel,the jewel,1029,JEWEL
+514_thering,the ring,1374,RING
+515_thebracelet,the bracelet,1754,BRACELET
+516_thenecklace,the necklace,1961,NECKLACE
+517_thebead,the bead,1860,BEAD
+518_theearring,the earring,770,EARRING
+519_theheadbandorheaddress,the headband or headdress,3457,HEADBAND OR HEADDRESS
+520_thetattoo,the tattoo,68,TATTOO
+521_thehandkerchieforrag,the handkerchief or rag,332,RAG
+522_thetowel,the towel,1021,TOWEL
+523_thecomb,the comb,1475,COMB
+524_thebrush,the brush,1821,BRUSH
+525_theplaitbraid,the plait/braid,1043,BRAID
+526_therazor,the razor,151,RAZOR
+527_theointment,the ointment,1926,OINTMENT
+528_thesoap,the soap,788,SOAP
+529_themirror,the mirror,1171,MIRROR
+530_tolive,to live,363,"DWELL (LIVE, RESIDE)"
+531_thehouse,the house,1252,HOUSE
+532_thehut,the hut,1678,HUT
+533_thegardenhouse,the garden-house,403,GARDEN-HOUSE
+534_thetent,the tent,1316,TENT
+535_theyardorcourt,the yard or court,736,YARD
+536_themenshouse,the men's house,408,MEN'S HOUSE
+537_thecookhouse,the cookhouse,334,COOKHOUSE
+538_themeetinghouse,the meeting house,335,MEETING HOUSE
+539_theroom,the room,1450,ROOM
+540_thedoororgate,the door or gate,1567,DOOR
+541_thedoorpost,the doorpost,80,DOORPOST
+542_thelock,the lock,1596,LOCK
+543_thelatchordoorbolt,the latch or door-bolt,1012,LATCH
+544_thekey,the key,1472,KEY
+545_thewindow,the window,1375,WINDOW
+546_thefloor,the floor,1632,FLOOR
+547_thewall,the wall,933,WALL (OF HOUSE)
+548_thefireplace,the fireplace,185,FIREPLACE
+549_thestove,the stove,859,STOVE
+550_thechimney,the chimney,1305,CHIMNEY
+551_thebed,the bed,1663,BED
+552_thepillow,the pillow,1044,PILLOW
+553_theblanket,the blanket,806,BLANKET
+554_thechair,the chair,1476,CHAIR
+555_thetable,the table,1775,TABLE
+556_thelamportorch,the lamp or torch,2131,TORCH OR LAMP
+557_thecandle,the candle,1273,CANDLE
+558_theshelf,the shelf,745,SHELF
+559_thetrough,the trough,205,TROUGH
+560_theroof,the roof,769,ROOF
+561_thethatch,the thatch,279,THATCH
+562_theridgepole,the ridgepole,280,RIDGEPOLE
+563_therafter,the rafter,829,RAFTER
+564_thebeam,the beam,1132,BEAM
+565_thepostorpole,the post or pole,281,POST
+566_theboard,the board,1227,BOARD
+567_thearch,the arch,876,ARCH
+568_themason,the mason,877,MASON
+569_thebrick,the brick,1006,BRICK
+570_themortar2,the mortar(2),1731,MORTAR BINDER
+571_theadobe,the adobe,901,ADOBE
+572_thefarmer,the farmer,979,FARMER
+573_thefield,the field,212,FIELD
+574_thegarden,the garden,586,GARDEN
+575_tocultivate,to cultivate,1541,CULTIVATE
+576_thefence,the fence,1690,FENCE
+577_theditch,the ditch,2002,DITCH
+578_toploughplow,to plough/plow,1921,PLOUGH
+579_thefurrow,the furrow,1794,FURROW
+580_todig,to dig,1418,DIG
+581_thespade,the spade,1176,SPADE
+582_theshovel,the shovel,1901,SHOVEL
+583_thehoe,the hoe,284,HOE
+584_thefork2pitchfork,the fork(2)/pitchfork,337,PITCHFORK
+585_therake,the rake,338,RAKE
+586_tosow,to sow,748,SOW SEEDS
+587_theseed,the seed,714,SEED
+588_tomow,to mow,190,MOW
+589_thesickleorscythe,the sickle or scythe,2132,SICKLE OR SCYTHE
+590_tothresh,to thresh,285,THRESH
+591_thethreshingfloor,the threshing-floor,223,THRESHING-FLOOR
+592_theharvest,the harvest,3541,HARVEST OR HARVEST SEASON
+593_thegrain,the grain,605,GRAIN
+594_thewheat,the wheat,1077,WHEAT
+595_thebarley,the barley,932,BARLEY
+596_therye,the rye,23,RYE
+597_theoats,the oats,60,OAT
+598_themaizecorn,the maize/corn,506,MAIZE
+599_therice,the rice,926,RICE
+600_thegrass,the grass,606,GRASS
+601_thehay,the hay,342,HAY
+602_theplant,the plant,653,PLANT (VEGETATION)
+603_toplant,to plant,1486,PLANT (SOMETHING)
+604_theroot,the root,670,ROOT
+605_thebranch,the branch,3223,BRANCH OR TWIG
+606_theleaf,the leaf,628,LEAF
+607_theflower,the flower,239,FLOWER
+608_thetree,the tree,906,TREE
+609_theoak,the oak,644,OAK
+610_thebeech,the beech,1950,BEECH
+611_thebirch,the birch,1855,BIRCH
+612_thepine,the pine,1740,PINE
+613_thefir,the fir,1915,FIR
+614_theacorn,the acorn,968,ACORN
+615_thevine,the vine,343,VINE
+616_thetobacco,the tobacco,974,TOBACCO
+617_tosmoke,to smoke,1689,SMOKE (INHALE)
+618_thepipe,the pipe,1124,PIPE
+619_thetreestump,the tree stump,241,TREE STUMP
+620_thetreetrunk,the tree trunk,344,TREE TRUNK
+621_theforkedbranch,the forked branch,409,FORKED BRANCH
+622_thebark,the bark,1204,BARK
+623_thesap,the sap,345,SAP
+624_thepalmtree,the palm tree,1181,PALM TREE
+625_thecoconut,the coconut,970,COCONUT
+626_thecitrusfruit,the citrus fruit,1126,CITRUS FRUIT
+627_thebanana,the banana,868,BANANA
+628_thebanyan,the banyan,346,BANYAN
+629_thesweetpotato,the sweet potato,159,SWEET POTATO
+630_theyam,the yam,410,YAM
+631_thecassavamanioc,the cassava/manioc,925,CASSAVA
+632_thegourd,the gourd,411,GOURD
+633_thepumpkinorsquash,the pumpkin or squash,864,PUMPKIN
+634_thebamboo,the bamboo,1927,BAMBOO
+635_thesugarcane,the sugar cane,146,SUGAR CANE
+636_thefishpoison,the fish poison,348,FISH POISON
+637_thenettle,the nettle,33,NETTLE
+638_themushroom,the mushroom,641,MUSHROOM
+639_todo,to do,813,DO
+640_thework,the work,984,WORK (LABOUR)
+641_tobend,to bend,2004,BEND
+642_tofold,to fold,1470,FOLD
+643_totie,to tie,1917,TIE
+644_tountie,to untie,352,UNTIE
+645_thechain,the chain,1627,CHAIN
+646_therope,the rope,1218,ROPE
+647_theknot,the knot,760,KNOT
+648_tostrikeorhitorbeat,to strike or hit or beat,2133,STRIKE OR BEAT
+649_topound,to pound,354,POUND
+650_tocut,to cut,1432,CUT
+651_tocutdown,to cut down,355,CUT DOWN
+652_tochop,to chop,155,CHOP
+653_tostab,to stab,3189,STAB TO DEATH
+654_theknife2,the knife(2),1352,KNIFE
+655_thescissorsorshears,the scissors or shears,356,SHEARS
+656_theaxeax,the axe/ax,677,AXE
+657_theadze,the adze,290,ADZE
+658_tobreak,to break,680,BREAK (DESTROY OR GET DESTROYED)
+659_broken,broken,3190,BROKEN (NOT WORKING)
+660_tosplit,to split,1437,SPLIT
+661_totear,to tear,1735,TEAR (SHRED)
+662_thestatue,the statue,1002,STATUE
+663_toskin,to skin,291,PULL OFF (SKIN)
+664_torub,to rub,1449,RUB
+665_tostretch,to stretch,214,STRETCH
+666_topull,to pull,1455,PULL
+667_tospreadout,to spread out,38,SPREAD OUT
+668_tohangup,to hang up,357,HANG UP
+669_topress,to press,1913,PRESS
+670_tosqueeze,to squeeze,1414,SQUEEZE
+671_topour,to pour,1487,POUR
+672_towash,to wash,1453,WASH
+673_tosweep,to sweep,230,SWEEP
+674_thebroom,the broom,245,BROOM
+675_thetool,the tool,1361,TOOL
+676_thecarpenter,the carpenter,1042,CARPENTER
+677_tobuild,to build,1840,BUILD
+678_tobore,to bore,1501,BORE
+679_tohollowout,to hollow out,46,HOLLOW OUT
+680_thesaw,the saw,1948,SAW
+681_thehammer,the hammer,1481,HAMMER
+682_thenail,the nail,502,NAIL (TOOL)
+683_theglue,the glue,1069,GLUE
+684_theblacksmith,the blacksmith,1001,BLACKSMITH
+685_toforge,to forge,288,FORGE
+686_theanvil,the anvil,1648,ANVIL
+687_tocast,to cast,211,CAST
+688_thegold,the gold,1369,GOLD
+689_thesilver,the silver,759,SILVER
+690_thecopper,the copper,1825,COPPER
+691_theiron,the iron,621,IRON
+692_thelead,the lead,627,LEAD (CHEMICAL ELEMENT)
+693_thetinortinplate,the tin or tinplate,3217,TIN OR TINPLATE
+694_thepotter,the potter,359,POTTER
+695_tomouldmold,to mould/mold,289,MOLD
+696_theclay,the clay,1399,CLAY
+697_theglass,the glass,604,GLASS
+698_toweaveorplaitbraid,to weave or plait/braid,3294,BRAID (VERB) OR WEAVE (BASKET)
+699_thebasket,the basket,1539,BASKET
+700_themat,the mat,195,MAT
+701_therug,the rug,292,RUG
+702_thenetbag,the netbag,293,NETBAG
+703_thefan,the fan,1971,FAN (OBJECT)
+704_tofan,to fan,360,FAN ACTION
+705_tocarve,to carve,228,CARVE
+706_thesculptor,the sculptor,914,SCULPTOR
+708_thechisel,the chisel,1979,CHISEL
+709_thepaint,the paint,647,PAINT (PIGMENTS)
+710_topaint,to paint,2001,PAINTING
+711_tomove,to move,765,MOVE
+712_toturn,to turn,,
+713_toturnaround,to turn around,1444,TURN AROUND
+714_towrap,to wrap,1113,WRAP
+715_toroll,to roll,827,ROLL
+716_todrop,to drop,2866,DROP (SOMETHING)
+717_totwist,to twist,3199,TWIST (AROUND)
+718_torise,to rise,568,RISE (MOVE UPWARDS)
+719_toraiseorlift,to raise or lift,501,LIFT
+720_tofall,to fall,1280,FALL
+721_todrip,to drip,2253,DRIP (EMIT LIQUID)
+722_tothrow,to throw,1456,THROW
+723_tocatch,to catch,702,CATCH
+724_toshake,to shake,1909,SHAKE
+725_toflow,to flow,2003,FLOW
+726_tosink,to sink,1088,SINK (DESCEND)
+727_tofloat,to float,1574,FLOAT
+728_toswim,to swim,1439,SWIM
+729_todive,to dive,119,DIVE
+730_tosplash,to splash,365,SPLASH
+731_tosail,to sail,787,SAIL
+732_tofly,to fly,1441,FLY (MOVE THROUGH AIR)
+733_toblow,to blow,175,BLOW (OF WIND)
+734_tocrawl,to crawl,3456,CRAWL OR CREEP
+735_tokneel,to kneel,66,KNEEL
+736_tocrouch,to crouch,296,CROUCH
+737_toslideorslip,to slide or slip,1324,SLIP
+738_tojump,to jump,1829,JUMP
+739_tokick,to kick,1135,KICK
+740_todance,to dance,1879,DANCE
+741_towalk,to walk,1443,WALK
+742_tolimp,to limp,366,LIMP
+743_torun,to run,1519,RUN
+744_togo,to go,695,GO
+745_togoup,to go up,705,GO UP (ASCEND)
+746_toclimb,to climb,1102,CLIMB
+747_togodown,to go down,2014,GO DOWN (DESCEND)
+748_togoout,to go out,1107,GO OUT
+749_tocome,to come,1446,COME
+750_tocomeback,to come back,581,COME BACK
+751_toleave,to leave,1752,LEAVE
+752_todisappear,to disappear,485,DISAPPEAR
+753_toflee,to flee,956,FLEE
+754_tofollow,to follow,1085,FOLLOW
+755_topursue,to pursue,1047,PURSUE
+756_toarrive,to arrive,1387,ARRIVE
+757_toapproach,to approach,1778,APPROACH
+758_toenter,to enter,749,ENTER
+759_tocarry,to carry,700,CARRY
+760_tocarryinhand,to carry in hand,412,CARRY IN HAND
+761_tocarryonshoulder,to carry on shoulder,413,CARRY ON SHOULDER
+762_tocarryonhead,to carry on head,414,CARRY ON HEAD
+763_tocarryunderthearm,to carry under the arm,415,CARRY UNDER ARM
+764_tobring,to bring,692,BRING
+765_tosend,to send,1127,SEND
+766_tolead,to lead,43,LEAD (GUIDE)
+767_todrive,to drive,741,DRIVE
+768_toride,to ride,367,RIDE
+769_topush,to push,1452,PUSH
+770_theroad,the road,667,ROAD
+771_thepath,the path,2252,PATH
+772_thebridge,the bridge,1011,BRIDGE
+773_thecartorwagon,the cart or wagon,122,CART
+774_thewheel,the wheel,710,WHEEL
+775_theaxle,the axle,1769,AXLE
+776_theyoke,the yoke,14,YOKE
+777_theship,the ship,740,SHIP
+778_theboat,the boat,1844,BOAT
+779_thecanoe,the canoe,1970,CANOE
+780_theoutrigger,the outrigger,416,OUTRIGGER
+781_theraft,the raft,1664,RAFT
+782_theoar,the oar,3137,OAR
+783_thepaddle,the paddle,234,PADDLE
+784_torow,to row,1849,ROW
+785_therudder,the rudder,108,RUDDER
+786_themast,the mast,184,MAST
+787_thesail,the sail,786,SAILCLOTH
+788_theanchor,the anchor,1870,ANCHOR
+789_theport,the port,610,PORT
+790_toland,to land,1922,LAND (DESCEND)
+791_tohave,to have,773,HAVE
+792_toown,to own,684,OWN
+793_totake,to take,1749,TAKE
+794_tograsp,to grasp,855,SEIZE
+795_tohold,to hold,1448,HOLD
+796_toget,to get,694,GET
+797_tokeep,to keep,1477,KEEP
+798_thething,the thing,738,THING
+799_togive,to give,1447,GIVE
+800_togiveback,to give back,85,GIVE BACK
+801_topreserve,to preserve,1997,PRESERVE
+803_torescue,to rescue,2008,RESCUE
+804_todestroy,to destroy,681,DESTROY
+805_toinjure,to injure,44,INJURE
+806_tolookfor,to look for,1468,LOOK FOR
+807_tofind,to find,719,FIND
+808_tolose,to lose,3072,MISPLACE
+809_toletgo,to let go,1095,LET GO OR SET FREE
+810_themoney,the money,1559,MONEY
+811_thecoin,the coin,1867,COIN
+812_rich,rich,712,RICH
+813_poor,poor,1674,POOR
+814_thebeggar,the beggar,1934,BEGGAR
+815_stingy,stingy,1774,STINGY
+816_tolend,to lend,582,LEND
+817_toborrow,to borrow,1823,BORROW
+818_toowe,to owe,369,OWE
+819_thedebt,the debt,1914,DEBT
+820_topay,to pay,718,PAY
+821_thebill,the bill,1081,BILL
+822_thetax,the tax,873,TAX
+823_tohire,to hire,856,HIRE
+824_thewages,the wages,1122,WAGES
+825_toearn,to earn,733,EARN
+826_tobuy,to buy,1869,BUY
+827_tosell,to sell,1571,SELL
+828_totradeorbarter,to trade or barter,2135,TRADE OR BARTER
+829_themerchant,the merchant,1082,MERCHANT
+830_themarket,the market,633,MARKET
+831_theshopstore,the shop/store,752,STORE
+832_theprice,the price,657,PRICE
+833_expensive,expensive,1426,EXPENSIVE
+834_cheap,cheap,1887,CHEAP
+835_toshare,to share,884,SHARE
+836_toweigh,to weigh,1098,WEIGH
+837_after,after,1685,AFTER
+838_behind,behind,1686,BEHIND
+839_beside,beside,1816,BESIDE
+840_down,down,1326,DOWN
+841_before,before,1882,BEFORE
+842_infrontof,in front of,1883,IN FRONT OF
+843_inside,inside,1606,INSIDE
+844_outside,outside,762,OUTSIDE
+845_under,under,1485,BELOW OR UNDER
+846_up,up,1591,UP
+847_theplace,the place,723,PLACE (POSITION)
+849_toput,to put,998,PUT
+850_tosit,to sit,1416,SIT
+851_toliedown,to lie down,215,LIE DOWN
+852_tostand,to stand,1442,STAND
+853_toremain,to remain,987,REMAIN
+854_theremains,the remains,838,REMAINS
+855_togather,to gather,7,GATHER
+856_topickup,to pick up,371,PICK UP
+857_topileup,to pile up,1576,PILE UP
+858_tojoin,to join,1743,JOIN
+859_toseparate,to separate,1359,SEPARATE
+860_todivide,to divide,1119,DIVIDE
+861_toopen,to open,1156,OPEN
+862_toshut,to shut,1046,SHUT
+863_tocover,to cover,761,COVER
+864_tohide,to hide,602,HIDE (CONCEAL)
+865_high,high,1265,HIGH
+866_low,low,721,LOW
+867_thetop,the top,1753,TOP
+868_thebottom,the bottom,690,BOTTOM
+869_theend1,the end(1),742,END (OF SPACE)
+870_pointed,pointed,372,POINTED
+871_theedge,the edge,863,EDGE
+872_theside,the side,682,SIDE
+873_themiddle,the middle,1093,MIDDLE
+874_right1,right(1),1019,RIGHT
+875_left,left,244,LEFT
+876_near,near,1942,NEAR
+877_far,far,1406,FAR
+878_theeast,the east,1877,EAST
+879_thewest,the west,1817,WEST
+880_thenorth,the north,1598,NORTH
+881_thesouth,the south,1595,SOUTH
+882_togrow,to grow,479,GROW
+883_tomeasure,to measure,1506,MEASURE
+884_thefathom,the fathom,81,FATHOM
+885_big,big,1202,BIG
+886_small,small,1246,SMALL
+887_long,long,1203,LONG
+888_tall,tall,711,TALL
+889_short,short,1645,SHORT
+890_wide,wide,1243,WIDE
+891_narrow,narrow,1267,NARROW
+892_thick,thick,1244,THICK
+893_thin,thin,2249,THIN (OF SHAPE OF OBJECT)
+894_deep,deep,1593,DEEP
+895_shallow,shallow,193,SHALLOW
+896_flat,flat,1633,FLAT
+897_straight,straight,1404,STRAIGHT
+898_crooked,crooked,297,CROOKED
+899_thehook,the hook,1071,HOOK
+900_thecorner,the corner,192,CORNER
+901_thecross,the cross,1367,CROSS
+902_thesquare,the square,850,SQUARE
+903_round,round,1395,ROUND
+904_thecircle,the circle,1467,CIRCLE
+905_theball,the ball,1845,BALL
+906_theline,the line,1048,LINE
+907_thehole,the hole,1667,HOLE
+908_similar,similar,1558,SIMILAR
+909_tochange,to change,1264,CHANGE
+910_zero,zero,1294,ZERO
+911_one,one,1493,ONE
+912_two,two,1498,TWO
+913_three,three,492,THREE
+914_four,four,1500,FOUR
+915_five,five,493,FIVE
+916_six,six,1703,SIX
+917_seven,seven,1704,SEVEN
+918_eight,eight,1705,EIGHT
+919_nine,nine,1483,NINE
+920_ten,ten,1515,TEN
+921_eleven,eleven,1706,ELEVEN
+922_twelve,twelve,1707,TWELVE
+923_fifteen,fifteen,1709,FIFTEEN
+924_twenty,twenty,1710,TWENTY
+925_ahundred,a hundred,1634,HUNDRED
+926_athousand,a thousand,1843,THOUSAND
+927_tocount,to count,1420,COUNT
+928_all,all,98,ALL
+929_many,many,1198,MANY
+930_more,more,1992,MORE
+931_few,few,1242,FEW
+932_enough,enough,1881,ENOUGH
+933_some,some,1241,SOME
+934_thecrowd,the crowd,2023,CROWD
+935_full,full,1429,FULL
+936_empty,empty,1624,EMPTY
+937_thepart,the part,779,PART
+938_thehalf,the half,816,HALF
+939_only,only,1580,ONLY
+940_first,first,728,FIRST
+941_last,last,1529,LAST (FINAL)
+942_second,second,1384,SECOND
+943_thepair,the pair,1888,PAIR
+944_twicetwotimes,twice/two times,1546,TWICE
+945_third,third,1859,THIRD
+946_threetimes,three times,417,THREE TIMES
+947_thetime,the time,892,TIME
+948_theage,the age,1789,AGE
+949_new,new,1231,NEW
+950_young,young,1207,YOUNG
+951_old,old,1229,OLD
+952_early,early,672,EARLY
+953_late,late,477,LATE
+954_now,now,1376,NOW
+955_immediately,immediately,1963,IMMEDIATELY
+956_fast,fast,1631,FAST
+957_slow,slow,701,SLOW
+958_tohurry,to hurry,754,HURRY
+959_tobelate,to be late,425,BE LATE
+960_tobegin,to begin,1806,BEGIN
+961_tolast,to last,1186,LAST (ENDURE)
+962_theend2,the end(2),743,END (OF TIME)
+963_tofinish,to finish,1766,FINISH
+964_tocease,to cease,1928,CEASE
+965_ready,ready,790,READY
+966_always,always,1676,ALWAYS
+967_often,often,1852,OFTEN
+968_sometimes,sometimes,1544,SOMETIMES
+969_soon,soon,703,SOON
+970_foralongtime,for a long time,418,FOR A LONG TIME
+971_never,never,1656,NEVER
+972_again,again,204,AGAIN
+973_theday1,the day(1),1260,DAY (24 HOURS)
+974_thenight,the night,1233,NIGHT
+975_thedawn,the dawn,729,DAWN
+976_themorning,the morning,1339,MORNING
+977_themidday,the midday,12,MIDDAY
+978_theafternoon,the afternoon,1807,AFTERNOON
+979_theevening,the evening,1629,EVENING
+980_today,today,1283,TODAY
+981_tomorrow,tomorrow,1329,TOMORROW
+982_thedayaftertomorrow,the day after tomorrow,1179,DAY AFTER TOMORROW
+983_yesterday,yesterday,1174,YESTERDAY
+984_thedaybeforeyesterday,the day before yesterday,1180,DAY BEFORE YESTERDAY
+985_thehour,the hour,1353,HOUR
+986_theclock,the clock,1323,CLOCK
+987_theweek,the week,1469,WEEK
+988_sunday,Sunday,1699,SUNDAY
+989_monday,Monday,1697,MONDAY
+990_tuesday,Tuesday,1695,TUESDAY
+991_wednesday,Wednesday,1694,WEDNESDAY
+992_thursday,Thursday,1693,THURSDAY
+993_friday,Friday,1692,FRIDAY
+994_saturday,Saturday,1700,SATURDAY
+995_themonth,the month,1370,MONTH
+996_theyear,the year,1226,YEAR
+997_thewinter,the winter,1471,WINTER
+998_thespring2,the spring(2),1537,SPRINGTIME
+999_thesummer,the summer,1342,SUMMER
+1000_theautumnfall,the autumn/fall,1276,AUTUMN
+1001_theseason,the season,691,SEASON
+1002_tosmell1,to smell(1),1587,SMELL (STINK)
+1003_wrinkled,wrinkled,380,WRINKLED
+1004_tosniff,to sniff,375,SNIFF
+1005_tosmell2,to smell(2),1586,SMELL (PERCEIVE)
+1006_fragrant,fragrant,376,FRAGRANT
+1007_stinking,stinking,42,STINKING
+1008_totaste,to taste,21,TASTE (SOMETHING)
+1009_sweet,sweet,717,SWEET
+1010_salty,salty,1091,SALTY
+1011_bitter,bitter,887,BITTER
+1012_sour,sour,1906,SOUR
+1013_brackish,brackish,70,BRACKISH
+1014_tohear,to hear,1408,HEAR
+1015_tolisten,to listen,1608,LISTEN
+1016_thesoundornoise,the sound or noise,1811,SOUND OR NOISE
+1017_loud,loud,377,LOUD
+1018_quiet,quiet,1314,QUIET
+1019_tosee,to see,1409,SEE
+1020_tolook,to look,1819,LOOK
+1021_toshow,to show,1039,SHOW
+1022_toshine,to shine,708,SHINE
+1023_bright,bright,679,BRIGHT
+1024_thecolourcolor,the colour/color,1613,COLOR
+1025_light2,light(2),250,LIGHT (COLOR)
+1026_dark,dark,706,DARK
+1027_white,white,1335,WHITE
+1028_black,black,163,BLACK
+1029_red,red,156,RED
+1030_blue,blue,837,BLUE
+1031_green,green,1425,GREEN
+1032_yellow,yellow,1424,YELLOW
+1033_totouch,to touch,1892,TOUCH
+1034_topinch,to pinch,378,PINCH
+1035_tofeel,to feel,1079,FEEL
+1036_hard,hard,1884,HARD
+1037_soft,soft,1856,SOFT
+1038_rough1,rough(1),1923,ROUGH
+1039_smooth,smooth,1234,SMOOTH
+1040_sharp,sharp,1396,SHARP
+1041_blunt,blunt,379,BLUNT
+1042_heavy,heavy,1210,HEAVY
+1043_light1,light(1),1052,LIGHT (WEIGHT)
+1044_wet,wet,1726,WET
+1045_dry,dry,1398,DRY
+1046_hot,hot,1286,HOT
+1047_warm,warm,1232,WARM
+1048_cold,cold,1287,COLD
+1049_clean,clean,704,CLEAN
+1050_dirty,dirty,1230,DIRTY
+1051_thesoulorspirit,the soul or spirit,811,SOUL
+1052_surprisedorastonished,surprised or astonished,1572,SURPRISED
+1053_thegoodluck,the good luck,720,GOOD LUCK
+1054_thebadluck,the bad luck,56,BAD LUCK
+1055_happy,happy,1495,HAPPY
+1056_tolaugh,to laugh,1355,LAUGH
+1057_tosmile,to smile,1451,SMILE
+1058_toplay,to play,1413,PLAY
+1059_tolove,to love,923,LOVE
+1060_tokiss,to kiss,578,KISS
+1061_toembrace,to embrace,928,EMBRACE
+1062_thepain,the pain,1783,PAIN
+1063_thegrief,the grief,1668,GRIEF
+1064_theanxiety,the anxiety,1000,ANXIETY
+1065_toregretorbesorry,to regret or be sorry,1875,REGRET
+1066_thepity,the pity,1141,PITY
+1067_tocry,to cry,1839,CRY
+1068_thetear,the tear,1651,TEAR (OF EYE)
+1069_togroan,to groan,716,GROAN
+1070_tohate,to hate,1607,HATE
+1071_theanger,the anger,82,ANGER
+1072_theenvyorjealousy,the envy or jealousy,40,ENVY
+1073_theshame,the shame,1776,SHAME
+1074_proud,proud,174,PROUD
+1075_todare,to dare,1779,DARE
+1076_brave,brave,3,BRAVE
+1077_thefear,the fear,781,FEAR (FRIGHT)
+1078_thedanger,the danger,1810,DANGER
+1079_towant,to want,1784,WANT
+1080_tochoose,to choose,1750,CHOOSE
+1081_tohope,to hope,3212,HOPE (SOMETHING)
+1082_faithful,faithful,100,FAITHFUL
+1083_true,true,1657,TRUE
+1084_tolie2,to lie(2),601,LIE (MISLEAD)
+1085_thedeceit,the deceit,13,DECEIT
+1086_toforgive,to forgive,1528,FORGIVE
+1087_good,good,1035,GOOD
+1088_bad,bad,1292,BAD
+1089_right2,right(2),1725,CORRECT (RIGHT)
+1090_wrong,wrong,1390,WRONG
+1091_thefault,the fault,134,FAULT
+1092_themistake,the mistake,1293,MISTAKE
+1093_theblame,the blame,381,BLAME
+1094_thepraise,the praise,1687,PRAISE
+1095_beautiful,beautiful,1427,BEAUTIFUL
+1096_ugly,ugly,1548,UGLY
+1097_greedy,greedy,2018,GREEDY
+1098_clever,clever,1310,CLEVER
+1099_themind,the mind,1562,MIND
+1100_tothink1,to think(1),1415,THINK (REFLECT)
+1101_tothink2,to think(2),1513,THINK (BELIEVE)
+1102_tobelieve,to believe,1890,BELIEVE
+1103_tounderstand,to understand,1536,UNDERSTAND
+1104_toknow,to know,1410,KNOW (SOMETHING)
+1105_toguess,to guess,1932,GUESS
+1106_toimitate,to imitate,117,IMITATE
+1107_toseem,to seem,1521,SEEM
+1108_theidea,the idea,1609,IDEA
+1109_wise,wise,698,WISE
+1110_stupid,stupid,1518,STUPID
+1111_mad,mad,1899,MAD
+1112_tolearn,to learn,504,LEARN
+1113_tostudy,to study,1929,STUDY
+1114_toteach,to teach,709,TEACH
+1115_thepupil,the pupil,753,PUPIL (STUDENT)
+1116_theteacher,the teacher,1038,TEACHER
+1117_theschool,the school,673,SCHOOL
+1118_toremember,to remember,707,REMEMBER
+1119_toforget,to forget,1523,FORGET
+1120_clear,clear,989,CLEAR
+1121_obscure,obscure,1764,OBSCURE
+1122_secret,secret,1121,SECRET
+1123_certain,certain,509,CERTAIN
+1124_toexplain,to explain,1626,EXPLAIN
+1125_theintention,the intention,1162,INTENTION
+1126_thecause,the cause,860,CAUSE
+1127_thedoubt,the doubt,1308,DOUBT
+1128_tosuspect,to suspect,1841,SUSPECT
+1129_tobetray,to betray,1902,BETRAY
+1130_theneedornecessity,the need or necessity,643,NEED (NOUN)
+1131_easy,easy,686,EASY
+1132_difficult,difficult,584,DIFFICULT
+1133_totry,to try,1812,TRY
+1134_themanner,the manner,488,MANNER
+1135_and,and,1577,AND
+1136_because,because,1157,BECAUSE
+1137_if,if,1459,IF
+1138_or,or,1014,OR
+1139_yes,yes,1268,YES
+1140_no,no,1269,NO
+1141_how,how?,1239,HOW
+1142_howmany,how many?,3450,HOW MANY PIECES
+1143_howmuch,how much?,531,HOW MUCH
+1144_what,what?,1236,WHAT
+1145_when,when?,1238,WHEN
+1146_where,where?,1237,WHERE
+1147_which,which?,727,WHICH
+1148_who,who?,1235,WHO
+1149_why,why?,1270,WHY
+1150_thevoice,the voice,1363,VOICE
+1151_tosing,to sing,1261,SING
+1152_toshout,to shout,715,SHOUT
+1153_towhisper,to whisper,55,WHISPER
+1154_tomumble,to mumble,128,MUMBLE
+1155_towhistle,to whistle,1025,WHISTLE
+1156_toshriek,to shriek,298,SHRIEK
+1157_tohowl,to howl,526,HOWL
+1158_tospeakortalk,to speak or talk,1623,SPEAK
+1159_tostutterorstammer,to stutter or stammer,1866,STUTTER
+1160_tosay,to say,1458,SAY
+1161_totell,to tell,1711,TELL
+1162_thespeech,the speech,1115,SPEECH
+1163_tobesilent,to be silent,48,BE SILENT
+1164_thelanguage,the language,1307,LANGUAGE
+1165_theword,the word,1599,WORD
+1166_thename,the name,1405,NAME
+1167_toask1,to ask(1),1309,ASK (INQUIRE)
+1168_toanswer,to answer,1275,ANSWER
+1169_toadmit,to admit,2022,ADMIT
+1170_todeny,to deny,755,DENY
+1171_toask2,to ask(2),1828,ASK (REQUEST)
+1172_topromise,to promise,1675,PROMISE
+1173_torefuse,to refuse,49,REFUSE
+1174_toforbid,to forbid,83,FORBID
+1175_toscold,to scold,299,SCOLD
+1176_tocall1,to call(1),1084,CALL
+1177_tocall2,to call(2),180,CALL BY NAME
+1178_toannounce,to announce,9,ANNOUNCE
+1179_tothreaten,to threaten,1192,THREATEN
+1180_toboast,to boast,101,BOAST
+1181_towrite,to write,1672,WRITE
+1182_toread,to read,724,READ
+1183_thepaper,the paper,648,PAPER
+1184_thepen,the pen,794,PEN
+1185_thebook,the book,963,BOOK
+1186_thepoet,the poet,1045,POET
+1187_theflute,the flute,777,FLUTE
+1188_thedrum,the drum,908,DRUM
+1189_thehornortrumpet,the horn or trumpet,2136,BRASS INSTRUMENT (HORN OR TRUMPET)
+1190_therattle,the rattle,300,RATTLE
+1191_thecountry,the country,1300,COUNTRY
+1192_thenativecountry,the native country,89,NATIVE COUNTRY
+1193_thetown,the town,1391,TOWN
+1194_thevillage,the village,930,VILLAGE
+1195_theboundary,the boundary,1010,BOUNDARY
+1196_thepeople,the people,789,PEOPLE
+1197_theclan,the clan,302,CLAN
+1198_thechieftain,the chieftain,301,CHIEFTAIN
+1199_thewalkingstick,the walking stick,1296,WALKING STICK
+1200_toruleorgovern,to rule or govern,1846,RULE
+1201_theking,the king,1508,KING
+1202_thequeen,the queen,1306,QUEEN
+1203_thenoble,the noble,482,NOBLE
+1204_thecitizen,the citizen,1032,CITIZEN
+1205_themaster,the master,383,MASTER
+1206_theslave,the slave,812,SLAVE
+1207_theservant,the servant,255,SERVANT
+1208_thefreeman,the freeman,384,FREEMAN
+1209_tocommandororder,to command or order,1998,COMMAND
+1210_toobey,to obey,1635,OBEY
+1211_topermit,to permit,1003,PERMIT
+1212_thefriend,the friend,1325,FRIEND
+1213_theenemy,the enemy,1358,ENEMY
+1214_theneighbour,the neighbour,1332,NEIGHBOUR
+1215_thestranger,the stranger,791,STRANGER
+1216_theguest,the guest,1782,GUEST
+1217_thehost,the host,1545,HOST
+1218_tohelp,to help,1897,HELP
+1219_toprevent,to prevent,1550,PREVENT
+1220_thecustom,the custom,1747,CUSTOM
+1221_thequarrel,the quarrel,1848,QUARREL
+1222_theplot,the plot,2024,PLOT
+1223_tomeet,to meet,1831,MEET
+1224_theprostitute,the prostitute,1610,PROSTITUTE
+1225_tofight,to fight,1423,FIGHT
+1226_thewarorbattle,the war or battle,579,BATTLE
+1227_thepeace,the peace,1338,PEACE
+1228_thearmy,the army,1561,ARMY
+1229_thesoldier,the soldier,1941,SOLDIER
+1230_theweapons,the weapons,951,WEAPONS
+1231_theclub,the club,1763,CLUB
+1232_thebattleaxe,the battle-axe,386,BATTLE-AXE
+1233_thesling,the sling,387,SLING
+1234_thebow,the bow,994,BOW
+1235_thearrow,the arrow,977,ARROW
+1236_thespear,the spear,945,SPEAR
+1237_thesword,the sword,1535,SWORD
+1238_thegun,the gun,1566,GUN
+1239_thearmour,the armour,1061,ARMOUR
+1240_thehelmet,the helmet,1680,HELMET
+1241_theshield,the shield,1064,SHIELD
+1242_thefortress,the fortress,1938,FORTRESS
+1243_thetower,the tower,1671,TOWER
+1244_thevictory,the victory,783,VICTORY
+1245_thedefeat,the defeat,782,DEFEAT
+1246_theattack,the attack,722,ATTACK
+1247_todefend,to defend,1330,DEFEND
+1248_toretreat,to retreat,421,RETREAT
+1249_tosurrender,to surrender,1696,SURRENDER
+1250_thecaptiveorprisoner,the captive or prisoner,1072,PRISONER
+1251_theguard,the guard,1940,GUARD
+1252_thebooty,the booty,1022,BOOTY
+1253_theambush,the ambush,65,AMBUSH
+1254_thefisherman,the fisherman,1858,FISHERMAN
+1255_thefishhook,the fishhook,1074,FISHHOOK
+1256_thefishingline,the fishing line,19,FISHING LINE
+1257_thefishnet,the fishnet,388,FISHNET
+1258_thefishtrap,the fish trap,389,FISH TRAP
+1259_thebait,the bait,2013,BAIT
+1260_tohunt,to hunt,1435,HUNT
+1261_toshoot,to shoot,1172,SHOOT
+1262_tomiss,to miss,161,MISS (A TARGET)
+1263_thetrap,the trap,1075,TRAP (PITFALL)
+1264_totrap,to trap,1170,TRAP (CATCH)
+1265_thelaw,the law,1062,LAW
+1266_thecourt,the court,1068,COURT
+1267_at,at,1461,AT
+1268_toadjudicate,to adjudicate,1818,ADJUDICATE
+1269_thejudgment,the judgment,1067,JUDGMENT
+1270_thejudge,the judge,861,JUDGE
+1271_theplaintiff,the plaintiff,2020,PLAINTIFF
+1272_thedefendant,the defendant,1034,DEFENDANT
+1273_thewitness,the witness,1144,WITNESS
+1274_toswear,to swear,1939,SWEAR
+1275_theoath,the oath,1712,OATH
+1276_toaccuse,to accuse,1814,ACCUSE
+1277_tocondemn,to condemn,484,CONDEMN
+1278_toconvict,to convict,983,CONVICT
+1279_toacquit,to acquit,988,ACQUIT
+1280_guilty,guilty,1682,GUILTY
+1281_innocent,innocent,90,INNOCENT
+1282_thepenaltyorpunishment,the penalty or punishment,390,PUNISHMENT
+1283_thefine,the fine,218,FINE (PENALTY)
+1284_theprison,the prison,1281,PRISON
+1285_themurder,the murder,845,MURDER
+1286_theadultery,the adultery,902,ADULTERY
+1287_therape,the rape,953,RAPE
+1288_thearson,the arson,1889,ARSON
+1289_theperjury,the perjury,1792,PERJURY
+1290_tosteal,to steal,713,STEAL
+1291_thethief,the thief,1160,THIEF
+1292_thereligion,the religion,661,RELIGION
+1293_thegod,the god,3231,DEITY
+1294_thetemple,the temple,911,TEMPLE
+1295_thealtar,the altar,853,ALTAR
+1296_thesacrifice,the sacrifice,1103,SACRIFICE
+1297_toworship,to worship,257,WORSHIP
+1298_topray,to pray,24,PRAY
+1299_thepriest,the priest,852,PRIEST
+1300_holy,holy,1702,HOLY
+1301_topreach,to preach,304,PREACH
+1302_tobless,to bless,391,BLESS
+1303_tocurse,to curse,8,CURSE
+1304_tofast,to fast,303,ABSTAIN FROM FOOD
+1305_theheaven,the heaven,1565,HEAVEN
+1306_thehell,the hell,878,HELL
+1307_thedemon,the demon,1973,DEMON
+1308_theidol,the idol,1945,IDOL
+1309_themagic,the magic,392,MAGIC
+1310_thesorcererorwitch,the sorcerer or witch,2137,MAGICIAN
+1311_thefairyorelf,the fairy or elf,3206,ELF OR FAIRY
+1312_theghost,the ghost,1175,GHOST
+1313_theomen,the omen,107,OMEN
+1314_theradio,the radio,1315,RADIO
+1315_thetelevision,the television,1788,TELEVISION
+1316_thetelephone,the telephone,1379,TELEPHONE
+1317_themotorcycle,the motorcycle,638,MOTORCYCLE
+1318_thecar,the car,1111,CAR
+1319_thebus,the bus,1070,BUS
+1320_theairplane,the airplane,1597,AIRPLANE
+1321_theelectricity,the electricity,59,ELECTRICITY
+1322_thebattery,the battery,662,BATTERY
+1323_thehospital,the hospital,616,HOSPITAL
+1324_thenurse,the nurse,1104,NURSE
+1325_thepillortablet,the pill or tablet,395,PILL
+1326_theinjection,the injection,1805,INJECTION
+1327_thetapfaucet,the tap/faucet,1488,FAUCET
+1328_thesink,the sink,915,SINK (BASIN)
+1329_thetoilet,the toilet,219,TOILET
+1330_themattress,the mattress,105,MATTRESS
+1331_thegovernment,the government,815,GOVERNMENT
+1332_thepresident,the president,899,PRESIDENT
+1333_theminister,the minister,486,MINISTER
+1334_thepolice,the police,656,POLICE
+1335_thedriverslicense,the driver's license,599,DRIVER'S LICENSE
+1336_thecrime,the crime,1066,CRIME
+1337_theelection,the election,240,ELECTION
+1338_thepostmail,the post/mail,167,MAIL
+1339_thepostagestamp,the postage stamp,596,POSTAGE STAMP
+1340_theletter,the letter,1612,LETTER
+1341_thebank,the bank,1284,BANK
+1342_thetincan,the tin/can,1051,CAN
+1343_thescrew,the screw,1802,SCREW
+1344_thescrewdriver,the screwdriver,836,SCREWDRIVER
+1345_thebottle,the bottle,1321,BOTTLE
+1346_thecandysweets,the candy/sweets,874,CANDY
+1347_thespectaclesglasses,the spectacles/glasses,1898,SPECTACLES
+1348_theplastic,the plastic,654,PLASTIC
+1349_thebomb,the bomb,1804,BOMB
+1350_theworkshop,the workshop,1677,WORKSHOP
+1351_thecigarette,the cigarette,969,CIGARETTE
+1352_thecalendar,the calendar,1967,CALENDAR
+1353_thefilmmovie,the film/movie,216,MOVIE
+1354_themusic,the music,642,MUSIC
+1355_thesong,the song,1096,SONG
+1356_thenewspaper,the newspaper,1298,NEWSPAPER
+1357_theaddress,the address,591,ADDRESS
+1358_thenumber,the number,1356,NUMBER
+1359_thetrain,the train,900,TRAIN
+1360_thebirthcertificate,the birth certificate,397,BIRTH CERTIFICATE
+1361_tobrake,to brake,966,BRAKE
+1362_thepetroleum,the petroleum,650,PETROLEUM
+1363_themotor,the motor,110,MOTOR
+1364_themachine,the machine,144,MACHINE
+1365_thebicycle,the bicycle,747,BICYCLE
+1366_thestreet,the street,1362,STREET
+1367_toliberate,to liberate,37,LIBERATE
+1368_toinvite,to invite,1611,INVITE
+1369_thelicenseplate,the license plate,1790,LICENSE PLATE
+1370_thepostcard,the postcard,1497,POSTCARD
+1371_tobe,to be,1579,BE
+1372_tobecome,to become,1990,BECOME
+1373_without,without,1478,WITHOUT
+1374_through,through,97,THROUGH
+1375_same,same,200,SAME
+1376_not,not,1240,NOT
+1377_this,this,1214,THIS
+1378_that,that,78,THAT
+1379_here,here,136,HERE
+1380_there,there,1937,THERE
+1381_other,other,197,OTHER
+1382_thevagina,the vagina,1836,VAGINA
+1383_thetea,the tea,1373,TEA
+1384_thecoffee,the coffee,1299,COFFEE
+1385_next,next,1354,NEXT
+1386_thecoyote,the coyote,912,COYOTE
+1387_thehare,the hare,1190,HARE
+1388_thequail,the quail,1893,QUAIL
+1389_theraccoon,the raccoon,828,RACCOON
+1390_thesquirrel,the squirrel,1628,SQUIRREL
+1391_thereindeercaribou,the reindeer/caribou,1876,REINDEER
+1392_theelkmoose,the elk/moose,1772,ELK
+1393_thebeaver,the beaver,1194,BEAVER
+1394_thesledgesled,the sledge/sled,16,SLED
+1395_thelasso,the lasso,340,LASSO
+1396_thelarch,the larch,116,LARCH
+1397_theneedle2,the needle(2),286,NEEDLE TREE
+1398_thearcticlights,the arctic lights,261,ARCTIC LIGHTS
+1399_thesinewortendon,the sinew or tendon,1137,TENDON
+1400_totan,to tan,247,TAN
+1401_thesnowshoe,the snowshoe,233,SNOWSHOE
+1402_thecircumcision,the circumcision,393,CIRCUMCISION
+1403_theinitiationceremony,the initiation ceremony,1946,INITIATION CEREMONY
+1404_thecone,the cone,287,CONE
+1405_thebodylouse,the body louse,311,BODY LOUSE
+1406_thevulva,the vulva,1837,VULVA
+1407_thetapir,the tapir,312,TAPIR
+1408_thewhetstone,the whetstone,295,WHETSTONE
+1409_thetumpline,the tumpline,294,TUMPLINE
+1410_thecamp,the camp,1105,CAMP
+1411_thediggingstickyamstick,the digging stick (=yamstick),339,DIGGING STICK
+1412_thecormorant,the cormorant,840,CORMORANT
+1413_theprawnsorshrimp,the prawns or shrimp,2686,CRUSTACEANS (PRAWNS OR SHRIMP)
+1414_thetermites,the termites,883,TERMITE
+1415_thetick,the tick,1527,TICK
+1416_theboomerang,the boomerang,135,BOOMERANG
+1417_thekangaroo,the kangaroo,164,KANGAROO
+1418_theanteater,the anteater,181,ANTEATER
+1419_thetoucan,the toucan,308,TOUCAN
+1420_thejaguar,the jaguar,1250,JAGUAR
+1421_themaniocbread,the manioc bread,407,MANIOC BREAD
+1422_thehammock,the hammock,2019,HAMMOCK
+1423_themilletorsorghum,the millet or sorghum,931,MILLET
+1424_thechameleon,the chameleon,1555,CHAMELEON
+1425_todrawwater,to draw water,1911,DRAW (WATER)
+1426_thepeg,the peg,361,PEG
+1427_togoorreturnhome,to go or return home,142,RETURN HOME
+1428_thebuffalo,the buffalo,934,BUFFALO
+1429_thesavanna,the savanna,260,SAVANNA
+1430_thesteam,the steam,1193,STEAM
+1431_theoldersibling,the older sibling,405,OLDER SIBLING
+1432_theyoungersibling,the younger sibling,427,YOUNGER SIBLING
+1433_thegrandparents,the grandparents,305,GRANDPARENTS
+1434_thegrandchild,the grandchild,1617,GRANDCHILD
+1435_thesiblingschild,the sibling’s child,173,SIBLING'S CHILD
+1436_theparentsinlaw,the parents-in-law,306,PARENTS-IN-LAW
+1437_thechildinlaw,the child-in-law,1060,CHILD-IN-LAW
+1438_thesiblinginlaw,the sibling-in-law,1832,SIBLING-IN-LAW
+1439_he,he,1211,HE
+1440_she,she,1834,SHE
+1441_it,it,169,IT
+1442_thelife,the life,210,LIFE
+1443_thecarcass,the carcass,1770,CARCASS
+1444_thedisease,the disease,1986,DISEASE
+1445_thepadlock,the padlock,336,PADLOCK
+1446_thepaddy,the paddy,140,PADDY FIELD
+1447_todamage,to damage,1116,DAMAGE
+1448_above,above,1741,ABOVE
+1449_thepiece,the piece,594,PIECE
+1450_alone,alone,1964,ALONE
+1451_thebeginning,the beginning,1557,BEGINNING
+1452_theday2,the day(2),1225,DAY (NOT NIGHT)
+1453_thechurch,the church,1349,CHURCH
+1454_themosque,the mosque,1603,MOSQUE
+1455_nothing,nothing,687,NOTHING
+1456_dead,dead,1625,DEAD
+1457_toscratch,to scratch,1436,SCRATCH
+1458_tomake,to make,734,MAKE
+1459_thebelly,the belly,1251,BELLY
+1460_towipe,to wipe,1454,WIPE
+1461_tofreeze,to freeze,1431,FREEZE
+1462_with,with,1340,WITH
+1463_in,in,1460,IN
+199901_thebeach,the beach,,
+199903_thecoal,the coal,,
+199904_theconstellation,the constellation,,
+199905_thejadeorjadeite,the jade or jadeite,,
+199906_theloam,the loam,,
+199907_theriver,the river,,
+199908_therivermouth,the river mouth,,
+199909_theshortdryseason,the short dry season,,
+19991_thespring,the spring,,
+199911_toblaze,to blaze,,
+199912_tomelt,to melt,,
+299902_step,step-,,
+299903_thecofatherinlaw,the co-father-in-law,,
+299904_thecomotherinlaw,the co-mother-in-law,,
+299905_thefatherinlaw,the father-in-law,,
+299906_thegerman,the German,,
+299907_thehungarian,the Hungarian,,
+299908_thelover,the lover,,
+299909_themotherinlaw,the mother-in-law,,
+29991_thenongypsy,the non-Gypsy,,
+299911_theparentselderbrother,the parent’s elder brother,,
+299912_theparentseldersister,the parent’s elder sister,,
+299913_theparentsyoungerbrother,the parent’s younger brother,,
+299914_theparentsyoungersister,the parent’s younger sister,,
+299915_theslovak,the Slovak,,
+299916_thespouse,the spouse,,
+299917_thestepchild,the stepchild,,
+299918_thevlaxgypsy,the Vlax Gypsy,,
+399902_theagouti,the agouti,,
+399903_theamphibian,the amphibian,,
+399904_theandeanguineapig,the Andean guinea pig,,
+399905_theandeanowl,the Andean owl,,
+399906_thearmadillo,the armadillo,,
+399907_thebandicoot,the bandicoot,,
+399908_thebarnowl,the barn owl,,
+399909_thebustard,the bustard,,
+39991_thecapibara,the capibara,,
+399911_thecaterpillar,the caterpillar,,
+399912_thecodfish,the codfish,,
+399913_thecondor,the condor,,
+399917_theherd,the herd,,
+399918_thehocco,the hocco,,
+399919_thehummingbird,the humming bird,,
+39992_theibis,the ibis,,
+399921_theiguana,the iguana,,
+399922_thejabiru,the jabiru,,
+399923_thekingfisher,the kingfisher,,
+399924_thelouse,the louse,,
+399925_themainelobster,the Maine lobster,,
+399926_themalepig,the male pig,,
+399928_themarail,the marail,,
+399929_themole,the mole,,
+39993_thepaca,the paca,,
+399931_thesleepyheadbird,the sleepyhead bird,,
+399932_thepartridge,the partridge,,
+399933_thepet,the pet,,
+399934_thepiranha,the piranha,,
+399935_theplover,the plover,,
+399936_thepouchedmarmot,the pouched marmot,,
+399937_theprairiedog,the prairie dog,,
+399938_theroadrunner,the roadrunner,,
+399939_theskunk,the skunk,,
+39994_thesongbird,the songbird,,
+399941_thesparrow,the sparrow,,
+399942_thetiger,the tiger,,
+399943_thetrumpeterbird,the trumpeter bird,,
+499901_barefoot,barefoot,,
+499902_swollen,swollen,,
+499903_thecaninetooth,the canine tooth,,
+499904_thecholesterol,the cholesterol,,
+499905_thedribble,the dribble,,
+499906_thefist,the fist,,
+499907_thelap,the lap,,
+499908_themetabolism,the metabolism,,
+49991_thesaliva,the saliva,,
+499911_thescabies,the scabies,,
+499912_thestrength,the strength,,
+499913_theumbilicalcord,the umbilical cord,,
+499914_toitch,to itch,,
+599901_thefigtree,the fig tree,,
+599902_sated,sated,,
+599903_thesoysauce,the soy sauce,,
+599904_theayahuasca,the ayahuasca,,
+599905_thebacon,the bacon,,
+599906_thebiscuit,the biscuit,,
+599907_thebrandy,the brandy,,
+599908_thecabbage,the cabbage,,
+599909_thecassavaflour,the cassava flour,,
+59991_thecream,the cream,,
+599911_thejapanesefishcake,the Japanese fish cake,,
+599912_thejelly,the jelly,,
+599913_themaniocjuice,the manioc juice,,
+599914_themochi,the mochi,,
+599915_theramennoodles,the ramen noodles,,
+599916_thericeballormusubi,the rice ball or musubi,,
+599917_theroastedcassavameal,the roasted cassava meal,,
+599918_thesmokedfood,the smoked food,,
+599919_thetamale,the tamale,,
+59992_thetofuorbeancurd,the tofu or bean curd,,
+599921_thetortilla,the tortilla,,
+599922_thevinegar,the vinegar,,
+699901_thebag,the bag,,
+699903_thefringe,the fringe,,
+699904_thelegband,the leg band,,
+699906_thepompom,the pompom,,
+699907_thesandal,the sandal,,
+699908_thesleeve,the sleeve,,
+699909_thesmock,the smock,,
+69991_thestyleorfashion,the style or fashion,,
+699911_towear,to wear,,
+799901_thebench,the bench,,
+799902_thecase,the case,,
+799903_thegriddle,the griddle,,
+799904_theguestroom,the guestroom,,
+799905_themosquitonet,the mosquito net,,
+799906_therooftile,the roof tile,,
+899901_thealmond,the almond,,
+899902_theamomum,the amomum,,
+899903_theanatto,the anatto,,
+899904_theandeanweed,the Andean weed,,
+899905_theapple,the apple,,
+899906_theashtree,the ash tree,,
+899907_theblacktreedye,the black tree dye,,
+899908_thebroccoli,the broccoli,,
+899909_thebromelia,the bromelia,,
+89991_thecarrot,the carrot,,
+899911_thecashew,the cashew,,
+899912_thechinesericeflower,the Chinese rice flower,,
+899914_theconiferoustree,the coniferous tree,,
+899915_thecottontree,the cottontree,,
+899916_thecreeper,the creeper,,
+899917_themortino,the mortiño,,
+899918_thedung,the dung,,
+899921_theguava,the guava,,
+899922_thejarilla,the jarilla,,
+899923_thejowar,the jowar,,
+899924_thekohlrabi,the kohlrabi,,
+899925_theliana,the liana,,
+899926_thelimabeans,the lima beans,,
+899927_thelupin,the lupin,,
+899929_themamuelchoique,the mamuelchoique,,
+89993_themango,the mango,,
+899931_themangrove,the mangrove,,
+899932_themelon,the melon,,
+899933_themillet,the millet,,
+899935_theonion,the onion,,
+899936_theorange,the orange,,
+899937_thepea,the pea,,
+899938_thepear,the pear,,
+899939_thepineapple,the pineapple,,
+899941_theplum,the plum,,
+899943_thereed,the reed,,
+899944_therubbertree,the rubber tree,,
+899945_thesensitivemimosa,the sensitive mimosa,,
+899946_thestraw,the straw,,
+899947_thesugarbeet,the sugar beet,,
+899948_thetar,the tar,,
+899949_thetaro,the taro,,
+89995_thetreedye,the tree dye,,
+899952_theturnip,the turnip,,
+899953_thevetch,the vetch,,
+899954_thewatermelon,the watermelon,,
+899955_thewhip,the whip,,
+899956_thewildmaize,the wild maize,,
+899957_thewillow,the willow,,
+899958_thewoodyshrub,the woody shrub,,
+899959_theyerbamate,the yerba mate,,
+89996_togrow2,to grow(2),,
+899961_topick,to pick,,
+899962_toraise,to raise,,
+999901_thebarrel,the barrel,,
+999902_thebasketry,the basketry,,
+999903_thebucket,the bucket,,
+999904_thecable,the cable,,
+999905_thecanvassheet,the canvas sheet,,
+999906_thecorrugatediron,the corrugated iron,,
+999907_thedeck,the deck,,
+999908_thedrill,the drill,,
+999909_thefile,the file,,
+99991_theharbour,the harbour,,
+999911_theharpoon,the harpoon,,
+999912_thehearthstones,the hearthstones,,
+999914_themaniocsqueezer,the manioc squeezer,,
+999915_thepencil,the pencil,,
+999916_therust,the rust,,
+999917_thesack,the sack,,
+999918_thescraper,the scraper,,
+99992_theskinbag,the skin bag,,
+999921_theslap,the slap,,
+999922_thespur,the spur,,
+999923_thestringorcord,the string or cord,,
+999924_thetrail,the trail,,
+999925_thewell,the well,,
+999926_thewharf,the wharf,,
+999927_thewheelbarrow,the wheelbarrow,,
+999928_tobarbecue,to barbecue,,
+999929_toclose,to close,,
+99993_todraw,to draw,,
+999931_todwell,to dwell,,
+999932_togoaway,to go away,,
+999933_tomuddle,to muddle,,
+999934_toprepare,to prepare,,
+999936_tosmear,to smear,,
+999938_tosupport,to support,,
+1099901_toaccompany,to accompany,,
+1099903_tocarryontheback,to carry on the back,,
+1099904_todip,to dip,,
+1099905_togivearide,to give a ride,,
+1099906_topass,to pass,,
+1099907_tostep,to step,,
+1099908_towait,to wait,,
+1199901_forfree,for free,,
+1199902_thecard,the card,,
+1199903_thegift,the gift,,
+1199904_theproperty,the property,,
+1199905_thestringinstrument,the string instrument,,
+1199906_tobeworth,to be worth,,
+1199907_toreceive,to receive,,
+1299901_apart,apart,,
+1299902_back,back,,
+1399901_alittle,a little,,
+1399902_by,by,,
+1399903_eachorevery,each or every,,
+1399904_thecentigram,the centigram,,
+1399905_theyard,the yard,,
+1399906_thirty,thirty,,
+1399907_tofill,to fill,,
+1399908_tosubstitute,to substitute,,
+1499901_chinesenewyear,Chinese New Year,,
+1499902_longago,long ago,,
+1499903_newyear,New Year,,
+1499905_theperiod,the period,,
+1499906_thetime2,the time(2),,
+1599901_brown,brown,,
+1599902_grey,grey,,
+1599903_orange,orange,,
+1599904_pink,pink,,
+1599905_thetrace,the trace,,
+1599906_violet,violet,,
+1699901_better,better,,
+1699902_invain,in vain,,
+1699903_thankyou,thank you!,,
+1699904_theevil,the evil,,
+1699905_themood,the mood,,
+1699906_thetrouble,the trouble,,
+1699907_tobeashamed,to be ashamed,,
+1699908_tobeglad,to be glad,,
+1699909_tocomplain,to complain,,
+169991_toenthuse,to enthuse,,
+1699911_tolookforward,to look forward,,
+1699912_topraise,to praise,,
+1699913_voluptuous,voluptuous,,
+1699914_wild,wild,,
+1699915_worse,worse,,
+1799901_onpurpose,on purpose,,
+1799902_thepossibility,the possibility,,
+1799903_thesame,the same,,
+1799904_thescarcity,the scarcity,,
+1799905_thestate,the state,,
+1799906_thestudy,the study,,
+1799907_todoubt,to doubt,,
+1899901_thefairytale,the fairy tale,,
+1899902_thehieroglyphorhieroglyphics,the hieroglyph or hieroglyphics,,
+1899903_thejoke,the joke,,
+1899904_thepoem,the poem,,
+1899905_theuppercaseorcapitalletter,the upper case or capital letter,,
+1899906_theviolin,the violin,,
+1899907_theviolinplayer,the violin player,,
+1899908_tochat,to chat,,
+1899909_togreet,to greet,,
+189991_tospell,to spell,,
+1899911_tothank,to thank,,
+1899912_toululate,to ululate,,
+1999901_arabia,Arabia,,
+1999902_australia,Australia,,
+1999903_china,China,,
+1999904_egypt,Egypt,,
+1999905_free,free,,
+1999906_greece,Greece,,
+1999907_india,India,,
+1999908_madagascar,Madagascar,,
+1999909_rarotonga,Rarotonga,,
+199991_sir,Sir,,
+1999911_spain,Spain,,
+1999913_thebrazilian,the Brazilian,,
+1999914_thecertificate,the certificate,,
+1999915_thechineseperson,the Chinese person,,
+1999916_thecommunallabour,the communal labour,,
+1999917_theeuropean,the European,,
+1999918_thecreoleorblackperson,the Creole or black person,,
+199992_thefool,the fool,,
+1999921_theforeman,the foreman,,
+1999922_thefrenchperson,the French person,,
+1999923_thegovernmentdocument,the government document,,
+1999924_thehermit,the hermit,,
+1999925_thehockey,the hockey,,
+1999926_thelayman,the layman,,
+1999927_themixedracekalina,the mixed-race Kali’na,,
+1999928_thepartner,the partner,,
+199993_thepoliceman,the policeman,,
+1999931_thepower,the power,,
+1999932_thesettlement,the settlement,,
+1999933_thesmallchange,the small change,,
+1999934_thesocialism,the socialism,,
+1999935_thesport,the sport,,
+1999936_thestudent,the student,,
+1999937_thevoteorballotorpole,the vote or ballot or pole,,
+1999938_tocommitacrime,to commit a crime,,
+199994_toquarrel,to quarrel,,
+1999941_torespect,to respect,,
+1999942_toretire,to retire,,
+1999943_tosaygoodbye,to say goodbye,,
+2099902_thecutlass,the cutlass,,
+2099903_theforce,the force,,
+2099904_thegameanimal,the game animal,,
+2099905_theletterwoodbow,the letterwood bow,,
+2099906_thewarship,the warship,,
+2099907_toattack,to attack,,
+2099908_tofish,to fish,,
+2099909_towin,to win,,
+2199901_thelawyer,the lawyer,,
+2199902_theverdict,the verdict,,
+2299901_christ,Christ,,
+2299902_christmas,Christmas,,
+2299903_easter,Easter,,
+2299904_thebishop,the bishop,,
+2299905_thefuneral,the funeral,,
+2299906_theholiday,the holiday,,
+2299907_thehymn,the hymn,,
+2299908_thelent,the lent,,
+2299909_themuslim,the Muslim,,
+229991_therosary,the rosary,,
+2299911_theshaman,the shaman,,
+2299912_theshamansspirit,the shaman’s spirit,,
+2299913_theshamanisticsong,the shamanistic song,,
+2299914_thewomansrattle,the woman’s rattle,,
+2399901_thelicense,the license,,
+2499901_andorbut,and or but,,
+2499902_can,can,,
+2499904_hey,hey!,,
+2499905_interrogative,(interrogative),,
+2499906_let,let,,
+2499907_negativemarker,(negative marker),,
+2499908_neither,neither,,
+2499909_nor,nor,,
+249991_someone,someone,,
+2499911_superlativemarker,(superlative marker),,
+2499912_then,then,,
+2499913_theydual,they (dual),,
+2499914_wedualinclusive,we (dual inclusive),,
+2499917_which,which,,
+2499919_youdual,you (dual),,
+399944_thechipmunk,the chipmunk,,
+1999944_mate,mate,,

@@ -89,4 +89,5 @@ class MarkovSettings(BaseSettings):
     model = attr.ib(default='kni')
     order = attr.ib(default=3)
     p = attr.ib(default=0.995)
-    smoothing = attr.ib(default=0.1)
+    smoothing = attr.ib(default=0.3)
+    

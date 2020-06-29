@@ -211,13 +211,13 @@ if __name__ == "__main__":
         "--smoothing",
         default=0.3,
         type=float,
-        help="Smoothing for Markov models (default: 0.1)"
+        help="Smoothing for Markov models (default: 0.3)"
     )
     parser.add_argument(
         "--val_split",
         default=0.1,
         type=float,
-        help="Value split for Neural models (default: 0.1)"
+        help="Validation split for Neural models (default: 0.1)"
     )
     parser.add_argument(
         "--verbose",

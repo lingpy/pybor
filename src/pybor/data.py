@@ -142,7 +142,7 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        table = lex.get_table(language=language, form=form, classification="Loan")
+        table = lex.get_table(language=language, form=form, classification="Borrowed")
 
         function(language, form, table)
 
@@ -160,7 +160,7 @@ def language_table_gen(languages="all", form="Tokens"):
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        table = lex.get_table(language=language, form=form, classification="Loan")
+        table = lex.get_table(language=language, form=form, classification="Borrowed")
 
         yield language, table
 
@@ -169,6 +169,10 @@ def language_table_gen(languages="all", form="Tokens"):
 # Language table access functions
 # =============================================================================
 def get_lexibank_access():
+    def to_score(x):
+        num = float(x.lstrip()[0])
+        return (5-num)/4
+
     try:
         with open("wold.bin", "rb") as f:
             lex = pickle.load(f)
@@ -176,9 +180,8 @@ def get_lexibank_access():
         lex = LexibankDataset(
             "wold",
             transform={
-                "Loan": lambda x, y, z: 1
-                if x["Borrowed_score"] != "" and float(x["Borrowed_score"]) >= 0.9
-                else 0
+                "Borrowed": lambda x, y, z:
+                    1 if to_score(x["Borrowed"]) >= 0.9 else 0
             },
         )
 

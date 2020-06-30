@@ -12,7 +12,7 @@ Install pytest and pytest-cov with pip
 Save test files to ./tests
 
 Run test file:
-$ pytest testy/test_markov.py -—cov=pybor.markov
+$ pytest tests/test_markov.py -—cov=pybor.markov
 
 Or to save as html report:
 $ pytest tests/test_markov.py -—cov=pybor.markov --cov-report=html
@@ -84,16 +84,16 @@ def test_settings():
     settings = config.MarkovSettings()
     dm = DualMarkov(training1, settings=settings)
     assert dm.model == 'kni'
-    assert dm.smoothing == 0.1
+    assert dm.smoothing == 0.3  # Depends on the config.py
     assert dm.order == 3
     assert dm.native.model == 'kni'
-    assert dm.native.smoothing == 0.1
+    assert dm.native.smoothing == 0.3
     assert dm.native.order == 3
     assert dm.loan.model == 'kni'
-    assert dm.loan.smoothing == 0.1
+    assert dm.loan.smoothing == 0.3
     assert dm.loan.order == 3
     assert dm.settings.order == 3
-    assert dm.settings.smoothing == 0.1
+    assert dm.settings.smoothing == 0.3
     assert dm.settings.model == 'kni'
 
     dm = DualMarkov(training1, order=2, smoothing=0.1, model='ls', settings=settings)
@@ -107,21 +107,21 @@ def test_settings():
     assert dm.loan.smoothing == 0.1
     assert dm.loan.order == 2
     assert dm.settings.order == 3
-    assert dm.settings.smoothing == 0.1
+    assert dm.settings.smoothing == 0.3  # Depends on the config.py
     assert dm.settings.model == 'kni'
 
     dm = DualMarkov(training1, model='ls', settings=settings)
     assert dm.model == 'ls'
-    assert dm.smoothing == 0.1
+    assert dm.smoothing == 0.3
     assert dm.order == 3
     assert dm.native.model == 'ls'
-    assert dm.native.smoothing == 0.1
+    assert dm.native.smoothing == 0.3
     assert dm.native.order == 3
     assert dm.loan.model == 'ls'
-    assert dm.loan.smoothing == 0.1
+    assert dm.loan.smoothing == 0.3
     assert dm.loan.order == 3
     assert dm.settings.order == 3
-    assert dm.settings.smoothing == 0.1
+    assert dm.settings.smoothing == 0.3
     assert dm.settings.model == 'kni'
 
     settings = config.MarkovSettings(order=2, smoothing=0.3, model='lp')
@@ -163,7 +163,7 @@ def test_settings():
     assert nm.nativemodel.smoothing == 0.2
     assert nm.nativemodel.order == 3
     assert nm.settings.order == 3
-    assert nm.settings.smoothing == 0.2
+    assert nm.settings.smoothing == 0.2  # Settings modified 
     assert nm.settings.model == 'lp'
     assert nm.settings.p == 0.95
 
@@ -183,14 +183,14 @@ def test_settings():
 
     nm = NativeMarkov(training1)
     assert nm.model == 'kni'
-    assert nm.smoothing == 0.1
+    assert nm.smoothing == 0.3
     assert nm.order == 3
     assert nm.p == 0.995
     assert nm.nativemodel.model == 'kni'
-    assert nm.nativemodel.smoothing == 0.1
+    assert nm.nativemodel.smoothing == 0.3
     assert nm.nativemodel.order == 3
     assert nm.settings.order == 3
-    assert nm.settings.smoothing == 0.1
+    assert nm.settings.smoothing == 0.3
     assert nm.settings.model == 'kni'
     assert nm.settings.p == 0.995
 

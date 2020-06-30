@@ -13,7 +13,7 @@ Install pytest and pytest-cov with pip
 Save test files to ./tests
 
 Run test file:
-$ pytest testys/test_evaluate.py -—cov=pybor.evaluate
+$ pytest tests/test_evaluate.py -—cov=pybor.evaluate
 
 Or to save as html report:
 $ pytest tests/test_evaluate.py -—cov=pybor.evaluate --cov-report=html

@@ -1,6 +1,32 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Test entropies.py
+
+All test functions begin with 'test_'
+Import testing, training, testing1, training1 from pybor.dev.data
+
+Install pytest and pytest-cov with pip
+
+Save test files to ./tests
+
+Run test file:
+$ pytest tests/test_data.py -—cov=pybor.data
+
+Or to save as html report:
+$ pytest tests/test_data.py -—cov=pybor.data --cov-report=html
+
+Or to report line numbers of missing coverage:
+$ pytest tests/test_data.py --cov=pybor.data --cov-report term-missing
+
+Or to perform a specific test:
+$ pytest tests/test_data.py::test_gettable --cov=pybor.data --cov-report term-missing
+
+File names can come last instead of first in the argument list.
+
+Add the -rP argument to print output for passing tests, or -rPx for passing and failed tests.
+Otherwise default is -rx for failed tests only.
+
 """
 
 from pybor.data import LexibankDataset
@@ -9,26 +35,25 @@ import pybor.data as data
 
 
 def test_instantiate_LexibankDateset():
-    ds = LexibankDataset('wold', transform=
-            {"Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0})
-
-    assert ds
+    lex = data.get_lexibank_access()
+    assert lex
 
 def test_gettable():
-    ds = LexibankDataset('wold', transform=
-        {"Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0})
 
-    table = ds.get_table(
-        language='English', form='FormChars', classification='Loan')
+    lex = data.get_lexibank_access()
+    table = lex.get_table(
+        language='English', form='FormChars', classification='Borrowed')
     assert table
 
     print(f'table size={len(table)}')
 
     print('English table sample:')
-    print(table[10:15])
-
+    print(table[10:25])
+    num_loan = sum([row[2] for row in table])
+    print(f'Sum loan={num_loan}')
+    assert num_loan > 0
     print('Compare devel table:')
-    print(training[10:15])
+    print(training[10:25])
 
 def test_language_table_gen():
     gen = data.language_table_gen('English')
@@ -63,8 +88,8 @@ def test_access_functions():
 
 if __name__ == "__main__":
     #test_instantiate_LexibankDateset()
-    #test_gettable()
-    #test_language_table_gen()
+    test_gettable()
+    test_language_table_gen()
     test_access_functions()
 
 

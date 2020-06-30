@@ -13,7 +13,7 @@ import random
 import pickle
 from pathlib import Path
 
-from pybor.data import LexibankDataset
+import pybor.data as data
 import pybor.evaluate as evaluate
 from pybor.neural import NeuralNative, NeuralDual, NeuralData
 import pybor.util as util
@@ -81,31 +81,15 @@ def perform_detection_by_language(languages=None, form='FormChars',
                                   detect_type='native', model_type='recurrent',
                                   test_split=None, settings=None):
 
-    try:
-        with open('wold.bin', 'rb') as f:
-            lex = pickle.load(f)
-    except:
-        lex = LexibankDataset(
-                'wold',
-                transform={
-                    "Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0}
-                )
-        with open('wold.bin', 'wb') as f:
-            pickle.dump(lex, f)
-
-    if languages == 'all':
-        languages = [language["Name"] for language in lex.languages.values()]
-    elif isinstance(languages, str):
-        languages = [languages]
-    elif not isinstance(languages, list):
-        print("Language must be language name, list of languages, or keyword 'all'.")
+    lex = data.get_lexibank_access()
+    languages = data.check_languages_with_lexibank(lex, languages)
 
     print(f'Languages {languages}.')
     for language in languages:
         table = lex.get_table(
                     language=language,
                     form=form,
-                    classification='Loan'
+                    classification='Borrowed'
                     )
 
         evaluate_neural_loanword_prediction(language=language, table=table,

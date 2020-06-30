@@ -9,13 +9,12 @@ Entropy distribution analysis examples.
 Maybe precursor of something more general and applicable to all modules using predict protocol.
 """
 import statistics
-import pickle
 from pathlib import Path
 
 from tabulate import tabulate
 
-from pybor.data import LexibankDataset
-from pybor.entropies import NeuralWordRecurrent, NeuralWordAttention
+import pybor.data as data
+from pybor.entropies import NeuralWordRecurrent
 from pybor.neural import NeuralData
 from pybor.plot import graph_word_distribution_entropies
 import pybor.util as util
@@ -46,11 +45,13 @@ def report_entropy_statistics(model=None, data=None):
         stats = []
         fit_entropies = model.calculate_entropies(data.get_data_tokens_ids(data.fit))
         stats.append(describe_entropies(fit_entropies))
-        val_entropies = model.calculate_entropies(data.get_data_tokens_ids(data.val))
-        stats.append(describe_entropies(val_entropies))
-        test_entropies = model.calculate_entropies(data.get_data_tokens_ids(data.testing))
-        stats.append(describe_entropies(test_entropies))
-        return stats
+        if len(data.val) > 0:
+            val_entropies = model.calculate_entropies(data.get_data_tokens_ids(data.val))
+            stats.append(describe_entropies(val_entropies))
+        if len(data.testing) > 0:
+            test_entropies = model.calculate_entropies(data.get_data_tokens_ids(data.testing))
+            stats.append(describe_entropies(test_entropies))
+            return stats
 
 def graph_entropies(tokens1=None, tokens2=None, data=None, model=None,
                     title='', label1='', label2='', filename=''):
@@ -69,19 +70,15 @@ def graph_entropies(tokens1=None, tokens2=None, data=None, model=None,
 
 def analyze_neural_entropies_for_basis(
         train=None, test=None, train_x=None, test_x=None,
-        language='', form='', basis='', model_type=''):
+        language='', form='', basis='', model_type='recurrent'):
 
     # Get a vocabulary from all data.
     all_data = NeuralData(train, test)
     # Build the working dataset.
     data = NeuralData(train_x, test_x, vocab=all_data.vocab)
 
-    if model_type == 'recurrent':
-        model = NeuralWordRecurrent(
-            data.vocab.size, language=language, basis=basis, series='demonstration')
-    else:
-        model = NeuralWordAttention(
-            data.vocab.size, language=language, basis=basis, series='demonstration')
+    model = NeuralWordRecurrent(
+        data.vocab.size, language=language, basis=basis, series='demonstration')
 
     model.train(data.trainer, data.validator)
     model.evaluate_test(data.tester)
@@ -125,7 +122,7 @@ def analyze_neural_entropies_for_basis(
             data, model, title, 'Native', 'Loan', filename)
 
 def analyze_neural_entropies(language=None, table=None,
-            form='', basis='', model_type='', test_split=None):
+            form='', basis='', model_type='recurrent', test_split=None):
 
     # All data together.
     train, test = util.train_test_split(table, split=test_split)
@@ -134,7 +131,7 @@ def analyze_neural_entropies(language=None, table=None,
 
 
 def analyze_neural_entropies_train_test(language =None,
-            train=None, test=None, form='', basis='', model_type=''):
+            train=None, test=None, form='', basis='', model_type='recurrent'):
     # Function to perform graphical analysis of entropy distributions.
     # Possible languages are 'all', list of languages ([str]), or specific language (str).
     print(f'*** Graphical analysis of entropy distribution for {language}. ***')
@@ -167,35 +164,20 @@ def analyze_neural_entropies_train_test(language =None,
 
 
 # Shell method to perform analysis.
-def perform_analysis_by_language(languages=None, form='FormChars',
+def perform_analysis_by_language(languages=None, form='Tokens',
                 basis='all', model_type='recurrent', test_split=None):
 
-    try:
-        with open('wold.bin', 'rb') as f:
-            lex = pickle.load(f)
-    except:
-        lex = LexibankDataset(
-                'wold',
-                transform={
-                    "Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0}
-                )
-        with open('wold.bin', 'wb') as f:
-            pickle.dump(lex, f)
-
-    if languages == 'all':
-        languages = [language["Name"] for language in lex.languages.values()]
-    elif isinstance(languages, str):
-        languages = [languages]
-    elif not isinstance(languages, list):
-        print("Language must be language name, list of languages, or keyword 'all'.")
+    lex = data.get_lexibank_access()
+    languages = data.check_languages_with_lexibank(lex, languages)
 
     print(languages)
     for language in languages:
         table = lex.get_table(
                     language=language,
                     form=form,
-                    classification='Loan'
+                    classification='Borrowed'
                     )
+
 
         analyze_neural_entropies(
                     language=language,
@@ -212,7 +194,7 @@ if __name__ == "__main__":
                     languages=languages,
                     form='Tokens',
                     basis='loan',
-                    model_type='attention',
+                    model_type='recurrent',
                     test_split=0.15)
 
     # Use training1 and testing1.

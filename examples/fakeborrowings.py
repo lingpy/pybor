@@ -60,7 +60,7 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
 
         # Get language table, delete loan words, seed fakes, split into train and test.
         table = lex.get_table(
-            language=language, form=form, classification="Loan"
+            language=language, form=form, classification="Borrowed"
         )
         table = [row for row in table if row[2] != 1]
         # How many fakes? Want 1/brate borrowed words in resulting table.
@@ -71,21 +71,6 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
         train_add_len = sum([row[2] for  row in train])
         test_add_len = sum([row[2]for row in test])
         # Seed native German words into training and test
-        # fakeidx = list(range(len(fakes)))
-        # for i in range(len(train_table)):
-        #     if random.randint(1, brate) == 1:
-        #         fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
-        #         train += [fake]
-        #     else:
-        #         # Treat all words from table as native. ???
-        #         train += [[train_table[i][0], train_table[i][1], 0]]
-
-        # for i in range(len(test_table)):
-        #     if random.randint(1, brate) == 1:
-        #         fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
-        #         test += [fake]
-        #     else:
-        #         test += [[test_table[i][0], test_table[i][1], 0]]
 
         if  verbose:
             logger.info(f'{language} language, {form} form, table len {len(table)}, ' +

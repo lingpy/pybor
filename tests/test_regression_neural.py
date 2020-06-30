@@ -57,12 +57,6 @@ def evaluate_borrowing_prediction_train_test(language=None,
     evaluate_prediction(neural, train, 'Training')
     evaluate_prediction(neural, test, 'Testing')
 
-    # plot_model_measures(neural.native_history, 'native model')
-    # if detect_type == 'dual':
-    #     plot_model_measures(neural.loan_history, 'loan model')
-
-    # plot_entropy_distributions(neural)
-
 
 
 # Solution to load previous orthographic table.
@@ -70,9 +64,9 @@ import pandas as pd
 def make_orthographic_table(language):
     tabledir = 'tables/'
     table = pd.read_csv(tabledir+language+'.tsv', sep='\t', index_col=0)
-    table['Loan'] = (table.BorrowedScore > 0.375).astype(int)  # Inverse of previous value
+    table['Borrowed'] = (table.BorrowedScore > 0.375).astype(int)  # Inverse of previous value
     table['Segments'] = table['Segments'].str.split()
-    table = table[['Parameter_ID', 'Segments', 'Loan']]
+    table = table[['Parameter_ID', 'Segments', 'Borrowed']]
 
     data = table.to_numpy().tolist()
     return data

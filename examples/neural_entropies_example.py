@@ -51,7 +51,7 @@ def report_entropy_statistics(model=None, data=None):
         if len(data.testing) > 0:
             test_entropies = model.calculate_entropies(data.get_data_tokens_ids(data.testing))
             stats.append(describe_entropies(test_entropies))
-            return stats
+        return stats
 
 def graph_entropies(tokens1=None, tokens2=None, data=None, model=None,
                     title='', label1='', label2='', filename=''):

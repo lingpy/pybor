@@ -85,7 +85,8 @@ import pybor.util as util
 logger = util.get_logger(__name__)
 
 
-def apply_function_by_language(languages, form=None, function=None, lead_donor=False):
+def apply_function_by_language(languages, form=None, function=None,
+                               donor_num=0, min_borrowed=0):
     """
 
     Parameters
@@ -99,6 +100,11 @@ def apply_function_by_language(languages, form=None, function=None, lead_donor=F
         User provided funtion applied to each languge table.
         Initial arguments from function are language (str), form (str),
         and table ([str, [str], str]) corresponding to [id, form, loan_flag].
+    donor_num : int, optional
+        Whether borrowed words are selected only for donor, where 0 is no selection,
+        1, 2, n selects the nth donor. The default is 0.
+    min_borrowed: int, optional
+        Minimum number of borrowed words in the table.
 
     Returns
     -------
@@ -147,12 +153,22 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        if not lead_donor:
-            table = lex.get_table(language=language, form=form, classification="Borrowed")
+        if donor_num == 0:
+            table = lex.get_table(
+                language=language, form=form,
+                classification="Borrowed")
         else:
-            table = get_native_donor_table(lex, language, form=form, classification="Borrowed")
+            table = get_native_donor_table(
+                lex, language, form=form,
+                classification="Borrowed", donor_num=donor_num)
 
-        function(language, form, table)
+        # Check for min_borrowed.
+        num_borrowed = sum([row[2] for row in table])
+        if num_borrowed < min_borrowed:
+            logger.info(f'Table for {language} with donor {donor_num} '+
+                        f'has only {num_borrowed} borrowed words.  Skipped.')
+        else:
+            function(language, form, table)
 
 
 # =============================================================================
@@ -160,7 +176,7 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
 # =============================================================================
 
 
-def language_table_gen(languages="all", form="Tokens", lead_donor=False):
+def language_table_gen(languages="all", form="Tokens", donor_num=0, min_borrowed=0):
     """
     Get and present language tables one at a time in generator pattern.
     Option to select borrowed data for lead donor only.
@@ -172,8 +188,11 @@ def language_table_gen(languages="all", form="Tokens", lead_donor=False):
     form : str, optional
         Form designation from ['Tokens', 'FormChars', 'ASJP', 'DOLGO', 'SCA'].
         The internal default is 'Tokens'.
-    lead_donor : bool, optional
-        Whether borrowed words are selected only for lead donor. The default is False.
+    donor_num: int, optional
+        Whether borrowed words are selected only for donor, where 0 is no selection,
+        1, 2, n selects the nth donor. The default is 0.
+    min_borrowed: int, optional
+        Minimum number of borrowed words in the table.
 
     Yields
     ------
@@ -190,12 +209,19 @@ def language_table_gen(languages="all", form="Tokens", lead_donor=False):
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        if not lead_donor:
-            table = lex.get_table(language=language, form=form, classification="Borrowed")
+        if donor_num == 0:
+            table = lex.get_table(
+                language=language, form=form, classification="Borrowed")
         else:
-            table = get_native_donor_table(lex, language, form=form, classification="Borrowed")
-
-        yield language, table
+            table = get_native_donor_table(
+                lex, language, form=form, classification="Borrowed", donor_num=donor_num)
+        # Check for min_borrowed.
+        num_borrowed = sum([row[2] for row in table])
+        if num_borrowed < min_borrowed:
+            logger.info(f'Table for {language} with donor {donor_num} '+
+                        f'has only {num_borrowed} borrowed words.  Skipped.')
+        else:
+            yield language, table
 
 
 # =============================================================================
@@ -245,27 +271,27 @@ def check_languages_with_lexibank(lexibank, languages="all"):
     )
     raise ValueError(f"Language list required, instead received {languages}.")
 
-def get_lead_donor(table):
+def get_donor(table, donor_num=1):
+    if donor_num <= 0: return ''
     # Count and order the language donors.
-    donors = Counter([row[3] for row in table]).most_common()
+    donors = Counter([row[3] for row in table if row[2]==1]).most_common()
+    if not donors or len(donors) == 0: return ''
+    # Drop '' and 'Unidentified'.
+    donors = [donor[0] for donor in donors if donor[0] != '' and donor[0] !='Unidentified']
+    if len(donors) < donor_num: return ''
+    return donors.pop(donor_num-1)
 
-    def validate_donor(donors):
-        if not donors: return ''
-        donor = donors.pop(0)[0]
-        if donor != '' and donor != 'Unidentified':
-            return donor
-        return validate_donor(donors)
 
-    return validate_donor(donors)
-
-def get_native_donor_table(lex, language, form='Tokens', classification='Borrowed'):
-    # Get table with borrowed words from lead donor only.
+def get_native_donor_table(lex, language, form='Tokens',
+                           classification='Borrowed', donor_num=1):
+    # Get table with borrowed words from donor_num only.
+    # Policy of taking union of all subsequent donors that include selected donor.
 
     table = lex.get_donor_table(language=language, form=form, classification=classification)
 
-    donor = get_lead_donor(table)
-
+    donor = get_donor(table, donor_num)
     # Select the rows containing this donor.
+    # donor == '' selects all borrowed rows.
     donor_table = [[row[0], row[1], row[2]]
                    for row in table if row[2] == 1 and donor in row[3]]
 

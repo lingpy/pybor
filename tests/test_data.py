@@ -82,7 +82,7 @@ def test_language_table_gen():
     assert count == 41
 
 def test_language_table_gen_donor():
-    gen = data.language_table_gen('English', lead_donor=True)
+    gen = data.language_table_gen('English', donor_num=1)
     language, table = next(gen)
     assert language == 'English'
     assert len(table) == 1304  # As of June 18, 2020
@@ -100,14 +100,19 @@ def test_access_functions():
 
 def test_get_donor_table():
     lex = data.get_lexibank_access()
-    table = data.get_native_donor_table(lex, 'English', form='Tokens', classification='Borrowed')
+    table = data.get_native_donor_table(lex, 'English', form='Tokens',
+                                        classification='Borrowed', donor_num=0)
+    assert len(table) == 1516
+    assert len(table[0]) == 3
+
+    table = data.get_native_donor_table(lex, 'English', form='Tokens',
+                                        classification='Borrowed', donor_num=1)
     assert len(table) == 1304
     assert len(table[0]) == 3
 
-
 def test_apply_function():
 
-    donor_flag = False
+    donor_num = 0
 
     def get_user_fn(detect_type, model_type):
 
@@ -115,19 +120,26 @@ def test_apply_function():
                        detect_type=detect_type,
                        model_type=model_type):
             assert language in ['English', 'Hup']
-            if not donor_flag:
+            if donor_num==0:
                 if language == 'English':
                     assert len(table) == 1516
                     assert len(table[0]) == 3
                 else:
                     assert len(table) == 1179
                     assert len(table[0]) == 3
-            else:
+            elif donor_num==1:
                 if language == 'English':
                     assert len(table) == 1304
                     assert len(table[0]) == 3
                 else:
                     assert len(table) == 1144
+                    assert len(table[0]) == 3
+            elif donor_num==2:
+                if language == 'English':
+                    assert len(table) == 1059
+                    assert len(table[0]) == 3
+                else:
+                    assert len(table) == 1095
                     assert len(table[0]) == 3
 
 
@@ -144,15 +156,25 @@ def test_apply_function():
     fn = get_user_fn('dual', 'recurrent')
     data.apply_function_by_language(languages=['English', 'Hup'], form='FormChars', function=fn)
 
-    donor_flag = True
+    donor_num = 1
     fn = get_user_fn('dual', 'recurrent')
     data.apply_function_by_language(languages=['English', 'Hup'],
-                                    form='FormChars', function=fn, lead_donor=True)
+                                    form='FormChars', function=fn, donor_num=donor_num)
+
+    donor_num = 2
+    fn = get_user_fn('dual', 'recurrent')
+    data.apply_function_by_language(languages=['English', 'Hup'],
+                                    form='FormChars', function=fn,
+                                    donor_num=donor_num, min_borrowed=40)
+    fn = get_user_fn('dual', 'recurrent')
+    data.apply_function_by_language(languages=['English', 'Hup'],
+                                    form='FormChars', function=fn, donor_num=donor_num)
+
 
 if __name__ == "__main__":
-    test_get_table()
-    test_language_table_gen()
-    test_access_functions()
-    test_get_donor_table()
-    test_language_table_gen_donor()
+    # test_get_table()
+    # test_language_table_gen()
+    # test_access_functions()
+    # test_get_donor_table()
+    # test_language_table_gen_donor()
     test_apply_function()

@@ -130,7 +130,7 @@ def summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdou
 
 def cross_validate_model(languages, form, model_name, mode,
                          k_fold, holdout_n, max_iter, series='',
-                         lead_donor=False, settings=None):
+                         donor_num=0, min_borrowed=0, settings=None):
 
     if mode == 'k_fold':
         filename = f'cv-{k_fold:d}-fold'
@@ -152,7 +152,8 @@ def cross_validate_model(languages, form, model_name, mode,
                          'sample_stdev_f1', 'sample_stdev_acc'])
 
         fn = get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings)
-        data.apply_function_by_language(languages, form=form, function=fn, lead_donor=lead_donor)
+        data.apply_function_by_language(languages, form=form, function=fn,
+                                        donor_num=donor_num, min_borrowed=min_borrowed)
 
     summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdout_n, series)
 
@@ -223,9 +224,15 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--donor",
-        default=False,
-        type=bool,
-        help="Include only lead donor borrowed words (default: False)"
+        default=0,
+        type=int,
+        help="Include borrowed words from donor (default: 0 -> all borrowed words)"
+    )
+    parser.add_argument(
+        "--min_borrowed",
+        default=35,
+        type=int,
+        help="miniumum number of borrowed words (default: 35)"
     )
     parser.add_argument(
         "--verbose",
@@ -252,6 +259,7 @@ if __name__ == "__main__":
             k_fold=args.k_fold,
             holdout_n=args.holdout_n,
             max_iter=args.max_iter,
-            lead_donor=args.donor,
+            donor_num=args.donor,
+            min_borrowed=args.min_borrowed,
             series=args.series,
             settings=settings)

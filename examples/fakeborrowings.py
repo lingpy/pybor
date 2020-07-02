@@ -151,10 +151,11 @@ if __name__ == "__main__":
         help="Model for the fake borrowing experiment",
     )
     parser.add_argument(
-        "--language",
-        #type=str,
-        default='all',
-        help="'all' or language_name",
+        "--languages",
+        nargs='*',
+        type=str,
+        default="all",
+        help='Languages to use for example (default: \"all\")'
     )
     parser.add_argument(
         "--form",
@@ -181,7 +182,8 @@ if __name__ == "__main__":
         "--verbose", type=bool, default=False, help="Verbose reporting (default: False)"
     )
     args = parser.parse_args()
+    languages = 'all' if args.languages[0] == 'all' else args.languages
 
 
-    run_experiment(args.model, args.language, args.form,
+    run_experiment(args.model, languages, args.form,
                    args.brate, args.order, args.split, args.verbose)

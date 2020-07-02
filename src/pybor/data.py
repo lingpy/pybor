@@ -1,10 +1,15 @@
 """
 Wrapper for handling data in lexibank packages.
 """
+import random
+from collections import Counter
 from importlib import import_module
 from pyclts import CLTS
 from csvw.dsv import UnicodeDictReader
 from tqdm import tqdm
+
+import pybor.util as util
+logger = util.get_logger(__name__)
 
 
 class LexibankDataset(object):
@@ -80,7 +85,7 @@ import pybor.util as util
 logger = util.get_logger(__name__)
 
 
-def apply_function_by_language(languages, form=None, function=None):
+def apply_function_by_language(languages, form=None, function=None, lead_donor=False):
     """
 
     Parameters
@@ -142,7 +147,10 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        table = lex.get_table(language=language, form=form, classification="Borrowed")
+        if not lead_donor:
+            table = lex.get_table(language=language, form=form, classification="Borrowed")
+        else:
+            table = get_native_donor_table(lex, language, form=form, classification="Borrowed")
 
         function(language, form, table)
 
@@ -152,7 +160,29 @@ with open(file_path.as_posix(), 'w', newline='') as fl:
 # =============================================================================
 
 
-def language_table_gen(languages="all", form="Tokens"):
+def language_table_gen(languages="all", form="Tokens", lead_donor=False):
+    """
+    Get and present language tables one at a time in generator pattern.
+    Option to select borrowed data for lead donor only.
+
+    Parameters
+    ----------
+    languages : str or [str] or 'all'
+        Language name, list of language names, or 'all' for all languages.
+    form : str, optional
+        Form designation from ['Tokens', 'FormChars', 'ASJP', 'DOLGO', 'SCA'].
+        The internal default is 'Tokens'.
+    lead_donor : bool, optional
+        Whether borrowed words are selected only for lead donor. The default is False.
+
+    Yields
+    ------
+    language : str
+        Name of language.
+    table : [str, [str], int]
+        Table of [concept, [sound segments], borrowed_binary_flag].
+
+    """
 
     logger.debug(f"Generator for {languages} languages.")
 
@@ -160,7 +190,10 @@ def language_table_gen(languages="all", form="Tokens"):
     languages = check_languages_with_lexibank(lex, languages)
 
     for language in languages:
-        table = lex.get_table(language=language, form=form, classification="Borrowed")
+        if not lead_donor:
+            table = lex.get_table(language=language, form=form, classification="Borrowed")
+        else:
+            table = get_native_donor_table(lex, language, form=form, classification="Borrowed")
 
         yield language, table
 
@@ -205,9 +238,44 @@ def check_languages_with_lexibank(lexibank, languages="all"):
             if language not in all_languages:
                 raise ValueError(f"Language {language} not in Lexibank.")
 
-    return languages  # Checked as valid.
+        return languages  # Checked as valid.
 
     logger.warning(
         "Language must be language name, list of languages, or keyword 'all'."
     )
     raise ValueError(f"Language list required, instead received {languages}.")
+
+def get_lead_donor(table):
+    # Count and order the language donors.
+    donors = Counter([row[3] for row in table]).most_common()
+
+    def validate_donor(donors):
+        if not donors: return ''
+        donor = donors.pop(0)[0]
+        if donor != '' and donor != 'Unidentified':
+            return donor
+        return validate_donor(donors)
+
+    return validate_donor(donors)
+
+def get_native_donor_table(lex, language, form='Tokens', classification='Borrowed'):
+    # Get table with borrowed words from lead donor only.
+
+    table = lex.get_donor_table(language=language, form=form, classification=classification)
+
+    donor = get_lead_donor(table)
+
+    # Select the rows containing this donor.
+    donor_table = [[row[0], row[1], row[2]]
+                   for row in table if row[2] == 1 and donor in row[3]]
+
+    native_table = [[row[0], row[1], row[2]]
+                    for row in table if row[2] == 0]
+
+    logger.info(f'Original {language} table size {len(table)}, ' +
+          f'number borrowed from {donor} is {len(donor_table)}, ' +
+          f'number native is {len(native_table)}, ' +
+          f'table size {len(native_table)+len(donor_table)}.')
+
+    # Return table of native words and borrowed words from lead donor.
+    return random.sample(native_table + donor_table, len(native_table)+len(donor_table))

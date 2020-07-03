@@ -13,7 +13,7 @@ from pathlib import Path
 
 from tabulate import tabulate
 
-import pybor.data as data
+import pybor.wold as wold
 from pybor.entropies import NeuralWordRecurrent
 from pybor.neural import NeuralData
 from pybor.plot import graph_word_distribution_entropies
@@ -167,12 +167,12 @@ def analyze_neural_entropies_train_test(language =None,
 def perform_analysis_by_language(languages=None, form='Tokens',
                 basis='all', model_type='recurrent', test_split=None):
 
-    lex = data.get_lexibank_access()
-    languages = data.check_languages_with_lexibank(lex, languages)
+    wolddb = wold.get_wold_access()
+    languages = wold.check_wold_languages(wolddb, languages)
 
     print(languages)
     for language in languages:
-        table = lex.get_table(
+        table = wolddb.get_table(
                     language=language,
                     form=form,
                     classification='Borrowed'

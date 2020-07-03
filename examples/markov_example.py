@@ -9,7 +9,7 @@ markov_example.py
 """
 import pickle
 
-import pybor.data as data
+import pybor.wold as wold
 from pybor.markov import DualMarkov, NativeMarkov
 import pybor.evaluate as evaluate
 import pybor.util as util
@@ -64,12 +64,12 @@ def validate_loan_detection_native_basis(train_data, test_data,
 def perform_analysis_by_language(languages=None, form='Tokens',
                                  basis='native', test_split=0.15):
 
-    lex = data.get_lexibank_access()
-    languages = data.check_languages_with_lexibank(lex, languages)
+    wolddb = wold.get_wold_access()
+    languages = wold.check_wold_languages(wolddb, languages)
 
     print(languages)
     for language in languages:
-        table = lex.get_table(
+        table = wolddb.get_table(
                     language=language,
                     form=form,
                     classification='Borrowed'

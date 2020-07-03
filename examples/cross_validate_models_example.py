@@ -14,7 +14,7 @@ from tabulate import tabulate
 import statistics as st
 
 import pybor.config as config
-import pybor.data as data
+import pybor.wold as wold
 import pybor.evaluate as evaluate
 import pybor.markov as markov
 import pybor.neural as neural
@@ -152,7 +152,7 @@ def cross_validate_model(languages, form, model_name, mode,
                          'sample_stdev_f1', 'sample_stdev_acc'])
 
         fn = get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings)
-        data.apply_function_by_language(languages, form=form, function=fn,
+        wold.apply_function_by_language(languages, form=form, function=fn,
                                         donor_num=donor_num, min_borrowed=min_borrowed)
 
     summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdout_n, series)

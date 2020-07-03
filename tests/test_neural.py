@@ -205,13 +205,13 @@ def test_train_no_val_test():
 
 def test_neural_language_alphabets():
     import pickle
-    import pybor.data as data
+    import pybor.wold as wold
     import pybor.neural as neubor
 
 
     def neural_language_alphabets(language=None, form=None):
-        lex = data.get_lexibank_access()
-        table = lex.get_table(
+        wolddb = wold.get_wold_access()
+        table = wolddb.get_table(
                     language=language,
                     form=form,
                     classification='Borrowed'

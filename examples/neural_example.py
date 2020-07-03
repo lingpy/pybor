@@ -13,7 +13,7 @@ import random
 import pickle
 from pathlib import Path
 
-import pybor.data as data
+import pybor.wold as wold
 import pybor.evaluate as evaluate
 from pybor.neural import NeuralNative, NeuralDual, NeuralData
 import pybor.util as util
@@ -81,12 +81,12 @@ def perform_detection_by_language(languages=None, form='FormChars',
                                   detect_type='native', model_type='recurrent',
                                   test_split=None, settings=None):
 
-    lex = data.get_lexibank_access()
-    languages = data.check_languages_with_lexibank(lex, languages)
+    wolddb = wold.get_wold_access()
+    languages = wold.check_wold_languages(wolddb, languages)
 
     print(f'Languages {languages}.')
     for language in languages:
-        table = lex.get_table(
+        table = wolddb.get_table(
                     language=language,
                     form=form,
                     classification='Borrowed'

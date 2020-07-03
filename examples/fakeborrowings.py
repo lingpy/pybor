@@ -18,7 +18,7 @@ from pybor.ngram import NgramModel
 from pybor.markov import DualMarkov
 from pybor.neural import NeuralDual
 import pybor.util as util
-import pybor.data as data
+import pybor.wold as wold
 
 logger = util.get_logger(__name__)
 
@@ -51,15 +51,15 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
     table = []
     stats = []
 
-    lex = data.get_lexibank_access()
-    languages = data.check_languages_with_lexibank(lex, language_)
+    wolddb = wold.get_wold_access()
+    languages = wold.check_wold_languages(wolddb, language_)
 
     for language in languages:
         # Set training and test lists
         #train, test = [], []
 
         # Get language table, delete loan words, seed fakes, split into train and test.
-        table = lex.get_table(
+        table = wolddb.get_table(
             language=language, form=form, classification="Borrowed"
         )
         table = [row for row in table if row[2] != 1]

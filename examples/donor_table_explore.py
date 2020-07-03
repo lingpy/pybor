@@ -10,8 +10,7 @@ import argparse
 import random
 from collections import Counter
 import csv
-import pybor.data as data
-
+import pybor.wold as wold
 
 def get_donor(table, donor_num=1):
     if donor_num <= 0: return ''
@@ -31,7 +30,7 @@ def get_donor(table, donor_num=1):
 def get_native_donor_table(language, form='Tokens'):
 
     print(f'***Donors for language {language} ***')
-    table = lex.get_donor_table(language=language, form=form, classification="Borrowed")
+    table = wolddb.get_donor_table(language=language, form=form, classification="Borrowed")
 
     donor = get_donor(table, 1)
     print(f'Lead donor for {language} is {donor}.')
@@ -77,8 +76,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     languages = 'all' if args.languages[0] == 'all' else args.languages
 
-    lex = data.get_lexibank_access()
-    languages = data.check_languages_with_lexibank(lex, languages)
+    wolddb = wold.get_wold_access()
+    languages = wold.check_wold_languages(wolddb, languages)
 
     for language in languages:
         table = get_native_donor_table(language, args.form)

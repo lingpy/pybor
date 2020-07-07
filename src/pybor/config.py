@@ -5,7 +5,7 @@ import attr
 
 @attr.s
 class BaseSettings:
-    val_split = attr.ib(default=0.15)
+    val_split = attr.ib(default=0.0)
     test_split = attr.ib(default=0.15)
     detect_type = attr.ib(default='dual')
 
@@ -56,7 +56,7 @@ class RecurrentSettings(EntropiesSettings):
 
     # Model fitting parameters
     epochs = attr.ib(default=45)
-    learning_rate = attr.ib(default=0.006)
+    learning_rate = attr.ib(default=0.01)
     learning_rate_decay = attr.ib(default=0.95)  # Adjust for batch size, data len.
     restore_best_weights = attr.ib(default=True)
 

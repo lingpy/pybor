@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
+
 from pybor.dev.data import training, testing
 from pybor.svm import *
-from pybor.data import LexibankDataset
+import pybor.data as data
 from pybor.evaluate import prf
 import pickle
 from statistics import mean
@@ -23,26 +25,14 @@ def trigrams(sequence):
     return list(zip(['^', '^']+sequence[:-1], ['^']+sequence+['$'],
         sequence[1:]+['$', '$']))
 
-
-try:
-    with open('wold.bin', 'rb') as f:
-        lex = pickle.load(f)
-except:
-    lex = LexibankDataset(
-            'wold',
-            transform={
-                "Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0}
-            )
-    with open('wold.bin', 'wb') as f:
-        pickle.dump(lex, f)
-
+lex = data.get_lexibank_access()
 table = []
 stats = []
 for language in lex.languages.values():
     table = lex.get_table(
             language=language['Name'],
-            form='FormChars',
-            classification='Loan'
+            form='Tokens',
+            classification='Borrowed'
             )
     train, test = table[:len(table)//2], table[len(table)//2:]
     

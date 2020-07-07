@@ -24,7 +24,8 @@ class NeuralSettings(BaseSettings):
     batch_size = attr.ib(default=32)
     skip_step = attr.ib(default=5)
     token_maxlen = attr.ib(default=30)
-    model_type = attr.ib(default='recurrent')  # recurrent, attention
+    oversample = attr.ib(default=False)
+    model_type = attr.ib(default='recurrent')  # recurrent
     fraction = attr.ib(default=0.995)  # For Native model.
     prediction_policy = attr.ib(default='zero')  # zero, accuracy, fscore
     fscore_beta = attr.ib(default=1.0)
@@ -55,32 +56,8 @@ class RecurrentSettings(EntropiesSettings):
 
     # Model fitting parameters
     epochs = attr.ib(default=45)
-    learning_rate = attr.ib(default=0.006)
+    learning_rate = attr.ib(default=0.01)
     learning_rate_decay = attr.ib(default=0.95)  # Adjust for batch size, data len.
-    restore_best_weights = attr.ib(default=True)
-
-@attr.s
-class AttentionSettings(EntropiesSettings):
-    # Architecture parameters
-    embedding_len = attr.ib(default=32)
-    rnn_output_len = attr.ib(default=32)
-    rnn_cell_type = attr.ib(default='LSTM')  # GRU, LSTM
-    rnn_levels = attr.ib(default=1)  # 1, 2
-    attention_type = attr.ib(default='additive')  # additive, dot-product
-    attention_causal = attr.ib(default='False')
-
-    # Dropout and regulation parameters
-    embedding_dropout = attr.ib(default=0.0)
-    recurrent_l2 = attr.ib(default=0.0)
-    rnn_activity_l2 = attr.ib(default=0.001)
-    recurrent_dropout = attr.ib(default=0.2)
-    rnn_output_dropout = attr.ib(default=0.2)
-    attention_dropout = attr.ib(default=0.0)
-
-    # Model fitting parameters
-    epochs = attr.ib(default=45)
-    learning_rate = attr.ib(default=0.006)
-    learning_rate_decay = attr.ib(default=0.95)  # 0.95
     restore_best_weights = attr.ib(default=True)
 
 
@@ -90,4 +67,3 @@ class MarkovSettings(BaseSettings):
     order = attr.ib(default=3)
     p = attr.ib(default=0.995)
     smoothing = attr.ib(default=0.3)
-    

@@ -22,7 +22,7 @@ from tensorflow.keras.utils import to_categorical
 import attr
 
 from pybor.config import BaseSettings, NeuralSettings
-from pybor.entropies import NeuralWordRecurrent, NeuralWordAttention
+from pybor.entropies import NeuralWordRecurrent
 
 import pybor.util as util
 
@@ -97,7 +97,7 @@ class NeuralData:
     testing = attr.ib(default=[])
     vocab = attr.ib(default=None)
     val_split = attr.ib(default=None)
-    settings = attr.ib(default=BaseSettings())
+    settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
         self.all_data = self.training+self.testing
@@ -184,7 +184,7 @@ class KerasBatchGenerator:
     batch_size = attr.ib(default=None)
     vocab_size = attr.ib(default=None)
     skip_step = attr.ib(default=None)
-    settings = attr.ib(default=BaseSettings(), repr=False)
+    settings = attr.ib(default=NeuralSettings(), repr=False)
 
     def __attrs_post_init__(self):
         # In case settings object is not right type.
@@ -257,10 +257,15 @@ class Neural:
         all_tokens += [row[1] for row in self.testing] if self.testing else []
         self.vocab = Vocab(data=all_tokens)
 
+        native_training = [row for row in self.training if row[2] == 0]
+        loan_training = [row for row in self.training if row[2] == 1]
+        # Oversample loan data.
+        if self.settings.oversample and len(loan_training) < len(native_training):
+            k=len(native_training)-len(loan_training)
+            loan_training += random.choices(loan_training, k=k)
+
         self.native_data = NeuralData(
-                # *** Experiment ***
-                training=[row for row in self.training if row[2] == 0],
-                #          [row for row in self.testing if row[2] == 0] if self.testing else []),
+                training=native_training,
                 testing=[row for row in self.testing if row[2] == 0] if self.testing else [],
                 vocab=self.vocab,
                 val_split=self.val_split,
@@ -269,28 +274,19 @@ class Neural:
 
         # Convenient to separate out loan data always.
         self.loan_data = NeuralData(
-                training=[row for row in self.training if row[2] == 1],
-                 #         [row for row in self.testing if row[2] == 1] if self.testing else []),
+                training=loan_training,
                 testing=[row for row in self.testing if row[2] == 1] if self.testing else [],
                 vocab=self.vocab,
                 val_split=self.val_split,
                 settings=self.settings)
 
-        if self.model_type == 'recurrent':
-            self.native_model = NeuralWordRecurrent(
-                    vocab_len=self.vocab.size,
-                    language=self.language,
-                    basis='native',
-                    series=self.series,
-                    settings=self.settings)
+        self.native_model = NeuralWordRecurrent(
+                vocab_len=self.vocab.size,
+                language=self.language,
+                basis='native',
+                series=self.series,
+                settings=self.settings)
 
-        else:  # attention
-            self.native_model = NeuralWordAttention(
-                    vocab_len=self.vocab.size,
-                    language=self.language,
-                    basis='native',
-                    series=self.series,
-                    settings=self.settings)
 
     @abc.abstractmethod
     def train(self):
@@ -387,21 +383,13 @@ class NeuralDual(Neural):
         self.cut_point = None
 
 
-        if self.model_type == 'recurrent':
-            self.loan_model = NeuralWordRecurrent(
-                    vocab_len=self.vocab.size,
-                    language=self.language,
-                    basis='loan',
-                    series=self.series,
-                    settings=self.settings)
+        self.loan_model = NeuralWordRecurrent(
+                vocab_len=self.vocab.size,
+                language=self.language,
+                basis='loan',
+                series=self.series,
+                settings=self.settings)
 
-        else:  # attention
-            self.loan_model = NeuralWordAttention(
-                    vocab_len=self.vocab.size,
-                    language=self.language,
-                    basis='loan',
-                    series=self.series,
-                    settings=self.settings)
 
 
     def train(self, epochs=None):

@@ -18,7 +18,7 @@ from pybor.ngram import NgramModel
 from pybor.markov import DualMarkov
 from pybor.neural import NeuralDual
 import pybor.util as util
-import pybor.data as data
+import pybor.wold as wold
 
 logger = util.get_logger(__name__)
 
@@ -51,16 +51,16 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
     table = []
     stats = []
 
-    lex = data.get_lexibank_access()
-    languages = data.check_languages_with_lexibank(lex, language_)
+    wolddb = wold.get_wold_access()
+    languages = wold.check_wold_languages(wolddb, language_)
 
     for language in languages:
         # Set training and test lists
         #train, test = [], []
 
         # Get language table, delete loan words, seed fakes, split into train and test.
-        table = lex.get_table(
-            language=language, form=form, classification="Loan"
+        table = wolddb.get_table(
+            language=language, form=form, classification="Borrowed"
         )
         table = [row for row in table if row[2] != 1]
         # How many fakes? Want 1/brate borrowed words in resulting table.
@@ -71,21 +71,6 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
         train_add_len = sum([row[2] for  row in train])
         test_add_len = sum([row[2]for row in test])
         # Seed native German words into training and test
-        # fakeidx = list(range(len(fakes)))
-        # for i in range(len(train_table)):
-        #     if random.randint(1, brate) == 1:
-        #         fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
-        #         train += [fake]
-        #     else:
-        #         # Treat all words from table as native. ???
-        #         train += [[train_table[i][0], train_table[i][1], 0]]
-
-        # for i in range(len(test_table)):
-        #     if random.randint(1, brate) == 1:
-        #         fake = fakes[fakeidx.pop(random.randint(0, len(fakeidx) - 1))]
-        #         test += [fake]
-        #     else:
-        #         test += [[test_table[i][0], test_table[i][1], 0]]
 
         if  verbose:
             logger.info(f'{language} language, {form} form, table len {len(table)}, ' +
@@ -166,10 +151,11 @@ if __name__ == "__main__":
         help="Model for the fake borrowing experiment",
     )
     parser.add_argument(
-        "--language",
-        #type=str,
-        default='all',
-        help="'all' or language_name",
+        "--languages",
+        nargs='*',
+        type=str,
+        default="all",
+        help='Languages to use for example (default: \"all\")'
     )
     parser.add_argument(
         "--form",
@@ -196,7 +182,8 @@ if __name__ == "__main__":
         "--verbose", type=bool, default=False, help="Verbose reporting (default: False)"
     )
     args = parser.parse_args()
+    languages = 'all' if args.languages[0] == 'all' else args.languages
 
 
-    run_experiment(args.model, args.language, args.form,
+    run_experiment(args.model, languages, args.form,
                    args.brate, args.order, args.split, args.verbose)

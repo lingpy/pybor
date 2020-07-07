@@ -14,15 +14,13 @@ integer ids where each id corresponds to a symbol segment from a vocabulary.
 
 import math
 from pathlib import Path
-import numpy as np
 import attr
 
-import tensorflow as tf
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Embedding, Dropout
-from tensorflow.keras.layers import GRU, LSTM, AdditiveAttention, Attention
+from tensorflow.keras.layers import GRU, LSTM
 from tensorflow.keras.layers import Input
-from tensorflow.keras.layers import Concatenate, Reshape
+from tensorflow.keras.layers import Concatenate
 from tensorflow.keras.regularizers import l2
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.utils import plot_model
@@ -87,7 +85,8 @@ class NeuralWord:
 
 
     def calculate_entropies(self, tokens_ids):
-        # Calculate entropy for a list of tokens_ids
+        assert tokens_ids is not None and len(tokens_ids) > 0
+   #    # Calculate entropy for a list of tokens_ids
         # in format of int ids that correspond to str segments.
         # Get the probabilities for all str segment possibilities.
         maxlen = max([len(token_ids) for token_ids in tokens_ids])
@@ -359,113 +358,6 @@ class NeuralWordRecurrent(NeuralWord):
                         name='Segment_output')(to_outputs)
 
         model_name = self.construct_modelname('recurrent')
-        self.model = Model(inputs=[inputs], outputs=[outputs], name=model_name)
-
-        if params.print_summary > 0:
-            self.print_model_summary()
-        if params.plot_model > 0:
-            self.plot_model_summary()
-
-
-
-@attr.s
-class NeuralWordAttention(NeuralWord):
-
-    settings = attr.ib(default=cfg.AttentionSettings())
-
-    # Test whether this needs go here or if OK given en parent class.
-    def __attrs_post_init__(self):
-        if not isinstance(self.settings, cfg.AttentionSettings):
-            self.settings = cfg.AttentionSettings()
-        super().__attrs_post_init__()
-
-        self.build_model()
-
-    def build_model(self):
-        params = self.settings  # Convenience
-
-        # Single character segment input per prediction. Variable length sequences.
-        inputs = Input(shape=(None,))
-
-        embedding = Embedding(input_dim=self.vocab_len,
-                              output_dim=params.embedding_len,
-                              mask_zero=True,
-                              name='Segment_embedding')(inputs)
-
-        if params.embedding_dropout > 0.0:
-            embedding = Dropout(params.embedding_dropout,
-                                name='Dropout_embedding')(embedding)
-
-        if params.rnn_levels == 1:
-            if params.rnn_cell_type == 'LSTM':
-                # Incorporate embeddings into hidden state and output state.
-                rnn_output, rnn_hidden, _ = LSTM(params.rnn_output_len,
-                                                 return_sequences=True, return_state=True,
-                                                 recurrent_regularizer=l2(params.recurrent_l2),
-                                                 activity_regularizer=l2(params.rnn_activity_l2),
-                                                 recurrent_dropout=params.recurrent_dropout,
-                                                 name='LSTM_recurrent')(embedding)
-
-            else:  # GRU
-                rnn_output, rnn_hidden = GRU(params.rnn_output_len,
-                                             return_sequences=True, return_state=True,
-                                             recurrent_regularizer=l2(params.recurrent_l2),
-                                             activity_regularizer=l2(params.rnn_activity_l2),
-                                             recurrent_dropout=params.recurrent_dropout,
-                                             name='GRU_recurrent')(embedding)
-        else:  # 2 levels
-            if params.rnn_cell_type == 'LSTM':
-                # Incorporate embeddings into hidden state and output state.
-                rnn_output, rnn_hidden, _ = LSTM(params.rnn_output_len,
-                                                 return_sequences=True, return_state=True,
-                                                 recurrent_regularizer=l2(params.recurrent_l2),
-                                                 activity_regularizer=l2(params.rnn_activity_l2),
-                                                 recurrent_dropout=params.recurrent_dropout,
-                                                 name='LSTM_recurrent_1')(embedding)
-                rnn_output, rnn_hidden, _ = LSTM(params.rnn_output_len,
-                                                 return_sequences=True, return_state=True,
-                                                 recurrent_regularizer=l2(params.recurrent_l2),
-                                                 activity_regularizer=l2(params.rnn_activity_l2),
-                                                 recurrent_dropout=params.recurrent_dropout,
-                                                 name='LSTM_recurrent_2')(rnn_output)
-
-            else:  # GRU
-                rnn_output, rnn_hidden = GRU(params.rnn_output_len,
-                                             return_sequences=True, return_state=True,
-                                             recurrent_regularizer=l2(params.recurrent_l2),
-                                             activity_regularizer=l2(params.rnn_activity_l2),
-                                             recurrent_dropout=params.recurrent_dropout,
-                                             name='GRU_recurrent_1')(embedding)
-                rnn_output, rnn_hidden = GRU(params.rnn_output_len,
-                                             return_sequences=True, return_state=True,
-                                             recurrent_regularizer=l2(params.recurrent_l2),
-                                             activity_regularizer=l2(params.rnn_activity_l2),
-                                             recurrent_dropout=params.recurrent_dropout,
-                                             name='GRU_recurrent_2')(rnn_output)
-
-
-        if params.rnn_output_dropout > 0.0:
-            rnn_output = Dropout(params.rnn_output_dropout,
-                                 name='Dropout_rnn_output')(rnn_output)
-
-        # hidden state output is for the entire word.  Not by character.
-        rnn_hidden = Reshape((-1, rnn_hidden.shape[1]),
-                             name='Reshape_hidden')(rnn_hidden)
-
-        if params.attention_type == 'additive':
-            context_vector = AdditiveAttention(causal=params.attention_causal,
-                    dropout=params.attention_dropout)([rnn_output, rnn_hidden])
-        else:  # dot-product
-            context_vector = Attention(causal=params.attention_causal,
-                    dropout=params.attention_dropout) ([rnn_output, rnn_hidden])
-
-        to_outputs = Concatenate(axis=2,
-                                  name='Merge_context_rnn_output')([context_vector, rnn_output])
-
-        outputs = Dense(self.vocab_len, activation="softmax",
-                        name='Segment_output')(to_outputs)
-
-        model_name = self.construct_modelname('attention')
         self.model = Model(inputs=[inputs], outputs=[outputs], name=model_name)
 
         if params.print_summary > 0:

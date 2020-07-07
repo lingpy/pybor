@@ -15,7 +15,7 @@ Install pytest and pytest-cov with pip
 Save test files to ./tests
 
 Run test file:
-$ pytest testys/test_neural.py -—cov=pybor.neural
+$ pytest tests/test_neural.py -—cov=pybor.neural
 
 Or to save as html report:
 $ pytest tests/test_neural.py -—cov=pybor.neural --cov-report=html
@@ -32,10 +32,10 @@ Otherwise default is -rx for failed tests only.
 
 """
 
-from pybor.config import AttentionSettings, RecurrentSettings, EntropiesSettings, BaseSettings
-from pybor.config import NeuralSettings #, NeuralNativeSettings, NeuralDualSettings
+from pybor.config import RecurrentSettings, EntropiesSettings, BaseSettings
+from pybor.config import NeuralSettings
 from pybor.neural import NeuralData
-from pybor.entropies import NeuralWord, NeuralWordRecurrent, NeuralWordAttention
+from pybor.entropies import NeuralWord, NeuralWordRecurrent
 from pybor.neural import NeuralNative, NeuralDual
 import pybor.evaluate as evaluate
 
@@ -66,7 +66,8 @@ def test_vocab():
     assert data.vocab.get(255, "<unk>") == "<unk>"
 
 def test_data():
-    data = NeuralData(training1, testing1)
+    settings =NeuralSettings(val_split=0.15)  # To assure we have defined val_len
+    data = NeuralData(training1, testing1, settings=settings)
     tokens = data.get_data_tokens(data.fit)
     assert len(tokens) == len(data.fit)
     tokens_ids = data.get_tokens_ids(tokens)
@@ -96,7 +97,7 @@ def test_data():
 
 def test_data1():
     # Without testing data and with val_split == 0.
-    settings = BaseSettings(val_split=0.0)
+    settings = NeuralSettings(val_split=0.0)
     # Unresoloved error - neural data does not receive val_split
     # Set via settings for now.
     data = NeuralData(training1, val_split=0.0, settings=settings)
@@ -144,16 +145,6 @@ def test_instantiation():
     assert isinstance(neural.native_model.settings, RecurrentSettings)
     assert isinstance(neural.loan_model.settings, RecurrentSettings)
 
-def test_instantiation1():
-    language='A very very very very very long long long ... language name'
-    neural = NeuralNative(training=training1, testing=[],
-                          model_type='attention', language=language)
-    assert neural.language == language
-    assert neural.model_type == 'attention'
-    assert not neural.native_data.testing
-    assert isinstance(neural, NeuralNative)
-    assert isinstance(neural.native_model, NeuralWordAttention)
-    assert isinstance(neural.native_model.settings, AttentionSettings)
 
 def test_instantiation2():
     neural = NeuralDual(training1, testing1, model_type='recurrent', language='German')
@@ -169,21 +160,6 @@ def test_instantiation2():
     assert isinstance(neural.native_model.settings, RecurrentSettings)
     assert isinstance(neural.loan_model.settings, RecurrentSettings)
 
-def test_instantiation3():
-    settings = AttentionSettings(epochs=10, tf_verbose=1)
-    neural = NeuralNative(training1, testing1, model_type='attention',
-                          language='German', settings=settings)
-    assert settings.epochs == 10
-    assert settings.tf_verbose == 1
-    assert neural.settings.epochs == 10
-    assert neural.settings.tf_verbose == 1
-
-    neural.train()
-    assert neural.model_type == 'attention'
-    assert neural.native_data.testing is not None
-    assert isinstance(neural.native_model, NeuralWordAttention)
-    assert isinstance(neural.settings, NeuralSettings)
-    assert isinstance(neural.native_model.settings, AttentionSettings)
 
 def test_train_no_testing():
     # Without testing data
@@ -229,33 +205,22 @@ def test_train_no_val_test():
 
 def test_neural_language_alphabets():
     import pickle
-    from pybor.data import LexibankDataset
+    import pybor.wold as wold
     import pybor.neural as neubor
 
 
     def neural_language_alphabets(language=None, form=None):
-        try:
-            with open('wold.bin', 'rb') as f:
-                lex = pickle.load(f)
-        except:
-            lex = LexibankDataset(
-                    'wold',
-                    transform={
-                        "Loan": lambda x, y, z: 1 if x['Borrowed'].startswith('1') else 0}
-                    )
-            with open('wold.bin', 'wb') as f:
-                pickle.dump(lex, f)
-
-        table = lex.get_table(
+        wolddb = wold.get_wold_access()
+        table = wolddb.get_table(
                     language=language,
                     form=form,
-                    classification='Loan'
+                    classification='Borrowed'
                     )
         print(f'Neural vocabulary for language{language} with len(datat) {len(table)}.')
         #print("sample from table: ", table[:3])
         neural = neubor.NeuralDual(training=table, language=language)
         print(f'Alphabet size for {language} with |V|={(neural.vocab.size)}.')
-        assert neural.vocab.size >= 50 and neural.vocab.size <= 100
+        assert neural.vocab.size >= 30 and neural.vocab.size <= 100
         tokens_ids = neural.native_data.get_data_tokens_ids(table[:3])
         for ids in tokens_ids:
             #print('ids:', ids)
@@ -304,49 +269,7 @@ def test_prediction1():
     test_metrics = evaluate.evaluate_model(predictions, testing1)
     evaluate.false_positive(predictions, testing1)
 #
-def test_prediction2():
-    neural = NeuralNative(training1, testing1, model_type='attention', language = 'German')
-    neural.train()
 
-    print("Evaluate train dataset.")
-    predictions = neural.predict_data(training1)
-    train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.false_positive(predictions, training1)
-
-    print("Evaluate test dataset.")
-    predictions = neural.predict_data(testing1)
-    test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.false_positive(predictions, testing1)
-
-    print("Individual prediction")
-    #    [53, ['z', 'u', 'm', 'p͡f'], 0],
-    #    [54, ['m', 'oː', 'r', 'a', 's', 't'], 1],
-    token = ['z', 'u', 'm', 'p͡f']
-    print(f'id: 53, token: {token}, prediction: {neural.predict(token)}, truth: 0')
-    token = ['m', 'oː', 'r', 'a', 's', 't']
-    print(f'id: 54, token: {token}, prediction: {neural.predict(token)}, truth: 1')
-
-def test_prediction3():
-
-    neural = NeuralDual(training1, testing1, model_type='attention', language='German')
-    neural.train()
-    print("Evaluate train dataset.")
-    predictions = neural.predict_data(training1)
-    train_metrics = evaluate.evaluate_model(predictions, training1)
-    evaluate.false_positive(predictions, training1)
-
-    print("Evaluate test dataset.")
-    predictions = neural.predict_data(testing1)
-    test_metrics = evaluate.evaluate_model(predictions, testing1)
-    evaluate.false_positive(predictions, testing1)
-
-    print("Individual prediction")
-    #    [53, ['z', 'u', 'm', 'p͡f'], 0],
-    #    [54, ['m', 'oː', 'r', 'a', 's', 't'], 1],
-    token = ['z', 'u', 'm', 'p͡f']
-    print(f'id: 53, token: {token}, prediction: {neural.predict(token)}, truth: 0')
-    token = ['m', 'oː', 'r', 'a', 's', 't']
-    print(f'id: 54, token: {token}, prediction: {neural.predict(token)}, truth: 1')
 
 def test_prediction4():
     settings = RecurrentSettings(epochs=20, prediction_policy='accuracy')

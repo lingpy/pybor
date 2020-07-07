@@ -34,9 +34,9 @@ Otherwise default is -rx for failed tests only.
 """
 import statistics
 
-from pybor.config import BaseSettings, EntropiesSettings, RecurrentSettings, AttentionSettings
+from pybor.config import BaseSettings, EntropiesSettings, RecurrentSettings
 from pybor.neural import Vocab, NeuralData, KerasBatchGenerator
-from pybor.entropies import NeuralWord, NeuralWordRecurrent, NeuralWordAttention
+from pybor.entropies import NeuralWord, NeuralWordRecurrent
 from pybor.dev.data import testing1, training1
 
 import pytest
@@ -57,12 +57,6 @@ def test_instantiation():
     assert word.series == ''
     assert word.model is not None
 
-    word = NeuralWordAttention(data.vocab.size, language='German', series='Test')
-    assert word.vocab_len == len(data.vocab)//2
-    assert word.language == 'German'
-    assert word.basis == 'all'
-    assert word.series == 'Test'
-    assert word.model is not None
 
     settings = RecurrentSettings(print_summary=True, batch_size=64)
     word = NeuralWordRecurrent(data.vocab.size, settings=settings)
@@ -80,21 +74,12 @@ def test_2recurrent_layers():
     settings = RecurrentSettings(rnn_levels=2, rnn_cell_type='GRU')
     word = NeuralWordRecurrent(data.vocab.size, settings=settings)
 
-    settings = AttentionSettings(rnn_levels=2)
-    word = NeuralWordAttention(data.vocab.size, settings=settings)
-    word.train(train_gen=data.trainer, val_gen=data.validator)
-    word.evaluate_test(test_gen=data.tester)
 
-    settings = AttentionSettings(rnn_levels=2, rnn_cell_type='GRU')
-    word = NeuralWordAttention(data.vocab.size, settings=settings)
 
 def test_non_positive_vocab_len():
     with pytest.raises(Exception):
         assert NeuralWordRecurrent(0)
 
-def test_no_vocab_len():
-    with pytest.raises(Exception):
-        assert NeuralWordAttention()
 
 def test_settings():
     settings = RecurrentSettings(val_split=0.20,
@@ -105,7 +90,7 @@ def test_settings():
                                  rnn_cell_type='GRU',
                                  recurrent_l2=0.002)
 
-    data = NeuralData(training1, settings=settings)
+    data = NeuralData(training1, testing1, settings=settings)
     assert data.val_split == 0.20
     assert data.validator is not None
 
@@ -139,9 +124,6 @@ def test_train_model():
     word.train(train_gen=data.trainer, val_gen=data.validator)
     word.evaluate_test(test_gen=data.tester)
 
-    word = NeuralWordAttention(data.vocab.size, language='German')
-    word.train(train_gen=data.trainer, val_gen=data.validator)
-    word.evaluate_test(test_gen=data.tester)
 
     tokens = data.get_data_tokens(data.testing)
     # For German data, max token size is 10, so 12 with start and stop symbols.
@@ -175,12 +157,6 @@ def test_train_model_with_cfg():
     word.evaluate_test(test_gen=data.tester)
     get_mean_entropies(data, word)
 
-    settings = AttentionSettings(rnn_cell_type='GRU', embedding_dropout=0.1)
-
-    word = NeuralWordAttention(data.vocab.size, language='German', settings=settings)
-    word.train(train_gen=data.trainer, val_gen=data.validator)
-    word.evaluate_test(test_gen=data.tester)
-    get_mean_entropies(data, word)
 
 
 # =============================================================================

@@ -14,7 +14,7 @@ from tabulate import tabulate
 import statistics as st
 
 import pybor.config as config
-import pybor.data as data
+import pybor.wold as wold
 import pybor.evaluate as evaluate
 import pybor.markov as markov
 import pybor.neural as neural
@@ -129,7 +129,8 @@ def summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdou
 
 
 def cross_validate_model(languages, form, model_name, mode,
-                         k_fold, holdout_n, max_iter, series='', settings=None):
+                         k_fold, holdout_n, max_iter, series='',
+                         donor_num=0, min_borrowed=0, settings=None):
 
     if mode == 'k_fold':
         filename = f'cv-{k_fold:d}-fold'
@@ -151,7 +152,8 @@ def cross_validate_model(languages, form, model_name, mode,
                          'sample_stdev_f1', 'sample_stdev_acc'])
 
         fn = get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings)
-        data.apply_function_by_language(languages, form, fn)
+        wold.apply_function_by_language(languages, form=form, function=fn,
+                                        donor_num=donor_num, min_borrowed=min_borrowed)
 
     summarize_cross_validation(file_path, form, model_name, mode, k_fold, holdout_n, series)
 
@@ -171,9 +173,10 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--languages",
+        nargs='*',
         type=str,
         default="all",
-        help='Language to use for example (default: \"all\")'
+        help='Languages to use for example (default: \"all\")'
     )
     parser.add_argument(
         "--mode",
@@ -220,12 +223,25 @@ if __name__ == "__main__":
         help="Validation split for Neural models (default: 0.1)"
     )
     parser.add_argument(
+        "--donor",
+        default=0,
+        type=int,
+        help="Include borrowed words from donor (default: 0 -> all borrowed words)"
+    )
+    parser.add_argument(
+        "--min_borrowed",
+        default=35,
+        type=int,
+        help="miniumum number of borrowed words (default: 35)"
+    )
+    parser.add_argument(
         "--verbose",
         default=False,
         type=bool,
         help="Verbose operation for the methods that support it (default: False)"
     )
     args = parser.parse_args()
+    languages = 'all' if args.languages[0] == 'all' else args.languages
 
     # Build settings if needed
     settings = None
@@ -236,12 +252,14 @@ if __name__ == "__main__":
         settings = config.MarkovSettings(smoothing=args.smoothing)
 
     # Run cross validation
-    cross_validate_model(languages=args.languages,
+    cross_validate_model(languages=languages,
             form="Tokens",
             model_name=args.model,
             mode=args.mode,
             k_fold=args.k_fold,
             holdout_n=args.holdout_n,
             max_iter=args.max_iter,
+            donor_num=args.donor,
+            min_borrowed=args.min_borrowed,
             series=args.series,
             settings=settings)

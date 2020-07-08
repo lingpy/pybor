@@ -55,8 +55,3 @@ class LexibankDataset(object):
             if not language or row["Language"] == language:
                 out.append([row["ID"], row[form], row[classification]])
         return out
-
-
-# =============================================================================
-# Everything else moved to wold.py
-# =============================================================================

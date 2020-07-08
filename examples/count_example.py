@@ -1,11 +1,17 @@
+# Import Python standard libraries
 import pickle
-from statistics import mean
-from tabulate import tabulate
-from pybor.data import LexibankDataset
 
+# Import 3rd-party libraries
+from tabulate import tabulate
 import pyclts
 
-clts = pyclts.CLTS('/home/tresoldi/.config/cldf/clts')
+# Build namespace
+from pybor.data import LexibankDataset
+
+# Build CLTS object
+# TODO: use default and accept user path
+clts = pyclts.CLTS("/home/tresoldi/.config/cldf/clts")
+
 
 def get_bigrams(sequence):
     return list(zip(["^"] + sequence[:-1], sequence[1:] + ["$"]))
@@ -20,6 +26,7 @@ def get_trigrams(sequence):
         )
     )
 
+
 def main():
     try:
         with open("wold.bin", "rb") as f:
@@ -27,7 +34,9 @@ def main():
     except:
         lex = LexibankDataset(
             "wold",
-            transform={"Loan": lambda x, y, z: 1 if x["Borrowed"].startswith("1") else 0},
+            transform={
+                "Loan": lambda x, y, z: 1 if x["Borrowed"].startswith("1") else 0
+            },
         )
         with open("wold.bin", "wb") as f:
             pickle.dump(lex, f)
@@ -47,7 +56,7 @@ def main():
         for row in table:
             for sound in row[1].split():
                 sound = str(clts.bipa[sound])
-                if sound != '+':
+                if sound != "+":
                     if row[-1] == 1:
                         bs.add(sound)
                     else:
@@ -56,7 +65,7 @@ def main():
         # collect trigrams
         b_trigram, n_trigram = set(), set()
         for row in table:
-            seq = [str(clts.bipa[sound]) for sound in row[1].split() if sound != '+']
+            seq = [str(clts.bipa[sound]) for sound in row[1].split() if sound != "+"]
             trigrams = set(get_trigrams(seq))
             if row[-1] == 1:
                 b_trigram |= trigrams
@@ -90,6 +99,7 @@ def main():
             floatfmt=".2f",
         )
     )
+
 
 if __name__ == "__main__":
     main()

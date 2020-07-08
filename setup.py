@@ -3,7 +3,7 @@ import codecs
 from setuptools import setup, find_packages, Extension
 
 # setup package name etc as a default
-pkgname = 'pybor'
+pkgname = "pybor"
 
 # The directory containing this file
 LOCAL_PATH = pathlib.Path(__file__).parent
@@ -17,23 +17,23 @@ with open(REQUIREMENTS_PATH.as_posix()) as fp:
     install_requires = [dep.strip() for dep in fp.readlines()]
 
 setup(
-        name=pkgname,
-        description="A Python library for monolingual borrowing detection.",
-        version='0.1.1',
-        packages=find_packages(where='src'),
-        package_dir={'': 'src'},
-        zip_safe=False,
-        license="GPL",
-        include_package_data=True,
-        install_requires=install_requires,
-        extras_require={
-            'examples': ['pyclts', 'cldfbench', 'pylexibank'],
-            'tests': ['pytest', 'pytest-cov']
-            },
-        url='https://github.com/lingpy/monolingual-borrowing-detection/',
-        long_description=codecs.open('README.md', 'r', 'utf-8').read(),
-        long_description_content_type='text/markdown',
-        author='John Miller and Tiago Tresoldi and Johann-Mattis List',
-        author_email='list@shh.mpg.de',
-        keywords='borrowing, language contact, sequence comparison'
-        )
+    author_email="list@shh.mpg.de",
+    author="John Miller and Tiago Tresoldi and Johann-Mattis List",
+    description="A Python library for monolingual borrowing detection.",
+    extras_require={
+        "examples": ["pyclts", "cldfbench", "pylexibank"],
+        "tests": ["pytest", "pytest-cov"],
+    },
+    include_package_data=True,
+    install_requires=install_requires,
+    keywords="borrowing, language contact, sequence comparison",
+    license="GPL",
+    long_description_content_type="text/markdown",
+    long_description=codecs.open("README.md", "r", "utf-8").read(),
+    name=pkgname,
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
+    url="https://github.com/lingpy/pybor/",
+    version="0.1.1",  # remember to sync with __init__.py
+    zip_safe=False,
+)

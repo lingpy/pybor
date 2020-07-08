@@ -1,6 +1,3 @@
-# Ignore local copy of lexibank_wold
-wold/
-
 # Ignore output files (but allow the directory)
 output/*.log
 

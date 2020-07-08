@@ -6,7 +6,7 @@ from tabulate import tabulate
 import pyclts
 
 # Build namespace
-from pybor.data import LexibankDataset
+import pybor.wold as wold
 
 # Build CLTS object
 # TODO: use default and accept user path
@@ -28,24 +28,13 @@ def get_trigrams(sequence):
 
 
 def main():
-    try:
-        with open("wold.bin", "rb") as f:
-            lex = pickle.load(f)
-    except:
-        lex = LexibankDataset(
-            "wold",
-            transform={
-                "Loan": lambda x, y, z: 1 if x["Borrowed"].startswith("1") else 0
-            },
-        )
-        with open("wold.bin", "wb") as f:
-            pickle.dump(lex, f)
+
+    lex = wold.get_wold_access()
 
     mytable = []
-    out = open("stats.tsv", "w")
     for language in lex.languages.values():
         table = lex.get_table(
-            language=language["Name"], form="Segments", classification="Loan"
+            language=language["Name"], form="Segments", classification="Borrowed"
         )
         # count borrowings
         b = len([x for x in table if x[-1] == 1])
@@ -84,13 +73,6 @@ def main():
                 len(n_trigram.difference(b_trigram)) / len(b_trigram.union(n_trigram)),
             ]
         ]
-        out.write(
-            language["Name"]
-            + "\t"
-            + "\t".join(["{0:.2f}".format(x) for x in mytable[-1][1:]])
-            + "\n"
-        )
-    out.close()
 
     print(
         tabulate(

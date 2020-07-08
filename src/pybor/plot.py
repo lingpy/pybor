@@ -10,11 +10,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 
-def graph_word_distribution_entropies(**kwargs):
-
-    entropies1 = kwargs.get("entropies1", None)
-    entropies2 = kwargs.get("entropies2", None)
-    output_path = kwargs.get("output_path", None)
+def graph_word_distribution_entropies(entropies1, entropies2, output_path, **kwargs):
     title = kwargs.get("title", "")
     label1 = kwargs.get("label1", None)
     label2 = kwargs.get("label2", None)

@@ -1,22 +1,18 @@
 #!/usr/bin/env python3
 
 # Load Python standard libraries
-from statistics import mean
-from sys import argv
 from pathlib import Path
+from statistics import mean
 import argparse
-import pickle
 import random
 
 # Load Pybor
-import pybor
 from pybor.dev.data import training, testing
-from pybor.svm import BagOfSounds
-from pybor.data import LexibankDataset
 from pybor.evaluate import prf
-from pybor.ngram import NgramModel
 from pybor.markov import DualMarkov
 from pybor.neural import NeuralDual
+from pybor.ngram import NgramModel
+from pybor.svm import BagOfSounds
 import pybor.util as util
 import pybor.wold as wold
 
@@ -35,6 +31,7 @@ def trigrams(sequence):
             sequence[1:] + ["$", "$"],
         )
     )
+
 
 def run_experiment(model_name, language_, form, brate, order, test_split, verbose):
 
@@ -56,7 +53,7 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
 
     for language in languages:
         # Set training and test lists
-        #train, test = [], []
+        # train, test = [], []
 
         # Get language table, delete loan words, seed fakes, split into train and test.
         table = wolddb.get_table(
@@ -65,20 +62,24 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
         table = [row for row in table if row[2] != 1]
         # How many fakes? Want 1/brate borrowed words in resulting table.
         # So we add 1/(brate-1) fraction of words.
-        add_len = int(round(len(table)/(brate-1)))
+        add_len = int(round(len(table) / (brate - 1)))
         table += random.sample(fakes, add_len)
         train, test = util.train_test_split(table, test_split)
-        train_add_len = sum([row[2] for  row in train])
-        test_add_len = sum([row[2]for row in test])
+        train_add_len = sum([row[2] for row in train])
+        test_add_len = sum([row[2] for row in test])
         # Seed native German words into training and test
 
-        if  verbose:
-            logger.info(f'{language} language, {form} form, table len {len(table)}, ' +
-                    f'table borrowed {add_len}, borrow rate {int(round(len(table)/add_len))}.')
-            logger.info(f'train len {len(train)}, train borrowed {train_add_len}, ' +
-                    f'test len {len(test)}, test borrowed {test_add_len}.')
+        if verbose:
+            logger.info(
+                f"{language} language, {form} form, table len {len(table)}, "
+                + f"table borrowed {add_len}, borrow rate {int(round(len(table)/add_len))}."
+            )
+            logger.info(
+                f"train len {len(train)}, train borrowed {train_add_len}, "
+                + f"test len {len(test)}, test borrowed {test_add_len}."
+            )
 
-        if model_name == 'bagofsounds':
+        if model_name == "bagofsounds":
             # Building bigram and trigram test sets
             train2, test2 = (
                 [[a, bigrams(b), c] for a, b, c in train],
@@ -111,7 +112,6 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
                 neural.train()
                 guess = neural.predict_data(test)
 
-
         # Collect performance statistics
         p, r, f, a = prf(test, guess)
         stats += [[p, r, f, a]]
@@ -119,27 +119,30 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
             "{4},{0:.2f},{1:.2f},{2:.2f},{3:.2f}".format(p, r, f, a, language)
         )
 
-
     # Add totals
     totals = "{4},{0:.2f},{1:.2f},{2:.2f},{3:.2f}".format(
-            mean([line[0] for line in stats]),
-            mean([line[1] for line in stats]),
-            mean([line[2] for line in stats]),
-            mean([line[3] for line in stats]),
-            "TOTAL/MEAN")
+        mean([line[0] for line in stats]),
+        mean([line[1] for line in stats]),
+        mean([line[2] for line in stats]),
+        mean([line[3] for line in stats]),
+        "TOTAL/MEAN",
+    )
     buffer.append(totals)
     print(totals)
 
-
     # Write results to disk
     output_path = Path(__file__).parent.parent.absolute()
-    output_path = (output_path / "output" /
-                   f"fakeborrowing_{model_name}_{language_}_{form}_{brate:.1f}br.csv")
+    output_path = (
+        output_path
+        / "output"
+        / f"fakeborrowing_{model_name}_{language_}_{form}_{brate:.1f}br.csv"
+    )
 
     with open(output_path.as_posix(), "w") as handler:
         for row in buffer:
             handler.write(row)
             handler.write("\n")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -152,15 +155,15 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--languages",
-        nargs='*',
+        nargs="*",
         type=str,
         default="all",
-        help='Languages to use for example (default: \"all\")'
+        help='Languages to use for example (default: "all")',
     )
     parser.add_argument(
         "--form",
         type=str,
-        default='Tokens',
+        default="Tokens",
         choices=["Tokens", "FormChars", "ASJP", "DOLGO", "SCA"],
         help="Form to take from language table.",
     )
@@ -172,18 +175,29 @@ if __name__ == "__main__":
         help='Ngram order for experiment (default: "monogram")',
     )
     parser.add_argument(
-        "--brate", type=int, default=10,
-        help="Set the borrowing rate (default: 10, for 1 in 10)"
+        "--brate",
+        type=int,
+        default=10,
+        help="Set the borrowing rate (default: 10, for 1 in 10)",
     )
     parser.add_argument(
-        "--split", type=float, default=0.2, help="Set the test split proportion (default: 0.2)"
+        "--split",
+        type=float,
+        default=0.2,
+        help="Set the test split proportion (default: 0.2)",
     )
     parser.add_argument(
         "--verbose", type=bool, default=False, help="Verbose reporting (default: False)"
     )
     args = parser.parse_args()
-    languages = 'all' if args.languages[0] == 'all' else args.languages
+    languages = "all" if args.languages[0] == "all" else args.languages
 
-
-    run_experiment(args.model, languages, args.form,
-                   args.brate, args.order, args.split, args.verbose)
+    run_experiment(
+        args.model,
+        languages,
+        args.form,
+        args.brate,
+        args.order,
+        args.split,
+        args.verbose,
+    )

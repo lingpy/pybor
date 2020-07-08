@@ -10,6 +10,7 @@ from collections import Counter
 
 import pybor.data as data
 import pybor.util as util
+
 logger = util.get_logger(__name__)
 
 
@@ -24,13 +25,19 @@ class WoldDataset(data.LexibankDataset):
         out = []
         for row in self.forms:
             if not language or row["Language"] == language:
-                out.append([row["ID"], row[form], row[classification],
-                    row["donor_language"],
-                    row["donor_description"],
-                    row["donor_value"],
-                    row["age_description"],
-                    row["age_start_year"],
-                    row["age_end_year"],])
+                out.append(
+                    [
+                        row["ID"],
+                        row[form],
+                        row[classification],
+                        row["donor_language"],
+                        row["donor_description"],
+                        row["donor_value"],
+                        row["age_description"],
+                        row["age_start_year"],
+                        row["age_end_year"],
+                    ]
+                )
 
         return out
 
@@ -39,8 +46,10 @@ class WoldDataset(data.LexibankDataset):
 # Apply user function to tables from WOLD.
 # =============================================================================
 
-def apply_function_by_language(languages, form=None, function=None,
-                               donor_num=0, min_borrowed=0):
+
+def apply_function_by_language(
+    languages, form=None, function=None, donor_num=0, min_borrowed=0
+):
     """
 
     Parameters
@@ -76,14 +85,16 @@ def apply_function_by_language(languages, form=None, function=None,
 
     for language in languages:
         table = get_native_donor_table(
-            wolddb, language, form=form,
-            classification="Borrowed", donor_num=donor_num)
+            wolddb, language, form=form, classification="Borrowed", donor_num=donor_num
+        )
 
         # Check for min_borrowed.
         num_borrowed = sum([row[2] for row in table])
         if num_borrowed < min_borrowed:
-            logger.info(f'Table for {language} with donor {donor_num} '+
-                        f'has only {num_borrowed} borrowed words.  Skipped.')
+            logger.info(
+                f"Table for {language} with donor {donor_num} "
+                + f"has only {num_borrowed} borrowed words.  Skipped."
+            )
         else:
             function(language, form, table)
 
@@ -127,14 +138,16 @@ def language_table_gen(languages="all", form="Tokens", donor_num=0, min_borrowed
 
     for language in languages:
         table = get_native_donor_table(
-            wolddb, language, form=form,
-            classification="Borrowed", donor_num=donor_num)
+            wolddb, language, form=form, classification="Borrowed", donor_num=donor_num
+        )
 
         # Check for min_borrowed.
         num_borrowed = sum([row[2] for row in table])
         if num_borrowed < min_borrowed:
-            logger.info(f'Table for {language} with donor {donor_num} '+
-                        f'has only {num_borrowed} borrowed words.  Skipped.')
+            logger.info(
+                f"Table for {language} with donor {donor_num} "
+                + f"has only {num_borrowed} borrowed words.  Skipped."
+            )
         else:
             yield language, table
 
@@ -145,7 +158,7 @@ def language_table_gen(languages="all", form="Tokens", donor_num=0, min_borrowed
 def get_wold_access():
     def to_score(x):
         num = float(x.lstrip()[0])
-        return (5-num)/4
+        return (5 - num) / 4
 
     try:
         with open("wold.bin", "rb") as f:
@@ -153,9 +166,8 @@ def get_wold_access():
     except:
         wolddb = WoldDataset(
             transform={
-                "Borrowed": lambda x, y, z:
-                    1 if to_score(x["Borrowed"]) >= 0.9 else 0
-            },
+                "Borrowed": lambda x, y, z: 1 if to_score(x["Borrowed"]) >= 0.9 else 0
+            }
         )
 
         with open("wold.bin", "wb") as f:
@@ -185,21 +197,30 @@ def check_wold_languages(wolddb, languages="all"):
     )
     raise ValueError(f"Language list required, instead received {languages}.")
 
+
 def get_donor(table, donor_num=0):
-    if donor_num <= 0: return ''
+    if donor_num <= 0:
+        return ""
     # Count and order the language donors.
-    donors = Counter([row[3] for row in table if row[2]==1]).most_common()
-    if not donors or len(donors) == 0: return ''
+    donors = Counter([row[3] for row in table if row[2] == 1]).most_common()
+    if not donors or len(donors) == 0:
+        return ""
     # Drop '' and 'Unidentified'.
-    donors = [donor[0] for donor in donors if donor[0] != '' and donor[0] !='Unidentified']
-    if len(donors) < donor_num: return ''
-    return donors.pop(donor_num-1)
+    donors = [
+        donor[0] for donor in donors if donor[0] != "" and donor[0] != "Unidentified"
+    ]
+    if len(donors) < donor_num:
+        return ""
+    return donors.pop(donor_num - 1)
 
 
-def get_native_donor_table(wolddb, language, form='Tokens',
-                           classification='Borrowed', donor_num=0):
+def get_native_donor_table(
+    wolddb, language, form="Tokens", classification="Borrowed", donor_num=0
+):
     # Get table with borrowed words from donor_num only. Default to all donors.
-    table = wolddb.get_donor_table(language=language, form=form, classification=classification)
+    table = wolddb.get_donor_table(
+        language=language, form=form, classification=classification
+    )
     if donor_num == 0:
         table = [[row[0], row[1], row[2]] for row in table]
         return random.sample(table, len(table))
@@ -208,17 +229,19 @@ def get_native_donor_table(wolddb, language, form='Tokens',
     donor = get_donor(table, donor_num)
     # Select the rows containing this donor.
     # donor == '' selects all borrowed rows.
-    donor_table = [[row[0], row[1], row[2]]
-                   for row in table if row[2] == 1 and donor in row[3]]
+    donor_table = [
+        [row[0], row[1], row[2]] for row in table if row[2] == 1 and donor in row[3]
+    ]
 
-    native_table = [[row[0], row[1], row[2]]
-                    for row in table if row[2] == 0]
+    native_table = [[row[0], row[1], row[2]] for row in table if row[2] == 0]
 
     table_out = native_table + donor_table
-    logger.info(f'Original {language} table size = {len(table)}, ' +
-          f'number from {donor} = {len(donor_table)}, ' +
-          f'number native = {len(native_table)}, ' +
-          f'table out size = {len(table_out)}.')
+    logger.info(
+        f"Original {language} table size = {len(table)}, "
+        + f"number from {donor} = {len(donor_table)}, "
+        + f"number native = {len(native_table)}, "
+        + f"table out size = {len(table_out)}."
+    )
 
     # Return table of native words and borrowed words from lead donor.
     return random.sample(table_out, len(table_out))

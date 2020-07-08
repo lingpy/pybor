@@ -13,9 +13,7 @@ class NgramModel(object):
     Use an ngram classifier to try to find borrowed words.
     """
 
-    def __init__(
-        self, data, order=3, smooth="wittenbell", use_length=True, **kw
-    ):
+    def __init__(self, data, order=3, smooth="wittenbell", use_length=True, **kw):
 
         self.data = data
         self.use_length = use_length
@@ -45,12 +43,8 @@ class NgramModel(object):
 
         scores = []
         for seq_class in self.sequences:
-            f = self.f_estimator[seq_class].score(
-                word, use_length=self.use_length
-            )
-            b = self.b_estimator[seq_class].score(
-                word, use_length=self.use_length
-            )
+            f = self.f_estimator[seq_class].score(word, use_length=self.use_length)
+            b = self.b_estimator[seq_class].score(word, use_length=self.use_length)
 
             # NOTE: here it is only using the forward estimation, but we
             # could combine them, for example just doing `(f+b)/2`

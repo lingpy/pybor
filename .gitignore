@@ -1,3 +1,6 @@
+# Ignore wold cache
+wold.bin
+
 # Ignore output files (but allow the directory)
 output/*.log
 

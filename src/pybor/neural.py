@@ -9,21 +9,22 @@ Detect loan words based on word entropies as calculated by a neural netword mode
 Support for model trained on both native and borrowed words, or just native words
 """
 
-import abc
-import math
-import random
-import statistics
+# Import Python standard libraries
 from collections import Counter
 from pathlib import Path
+import abc
+import random
 
+# Import 3rd-party libraries
+import attr
+
+# Import tensorflow
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.utils import to_categorical
 
-import attr
-
+# Build namespace
 from pybor.config import BaseSettings, NeuralSettings
 from pybor.entropies import NeuralWordRecurrent
-
 import pybor.util as util
 
 output_path = Path(BaseSettings().output_path).resolve()
@@ -34,16 +35,23 @@ logger = util.get_logger(__name__)
 @attr.s
 class Vocab:
     data = attr.ib()
-    start = attr.ib(default='<s>')
-    end = attr.ib(default='</s>')
-    null = attr.ib(default='<nul>')
-    unknown = attr.ib(default='<unk>')
+    start = attr.ib(default="<s>")
+    end = attr.ib(default="</s>")
+    null = attr.ib(default="<nul>")
+    unknown = attr.ib(default="<unk>")
 
     def __attrs_post_init__(self):
         counter = 4
         self.vocab = {
-                self.unknown: 1, self.start: 2, self.end: 3, self.null: 0,
-                1: self.unknown, 2: self.start, 3: self.end, 0: self.null}
+            self.unknown: 1,
+            self.start: 2,
+            self.end: 3,
+            self.null: 0,
+            1: self.unknown,
+            2: self.start,
+            3: self.end,
+            0: self.null,
+        }
         for tokens in self.data:
             for token in tokens:
                 try:
@@ -54,7 +62,6 @@ class Vocab:
                     counter += 1
 
         self.data = None  # Once used, no need to keep raw data.
-
 
     def __getitem__(self, item):
         return self.vocab[item]
@@ -67,13 +74,18 @@ class Vocab:
 
     # Unkown value is 1 and used here.
     def translate(self, word):
-#        return [self.vocab[self.start]]+[self.vocab.get(x, Vocab.UNK)
-        return [self.vocab[self.start]]+[self.vocab.get(x, 1)
-                                         for x in word]+[self.vocab[self.end]]
+        #        return [self.vocab[self.start]]+[self.vocab.get(x, Vocab.UNK)
+        return (
+            [self.vocab[self.start]]
+            + [self.vocab.get(x, 1) for x in word]
+            + [self.vocab[self.end]]
+        )
+
     @property
     def size(self):
         # Count only in 1 direction, not both forward and reverse translation.
-        return len(self.vocab)//2
+        return len(self.vocab) // 2
+
 
 @attr.s
 class NeuralData:
@@ -93,6 +105,7 @@ class NeuralData:
         Proportion of training data to use for validation.
         Uses value from neural_cfg.data if not overridden here.
     """
+
     training = attr.ib(default=[])
     testing = attr.ib(default=[])
     vocab = attr.ib(default=None)
@@ -100,19 +113,23 @@ class NeuralData:
     settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
-        self.all_data = self.training+self.testing
+        self.all_data = self.training + self.testing
         random.shuffle(self.all_data)
         self.vocab = self.vocab or Vocab([x[1] for x in self.all_data])
         random.shuffle(self.testing)
-        self.val_split = self.settings.val_split if self.val_split is None else self.val_split
+        self.val_split = (
+            self.settings.val_split if self.val_split is None else self.val_split
+        )
         self.fit, self.val = util.train_test_split(self.training, self.val_split)
         self.label_counts = dict(Counter([x[2] for x in self.training]))
 
         if self.settings.verbose:
-            logger.info(f'Train length: {len(self.training)}' +
-                f', fit length: {len(self.fit)}' +
-                f', val length: {len(self.val) if self.val else 0}' +
-                f', test length: {len(self.testing) if self.testing else 0}.')
+            logger.info(
+                f"Train length: {len(self.training)}"
+                + f", fit length: {len(self.fit)}"
+                + f", val length: {len(self.val) if self.val else 0}"
+                + f", test length: {len(self.testing) if self.testing else 0}."
+            )
 
     def translate(self, sequences):
         """
@@ -134,30 +151,33 @@ class NeuralData:
 
     def get_batcher(self, data):
         # Return generator as None if no data.
-        if data is None or len(data) == 0: return None
+        if data is None or len(data) == 0:
+            return None
         return KerasBatchGenerator(
-                self.translate([x[1] for x in data]),
-                batch_size=self.settings.batch_size,
-                vocab_size=self.vocab.size,
-                settings=self.settings)
+            self.translate([x[1] for x in data]),
+            batch_size=self.settings.batch_size,
+            vocab_size=self.vocab.size,
+            settings=self.settings,
+        )
+
     @property
     def trainer(self):
-        if hasattr(self, '_trainer'):
-            return self._trainer
+        if hasattr(self, "_trainer"):
+            return self._trainer  # pylint: disable:access-member-before-definition
         self._trainer = self.get_batcher(self.fit)
         return self._trainer
 
     @property
     def validator(self):
-        if hasattr(self, '_validator'):
-            return self._validator
+        if hasattr(self, "_validator"):
+            return self._validator  # pylint: disable:access-member-before-definition
         self._validator = self.get_batcher(self.val)
         return self._validator
 
     @property
     def tester(self):
-        if hasattr(self, '_tester'):
-            return self._tester
+        if hasattr(self, "_tester"):
+            return self._tester  # pylint: disable:access-member-before-definition
         self._tester = self.get_batcher(self.testing)
         return self._tester
 
@@ -180,6 +200,7 @@ class KerasBatchGenerator:
     skip_step : int, optional
         Maximum leap in data sequence. Step chosen at random up to maximum.
     """
+
     data = attr.ib(repr=False)
     batch_size = attr.ib(default=None)
     vocab_size = attr.ib(default=None)
@@ -196,17 +217,16 @@ class KerasBatchGenerator:
         self.data_len = len(self.data)
         # Test for unknowns.
 
-
     def generate(self, sample=None):
         # Randomize order of words.
-        data = [row for row in self.data]
+        data = list(self.data)
         random.shuffle(data)
         count = 0
         while not sample or count < sample:
             count += 1
             x_lst = []
             y_lst = []
-            for i in range(self.batch_size):
+            for _ in range(self.batch_size):
                 if self.current_idx >= self.data_len:
                     self.current_idx = 0
                 ## Build 2-D list of lists of ids for each word.
@@ -216,15 +236,15 @@ class KerasBatchGenerator:
                 x_lst.append(data[self.current_idx][:-1])
 
                 ## Treat y as sparse.
-                #y_lst.append(data[self.current_idx][1:])
+                # y_lst.append(data[self.current_idx][1:])
                 temp_y = data[self.current_idx][1:]
                 y_lst.append(to_categorical(temp_y, num_classes=self.vocab_size))
 
                 self.current_idx += 1
 
             self.current_idx += random.randint(0, self.skip_step)
-            x = pad_sequences(x_lst, padding='post')
-            y = pad_sequences(y_lst, padding='post')
+            x = pad_sequences(x_lst, padding="post")
+            y = pad_sequences(y_lst, padding="post")
             yield x, y
 
 
@@ -238,15 +258,15 @@ class Neural:
     Determine cutpoint to detect loan words if native, or entropy bias if dual
     Predict words as native or loan.
     """
+
     __metaclass__ = abc.ABCMeta
 
     training = attr.ib()
     testing = attr.ib(default=[])
-    language = attr.ib(default='')
-    series = attr.ib(default='series')
-    model_type = attr.ib(default='')
+    language = attr.ib(default="")
+    series = attr.ib(default="series")
+    model_type = attr.ib(default="")
     val_split = attr.ib(default=None)
-
 
     def __attrs_post_init__(self):
         # In case settings object is not right type.
@@ -261,32 +281,37 @@ class Neural:
         loan_training = [row for row in self.training if row[2] == 1]
         # Oversample loan data.
         if self.settings.oversample and len(loan_training) < len(native_training):
-            k=len(native_training)-len(loan_training)
+            k = len(native_training) - len(loan_training)
             loan_training += random.choices(loan_training, k=k)
 
         self.native_data = NeuralData(
-                training=native_training,
-                testing=[row for row in self.testing if row[2] == 0] if self.testing else [],
-                vocab=self.vocab,
-                val_split=self.val_split,
-                settings=self.settings
-                )
+            training=native_training,
+            testing=[row for row in self.testing if row[2] == 0]
+            if self.testing
+            else [],
+            vocab=self.vocab,
+            val_split=self.val_split,
+            settings=self.settings,
+        )
 
         # Convenient to separate out loan data always.
         self.loan_data = NeuralData(
-                training=loan_training,
-                testing=[row for row in self.testing if row[2] == 1] if self.testing else [],
-                vocab=self.vocab,
-                val_split=self.val_split,
-                settings=self.settings)
+            training=loan_training,
+            testing=[row for row in self.testing if row[2] == 1]
+            if self.testing
+            else [],
+            vocab=self.vocab,
+            val_split=self.val_split,
+            settings=self.settings,
+        )
 
         self.native_model = NeuralWordRecurrent(
-                vocab_len=self.vocab.size,
-                language=self.language,
-                basis='native',
-                series=self.series,
-                settings=self.settings)
-
+            vocab_len=self.vocab.size,
+            language=self.language,
+            basis="native",
+            series=self.series,
+            settings=self.settings,
+        )
 
     @abc.abstractmethod
     def train(self):
@@ -298,10 +323,9 @@ class Neural:
         """Predict tokens method implemented by native and dual subclasses"""
         return
 
-
     def predict_data(self, data):
         if not data:
-            logger.warn('No data to use in prediction.')
+            logger.warning("No data to use in prediction.")
             return []
 
         ids = [row[0] for row in data]
@@ -310,7 +334,7 @@ class Neural:
         return list(zip(ids, tokens, predictions))
 
     def predict(self, token):
-        return self.predict_data([['', token]])[0][2]
+        return self.predict_data([["", token]])[0][2]
 
 
 @attr.s
@@ -321,6 +345,7 @@ class NeuralNative(Neural):
     Determine cutpoint to detect loan words.
     Predict words as native if less than empirical entropy cut-point and loan otherwise.
     """
+
     fraction = attr.ib(default=None)
     settings = attr.ib(default=NeuralSettings())
 
@@ -331,15 +356,14 @@ class NeuralNative(Neural):
         self.fraction = self.fraction or self.settings.fraction
         self.cut_point = None
 
-
-
     # Train only native model if detect type is native.
     def train(self, epochs=None):
-        logger.info('training native model')
+        logger.info("training native model")
         self.native_history = self.native_model.train(
-                train_gen=self.native_data.trainer,
-                val_gen=self.native_data.validator,
-                epochs=epochs)
+            train_gen=self.native_data.trainer,
+            val_gen=self.native_data.validator,
+            epochs=epochs,
+        )
 
     def reset_cut_point(self, fraction=None):
         # Allows to set new fraction for prediction without having to start over.
@@ -348,9 +372,13 @@ class NeuralNative(Neural):
 
     def calculate_cut_point(self):
 
-        train_tokens_ids = self.native_data.get_data_tokens_ids(self.native_data.training)
+        train_tokens_ids = self.native_data.get_data_tokens_ids(
+            self.native_data.training
+        )
         entropies = self.native_model.calculate_entropies(train_tokens_ids)
-        self.cut_point = util.find_frac_cut_point(entropies=entropies, fraction=self.fraction)
+        self.cut_point = util.find_frac_cut_point(
+            entropies=entropies, fraction=self.fraction
+        )
 
     def predict_tokens(self, tokens):
         # Convert to tokens_ids and then calculate entropies.
@@ -363,7 +391,7 @@ class NeuralNative(Neural):
         tokens_ids = [self.vocab.translate(t) for t in tokens]
         native_entropies = self.native_model.calculate_entropies(tokens_ids)
 
-        return [int(entropy>self.cut_point) for entropy in native_entropies]
+        return [int(entropy > self.cut_point) for entropy in native_entropies]
 
 
 @attr.s
@@ -374,6 +402,7 @@ class NeuralDual(Neural):
     Determine entropy bias between native and loan entropy distributions.
     Predict words as native or loan based on whether native or loan calculates lesser entropy.
     """
+
     settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
@@ -382,38 +411,39 @@ class NeuralDual(Neural):
         super().__attrs_post_init__()
         self.cut_point = None
 
-
         self.loan_model = NeuralWordRecurrent(
-                vocab_len=self.vocab.size,
-                language=self.language,
-                basis='loan',
-                series=self.series,
-                settings=self.settings)
-
-
+            vocab_len=self.vocab.size,
+            language=self.language,
+            basis="loan",
+            series=self.series,
+            settings=self.settings,
+        )
 
     def train(self, epochs=None):
-        logger.info('training native model')
+        logger.info("training native model")
         self.native_history = self.native_model.train(
-                train_gen=self.native_data.trainer,
-                val_gen=self.native_data.validator,
-                epochs=epochs)
-        logger.info('training loan model')
+            train_gen=self.native_data.trainer,
+            val_gen=self.native_data.validator,
+            epochs=epochs,
+        )
+        logger.info("training loan model")
         self.loan_history = self.loan_model.train(
-                train_gen=self.loan_data.trainer,
-                val_gen=self.loan_data.validator,
-                epochs=epochs)
-
+            train_gen=self.loan_data.trainer,
+            val_gen=self.loan_data.validator,
+            epochs=epochs,
+        )
 
     def calculate_delta_entropies(self, tokens_ids):
         native_entropies = self.native_model.calculate_entropies(tokens_ids)
         loan_entropies = self.loan_model.calculate_entropies(tokens_ids)
-        deltas = [native - loan for native, loan in zip(native_entropies, loan_entropies)]
+        deltas = [
+            native - loan for native, loan in zip(native_entropies, loan_entropies)
+        ]
 
         return deltas
 
     def calculate_cut_point(self):
-        if self.settings.prediction_policy == 'zero':
+        if self.settings.prediction_policy == "zero":
             self.cut_point = 0
         else:
             # Use training data for calculation as most likely to be representative.
@@ -425,24 +455,29 @@ class NeuralDual(Neural):
             tokens_ids = self.native_data.get_data_tokens_ids(data)
             native_deltas = self.calculate_delta_entropies(tokens_ids)
 
-            if self.settings.prediction_policy == 'accuracy':
-                self.cut_point = util.find_acc_cut_point_deltas(native=native_deltas,
-                                                                loan=loan_deltas)
-                logger.info(f'Accuracy optimized prediction: cut_point ={self.cut_point:.4f}.')
+            if self.settings.prediction_policy == "accuracy":
+                self.cut_point = util.find_acc_cut_point_deltas(
+                    native=native_deltas, loan=loan_deltas
+                )
+                logger.info(
+                    f"Accuracy optimized prediction: cut_point ={self.cut_point:.4f}."
+                )
             else:  # fscore.
-                self.cut_point = util.find_fscore_cut_point_deltas(native=native_deltas,
-                                                                   loan=loan_deltas,
-                                                                   beta=self.settings.fscore_beta)
-                logger.info(f'F score optimized prediction: cut_point ={self.cut_point:.4f}.')
+                self.cut_point = util.find_fscore_cut_point_deltas(
+                    native=native_deltas,
+                    loan=loan_deltas,
+                    beta=self.settings.fscore_beta,
+                )
+                logger.info(
+                    f"F score optimized prediction: cut_point ={self.cut_point:.4f}."
+                )
 
     def predict_tokens(self, tokens):
         # Convert to tokens_ids and then calculate entropies.
         # Entropy calculation and predictions depend on whether native or dual.
-        if self.cut_point == None:
+        if self.cut_point is None:
             self.calculate_cut_point()
 
         tokens_ids = [self.vocab.translate(t) for t in tokens]
         deltas = self.calculate_delta_entropies(tokens_ids)
-        return [int(delta>self.cut_point) for delta in deltas]
-
-
+        return [int(delta > self.cut_point) for delta in deltas]

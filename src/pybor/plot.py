@@ -1,22 +1,30 @@
-from matplotlib import pyplot as plt
+"""
+Module for generation of plots.
+"""
+
+# Import Python standard libraries
 import statistics
+
+# Import 3rd-party libraries
+from matplotlib import pyplot as plt
 import numpy as np
 
-def graph_word_distribution_entropies(
-    entropies1=None,
-    entropies2=None,
-    output_path=None,
-    title='',
-    label1='',
-    label2='',
-    graph_limit=None,
-):
+
+def graph_word_distribution_entropies(**kwargs):
+
+    entropies1 = kwargs.get("entropies1", None)
+    entropies2 = kwargs.get("entropies2", None)
+    output_path = kwargs.get("output_path", None)
+    title = kwargs.get("title", "")
+    label1 = kwargs.get("label1", None)
+    label2 = kwargs.get("label2", None)
+    graph_limit = kwargs.get("graph_limit", None)
+
     # entropies1.
     # entropies2.
     # language - name of language for identification in figures and reports.
     # title - title for graph.
     # graphlimit - upper graph limit for histogram bins.
-
 
     cnt1 = f"{len(entropies1):6d}"
     avg1 = f"{statistics.mean(entropies1):6.3f}"
@@ -25,8 +33,11 @@ def graph_word_distribution_entropies(
     avg2 = f"{statistics.mean(entropies2):6.3f}"
     std2 = f"{statistics.stdev(entropies2):6.3f}"
 
-    limit = graph_limit if graph_limit is not None else (
-            max(max(entropies1[:-2]), max(entropies2[:-2])))
+    limit = (
+        graph_limit
+        if graph_limit is not None
+        else (max(max(entropies1[:-2]), max(entropies2[:-2])))
+    )
 
     # Set frame horizontal for this measure.
     bins = np.linspace(0, limit, 60)
@@ -35,28 +46,14 @@ def graph_word_distribution_entropies(
         entropies1,
         bins,
         alpha=0.65,
-        label=label1
-        + r"$(n="
-        + cnt1
-        + ", \mu="
-        + avg1
-        + ", \sigma="
-        + std1
-        + ")$",
+        label=f"{label1}$(n={cnt1}, \\mu={avg1}, \\sigma={std1})$",
         color="blue",
     )
     plt.hist(
         entropies2,
         bins,
         alpha=0.65,
-        label=label2
-        + r"$(n="
-        + cnt2
-        + ", \mu="
-        + avg2
-        + ", \sigma="
-        + std2
-        + ")$",
+        label=f"{label2}$(n={cnt2}, \\mu={avg2}, \\sigma={std2})$",
         color="red",
     )
     plt.grid(axis="y", alpha=0.8)

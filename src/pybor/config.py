@@ -1,49 +1,68 @@
 """
 Settings for different models.
 """
+
 import attr
 
-@attr.s
+
+@attr.s  # pylint: disable=too-many-instance-attributes,too-few-public-methods
 class BaseSettings:
+    """
+    Base configuration settings.
+    """
+
     val_split = attr.ib(default=0.0)
     test_split = attr.ib(default=0.15)
-    detect_type = attr.ib(default='dual')
+    detect_type = attr.ib(default="dual")
 
     verbose = attr.ib(default=1)
     print_summary = attr.ib(default=False, metadata={"deprecated": True})
     plot_model = attr.ib(default=False, metadata={"deprecated": True})
     plot_dpi = attr.ib(default=400, metadata={"deprecated": True})
 
-    output_path = attr.ib(default='./output')
+    output_path = attr.ib(default="./output")
 
-@attr.s
+
+@attr.s  # pylint: disable=too-many-instance-attributes,too-few-public-methods
 class NeuralSettings(BaseSettings):
-    language = attr.ib(default='')
-    series = attr.ib(default='')
+    """
+    Neural model settings.
+    """
+
+    language = attr.ib(default="")
+    series = attr.ib(default="")
 
     batch_size = attr.ib(default=32)
     skip_step = attr.ib(default=5)
     token_maxlen = attr.ib(default=30)
     oversample = attr.ib(default=False)
-    model_type = attr.ib(default='recurrent')  # recurrent
+    model_type = attr.ib(default="recurrent")  # recurrent
     fraction = attr.ib(default=0.995)  # For Native model.
-    prediction_policy = attr.ib(default='zero')  # zero, accuracy, fscore
+    prediction_policy = attr.ib(default="zero")  # zero, accuracy, fscore
     fscore_beta = attr.ib(default=1.0)
 
 
-@attr.s
+@attr.s  # pylint: disable=too-many-instance-attributes,too-few-public-methods
 class EntropiesSettings(NeuralSettings):
+    """
+    Entropy model settings.
+    """
+
     # While not strictly a child of NeuralSettings, it seems more convenient.
     tf_verbose = attr.ib(default=0)
-    basis = attr.ib(default='all')
+    basis = attr.ib(default="all")
 
 
-@attr.s
+@attr.s  # pylint: disable=too-many-instance-attributes,too-few-public-methods
 class RecurrentSettings(EntropiesSettings):
+    """
+    Recurrent model settings.
+    """
+
     # Architecture parameters
     embedding_len = attr.ib(default=32)
     rnn_output_len = attr.ib(default=32)
-    rnn_cell_type = attr.ib(default='GRU')  # GRU, LSTM
+    rnn_cell_type = attr.ib(default="GRU")  # GRU, LSTM
     rnn_levels = attr.ib(default=1)  # 1, 2
 
     # Dropout and regulation parameters
@@ -61,9 +80,13 @@ class RecurrentSettings(EntropiesSettings):
     restore_best_weights = attr.ib(default=True)
 
 
-@attr.s
+@attr.s  # pylint: disable=too-many-instance-attributes,too-few-public-methods
 class MarkovSettings(BaseSettings):
-    model = attr.ib(default='kni')
+    """
+    Markov model settings.
+    """
+
+    model = attr.ib(default="kni")
     order = attr.ib(default=3)
-    p = attr.ib(default=0.995)
+    p = attr.ib(default=0.995)  # pylint: disable=invalid-name
     smoothing = attr.ib(default=0.3)

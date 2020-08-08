@@ -148,10 +148,11 @@ def get_mean_entropies(data, word):
     return (fit_mean_entropy, val_mean_entropy, test_mean_entropy)
 
 def test_train_model_with_cfg():
-    data = NeuralData(training1, testing1)
 
-    settings = RecurrentSettings(rnn_cell_type='LSTM', epochs=10, embedding_dropout=0.1)
+    settings = RecurrentSettings(rnn_cell_type='LSTM', epochs=10,
+                                embedding_dropout=0.1, val_split=0.15)
 
+    data = NeuralData(training1, testing1, settings=settings)
     word = NeuralWordRecurrent(data.vocab.size, language='German', settings=settings)
     word.train(train_gen=data.trainer, val_gen=data.validator)
     word.evaluate_test(test_gen=data.tester)

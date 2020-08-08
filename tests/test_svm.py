@@ -1,3 +1,10 @@
+
+"""
+To test and report coverage:
+
+% pytest tests/test_svm.py --cov=pybor.svm --cov-report term-missing
+
+"""
 import pytest
 from pybor.svm import BagOfSounds
 from pybor.dev.data import testing, training

@@ -8,7 +8,7 @@ import statistics
 # Import 3rd-party libraries
 from matplotlib import pyplot as plt
 import numpy as np
-
+import math
 
 def graph_word_distribution_entropies(entropies1, entropies2, output_path, **kwargs):
     title = kwargs.get("title", "")
@@ -29,14 +29,12 @@ def graph_word_distribution_entropies(entropies1, entropies2, output_path, **kwa
     avg2 = f"{statistics.mean(entropies2):6.3f}"
     std2 = f"{statistics.stdev(entropies2):6.3f}"
 
-    limit = (
-        graph_limit
-        if graph_limit is not None
-        else (max(max(entropies1[:-2]), max(entropies2[:-2])))
-    )
+    entropies = sorted(entropies1 + entropies2)
+    upper_limit = graph_limit if graph_limit is not None else math.ceil(entropies[-3])
+    lower_limit = min(0, math.floor(entropies[3]))
 
     # Set frame horizontal for this measure.
-    bins = np.linspace(0, limit, 60)
+    bins = np.linspace(lower_limit, upper_limit, 60)
     plt.figure(figsize=(8, 5))
     plt.hist(
         entropies1,

@@ -1,0 +1,18 @@
+language,donor,table_len,borrowed_len,native_len,donor_len,donor_frac
+Swahili,Arabic,1830,443,1387,331,0.7472
+Hausa,Arabic,1668,330,1338,123,0.3727
+Tarifiyt Berber,Arabic (Moroccan),1688,826,862,665,0.8051
+Romanian,French,2270,908,1362,283,0.3117
+Selice Romani,Hungarian,1732,993,739,792,0.7976
+Lower Sorbian,New High German,1765,348,1417,217,0.6236
+English,French,1516,585,931,373,0.6376
+Bezhta,Avar,1473,441,1032,268,0.6077
+Sakha,Russian,1588,395,1193,253,0.6405
+Japanese,Chinese,2131,631,1500,494,0.7829
+Thai,Sanskrit,2107,454,1653,260,0.5727
+Ceq Wong,Malay,956,318,638,318,1.0000
+Indonesian,Sanskrit,2049,619,1430,132,0.2132
+Takia,Tok Pisin,1329,308,1021,248,0.8052
+Yaqui,Spanish,1615,387,1228,386,0.9974
+Saramaccan,Suriname Portuguese,1303,462,841,242,0.5238
+Imbabura Quechua,Spanish,1319,369,950,359,0.9729

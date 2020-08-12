@@ -1,0 +1,30 @@
+language,donor,table_len,borrowed_len,native_len,donor_len,donor_frac
+Swahili,Arabic,1830,443,1387,331,0.7472
+Hausa,Arabic,1668,330,1338,123,0.3727
+Kanuri,Arabic,1591,281,1310,142,0.5053
+Tarifiyt Berber,Arabic (Moroccan),1688,826,862,665,0.8051
+Romanian,French,2270,908,1362,283,0.3117
+Selice Romani,Hungarian,1732,993,739,792,0.7976
+Lower Sorbian,New High German,1765,348,1417,217,0.6236
+Dutch,French,1588,295,1293,106,0.3593
+English,French,1516,585,931,373,0.6376
+Kildin Saami,Russian,1473,280,1193,176,0.6286
+Bezhta,Avar,1473,441,1032,268,0.6077
+Archi,Avar,1254,268,986,77,0.2873
+Sakha,Russian,1588,395,1193,253,0.6405
+Japanese,Chinese,2131,631,1500,494,0.7829
+Thai,Sanskrit,2107,454,1653,260,0.5727
+Vietnamese,Chinese,1534,281,1253,254,0.9039
+White Hmong,Chinese,1474,229,1245,158,0.6900
+Ceq Wong,Malay,956,318,638,318,1.0000
+Indonesian,Sanskrit,2049,619,1430,132,0.2132
+Malagasy,French,1680,210,1470,90,0.4286
+Takia,Tok Pisin,1329,308,1021,248,0.8052
+Hawaiian,English,1544,248,1296,199,0.8024
+Yaqui,Spanish,1615,387,1228,386,0.9974
+Zinacantán Tzotzil,Spanish,1413,202,1211,201,0.9950
+Q'eqchi',Spanish,1995,209,1786,201,0.9617
+Otomi,Spanish,2558,251,2307,251,1.0000
+Saramaccan,Suriname Portuguese,1303,462,841,242,0.5238
+Imbabura Quechua,Spanish,1319,369,950,359,0.9729
+Mapudungun,Spanish,1412,282,1130,261,0.9255

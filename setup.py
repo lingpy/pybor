@@ -27,7 +27,7 @@ setup(
     include_package_data=True,
     install_requires=install_requires,
     keywords="borrowing, language contact, sequence comparison",
-    license="GPL",
+    license="Apache License 2.0",
     long_description_content_type="text/markdown",
     long_description=codecs.open("README.md", "r", "utf-8").read(),
     name=pkgname,

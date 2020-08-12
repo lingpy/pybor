@@ -33,6 +33,7 @@ setup(
     name=pkgname,
     package_dir={"": "src"},
     packages=find_packages(where="src"),
+    python_requires='>=3.6',
     url="https://github.com/lingpy/pybor/",
     version="0.1.1",  # remember to sync with __init__.py
     zip_safe=False,

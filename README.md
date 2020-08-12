@@ -17,6 +17,13 @@ package with `pip`:
 ```bash
 $ pip install pybor
 ```
+
+To use the default `wold` package, you will also need to install
+
+```bash
+$ pip install wold/
+```
+
 Detailed instructions can be found in the [docs](official documentation).
 
 ## Changelog

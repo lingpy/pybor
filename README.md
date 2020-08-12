@@ -12,16 +12,16 @@ analyses.
 ## Installation and usage
 
 Upon release, it will be possible to install the library as any standard Python
-package with `pip`:
+package with `pip`. Currently, the library must be installed from source:
 
 ```bash
-$ pip install pybor
+$ pip install .
 ```
 
-To use the default `wold` package, you will also need to install
+To use the default `wold` package, you will also need to install it in edit mode:
 
 ```bash
-$ pip install wold/
+$ pip install -e wold/
 ```
 
 Detailed instructions can be found in the [docs](official documentation).

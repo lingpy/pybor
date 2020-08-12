@@ -53,30 +53,31 @@ def test_find_acc_cut_point():
     # max score is 8, cut_point is 2.0
 
     cut_point = util.find_acc_cut_point(native, loan)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 2.0
+
 
 def test_find_frac_cut_point():
     native = [0.5, 1.0, 1.25, 1.5, 2.0, 3.0]
 
     cut_point = util.find_frac_cut_point(native, fraction=0.5)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 1.375
 
     cut_point = util.find_frac_cut_point(native, fraction=0.95)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 2.5  # Bias to within the distribution
 
     cut_point = util.find_frac_cut_point(native, fraction=0.05)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 0.75  # Bias to within the distribution
 
     cut_point = util.find_frac_cut_point(native, fraction=1.0)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 3.0
 
     cut_point = util.find_frac_cut_point(native, fraction=0.0)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 0.5
 
 
@@ -91,15 +92,16 @@ def test_find_acc_cut_point_deltas():
     loan = [0.35, 1.5, 2.5, 3.0]
 
     cut_point = util.find_acc_cut_point_deltas(native, loan)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 1.0
 
     native = [-1.5, -1.0, -0.75, -0.5, 0.0, 1.0]
     loan = [-0.65, 0.5, 1.5, 2.0]
 
     cut_point = util.find_acc_cut_point_deltas(native, loan)
-    print('cut_point', cut_point)
+    print("cut_point", cut_point)
     assert cut_point == 0.0
+
 
 def test_find_fscore_cut_point_deltas():
     native = [-1.5, -1.0, -0.75, -0.5, 0.0, 1.0]
@@ -108,8 +110,9 @@ def test_find_fscore_cut_point_deltas():
     print(loan)
 
     f = util.find_fscore_cut_point_deltas(native, loan)
-    print(f'cut_point {f:.2f}.')
+    print(f"cut_point {f:.2f}.")
     assert f == 0.0
+
 
 def test_calculate_fscore():
     n_true_pos = 3
@@ -117,7 +120,7 @@ def test_calculate_fscore():
     n_pos = 8
 
     f = util.calculate_fscore(n_true_pos, n_true, n_pos)
-    print(f'fscore {f:.4f}.')
+    print(f"fscore {f:.4f}.")
     assert abs(f - 0.4615) < 0.0001
 
     f = util.calculate_fscore(n_true_pos, n_true, 0)
@@ -127,15 +130,17 @@ def test_calculate_fscore():
     f = util.calculate_fscore(0, n_true, n_pos)
     assert f == 0
 
+
 def test_train_test_split():
 
     train, test = util.train_test_split(training1, split=0.20)
-    assert len(train) == int(0.80*len(training1))
-    assert len(test) == int(math.ceil(0.20*len(training1)))
+    assert len(train) == int(0.80 * len(training1))
+    assert len(test) == int(math.ceil(0.20 * len(training1)))
 
 
 def test_logger():
     logger = util.get_logger(__name__)
+
 
 if __name__ == "__main__":
     test_find_acc_cut_point()

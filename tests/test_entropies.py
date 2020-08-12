@@ -15,7 +15,7 @@ Install pytest and pytest-cov with pip
 Save test files to ./tests
 
 Run test file:
-$ pytest testys/test_entropies.py -—cov=pybor.entropies
+$ pytest tests/test_entropies.py -—cov=pybor.entropies
 
 Or to save as html report:
 $ pytest tests/test_entropies.py -—cov=pybor.entropies --cov-report=html

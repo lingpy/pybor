@@ -9,7 +9,7 @@ false_positive(tests, testing, pprint=True)
 
 prec, rec, fs, acc = prf(tests, testing)
 if all([prec, rec, fs, acc]):
-    print('Precision: {0:.2f}'.format(prec))
-    print('Recall:    {0:.2f}'.format(rec))
-    print('F-Score:   {0:.2f}'.format(fs))
-    print('Accuracy:  {0:.2f}'.format(acc))
+    print("Precision: {0:.2f}".format(prec))
+    print("Recall:    {0:.2f}".format(rec))
+    print("F-Score:   {0:.2f}".format(fs))
+    print("Accuracy:  {0:.2f}".format(acc))

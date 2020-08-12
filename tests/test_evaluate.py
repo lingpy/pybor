@@ -56,32 +56,38 @@ def test_prf():
     assert p == 0
     assert a == calc_acc(new_data2, new_data)
 
-def calc_acc(test, gold):
-    correct = sum([t==g for t, g in zip(test, gold)])
-    return correct/len(test)
 
+def calc_acc(test, gold):
+    correct = sum([t == g for t, g in zip(test, gold)])
+    return correct / len(test)
 
 
 def test_prf_benchmark():
     import sklearn.metrics as metrics
 
-    gold = [1]*50 + [0]*50
-    test = [1, 1, 0, 1]*25
+    gold = [1] * 50 + [0] * 50
+    test = [1, 1, 0, 1] * 25
 
-    p_, r_, f_ = metrics.precision_recall_fscore_support(gold, test, average='binary')[:-1]
+    p_, r_, f_ = metrics.precision_recall_fscore_support(gold, test, average="binary")[
+        :-1
+    ]
     acc_ = metrics.accuracy_score(gold, test)
-    print(f'benchmark: prec, recall, f1, acc = {(p_, r_, f_, acc_)}')
+    print(f"benchmark: prec, recall, f1, acc = {(p_, r_, f_, acc_)}")
 
     # Expects datsets of [id, [form], loan] where loan is either test or gold indicators
     t100 = testing[:100]
     ids100 = [row[0] for row in t100]
     forms100 = [row[1] for row in t100]
 
-    test_ds = [[ident, form, test_] for ident, form, test_ in zip(ids100, forms100, test)]
-    gold_ds = [[ident, form, gold_] for ident, form, gold_ in zip(ids100, forms100, gold)]
+    test_ds = [
+        [ident, form, test_] for ident, form, test_ in zip(ids100, forms100, test)
+    ]
+    gold_ds = [
+        [ident, form, gold_] for ident, form, gold_ in zip(ids100, forms100, gold)
+    ]
 
     p, r, f, a = prf(test_ds, gold_ds)
-    print(f'code: prec, recall, f1, acc = {(p, r, f, a)}')
+    print(f"code: prec, recall, f1, acc = {(p, r, f, a)}")
 
     assert abs(p - p_) < 1e-7
     assert abs(r - r_) < 1e-7
@@ -92,20 +98,26 @@ def test_prf_benchmark():
 def test_evaluate_model():
     import sklearn.metrics as metrics
 
-    gold = [1]*50 + [0]*50
-    test = [1, 1, 0, 1]*25
+    gold = [1] * 50 + [0] * 50
+    test = [1, 1, 0, 1] * 25
 
-    p_, r_, f_ = metrics.precision_recall_fscore_support(gold, test, average='binary')[:-1]
+    p_, r_, f_ = metrics.precision_recall_fscore_support(gold, test, average="binary")[
+        :-1
+    ]
     acc_ = metrics.accuracy_score(gold, test)
-    print(f'benchmark: prec, recall, f1, acc = {(p_, r_, f_, acc_)}')
+    print(f"benchmark: prec, recall, f1, acc = {(p_, r_, f_, acc_)}")
 
     # Expects datsets of [id, [form], loan] where loan is either test or gold indicators
     t100 = testing[:100]
     ids100 = [row[0] for row in t100]
     forms100 = [row[1] for row in t100]
 
-    test_ds = [[ident, form, test_] for ident, form, test_ in zip(ids100, forms100, test)]
-    gold_ds = [[ident, form, gold_] for ident, form, gold_ in zip(ids100, forms100, gold)]
+    test_ds = [
+        [ident, form, test_] for ident, form, test_ in zip(ids100, forms100, test)
+    ]
+    gold_ds = [
+        [ident, form, gold_] for ident, form, gold_ in zip(ids100, forms100, gold)
+    ]
 
     results = evaluate_model(test_ds, gold_ds)
 

@@ -51,22 +51,23 @@ import pytest
 def test_vocab():
     data = NeuralData(training1)
 
-    print(f'len(vocab)={len(data.vocab)}.')
+    print(f"len(vocab)={len(data.vocab)}.")
     assert len(data.vocab) == 114
-    print(f'vocab.size={data.vocab.size}.')
-    assert data.vocab.size == len(data.vocab.vocab)//2
-    print(f'vocab[15]={data.vocab[15]}.')
+    print(f"vocab.size={data.vocab.size}.")
+    assert data.vocab.size == len(data.vocab.vocab) // 2
+    print(f"vocab[15]={data.vocab[15]}.")
     assert data.vocab[15] == data.vocab.vocab[15]
-    print(f'vocab.get(15)={data.vocab.get(15)}.')
-    assert data.vocab.get('u') == data.vocab.vocab['u']
-    print(f'vocab.get(16)={data.vocab.get(16)}.')
+    print(f"vocab.get(15)={data.vocab.get(15)}.")
+    assert data.vocab.get("u") == data.vocab.vocab["u"]
+    print(f"vocab.get(16)={data.vocab.get(16)}.")
     print(f'vocab.get(15,"<unk>")={data.vocab.get(15,"<unk>")}.')
     assert data.vocab.get(15, "<unk>") == data.vocab.vocab[15]
     print(f'vocab.get(255,"<unk>")={data.vocab.get(255,"<unk>")}.')
     assert data.vocab.get(255, "<unk>") == "<unk>"
 
+
 def test_data():
-    settings =NeuralSettings(val_split=0.15)  # To assure we have defined val_len
+    settings = NeuralSettings(val_split=0.15)  # To assure we have defined val_len
     data = NeuralData(training1, testing1, settings=settings)
     tokens = data.get_data_tokens(data.fit)
     assert len(tokens) == len(data.fit)
@@ -89,11 +90,13 @@ def test_data():
     # Iterate at least 1ce through generator.
     gen = trainer.generate()
     x, y = next(gen)
-    print('x=', x)
-    print('y=', y)
-    steps = trainer.data_len//trainer.batch_size
+    print("x=", x)
+    print("y=", y)
+    steps = trainer.data_len // trainer.batch_size
     for i, (x, y) in enumerate(gen):
-        if i > steps: break
+        if i > steps:
+            break
+
 
 def test_data1():
     # Without testing data and with val_split == 0.
@@ -102,7 +105,7 @@ def test_data1():
     # Set via settings for now.
     data = NeuralData(training1, val_split=0.0, settings=settings)
     assert data.val_split == 0.0
-    print(f'val_split {data.val_split}')
+    print(f"val_split {data.val_split}")
 
     tokens = data.get_data_tokens(data.fit)
     assert len(tokens) == len(data.fit)
@@ -128,12 +131,13 @@ def test_data1_1():
     data = NeuralData(training1, val_split=0.0)
     assert data.val_split == 0.0
 
+
 def test_instantiation():
     # Reduce time for test with fewer epochs
     settings = RecurrentSettings(epochs=10, tf_verbose=1)
     neural = NeuralDual(testing=testing1, training=training1, settings=settings)
     assert neural.vocab is not None
-    assert neural.model_type == 'recurrent'
+    assert neural.model_type == "recurrent"
     assert neural.native_data is not None
     assert neural.native_data.testing is not None
     assert neural.native_model is not None
@@ -147,9 +151,9 @@ def test_instantiation():
 
 
 def test_instantiation2():
-    neural = NeuralDual(training1, testing1, model_type='recurrent', language='German')
-    assert neural.language == 'German'
-    assert neural.model_type == 'recurrent'
+    neural = NeuralDual(training1, testing1, model_type="recurrent", language="German")
+    assert neural.language == "German"
+    assert neural.model_type == "recurrent"
     assert neural.native_data.testing is not None
     assert neural.native_model is not None
     assert neural.loan_data.testing is not None
@@ -163,9 +167,9 @@ def test_instantiation2():
 
 def test_train_no_testing():
     # Without testing data
-    neural = NeuralDual(training1, model_type='recurrent', language='German')
-    assert neural.language == 'German'
-    assert neural.model_type == 'recurrent'
+    neural = NeuralDual(training1, model_type="recurrent", language="German")
+    assert neural.language == "German"
+    assert neural.model_type == "recurrent"
     assert neural.native_model is not None
     assert neural.loan_model is not None
     assert isinstance(neural, NeuralDual)
@@ -176,20 +180,30 @@ def test_train_no_testing():
 
     neural.train()
 
-    neural = NeuralNative(training1, model_type='recurrent', language='German')
+    neural = NeuralNative(training1, model_type="recurrent", language="German")
     neural.train()
 
-    neural = NeuralDual(training1, testing=None, model_type='recurrent', language='German')
+    neural = NeuralDual(
+        training1, testing=None, model_type="recurrent", language="German"
+    )
 
-    neural = NeuralNative(training1, testing=None, model_type='recurrent', language='German')
+    neural = NeuralNative(
+        training1, testing=None, model_type="recurrent", language="German"
+    )
+
 
 def test_train_no_val_test():
     # Without testing data
     settings = RecurrentSettings(val_split=0.0)
-    neural = NeuralDual(training1, model_type='recurrent',
-                        language='German', val_split=0, settings=settings)
-    assert neural.language == 'German'
-    assert neural.model_type == 'recurrent'
+    neural = NeuralDual(
+        training1,
+        model_type="recurrent",
+        language="German",
+        val_split=0,
+        settings=settings,
+    )
+    assert neural.language == "German"
+    assert neural.model_type == "recurrent"
     assert neural.native_model is not None
     assert neural.loan_model is not None
     assert isinstance(neural, NeuralDual)
@@ -199,36 +213,36 @@ def test_train_no_val_test():
     assert isinstance(neural.loan_model.settings, RecurrentSettings)
     neural.train()
 
-    neural = NeuralNative(training1, model_type='recurrent',
-                          language='German', settings=settings)
+    neural = NeuralNative(
+        training1, model_type="recurrent", language="German", settings=settings
+    )
     neural.train()
+
 
 def test_neural_language_alphabets():
     import pickle
     import pybor.wold as wold
     import pybor.neural as neubor
 
-
     def neural_language_alphabets(language=None, form=None):
         wolddb = wold.get_wold_access()
         table = wolddb.get_table(
-                    language=language,
-                    form=form,
-                    classification='Borrowed'
-                    )
-        print(f'Neural vocabulary for language{language} with len(datat) {len(table)}.')
-        #print("sample from table: ", table[:3])
+            language=language, form=form, classification="Borrowed"
+        )
+        print(f"Neural vocabulary for language{language} with len(datat) {len(table)}.")
+        # print("sample from table: ", table[:3])
         neural = neubor.NeuralDual(training=table, language=language)
-        print(f'Alphabet size for {language} with |V|={(neural.vocab.size)}.')
+        print(f"Alphabet size for {language} with |V|={(neural.vocab.size)}.")
         assert neural.vocab.size >= 30 and neural.vocab.size <= 100
         tokens_ids = neural.native_data.get_data_tokens_ids(table[:3])
         for ids in tokens_ids:
-            #print('ids:', ids)
-            assert '<unk>' not in ids
+            # print('ids:', ids)
+            assert "<unk>" not in ids
 
-    languages=['English', 'Indonesian', 'Hausa', 'Oroqen']
+    languages = ["English", "Indonesian", "Hausa", "Oroqen"]
     for language in languages:
-        neural_language_alphabets(language, form='Tokens')
+        neural_language_alphabets(language, form="Tokens")
+
 
 # =============================================================================
 #
@@ -236,10 +250,16 @@ def test_neural_language_alphabets():
 #
 # =============================================================================
 
+
 def test_prediction():
     settings = RecurrentSettings(epochs=50)
-    neural = NeuralDual(training1, testing1, model_type='recurrent',
-                        language='German', settings=settings)
+    neural = NeuralDual(
+        training1,
+        testing1,
+        model_type="recurrent",
+        language="German",
+        settings=settings,
+    )
     assert neural.loan_model
     neural.train()
 
@@ -252,11 +272,18 @@ def test_prediction():
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
     evaluate.false_positive(predictions, testing1)
+
+
 #
 def test_prediction1():
     settings = RecurrentSettings(epochs=30)
-    neural = NeuralNative(training1, testing1, model_type='recurrent',
-                          language='German', settings=settings)
+    neural = NeuralNative(
+        training1,
+        testing1,
+        model_type="recurrent",
+        language="German",
+        settings=settings,
+    )
     neural.train()
 
     print("Evaluate train dataset.")
@@ -268,14 +295,21 @@ def test_prediction1():
     predictions = neural.predict_data(testing1)
     test_metrics = evaluate.evaluate_model(predictions, testing1)
     evaluate.false_positive(predictions, testing1)
+
+
 #
 
 
 def test_prediction4():
-    settings = RecurrentSettings(epochs=20, prediction_policy='accuracy')
-    neural = NeuralDual(training1, testing1, model_type='recurrent',
-                          language='German', settings=settings)
-    assert neural.settings.prediction_policy == 'accuracy'
+    settings = RecurrentSettings(epochs=20, prediction_policy="accuracy")
+    neural = NeuralDual(
+        training1,
+        testing1,
+        model_type="recurrent",
+        language="German",
+        settings=settings,
+    )
+    assert neural.settings.prediction_policy == "accuracy"
 
     neural.train()
 
@@ -284,10 +318,15 @@ def test_prediction4():
     test_metrics = evaluate.evaluate_model(predictions, testing1)
     evaluate.false_positive(predictions, testing1)
 
-    settings = RecurrentSettings(epochs=20, prediction_policy='fscore')
-    neural = NeuralDual(training1, testing1, model_type='recurrent',
-                          language='German', settings=settings)
-    assert neural.settings.prediction_policy == 'fscore'
+    settings = RecurrentSettings(epochs=20, prediction_policy="fscore")
+    neural = NeuralDual(
+        training1,
+        testing1,
+        model_type="recurrent",
+        language="German",
+        settings=settings,
+    )
+    assert neural.settings.prediction_policy == "fscore"
     neural.train()
 
     print("Evaluate test dataset.")
@@ -297,12 +336,12 @@ def test_prediction4():
 
 
 if __name__ == "__main__":
-    #test_vocab()
-    #test_data()
-    #test_data1()
+    # test_vocab()
+    # test_data()
+    # test_data1()
     ##test_data1_1()
-    #test_instantiation3()
-    #test_train_no_testing()
-    #test_train_no_val_test()
+    # test_instantiation3()
+    # test_train_no_testing()
+    # test_train_no_val_test()
     test_neural_language_alphabets()
-    #test_prediction()
+    # test_prediction()

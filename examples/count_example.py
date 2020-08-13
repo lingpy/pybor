@@ -1,5 +1,6 @@
 # Import Python standard libraries
 import pickle
+from pathlib import Path
 
 # Import 3rd-party libraries
 from tabulate import tabulate
@@ -9,8 +10,8 @@ import pyclts
 import pybor.wold as wold
 
 # Build CLTS object
-# TODO: use default and accept user path
-clts = pyclts.CLTS("/home/tresoldi/.config/cldf/clts")
+clts_path = Path.home() / ".config" / "cldf" / "clts"
+clts = pyclts.CLTS(clts_path)
 
 
 def get_bigrams(sequence):

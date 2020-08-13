@@ -24,7 +24,14 @@ To use the default `wold` package, you will also need to install it in edit mode
 $ pip install -e wold/
 ```
 
-Detailed instructions can be found in the [docs](official documentation).
+Some evaluation methods need a copy of the the CLTS data distribution. This
+can be obtained with the following command (note that this will clone all
+catalog repositories form GitHub, and as such might take a while over slow
+connections):
+
+```bash
+cldfbench catconfig -q
+```
 
 ## Changelog
 

@@ -1,6 +1,6 @@
 Commands for constructing tables for in the paper "Using lexical language models to detect borrowings in monolingual wordlists".
 
-# Detection of artificially borrowings:
+# Detection of artificial borrowings:
 
 ## Bag of Sounds
 
@@ -67,8 +67,6 @@ Cross-validation of borrowing detection on real language data results are strati
 
 # Comparing entropy distributions to investigate borrowing prediction performance
 
-This analysis was performed in a Jupyter notebook.  
+This analysis is performed in a Jupyter notebook.  It uses modules from PyBor.
 
-*** The notebook would be called experimental at best.  
-I would need to reduce to something pretty basic to make useful.  
-Maybe worth the effort as it is useful to show the distributions. ***
+notebooks/entropy_distributions.ipynb

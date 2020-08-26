@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # Load Python standard libraries
 from pathlib import Path
 from statistics import mean
@@ -16,9 +14,6 @@ from pybor.svm import BagOfSounds
 import pybor.util as util
 import pybor.wold as wold
 
-logger = util.get_logger(__name__)
-
-
 def bigrams(sequence):
     return list(zip(["^"] + sequence[:-1], sequence[1:] + ["$"]))
 
@@ -33,7 +28,9 @@ def trigrams(sequence):
     )
 
 
-def run_experiment(model_name, language_, form, brate, order, test_split, verbose):
+def run_experiment(
+        model_name, language_, form, brate, order, test_split,
+        verbose, output):
 
     # output buffer
     buffer = ["Language,Precision,Recall,Fs,Accuracy"]
@@ -131,20 +128,19 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
     print(totals)
 
     # Write results to disk
-    output_path = Path(__file__).parent.parent.absolute()
-    output_path = (
-        output_path
-        / "output"
-        / f"fakeborrowing_{model_name}_{language_}_{form}_{brate:.1f}br.csv"
-    )
+    output_path = Path(output).joinpath(
+            f"fakeborrowing_{model_name}_{language_}_{form}_{brate:.1f}br.csv"
+            ).as_posix()
 
-    with open(output_path.as_posix(), "w") as handler:
+    with open(output_path, "w") as handler:
         for row in buffer:
             handler.write(row)
             handler.write("\n")
 
 
 if __name__ == "__main__":
+    logger = util.get_logger(__name__)
+
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -189,6 +185,10 @@ if __name__ == "__main__":
     parser.add_argument(
         "--verbose", type=bool, default=False, help="Verbose reporting (default: False)"
     )
+    parser.add_argument(
+        "--output",
+        default="output",
+        help="output")
     args = parser.parse_args()
     languages = "all" if args.languages[0] == "all" else args.languages
 
@@ -200,4 +200,5 @@ if __name__ == "__main__":
         args.order,
         args.split,
         args.verbose,
+        args.output
     )

@@ -27,10 +27,6 @@ import pybor.util as util
 import pybor.wold as wold
 
 
-output_path = Path(config.BaseSettings().output_path).resolve()
-logger = util.get_logger(__name__)
-
-
 def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=None):
     def fn(
         language,
@@ -119,7 +115,7 @@ def print_summary(title, header, labels, summary):
 def summarize_cross_validation(
     file_path, form, model_name, mode, k_fold, holdout_n, series
 ):
-    with open(file_path.as_posix(), "r", newline="") as fl:
+    with open(file_path, "r", newline="") as fl:
         reader = csv.reader(fl)
         results = list(reader)
 
@@ -165,6 +161,7 @@ def cross_validate_model(
     series="",
     donor_num=0,
     min_borrowed=0,
+    output="output",
     settings=None,
 ):
 
@@ -180,8 +177,8 @@ def cross_validate_model(
 
     filename += f"-{model_name}-{form}-{series}-prfa.csv"
 
-    file_path = output_path / filename
-    with open(file_path.as_posix(), "w", newline="") as fl:
+    file_path = Path(output).joinpath(filename).as_posix()
+    with open(file_path, "w", newline="") as fl:
         writer = csv.writer(fl)
         writer.writerow(
             [
@@ -214,7 +211,10 @@ def cross_validate_model(
 
 
 if __name__ == "__main__":
+    logger = util.get_logger(__name__)
+
     parser = argparse.ArgumentParser()
+
     parser.add_argument(
         "model",
         type=str,
@@ -296,6 +296,10 @@ if __name__ == "__main__":
         type=bool,
         help="Verbose operation for the methods that support it (default: False)",
     )
+    parser.add_argument(
+        "--output",
+        default="output",
+        help="output")
     args = parser.parse_args()
     languages = "all" if args.languages[0] == "all" else args.languages
 
@@ -320,5 +324,6 @@ if __name__ == "__main__":
         donor_num=args.donor,
         min_borrowed=args.min_borrowed,
         series=args.series,
+        output=args.output,
         settings=settings,
     )

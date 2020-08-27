@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Load Python standard libraries
 from pathlib import Path
 from statistics import mean

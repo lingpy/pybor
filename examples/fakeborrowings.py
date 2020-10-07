@@ -51,6 +51,7 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
     wolddb = wold.get_wold_access()
     languages = wold.check_wold_languages(wolddb, language_)
 
+    print()
     for language in languages:
         # Set training and test lists
         # train, test = [], []
@@ -69,6 +70,7 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
         test_add_len = sum([row[2] for row in test])
         # Seed native German words into training and test
 
+        print(f'Fake borrowings at {1/brate:.3f} for {language}')
         if verbose:
             logger.info(
                 f"{language} language, {form} form, table len {len(table)}, "
@@ -111,6 +113,8 @@ def run_experiment(model_name, language_, form, brate, order, test_split, verbos
                 neural = NeuralDual(train)
                 neural.train()
                 guess = neural.predict_data(test)
+                neural.dispose()
+
 
         # Collect performance statistics
         p, r, f, a = prf(test, guess)

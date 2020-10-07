@@ -20,16 +20,19 @@ import math
 import attr
 
 # Import tensorflow
+import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping  # ModelCheckpoint,
 from tensorflow.keras.layers import Concatenate
-from tensorflow.keras.layers import Dense, Embedding, Dropout
+from tensorflow.keras.layers import Dense, Embedding, Dropout, Softmax
 from tensorflow.keras.layers import GRU, LSTM
 from tensorflow.keras.layers import Input
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.regularizers import l2
+from tensorflow.keras.regularizers import l2, l1
 from tensorflow.keras.utils import plot_model
+from tensorflow import clip_by_value
+from tensorflow.keras import Sequential
 
 # from tensorflow.keras import backend as K
 
@@ -40,6 +43,7 @@ import pybor.config as cfg
 output_path = Path(cfg.BaseSettings().output_path).resolve()
 logger = util.get_logger(__name__)
 
+EPSILON = 1e-7  # Used with prediction for clipping.
 
 @attr.s
 class NeuralWord:
@@ -55,6 +59,7 @@ class NeuralWord:
     basis = attr.ib(default="all")
     series = attr.ib(default="")
     model = attr.ib(init=False)
+    prob_model = attr.ib(init=False)
 
     def __attrs_post_init__(self):
         """
@@ -117,24 +122,24 @@ class NeuralWord:
 
         x_tf = pad_sequences(x_lst, padding="post", maxlen=maxlen)
 
-        x_probs = self.model.predict(x_tf)
+        y_probs = self.prob_model.predict(x_tf)
 
         # Compute cross-entropies
 
         entropies = []
-        # EPSILON = 1e-7
-        for x_ids_probs, y_ids in zip(x_probs, y_lst):
+        for y_ids_probs, y_ids in zip(y_probs, y_lst):
             # Prevent overflow/underflow with clipping.
-            # x_ids_probs_ = tf.clip_by_value(x_ids_probs,  EPSILON, 1-EPSILON)
-            x_ids_lns = [
-                math.log(x_ids_probs[i, y_ids[i]])
+            y_ids_probs_ = clip_by_value(y_ids_probs,  EPSILON, 1-EPSILON)
+            y_ids_lns = [
+                math.log(y_ids_probs_[i, y_ids[i]])
                 for i in range(min(maxlen, len(y_ids)))
             ]
-            entropy = -sum(x_ids_lns) / len(x_ids_lns)
+            entropy = -sum(y_ids_lns) / len(y_ids_lns)
             entropies.append(entropy)
 
         assert len(tokens_ids) == len(entropies)
         return entropies
+
 
     def train(self, train_gen=None, val_gen=None, epochs=None):
         """
@@ -164,34 +169,48 @@ class NeuralWord:
         if self.settings.verbose > 0:
             logger.info("Training neural %s model.", str(type(self)))
 
-        learning_rate_decay = self.settings.learning_rate_decay
-        train_steps = max(train_gen.data_len // train_gen.batch_size, 1)
-        if learning_rate_decay > 0.2:
-            # High decay so per epoch; transform to per step.
-            # Benefit of this route is that native and loan learning rates decay differently.
-            learning_rate_decay = (1.0 / learning_rate_decay - 1.0) / train_steps
-        if self.settings.verbose > 0:
-            logger.info("Using per step learning rate decay %.4f", learning_rate_decay)
         learning_rate = self.settings.learning_rate
-        optimizer = Adam(learning_rate=learning_rate, decay=learning_rate_decay)
+        train_steps = (train_gen.data_len // train_gen.batch_size) + 1
+
+        learning_rate_decay = self.settings.learning_rate_decay
+        # Convert this to learning rate schedule.
+        if learning_rate_decay < 1.0:
+            if learning_rate_decay > 0.2:
+                # Transform to per step decay.
+                # Native and loan learning rates decay differently.
+                learning_rate_decay = (1.0 / learning_rate_decay - 1.0) / train_steps
+            if self.settings.verbose > 0:
+                logger.info("Using per step learning rate decay %.4f", learning_rate_decay)
+            optimizer = Adam(learning_rate=learning_rate, decay=learning_rate_decay)
+        else:
+            # Use Adam built in adjustment.
+            optimizer = Adam(learning_rate=learning_rate)
+
 
         self.model.compile(
-            loss="categorical_crossentropy",
+            loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
             optimizer=optimizer,
-            metrics=["categorical_accuracy", "categorical_crossentropy"],
+            metrics=[
+                tf.keras.metrics.SparseCategoricalAccuracy(),
+                tf.keras.metrics.SparseCategoricalCrossentropy(from_logits=True)],
         )
 
         epochs = epochs or self.settings.epochs
 
-        earlystopper = EarlyStopping(
-            monitor="val_loss",
-            verbose=self.settings.tf_verbose,
-            patience=10,  # epochs,
-            restore_best_weights=self.settings.restore_best_weights,
-        )
+        callbacks = []
+        if self.settings.early_stopping and val_gen:
+            # Early stopping monitors validation measure.
+            earlystopper = EarlyStopping(
+                monitor="val_sparse_categorical_crossentropy",
+                verbose=self.settings.tf_verbose,
+                patience=5,  # epochs,
+                restore_best_weights=self.settings.restore_best_weights,
+            )
+            callbacks = [earlystopper]
+
 
         if val_gen:
-            val_steps = max(val_gen.data_len // val_gen.batch_size, 2)
+            val_steps = (val_gen.data_len // val_gen.batch_size) + 1
             history = self.model.fit(
                 train_gen.generate(),
                 steps_per_epoch=train_steps,
@@ -199,7 +218,7 @@ class NeuralWord:
                 validation_data=val_gen.generate(),
                 validation_steps=val_steps,
                 verbose=self.settings.tf_verbose,
-                callbacks=[earlystopper],
+                callbacks=callbacks,
             )
         else:
             history = self.model.fit(
@@ -221,27 +240,29 @@ class NeuralWord:
 
         history_keys = history.keys()
         logger.info(f"Available quality measures: {history_keys}.")
-        # val_loss is used to get the best fit with early stopping.
-        if "val_loss" in history_keys:
-            val_loss = history["val_loss"]
-            best, best_val_loss = min(enumerate(val_loss), key=lambda v: v[1])
-            logger.info(f"Best epoch: {best} of {len(val_loss)}.")
+        if ("val_sparse_categorical_crossentropy" in history_keys and
+            self.settings.early_stopping and self.settings.restore_best_weights):
+            measure = history["val_sparse_categorical_crossentropy"]
+            idx, best_measure = min(enumerate(measure), key=lambda v: v[1])
+            logger.info(f"Restore best epoch: {idx} of {len(measure)}.")
         else:
-            best = -1
-            logger.info("No validation results reported.")
+            idx = -1
 
         logger.info("Statistics from TensorFlow:")
         logger.info(
-            f"Train dataset: loss={history['loss'][best]:.4f}, "
-            + f"accuracy={history['categorical_accuracy'][best]:.4f}, "
-            + f"cross_entropy={history['categorical_crossentropy'][best]:.4f}."
+            f"Train dataset: loss={history['loss'][idx]:.4f}, "
+            + f"accuracy={history['sparse_categorical_accuracy'][idx]:.4f}, "
+            + f"cross_entropy={history['sparse_categorical_crossentropy'][idx]:.4f}."
         )
         if "val_loss" in history_keys:
             logger.info(
-                f"Validate dataset: loss={history['val_loss'][best]:.4f}, "
-                + f"accuracy={history['val_categorical_accuracy'][best]:.4f}, "
-                + f"cross_entropy={history['val_categorical_crossentropy'][best]:.4f}."
+                f"Validate dataset: loss={history['val_loss'][idx]:.4f}, "
+                + f"accuracy={history['val_sparse_categorical_accuracy'][idx]:.4f}, "
+                + f"cross_entropy={history['val_sparse_categorical_crossentropy'][idx]:.4f}."
             )
+        else:
+            logger.info("No validation results reported.")
+
 
     def evaluate_test(self, test_gen=None):
         # Evaluate using generator - use evaluate directly.
@@ -249,7 +270,7 @@ class NeuralWord:
             logger.warning(f"No test data for evaluation!")
             return []
 
-        test_steps = max(test_gen.data_len // test_gen.batch_size, 2)
+        test_steps = (test_gen.data_len // test_gen.batch_size) + 1
         score = self.model.evaluate(
             test_gen.generate(), steps=test_steps, verbose=self.settings.tf_verbose
         )
@@ -304,8 +325,6 @@ class NeuralWordRecurrent(NeuralWord):
 
     # Test whether this needs go here or if OK given en parent class.
     def __attrs_post_init__(self):
-        if not isinstance(self.settings, cfg.RecurrentSettings):
-            self.settings = cfg.RecurrentSettings()
         super().__attrs_post_init__()
 
         self.build_model()
@@ -395,28 +414,35 @@ class NeuralWordRecurrent(NeuralWord):
                     name="GRU_recurrent_2",
                 )(rnn_output)
 
+
         if params.rnn_output_dropout > 0.0:
             rnn_output = Dropout(params.rnn_output_dropout, name="Dropout_rnn_output")(
                 rnn_output
             )
 
-        if params.merge_embedding_dropout > 0.0:
-            embedding = Dropout(
-                params.merge_embedding_dropout, name="Dropout_merge_embedding"
-            )(embedding)
+        if params.merge_embedding:
+            if params.merge_embedding_dropout > 0.0:
+                embedding = Dropout(
+                    params.merge_embedding_dropout, name="Dropout_merge_embedding"
+                )(embedding)
 
-        # Add in latest embedding per Bengio 2002.
-        to_outputs = Concatenate(axis=-1, name="Merge_rnn_embedding")(
-            [rnn_output, embedding]
-        )
+            # Add in latest embedding per Bengio 2002.
+            to_outputs = Concatenate(axis=-1, name="Merge_rnn_embedding")(
+                [rnn_output, embedding]
+            )
+        else:
+            to_outputs = rnn_output
 
         # Hidden state used to predict subsequent character.
-        outputs = Dense(self.vocab_len, activation="softmax", name="Segment_output")(
+        outputs = Dense(self.vocab_len, name="Segment_output")(
             to_outputs
         )
 
         model_name = self.construct_modelname("recurrent")
+        # No activation so we are using logits.
         self.model = Model(inputs=[inputs], outputs=[outputs], name=model_name)
+        # Include Softmax for when we do prediction.
+        self.prob_model = Sequential([self.model, Softmax()])
 
         if params.print_summary > 0:
             self.print_model_summary()

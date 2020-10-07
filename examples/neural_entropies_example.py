@@ -265,11 +265,11 @@ def perform_analysis_by_language(
 
 # Main
 if __name__ == "__main__":
-    languages = "Hup"  # ['English']  # , 'Hup']
+    languages = "English"  # ['English']  # , 'Hup']
     perform_analysis_by_language(
         languages=languages,
         form="Tokens",
-        basis="loan",
+        basis="native",
         model_type="recurrent",
         test_split=0.15,
     )

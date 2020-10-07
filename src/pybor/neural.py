@@ -20,7 +20,7 @@ import attr
 
 # Import tensorflow
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.backend import clear_session
 
 # Build namespace
 from pybor.config import BaseSettings, NeuralSettings
@@ -208,9 +208,6 @@ class KerasBatchGenerator:
     settings = attr.ib(default=NeuralSettings(), repr=False)
 
     def __attrs_post_init__(self):
-        # In case settings object is not right type.
-        if not isinstance(self.settings, BaseSettings):
-            self.settings = BaseSettings()
         self.batch_size = self.batch_size or self.settings.batch_size
         self.skip_step = self.skip_step or self.settings.skip_step
         self.current_idx = 0
@@ -236,9 +233,9 @@ class KerasBatchGenerator:
                 x_lst.append(data[self.current_idx][:-1])
 
                 ## Treat y as sparse.
-                # y_lst.append(data[self.current_idx][1:])
-                temp_y = data[self.current_idx][1:]
-                y_lst.append(to_categorical(temp_y, num_classes=self.vocab_size))
+                y_lst.append(data[self.current_idx][1:])
+                #temp_y = data[self.current_idx][1:]
+                #y_lst.append(to_categorical(temp_y, num_classes=self.vocab_size))
 
                 self.current_idx += 1
 
@@ -269,7 +266,6 @@ class Neural:
     val_split = attr.ib(default=None)
 
     def __attrs_post_init__(self):
-        # In case settings object is not right type.
         self.language = self.language or self.settings.language
         self.series = self.series or self.settings.series
         self.model_type = self.model_type or self.settings.model_type
@@ -279,10 +275,6 @@ class Neural:
 
         native_training = [row for row in self.training if row[2] == 0]
         loan_training = [row for row in self.training if row[2] == 1]
-        # Oversample loan data.
-        if self.settings.oversample and len(loan_training) < len(native_training):
-            k = len(native_training) - len(loan_training)
-            loan_training += random.choices(loan_training, k=k)
 
         self.native_data = NeuralData(
             training=native_training,
@@ -312,6 +304,12 @@ class Neural:
             series=self.series,
             settings=self.settings,
         )
+
+
+    def dispose(self):
+        """Dispose of model to prevent memory leak.
+        Problem is with tf not releasing memory."""
+        clear_session()
 
     @abc.abstractmethod
     def train(self):
@@ -350,15 +348,14 @@ class NeuralNative(Neural):
     settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
-        if not isinstance(self.settings, NeuralSettings):
-            self.settings = NeuralSettings()
         super().__attrs_post_init__()
         self.fraction = self.fraction or self.settings.fraction
         self.cut_point = None
 
+
     # Train only native model if detect type is native.
     def train(self, epochs=None):
-        logger.info("training native model")
+        logger.debug("training native model")
         self.native_history = self.native_model.train(
             train_gen=self.native_data.trainer,
             val_gen=self.native_data.validator,
@@ -406,8 +403,6 @@ class NeuralDual(Neural):
     settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
-        if not isinstance(self.settings, NeuralSettings):
-            self.settings = NeuralSettings()
         super().__attrs_post_init__()
         self.cut_point = None
 
@@ -419,14 +414,15 @@ class NeuralDual(Neural):
             settings=self.settings,
         )
 
+
     def train(self, epochs=None):
-        logger.info("training native model")
+        logger.debug("training native model")
         self.native_history = self.native_model.train(
             train_gen=self.native_data.trainer,
             val_gen=self.native_data.validator,
             epochs=epochs,
         )
-        logger.info("training loan model")
+        logger.debug("training loan model")
         self.loan_history = self.loan_model.train(
             train_gen=self.loan_data.trainer,
             val_gen=self.loan_data.validator,

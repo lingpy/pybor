@@ -225,7 +225,7 @@ def get_logger(logger_name):
     if not _logger.handlers:
         _logger.setLevel(logging.DEBUG)  # better to have too much log than not enough
         _logger.addHandler(get_console_handler())
-        _logger.addHandler(get_file_handler())
+    #    _logger.addHandler(get_file_handler())
         _logger.propagate = False
 
     return _logger

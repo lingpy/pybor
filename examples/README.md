@@ -1,35 +1,35 @@
-Commands for constructing tables for in the paper "Using lexical language models to detect borrowings in monolingual wordlists".
+# Commands for constructing tables for the study "Using lexical language models to detect borrowings in monolingual wordlists"
 
-# Detection of artificial borrowings:
+## Requirements for installation
 
-## Bag of Sounds
+```
+$ git clone https://github.com/lingpy/pybor.git
+$ pip install -e pybor
+$ git clone https://github.com/lexibank/wold.git
+$ pip install -e wold
+```
 
-NOTE: —brate is the sampling interval.  Its inverse is the percent seeded borrowing.
+## 1 Detection of artificial borrowings
 
-`monolingual-borrowing-detection % examples/fakeborrowings.py bagofsounds --brate 5`
+Having installed the two code packages, the easiest way to carry out the initial experiment on artificially seeded borrowings is to use our Makefile. Having `cd`ed into the folder `examples`, just type:
 
-`monolingual-borrowing-detection % examples/fakeborrowings.py bagofsounds --brate 10`
+```
+$ make fake
+```
 
-`monolingual-borrowing-detection % examples/fakeborrowings.py bagofsounds --brate 20`
+If you want to carry out the experiments in isolation, just `cd` again into the `examples` folder and type:
 
-
-## Markov model;
-
-`monolingual-borrowing-detection % examples/fakeborrowings.py markovdual --brate 5`
-
-`monolingual-borrowing-detection % examples/fakeborrowings.py markovdual --brate 10`
-
-`monolingual-borrowing-detection % examples/fakeborrowings.py markovdual --brate 20`
-
-
-## Neural network
-
-`monolingual-borrowing-detection % examples/fakeborrowings.py neuraldual --brate 5`
-
-`monolingual-borrowing-detection % examples/fakeborrowings.py neuraldual --brate 10`
-
-`monolingual-borrowing-detection % examples/fakeborrowings.py neuraldual --brate 20`
-
+```
+$ python fakeborrowings.py bagofsounds --brate 5 --output "../output"
+$ python fakeborrowings.py bagofsounds --brate 10 --output "../output"
+$ python fakeborrowings.py bagofsounds --brate 20 --output "../output"
+$ python fakeborrowings.py markovdual --brate 5 --output "../output"
+$ python fakeborrowings.py markovdual --brate 10 --output "../output"
+$ python fakeborrowings.py markovdual --brate 20 --output "../output"
+$ python fakeborrowings.py neuraldual --brate 5 --output "../output"
+$ python fakeborrowings.py neuraldual --brate 10 --output "../output"
+$ python fakeborrowings.py neuraldual --brate 20 --output "../output"
+```
 
 # Cross-validation of borrowing detection on real language data:
 

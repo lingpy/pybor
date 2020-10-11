@@ -188,8 +188,6 @@ def cross_validate_model(
             )
 
     filename += f"-{model_name}-{form}-{series}-prfa.csv"
-    file_path = Path(output).joinpath(filename).as_posix()
-
     with open(file_path, "w", newline="") as fl:
         writer = csv.writer(fl)
         writer.writerow(
@@ -223,7 +221,10 @@ def cross_validate_model(
 
 
 if __name__ == "__main__":
+    logger = util.get_logger(__name__)
+
     parser = argparse.ArgumentParser()
+
     parser.add_argument(
         "model",
         type=str,
@@ -308,7 +309,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output",
         default="output",
-    )
+        help="output")
     args = parser.parse_args()
     languages = "all" if args.languages[0] == "all" else args.languages
 

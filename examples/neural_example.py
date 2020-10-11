@@ -18,7 +18,6 @@ import pybor.config as cfg
 
 from pybor.dev.data import training1, testing1
 
-output_path = Path(cfg.BaseSettings().output_path).resolve()
 
 
 def evaluate_neural_loanword_prediction(

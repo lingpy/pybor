@@ -5,6 +5,7 @@ Created on Wed Jul  1 09:52:13 2020
 
 @author: johnmiller
 """
+from pathlib import Path
 from sys import argv
 import argparse
 import random
@@ -56,9 +57,6 @@ def report_native_donors(language, form='Tokens'):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    #languages = ["English", "Swahili", "Hup", "Oroqen"]  # 'all' or language name
-    #form = "Tokens"  # one in ["Tokens", "FormChars", "ASJP", "DOLGO", "SCA"],
-
     parser.add_argument(
         "--languages",
         nargs='*',
@@ -66,7 +64,6 @@ if __name__ == "__main__":
         default='all',
         help="'all' or language_names",
     )
-
     parser.add_argument(
         "--form",
         type=str,
@@ -74,13 +71,16 @@ if __name__ == "__main__":
         choices=["Tokens", "FormChars", "ASJP", "DOLGO", "SCA"],
         help="Form to take from language table.",
     )
-
     parser.add_argument(
         "--min_borrowed",
         type=int,
         default=0,
         help="Minimum borrowed quantity.",
         )
+    parser.add_argument(
+        "--output",
+        default="output",
+        help="output")
 
     args = parser.parse_args()
     languages = 'all' if args.languages[0] == 'all' else args.languages
@@ -89,7 +89,10 @@ if __name__ == "__main__":
     languages = wold.check_wold_languages(wolddb, languages)
 
     min_borrowed = args.min_borrowed
-    with open('output/language_donors_mb'+str(min_borrowed)+'.csv', "w", newline="") as fl:
+    file_path = Path(args.output).joinpath(
+        'language_donors_mb'+str(min_borrowed)+'.csv').as_posix()
+
+    with open(file_path, "w", newline="") as fl:
         writer = csv.writer(fl)
         writer.writerow(
             ["language", "donor", "table_len", "borrowed_len",

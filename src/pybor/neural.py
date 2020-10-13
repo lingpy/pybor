@@ -21,6 +21,7 @@ import attr
 # Import tensorflow
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.backend import clear_session
 
 # Build namespace
 from pybor.config import BaseSettings, NeuralSettings
@@ -313,6 +314,11 @@ class Neural:
             settings=self.settings,
         )
 
+    def dispose(self):
+        """Dispose of model to prevent memory leak.
+        Problem is with tf not releasing memory."""
+        clear_session()
+
     @abc.abstractmethod
     def train(self):
         """Train method implemented by native and dual subclasses"""
@@ -358,7 +364,7 @@ class NeuralNative(Neural):
 
     # Train only native model if detect type is native.
     def train(self, epochs=None):
-        logger.info("training native model")
+        logger.debug("training native model")
         self.native_history = self.native_model.train(
             train_gen=self.native_data.trainer,
             val_gen=self.native_data.validator,
@@ -420,13 +426,13 @@ class NeuralDual(Neural):
         )
 
     def train(self, epochs=None):
-        logger.info("training native model")
+        logger.debug("training native model")
         self.native_history = self.native_model.train(
             train_gen=self.native_data.trainer,
             val_gen=self.native_data.validator,
             epochs=epochs,
         )
-        logger.info("training loan model")
+        logger.debug("training loan model")
         self.loan_history = self.loan_model.train(
             train_gen=self.loan_data.trainer,
             val_gen=self.loan_data.validator,

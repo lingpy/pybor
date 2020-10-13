@@ -280,10 +280,6 @@ class Neural:
 
         native_training = [row for row in self.training if row[2] == 0]
         loan_training = [row for row in self.training if row[2] == 1]
-        # Oversample loan data.
-        if self.settings.oversample and len(loan_training) < len(native_training):
-            k = len(native_training) - len(loan_training)
-            loan_training += random.choices(loan_training, k=k)
 
         self.native_data = NeuralData(
             training=native_training,

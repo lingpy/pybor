@@ -20,11 +20,13 @@ from tabulate import tabulate
 from pybor.entropies import NeuralWordRecurrent
 from pybor.neural import NeuralData
 from pybor.plot import graph_word_distribution_entropies
-#import pybor.config as cfg
+import pybor.config as cfg
 import pybor.util as util
 import pybor.wold as wold
 
-#from pybor.dev.data import training1, testing1
+from pybor.dev.data import training1, testing1
+
+output_path = Path(cfg.BaseSettings().output_path).resolve()
 
 
 def describe_entropies(data):
@@ -68,7 +70,7 @@ def graph_entropies(
     title="",
     label1="",
     label2="",
-    filepath=None
+    filename="",
 ):
     # Plot train and loan entropy distributions - all tokens basis
     tokens_ids1 = data.get_tokens_ids(tokens1)
@@ -77,11 +79,11 @@ def graph_entropies(
     tokens_ids2 = data.get_tokens_ids(tokens2)
     entropies2 = model.calculate_entropies(tokens_ids2)
     # Could use mean + 6*stdev + 1 as upper limit for graphs.
-    #graph_path = output_path / filename
+    graph_path = output_path / filename
     graph_word_distribution_entropies(
         entropies1,
         entropies2,
-        filepath,
+        graph_path.as_posix(),
         title=title,
         label1=label1,
         label2=label2,
@@ -97,7 +99,6 @@ def analyze_neural_entropies_for_basis(
     form="",
     basis="",
     model_type="recurrent",
-    output="output"
 ):
 
     # Get a vocabulary from all data.
@@ -126,18 +127,9 @@ def analyze_neural_entropies_for_basis(
     test_tokens = [token for _, token, _ in test_x]
 
     filename = get_prefix() + "--train-test.pdf"
-    file_path = Path(output).joinpath(filename).as_posix()
-
     title = f"{language} train and test entropies from {form} - {basis} basis"
     graph_entropies(
-        train_tokens,
-        test_tokens,
-        data,
-        model,
-        title,
-        "Train",
-        "Test",
-        file_path
+        train_tokens, test_tokens, data, model, title, "Train", "Test", filename
     )
 
     # Plot native, loan train entropy distributions - all tokens basis.
@@ -145,7 +137,6 @@ def analyze_neural_entropies_for_basis(
     train_loan_tokens = [token for _, token, status in train if status == 1]
 
     filename = get_prefix() + "--train-native-loan.pdf"
-    file_path = Path(output).joinpath(filename).as_posix()
     title = f"{language} train - native and loan entropies from {form} - {basis} basis"
     graph_entropies(
         train_native_tokens,
@@ -155,7 +146,7 @@ def analyze_neural_entropies_for_basis(
         title,
         "Native",
         "Loan",
-        file_path,
+        filename,
     )
 
     # Plot native, loan test entropy distributions.
@@ -164,7 +155,6 @@ def analyze_neural_entropies_for_basis(
     # print(f'test: native {len(test_native_tkns)}, loan {len(test_loan_tkns)}. ')
 
     filename = get_prefix() + "--test-native-loan.pdf"
-    file_path = Path(output).joinpath(filename).as_posix()
     title = f"{language} test - native and loan entropies from {form} - {basis} basis"
     graph_entropies(
         test_native_tokens,
@@ -174,33 +164,12 @@ def analyze_neural_entropies_for_basis(
         title,
         "Native",
         "Loan",
-        file_path,
-    )
-
-
-def analyze_neural_entropies(
-    language=None,
-    table=None,
-    form="",
-    basis="",
-    model_type="recurrent",
-    test_split=None,
-    output="output"
-):
-
-    # All data together.
-    train, test = util.train_test_split(table, split=test_split)
-    analyze_neural_entropies_train_test(
-        language, train, test, form=form,
-        basis=basis, model_type=model_type,
-        output=output
+        filename,
     )
 
 
 def analyze_neural_entropies_train_test(
-    language=None, train=None,
-    test=None, form="", basis="",
-    model_type="recurrent", output="output"
+    language=None, train=None, test=None, form="", basis="", model_type="recurrent"
 ):
     # Function to perform graphical analysis of entropy distributions.
     # Possible languages are 'all', list of languages ([str]), or specific language (str).
@@ -217,7 +186,6 @@ def analyze_neural_entropies_train_test(
             form=form,
             basis=basis,
             model_type=model_type,
-            output=output
         )
 
     elif basis == "native":
@@ -235,7 +203,6 @@ def analyze_neural_entropies_train_test(
             form=form,
             basis=basis,
             model_type=model_type,
-            output=output
         )
 
     elif basis == "loan":
@@ -253,15 +220,13 @@ def analyze_neural_entropies_train_test(
             form=form,
             basis=basis,
             model_type=model_type,
-            output=output
         )
 
 
 # Shell method to perform analysis.
 def perform_analysis_by_language(
-    languages=None, form="Tokens",
-    basis="all", model_type="recurrent",
-    test_split=None, output="output"):
+    languages=None, form="Tokens", basis="all", model_type="recurrent", test_split=None
+):
 
     wolddb = wold.get_wold_access()
     languages = wold.check_wold_languages(wolddb, languages)
@@ -272,14 +237,15 @@ def perform_analysis_by_language(
             language=language, form=form, classification="Borrowed"
         )
 
-        analyze_neural_entropies(
+        train, test = util.train_test_split(table, split=test_split)
+
+        analyze_neural_entropies_train_test(
             language=language,
-            table=table,
+            train=train,
+            test=test,
             form=form,
             basis=basis,
             model_type=model_type,
-            test_split=test_split,
-            output=output
         )
 
 
@@ -292,7 +258,6 @@ if __name__ == "__main__":
         basis="native",
         model_type="recurrent",
         test_split=0.15,
-        output="output",
     )
 
     # Use training1 and testing1.

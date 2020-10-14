@@ -20,6 +20,7 @@ import attr
 
 # Import tensorflow
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.backend import clear_session
 
 # Build namespace
@@ -304,7 +305,6 @@ class Neural:
             series=self.series,
             settings=self.settings,
         )
-
 
     def dispose(self):
         """Dispose of model to prevent memory leak.

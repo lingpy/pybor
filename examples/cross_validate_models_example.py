@@ -27,10 +27,6 @@ import pybor.util as util
 import pybor.wold as wold
 
 
-#output_path = Path(config.BaseSettings().output_path).resolve()
-logger = util.get_logger(__name__)
-
-
 def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, file_path, settings=None):
     def fn(
         language,
@@ -188,6 +184,8 @@ def cross_validate_model(
             )
 
     filename += f"-{model_name}-{form}-{series}-prfa.csv"
+    file_path = Path(output).joinpath(filename).as_posix()
+
     with open(file_path, "w", newline="") as fl:
         writer = csv.writer(fl)
         writer.writerow(
@@ -224,7 +222,6 @@ if __name__ == "__main__":
     logger = util.get_logger(__name__)
 
     parser = argparse.ArgumentParser()
-
     parser.add_argument(
         "model",
         type=str,

@@ -49,6 +49,7 @@ def run_experiment(
     wolddb = wold.get_wold_access()
     languages = wold.check_wold_languages(wolddb, language_)
 
+    print()
     for language in languages:
         # Set training and test lists
         # train, test = [], []
@@ -67,6 +68,7 @@ def run_experiment(
         test_add_len = sum([row[2] for row in test])
         # Seed native German words into training and test
 
+        print(f'Simulated borrowings at {1/brate:.3f} for {language}')
         if verbose:
             logger.info(
                 f"{language} language, {form} form, table len {len(table)}, "
@@ -109,6 +111,8 @@ def run_experiment(
                 neural = NeuralDual(train)
                 neural.train()
                 guess = neural.predict_data(test)
+                neural.dispose()
+
 
         # Collect performance statistics
         p, r, f, a = prf(test, guess)
@@ -184,7 +188,10 @@ if __name__ == "__main__":
         help="Set the test split proportion (default: 0.2)",
     )
     parser.add_argument(
-        "--verbose", type=bool, default=False, help="Verbose reporting (default: False)"
+        "--verbose",
+        type=bool,
+        default=False,
+        help="Verbose reporting (default: False)"
     )
     parser.add_argument(
         "--output",

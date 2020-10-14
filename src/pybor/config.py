@@ -15,7 +15,7 @@ class BaseSettings:
     test_split = attr.ib(default=0.15)
     detect_type = attr.ib(default="dual")
 
-    verbose = attr.ib(default=1)
+    verbose = attr.ib(default=0)
     print_summary = attr.ib(default=False, metadata={"deprecated": True})
     plot_model = attr.ib(default=False, metadata={"deprecated": True})
     plot_dpi = attr.ib(default=400, metadata={"deprecated": True})
@@ -35,7 +35,6 @@ class NeuralSettings(BaseSettings):
     batch_size = attr.ib(default=32)
     skip_step = attr.ib(default=5)
     token_maxlen = attr.ib(default=30)
-    oversample = attr.ib(default=False)
     model_type = attr.ib(default="recurrent")  # recurrent
     fraction = attr.ib(default=0.995)  # For Native model.
     prediction_policy = attr.ib(default="zero")  # zero, accuracy, fscore

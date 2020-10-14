@@ -27,7 +27,7 @@ import pybor.util as util
 import pybor.wold as wold
 
 
-def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=None):
+def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, file_path, settings=None):
     def fn(
         language,
         form,
@@ -37,7 +37,7 @@ def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=
         k_fold=k_fold,
         holdout_n=holdout_n,
         max_iter=max_iter,
-        writer=writer,
+        file_path=file_path,
         settings=settings,
     ):
 
@@ -49,11 +49,13 @@ def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=
 
         if mode == "k_fold":
             gen = util.k_fold_samples(table, k=k_fold)
+            print(f'\n{k_fold}-fold cross validation for {language}')
         else:
             gen = util.holdout_n_samples(table, n=holdout_n, max_iter=max_iter)
+            print(f'\n{max_iter} iterations of holdout-{holdout_n} for {language}')
 
         for (i, train, test) in gen:
-
+            print('.', end = '', flush=True)
             if model_name == "neuraldual":
                 model = neural.NeuralDual(train, settings=settings)
                 model.train()
@@ -71,6 +73,8 @@ def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=
 
             # NgramModel and BagOfSounds don't like 3 column format for predict.
             predicted = model.predict_data([[row[0], row[1]] for row in test])
+            if model_name == "neuraldual":
+                model.dispose()
             p, r, f, a = evaluate.prf(test, predicted)
             p_.append(p)
             r_.append(r)
@@ -85,19 +89,23 @@ def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, writer, settings=
             sd_a = statistics.stdev(a_)
         else:
             sd_p, sd_r, sd_f, sd_a = [0] * 4
-        writer.writerow(
-            [
-                language,
-                f"{statistics.mean(p_):.3f}",
-                f"{statistics.mean(r_):.3f}",
-                f"{statistics.mean(f_):.3f}",
-                f"{statistics.mean(a_):.3f}",
-                f"{sd_p:.3f}",
-                f"{sd_r:.3f}",
-                f"{sd_f:.3f}",
-                f"{sd_a:.3f}",
-            ]
-        )
+
+        # Open file and append new row.
+        with open(file_path, "a", newline="") as fl:
+            writer = csv.writer(fl)
+            writer.writerow(
+                [
+                    language,
+                    f"{statistics.mean(p_):.3f}",
+                    f"{statistics.mean(r_):.3f}",
+                    f"{statistics.mean(f_):.3f}",
+                    f"{statistics.mean(a_):.3f}",
+                    f"{sd_p:.3f}",
+                    f"{sd_r:.3f}",
+                    f"{sd_f:.3f}",
+                    f"{sd_a:.3f}",
+                ]
+            )
 
     return fn
 
@@ -176,8 +184,8 @@ def cross_validate_model(
             )
 
     filename += f"-{model_name}-{form}-{series}-prfa.csv"
-
     file_path = Path(output).joinpath(filename).as_posix()
+
     with open(file_path, "w", newline="") as fl:
         writer = csv.writer(fl)
         writer.writerow(
@@ -194,16 +202,16 @@ def cross_validate_model(
             ]
         )
 
-        fn = get_user_fn(
-            model_name, mode, k_fold, holdout_n, max_iter, writer, settings
-        )
-        wold.apply_function_by_language(
-            languages,
-            form=form,
-            function=fn,
-            donor_num=donor_num,
-            min_borrowed=min_borrowed,
-        )
+    fn = get_user_fn(
+        model_name, mode, k_fold, holdout_n, max_iter, file_path, settings
+    )
+    wold.apply_function_by_language(
+        languages,
+        form=form,
+        function=fn,
+        donor_num=donor_num,
+        min_borrowed=min_borrowed,
+    )
 
     summarize_cross_validation(
         file_path, form, model_name, mode, k_fold, holdout_n, series
@@ -214,7 +222,6 @@ if __name__ == "__main__":
     logger = util.get_logger(__name__)
 
     parser = argparse.ArgumentParser()
-
     parser.add_argument(
         "model",
         type=str,
@@ -315,7 +322,7 @@ if __name__ == "__main__":
     # Run cross validation
     cross_validate_model(
         languages=languages,
-        form="Tokens",
+        form=args.form,
         model_name=args.model,
         mode=args.mode,
         k_fold=args.k_fold,

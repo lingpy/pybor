@@ -2,6 +2,16 @@
 Development data to be used for the development and later testing of methods.
 """
 
+#NOTE: These hard-coded data reflects the collection of lexemes we used for
+#      experimentation and which was submitted for review. It is kept here
+#      and reused for historical and reproducible reasons. Future versions
+#      will use a much improved similar dataset, develop also on the information
+#      here provided, that has been published as:
+#
+#      Johann-Mattis List, "Towards a refined wordlist of German in the Intercontinental
+#      Dictionary Series," in Computer-Assisted Language Comparison in Practice,
+#      19/10/2020, https://calc.hypotheses.org/2545.
+
 training = [
     [9, ["z", "a", "n", "t"], 0],
     [12, ["k", "l", "i", "p", "ə"], 1],

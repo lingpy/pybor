@@ -69,7 +69,7 @@ def evaluate_borrowing_prediction_train_test(
     evaluate_prediction(neural, test, "Testing")
 
 
-#def make_orthographic_table(language):
+# def make_orthographic_table(language):
 #    tabledir = "tables/"
 #    table = pd.read_csv(tabledir + language + ".tsv", sep="\t", index_col=0)
 #    table["Borrowed"] = (table.BorrowedScore > 0.375).astype(
@@ -82,9 +82,9 @@ def evaluate_borrowing_prediction_train_test(
 #    return data
 #
 #
-#def perform_prediction_by_language_from_table(
+# def perform_prediction_by_language_from_table(
 #    language=None, detect_type=None, model_type=None, test_split=None, settings=None
-#):
+# ):
 #
 #    table = make_orthographic_table(language)
 #
@@ -125,10 +125,10 @@ settings = cfg.RecurrentSettings(
     restore_best_weights=False,
 )
 
-#perform_prediction_by_language_from_table(
+# perform_prediction_by_language_from_table(
 #    language="English",
 #    detect_type="dual",
 #    model_type="recurrent",
 #    test_split=0.15,
 #    settings=settings,
-#)
+# )

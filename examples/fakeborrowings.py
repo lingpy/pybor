@@ -15,6 +15,7 @@ from pybor.svm import BagOfSounds
 import pybor.util as util
 import pybor.wold as wold
 
+
 def bigrams(sequence):
     return list(zip(["^"] + sequence[:-1], sequence[1:] + ["$"]))
 
@@ -30,8 +31,8 @@ def trigrams(sequence):
 
 
 def run_experiment(
-        model_name, language_, form, brate, order, test_split,
-        verbose, output):
+    model_name, language_, form, brate, order, test_split, verbose, output
+):
 
     # output buffer
     buffer = ["Language,Precision,Recall,Fs,Accuracy"]
@@ -68,7 +69,7 @@ def run_experiment(
         test_add_len = sum([row[2] for row in test])
         # Seed native German words into training and test
 
-        print(f'Simulated borrowings at {1/brate:.3f} for {language}')
+        print(f"Simulated borrowings at {1/brate:.3f} for {language}")
         if verbose:
             logger.info(
                 f"{language} language, {form} form, table len {len(table)}, "
@@ -113,7 +114,6 @@ def run_experiment(
                 guess = neural.predict_data(test)
                 neural.dispose()
 
-
         # Collect performance statistics
         p, r, f, a = prf(test, guess)
         stats += [[p, r, f, a]]
@@ -133,9 +133,11 @@ def run_experiment(
     print(totals)
 
     # Write results to disk
-    output_path = Path(output).joinpath(
-            f"fakeborrowing_{model_name}_{language_}_{form}_{brate:.1f}br.csv"
-            ).as_posix()
+    output_path = (
+        Path(output)
+        .joinpath(f"fakeborrowing_{model_name}_{language_}_{form}_{brate:.1f}br.csv")
+        .as_posix()
+    )
 
     with open(output_path, "w") as handler:
         for row in buffer:
@@ -188,15 +190,9 @@ if __name__ == "__main__":
         help="Set the test split proportion (default: 0.2)",
     )
     parser.add_argument(
-        "--verbose",
-        type=bool,
-        default=False,
-        help="Verbose reporting (default: False)"
+        "--verbose", type=bool, default=False, help="Verbose reporting (default: False)"
     )
-    parser.add_argument(
-        "--output",
-        default="output",
-        help="output")
+    parser.add_argument("--output", default="output", help="output")
     args = parser.parse_args()
     languages = "all" if args.languages[0] == "all" else args.languages
 
@@ -208,5 +204,5 @@ if __name__ == "__main__":
         args.order,
         args.split,
         args.verbose,
-        args.output
+        args.output,
     )

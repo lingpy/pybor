@@ -27,7 +27,9 @@ import pybor.util as util
 import pybor.wold as wold
 
 
-def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, file_path, settings=None):
+def get_user_fn(
+    model_name, mode, k_fold, holdout_n, max_iter, file_path, settings=None
+):
     def fn(
         language,
         form,
@@ -49,13 +51,13 @@ def get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, file_path, settin
 
         if mode == "k_fold":
             gen = util.k_fold_samples(table, k=k_fold)
-            print(f'\n{k_fold}-fold cross validation for {language}')
+            print(f"\n{k_fold}-fold cross validation for {language}")
         else:
             gen = util.holdout_n_samples(table, n=holdout_n, max_iter=max_iter)
-            print(f'\n{max_iter} iterations of holdout-{holdout_n} for {language}')
+            print(f"\n{max_iter} iterations of holdout-{holdout_n} for {language}")
 
         for (i, train, test) in gen:
-            print('.', end = '', flush=True)
+            print(".", end="", flush=True)
             if model_name == "neuraldual":
                 model = neural.NeuralDual(train, settings=settings)
                 model.train()
@@ -202,9 +204,7 @@ def cross_validate_model(
             ]
         )
 
-    fn = get_user_fn(
-        model_name, mode, k_fold, holdout_n, max_iter, file_path, settings
-    )
+    fn = get_user_fn(model_name, mode, k_fold, holdout_n, max_iter, file_path, settings)
     wold.apply_function_by_language(
         languages,
         form=form,
@@ -303,10 +303,7 @@ if __name__ == "__main__":
         type=bool,
         help="Verbose operation for the methods that support it (default: False)",
     )
-    parser.add_argument(
-        "--output",
-        default="output",
-        help="output")
+    parser.add_argument("--output", default="output", help="output")
     args = parser.parse_args()
     languages = "all" if args.languages[0] == "all" else args.languages
 

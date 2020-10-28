@@ -19,7 +19,6 @@ import pybor.config as cfg
 from pybor.dev.data import training1, testing1
 
 
-
 def evaluate_neural_loanword_prediction(
     language="",
     table=None,

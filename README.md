@@ -77,6 +77,6 @@ In BibTeX:
   title = {PyBor, a Python library for borrowing detection based on lexical language models. Version 0.1.},
   howpublished = {\url{https://github.com/lingpy/pybor}},
   address = {Jena},
-  year = {2020},
+  year = {2020}
 }
 ```

@@ -2,9 +2,6 @@ import pathlib
 import codecs
 from setuptools import setup, find_packages, Extension
 
-# setup package name etc as a default
-pkgname = "pybor"
-
 # The directory containing this file
 LOCAL_PATH = pathlib.Path(__file__).parent
 
@@ -30,7 +27,7 @@ setup(
     license="Apache License 2.0",
     long_description_content_type="text/markdown",
     long_description=codecs.open("README.md", "r", "utf-8").read(),
-    name=pkgname,
+    name="pybor",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     python_requires=">=3.6",

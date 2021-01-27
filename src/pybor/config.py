@@ -11,7 +11,6 @@ class BaseSettings:
     Base configuration settings.
     """
 
-    val_split = attr.ib(default=0.0)
     test_split = attr.ib(default=0.15)
     detect_type = attr.ib(default="dual")
 
@@ -28,13 +27,17 @@ class NeuralSettings(BaseSettings):
     """
     Neural model settings.
     """
-
+    # Document qualifiers.
     language = attr.ib(default="")
     series = attr.ib(default="")
 
+    # Data handling.
+    val_split = attr.ib(default=0.0)
     batch_size = attr.ib(default=32)
     skip_step = attr.ib(default=5)
     token_maxlen = attr.ib(default=30)
+
+    # Detection contols.
     model_type = attr.ib(default="recurrent")  # recurrent
     fraction = attr.ib(default=0.995)  # For Native model.
     prediction_policy = attr.ib(default="zero")  # zero, accuracy, fscore
@@ -47,7 +50,6 @@ class EntropiesSettings(NeuralSettings):
     Entropy model settings.
     """
 
-    # While not strictly a child of NeuralSettings, it seems more convenient.
     tf_verbose = attr.ib(default=0)
     basis = attr.ib(default="all")
 
@@ -63,6 +65,7 @@ class RecurrentSettings(EntropiesSettings):
     rnn_output_len = attr.ib(default=32)
     rnn_cell_type = attr.ib(default="GRU")  # GRU, LSTM
     rnn_levels = attr.ib(default=1)  # 1, 2
+    merge_embedding = attr.ib(default=True)
 
     # Dropout and regulation parameters
     embedding_dropout = attr.ib(default=0.0)
@@ -75,8 +78,9 @@ class RecurrentSettings(EntropiesSettings):
     # Model fitting parameters
     epochs = attr.ib(default=45)
     learning_rate = attr.ib(default=0.01)
-    learning_rate_decay = attr.ib(default=0.95)  # Adjust for batch size, data len.
-    restore_best_weights = attr.ib(default=True)
+    learning_rate_decay = attr.ib(default=0.95)
+    restore_best_weights = attr.ib(default=True) # False for experiments.
+    early_stopping = attr.ib(default=True) # False for experiments.
 
 
 @attr.s  # pylint: disable=too-many-instance-attributes,too-few-public-methods

@@ -209,9 +209,6 @@ class KerasBatchGenerator:
     settings = attr.ib(default=NeuralSettings(), repr=False)
 
     def __attrs_post_init__(self):
-        # In case settings object is not right type.
-        if not isinstance(self.settings, BaseSettings):
-            self.settings = BaseSettings()
         self.batch_size = self.batch_size or self.settings.batch_size
         self.skip_step = self.skip_step or self.settings.skip_step
         self.current_idx = 0
@@ -237,9 +234,9 @@ class KerasBatchGenerator:
                 x_lst.append(data[self.current_idx][:-1])
 
                 ## Treat y as sparse.
-                # y_lst.append(data[self.current_idx][1:])
-                temp_y = data[self.current_idx][1:]
-                y_lst.append(to_categorical(temp_y, num_classes=self.vocab_size))
+                y_lst.append(data[self.current_idx][1:])
+                #temp_y = data[self.current_idx][1:]
+                #y_lst.append(to_categorical(temp_y, num_classes=self.vocab_size))
 
                 self.current_idx += 1
 
@@ -270,7 +267,6 @@ class Neural:
     val_split = attr.ib(default=None)
 
     def __attrs_post_init__(self):
-        # In case settings object is not right type.
         self.language = self.language or self.settings.language
         self.series = self.series or self.settings.series
         self.model_type = self.model_type or self.settings.model_type
@@ -352,11 +348,10 @@ class NeuralNative(Neural):
     settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
-        if not isinstance(self.settings, NeuralSettings):
-            self.settings = NeuralSettings()
         super().__attrs_post_init__()
         self.fraction = self.fraction or self.settings.fraction
         self.cut_point = None
+
 
     # Train only native model if detect type is native.
     def train(self, epochs=None):
@@ -408,8 +403,6 @@ class NeuralDual(Neural):
     settings = attr.ib(default=NeuralSettings())
 
     def __attrs_post_init__(self):
-        if not isinstance(self.settings, NeuralSettings):
-            self.settings = NeuralSettings()
         super().__attrs_post_init__()
         self.cut_point = None
 
@@ -420,6 +413,7 @@ class NeuralDual(Neural):
             series=self.series,
             settings=self.settings,
         )
+
 
     def train(self, epochs=None):
         logger.debug("training native model")
